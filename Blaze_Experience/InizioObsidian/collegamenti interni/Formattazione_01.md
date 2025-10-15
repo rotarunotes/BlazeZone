@@ -7,6 +7,8 @@ ctrl + r per cambiare da lettura/scrittura
 ##### Titolo h5
 ###### Titolo h6
 
+
+---
  **grassetto** ctrl+b
 _corsivo_  ctrl + i
 ==testo da evidenziare== 
@@ -56,3 +58,11 @@ immagine esterna
 > Contents
 > ok 
 > basi
+> 
+~~~ 
+adsfdasfas
+~~~
+
+
+
+>dsafpash

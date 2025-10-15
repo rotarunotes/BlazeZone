@@ -26,7 +26,7 @@
 ![[esempio#^2d8eab|citazione]] 
 
 
-link con il punto eclamativo
+> link con il punto eclamativo
 
 # usare il ctrl per vedere un'anteprima dei link
 
