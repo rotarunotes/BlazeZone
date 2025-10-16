@@ -11,7 +11,7 @@ ctrl + r per cambiare da lettura/scrittura
 # FORMATO
 ## GRASSETTO ctrl+b
  **grassetto** 
-## CORSIVO __
+## CORSIVO
 _corsivo_ 
 ## EVIDENZIATO  ctrl + i   ==
 ==testo da evidenziare==
