@@ -2,9 +2,9 @@ up: [[]]
 #percorso
 #moc
 ___
-## Descrizione
+# Descrizione
 Di cosa parla questa MOC.
-## Contenuti
+# Contenuti
 - Inserisci
 - qua
 - i
