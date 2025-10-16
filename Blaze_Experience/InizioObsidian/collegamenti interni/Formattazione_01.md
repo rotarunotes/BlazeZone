@@ -7,62 +7,64 @@ ctrl + r per cambiare da lettura/scrittura
 ##### Titolo h5
 ###### Titolo h6
 
+---
+# FORMATO
+## GRASSETTO ctrl+b
+ **grassetto** 
+## CORSIVO __
+_corsivo_ 
+## EVIDENZIATO  ctrl + i   ==
+==testo da evidenziare==
+## TESTO BARRATO tilde - > alt + 1 2 6 
+~~testo barrato~~ 
+
+--- 
+# LINK
+## LINK INTERNO \[\[]]
+[[Obsidian]]
+## LINK ESTERNO \[]() 
+https://www.youtube.com/ link esterno
+[Wikipedia](https://www.wikipedia.org/)  link rinominato
 
 ---
- **grassetto** ctrl+b
-_corsivo_  ctrl + i
-==testo da evidenziare== 
+# IMMAGINI
+## INTERNA !\[\[]]
+![[Screenshot 2025-10-13 193542.png|immagine|200]]
 
-~~testo barrato~~ tilde - > alt + 1 2 6 
-
-[[Obsidian]]  link interno
-
-
-
-https://www.youtube.com/ link esterno
-
-[Wikipedia](https://www.wikipedia.org/)  link esterno
-
-
-immagine interna
-![[Screenshot 2025-10-13 193542.png|immagine]]
+## ESTERNA \!\[]()  
 immagine esterna
-![sacco](https://imgs.search.brave.com/hx6wdIZSuWSjyJfMc8dRD9YTvp9mrjvtkI5aUHF9Cu8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjIy/NDI2MjU3My9waG90/by9naWFjb21vLWFn/b3N0aW5pLWF0dGVu/ZHMtdGhlLW5hdGlv/bnMtbW90b3JjeWNs/ZS1ncmFuZC1wcml4/LWF0LWF1dG9kcm9t/by1pbnRlcm5hemlv/bmFsZS1kZWwuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPUtI/MlZPeVJHcjllUVVI/c2l2QXZhZEpaR0xs/Ym92ekJVWVFyQnpG/Qkd2cWs9)  
+![sacco|200](https://imgs.search.brave.com/hx6wdIZSuWSjyJfMc8dRD9YTvp9mrjvtkI5aUHF9Cu8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjIy/NDI2MjU3My9waG90/by9naWFjb21vLWFn/b3N0aW5pLWF0dGVu/ZHMtdGhlLW5hdGlv/bnMtbW90b3JjeWNs/ZS1ncmFuZC1wcml4/LWF0LWF1dG9kcm9t/by1pbnRlcm5hemlv/bmFsZS1kZWwuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPUtI/MlZPeVJHcjllUVVI/c2l2QXZhZEpaR0xs/Ym92ekJVWVFyQnpG/Qkd2cWs9)  
 
-> citazione
-> questa è una citazione
-
+---
+# LISTE
+## NORMALI -
 - lista 1
 	- lista 2
-- lista 3
-
-
-- [ ] lista chech     ctrl + l
-	- [ ] bella
-
+## LISTE CHECK BOC -\[  ] CTRL + L
+- [ ]      
+	- [ ] 
+## LISTE NUMERATE 1.
 1. bella li
 	1. gasi
-	2. gasi
-2. 
 
+---
+# TABELLA |   |    |     |     |
 
 | 3   | 3   |     |     |
 | --- | --- | --- | --- |
 | 3   | 3   |     |     |
 
-
 ---
-
-
-> [!NOTE]- bella
+# CITAZIONE >
+> citazione 
+> questa è una citazione 
+# CITAZIONE  \[!NOTE]
+> [!NOTE] bella
 > Contents
 > ok 
 > basi
-> 
-~~~ 
-adsfdasfas
-~~~
 
-
-
->dsafpash
+# CODICE  \`\`\`
+```python
+	python def hello(): print("Hello, world!")
+```

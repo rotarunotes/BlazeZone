@@ -1,0 +1,144 @@
+/*
+=================================
+Colori Personalizzati Titoli Obsidian
+=================================
+*/
+/* --- Colori per le Intestazioni (h1-h6) nel corpo della nota --- */
+
+/* Colore per H1 */
+.markdown-rendered h1,
+.cm-header.cm-header-1 {
+  color: #f06a52; /* Esempio: Tomato */
+}
+
+/* Colore per H2 */
+.markdown-rendered h2,
+.cm-header.cm-header-2 {
+  color: #fc9106; /* Esempio: Gold */
+}
+
+/* Colore per H3 */
+.markdown-rendered h3,
+.cm-header.cm-header-3 {
+  color: #fffc3c; /* Esempio: PaleGreen */
+}
+
+/* Colore per H4 */
+.markdown-rendered h4,
+.cm-header.cm-header-4 {
+  color: #35ca18; /* Esempio: SkyBlue */
+}
+
+/* Colore per H5 */
+.markdown-rendered h5,
+.cm-header.cm-header-5 {
+  color: #11ece1; /* Esempio: Plum */
+}
+
+/* Colore per H6 */
+.markdown-rendered h6,
+.cm-header.cm-header-6 {
+  color: #3598e9; /* Esempio: LightSteelBlue */
+}
+
+/*
+==================================================
+Colori Personalizzati per Formattazione del Testo
+==================================================
+*/
+
+/* --- Grassetto (Bold) --- */
+/* Si applica a **testo** o __testo__ */
+.markdown-rendered strong,
+.cm-strong {
+  color: #1288ac; /* Esempio: LightSalmon, un arancione chiaro */ 
+}
+
+/* --- Corsivo (Italic) --- */
+/* Si applica a *testo* o _testo_ */
+.markdown-rendered em,
+.cm-em {
+  color: var(--interactive-accent);; /* Esempio: PaleTurquoise, un azzurro-verde */
+}
+
+/* --- Testo Barrato (Strikethrough) --- */
+/* Si applica a ~~testo~~ */
+.markdown-rendered s,
+.cm-strikethrough {
+  color: var(--interactive-accent); /* Esempio: un grigio per non dare troppo fastidio */
+}
+
+/* --- Blocco di Citazione (Blockquote) --- */
+/* Si applica a > testo */
+.markdown-rendered blockquote,
+.cm-quote {
+  color: var(--interactive-accent); /* Colore del TESTO dentro la citazione */
+  border-left-color: var(--interactive-accent); /* Colore della BARRA a sinistra della citazione */
+}
+
+
+/*
+=================================================
+  STILE PERSONALIZZATO PER I LINK IN OBSIDIAN
+=================================================
+*/
+
+/* --- 1. Link Interni (a note esistenti) --- */
+/* Usa il colore principale del tema (accent color) */
+.cm-s-obsidian .cm-link,
+.markdown-preview-view .internal-link {
+  color: rgb(236, 130, 236); /* Colore principale del tema */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  font-weight: 500; /* Leggermente più grassetto del normale */
+  transition: all 0.2s ease-in-out; /* Aggiunge una transizione fluida */
+}
+
+/* --- Al passaggio del mouse sui Link Interni --- */
+.cm-s-obsidian .cm-link:hover,
+.markdown-preview-view .internal-link:hover {
+  color:  rgb(236, 130, 236); /* Colore hover del tema */
+  text-decoration: underline; /* Aggiunge la sottolineatura al passaggio del mouse */
+  text-decoration-thickness: 2px; /* Spessore della sottolineatura */
+}
+
+
+
+/* --- 2. Link Esterni (a siti web) --- 
+/* Li rende di un colore diverso e aggiunge un'icona */
+.cm-s-obsidian .cm-url,
+.markdown-preview-view .external-link {
+  color: rgb(236, 130, 236); /* Un colore secondario, spesso blu o viola */
+  font-style: italic; /* Li rende corsivi per distinguerli */
+}
+
+/* Aggiunge una piccola icona "freccia" dopo i link esterni */
+.markdown-preview-view .external-link::after {
+  font-size: 0.8em;
+  display: inline-block;
+  margin-left: 2px;
+  opacity: 0.7;
+}
+
+/* --- Al passaggio del mouse sui Link Esterni --- */
+.cm-s-obsidian .cm-url:hover,
+.markdown-preview-view .external-link:hover {
+  color: var(--interactive-accent-hover);
+  text-decoration: underline;
+}
+
+
+/* --- 3. Link Non Risolti (a note non create) --- */
+/* Li rende più discreti e tratteggiati */
+.cm-s-obsidian .cm-link.is-unresolved,
+.markdown-preview-view .internal-link.is-unresolved {
+  color: var(--text-muted); /* Colore grigio, poco invadente */
+  opacity: 0.7; /* Li rende leggermente trasparenti */
+  text-decoration: underline dotted 1px; /* Sottolineatura tratteggiata */
+}
+
+/* --- Al passaggio del mouse sui Link Non Risolti --- */
+.cm-s-obsidian .cm-link.is-unresolved:hover,
+.markdown-preview-view .internal-link.is-unresolved:hover {
+  opacity: 1; /* Rimuove la trasparenza */
+  color: var(--text-error); /* Li colora di rosso per indicare "mancante" */
+}

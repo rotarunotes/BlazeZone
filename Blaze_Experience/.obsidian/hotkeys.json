@@ -23,5 +23,13 @@
       ],
       "key": "S"
     }
+  ],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "E"
+    }
   ]
 }

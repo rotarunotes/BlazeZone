@@ -19,11 +19,11 @@
 
 # link su un blocco di tutte le note
 
-[[esempio#^a00754]]  //sintassi: "^^parola chiave", ^^ questo server per cercare in tutte le note
+[[esempio#^a00754]]  //sintassi: "^^parola chiave", ^^ questo serverper cercare in tutte le note
 
 # link su un citazione
 
-![[esempio#^2d8eab|citazione]] 
+![[Obsidian#^ce354a]] 
 
 
 > link con il punto eclamativo
