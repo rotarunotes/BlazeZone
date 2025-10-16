@@ -7,4 +7,4 @@ data:
 
 [[Obsidian]]
 
-[[Formattazione_01]]
+[[Formatting]]

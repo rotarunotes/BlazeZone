@@ -87,7 +87,7 @@ Colori Personalizzati per Formattazione del Testo
 /* Usa il colore principale del tema (accent color) */
 .cm-s-obsidian .cm-link,
 .markdown-preview-view .internal-link {
-  color: rgb(236, 130, 236); /* Colore principale del tema */
+  color: rgb(184, 57, 184); /* Colore principale del tema */
   text-decoration: none; /* Rimuove la sottolineatura */
   font-weight: 500; /* Leggermente più grassetto del normale */
   transition: all 0.2s ease-in-out; /* Aggiunge una transizione fluida */
@@ -111,13 +111,6 @@ Colori Personalizzati per Formattazione del Testo
   font-style: italic; /* Li rende corsivi per distinguerli */
 }
 
-/* Aggiunge una piccola icona "freccia" dopo i link esterni */
-.markdown-preview-view .external-link::after {
-  font-size: 0.8em;
-  display: inline-block;
-  margin-left: 2px;
-  opacity: 0.7;
-}
 
 /* --- Al passaggio del mouse sui Link Esterni --- */
 .cm-s-obsidian .cm-url:hover,

@@ -1,5 +1,9 @@
-ctrl + r per cambiare da lettura/scrittura
-
+Data: 2025-10-16
+[[Setup_Archive/README|Setup_Archive]]
+#Setup_Archive/Obsidian_Base
+___
+CTRL + r per cambiare da lettura/scrittura
+___
 # Titolo h1
 ## Titolo h2
 ### Titolo h3
@@ -7,64 +11,66 @@ ctrl + r per cambiare da lettura/scrittura
 ##### Titolo h5
 ###### Titolo h6
 
----
-# FORMATO
-## GRASSETTO ctrl+b
+___
+# Formato
+## Grassetto | Ctrl + b
  **grassetto** 
-## CORSIVO
+## Corsivo | __
 _corsivo_ 
-## EVIDENZIATO  ctrl + i   ==
+## Evidenziato  | Ctrl + i   ==
 ==testo da evidenziare==
-## TESTO BARRATO tilde - > alt + 1 2 6 
+## Testo Barrato tilde | alt + 1 2 6 
 ~~testo barrato~~ 
 
---- 
-# LINK
-## LINK INTERNO \[\[]]
-[[Obsidian]]
-## LINK ESTERNO \[]() 
+___
+# Link
+## Link Interno | \[\[]]
+[[Obsidian|nome]]
+## Link Esterno | \[]() 
 https://www.youtube.com/ link esterno
 [Wikipedia](https://www.wikipedia.org/)  link rinominato
 
----
-# IMMAGINI
-## INTERNA !\[\[]]
+___
+# Immagini
+## Interna | !\[\[]]
 ![[Screenshot 2025-10-13 193542.png|immagine|200]]
 
-## ESTERNA \!\[]()  
+## Esterna | \!\[]()  
 immagine esterna
 ![sacco|200](https://imgs.search.brave.com/hx6wdIZSuWSjyJfMc8dRD9YTvp9mrjvtkI5aUHF9Cu8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjIy/NDI2MjU3My9waG90/by9naWFjb21vLWFn/b3N0aW5pLWF0dGVu/ZHMtdGhlLW5hdGlv/bnMtbW90b3JjeWNs/ZS1ncmFuZC1wcml4/LWF0LWF1dG9kcm9t/by1pbnRlcm5hemlv/bmFsZS1kZWwuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPUtI/MlZPeVJHcjllUVVI/c2l2QXZhZEpaR0xs/Ym92ekJVWVFyQnpG/Qkd2cWs9)  
 
----
-# LISTE
-## NORMALI -
+___
+# Liste
+## Normali | -
 - lista 1
 	- lista 2
-## LISTE CHECK BOC -\[  ] CTRL + L
+##  Check Box  | -\[  ] CTRL + L
 - [ ]      
 	- [ ] 
-## LISTE NUMERATE 1.
+## Numerate | 1.
 1. bella li
 	1. gasi
 
----
-# TABELLA |   |    |     |     |
+___
+# Tabella |   |    |     |     |
 
 | 3   | 3   |     |     |
 | --- | --- | --- | --- |
 | 3   | 3   |     |     |
 
 ---
-# CITAZIONE >
+# Citazione | >
 > citazione 
 > questa è una citazione 
-# CITAZIONE  \[!NOTE]
+# Citazione |  \[!NOTE]
 > [!NOTE] bella
 > Contents
 > ok 
 > basi
 
-# CODICE  \`\`\`
+# Codice |  \`\`\`
 ```python
 	python def hello(): print("Hello, world!")
 ```
+
+ 
