@@ -1,5 +1,5 @@
 Data: 2025-10-16
-[[README#Start_Index|Start_Index]]
+[Start_Index](README.md#Start_Index)
 #Setup_Archive
 ___
 # Setup_Archive

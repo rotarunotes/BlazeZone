@@ -24,9 +24,9 @@ _corsivo_
 
 ___
 # Link
-## Link Interno | \[\[]]
+## Link interno | \[\[]]
 [[Obsidian|nome]]
-## Link Esterno | \[]() 
+## Link esterno | \[]() 
 https://www.youtube.com/ link esterno
 [Wikipedia](https://www.wikipedia.org/)  link rinominato
 

@@ -135,3 +135,7 @@ Colori Personalizzati per Formattazione del Testo
   opacity: 1; /* Rimuove la trasparenza */
   color: var(--text-error); /* Li colora di rosso per indicare "mancante" */
 }
+
+.search-result-file-match {
+  background-color: transparent;
+}
