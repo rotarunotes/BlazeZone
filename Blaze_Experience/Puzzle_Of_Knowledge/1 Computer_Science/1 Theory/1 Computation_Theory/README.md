@@ -6,10 +6,9 @@ ___
 Di cosa parla questa MOC.
 ___
 # Indice
-- Inserisci
-- qua
-- i
-- contenuti
+- [Automata_Theory](Puzzle_Of_Knowledge/1%20Computer_Science/1%20Theory/1%20Computation_Theory/1%20Automata_Theory/README.md)
+- [Computability_Theory](Puzzle_Of_Knowledge/1%20Computer_Science/1%20Theory/1%20Computation_Theory/2%20Computability_Theory/README.md)
+- [Complexity_Theory](Puzzle_Of_Knowledge/1%20Computer_Science/1%20Theory/1%20Computation_Theory/3%20Complexity_Theory/README.md)
 ___
 
  

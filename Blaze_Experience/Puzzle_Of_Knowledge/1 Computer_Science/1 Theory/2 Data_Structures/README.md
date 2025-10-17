@@ -6,10 +6,6 @@ ___
 Di cosa parla questa MOC.
 ___
 # Indice
-- Inserisci
-- qua
-- i
-- contenuti
 ___
 
  
