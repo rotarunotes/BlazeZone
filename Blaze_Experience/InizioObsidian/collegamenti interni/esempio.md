@@ -1,6 +1,5 @@
 # esempio di titolo
 bella domanda partiamo col fatto che sacco deve andare a cagare sempre
-
 # esempio di blocco
 
 Tipicamente un giornale cartaceo è fatto di fogli non rilegati. In questo senso si distingue dalla [rivista](https://it.wikipedia.org/wiki/Rivista). Anche la carta da giornale (non patinata) è diversa da quella di una rivista (patinata). Il numero di pagine di cui si compone un giornale viene detto _foliazione_. Sono esistiti giornali composti di un solo foglio. Ciò è accaduto in momenti particolari della storia del [XX secolo](https://it.wikipedia.org/wiki/XX_secolo "XX secolo"). Ad  ^a00754
