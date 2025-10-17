@@ -1,5 +1,5 @@
 Data: 2025-10-17
-[Blaze_Experience](Blaze_Experience/README.md)
+[Start_Index](README.md#start_index)
 #Red_Lab
 ___
 # Red_Lab

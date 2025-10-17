@@ -1,5 +1,5 @@
 Data: 2025-10-16
-[Blaze_Experience](Blaze_Experience/README.md)
+[Start_Index](README.md#start_index)
 #Setup_Archive
 ___
 # Setup_Archive

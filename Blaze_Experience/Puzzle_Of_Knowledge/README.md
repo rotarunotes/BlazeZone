@@ -1,5 +1,5 @@
 Data: 2025-10-17
-[Blaze_Experience](Blaze_Experience/README.md)
+[Start_Index](README.md#start_index)
 #Puzzle_Of_Knowledge
 ___
 # Puzzle_Of_Knowledge
