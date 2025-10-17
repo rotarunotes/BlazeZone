@@ -1,5 +1,5 @@
 Data: 2025-10-17
-[[README#Start_Index|Start_Index]]
+[setup_archive](README.md#setup_archive)
 #Setup_Archive/Obsidian_Base
 ___
 # Obsidian_Base

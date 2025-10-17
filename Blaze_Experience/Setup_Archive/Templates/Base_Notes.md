@@ -1,5 +1,5 @@
 Data: <% tp.date.now() %>
-[[nomeUp/README|nomeUp]]
+["NomeUp"]("nomeUp"/README.md)
 #<% tp.file.folder(true) %>
 ___
 # Titolo 1

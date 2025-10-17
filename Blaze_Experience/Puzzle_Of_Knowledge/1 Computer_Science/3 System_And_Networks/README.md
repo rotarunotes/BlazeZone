@@ -1,5 +1,5 @@
 Data: 2025-10-17
-[[Puzzle_Of_Knowledge/1 Computer_Science/README|Computer_Science]]
+[Computer_Science](Puzzle_Of_Knowledge/1%20Computer_Science/README.md)
 #Puzzle_Of_Knowledge/1Computer_Science/3System_And_Networks
 ___
 # System_And_Networks

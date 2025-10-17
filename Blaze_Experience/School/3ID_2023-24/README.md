@@ -1,5 +1,5 @@
 Data: 2025-10-17
-[[School/README|School]]
+[School](School/README.md)
 #School/3ID_2023-24
 ___
 # 3ID_2023-24

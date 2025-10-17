@@ -1,5 +1,5 @@
 Data: <% tp.date.now() %>
-[[README#Start_Index|Start_Index]]
+[Start_Index](README.md#start_index)
 #<% tp.file.folder(true) %>
 ___
 # <% tp.file.folder() %>

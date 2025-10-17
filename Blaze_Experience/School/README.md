@@ -1,5 +1,5 @@
 Data: 2025-10-17
-[[README#Start_Index|Start_Index]]
+[Start_Index](README.md#start_index)
 #School
 ___
 # School
