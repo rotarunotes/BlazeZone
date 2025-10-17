@@ -1,3 +1,10 @@
+ Data: 2025-10-17
+[Blaze_Experience](Blaze_Experience/README.md)
+#ParteTuttoDaQua
+___
+# Blaze_Experience
+
+___
 # Start_Index
 - [Puzzle_Of_Knowledge](Puzzle_Of_Knowledge/README.md)
 	- [Computer_Science](Puzzle_Of_Knowledge/1%20Computer_Science/README.md)
@@ -19,5 +26,3 @@
 - [setup_archive](README.md#setup_archive)
 	- [Obsidian_Base](Obsidian_Base/README.md)
 ___
-
- 
