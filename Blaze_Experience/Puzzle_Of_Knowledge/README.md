@@ -1,5 +1,5 @@
 Data: 2025-10-17
-[Start_Index](README.md#start_index)
+[Start_Index](../README.md)
 #Puzzle_Of_Knowledge
 ___
 # Puzzle_Of_Knowledge

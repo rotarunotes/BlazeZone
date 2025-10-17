@@ -1,5 +1,5 @@
  Data: 2025-10-17
-[Blaze_Experience](Blaze_Experience/README.md)
+[Blaze_Experience](../README.md)
 #ParteTuttoDaQua
 ___
 # Blaze_Experience
@@ -28,3 +28,5 @@ ___
 	-  [Plugin](Setup_Archive/Plugin/README.md)
 	-  [Rules](Setup_Archive/Rules/README.md)
 ___
+
+
