@@ -25,4 +25,6 @@ ___
 	- [5ID_2025-26](School/5ID_2025-26/README.md)
 - [Setup_Archive](Setup_Archive/README.md)
 	- [Obsidian_Base](Setup_Archive/Obsidian_Base/README.md)
+	-  [Plugin](Setup_Archive/Plugin/README.md)
+	-  [Rules](Setup_Archive/Rules/README.md)
 ___
