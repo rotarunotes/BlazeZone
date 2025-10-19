@@ -2,7 +2,7 @@ Data: 2025-10-16
 [[Setup_Archive/README|Setup_Archive]]
 #Setup_Archive/Obsidian_Base
 ___
-CTRL + r per cambiare da lettura/scrittura
+CTRL + e per cambiare da lettura/scrittura
 ___
 # Titolo h1
 ## Titolo h2
@@ -25,7 +25,7 @@ _corsivo_
 ___
 # Link
 ## Link interno | \[\[]]
-[[Obsidian|nome]]
+[[Setup_Archive/Obsidian_Base/README|nome]]
 ## Link esterno | \[]() 
 https://www.youtube.com/ link esterno
 [Wikipedia](https://www.wikipedia.org/)  link rinominato
