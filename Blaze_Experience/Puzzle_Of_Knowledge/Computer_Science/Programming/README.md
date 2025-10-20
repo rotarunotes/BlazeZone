@@ -1,5 +1,5 @@
 Data: 2025-10-17
-[Computer_Science](Puzzle_Of_Knowledge/Computer_Science/README.md)
+[Computer_Science](../README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming
 ___
 # Programming

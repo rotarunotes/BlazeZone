@@ -1,5 +1,5 @@
 Data: 2025-10-17
-[Computation_Theory](Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/README.md)
+[Computation_Theory](../README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/Automata_Theory
 ___
 # Automata_Theory

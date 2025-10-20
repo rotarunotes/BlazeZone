@@ -1,5 +1,5 @@
 Data: 2025-10-17
-[Networking](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/README.md)
+[Networking](../README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Subnetting_Practice
 ___
 # Subnetting_Practice

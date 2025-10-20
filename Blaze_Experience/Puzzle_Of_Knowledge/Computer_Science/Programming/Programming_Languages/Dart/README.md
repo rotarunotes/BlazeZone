@@ -1,5 +1,5 @@
 Data: 2025-10-17
-[Programming_Languages](Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md)
+[Programming_Languages](../README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
 ___
 # Dart

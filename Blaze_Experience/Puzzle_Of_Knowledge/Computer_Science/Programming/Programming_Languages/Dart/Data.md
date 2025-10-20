@@ -1,5 +1,5 @@
 Data: 2025-10-19
-[Dart](Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md)
+[Dart](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
 ___
 # Variabili
