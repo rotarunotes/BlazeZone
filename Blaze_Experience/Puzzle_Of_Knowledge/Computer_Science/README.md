@@ -1,8 +1,8 @@
 Data: 2025-10-17
-[Start_Index](../README.md)
-#Puzzle_Of_Knowledge
+[Puzzle_Of_Knowledge](../README.md)
+#Puzzle_Of_Knowledge/Computer_Science
 ___
-# Puzzle_Of_Knowledge
+# Computer_Science
 Di cosa parla questa MOC.
 ___
 # Indice

@@ -1,7 +1,8 @@
 Data: 2025-10-16
-[[Setup_Archive/README|Setup_Archive]]
+[Obsidian_Base](Setup_Archive/Obsidian_Base/README.md)
 #Setup_Archive/Obsidian_Base
 ___
+
 CTRL + e per cambiare da lettura/scrittura
 ___
 # Titolo h1

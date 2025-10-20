@@ -1,133 +1,43 @@
 /*
-=================================
-Colori Personalizzati Titoli Obsidian
-=================================
+==============================
+Colori Personalizzati Obsidian
+==============================
 */
-/* --- Colori per le Intestazioni (h1-h6) nel corpo della nota --- */
 
-/* Colore per H1 */
-.markdown-rendered h1,
-.cm-header.cm-header-1 {
-  color: #f06a52; /* Esempio: Tomato */
+/* ======= Titoli H1-H6 ======= */
+.markdown-rendered h1, .cm-header.cm-header-1 { color: #f06a52; }
+.markdown-rendered h2, .cm-header.cm-header-2 { color: #fc9106; }
+.markdown-rendered h3, .cm-header.cm-header-3 { color: #fffc3c; }
+.markdown-rendered h4, .cm-header.cm-header-4 { color: #35ca18; }
+.markdown-rendered h5, .cm-header.cm-header-5 { color: #11ece1; }
+.markdown-rendered h6, .cm-header.cm-header-6 { color: #2744e7; }
+
+/* ======= Formattazione Testo ======= */
+.markdown-rendered em, .cm-em {
+  color: #b11a60; /* Corsivo */
 }
 
-/* Colore per H2 */
-.markdown-rendered h2,
-.cm-header.cm-header-2 {
-  color: #fc9106; /* Esempio: Gold */
-}
+/* ======= Colori Link ======= */
 
-/* Colore per H3 */
-.markdown-rendered h3,
-.cm-header.cm-header-3 {
-  color: #fffc3c; /* Esempio: PaleGreen */
-}
-
-/* Colore per H4 */
-.markdown-rendered h4,
-.cm-header.cm-header-4 {
-  color: #35ca18; /* Esempio: SkyBlue */
-}
-
-/* Colore per H5 */
-.markdown-rendered h5,
-.cm-header.cm-header-5 {
-  color: #11ece1; /* Esempio: Plum */
-}
-
-/* Colore per H6 */
-.markdown-rendered h6,
-.cm-header.cm-header-6 {
-  color: #2744e7; /* Esempio: LightSteelBlue */
-}
 
 /*
-==================================================
-Colori Personalizzati per Formattazione del Testo
-==================================================
+==============================
+Colori Personalizzati Link
+==============================
 */
 
-/* --- Grassetto (Bold) --- */
-/* Si applica a **testo** o __testo__ */
-.markdown-rendered strong,
-.cm-strong {
-  color: #B4BEFE; /* Azzurro chiaro per il grassetto */
-}
+body {
+  /* --- LINK INTERNI --- */
+  /* Imposta i link interni al colore #94f1e7 */
+  --link-color: #94f1e7;
+  
+  /* Imposta l'hover allo STESSO colore */
+  --link-color-hover: #94f1e7;
 
-/* --- Corsivo (Italic) --- */
-/* Si applica a *testo* o _testo_ */
-.markdown-rendered em,
-.cm-em {
-  color: #66d9ef; /* Azzurro chiaro per il corsivo */
-}
-
-/* --- Testo Barrato (Strikethrough) --- */
-/* Si applica a ~~testo~~ */
-.markdown-rendered s,
-.cm-strikethrough {
-  color: #999999 !important; /* Grigio medio per il barrato */
-}
-
-/* --- Blocco di Citazione (Blockquote) --- */
-/* Si applica a > testo */
-.markdown-rendered blockquote,
-.cm-quote {
-  color: #66d9ef; /* Colore del testo nella citazione */
-  border-left-color: #66d9ef; /* Colore della barra laterale della citazione */
-}
-
-/*
-=================================================
-  STILE PERSONALIZZATO PER I LINK IN OBSIDIAN
-=================================================
-*/
-
-/* --- 1. Link Interni (a note esistenti) --- */
-.cm-s-obsidian .cm-link,
-.markdown-preview-view .internal-link {
-  color: #94f1e7; /* Viola acceso */
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s ease-in-out;
-}
-
-/* Hover sui Link Interni */
-.cm-s-obsidian .cm-link:hover,
-.markdown-preview-view .internal-link:hover {
-  color: rgb(236, 130, 236); /* Viola chiaro */
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-}
-
-/* --- 2. Link Esterni (a siti web) --- */
-.cm-s-obsidian .cm-url,
-.markdown-preview-view .external-link {
-  color: rgb(236, 130, 236); /* Viola chiaro */
-  font-style: italic;
-}
-/* === Link Interni (solo in preview) === */
-.markdown-rendered .internal-link {
-  color: #94f1e7; /* Azzurro chiaro */
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s ease-in-out;
-}
-
-.markdown-rendered .internal-link:hover {
-  color: #ec82ec; /* Viola chiaro */
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-}
-
-/* === Link Esterni (solo in preview) === */
-.markdown-rendered .external-link {
-  color: #ec82ec; /* Viola chiaro */
-  font-style: italic;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
-
-.markdown-rendered .external-link:hover {
-  color: #00bcd4; /* Azzurro vivido */
-  text-decoration: underline;
+  /* --- LINK ESTERNI --- */
+  /* Imposta i link esterni al colore #ec82ec */
+  --link-external-color: #ec82ec;
+  
+  /* Imposta l'hover allo STESSO colore */
+  --link-external-color-hover: #ec82ec;
 }

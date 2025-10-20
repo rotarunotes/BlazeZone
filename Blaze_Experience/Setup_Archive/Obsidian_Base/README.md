@@ -6,10 +6,9 @@ ___
 Di cosa parla questa MOC.
 ___
 # Indice
-- Inserisci
-- qua
-- i
-- contenuti
+- [Formatting](Setup_Archive/Obsidian_Base/Formatting)
+- [Links_Obsidian](Setup_Archive/Obsidian_Base/Links_Obsidian)
+- [Example_Of_Text](Setup_Archive/Obsidian_Base/Example_Of_Text)
 ___
 
  
