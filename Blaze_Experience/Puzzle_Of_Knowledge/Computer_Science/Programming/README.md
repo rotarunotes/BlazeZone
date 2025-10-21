@@ -6,8 +6,8 @@ ___
 Di cosa parla questa MOC.
 ___
 # Indice
-- [Programming_Languages](Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md)
-- [Terminal_And_Shell](Puzzle_Of_Knowledge/Computer_Science/Programming/Terminal_And_Shell/README.md)
+- [Programming_Languages](Programming_Languages/README.md)
+- [Terminal_And_Shell](Terminal_And_Shell/README.md)
 ___
 
  
