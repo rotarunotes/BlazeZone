@@ -21,7 +21,7 @@ ___
 - [Data](Data.md)
 - [Function](Function.md)
 - [Class](Class.md)
-- [Future](Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Future.md)
+- [Future](/Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Future.md)
 ___
 
  
