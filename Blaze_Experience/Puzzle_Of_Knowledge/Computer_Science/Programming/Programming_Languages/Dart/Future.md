@@ -31,7 +31,7 @@ Future<void> miaFunzione() async {
 | Funzione                     | Ritorno                                         |
 | :--------------------------- | :---------------------------------------------- |
 | void miaFunzione()           | Ritorna **niente** (sincrono).                  |
-| Future\<void\> miaFunzione() | Ritorna una **promessa di niente** (sincrono).  |
+| Future\<void\> miaFunzione() | Ritorna una **promessa di niente** asincrono.   |
 | void miaFunzione() **async** | Ritorna una **promessa di niente** (asincrono). |
 ##### Return fantasma
 
