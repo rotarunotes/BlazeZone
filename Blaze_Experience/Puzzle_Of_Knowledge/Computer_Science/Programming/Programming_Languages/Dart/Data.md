@@ -1,6 +1,5 @@
 Data: 2025-10-19
 [Dart](./README.md)
-[Programming](Puzzle_Of_Knowledge/Computer_Science/Programming/README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
 ___
 # Variabili
@@ -162,3 +161,4 @@ var boh = {};
 // È come scrivere
 Map<dynamic, dynamic> boh = {};
 ```
+

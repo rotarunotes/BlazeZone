@@ -19,8 +19,10 @@ Le operazioni asincrone  vengono eseguite in background. Al loro completamento, 
 ___
 # Indice
 - [Data](Data.md)
+- [Statements](Statements.md)
 - [Function](Function.md)
 - [Class](Class.md)
+- [Libraries](Libraries.md)
 - [Future](Future.md)
 ___
 

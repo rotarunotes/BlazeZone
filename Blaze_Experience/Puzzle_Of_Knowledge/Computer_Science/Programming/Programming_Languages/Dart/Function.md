@@ -186,4 +186,18 @@ saluta("Luca", "Buongiorno"); // Output: Buongiorno, Luca
 ```
 
 ___
- 
+# Funzioni
+
+
+
+
+## .ceil()
+- arrotonda un double al primo intero superiore
+``` Dart
+double x = 3.1;
+print(x.ceil());
+```
+
+**Output:**
+``` 
+4

@@ -1,2 +1,2 @@
-- sistemare i link
-- creare un template che funzioni
+- aggiungere al plus di dart i print 
+- aggiungere al plus if

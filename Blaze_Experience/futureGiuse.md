@@ -247,10 +247,10 @@ void main() async {
 }
 ```
 
-| Domanda | Risposta |
-| :--- | :--- |
-| **Esaminare dal punto di vista matematico il crivello** | Il codice **verifica la primalità di un numero**. L'ottimizzazione chiave è che per la verifica è sufficiente testare la divisibilità fino alla **radice quadrata** di `n` (`mysqrt.ceil()`), non fino a `n-1`. |
-| **`Future.forEach` cosa rappresenta?** | **`Future.forEach`** è un metodo utile per eseguire un'operazione asincrona su ogni elemento di una lista e **attendere il completamento di tutte le operazioni**. Simile a un loop `for` che usa `await`, ma è specifico per le operazioni asincrone. |
+| Domanda                                                 | Risposta                                                                                                                                                                                                                                               |
+| :------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Esaminare dal punto di vista matematico il crivello** | Il codice **verifica la primalità di un numero**. L'ottimizzazione chiave è che per la verifica è sufficiente testare la divisibilità fino alla **radice quadrata** di `n` (`mysqrt.ceil()`), non fino a `n-1`.                                        |
+| **`Future.forEach` cosa rappresenta?**                  | **`Future.forEach`** è un metodo utile per eseguire un'operazione asincrona su ogni elemento di una lista e **attendere il completamento di tutte le operazioni**. Simile a un loop `for` che usa `await`, ma è specifico per le operazioni asincrone. |
 
 -----
 

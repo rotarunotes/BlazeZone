@@ -20,7 +20,7 @@ ___
 					- [Data](Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Data.md)
 					- [Function](Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Function.md)
 					- [Class](Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Class.md)
-					- [Future](Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Furure.md)
+					- [Future](Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Future.md)
 			- [Terminal_And_Shell](Puzzle_Of_Knowledge/Computer_Science/Programming/Terminal_And_Shell/README.md)
 		- [System_And_Networks](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md)
 			- [Networking](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/README.md)
