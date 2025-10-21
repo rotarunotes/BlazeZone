@@ -166,7 +166,7 @@ after 5 seconds
 
 | Modifica/Domanda                                   | Risposta                                                                                                                                                 |
 | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Sostituisci il tipo di ritorno con `void`**      | Se si forza il tipo di ritorno a `void`, con la parolaccia chiave                                                                                        |
+| **Sostituisci il tipo di ritorno con `void`**      | Se si forza il tipo di ritorno a `void`, con la parola chiave  `async`,  automaticamente la funzione ritorna future<`void`>                              |
 | **Tipo di ritorno di una computazione asincrona?** | È sempre un **`Future<T>`**, `T` è il tipo del valore che la funzione è destinata a restituire. **`Future<void>`** se la funzione non restituisce nulla. |
 | **Tempi uguali (es. 3s e 3s)?**                    | Se i tempi sono uguali, le chiamate all'interno dell'event queue verranno eseguite nell'ordine in cui sono state programmate.                            |
 
