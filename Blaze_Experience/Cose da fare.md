@@ -1,0 +1,2 @@
+- sistemare i link
+- creare un template che funzioni

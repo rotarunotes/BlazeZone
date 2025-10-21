@@ -3,7 +3,7 @@ Data: 2025-10-19
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
 ___
 # Future \<T\>
-- È definito come un **asynchronous computation**. nel  momento in cui viene attivata una tale computaziene viene generato un **evento** che che, posto nella **event queue**, verrà gestito dall'**event loop**
+- È definito come un **asynchronous computation**. nel  momento in cui viene attivata una tale computazione viene generato un **evento** che, posto nella **event queue**, verrà gestito dall'**event loop**
 
 ___
 # Teoria
@@ -31,7 +31,7 @@ Future<void> miaFunzione() async {
 | Funzione                     | Ritorno                                         |
 | :--------------------------- | :---------------------------------------------- |
 | void miaFunzione()           | Ritorna **niente** (sincrono).                  |
-| Future\<void\> miaFunzione() | Ritorna una **promessa di niente** (sincrono).  |
+| Future\<void\> miaFunzione() | Ritorna una **promessa di niente** (asincrono). |
 | void miaFunzione() **async** | Ritorna una **promessa di niente** (asincrono). |
 ##### Return fantasma
 
@@ -166,7 +166,7 @@ after 5 seconds
 
 | Modifica/Domanda                                   | Risposta                                                                                                                                                 |
 | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Sostituisci il tipo di ritorno con `void`**      | Se si forza il tipo di ritorno a `void`, si ottiene un errore perché una funzione `async` **deve** ritornare un `Future`.                                |
+| **Sostituisci il tipo di ritorno con `void`**      | Se si forza il tipo di ritorno a `void`, con la parola chiave  `async`,  automaticamente la funzione ritorna future<`void`>                              |
 | **Tipo di ritorno di una computazione asincrona?** | È sempre un **`Future<T>`**, `T` è il tipo del valore che la funzione è destinata a restituire. **`Future<void>`** se la funzione non restituisce nulla. |
 | **Tempi uguali (es. 3s e 3s)?**                    | Se i tempi sono uguali, le chiamate all'interno dell'event queue verranno eseguite nell'ordine in cui sono state programmate.                            |
 
