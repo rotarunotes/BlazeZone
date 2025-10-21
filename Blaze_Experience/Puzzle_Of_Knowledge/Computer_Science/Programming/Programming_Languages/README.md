@@ -12,7 +12,7 @@ Ogni **linguaggio di programmazione** segue le sue regole dette **sintassi** e *
 
 ___
 # Indice
-- [Dart](Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md)
+- [Dart](README.md)
 ___
 
  
