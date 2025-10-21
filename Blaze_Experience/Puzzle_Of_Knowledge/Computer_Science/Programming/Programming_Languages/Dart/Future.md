@@ -3,7 +3,7 @@ Data: 2025-10-19
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
 ___
 # Future \<T\>
-- È definito come un **asynchronous computation**. nel  momento in cui viene attivata una tale computaziene viene generato un **evento** che che, posto nella **event queue**, verrà gestito dall'**event loop**
+- È definito come un **asynchronous computation**. nel  momento in cui viene attivata una tale computazione viene generato un **evento** che che, posto nella **event queue**, verrà gestito dall'**event loop**
 
 ___
 # Teoria
