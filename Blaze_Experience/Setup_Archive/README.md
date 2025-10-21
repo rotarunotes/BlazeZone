@@ -7,8 +7,8 @@ Di cosa parla questa MOC.
 ___
 # Indice
 - [Obsidian_Base](Setup_Archive/Obsidian_Base/README.md)
-- [Plugin](Setup_Archive/Plugin/README.md)
-- [Rules](Setup_Archive/Rules/README.md)
+- [Plugin](Plugin/README.md)
+- [Rules](Rules/README.md)
 ___
 
  
