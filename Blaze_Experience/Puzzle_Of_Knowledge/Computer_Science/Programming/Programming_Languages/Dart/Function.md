@@ -187,12 +187,21 @@ saluta("Luca", "Buongiorno"); // Output: Buongiorno, Luca
 
 ___
 # Funzioni
-
-
-
-
+## print();
+- Funzione di stampa
+``` Dart
+String nome = "Mario";
+int eta = 30;
+double altezza = 1.75;
+// Variabili semplici con $
+print("Ciao, il mio nome è $nome e ho $eta anni.");
+// Espressioni complesse con ${...}
+print("Il prossimo anno avrò ${eta + 1} anni.");
+// Chiamata a metodi o proprietà di un oggetto
+print("Il mio nome in maiuscolo è ${nome.toUpperCase()}.");
+```
 ## .ceil()
-- arrotonda un double al primo intero superiore
+- Arrotonda un double al primo intero superiore
 ``` Dart
 double x = 3.1;
 print(x.ceil());
