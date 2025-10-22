@@ -27,7 +27,7 @@ ___
 				- [Network_Protocols](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md)
 					- [ARP](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/ARP.md)
 					- [DHCP](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DHCP.md)
-					- [DNS](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DNS/README.md)
+					- [DNS](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DNS.md)
 				- [Router_Configuration](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Router_Configuration/README.md)
 				- [Subnetting_Practice](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/README.md)
 			- [Systems_Theory](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/README.md)
