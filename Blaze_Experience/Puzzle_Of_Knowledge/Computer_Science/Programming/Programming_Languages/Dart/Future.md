@@ -307,6 +307,7 @@ done
 
 - **Commento:** L'uso di `await` in sequenza fa sì che **ogni operazione asincrona debba completarsi prima che la successiva possa iniziare**.
 - **const** significa "costante a tempo di compilazione".  crea questo oggetto **una sola volta** quando compila il programma e lo **memorizza.** Ogni volta che la funzione **myAsync** viene chiamata, riutilizza sempre quello stesso identico oggetto **Duration** già pronto in memoria.
+- si può omettere **async** nella funzione myAsync, perché la funzione non utilizza**await** e ritorna già il future.
 ### es007: Un Esempio di Sincronizzazione (Approccio Parallelo)
 
 ```dart
