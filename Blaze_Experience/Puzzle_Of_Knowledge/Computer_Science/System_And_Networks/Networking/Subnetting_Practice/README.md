@@ -6,10 +6,8 @@ ___
 Di cosa parla questa MOC.
 ___
 # Indice
-- Inserisci
-- qua
-- i
-- contenuti
+- [Subnetting_IPv4](Subnetting_IPv4.md)
+
 ___
 
  

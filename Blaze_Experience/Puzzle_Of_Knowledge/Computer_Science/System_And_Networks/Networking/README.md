@@ -6,10 +6,7 @@ ___
 Di cosa parla questa MOC.
 ___
 # Indice
-- Inserisci
-- qua
-- i
-- contenuti
+- [Subnetting_Practice](Subnetting_Practice/README.md)
 ___
 
  
