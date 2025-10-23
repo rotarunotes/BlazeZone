@@ -2,6 +2,21 @@ Data: 2025-10-22
 [Network_Protocols](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols
 ___
+Video: https://www.youtube.com/watch?v=T_RG-EyeIrc
+
+# Index
+- [[#Dynamic Host Configuration Protocol]]
+- [[#Lease]]
+- [[#Storia: L'eredità di BOOTP]]
+- [[#Funzionalità Principali]]
+- [[#Modalità di Assegnazione]]
+- [[#Vantaggi del DHCP]]
+- [[#Architettura e Funzionamento]]
+- [[#Nota sul Mobile IP]]
+- [[#Sequenza del Processo DHCP (7 Fasi)]]
+- [[#Riepilogo]]
+
+___
 # Dynamic Host Configuration Protocol
 
 Il **DHCP** è il principale protocollo per la configurazione **automatica** degli host su una rete IP.
@@ -14,7 +29,13 @@ Permettere a un server di assegnare **dinamicamente**:
 - Altri parametri di rete
 
 Le assegnazioni sono temporanee, regolate da un periodo chiamato **lease (affitto)**.
-
+___
+# Lease
+**noleggio a tempo** di un indirizzo IP. ⏱️
+- Il router (server DHCP) "presta" un IP a un dispositivo (PC, telefono) per un periodo fisso (es. 24 ore).
+- Il dispositivo deve periodicamente **rinnovare** questo noleggio per tenerlo.
+- Se il dispositivo si scollega e il lease **scade**, l'IP torna libero e può essere "riciclato" per un nuovo dispositivo.
+Serve a **non sprecare indirizzi IP** e a gestirli automaticamente.
 ---
 # Storia: L'eredità di BOOTP
 
@@ -33,7 +54,6 @@ DHCP è un’evoluzione del protocollo **BOOTP** (Bootstrap Protocol).
 **Limiti di BOOTP**:
 - Nessuna gestione dinamica degli IP
 - Non adatto a dispositivi mobili (es. Wi-Fi)
-- 
 ---
 # Funzionalità Principali
 ## Cosa fornisce un server DHCP?

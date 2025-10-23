@@ -2,6 +2,22 @@ Data: 2025-10-22
 [Network_Protocols](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols
 ___
+Video: https://www.youtube.com/watch?v=-K3n2W1FmrQ
+
+# Index
+- [[#Domain Name System]]
+- [[#Le 3 Macro Componenti del DNS]]
+- [[#Domain Name Space (Spazio dei Nomi)]]
+- [[#Name Server]]
+- [[#Resolver (Client DNS)]]
+- [[#Processo di Risoluzione DNS]]
+- [[#Vantaggi del DNS]]
+- [[#Formato Pacchetto DNS]]
+- [[#Resource Record (RR)]]
+- [[#Tipi Comuni di Record DNS]]
+- [[#DNS Inverso (Reverse DNS)]]
+
+___
 # Domain Name System
 
 Il **DNS** è un sistema fondamentale per Internet che consente di associare nomi di dominio (es. `google.com`) ai rispettivi indirizzi IP (es. `142.250.184.14`).
@@ -29,31 +45,40 @@ Funziona come una "rubrica" distribuita a livello globale, che consente agli ute
 ---
 # Domain Name Space (Spazio dei Nomi)
 
-Il **Domain Name Space** è una struttura logica gerarchica ad albero.
-## Gerarchia:
 
-- **Dominio Radice (Root)**  
-  Rappresentato da un punto `.` alla fine di un FQDN (es. `google.com`)
+Il **Domain Name Space** è una **struttura logica gerarchica ad albero** che organizza i nomi dei domini su Internet.
+## Gerarchia dei Domini:
 
-- **Top-Level Domain (TLD)**  
-- **Generici (gTLD):** `.com`, `.org`, `.net`  
-- **Nazionali (ccTLD):** `.it`, `.fr`, `.de`
+- **Dominio Radice (Root)**
+	- Rappresentato da un punto `.` alla fine di un FQDN  
+	    Esempio: `google.com.`
 
-- **Dominio di Secondo Livello:**  
-  Il nome scelto dall’organizzazione (es. `google` in `google.com`)
+- **Top-Level Domain (TLD)**
+	- **Generici (gTLD):** `.com`, `.org`, `.net`
+	- **Nazionali (ccTLD):** `.it`, `.fr`, `.de`
 
-- **Sottodominio / Host (Dominio Foglia):**  
-  Es. `www` in `www.google.com`
+- **Dominio di Secondo Livello**
+  - Nome scelto dall’organizzazione  
+    Esempio: `google` in `google.com`
+
+- **Sottodominio / Host (Dominio Foglia)**
+  - Specifica il nome del dispositivo o servizio  
+    Esempio: `www` in `www.google.com`
 
 ## FQDN - Fully Qualified Domain Name
 
-È l'**indirizzo completo**: include il nome specifico del dispositivo (l'host, come `www`) e il nome del dominio a cui appartiene (come `google.com`).
+- È il **nome di dominio completo** che identifica univocamente un host nella rete.  
+- Include **tutti i livelli** del dominio, fino alla radice.  
+  Esempio: `www.google.com.`  
+  (il punto finale rappresenta il **dominio radice** `.`)
 
 ## Regole di Naming:
 
-- Ogni etichetta ≤ 63 caratteri
-- Nome completo ≤ 255 caratteri
-- I nomi sono **case-insensitive** (`Google.com` = `google.com`)
+| Regola                      | Descrizione                                                                  |
+| :-------------------------- | :--------------------------------------------------------------------------- |
+| **Lunghezza etichetta**     | ≤ **63 caratteri**                                                           |
+| **Lunghezza totale (FQDN)** | ≤ **255 caratteri**                                                          |
+| **Maiuscole/minuscole**     | **Non sensibile** (`Google.com` = `google.com`)                              |
 
 ---
 # Name Server
@@ -82,7 +107,7 @@ I **Name Server** conservano i [[#Resource Record (RR)]] del DNS e rispondono al
 
 ---
 
-## Resolver (Client DNS)
+# Resolver (Client DNS)
 
 Il **Resolver** è il componente sul dispositivo dell’utente che invia query DNS ai Name Server.
 
@@ -152,29 +177,29 @@ I **Resource Record**  sono le singole "righe" di informazione che compongono il
 
 ## Struttura:
 
-| Campo     | Significato                              |
-|-----------|-------------------------------------------|
-| Domain Name | Nome del dominio                        |
-| Type      | Tipo di record (A, AAAA, CNAME, MX...)    |
-| Class     | Classe (quasi sempre IN = Internet)       |
-| TTL       | Durata in secondi della cache             |
-| RDLength  | Lunghezza del dato                        |
-| RData     | Valore del record (es. un IP o nome)      |
+| Campo       | Significato                            |
+| ----------- | -------------------------------------- |
+| Domain Name | Nome del dominio                       |
+| Type        | Tipo di record (A, AAAA, CNAME, MX...) |
+| Class       | Classe (quasi sempre IN = Internet)    |
+| TTL         | Durata in secondi della cache          |
+| RDLength    | Lunghezza del dato                     |
+| RData       | Valore del record (es. un IP o nome)   |
 
 ---
 
 ## Tipi Comuni di Record DNS
 
-| Tipo   | Descrizione                                                  |
-|--------|--------------------------------------------------------------|
-| A      | Associa un dominio a un indirizzo IPv4                      |
-| AAAA   | Associa un dominio a un indirizzo IPv6                      |
-| CNAME  | Alias: fa puntare un nome a un altro nome                   |
-| MX     | Specifica i mail server per un dominio                      |
-| NS     | Indica i Name Server autoritativi                           |
-| PTR    | Risoluzione inversa (IP → nome)                             |
-| TXT    | Testo libero (usato per SPF, DKIM, ecc.)                    |
-| SOA    | Parametri autoritativi della zona (primario, refresh, ecc.)|
+| Tipo  | Descrizione                                                 |
+| ----- | ----------------------------------------------------------- |
+| A     | Associa un dominio a un indirizzo IPv4                      |
+| AAAA  | Associa un dominio a un indirizzo IPv6                      |
+| CNAME | Alias: fa puntare un nome a un altro nome                   |
+| MX    | Specifica i mail server per un dominio                      |
+| NS    | Indica i Name Server autoritativi                           |
+| PTR   | Risoluzione inversa (IP → nome)                             |
+| TXT   | Testo libero (usato per SPF, DKIM, ecc.)                    |
+| SOA   | Parametri autoritativi della zona (primario, refresh, ecc.) |
 
 ---
 
