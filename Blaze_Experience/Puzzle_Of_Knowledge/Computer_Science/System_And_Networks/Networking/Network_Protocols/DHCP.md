@@ -46,7 +46,6 @@ DHCP è un’evoluzione del protocollo **BOOTP** (Bootstrap Protocol).
 	1) Indirizzo IP
 	2) Il gateway
 	3) Indirizzo del server da cui scaricare il sistema operativo.
-- Statico e **poco flessibile** (niente gestione dinamica o mobilità)
 ## Porte utilizzate:
 - UDP 67 → Server
 - UDP 68 → Client
@@ -54,9 +53,15 @@ DHCP è un’evoluzione del protocollo **BOOTP** (Bootstrap Protocol).
 **Limiti di BOOTP**:
 - Nessuna gestione dinamica degli IP
 - Non adatto a dispositivi mobili (es. Wi-Fi)
+<<<<<<< HEAD
 ---
 # Funzionalità Principali
 ## Cosa fornisce un server DHCP?
+=======
+___
+
+# Cosa fornisce un server DHCP?
+>>>>>>> origin/main
 - Indirizzo IP
 - Subnet Mask
 - Default Gateway
@@ -69,11 +74,11 @@ DHCP è un’evoluzione del protocollo **BOOTP** (Bootstrap Protocol).
 
 Il server DHCP può assegnare IP in tre modalità:
 
-| Modalità   | Descrizione                                                                                                                                              | Esempi                                                                                                                                                     |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Manuale    | Assegnazione statica tramite reservation è un modo per dire al  server DHCP di dare sempre lo stesso indirizzo IP a un dispositivo specifico. (IP - MAC) | Dispositivi che devono essere sempre raggiungibili allo **stesso** indirizzo IP. (stampante di rete )                                                      |
-| Automatica | IP assegnato **permanentemente** la prima volta, preso da un pool                                                                                        | Reti piccole e stabili (es. ufficio) dove i dispositivi non cambiano spesso, ma non si vuole configurare ogni IP manualmente. (Modalità poco comune oggi). |
-| Dinamica   | IP assegnato **temporaneamente** (lease); il client deve rinnovare                                                                                       | Una rete **Wi-Fi pubblica** (bar, aeroporto) o la rete di casa, dove smartphone e laptop si connettono e disconnettono frequentemente.                     |
+| Modalità   | Descrizione                                                                                                                                                   | Esempi                                                                                                                                                     |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Manuale    | Assegnazione statica tramite **reservation**: è un modo per dire al  server DHCP di dare sempre lo stesso indirizzo IP a un dispositivo specifico. (IP - MAC) | Dispositivi che devono essere sempre raggiungibili allo **stesso** indirizzo IP. (stampante di rete )                                                      |
+| Automatica | IP assegnato **permanentemente** la prima volta, preso da un pool                                                                                             | Reti piccole e stabili (es. ufficio) dove i dispositivi non cambiano spesso, ma non si vuole configurare ogni IP manualmente. (Modalità poco comune oggi). |
+| Dinamica   | IP assegnato **temporaneamente** (lease); il client deve rinnovare                                                                                            | Una rete **Wi-Fi pubblica** (bar, aeroporto) o la rete di casa, dove smartphone e laptop si connettono e disconnettono frequentemente.                     |
 
 Modalità più comune: Dinamica
 
@@ -117,7 +122,7 @@ A differenza di DHCP:
 
 ---
 
-I messaggi DHCP viaggiano su UDP e sono formati da:
+# Architettura DHCP
 ## Header
 
 | Campo          | Descrizione                                                             |
@@ -167,7 +172,7 @@ In pratica, le opzioni DHCP consentono di fornire tutte le informazioni di **con
    Il client accetta una delle offerte e invia una richiesta al server scelto.
 
 4) **DHCPACK**  
-   Il server conferma l’assegnazione e il client può usare l’indirizzo IP.
+   Il server conferma l’assegnazione e il client può usare l’indirizzo IP.(Lease) 
 
 5) **DHCPNAK** (Broadcast)
    Se il server rifiuta la richiesta (es. perché l’IP non è più disponibile), invia un messaggio di rifiuto.
