@@ -47,11 +47,11 @@ ___
 
 Il server DHCP può assegnare IP in tre modalità:
 
-| Modalità   | Descrizione                                                                                                                                              | Esempi                                                                                                                                                     |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Manuale    | Assegnazione statica tramite reservation è un modo per dire al  server DHCP di dare sempre lo stesso indirizzo IP a un dispositivo specifico. (IP - MAC) | Dispositivi che devono essere sempre raggiungibili allo **stesso** indirizzo IP. (stampante di rete )                                                      |
-| Automatica | IP assegnato **permanentemente** la prima volta, preso da un pool                                                                                        | Reti piccole e stabili (es. ufficio) dove i dispositivi non cambiano spesso, ma non si vuole configurare ogni IP manualmente. (Modalità poco comune oggi). |
-| Dinamica   | IP assegnato **temporaneamente** (lease); il client deve rinnovare                                                                                       | Una rete **Wi-Fi pubblica** (bar, aeroporto) o la rete di casa, dove smartphone e laptop si connettono e disconnettono frequentemente.                     |
+| Modalità   | Descrizione                                                                                                                                               | Esempi                                                                                                                                                     |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Manuale    | Assegnazione statica tramite reservation: è un modo per dire al  server DHCP di dare sempre lo stesso indirizzo IP a un dispositivo specifico. (IP - MAC) | Dispositivi che devono essere sempre raggiungibili allo **stesso** indirizzo IP. (stampante di rete )                                                      |
+| Automatica | IP assegnato **permanentemente** la prima volta, preso da un pool                                                                                         | Reti piccole e stabili (es. ufficio) dove i dispositivi non cambiano spesso, ma non si vuole configurare ogni IP manualmente. (Modalità poco comune oggi). |
+| Dinamica   | IP assegnato **temporaneamente** (lease); il client deve rinnovare                                                                                        | Una rete **Wi-Fi pubblica** (bar, aeroporto) o la rete di casa, dove smartphone e laptop si connettono e disconnettono frequentemente.                     |
 
 Modalità più comune: Dinamica
 
