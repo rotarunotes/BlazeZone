@@ -95,7 +95,7 @@ A differenza di DHCP:
 
 ---
 
-I messaggi DHCP viaggiano su UDP e sono formati da:
+# I messaggi DHCP viaggiano su UDP e sono formati da:
 ## Header
 
 | Campo          | Descrizione                                                             |
