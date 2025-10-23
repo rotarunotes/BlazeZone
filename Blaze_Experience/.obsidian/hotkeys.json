@@ -51,8 +51,8 @@
   "obsidian-full-calendar:full-calendar-open": [
     {
       "modifiers": [
-        "Alt",
-        "Mod"
+        "Mod",
+        "Shift"
       ],
       "key": "P"
     }

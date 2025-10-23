@@ -3,7 +3,7 @@ Data: 2025-10-23
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Subnetting_Practice
 ___
 Esercizi: https://www.edutecnica.it/informatica/retix/retix.htm
-# 1. Numero di Sottoreti (Subnet)
+# Numero di Sottoreti (Subnet)
 
 **Formula:**  
 $$
@@ -55,11 +55,11 @@ IP: `131.175.21.1/22`
 
 **AND bit-a-bit:**  
 
-| Bit | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
-|-----|---|---|---|---|---|---|---|---|
-| IP (21)   | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 1 |
-| Mask (252)| 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 |
-| AND       | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| Bit        | 7   | 6   | 5   | 4   | 3   | 2   | 1   | 0   |
+| ---------- | --- | --- | --- | --- | --- | --- | --- | --- |
+| IP (21)    | 0   | 0   | 0   | 1   | 0   | 1   | 0   | 1   |
+| Mask (252) | 1   | 1   | 1   | 1   | 1   | 1   | 0   | 0   |
+| AND        | 0   | 0   | 0   | 1   | 0   | 1   | 0   | 0   |
 00010100 = 20
  
 **Indirizzo di Rete:** `131.175.20.0`
