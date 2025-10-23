@@ -145,7 +145,7 @@ In pratica, le opzioni DHCP consentono di fornire tutte le informazioni di **con
    Il client accetta una delle offerte e invia una richiesta al server scelto.
 
 4) **DHCPACK**  
-   Il server conferma l’assegnazione e il client può usare l’indirizzo IP.
+   Il server conferma l’assegnazione e il client può usare l’indirizzo IP.(Lease) 
 
 5) **DHCPNAK** (Broadcast)
    Se il server rifiuta la richiesta (es. perché l’IP non è più disponibile), invia un messaggio di rifiuto.
