@@ -25,7 +25,6 @@ DHCP è un’evoluzione del protocollo **BOOTP** (Bootstrap Protocol).
 	1) Indirizzo IP
 	2) Il gateway
 	3) Indirizzo del server da cui scaricare il sistema operativo.
-- Statico e **poco flessibile** (niente gestione dinamica o mobilità)
 ## Porte utilizzate:
 - UDP 67 → Server
 - UDP 68 → Client
@@ -33,9 +32,7 @@ DHCP è un’evoluzione del protocollo **BOOTP** (Bootstrap Protocol).
 **Limiti di BOOTP**:
 - Nessuna gestione dinamica degli IP
 - Non adatto a dispositivi mobili (es. Wi-Fi)
----
-# Funzionalità Principali
-## Cosa fornisce un server DHCP?
+# Cosa fornisce un server DHCP?
 - Indirizzo IP
 - Subnet Mask
 - Default Gateway
