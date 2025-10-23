@@ -33,7 +33,6 @@ DHCP è un’evoluzione del protocollo **BOOTP** (Bootstrap Protocol).
 **Limiti di BOOTP**:
 - Nessuna gestione dinamica degli IP
 - Non adatto a dispositivi mobili (es. Wi-Fi)
-- 
 ---
 # Funzionalità Principali
 ## Cosa fornisce un server DHCP?
