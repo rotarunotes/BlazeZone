@@ -15,7 +15,7 @@ Video: https://www.youtube.com/watch?v=H-rANwaumfM
 - [[#Riepilogo]]
 
 ___
-# Address Resolution Protocol?
+# Address Resolution Protocol
 
 L’**ARP** è un protocollo fondamentale che opera all’interno di una rete locale (**LAN**).
 
