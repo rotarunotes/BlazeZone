@@ -342,7 +342,6 @@ Future<String> myAsync(int n) async {
     return "$n : async";
   });
 }
-
 ```
 
 **Output:**
@@ -404,6 +403,7 @@ done!
 | :------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Esaminare dal punto di vista matematico il crivello** | Il codice **verifica la primalità di un numero**. L'ottimizzazione chiave è che per la verifica è sufficiente testare la divisibilità fino alla **radice quadrata** di `n` (`mysqrt.ceil()`), non fino a `n-1`. |
 
+<<<<<<< HEAD
 ___
 ## es009: Altro Esempio (Future.wait)
 
@@ -622,3 +622,9 @@ Caught error: Cannot locate user order
 ```
 
 - Dopo il throw, la funzione **lancia** subito l'eccezione  e quindi non si arriva mai a `return str`;
+=======
+
+
+lezione
+> ====
+>>>>>>> origin/main
