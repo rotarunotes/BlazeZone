@@ -43,7 +43,7 @@ Il funzionamento si basa su:
 1) un meccanismo **Request/Reply**
 2) l’uso di una **cache locale**
 
----
+
 ## ARP Request (Richiesta)
 
 Quando un host vuole inviare dati a un IP della stessa LAN, ma non ha il MAC:
