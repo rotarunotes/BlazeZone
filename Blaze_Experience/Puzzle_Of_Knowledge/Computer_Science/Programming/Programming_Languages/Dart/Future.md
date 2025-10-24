@@ -72,6 +72,7 @@ Future<String> getMessaggio() async {
 4) Risultato ordinato: il primo elemento della lista è il primo risultato del primo Future della lista input, il secondo elemento è il risultato del secondo Future
 
 - Se anche sono uno dei Future fallisce, l'intero Future.wait fallisce immediatamente.
+
 [[#es009 Altro Esempio (Future.wait)|Esempio:]]
 
 ___
