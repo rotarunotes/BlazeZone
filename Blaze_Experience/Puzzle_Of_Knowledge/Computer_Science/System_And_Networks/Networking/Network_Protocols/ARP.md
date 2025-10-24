@@ -35,14 +35,12 @@ Per comunicare direttamente all’interno di una LAN, due dispositivi (host) dev
 **ARP fa da ponte tra questi due livelli.**  
 Permette a un host che conosce solo l’IP di un altro di scoprirne il MAC address.
 
----
-
+___
 # Come funziona: Richiesta e Risposta
 
 Il funzionamento si basa su:
 1) un meccanismo **Request/Reply**
 2) l’uso di una **cache locale**
-
 
 ## ARP Request (Richiesta)
 
