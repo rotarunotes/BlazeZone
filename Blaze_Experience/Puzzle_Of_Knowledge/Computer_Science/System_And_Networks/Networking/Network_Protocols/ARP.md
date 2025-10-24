@@ -15,7 +15,7 @@ Video: https://www.youtube.com/watch?v=H-rANwaumfM
 - [[#Riepilogo]]
 
 ___
-# Address Resolution Protocol?
+# Address Resolution Protocol
 
 L’**ARP** è un protocollo fondamentale che opera all’interno di una rete locale (**LAN**).
 
@@ -35,15 +35,13 @@ Per comunicare direttamente all’interno di una LAN, due dispositivi (host) dev
 **ARP fa da ponte tra questi due livelli.**  
 Permette a un host che conosce solo l’IP di un altro di scoprirne il MAC address.
 
----
-
+___
 # Come funziona: Richiesta e Risposta
 
 Il funzionamento si basa su:
 1) un meccanismo **Request/Reply**
 2) l’uso di una **cache locale**
 
----
 ## ARP Request (Richiesta)
 
 Quando un host vuole inviare dati a un IP della stessa LAN, ma non ha il MAC:

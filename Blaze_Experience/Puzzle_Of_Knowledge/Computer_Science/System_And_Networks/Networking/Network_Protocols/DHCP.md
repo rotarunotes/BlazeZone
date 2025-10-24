@@ -31,7 +31,7 @@ Permettere a un server di assegnare **dinamicamente**:
 Le assegnazioni sono temporanee, regolate da un periodo chiamato **lease (affitto)**.
 ___
 # Lease
-**noleggio a tempo** di un indirizzo IP. ⏱️
+**noleggio a tempo** di un indirizzo IP.
 - Il router (server DHCP) "presta" un IP a un dispositivo (PC, telefono) per un periodo fisso (es. 24 ore).
 - Il dispositivo deve periodicamente **rinnovare** questo noleggio per tenerlo.
 - Se il dispositivo si scollega e il lease **scade**, l'IP torna libero e può essere "riciclato" per un nuovo dispositivo.
@@ -53,15 +53,12 @@ DHCP è un’evoluzione del protocollo **BOOTP** (Bootstrap Protocol).
 **Limiti di BOOTP**:
 - Nessuna gestione dinamica degli IP
 - Non adatto a dispositivi mobili (es. Wi-Fi)
-<<<<<<< HEAD
+
 ---
 # Funzionalità Principali
-## Cosa fornisce un server DHCP?
-=======
-___
 
-# Cosa fornisce un server DHCP?
->>>>>>> origin/main
+## Cosa fornisce un server DHCP?
+
 - Indirizzo IP
 - Subnet Mask
 - Default Gateway
@@ -70,6 +67,7 @@ ___
 - Altri parametri opzionali
 
 ---
+
 # Modalità di Assegnazione
 
 Il server DHCP può assegnare IP in tre modalità:
