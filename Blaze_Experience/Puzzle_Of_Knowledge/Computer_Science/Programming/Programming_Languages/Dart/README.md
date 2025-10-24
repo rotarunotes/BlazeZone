@@ -17,7 +17,7 @@ Le operazioni asincrone  vengono eseguite in background. Al loro completamento, 
 - Non Bloccante
 - Si tratta di compiti la cui esecuzione viene "schedulata" per il futuro. Vengono messi in attesa nell' **event queue** e gestiti dall'**event loop** solo quando il thread principale è libero.
 
-
+no isolate  e eccezioni
 ___
 # Indice
 - [Data](Data.md)
