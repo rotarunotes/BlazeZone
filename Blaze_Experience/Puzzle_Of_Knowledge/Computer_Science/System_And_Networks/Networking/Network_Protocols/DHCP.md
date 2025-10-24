@@ -67,6 +67,7 @@ DHCP è un’evoluzione del protocollo **BOOTP** (Bootstrap Protocol).
 - Altri parametri opzionali
 
 ---
+
 # Modalità di Assegnazione
 
 Il server DHCP può assegnare IP in tre modalità:
