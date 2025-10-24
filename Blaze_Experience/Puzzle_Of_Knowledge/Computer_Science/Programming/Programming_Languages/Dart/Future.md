@@ -332,7 +332,6 @@ Future<String> myAsync(int n) async {
     return "$n : async";
   });
 }
-
 ```
 
 **Output:**
@@ -379,4 +378,7 @@ Future<bool> isPrimeNumber(int number) async {
 | Domanda                                                 | Risposta                                                                                                                                                                                                        |
 | :------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Esaminare dal punto di vista matematico il crivello** | Il codice **verifica la primalità di un numero**. L'ottimizzazione chiave è che per la verifica è sufficiente testare la divisibilità fino alla **radice quadrata** di `n` (`mysqrt.ceil()`), non fino a `n-1`. |
+
+
+
 
