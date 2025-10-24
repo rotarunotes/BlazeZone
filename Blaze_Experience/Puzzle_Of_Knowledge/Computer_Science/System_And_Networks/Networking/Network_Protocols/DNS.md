@@ -34,7 +34,7 @@ Funziona come una "rubrica" distribuita a livello globale, che consente agli ute
 # Le 3 Macro Componenti del DNS
 
 1) **Domain Name Space**  
-   È essenzialmente l'intera struttura gerarchica che organizza tutti i nomi di dominio su Internet.
+        L' intera struttura gerarchica che organizza tutti i nomi di dominio su Internet.
 
 2) **Name Server**  
    I server che contengono il database distribuito dei domini e rispondono alle richieste di risoluzione.
