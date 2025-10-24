@@ -23,7 +23,7 @@ ___
 - [Function](Function.md)
 - [Class](Class.md)
 - [Libraries](Libraries.md)
-- [Future](Future.md)
+- [Future](Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Future.md)
 ___
 
  

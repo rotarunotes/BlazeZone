@@ -64,6 +64,16 @@ Future<String> getMessaggio() async {
 - La sua caratteristica chiave è che attende il **completamento** dell' operazione su un elemento prima di iniziare l' operazione sull' elemento **successivo**
 
 [[#es008 crivello di Eratostene|Esempio:]]
+
+### Future.wait
+1) Accetta una collezione di **Future**.
+2) Avvia tutte le operazioni asincrono, e permetto loro di essere eseguite contemporaneamente.
+3) Attende che tutti i future terminano il loro lavoro.
+4) Risultato ordinato: il primo elemento della lista è il primo risultato del primo Future della lista input, il secondo elemento è il risultato del secondo Future
+
+- Se anche sono uno dei Future fallisce, l'intero Future.wait fallisce immediatamente.
+[[#es009 Altro Esempio (Future.wait)|Esempio:]]
+
 ___
 # Dimostrazione
 ## es001: Un Primo Esempio
@@ -376,7 +386,239 @@ Future<bool> isPrimeNumber(int number) async {
 }
 ```
 
+**Output:**
+```
+10000 is not a primeNumber
+97 is a primeNumber
+82 is not a primeNumber
+81 is not a primeNumber
+10 is not a primeNumber
+9 is not a primeNumber
+8 is not a primeNumber
+5 is a primeNumber
+3 is a primeNumber
+done!
+```
+
 | Domanda                                                 | Risposta                                                                                                                                                                                                        |
 | :------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Esaminare dal punto di vista matematico il crivello** | Il codice **verifica la primalità di un numero**. L'ottimizzazione chiave è che per la verifica è sufficiente testare la divisibilità fino alla **radice quadrata** di `n` (`mysqrt.ceil()`), non fino a `n-1`. |
 
+___
+## es009: Altro Esempio (Future.wait)
+
+```dart
+import 'dart:math';
+
+void main() async {
+  Future.wait([
+    getRandomNumber(),
+    getRandomNumber(),
+    getRandomNumber(),
+    getRandomNumber()
+  ]).then((List<int> results) => findSmallestNumberInList(results));
+}
+
+Future<int> getRandomNumber() {
+  Random random = new Random();
+  int n = random.nextInt(100);
+  print("$n is generated");
+  int t = 1 + random.nextInt(4);
+  return Future.delayed(Duration(seconds: t), () => n);
+}
+
+void findSmallestNumberInList(List<int> lst) {
+  print("all numbers are in:");
+  lst.forEach((n) => print(n));
+  lst.sort();
+  int largest = lst.first;
+  print("The smallest random int we generated was: ${largest}");
+}
+```
+
+**Output:**
+```
+19 is generated
+85 is generated
+1 is generated
+18 is generated
+all numbers are in:
+19
+85
+1
+18
+The smallest random int we generated was: 1
+```
+
+**Perché usiamo un `Future` nel metodo `getRandomNumber()`?**
+
+Viene usato un `Future` per **simulare un'operazione che richiede tempo** o per rendere il metodo esplicitamente asincrono. L'uso di `Future.wait` nel `main` dipende proprio dal fatto che `getRandomNumber()` restituisca un `Future`.
+
+**Modifiche e motivazione:** Si può modificare l'esempio usando `async/await` invece che **`.then()`**, l'esito sarà identico all'originale.
+
+```dart
+void main() async {
+  List<int> results = await Future.wait([
+    getRandomNumber(),
+    getRandomNumber(),
+    getRandomNumber(),
+    getRandomNumber()
+  ]);
+  
+  findSmallestNumberInList(results);
+}
+```
+
+___
+## es010: Generare Eccezioni
+
+```dart
+void main() async {
+  try {
+    await openFile("theFile");
+    print("success!");
+  } catch (e) {
+    print("Looks like we caught an error: ${e.toString()}");
+  }
+}
+
+Future<void> openFile(String fileName) async {
+  throw new Exception("BOOM!");
+}
+```
+
+**Output:**
+```
+Looks like we caught an error: Exception: BOOM!
+```
+
+**Se togliamo `await`?**
+
+1. La chiamata `openFile("theFile")` ritorna un `Future<void>` **immediatamente**.
+2. L'errore `BOOM!` viene lanciato in modo asincrono, ma non viene catturato dal `try-catch` sincrono del `main`, che non sta aspettando il risultato del `Future`.
+3. L'esecuzione continua immediatamente: viene stampato **`success!`**.
+4. Successivamente, l'errore asincrono si propaga e non viene gestito, causando probabilmente un **errore non gestito dall'event loop** o dal runtime (mostrando un messaggio d'errore). **Per gestire l'errore di un `Future` senza `await`, si userebbe `.catchError()`**.
+
+___
+## es011: Un Esempio dalla Documentazione
+
+```dart
+void main() {
+  print('Fetching user order...');
+  print(createOrderMessage());
+}
+
+String createOrderMessage() {
+  var order = getUserOrder();
+  return 'Your order is: $order';
+}
+
+Future<String> getUserOrder() {
+  return Future.delayed(Duration(seconds: 4), () => 'Large Latte');
+}
+```
+
+**Output:**
+```
+Fetching user order...
+Your order is: Instance of '_Future<String>'
+```
+
+**Versione corretta:**
+``` Dart
+void main() async{
+  print('Fetching user order...');
+  print(await createOrderMessage());
+}
+
+Future<String> createOrderMessage() async{
+  var order = await getUserOrder();
+  return 'Your order is: $order';
+}
+
+Future<String> getUserOrder() {
+  return Future.delayed(Duration(seconds: 4), () => 'Large Latte');
+}
+```
+
+**Output:**
+```
+Fetching user order...
+Your order is: Large Latte
+```
+
+- Se togliessimo l' await nel main.
+- La tua funzione `createOrderMessage` è `async`. Questo significa che **non restituisce immediatamente la stringa** con l'ordine. Invece, restituisce subito un oggetto speciale chiamato `Future<String>`.
+
+___
+## es012: Segue il Precedente (Alternativa)
+
+```dart
+main() async{
+  countSeconds(4);
+  print(await createOrderMessage());
+}
+
+Future<String> createOrderMessage() async{
+  var order = await getUserOrder();
+  return 'Your order is: $order';
+}
+
+Future<String> getUserOrder() {
+  return Future.delayed(Duration(seconds: 2), () => 'Large Latte');
+}
+
+void countSeconds(s) async {
+  for (var i = 1; i <= s; i++) {
+    await Future.delayed(Duration(seconds: i), () => print(i));
+  }
+}
+```
+
+Output:
+```
+
+```
+**Provare l'alternativa motivando l'esito:**
+
+1. La funzione `countSeconds` nell'alternativa **non è `async`** (ma ritorna `Future<void>`).
+2. Il loop `for` esegue **immediatamente** tutte e 4 le chiamate a `Future.delayed`, programmando gli eventi nell'event queue per i tempi 1s, 2s, 3s e 4s. **Non aspetta** la fine di ogni attesa.
+3. `countSeconds` ritorna **immediatamente** un `Future<void>` già completato (`Future.value()`).
+4. `main` prosegue con `await createOrderMessage()`.
+
+**Rispetto alla versione originale (sincronizzata):**
+
+**Originale:** `countSeconds` usava `await` all'interno del loop, causando una stampa sequenziale: `1` (dopo 1s), `2` (dopo 1+2s), `3` (dopo 1+2+3s), `4` (dopo 1+2+3+4s).
+**Alternativa:** Le stampe sono programmate in **parallelo** per i tempi assoluti: `1` (dopo 1s), `2` (dopo 2s), `3` (dopo 3s), `4` (dopo 4s). L'esecuzione è **più rapida**.
+
+## es013: Restando in Tema
+
+```dart
+main() async {
+  await createOrderMessage();
+}
+
+Future<void> createOrderMessage() async {
+  try {
+    var order = await getUserOrder();
+    print('Awaiting user order...');
+    print(order);
+  } catch (err) {
+    print('Caught error: $err');
+  }
+}
+
+Future<String> getUserOrder() {
+  var str = Future.delayed(
+      Duration(seconds: 4), () => throw 'Cannot locate user order');
+  return str;
+}
+```
+
+**Output:**
+```
+// aspetta 4 secondi
+Caught error: Cannot locate user order
+```
+
+- Dopo il throw, la funzione **lancia** subito l'eccezione  e quindi non si arriva mai a `return str`;
