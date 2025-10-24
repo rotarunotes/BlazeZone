@@ -403,7 +403,6 @@ done!
 | :------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Esaminare dal punto di vista matematico il crivello** | Il codice **verifica la primalità di un numero**. L'ottimizzazione chiave è che per la verifica è sufficiente testare la divisibilità fino alla **radice quadrata** di `n` (`mysqrt.ceil()`), non fino a `n-1`. |
 
-<<<<<<< HEAD
 ___
 ## es009: Altro Esempio (Future.wait)
 
@@ -544,6 +543,7 @@ Future<String> getUserOrder() {
 **Output:**
 ```
 Fetching user order...
+// aspetta 4 secondi
 Your order is: Large Latte
 ```
 
@@ -573,24 +573,37 @@ void countSeconds(s) async {
     await Future.delayed(Duration(seconds: i), () => print(i));
   }
 }
+
+// alternativa!!
+Future<void> countSeconds(s) {
+  for( var i = 1 ; i <= s; i++ ) { 
+      Future.delayed(Duration(seconds: i), () => print(i));
+  }
+}
 ```
 
-Output:
+**Output:**
+```
+1
+2
+Your order is: Large Latte
+3
+4
 ```
 
-```
-**Provare l'alternativa motivando l'esito:**
+- Con la funzione `countSeconds` alternativa (una funzione senza async e await) l'output non sarebbe cambiato comunque dato che nel main non si esegue nessun tipo di **await**.
 
-1. La funzione `countSeconds` nell'alternativa **non è `async`** (ma ritorna `Future<void>`).
-2. Il loop `for` esegue **immediatamente** tutte e 4 le chiamate a `Future.delayed`, programmando gli eventi nell'event queue per i tempi 1s, 2s, 3s e 4s. **Non aspetta** la fine di ogni attesa.
-3. `countSeconds` ritorna **immediatamente** un `Future<void>` già completato (`Future.value()`).
-4. `main` prosegue con `await createOrderMessage()`.
+| Tempo | Processo 1 (main)                                | Processo 2 (countSeconds)        | Output Console             |
+| ----- | ------------------------------------------------ | -------------------------------- | -------------------------- |
+| t=0   | Chiama `countSeconds(4)` (non attende).          | i=1 → `await delayed(1s)`        |                            |
+|       | Chiama `await createOrderMessage()` → pausa (4s) |                                  |                            |
+| t=1   | (ancora in pausa)                                | `delayed(1s)` finisce → stampa 1 | 1                          |
+| t=3   | (ancora in pausa)                                | `delayed(2s)` finisce → stampa 2 | 2                          |
+| t=4   | `getUserOrder()` finisce → main riprende         | (in pausa fino a t=6)            | Your order is: Large Latte |
+| t=6   | (terminato)                                      | `delayed(3s)` finisce → stampa 3 | 3                          |
+| t=10  | (terminato)                                      | `delayed(4s)` finisce → stampa 4 | 4                          |
 
-**Rispetto alla versione originale (sincronizzata):**
-
-**Originale:** `countSeconds` usava `await` all'interno del loop, causando una stampa sequenziale: `1` (dopo 1s), `2` (dopo 1+2s), `3` (dopo 1+2+3s), `4` (dopo 1+2+3+4s).
-**Alternativa:** Le stampe sono programmate in **parallelo** per i tempi assoluti: `1` (dopo 1s), `2` (dopo 2s), `3` (dopo 3s), `4` (dopo 4s). L'esecuzione è **più rapida**.
-
+___
 ## es013: Restando in Tema
 
 ```dart
@@ -622,9 +635,3 @@ Caught error: Cannot locate user order
 ```
 
 - Dopo il throw, la funzione **lancia** subito l'eccezione  e quindi non si arriva mai a `return str`;
-=======
-
-
-lezione
-> ====
->>>>>>> origin/main
