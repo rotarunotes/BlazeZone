@@ -57,7 +57,7 @@ DHCP è un’evoluzione del protocollo **BOOTP** (Bootstrap Protocol).
 ---
 # Funzionalità Principali
 
-# Cosa fornisce un server DHCP?
+## Cosa fornisce un server DHCP?
 
 - Indirizzo IP
 - Subnet Mask
