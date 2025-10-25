@@ -41,3 +41,17 @@ body {
   /* Imposta l'hover allo STESSO colore */
   --link-external-color-hover: #ec82ec;
 }
+
+/* Centra tutte le immagini nella vista di lettura */
+.markdown-preview-view img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Bonus: Centra anche le immagini nella vista di modifica (Live Preview) */
+.cm-embed-block img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
