@@ -8,7 +8,7 @@ In informatica e nei database, una **relazione** è il termine tecnico e formale
 
 - **Intestazione (Schema):** insieme degli **attributi** (nomi delle colonne).  
 - **Corpo (Istanza):** insieme delle **tuple** (righe).
-- 
+
 Ogni **tupla** rappresenta un record e contiene un valore specifico per ogni attributo.
 
 **Struttura:**
