@@ -37,6 +37,7 @@ ___
 				- [Subnetting_Practice](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/README.md)
 					- [Subnetting_IPv4](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Subnetting_Practice/Subnetting_IPv4.md)
 			- [Systems_Theory](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/README.md)
+	- [Math](Puzzle_Of_Knowledge/Math/README.md)
 - [Red_Lab](Red_Lab/README.md)
 - [School](School/README.md)
 	- [3ID_2023-24](School/3ID_2023-24/README.md)

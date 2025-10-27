@@ -2,20 +2,25 @@
   "calendarSources": [
     {
       "type": "local",
-      "color": "#8929a3",
-      "directory": "Setup_Archive/Calendar/Daily_Quest"
+      "color": "#e414ff",
+      "directory": "Setup_Archive/Plugin/Calendar/Daily_Quest"
     },
     {
       "type": "local",
-      "color": "#df2a2a",
-      "directory": "Setup_Archive/Calendar/Exam"
+      "color": "#d40808",
+      "directory": "Setup_Archive/Plugin/Calendar/Exam"
+    },
+    {
+      "type": "local",
+      "color": "#4310d1",
+      "directory": "Setup_Archive/Plugin/Calendar/Social_Event"
     }
   ],
   "defaultCalendar": 0,
-  "firstDay": 1,
+  "firstDay": 0,
   "initialView": {
     "desktop": "timeGridWeek",
-    "mobile": "listWeek"
+    "mobile": "timeGrid3Days"
   },
   "timeFormat24h": true
 }
