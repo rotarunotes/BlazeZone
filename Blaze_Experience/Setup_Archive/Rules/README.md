@@ -3,7 +3,9 @@ Data: 2025-10-17
 #Setup_Archive/Rules
 ___
 # Rules
-Di cosa parla questa MOC.
+- indice h5
+- i nomi dei file sono in inglese con camel case _
+- 
 ___
 # Indice
 - Inserisci

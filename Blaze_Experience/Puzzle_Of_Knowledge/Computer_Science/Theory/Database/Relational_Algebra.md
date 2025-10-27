@@ -3,6 +3,21 @@ Data: 2025-10-27
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database
 ___
 
+# Indice
+##### Operatori Relazionali
+- [Selezione (Sigma)](#selezione-sigma)
+- [Proiezione (Pi Greco)](#proiezione-pi-greco)
+- [Unione](#unione)
+- [Intersezione](#intersezione)
+- [Sottrazione](#sottrazione)
+- [Piano Cartesiano](#piano-cartesiano)
+- [Giunzione Naturale](#giunzione-naturale)
+- [Theta Join](#theta-join)
+- [Ridenominazione](#ridenominazione)
+##### Grado e Cardinalità
+- [Tabella Grado e Cardinalità](#GradoCardinalita)
+
+___
 # **Relazione $R_1$**
 
 | Nome     | Cognome | Età | Città |
@@ -15,6 +30,7 @@ ___
 | Giacomo | Sacco   | 21  | Mestre |
 | Mattia  | Scatto  | 42  | Mestre |
 | Mattia  | Barina  | 23  | Mira   |
+
 # Operatori
 ## Selezione (Sigma)
 - **Filtro orizzontale:** seleziona le tuple (righe) che soddisfano una condizione booleana.
@@ -169,7 +185,7 @@ $$
 | Giuseppe | Maugeri | 12  | Dolo  
 
 ---
-# Grado Cardinalita
+# GradoCardinalita
 
 | Operatore           | Simbolo          | Grado (n° attributi)                                   | Cardinalità (n° tuple)                                      |
 | :------------------ | :--------------- | :----------------------------------------------------- | :---------------------------------------------------------- |
