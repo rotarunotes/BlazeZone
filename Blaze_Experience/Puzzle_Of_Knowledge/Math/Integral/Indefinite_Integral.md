@@ -8,6 +8,7 @@ ___
 $$F'(x) = f(x)$$
 
 - Se $F(x)$ è una primitiva di $f(x)$, allora le funzioni $F(x) + c$, con  $c$ numero reale qualsiasi, sono **tutte** e **solo** le primitive di $f(x)$.
+$$\mathrm{D} \left[ F(x) \,+c \right] = F'(x) = f(x),\ \forall c \in \mathbb{R} $$
 
 - **L'integrale indefinito** di una funzione $f(x)$ definita in un intervallo reale $I$ è l'intervallo di tutte le primitive $F(x) + c$ di $f(x)$, con $c$ numero reale qualunque. Si indica con: 
 $$\int f(x)\,dx$$
@@ -16,9 +17,10 @@ $$\int f(x)\,dx$$
 
 $$\mathrm{D} \left[ \int f(x) \,dx \right] = f(x)$$
  ![[Schema_Insieme_Primitive_Infinite]]
-![[Insieme_Derivate]]
+
 
 - Se una funzione è continua in un intervallo reale $I$, allora ammette primitive nello stesso intervallo.
+ ![[Insieme_Derivate]]
 ___
 
 # Metodi Di Risoluzione:
@@ -63,7 +65,7 @@ Quando l'integrale non è di risoluzione immediata può essere utile applicare i
 
 $$
 \begin{gather*}
-\int  f(x)\ dx = \int f \left[ g(t)\right]\cdot g'(t) \ dx \\ \\
+\int  f(x)\ dx = \int f \left[ g(t)\right]\cdot g'(t) \ dt \\ \\
 \text{dove abbiamo posto} \\ \\
 x = g(t) \\ \\ 
 dx = g'(t) \ dt
@@ -83,7 +85,8 @@ Calcoliamo $\int \frac{1}{1 + \sqrt{x}} \ dx$
 	5) $2\int dt - 2\int \frac{1}{1+t}\ dt$
 	6) $2t - 2\ln |t\ +1| + c$.
 4) Sostituendo di nuovo $t = \sqrt{x},$  scriviamo il risultato in funzione di  $x:$
-	1) $2\sqrt{x} - 2\ln\|\sqrt{x}+1\| + c$.
+	1) $2\sqrt{x} - 2\ln |\sqrt{x}+1| + c$
+	2) $2\sqrt{x} - 2\ln (\sqrt{x}+1) + c$
 
 
 ## Integrazione Per  Parti
