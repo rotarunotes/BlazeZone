@@ -21,7 +21,7 @@ Ogni **tupla** rappresenta un record e contiene un valore specifico per ogni att
 | Tupla     |           |           |           |
 | Tupla     |           |           |           |
 
-**Esempio:*
+**Esempio:**
 
 | Nome     | Cognome | Età | Città |
 | -------- | ------- | --- | ----- |
