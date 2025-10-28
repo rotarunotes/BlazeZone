@@ -102,3 +102,11 @@ $$
 f(x) \cdot g(x) = \int f'(x) \cdot g(x) \ dx  + \int f(x) \cdot g'(x) \ dx
 \end{gather*}
 $$
+
+
+
+
+
+$\mid 8 \mid$
+
+
