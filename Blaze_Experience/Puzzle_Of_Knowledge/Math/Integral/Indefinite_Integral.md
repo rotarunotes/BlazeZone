@@ -101,12 +101,105 @@ $$
 f(x) \cdot g(x) = \int f'(x) \cdot g(x) \ dx  + \int f(x) \cdot g'(x) \ dx
 \end{gather*}
 $$
+## Aggiungo Tolgo
 
+- **Esempio:**
+Calcoliamo $\int \frac{x - 3}{x+4} \ dx$ 
 
+Al numeratore **aggiungiamo** e **togliamo** 4
+$$\int \frac{x-3+4-4}{x+4} \ dx$$
+$$\int \frac{x+4}{x+4} - \frac{7}{x+4} \ dx$$
+$$x - 7 \ln \mid x+4\mid+ \ c$$
+## Integrazione di Funzioni Razionali Fratte
+### $N$  di grado superiore $D$ 
+$$
+N(x) = Q(x)\ \cdot \ D(x)\ + \ R(x)
+$$
+$$
+\frac{N(x)}{D(x)} = Q(x)\ + \ \frac{R(x)}{D(x)}
+$$
+$$
+\int \frac{N(x)}{D(x)}dx= \int  \left[ Q(x)\ + \ \frac{R(x)}{D(x)} \right]dx = \int Q(x) dx \ + \ \int \frac{R(x)}{D(x)}dx
+$$
 
+Nell' addizione dei due integrali, il primo è calcolabile in quanto è l'integrale di  un **polinomio**; il secondo è l'integrale di una funzione razionale fratta con il **numeratore** di grado **inferiore** al grado del **denominatore**
 
-Frazioni
+- **Esempio:**
+$$
+\int \frac {x^3 + 2x^2 + x + 1} {x^2+1} dx
+$$
 
-+ E -in
+![[Schema_Divisione_Polinomi|250]]
 
+$$Q(x) = x + 2$$
+$$R(x) = -1$$
+$$
+\int \left( x+2 + \frac {-1} {x^2+1} \right) dx\ = \ \int x\ dx \ + \ 2\int dx\ - \int\frac {-1} {x^2+1} dx\ = \ \frac{x^2}{2} +\ 2x\ +\ \arctan x \ +\ c
+$$
+### $N$  derivata del $D$
+$$
+\int \frac{6x-2}{3x^2-2x-1}dx\ =\ \ln \mid 3x^2-2x-1 \mid + \ x
+$$
 
+### $D$ è di primo grado
+$$
+	\int \frac {1}{3x-2}dx\ = \ \frac{1}{3}\int \frac{3}{3x-2}dx\ = \ \frac{1}{3} \ln \mid 3x-2 \mid + \ c
+$$
+### $D$ è di secondo grado
+Per calcolare l'integrale 
+$$
+\int \frac{px + q} {ax^2+bx+c}dx \ \ \ \ \ \ con \ a \neq 0 \text{ e b, c non entrambi nulli}
+$$
+si utilizzano metodi **risolutivi** diversi a seconda del **segno** del discriminante del denominatore $\Delta = b^2-4ac$.
+
+#### $\Delta > 0$
+- Si scompone il **denominatore**: $ax^2+bx+c = a(x-x_1)(x-x_2)$
+- Si scrive la frazione algebrica data com somma di frazioni algebriche con **denominatore** di primo grado:
+$$
+\frac{px+q}{ax^2+bx+c} = \frac{A}{a(x-x_1)} + \frac{B}{(x-x_2)} 
+$$
+- Si calcola la **somma** delle due frazioni al secondo membro;
+- Si **determinano** i valori $A$ e $B$ risolvendo il **sistema** le cui equazioni si ottengono **uguagliando** fra loro i **coefficienti** della $x$ noti dei polinomi al numeratore dei due membri:
+- Si **risolve** l'integrale
+$$
+\int \left[ \frac{A}{a(x-x_1)} + \frac{B}{(x-x_2)} \right]dx
+$$
+Questo metodo vale anche se il numeratore è di grado zero, ossia se $p = 0$.
+#### $\Delta = 0$
+- Si scompone il denominatore: $ax^2+bx+c = a(x-x_1)^2$. dove $x_1 = -\frac{b}{2a}$;
+- Si scrive la frazione algebrica data come somma di due frazioni algebriche:
+$$
+\frac{px+q}{ax^2+bx+c} = \frac{A}{a(x-x_1)} + \frac{B}{(x-x_2)^2} 
+$$
+- Si calcola la **somma** delle due frazioni al secondo membro;
+- Si **determinano** i valori $A$ e $B$ risolvendo il **sistema** le cui equazioni si ottengono **uguagliando** fra loro i **coefficienti** della $x$ noti dei polinomi al numeratore dei due membri:
+- Si **risolve** l'integrale
+$$
+\int \left[ \frac{A}{a(x-x_1)} + \frac{B}{(x-x_2)^2}\right] dx
+$$
+#### $\Delta < 0$
+##### $N$ di grado $0$
+$$
+\int \frac{1}{ax^2+bx+c}dx, \ \ \ \ con \ a \neq 0
+$$
+- Si scrive il **denominatore** nella forma $[f(x)]^2 +1$  con il metodo del **completamento del quadrato;**
+- Si trasforma il **numeratore** in modo che diventi $f'(x)$;
+- Si calcola l'integrale
+$$
+ \int \dfrac{f'(x)}{1 + [f(x)]^2}\,dx = \arctan(f(x)) + c
+$$
+##### $N$ è di primo grado
+$$
+\int \frac{px+q}{ax^2+bx+c}dx, \ \ \ \ con \ a \neq 0 \ e \ p\neq 0
+$$
+- Si opera del **numeratore** per farvi figurare la derivata del **denominatore**;
+- Si scrive l'integrale come **somma di due integrali:**
+$$
+\int \frac{2ax+b}{ax^2+bx+c}dx = s \int \frac{1}{ax^2+bx+c}dx
+$$
+- Si calcola il primo integrale **ricordando** che $\int \frac{f'(x)} {f(x)} dx = \ln \mid f(x) \mid +\ c,$ quindi:
+$$
+\int \frac{2ax+b}{ax^2+bx+c}dx = \ln \mid ax^2+bx+c \mid + c_1
+$$
+- Si calcola il secondo integrale con  il **metodo già visto** ($\Delta < 0$ , $N$ di grado $0$)
+- Si sommano i risultati ottenuti
