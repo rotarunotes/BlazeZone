@@ -21,11 +21,11 @@ I comandi SQL si dividono in **cinque gruppi fondamentali**:
 ---
 ___
 # Indice
-- [DDL](DDL)
-- [DML](DML)
-- [DCL](DCL)
-- [TCL](TCL)
-- [DQL](DQL)
+- [DDL](DDL.md)
+- [DML](DML.md)
+- [DCL](DCL.md)
+- [TCL](TCL.md)
+- [DQL](DQL.md)
 
 ---
 

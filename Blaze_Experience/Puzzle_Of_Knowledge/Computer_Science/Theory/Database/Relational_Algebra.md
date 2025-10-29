@@ -5,14 +5,14 @@ ___
 
 # Indice
 ##### Operatori Relazionali
-- [Selezione (Sigma)](#selezione-sigma)
-- [Proiezione (Pi Greco)](#proiezione-pi-greco)
+- [Selezione](#Selezione-(Sigma))
+- [Proiezione](#Proiezione-(Pi))
 - [Unione](#unione)
 - [Intersezione](#intersezione)
 - [Sottrazione](#sottrazione)
-- [Piano Cartesiano](#piano-cartesiano)
-- [Giunzione Naturale](#giunzione-naturale)
-- [Theta Join](#theta-join)
+- [Piano Cartesiano](#Piano-Cartesiano)
+- [Giunzione Naturale](#Giunzione-Naturale)
+- [Theta Junction](#Theta-Junction)
 - [Ridenominazione](#ridenominazione)
 ##### Grado e Cardinalità
 - [Tabella Grado e Cardinalità](#GradoCardinalita)
@@ -32,7 +32,7 @@ ___
 | Mattia  | Barina  | 23  | Mira   |
 
 # Operatori
-## Selezione (Sigma)
+## Selezione-(Sigma)
 - **Filtro orizzontale:** seleziona le tuple (righe) che soddisfano una condizione booleana.
 - Non modifica le colonne.
 $$
@@ -47,7 +47,7 @@ $$
 | Nome   | Cognome | Età | Città |
 | :----- | :------ | :-- | :---- |
 | Mattia | Barina  | 23  | Mira  |
-## Proiezione (Pi Greco)
+## Proiezione-(Pi)
 - **Filtro verticale:** seleziona solo alcune colonne (attributi).
 - Rimuove i duplicati (nel modello teorico).
 $$
@@ -112,7 +112,7 @@ $$
 | Nome     | Cognome | Età | Città |
 | :------- | :------ | :-- | :---- |
 | Giuseppe | Maugeri | 12  | Dolo  |
-## Piano Cartesiano
+## Piano-Cartesiano
 -  Combina **ogni** tupla di  $R_1$  **con ogni** tupla di $R_2$**.
 $$
 Relazione1 \times Relazione2
@@ -132,7 +132,7 @@ $$
 | Giuseppe| Maugeri    | 12     | Dolo     | Mattia  | Scatto     | 42     | Mestre   |
 | Giuseppe| Maugeri    | 12     | Dolo     | Mattia  | Barina     | 23     | Mira     |
 
-## Giunzione Naturale
+## Giunzione-Naturale
 - Combina due relazioni **sulla base degli attributi comuni**.
 $$
 Relazione1 \bowtie Relazione2
@@ -146,7 +146,7 @@ $$
 | Nome   | Cognome | Età | Città |
 | :----- | :------ | :-- | :---- |
 | Mattia | Barina  | 23  | Mira  |
-## Theta Junction
+## Theta-Junction
 - Permette confronti diversi da “uguaglianza” degli attributi di 2 relazioni.
 $$
 R_1 \bowtie_{\text{<condizione>}} R_2
