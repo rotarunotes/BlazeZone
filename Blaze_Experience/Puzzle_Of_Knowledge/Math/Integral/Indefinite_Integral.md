@@ -169,13 +169,13 @@ Questo metodo vale anche se il numeratore è di grado zero, ossia se $p = 0$.
 - Si scompone il denominatore: $ax^2+bx+c = a(x-x_1)^2$. dove $x_1 = -\frac{b}{2a}$;
 - Si scrive la frazione algebrica data come somma di due frazioni algebriche:
 $$
-\frac{px+q}{ax^2+bx+c} = \frac{A}{a(x-x_1)} + \frac{B}{(x-x_2)^2} 
+\frac{px+q}{ax^2+bx+c} = \frac{A}{a(x-x_1)} + \frac{B}{(x-x_1)^2} 
 $$
 - Si calcola la **somma** delle due frazioni al secondo membro;
 - Si **determinano** i valori $A$ e $B$ risolvendo il **sistema** le cui equazioni si ottengono **uguagliando** fra loro i **coefficienti** della $x$ noti dei polinomi al numeratore dei due membri:
 - Si **risolve** l'integrale
 $$
-\int \left[ \frac{A}{a(x-x_1)} + \frac{B}{(x-x_2)^2}\right] dx
+\int \left[ \frac{A}{a(x-x_1)} + \frac{B}{(x-x_1)^2}\right] dx
 $$
 #### $\Delta < 0$
 ##### $N$ di grado $0$
