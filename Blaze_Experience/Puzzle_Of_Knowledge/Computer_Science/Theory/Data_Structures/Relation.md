@@ -34,5 +34,5 @@ ___
 - **Cardinalità** di una relazione sono il numero delle tuple
 ___
 # Chiavi
-- Chiave primaria: è una chiave che identifica univocamente una tupla dento a una relazione
-- Chiave esterna: è una chiave che punta a una chiave primaria di un'altra relazione
+- **Chiave primaria:** è una chiave che identifica univocamente una tupla dento a una relazione
+- **Chiave esterna:** è una chiave che punta a una chiave primaria di un'altra relazione

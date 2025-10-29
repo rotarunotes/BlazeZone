@@ -28,21 +28,20 @@ ___
 
 | **N** | **Integrali Immediati**                         | **Formula di risoluzione **                             |
 | ----- | ----------------------------------------------- | ------------------------------------------------------- |
-| 1     | $\int k\,f(x)\,dx$                              | $k f(x) + c$                                            |
-| 2     | $\int [f(x)]^n \cdot f'(x) \, dx$               | $\frac{[f(x)]^{n+1}}{n+1} + c$                          |
-| 3     | $\int \dfrac{f'(x)}{f(x)}\,dx$                  | $\ln \|f(x)\| + c$                                      |
-| 4     | $\int a^{f(x)} \cdot f'(x)\,dx$                 | $\dfrac{a^{f(x)}}{\ln a} + c$                           |
-| 5     | $\int e^{f(x)} \cdot f'(x)\,dx$                 | $e^{f(x)} + c$                                          |
-| 6     | $\int \sin[f(x)]\,\cdot f'(x)\,dx$              | $-\cos(f(x)) + c$                                       |
-| 7     | $\int \cos[f(x)]\,\cdot f'(x)\,dx$              | $\sin(f(x)) + c$                                        |
-| 8     | $\int \tan[f(x)] \cdot f'(x) \, dx$             | $-\ln\|\cos[f(x)]\| + c$                                |
-| 9     | $\int \cot[f(x)] \cdot f'(x) \, dx$             | $\ln\|\sin[f(x)]\| + c$                                 |
-| 10    | $\int \dfrac{f'(x)}{\cos^2 [f(x)]}\,dx$         | $\tan(f(x)) + c$                                        |
-| 11    | $\int \dfrac{f'(x)}{\sin^2 [f(x)]}\,dx$         | $-\cot(f(x)) + c$                                       |
-| 12    | $\int \dfrac{f'(x)}{\sqrt{1 - [f(x)]^2}}\,dx$   | $\arcsin(f(x)) + c$                                     |
-| 13    | $\int \dfrac{f'(x)}{1 + [f(x)]^2}\,dx$          | $\arctan(f(x)) + c$                                     |
-| 14    | $\int \dfrac{f'(x)}{\sqrt{a^2 - [f(x)]^2}}\,dx$ | $\arcsin\left(\frac{f(x)}{\|a\|}\right) + c$            |
-| 15    | $\int \dfrac{f'(x)}{a^2 + [f(x)]^2}\,dx$        | $\dfrac{1}{a}\arctan\!\left(\dfrac{f(x)}{a}\right) + c$ |
+| 1     | $\int [f(x)]^n \cdot f'(x) \, dx$               | $\frac{[f(x)]^{n+1}}{n+1} + c$                          |
+| 2     | $\int \dfrac{f'(x)}{f(x)}\,dx$                  | $\ln \mid f(x)\mid + c$                                 |
+| 3     | $\int a^{f(x)} \cdot f'(x)\,dx$                 | $\dfrac{a^{f(x)}}{\ln a} + c$                           |
+| 4     | $\int e^{f(x)} \cdot f'(x)\,dx$                 | $e^{f(x)} + c$                                          |
+| 5     | $\int \sin[f(x)]\,\cdot f'(x)\,dx$              | $-\cos(f(x)) + c$                                       |
+| 6     | $\int \cos[f(x)]\,\cdot f'(x)\,dx$              | $\sin(f(x)) + c$                                        |
+| 7     | $\int \tan[f(x)] \cdot f'(x) \, dx$             | $-\ln \mid \cos[f(x)] \mid + c$                         |
+| 8     | $\int \cot[f(x)] \cdot f'(x) \, dx$             | $\ln \mid \sin[f(x)]\mid + c$                           |
+| 9     | $\int \dfrac{f'(x)}{\cos^2 [f(x)]}\,dx$         | $\tan(f(x)) + c$                                        |
+| 10    | $\int \dfrac{f'(x)}{\sin^2 [f(x)]}\,dx$         | $-\cot(f(x)) + c$                                       |
+| 11    | $\int \dfrac{f'(x)}{\sqrt{1 - [f(x)]^2}}\,dx$   | $\arcsin(f(x)) + c$                                     |
+| 12    | $\int \dfrac{f'(x)}{1 + [f(x)]^2}\,dx$          | $\arctan(f(x)) + c$                                     |
+| 13    | $\int \dfrac{f'(x)}{\sqrt{a^2 - [f(x)]^2}}\,dx$ | $\arcsin\left(\frac{f(x)}{\mid a \mid}\right) + c$      |
+| 14    | $\int \dfrac{f'(x)}{a^2 + [f(x)]^2}\,dx$        | $\dfrac{1}{a}\arctan\!\left(\dfrac{f(x)}{a}\right) + c$ |
 
 ___
 
@@ -107,6 +106,6 @@ $$
 
 
 
-$\mid 8 \mid$
+$\mid 8 $
 
 
