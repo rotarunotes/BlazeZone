@@ -1,4 +1,4 @@
-Data: 2025-10-29
+ Data: 2025-10-29
 [Database](../README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL
 ___
@@ -6,10 +6,19 @@ ___
 **SQL** è un linguaggio utilizzato per creare, gestire e interrogare i **Database** relazionali.  
 Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, aggiornamento, eliminazione).
 
+___
+# Indice
+- [DDL](DDL.md)
+- [DML](DML.md)
+- [DCL](DCL.md)
+- [TCL](TCL.md)
+- [DQL](DQL.md)
+
+___
 ## Categorie principali di comandi SQL
 
 I comandi SQL si dividono in **cinque gruppi fondamentali**:
-
+		 
 | Categoria | Scopo             | Comandi principali      |
 | --------- | ----------------- | ----------------------- |
 | **DDL**   | Struttura del DB  | CREATE, ALTER, DROP     |
@@ -17,15 +26,6 @@ I comandi SQL si dividono in **cinque gruppi fondamentali**:
 | **DCL**   | Interrogazioni    | SELECT, WHERE, ORDER BY |
 | **TCL**   | Sicurezza         | GRANT, REVOKE           |
 | **DQL**   | Transazioni       | COMMIT, ROLLBACK        |
-
----
-___
-# Indice
-- [DDL](DDL.md)
-- [DML](DML.md)
-- [DQL](DQL.md)
-- [TCL](TCL.md)
-- [QCL](QCL.md)
 
 ---
 
@@ -54,21 +54,7 @@ Serve per **inserire, aggiornare o cancellare i dati** dentro le tabelle.
 | `DELETE` | Elimina record | `DELETE FROM studenti WHERE id=1;` |
 
 ---
-
-
----
-
-## 🔐 4️⃣ DCL – Data Control Language
-
-Serve per **gestire i permessi e la sicurezza** del database.
-
-| Comando | Funzione | Esempio |
-|----------|-----------|----------|
-| `GRANT` | Concede permessi a un utente | `GRANT SELECT ON studenti TO 'mario'@'localhost';` |
-| `REVOKE` | Revoca permessi | `REVOKE SELECT ON studenti FROM 'mario'@'localhost';` |
-
----
-
+## DQL
 ## 🔁 5️⃣ TCL – Transaction Control Language
 
 Serve per **gestire le transazioni**.
