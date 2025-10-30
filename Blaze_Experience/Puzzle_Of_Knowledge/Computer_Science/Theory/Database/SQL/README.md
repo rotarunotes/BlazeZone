@@ -23,9 +23,9 @@ ___
 # Indice
 - [DDL](DDL.md)
 - [DML](DML.md)
-- [DCL](DCL.md)
-- [TCL](TCL.md)
 - [DQL](DQL.md)
+- [TCL](TCL.md)
+- [QCL](QCL.md)
 
 ---
 
@@ -55,17 +55,6 @@ Serve per **inserire, aggiornare o cancellare i dati** dentro le tabelle.
 
 ---
 
-## 🔍 3️⃣ DQL – Data Query Language
-
-Serve per **interrogare i dati**.
-
-| Comando | Funzione | Esempio |
-|----------|-----------|----------|
-| `SELECT` | Estrae dati da una o più tabelle | `SELECT * FROM studenti;` |
-| `WHERE` | Filtra i risultati | `SELECT * FROM studenti WHERE nome='Mario';` |
-| `ORDER BY` | Ordina i risultati | `SELECT * FROM studenti ORDER BY nome ASC;` |
-| `GROUP BY` | Raggruppa i risultati | `SELECT classe, COUNT(*) FROM studenti GROUP BY classe;` |
-| `HAVING` | Filtra i gruppi creati da GROUP BY | `SELECT classe, COUNT(*) FROM studenti GROUP BY classe HAVING COUNT(*) > 10;` |
 
 ---
 
