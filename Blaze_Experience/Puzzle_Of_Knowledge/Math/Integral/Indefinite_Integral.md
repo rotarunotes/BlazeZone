@@ -154,7 +154,7 @@ si utilizzano metodi **risolutivi** diversi a seconda del **segno** del discrimi
 
 #### $\Delta > 0$
 - Si scompone il **denominatore**: $ax^2+bx+c = a(x-x_1)(x-x_2)$
-- Si scrive la frazione algebrica data com somma di frazioni algebriche con **denominatore** di primo grado:
+- Si scrive la frazione algebrica data con somma di frazioni algebriche con **denominatore** di primo grado:
 $$
 \frac{px+q}{ax^2+bx+c} = \frac{A}{a(x-x_1)} + \frac{B}{(x-x_2)} 
 $$
