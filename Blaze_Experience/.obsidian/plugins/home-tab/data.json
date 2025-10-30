@@ -12,7 +12,7 @@
   "fontSize": "4em",
   "fontColorType": "accentColor",
   "fontWeight": 600,
-  "maxResults": 5,
+  "maxResults": 25,
   "showbookmarkedFiles": true,
   "showRecentFiles": false,
   "maxRecentFiles": 5,
