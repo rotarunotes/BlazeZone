@@ -7,4 +7,4 @@ ___
 # Titolo 2
 ___
 
- ![[Pasted image 20251030093259.png]]
+![[Pasted image 20251030093955.png]]

@@ -24,6 +24,10 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
+      "timestamp": 1761813590449
+    },
+    {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Future.md",
       "timestamp": 1761813445280
     },
@@ -34,14 +38,6 @@
     {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Data.md",
       "timestamp": 1761813434917
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
-      "timestamp": 1761813323318
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
-      "timestamp": 1761813198502
     }
   ],
   "bookmarkedFileStore": [],
