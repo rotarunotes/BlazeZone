@@ -195,7 +195,7 @@ $$
 - Si opera del **numeratore** per farvi figurare la derivata del **denominatore**;
 - Si scrive l'integrale come **somma di due integrali:**
 $$
-\int \frac{2ax+b}{ax^2+bx+c}dx = s \int \frac{1}{ax^2+bx+c}dx
+\int \frac{2ax+b}{ax^2+bx+c}dx \ + s \int \frac{1}{ax^2+bx+c}dx
 $$
 - Si calcola il primo integrale **ricordando** che $\int \frac{f'(x)} {f(x)} dx = \ln \mid f(x) \mid +\ c,$ quindi:
 $$
