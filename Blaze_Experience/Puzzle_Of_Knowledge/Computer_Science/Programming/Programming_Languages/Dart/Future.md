@@ -12,7 +12,12 @@ Il **Future** in dart è come una promessa di un valore che riceverai
 ### Async
 - Si mette dopo il nome di una funzione (es.  void main() async). È un' etichetta che dice: 
 	- Attenzione, questa funzione potrebbe contenere operazioni asincrone e usare la parola chiave **await**.
-
+``` Dart
+//Restituisce un future
+Async
+//Restituisce uno stream
+Async*
+```
 #### Tipi di return con Async
  - Quando metti **async** davanti a una **funzione**, stai dicendo al compilatore Dart: "Trasforma questa funzione: anche se sembra normale,  deve obbligatoriamente restituire un **Future**.
  
