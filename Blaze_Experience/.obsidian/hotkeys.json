@@ -56,5 +56,14 @@
       ],
       "key": "P"
     }
+  ],
+  "obsidian-trash-explorer:show-trash-explorer": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "C"
+    }
   ]
 }
