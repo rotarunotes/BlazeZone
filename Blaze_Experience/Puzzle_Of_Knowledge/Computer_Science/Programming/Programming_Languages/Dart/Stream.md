@@ -1,4 +1,4 @@
-Data: 2025-10-30
+(Data: 2025-10-30
 [Dart](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
 ___
@@ -622,5 +622,42 @@ an error occured
 {a: element A, b: element B} 
 123.45 
 done
+```
+
+## es012 Stream da Iterable
+``` Dart
+void main() async {
+  var data = <int>[1, 3, 4, 5, 11, 666];
+  var stream = Stream.fromIterable(data); 
+  stream.listen((value) {
+    print("Received: $value"); 
+  }); 
+}
+```
+
+**Output:**
+``` 
+Received: 1 
+Received: 3 
+Received: 4 
+Received: 5 
+Received: 11 
+Received: 666
+```
+
+## es012 Proiezione e Selezione
+``` Dart
+void main() async {
+  Stream<int> stream =
+      Stream<int>.periodic(const Duration(seconds: 1), transform);
+  stream = stream.take(5);
+  await for (int i in stream) {
+    print(i);
+  }
+}
+
+int transform(int x) {
+  return (x + 1) * 2;
+}
 ```
 
