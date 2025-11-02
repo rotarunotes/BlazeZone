@@ -14,6 +14,11 @@
       "type": "local",
       "color": "#4310d1",
       "directory": "Setup_Archive/Plugin/Calendar/Social_Event"
+    },
+    {
+      "type": "local",
+      "color": "#1d9315",
+      "directory": "Setup_Archive/Plugin/Calendar/Gym"
     }
   ],
   "defaultCalendar": 0,
