@@ -22,28 +22,7 @@
   "showShortcuts": true,
   "markdownOnly": false,
   "unresolvedLinks": false,
-  "recentFilesStore": [
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
-      "timestamp": 1762118660584
-    },
-    {
-      "filepath": "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-04 io e isolate.md",
-      "timestamp": 1762118546248
-    },
-    {
-      "filepath": "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-05 io e isolate.md",
-      "timestamp": 1762118545371
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
-      "timestamp": 1762118231796
-    },
-    {
-      "filepath": "Setup_Archive/Images/Pasted Image 20251102215250_469.png",
-      "timestamp": 1762118184946
-    }
-  ],
+  "recentFilesStore": [],
   "bookmarkedFileStore": [],
   "searchDelay": 0,
   "replaceNewTabs": true,
