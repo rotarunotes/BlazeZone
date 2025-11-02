@@ -1,5 +1,5 @@
 (Data: 2025-10-30
-[Dart](./README.md)
+[Dart](README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
 ___
 # Stream \<T\>
@@ -109,33 +109,17 @@ Invece uno **stream broadcast** in Dart è uno stream che può avere **più**  l
 
 ## Streamsubscription
 Una StreamSubscription (sottoscrizione a uno stream) è l'oggetto che ottieni quando chiami il metodo **.listen()** su uno stream.
-[[#es016 Lo Streamsubscription|Esempio:]]
 
 Non rappresenta i dati, ma la connessione che hai stabilito con lo stream. Ti permette di:
 
 1) **Mettere in pausa:** subscription.pause()
     - Smette temporaneamente di ricevere dati.    
-		Il stream.periodic continua a generare i dati durante i secondi di pausa, StreamSubscription li "trattiene" in un **buffer** interno. Appena chiami sub.resume(), la subscription "svuota la coda" e invia **immediatamente** tutti gli eventi accumulati al tuo listener, prima di ricominciare a ricevere o nuovi dati al ritmo stabilito.
-	[[#es017 Argument in pause|Esempio:]]
 2) **Riprendere:** subscription.resume()
     - Ricomincia a ricevere dati da dove avevi interrotto.    
-	    - **Esplicito:** È il controllo **manuale**.
-			- **Pausa:** Chiami sub.pause() (senza argomenti).
-			- **Ripresa:** Lo stream rimane in pausa **indefinitamente**, finché tu (o qualche altra parte del tuo codice) non chiami esplicitamente sub.resume().
-		- **Implicito:** È il controllo **automatico** (o "temporizzato").
-			- **Pausa:** Chiami sub.pause(mioFuture). Lo stream si mette in pausa ora.
-			- **Ripresa:** Lo stream riprende automaticamente non appena mioFuture si completa (o restituisce un errore). Non devi chiamare sub.resume() manualmente.
-	[[#es018 Gestione Della Subscription|Esempio:]]
 3) **Annullare:** subscription.cancel()
-	1. **Stop immediato:** Il tuo listener **smette immediatamente di ricevere nuovi eventi**. Non riceverà più alcun dato, errore, o l'evento onDone.
-	2. **Perdita di eventi in coda:** Se la subscription era in pausa e aveva eventi in coda (buffered), **quegli eventi vengono scartati** e non saranno mai processati.
-	3. **Segnale alla sorgente:** La subscription comunica allo stream sorgente (ad esempio al StreamController o al Stream.periodic) che non è più in ascolto.
-	4. **Pulizia (Cleanup):**
-	    - **Se è un Stream.periodic:** Il Timer interno che genera gli eventi viene fermato (come si vede nelle API, timer.cancel()).
-	    - **Se è uno StreamController:** Il controller riceve una notifica onCancel. Se questo era l'ultimo listener, il controller può decidere di smettere di produrre dati o chiudere le risorse (es. chiudere un file o una connessione di rete).
-	5. **Prevenzione Memory Leak:** Questo è l'aspetto più importante. Cancellare la subscription permette al garbage collector di liberare la memoria usata dal listener e dalla subscription stessa. Se non lo facessi (specialmente in un widget Flutter che viene distrutto), manterresti un riferimento "fantasma" allo stream, creando un **memory leak**.
-	[[#es019 Cancel|Esempio:]]
+    - **Fondamentale:** Chiude permanentemente la connessione e smette di ascoltare. Questo è essenziale per liberare la memoria ed evitare memory leak quando non ti servono più i dati (ad esempio, quando un widget viene distrutto).
 
+[[#es016 Lo Streamsubscription|Esempio:]]
 ## Gestione Asincrona 
 ### await for() { ... }
 
@@ -578,7 +562,6 @@ void main() async {
   final StreamController ctrl = StreamController();
 
   final Stream stream = ctrl.stream;
-  
   stream.listen((data) => print('$data'), onDone: () => print("done"));
 
   ctrl.sink.add('my name');
@@ -829,7 +812,7 @@ void main() {
     print("Some Error2");
   });
   
- 
+  streamController.addStream(stream);
   
   print("code controller is here");
 }
@@ -976,325 +959,4 @@ FINE
 
 **Domande:**
 - Dove accade il resume?
-	- Il `resume` **accade automaticamente** quando il `Future` che hai passato come argomento a `pause()` si completa.
-	- Quando usi `sub.pause(unFuture)`, stai dicendo: "Metti in pausa, e riprendi automaticamente non appena `unFuture` è terminato".
-	- In questo caso, il `Future.delayed` si completa dopo 2 secondi (subito dopo aver eseguito e stampato `fire`). In quel preciso istante, la subscription riceve il segnale di "resume" e riprende a emettere gli eventi che aveva messo in coda.
-
-## es018 Gestione Della Subscription
-
-``` Dart
-import 'dart:async';
-
-void main() {
-  late StreamSubscription sub;
-  sub = Stream<int>.periodic(const Duration(seconds: 1), (value) => value + 1)
-      .take(20)
-      .listen((data) {
-    print('recieved: $data');
-    if (data == 10) {
-      sub.pause(Future.delayed(const Duration(seconds: 3)));
-      //sub.pause(Future.delayed(const Duration(seconds: 3), () => sub.resume()));
-    }
-  }, onDone: () {
-    print("FINE");
-  });
-}
-```
-
-**Output:**
-```
-recieved: 1 
-recieved: 2 
-recieved: 3 
-recieved: 4 
-recieved: 5 
-recieved: 6 
-recieved: 7 
-recieved: 8 
-recieved: 9 
-recieved: 10 
-recieved: 11 
-recieved: 12 
-recieved: 13 
-recieved: 14 
-recieved: 15 
-recieved: 16 
-recieved: 17 
-recieved: 18 
-recieved: 19 
-recieved: 20 
-FINE
-```
-
-**Domande:**
-- Decommentare e constatare il resume implicito:
-	- Non cambia niente a livello quando si esegue
-
-## es019 Cancel
-
-``` Dart
-import 'dart:async';
-
-void main() {
-  late StreamSubscription sub;
-  sub = Stream<int>.periodic(const Duration(seconds: 1), (value) => value + 1)
-      .take(20)
-      .listen((data) {
-    print('recieved: $data');
-    if (data == 10) {
-      sub.cancel();
-      // await sub.cancel();
-      print("cancelled");
-    }
-  }, onDone: () {
-    print("done event");
-  });
-}
-```
-
-**Output:**
-```
-recieved: 1 
-recieved: 2 
-recieved: 3 
-recieved: 4 
-recieved: 5 
-recieved: 6 
-recieved: 7 
-recieved: 8 
-recieved: 9 
-recieved: 10 
-cancelled
-```
-
-**Esecuzione:**
-- Ricorda che con il cancel non verrà eseguito l' onDone
-
-## eso20 Pause in Broadcast
-
-``` Dart
-import 'dart:async';
-
-void main() {
-  var streamController = StreamController.broadcast();
-  
-  Stream stream =
-      Stream.periodic(const Duration(seconds: 1), (value) => value + 1)
-      .take(8);
-
-  late StreamSubscription sub1;
-  
-  sub1 = streamController.stream.listen((data) {
-    print('1recieved: $data');
-    if (data == 2) {
-      sub1.pause(
-          Future.delayed(const Duration(seconds: 3), () => print('fire'))
-      );
-      // try to uncomment
-      //sub1.cancel();
-    }
-  });
-
-  streamController.stream.listen((data) {
-    print('2recieved: $data');
-  });
-
-  streamController.addStream(stream);
-}
-```
-
-**Output:**
-```
-1recieved: 1 
-2recieved: 1 
-1recieved: 2 
-2recieved: 2 
-2recieved: 3 
-2recieved: 4 
-2recieved: 5 
-fire 
-1recieved: 3 
-1recieved: 4 
-1recieved: 5 
-1recieved: 6 
-2recieved: 6 
-1recieved: 7 
-2recieved: 7 
-1recieved: 8 
-2recieved: 8
-```
-
-**Esecuzione:**
-Questo codice dimostra la differenza fondamentale tra una subscription in pausa e un'altra attiva sullo stesso **stream broadcast**.
-
-1) Comportamento dell'esempio (con `cancel()` commentato)
-	1. **Setup:** Crei un controller `broadcast` e due listener (`sub1` e un listener anonimo `recieved2`). Entrambi ascoltano lo stesso controller.
-	2. **Avvio:** `addStream` collega lo stream periodico.
-	3. **T=1 sec:** Lo stream emette `1`. Il controller lo invia a entrambi.
-	    - Output: `recieved1: 1`
-	    - Output: `recieved2: 1`
-	4. **T=2 sec:** Lo stream emette `2`. Il controller lo invia a entrambi.
-	    - Output: `recieved1: 2`        
-	    - `sub1` entra nell' `if`, chiama `pause()` e si "congela" per 3 secondi.     
-	    - Output: `recieved2: 2`    
-	5. **T=3 sec:** Lo stream emette `3`.
-	    - `sub1` è in pausa.
-	    - Output: `recieved2: 3`
-	6. **T=4 sec:** Lo stream emette `4`.   
-	    - `sub1` è in pausa.       
-	    - Output: `recieved2: 4`    
-	7. **T=5 sec:** Lo stream emette `5`.
-	    - `sub1` è in pausa.
-	    - Output: `recieved2: 5`
-	8. **T=5 sec (fine pausa):** Il `Future.delayed` di `sub1` si completa.
-	    - Output: `fire`
-	    - `sub1` esegue il `resume` implicito.
-	9. **Bufferizzazione (vedi punto 3):** Appena ripresa, `sub1` "svuota la coda" (il buffer) degli eventi persi.
-	    - Output (immediato):
-	        - `recieved1: 3`
-	        - `recieved1: 4`
-	        - `recieved1: 5`
-	10. **T=6 sec:** Lo stream emette `6`. Entrambi i listener sono attivi.
-	    - Output: `recieved1: 6`
-	    - Output: `recieved2: 6`
-	11. **T=7-8 sec:** Lo stream continua ed entrambi ricevono `7` e `8`, poi lo stream si chiude.
-
-2) Comportamento con `sub1.cancel()` decommentato
-	1. **T=1 sec:** Identico a prima.
-	    - Output: `recieved1: 1`
-	    - Output: `recieved2: 1`
-	2. **T=2 sec:** `sub1` riceve il `2`.
-	    - Output: `recieved1: 2`
-	    - `sub1` entra nell' `if`.     
-	    - Chiama `sub1.pause(...)`.     
-	    - Chiama **immediatamente** `sub1.cancel()`.        
-	    - **Conseguenza:** `sub1` è ora "morta". È stata distrutta e non riceverà mai più eventi.    
-	    - `sub2` riceve il `2` (è indipendente).  
-	    - Output: `recieved2: 2`
-	3. **T=3-8 sec:** Lo stream continua a emettere 3, 4, 5, 6, 7, 8.
-	    - `sub1` è cancellata, quindi ignora tutto.
-	    - `sub2` continua a ricevere tutto normalmente.
-	    - Output:
-	        - `recieved2: 3`        
-	        - `recieved2: 4`        
-	        - `recieved2: 5`    
-	        - `recieved2: 6`    
-	        - `recieved2: 7`    
-	        - `recieved2: 8`    
-	4. **T=5 sec (ex-pausa):** Il `Future.delayed` si completa (era già stato avviato).
-	    - Output: `fire`
-	    - Tenta di eseguire il `resume` implicito, ma la subscription `sub1` non esiste più. L'operazione non ha effetto.
-**Output:**
-```
-1recieved: 1 
-2recieved: 1 
-1recieved: 2 
-2recieved: 2 
-2recieved: 3 
-2recieved: 4 
-2recieved: 5 
-fire 
-2recieved: 6 
-2recieved: 7 
-2recieved: 8
-```
-## es021 Ancora sulla Bufferizzazione
-
-``` Dart
-import 'dart:async';
-
-void main() {
-  var counterStream = timedCounter(const Duration(seconds: 1), 15);
-  
-  late StreamSubscription<int> subscription;
-  
-  subscription = counterStream.listen((int counter) {
-    print(counter);
-    if (counter == 5) {
-      subscription.pause(Future.delayed(const Duration(seconds: 5)));
-    }
-  });
-}
-
-Stream<int> timedCounter(Duration interval, [int? maxCount]) async* {
-  int i = 0;
-  while (true) {
-    await Future.delayed(interval);
-    yield i++;
-    if (i == maxCount) break;
-  }
-}
-```
-
-**Output:**
-```
-0 
-1 
-2 
-3 
-4 
-5
-// pausa di 5 secondi 
-6 
-7 
-8 
-9 
-10 
-11 
-12 
-13 
-14
-```
-
-**Domande:**
-Perché non c'è un buffer?
-
-- Il motivo è che stai usando un generatore `async*` (`timedCounter`). Questo tipo di stream ha un meccanismo chiamato **"backpressure"** (contropressione).
-	1. **Produttore Controllato:** La funzione `timedCounter` (il produttore) non "spara" numeri all'impazzata. Si ferma ad ogni `await` e attende ad ogni `yield` che il listener (il consumatore) sia pronto a ricevere il dato.
-	2. **La Pausa:** Quando il listener riceve il `5` e tu chiami `subscription.pause()`, il listener segnala allo stream: "Sono in pausa, non mandarmi più niente per ora".
-	3. **Il Blocco:** La funzione `timedCounter`, che nel frattempo ha aspettato 1 secondo ed è pronta a `yield 6`, si **blocca su quell'istruzione `yield`**. Rimane "congelata" in attesa.
-	4. **Nessun Buffer:** Durante i 5 secondi di pausa, la funzione `timedCounter` è semplicemente ferma. Non sta generando i numeri 6, 7, 8, 9, 10. Di conseguenza, non c'è nulla da mettere in un buffer.
-	5. **La Ripresa:** Dopo 5 secondi, il `Future.delayed` si completa e la subscription si riattiva (resume implicito). Segnala allo stream: "Ok, sono pronto".
-	6. **Esecuzione:** Solo a quel punto la funzione `timedCounter` si sblocca, esegue `yield 6`, stampa `6`, e ricomincia il suo ciclo `await`/`yield` al ritmo di un numero al secondo.
-
-## es022 Ultimo Esempio
-
-``` Dart
-import 'dart:math';
-import 'dart:async';
-
-void main() {
-  late StreamSubscription<int> sub;
-  Stream<int> stream = getRandomValues(6);
-  sub = stream.listen((val) async {
-    print(val);
-    if (val == 4) {
-      await sub.cancel();
-      print('cancel');
-    }
-  }, onDone: () {
-    print('done');
-  });
-}
-Stream<int> getRandomValues(int goal) async* {
-  var random = Random();
-  while (true) {
-	// da 1 a 7
-    int num = random.nextInt(6) + 1;
-    await Future.delayed(Duration(milliseconds: 500));
-    yield num;
-    if (num == goal) break;
-  }
-}
-```
-
-**Output:**
-```
-1 
-2 
-4 
-cancel
-```
-
-**Esecuzione:**
-Non viene eseguito onDone
+-

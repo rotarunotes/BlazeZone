@@ -6,7 +6,7 @@ ___
 Di cosa parla questa MOC.
 ___
 # Indice
-- [Obsidian_Base](Obsidian_Base/README.md)
+- [Obsidian_Base](Setup_Archive/Obsidian_Base/README.md)
 - [Plugin](Plugin/README.md)
 - [Rules](Rules/README.md)
 ___

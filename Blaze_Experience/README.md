@@ -46,9 +46,9 @@ ___
 	- [5ID_2025-26](School/5ID_2025-26/README.md)
 - [Setup_Archive](Setup_Archive/README.md)
 	- [Obsidian_Base](Setup_Archive/Obsidian_Base/README.md)
-		- [Formatting](Setup_Archive/Obsidian_Base/Formatting.md)
-		- [Links_Obsidian](Setup_Archive/Obsidian_Base/Links_Obsidian.md)
-		- [Example_Of_Text](Setup_Archive/Obsidian_Base/Example_Of_Text.md)
+		- [Formatting](Formatting.md)
+		- [Links_Obsidian](Links_Obsidian.md)
+		- [Example_Of_Text](Example_Of_Text.md)
 	- [Plugin](Setup_Archive/Plugin/README.md)
 	- [Rules](Setup_Archive/Rules/README.md)
 ___
