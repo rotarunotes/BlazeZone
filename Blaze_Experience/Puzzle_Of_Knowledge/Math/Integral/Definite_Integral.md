@@ -95,6 +95,61 @@ $$
 ![[Integrale_definito_Media|200]]
 
 ___
+# Teorema Fondamentale Del Calcolo Integrale
+Se una funzione $f(x)$ è continua in $[a;b]$, allora esiste la derivata della sua funzione integrale
+$$
+		F(x) = \int_a^x f(t) \ dt
+$$
+Per ogni punto x dell'intervallo $[a;b]$, ed è uguale a $f(x)$, cioè:
+$$
+F'(x) = f(x)
+$$
+Ovvero $F(x)$ è una primitiva $f(x)$.
+
+**Dimostrazione:**
+Dimostriamo che esiste la derivata $F(x)$ e calcoliamo tale derivata applicando la definizione.
+Incrementiamo la variabile $x$ di un valore $h \neq 0$ tale che $a < x + h < b$ e calcoliamo la differenza $F(x+h)-F(x)$ utilizzando l'espressione della funzione integrale:
+$$
+F(x+h) - F(x) = \int_a^{x+h} f(t) \ dt \ - \int_a^x f(t) \ dt
+$$
+Applichiamo la proprietà di additività dell'integrale:
+
+$$
+F(x + h) - F(x) =  \int_a^x f(t)dt + \int_x^{x+h} f(t)dt  - \int_a^x f(t)dt = \int_x^{x+h} f(t)dt.
+$$
+
+Per il teorema della media, il valore dell’ultimo integrale della formula precedente è uguale al prodotto di $h$ per il valore $f(z)$, dove $z$ è un particolare punto che appartiene all’intervallo $[x, x+h]$, nel caso in cui sia $h > 0$, oppure all’intervallo $[x+h, x]$, se $h < 0$; pertanto possiamo scrivere:
+$$
+\int_x^{x+h}f(x) = h \cdot f(z) \to F(x + h) - F(x) = h \cdot f(z).
+$$
+Dividiamo i due membri delle seconda uguaglianza per $h$:
+$$
+\frac{F(x + h) - F(x)}{h} = f(z).
+$$
+Analizziamo il comportamento di $f(z)$ al tendere a $0$ di $h$.
+Sia $h > 0$; poiché $z$ è compreso fra $x$ e $x+h$, se $h$ tende a $0$ (da destra), allora $z$ tende a $x$ (da destra) e
+$$
+\lim_{h \to 0^+} f(z) = \lim_{z \to x^+} f(z) = f(x)
+$$
+perché $f$ è continua per ipotesi.
+
+Con un ragionamento analogo, se $h < 0$, si deduce che
+$$
+\lim_{h \to 0^-} f(z) = \lim_{z \to x^-} f(z) = f(x).
+$$
+Dunque:
+$$
+\lim_{h \to 0} f(z) = \lim_{z \to x} f(z) = f(x).
+$$
+Possiamo pertanto concludere che esiste anche il limite, per $h$ tendente a $0$, dell’espressione al primo membro, cioè del rapporto incrementale della funzione $F$ nel punto $x$, e:
+$$
+\lim_{h \to 0} \frac{F(x + h) - F(x)}{h} = \lim_{h \to 0} f(z) = f(x).
+$$
+La funzione $F$ è dunque derivabile, e quindi anche continua, e risulta:
+$$
+F'(x) = f(x)
+$$
+
 # Calcolo Dell'Integrale Definito
 Formula di **Leibniz-Newton:**
 $$
@@ -125,3 +180,67 @@ $$
 
 ___
 # Integrali Impropri
+1) Consideriamo per primo il caso in cui la funzione $f(x)$ sia continua in tutti i punti dell'intervallo , ma con una singolarità in $b$, cioè $f(x)$ non è definita in $b$ o è definita ma è discontinua in $b$.
+
+	Consideriamo un punto $z$ interno all'intervallo  $[a;b]$: 
+	La funzione $f(x)$ è continua nell'intervallo    $[a;z]$, quindi esiste l'integrale $\int_a^z f(x) \ dx$, il cui valore è un numero reale.
+	
+	Questo vale per tutti i punti $z$ dell'intervallo  $[a;b]$, perciò possiamo costruire la funzione integrale
+	$$
+	F(z) = \int_a^z f(x) \ dx,
+	$$
+	definita in $[a;b]$.
+	
+	Se esiste finito il limite fi $F(x)$ quando $z$ tende a $b$ da sinistra, cioè se esiste 
+	$$
+	\lim_{z \to b^-} F(z),
+	$$
+	
+	Allora si dice che la funzione $f(x)$ è **integrabile in senso improprio** in  $[a;b]$ e si definisce:
+	$$
+	\int_a^b f(x) \ dx = \lim_{z \to b^-} \int_a^z f(x) \ dx
+	$$
+	- L'integrale  $\int_a^b f(x)$ è detto **integrabile improprio** della funzione $f(x)$ in  $[a;b]$, e in questo caso si dice anche che tale integrale è **convergente.**
+	
+	- Se il limite considerato non esiste oppure è infinito, si dice che la funzione **non è integrabile in senso improprio** in  $[a;b]$:
+		- Il limite è $\infty \to$ divergente 
+		- Il limite non esiste $\to$ Indeterminato 
+
+2) Se la funzione $f(x$) è continua in tutti i punti dell'intervallo $]a;b]$, ma ha una singolarità in $a$, possiamo definire l'integrale $\int_a^b f(x) \ dx$ in modo analogo.
+
+	Considerato $z \in ]a, b]$, se esiste finito il limite della funzione $F(z) = \int_z^b f(x) \ dx$ quando $z$ tende ad $a$ da destra, cioè se esiste $\lim_{z \to a^+} F(z)$, allora si dice che la funzione $f(x)$ è **integrabile in senso improprio** in $[a, b]$ e si definisce:
+$$
+\int_a^b f(x) \ dx = \lim_{z \to a^+} \int_z^b f(x) \ dx.
+$$
+3) Se la funzione ha un punto di singolarità di qualunque specie in un punto $c$ interno all’intervallo $[a, b]$, l’integrale $\int_a^b f(x)\ dx$ può essere definito, **in senso improprio**, come la somma degli integrali $\int_a^c f(x) \ dx$ e $\int_c^b f(x) \ dx$, se tali integrali esistono, in base alle definizioni precedenti:
+$$
+\int_a^b f(x) dx = \lim_{t \to c^-} \int_a^t f(x) dx + \lim_{t \to c^+} \int_t^b f(x) dx.
+$$
+
+![[Integrale_definito_3casi|600]]
+
+# Integrale Di Una Funzione In Un Intervallo Illimitato
+Consideriamo una funzione $f(x)$ continua in tutti i punti di $[a, +\infty[$. Comunque si scelga un punto $z$ interno all’intervallo $[a, +\infty[$, esiste l’integrale $\int_a^z f(x) dx$ il cui valore è un numero reale, quindi possiamo costruire anche in questo caso la funzione integrale:
+$$
+F(z) = \int_a^z f(x) dx,
+$$
+definita in $[a, +\infty[.$
+
+- Se esiste finito il limite della funzione $F(z)$ quando $z$ tende a $+\infty$, cioè se esiste $\lim_{z \to +\infty} F(z)$, 
+  allora si dice che la funzione $f(x)$ è **integrabile in senso improprio** in $[a, +\infty[$ e si definisce:
+$$
+\int_a^{+\infty} f(x) dx = \lim_{z \to +\infty} \int_a^z f(x) dx.
+$$
+Anche in questo caso si dice che l’integrale $\int_a^{+\infty} f(x)dx$ è **convergente**.
+
+- Se il limite considerato è infinito, si dice che l’integrale $\int_a^{+\infty} f(x)dx$ è **divergente**. Se il limite non esiste, l’integrale $\int_a^{+\infty} f(x)dx$ è **indeterminato**.
+
+  In entrambi i casi diciamo che la funzione $f(x)$ non è integrabile in senso improprio in $[a, +\infty[$.
+
+In modo del tutto analogo, se una funzione è continua in $]-\infty, a]$ e se esiste finito il limite $\lim_{z \to -\infty} \int_z^a f(x) dx$, diciamo che la funzione $f(x)$ è integrabile in senso improprio in $]-\infty, a]$ e definiamo:
+
+$$\int_{-\infty}^a f(x) dx = \lim_{z \to -\infty} \int_z^a f(x) dx.$$
+
+
+
+x
