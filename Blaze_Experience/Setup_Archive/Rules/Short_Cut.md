@@ -11,6 +11,7 @@ ___
 | ctrl + +         | crea nuova cartella |
 | shift + alr + c  | apri cestino        |
 | ctrl + shift + p | apri calendario     |
+| ctrl + alt + a   | Nuovo disegno       |
 
 ___
 # Titolo 2
