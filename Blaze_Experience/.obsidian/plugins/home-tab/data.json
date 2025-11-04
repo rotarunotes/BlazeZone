@@ -24,20 +24,16 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Setup_Archive/Rules/Short_Cut.md",
-      "timestamp": 1762207900031
-    },
-    {
-      "filepath": "Pasted image 20251030093955.png",
-      "timestamp": 1762207535436
-    },
-    {
       "filepath": "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
-      "timestamp": 1762207534703
+      "timestamp": 1762237489401
     },
     {
-      "filepath": "README.md",
-      "timestamp": 1762207534368
+      "filepath": "Setup_Archive/Plugin/Excalidraw/Integrale_definito_Aree.md",
+      "timestamp": 1762237488147
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
+      "timestamp": 1762207609788
     }
   ],
   "bookmarkedFileStore": [],
