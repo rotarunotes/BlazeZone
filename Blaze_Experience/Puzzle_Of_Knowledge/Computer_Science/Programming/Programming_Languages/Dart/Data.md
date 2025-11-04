@@ -2,6 +2,20 @@ Data: 2025-10-19
 [Dart](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
 ___
+# Index
+- [[#Variabili]]
+    - [[#Var]]
+    - [[#Dynamic]]
+    - [[#Const]]
+    - [[#Final]]
+    - [[#Late]]
+- [[#Null]]
+- [[#Collezioni]]
+    - [[#List]]
+    - [[#Set]]
+        - [[#Set vuoto]]
+    - [[#Map]]
+    - [[#Iterable]]
 # Variabili
 ## Var
 - È una parola chiave che usi per creare una  variabile senza specificare **esplicitamente** il tipo .
@@ -174,4 +188,3 @@ List<String> nomi = ['Alice', 'Bob', 'Charlie'];
 for (String nome in nomi) {
   print(nome); // Stampa Alice, poi Bob, poi Charlie
 ```
-}

@@ -2,6 +2,34 @@ Data: 2025-10-19
 [Dart](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
 ___
+# Index
+- [[#Future ]]
+- [[#Teoria]]
+    - [[#Gestione Asincrona]]
+        - [[#Async]]
+            - [[#Tipi di return con Async]]
+                - [[#Return fantasma]]
+        - [[#Await]]
+	    - [[#Future.Then()]]
+    - [[#Funzioni]]
+        - [[#Future.Then()]]
+        - [[#Future.forEach]]
+        - [[#Future.wait]]
+- [[#Dimostrazione]]
+    - [[#es001 Un Primo Esempio]]
+    - [[#es002 Esempio Col Then]]
+    - [[#es003 Go On (Parallelismo Asincrono)]]
+    - [[#es004 Go On (Sincronizzazione Interna)]]
+    - [[#es005 Un Esempio Più Complesso]]
+    - [[#es006 Una Variante Del Precedente]]
+    - [[#es007 Un Esempio di Sincronizzazione (Approccio Bloccante o Sequenziale)]]
+        - [[#es007 Un Esempio di Sincronizzazione (Approccio Parallelo)]]
+    - [[#es008 crivello di Eratostene]]
+    - [[#es009 Altro Esempio (Future.wait)]]
+    - [[#es010 Generare Eccezioni]]
+    - [[#es011 Un Esempio dalla Documentazione]]
+    - [[#es012 Segue il Precedente (Alternativa)]]
+    - [[#es013 Restando in Tema]]
 # Future \<T\>
  È definito come un **asynchronous computation**. nel  momento in cui viene attivata una tale computazione viene generato un **evento** che, posto nella **event queue**, verrà gestito dall'**event loop**
 
@@ -38,6 +66,7 @@ Future<void> miaFunzione() async {
 | void miaFunzione()           | Ritorna **niente** (sincrono).                  |
 | Future\<void\> miaFunzione() | Ritorna una **promessa di niente** (asincrono). |
 | void miaFunzione() **async** | Ritorna una **promessa di niente** (asincrono). |
+
 ##### Return fantasma
 
 ``` Dart
@@ -57,6 +86,8 @@ Future<String> getMessaggio() async {
 - Si usa davanti a una chiamata che restituisce un Future.  È un' etichetta che dice:
 	-  Attenzione, il programma aspetterà in quel punto il risultato del **Future** prima di continuare
 
+### [[#Future.Then()]]
+
 ## Funzioni
 ### Future.Then()
 - Il  **.then()** è un metodo  Callback, che "attacchi" a un **Future** e dice: "
@@ -75,7 +106,8 @@ Future<String> getMessaggio() async {
 1) Accetta una collezione di **Future**.
 2) Avvia tutte le operazioni asincrono, e permetto loro di essere eseguite contemporaneamente.
 3) Attende che tutti i future terminano il loro lavoro.
-4) Risultato ordinato: il primo elemento della lista è il primo risultato del primo Future della lista input, il secondo elemento è il risultato del secondo Future
+4) .then
+5) Risultato ordinato: il primo elemento della lista è il primo risultato del primo Future della lista input, il secondo elemento è il risultato del secondo Future
 
 - Se anche sono uno dei Future fallisce, l'intero Future.wait fallisce immediatamente.
 

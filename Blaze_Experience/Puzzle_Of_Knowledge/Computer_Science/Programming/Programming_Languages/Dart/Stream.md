@@ -2,10 +2,54 @@
 [Dart](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
 ___
+# Index
+- [[#Stream ]]
+    - [[#Gestione dello Stream]]
+    - [[#Teoria]]
+    - [[#Yield]]
+    - [[#Costruttore col Nome:]]
+        - [[#Stream.periodic]]
+            - [[#Duration period (Obbligatorio)]]
+            - [[#Funzione di Callback (Opzionale)]]
+        - [[#Stream.fromIterable]]
+    - [[#StreamController]]
+    - [[#Broadcast Stream]]
+    - [[#Streamsubscription]]
+    - [[#Gestione Asincrona]]
+        - [[#await for() { ... }]]
+    - [[#Funzioni]]
+        - [[#.listen]]  
+        - [[#.forEach]]
+        - [[#.take]]
+- [[#Dimostrazione]]
+    - [[#es001 Da Named Constructor]]
+    - [[#es002 Da (function) Generator]]
+    - [[#es003 Named Constructor]]
+    - [[#es004 Stream Da Una Collezione di Future]]
+    - [[#es005 Done Event]]
+    - [[#eso06 Errori da Stream]]
+    - [[#007 For Each]]
+    - [[#008 Selezione ed Approccio funzionale alla creazione di uno stream]]
+    - [[#es009 Approccio Ricorsivo]]
+    - [[#es010 StreamController]]
+    - [[#es011 Eventi Di Uno Stream]]
+    - [[#es012 Stream da Iterable]]
+    - [[#es013 Trasformazione]]
+    - [[#es014 Broadcast Stream]]
+    - [[#es015 Broadcast Stream]]
+    - [[#es016 Lo Streamsubscription]]
+    - [[#es017 Argument in pause]]
+    - [[#es018 Gestione Della Subscription]]
+    - [[#es019 Cancel]]
+    - [[#eso20 Pause in Broadcast]]
+    - [[#es021 Ancora sulla Bufferizzazione]]
+    - [[#es022 Ultimo Esempio]]
+    - 
 # Stream \<T\>
-uno stream è una **sequenza di risultati.** È possibile rimanere in **ascolto** su uno stream per ricevere **notifiche** sui risultati (sia dati che errori) e sulla sua **chiusura**. È anche possibile mettere in **pausa** l'ascolto o **interromperlo** prima che sia completato.
+uno stream è una **sequenza di risultati.** dati che arriva nel tempo. È possibile rimanere in **ascolto** su uno stream per ricevere **notifiche** sui risultati (sia dati che errori) e sulla sua **chiusura**. È anche possibile mettere in **pausa** l'ascolto o **interromperlo** prima che sia completato.
 
 Uno **stream** lo otteniamo mediante una **async* function**, detta anche **generator**, perché tale funzione **emetta** eventi usiamo **yield** (una sorta di **return** che non termina la funzione).
+
 
 ## Gestione dello Stream
 | **Caratteristica**         | [[#.listen]]                      | [[#await for() { ... }]]                 | [[#.forEach]]                                                 |
@@ -61,7 +105,7 @@ Quello che la tua funzione  **restituisce** (return) è il valore che viene **em
 [[#es001 Da Named Constructor|Esempio:]]
 
 ### Stream.fromIterable
-è un **costruttore con nome** (named constructor) della classe Stream.
+È un **costruttore con nome** (named constructor) della classe Stream.
 
 Il suo scopo è creare un nuovo stream che emette **ciascun elemento** della collezione (tecnicamente, un Iterable, come la List) che gli passi come argomento, uno dopo l'altro, e **poi si chiude**.
 
@@ -70,16 +114,17 @@ Lo stream rilascia **immediatamente**, ciascun elemento della **collezione** ,se
 [[#es003 Named Constructor|Esempio:]]
 
 ## StreamController
-È l'oggetto che ti permette di **creare e controllare manualmente** uno stream. Ti dà due cose:
 
-1) **Il sink (L'INPUT):** È l'imbuto. Il .sink è un oggetto (chiamato EventSink) che ha i metodi per "nutrire" lo stream.
-	- **.sink.add(123);** (Versa il dato 123 nell'imbuto)
-	- **.sink.addError('ops');** (Versa un errore nell'imbuto
-	- **.sink.close();** (Chiude il rubinetto. Lo stream invierà onDone)
-    
-2) **Lo stream (L'OUTPUT):** È il tubo. È la parte che "dai" agli altri, che la useranno per ascoltare i dati (controller.stream.listen(...)).
+È l'oggetto che ti permette di creare e gestire manualmente uno stream.
+In pratica, funge da tramite tra chi produce i dati e chi li ascolta.
+Componenti fondamentali di uno streamController:
+1) Sink (Input): immaginalo come un imbuto in cui versi i dati destinati allo stream
+	- **sink.add(123);** → Invia il dato 123 nello stream.
+	- **sink.addError('ops');** → Invia un errore nello stream.
+	- **sink.close();** → Chiude il flusso; gli ascoltatori riceveranno l’evento onDone.
 
-In pratica: tu controlli il rubinetto (sink), gli altri ricevono l'acqua (stream).
+2) Stream (Output): Il tubo da cui escono i dati
+	- **controller.stream.listen((data) { ... });**
 
 ``` Dart
 final streamController = StreamController(
