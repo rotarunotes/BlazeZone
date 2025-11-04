@@ -28,7 +28,7 @@ ___
 Se $f(x)$ è continua in un intervallo e $a, b, c$  sono punti qualunque di tale intervallo, allora:
 
 $$
-\int_a^b f(x) \ dx = \int_a^b f(x) dx \ + \int_b^c f(x) \ dx
+\int_a^c f(x) \ dx = \int_a^b f(x) dx \ + \int_b^c f(x) \ dx
 $$
 
 ## Integrale Della Somma Di Funzioni
