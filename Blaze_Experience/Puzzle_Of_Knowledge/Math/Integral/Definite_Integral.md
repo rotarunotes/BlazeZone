@@ -203,8 +203,8 @@ ___
 	- L'integrale  $\int_a^b f(x)$ è detto **integrabile improprio** della funzione $f(x)$ in  $[a;b]$, e in questo caso si dice anche che tale integrale è **convergente.**
 	
 	- Se il limite considerato non esiste oppure è infinito, si dice che la funzione **non è integrabile in senso improprio** in  $[a;b]$:
-		- Il limite è $\infty \to$ divergente 
-		- Il limite non esiste $\to$ Indeterminato 
+		- Il limite è $\infty \to$ **divergente** 
+		- Il limite non esiste $\to$ **Indeterminato**
 
 2) Se la funzione $f(x$) è continua in tutti i punti dell'intervallo $]a;b]$, ma ha una singolarità in $a$, possiamo definire l'integrale $\int_a^b f(x) \ dx$ in modo analogo.
 
@@ -236,7 +236,7 @@ Anche in questo caso si dice che l’integrale $\int_a^{+\infty} f(x)dx$ è **co
 - Se il limite considerato è infinito, si dice che l’integrale $\int_a^{+\infty} f(x)dx$ è **divergente**. 
 - Se il limite non esiste, l’integrale $\int_a^{+\infty} f(x)dx$ è **indeterminato**.
 
-  In entrambi i casi diciamo che la funzione $f(x)$ non è integrabile in senso improprio in $[a, +\infty[$.
+  In entrambi i casi diciamo che la funzione $f(x)$ **non è integrabile in senso improprio** in $[a, +\infty[$.
 
 In modo del tutto analogo, se una funzione è continua in $]-\infty, a]$ e se esiste finito il limite $\lim_{z \to -\infty} \int_z^a f(x) dx$, diciamo che la funzione $f(x)$ è integrabile in senso improprio in $]-\infty, a]$ e definiamo:
 
