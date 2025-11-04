@@ -233,7 +233,8 @@ $$
 $$
 Anche in questo caso si dice che l’integrale $\int_a^{+\infty} f(x)dx$ è **convergente**.
 
-- Se il limite considerato è infinito, si dice che l’integrale $\int_a^{+\infty} f(x)dx$ è **divergente**. Se il limite non esiste, l’integrale $\int_a^{+\infty} f(x)dx$ è **indeterminato**.
+- Se il limite considerato è infinito, si dice che l’integrale $\int_a^{+\infty} f(x)dx$ è **divergente**. 
+- Se il limite non esiste, l’integrale $\int_a^{+\infty} f(x)dx$ è **indeterminato**.
 
   In entrambi i casi diciamo che la funzione $f(x)$ non è integrabile in senso improprio in $[a, +\infty[$.
 
