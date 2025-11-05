@@ -25,23 +25,19 @@
   "recentFilesStore": [
     {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
-      "timestamp": 1762339233998
+      "timestamp": 1762339783049
     },
     {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
-      "timestamp": 1762339199965
+      "timestamp": 1762339782689
+    },
+    {
+      "filepath": "2025-11-05.md",
+      "timestamp": 1762339774939
     },
     {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
       "timestamp": 1762338637199
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
-      "timestamp": 1762338456889
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
-      "timestamp": 1762338424870
     }
   ],
   "bookmarkedFileStore": [],
