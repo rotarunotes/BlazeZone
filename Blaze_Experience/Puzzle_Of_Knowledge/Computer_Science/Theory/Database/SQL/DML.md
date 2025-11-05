@@ -2,7 +2,7 @@ Data: 2025-10-29
 [SQL](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL
 ___
-# Titolo 1
+# Data Manipulation Language
 ___
 # Titolo 2
 ___

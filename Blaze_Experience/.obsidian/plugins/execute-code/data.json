@@ -53,7 +53,7 @@
   "dartPath": "dart",
   "dartArgs": "",
   "dartFileExtension": "dart",
-  "dartInject": "",
+  "dartInject": "i",
   "csPath": "dotnet-script",
   "csArgs": "",
   "csFileExtension": "csx",

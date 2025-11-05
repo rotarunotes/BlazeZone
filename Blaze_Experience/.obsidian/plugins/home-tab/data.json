@@ -24,20 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
+      "timestamp": 1762334226312
+    },
+    {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
-      "timestamp": 1761813590449
+      "timestamp": 1762334225250
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Future.md",
-      "timestamp": 1761813445280
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
+      "timestamp": 1762334224420
     },
     {
-      "filepath": "README.md",
-      "timestamp": 1761813442140
+      "filepath": "Setup_Archive/Rules/README.md",
+      "timestamp": 1762334218635
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Data.md",
-      "timestamp": 1761813434917
+      "filepath": "Setup_Archive/Obsidian_Base/README.md",
+      "timestamp": 1762334213118
     }
   ],
   "bookmarkedFileStore": [],

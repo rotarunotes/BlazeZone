@@ -7,6 +7,16 @@ ___
 Il **DQL (Data Query Language)** è la parte di SQL che si occupa del recupero e della visualizzazione dei dati.  
 Le principali operazioni derivate dall’**algebra relazionale** sono:
 
+| [[#Selezione]]           | `SELECT * FROM Studenti WHERE Età > 20;`                                                               |
+| ------------------------ | ------------------------------------------------------------------------------------------------------ |
+| [[#Proiezione]]          | SELECT Nome, Corso FROM Studenti;                                                                      |
+| [[#Unione]]              | SELECT * FROM Studenti1 UNION SELECT * FROM Studenti2;<br>                                             |
+| [[#Sottrazione]]         | SELECT * FROM Studenti1 EXCEPT SELECT * FROM Studenti2;                                                |
+| [[#Intersezione]]        | SELECT * FROM Studenti1 INTERSECT SELECT * FROM Studenti2;                                             |
+| [[#Prodotto cartesiano]] | SELECT * FROM Studenti, Corsi;                                                                         |
+| [[#Giunzione]]           | SELECT Studenti.Nome,<br>Corsi.NomeCorso FROM Studenti JOIN Corsi ON Studenti.IDCorso = Corsi.IDCorso; |
+
+
 ---
 
 # Selezione
@@ -231,12 +241,12 @@ SELECT * FROM Studenti, Corsi;
 
 **Risultato:**
 
-|Nome|Corso|
-|---|---|
-|Luca|Matematica|
-|Luca|Fisica|
-|Anna|Matematica|
-|Anna|Fisica|
+| Nome | Corso      |
+| ---- | ---------- |
+| Luca | Matematica |
+| Luca | Fisica     |
+| Anna | Matematica |
+| Anna | Fisica     |
 
 **Spiegazione:**
 
