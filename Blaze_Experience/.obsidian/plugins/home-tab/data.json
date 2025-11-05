@@ -24,24 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/README.md",
-      "timestamp": 1762337207998
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
+      "timestamp": 1762337320690
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
-      "timestamp": 1762337206593
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
+      "timestamp": 1762337316958
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/README.md",
-      "timestamp": 1762337204995
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
+      "timestamp": 1762337314012
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
-      "timestamp": 1762337203053
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
+      "timestamp": 1762337313174
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DNS.md",
-      "timestamp": 1762337201296
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
+      "timestamp": 1762337312592
     }
   ],
   "bookmarkedFileStore": [],
