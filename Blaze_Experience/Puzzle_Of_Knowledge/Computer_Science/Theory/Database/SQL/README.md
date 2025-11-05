@@ -2,7 +2,7 @@
 [Database](../README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL
 ___
-# Structured Query Laguage
+# Structured Query Language
 **SQL** è un linguaggio utilizzato per creare, gestire e interrogare i **Database** relazionali.  
 Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, aggiornamento, eliminazione).
 

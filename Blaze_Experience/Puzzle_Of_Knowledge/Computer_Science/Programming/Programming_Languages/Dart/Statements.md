@@ -2,6 +2,16 @@ Data: 2025-10-21
 [Dart](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
 ___
+# Index
+- [[#If]]
+    - [[#If Operatore Ternario]]
+    - [[#if Collection (Per Liste/Widget)]]
+- [[#For]]
+- [[#For-In]]
+- [[#While]]
+- [[#Try-Catch]]
+- [[#Switch]]
+
 # If
 Prende decisioni
 

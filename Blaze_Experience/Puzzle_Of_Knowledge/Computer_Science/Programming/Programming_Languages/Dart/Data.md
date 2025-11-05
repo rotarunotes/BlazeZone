@@ -2,6 +2,20 @@ Data: 2025-10-19
 [Dart](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
 ___
+# Index
+- [[#Variabili]]
+    - [[#Var]]
+    - [[#Dynamic]]
+    - [[#Const]]
+    - [[#Final]]
+    - [[#Late]]
+- [[#Null]]
+- [[#Collezioni]]
+    - [[#List]]
+    - [[#Set]]
+        - [[#Set vuoto]]
+    - [[#Map]]
+    - [[#Iterable]]
 # Variabili
 ## Var
 - È una parola chiave che usi per creare una  variabile senza specificare **esplicitamente** il tipo .
@@ -162,3 +176,15 @@ var boh = {};
 Map<dynamic, dynamic> boh = {};
 ```
 
+## Iterable
+In Dart, un **Iterable** è una collezione di elementi che puoi scorrere in **sequenza**, uno dopo l'altro.
+
+Non ti dà accesso **immediato** a tutti gli elementi (come una List), ma ti permette di "chiederli" uno alla volta.
+
+L'esempio più comune di Iterable è una List.
+``` Dart
+List<String> nomi = ['Alice', 'Bob', 'Charlie'];
+// Puoi usare un loop "for-in", che funziona su tutti gli iterable
+for (String nome in nomi) {
+  print(nome); // Stampa Alice, poi Bob, poi Charlie
+```

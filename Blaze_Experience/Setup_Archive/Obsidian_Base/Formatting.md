@@ -1,5 +1,5 @@
 Data: 2025-10-16
-[Obsidian_Base](./README.md)
+[Obsidian_Base](Setup_Archive/Obsidian_Base/README.md)
 #Setup_Archive/Obsidian_Base
 ___
 

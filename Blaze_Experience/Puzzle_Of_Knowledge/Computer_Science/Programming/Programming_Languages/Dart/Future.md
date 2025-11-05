@@ -2,17 +2,50 @@ Data: 2025-10-19
 [Dart](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
 ___
+# Index
+- [[#Future ]]
+- [[#Teoria]]
+    - [[#Gestione Asincrona]]
+        - [[#Async]]
+            - [[#Tipi di return con Async]]
+                - [[#Return fantasma]]
+        - [[#Await]]
+	    - [[#Future.Then()]]
+    - [[#Funzioni]]
+        - [[#Future.Then()]]
+        - [[#Future.forEach]]
+        - [[#Future.wait]]
+- [[#Dimostrazione]]
+    - [[#es001 Un Primo Esempio]]
+    - [[#es002 Esempio Col Then]]
+    - [[#es003 Go On (Parallelismo Asincrono)]]
+    - [[#es004 Go On (Sincronizzazione Interna)]]
+    - [[#es005 Un Esempio Più Complesso]]
+    - [[#es006 Una Variante Del Precedente]]
+    - [[#es007 Un Esempio di Sincronizzazione (Approccio Bloccante o Sequenziale)]]
+        - [[#es007 Un Esempio di Sincronizzazione (Approccio Parallelo)]]
+    - [[#es008 crivello di Eratostene]]
+    - [[#es009 Altro Esempio (Future.wait)]]
+    - [[#es010 Generare Eccezioni]]
+    - [[#es011 Un Esempio dalla Documentazione]]
+    - [[#es012 Segue il Precedente (Alternativa)]]
+    - [[#es013 Restando in Tema]]
 # Future \<T\>
-- È definito come un **asynchronous computation**. nel  momento in cui viene attivata una tale computazione viene generato un **evento** che, posto nella **event queue**, verrà gestito dall'**event loop**
+ È definito come un **asynchronous computation**. nel  momento in cui viene attivata una tale computazione viene generato un **evento** che, posto nella **event queue**, verrà gestito dall'**event loop**
 
 ___
 # Teoria
-- Il Future in dart è come una promessa di un valore che riceverai
+Il **Future** in dart è come una promessa di un valore che riceverai
 ## Gestione Asincrona 
 ### Async
 - Si mette dopo il nome di una funzione (es.  void main() async). È un' etichetta che dice: 
 	- Attenzione, questa funzione potrebbe contenere operazioni asincrone e usare la parola chiave **await**.
-
+``` Dart
+//Restituisce un future
+Async
+//Restituisce uno stream
+Async*
+```
 #### Tipi di return con Async
  - Quando metti **async** davanti a una **funzione**, stai dicendo al compilatore Dart: "Trasforma questa funzione: anche se sembra normale,  deve obbligatoriamente restituire un **Future**.
  
@@ -33,6 +66,7 @@ Future<void> miaFunzione() async {
 | void miaFunzione()           | Ritorna **niente** (sincrono).                  |
 | Future\<void\> miaFunzione() | Ritorna una **promessa di niente** (asincrono). |
 | void miaFunzione() **async** | Ritorna una **promessa di niente** (asincrono). |
+
 ##### Return fantasma
 
 ``` Dart
@@ -52,6 +86,8 @@ Future<String> getMessaggio() async {
 - Si usa davanti a una chiamata che restituisce un Future.  È un' etichetta che dice:
 	-  Attenzione, il programma aspetterà in quel punto il risultato del **Future** prima di continuare
 
+### [[#Future.Then()]]
+
 ## Funzioni
 ### Future.Then()
 - Il  **.then()** è un metodo  Callback, che "attacchi" a un **Future** e dice: "
@@ -59,6 +95,7 @@ Future<String> getMessaggio() async {
 - Il parametro del then è una funzione che deve essere in grado di accettare come argomento il valore restituito dal **Future**, quando si completa con successo
 
 [[#es002 Esempio Col Then|Esempio:]]
+
 ### Future.forEach
 - È un metodo che itera sugli elementi di una **collezione** (in questo caso, la lista di numeri) ed esegue un'operazione **asincrona** per ciascuno di essi in modo **sequenziale**.
 - La sua caratteristica chiave è che attende il **completamento** dell' operazione su un elemento prima di iniziare l' operazione sull' elemento **successivo**
@@ -69,7 +106,8 @@ Future<String> getMessaggio() async {
 1) Accetta una collezione di **Future**.
 2) Avvia tutte le operazioni asincrono, e permetto loro di essere eseguite contemporaneamente.
 3) Attende che tutti i future terminano il loro lavoro.
-4) Risultato ordinato: il primo elemento della lista è il primo risultato del primo Future della lista input, il secondo elemento è il risultato del secondo Future
+4) .then
+5) Risultato ordinato: il primo elemento della lista è il primo risultato del primo Future della lista input, il secondo elemento è il risultato del secondo Future
 
 - Se anche sono uno dei Future fallisce, l'intero Future.wait fallisce immediatamente.
 
@@ -77,7 +115,7 @@ Future<String> getMessaggio() async {
 
 ___
 # Dimostrazione
-## es001: Un Primo Esempio
+## es001 Un Primo Esempio
 
 ```dart
 void main() async {
@@ -113,7 +151,7 @@ after received
 | **Elimina `await`**             | Errore di compilazione. | Si tenta di assegnare un `Future<int>` (il risultato immediato di `number(5)`) a una variabile `int` (`x`). |
 | **Elimina `async` e `await`**   | Errore di compilazione. | Stesso errore del caso precedente: tentativo di assegnare un `Future` a un `int`.                           |
 
-## es002: Esempio Col Then
+## es002 Esempio Col Then
 
 ```dart
 void main() {
@@ -131,14 +169,6 @@ void main() {
 }
 ```
 
-
-**Esecuzione:**
-1. Stampa **`START`** (sincrono).
-2. `Future.delayed` (con durata 0) programma un evento. L'esecuzione continua immediatamente.
-3. Stampa **`STOP`** (sincrono).
-4. L'event loop gestisce l'evento: esegue la prima callback, stampa **`from callback`**, ritorna `666`.
-5. Il `Future` si completa, il `.then()` viene eseguito, stampa **`666`**.
-
 **Output:**
 ``` 
 START
@@ -148,12 +178,19 @@ from callback
 666
 ```
 
+**Esecuzione:**
+1. Stampa **`START`** (sincrono).
+2. `Future.delayed` (con durata 0) programma un evento. L'esecuzione continua immediatamente.
+3. Stampa **`STOP`** (sincrono).
+4. L'event loop gestisce l'evento: esegue la prima callback, stampa **`from callback`**, ritorna `666`.
+5. Il `Future` si completa, il `.then()` viene eseguito, stampa **`666`**.
+
 | Domanda                     | Risposta                                                                                                                                                                                                                                                                                    |
 | :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Come mai manca `async`?** | La funzione `main` non ha bisogno di essere `async` perché non utilizza la parola chiave **`await`**. L'operazione asincrona e la gestione del suo risultato sono gestite interamente dal metodo a catena **`.then()`**.                                                                    |
 | **Differenze con es001?**   | `es001` usa **`async/await`** per un approccio **sequenziale (stile sincrono)** alla gestione asincrona. `es002` usa **`.then()`** per un approccio **basato su callback** per gestire il risultato del `Future`. L'uso di `.then()` non richiede che la funzione contenitrice sia `async`. |
 
-## es003: Go On (Parallelismo Asincrono)
+## es003 Go On (Parallelismo Asincrono)
 
 ```dart
 void main() {
@@ -188,7 +225,7 @@ after 5 seconds
 | **Tipo di ritorno di una computazione asincrona?** | È sempre un **`Future<T>`**, `T` è il tipo del valore che la funzione è destinata a restituire. **`Future<void>`** se la funzione non restituisce nulla. |
 | **Tempi uguali (es. 3s e 3s)?**                    | Se i tempi sono uguali, le chiamate all'interno dell'event queue verranno eseguite nell'ordine in cui sono state programmate.                            |
 
-## es004: Go On (Sincronizzazione Interna)
+## es004 Go On (Sincronizzazione Interna)
 
 ```dart
 void main() {
@@ -217,7 +254,7 @@ after 3 seconds
 | :------------------------------------------------- | :--------------------------------------------------------------------------------------- |
 | per quale motivo in **main** non appare **async?** | Nel tuo codice, **main** sta usando un approccio "lancia e dimentica" (fire and forget). |
 ___
-## es005: Un Esempio Più Complesso
+## es005 Un Esempio Più Complesso
 
 ``` Dart
 import 'dart:math'; // Fornisce la classe Random
@@ -257,7 +294,7 @@ Got back Joe Coder with id# 33
 | Quali tipi di **costruttori** vengono utilizzati?           | Viene utilizzato un **costruttore abbreviato**. Questa sintassi è un'abbreviazione di `this.id = id`. |
 | cosa succede se tolgo **async** e **await** nella funzione? | senza **async** non si può ritornare un future                                                        |
 ___
-##  es006: Una Variante Del Precedente
+##  es006 Una Variante Del Precedente
 ```dart
 Future<Employee> getEmployee(int id) async {
   Random rnd = Random();
@@ -285,7 +322,7 @@ Got back Joe Coder with id# 33
 Nella nuova versione viene ritornato un `Future<Employee>` dato dalla funzione anonima `() => Employee(...)`, senza l'uso di **async/await**.
 
 -----
-## es007: Un Esempio di Sincronizzazione (Approccio Bloccante o Sequenziale)
+## es007 Un Esempio di Sincronizzazione (Approccio Bloccante o Sequenziale)
 
 ```dart
 void main() async {
@@ -319,7 +356,7 @@ done
 - **Commento:** L'uso di `await` in sequenza fa sì che **ogni operazione asincrona debba completarsi prima che la successiva possa iniziare**.
 - **const** significa "costante a tempo di compilazione".  crea questo oggetto **una sola volta** quando compila il programma e lo **memorizza.** Ogni volta che la funzione **myAsync** viene chiamata, riutilizza sempre quello stesso identico oggetto **Duration** già pronto in memoria.
 - si può omettere **async** nella funzione myAsync, perché la funzione non utilizza**await** e ritorna già il future.
-### es007: Un Esempio di Sincronizzazione (Approccio Parallelo)
+### es007 Un Esempio di Sincronizzazione (Approccio Parallelo)
 
 ```dart
 void main() async {
@@ -358,7 +395,7 @@ done
 Per eseguire le operazioni in parallelo e attendere che **tutte** si completino, si usa **Future.wait**
 
 -----
-## es008: crivello di Eratostene
+## es008 crivello di Eratostene
 
 ```dart
 import 'dart:math';
@@ -405,7 +442,7 @@ done!
 | **Esaminare dal punto di vista matematico il crivello** | Il codice **verifica la primalità di un numero**. L'ottimizzazione chiave è che per la verifica è sufficiente testare la divisibilità fino alla **radice quadrata** di `n` (`mysqrt.ceil()`), non fino a `n-1`. |
 
 ___
-## es009: Altro Esempio (Future.wait)
+## es009 Altro Esempio (Future.wait)
 
 ```dart
 import 'dart:math';
@@ -470,7 +507,7 @@ void main() async {
 ```
 
 ___
-## es010: Generare Eccezioni
+## es010 Generare Eccezioni
 
 ```dart
 void main() async {
@@ -500,7 +537,7 @@ Looks like we caught an error: Exception: BOOM!
 4. Successivamente, l'errore asincrono si propaga e non viene gestito, causando probabilmente un **errore non gestito dall'event loop** o dal runtime (mostrando un messaggio d'errore). **Per gestire l'errore di un `Future` senza `await`, si userebbe `.catchError()`**.
 
 ___
-## es011: Un Esempio dalla Documentazione
+## es011 Un Esempio dalla Documentazione
 
 ```dart
 void main() {
@@ -552,7 +589,7 @@ Your order is: Large Latte
 - La tua funzione `createOrderMessage` è `async`. Questo significa che **non restituisce immediatamente la stringa** con l'ordine. Invece, restituisce subito un oggetto speciale chiamato `Future<String>`.
 
 ___
-## es012: Segue il Precedente (Alternativa)
+## es012 Segue il Precedente (Alternativa)
 
 ```dart
 main() async{
@@ -605,7 +642,7 @@ Your order is: Large Latte
 | t=10  | (terminato)                                      | `delayed(4s)` finisce → stampa 4 | 4                          |
 
 ___
-## es013: Restando in Tema
+## es013 Restando in Tema
 
 ```dart
 main() async {

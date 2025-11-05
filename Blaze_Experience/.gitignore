@@ -2,6 +2,6 @@
 # .obsidian/plugins
 .obsidian/workspace.json
 .obsidian/community-plugins.json
-.obsidian/core-plugins.json
+# .obsidian/core-plugins.json
 .obsidian/workspace-mobile.json
 .obsidian/appearance.json

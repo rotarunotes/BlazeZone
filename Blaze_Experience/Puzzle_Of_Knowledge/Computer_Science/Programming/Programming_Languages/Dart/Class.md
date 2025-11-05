@@ -2,6 +2,13 @@ Data: 2025-10-19
 [Dart](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
 ___
+# Index
+- [[# Sintassi base]]
+- [[#4 Costruttori]]
+    - [[#Costruttori chiamato come la classe]]
+    - [[#Costruttore col Nome]]
+    - [[#Costruttore Costante]]
+    - [[#Costruttore Factory]]
 #  Sintassi base
 ``` Dart
 class Veicolo {

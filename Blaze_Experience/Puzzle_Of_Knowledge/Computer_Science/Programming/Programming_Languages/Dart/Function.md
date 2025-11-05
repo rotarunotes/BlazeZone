@@ -2,6 +2,25 @@ Data: 2025-10-19
 [Dart](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
 ___
+# Index
+- [[#Sintassi]]
+    - [[#Normale]]
+    - [[#Arrow (Funzioni abbreviate)]]
+    - [[#Esempi di sintassi con ?]]
+        - [[#Operatore Ternario]]
+        - [[#Operatore Null-Coalescing]]
+        - [[#Tipo di ritorno Nullable]]
+    - [[#Funzioni Anonime (Lamba)]]
+- [[#Tipi di parametri]]
+    - [[#Parametri Posizionali Obbligatori]]
+    - [[#Parametri Named (Nominali)]]
+        - [[#Valori di default]]
+        - [[#Required]]
+    - [[#Parametri Posizioni Opzionali]]
+- [[#Funzioni]]
+    - [[#print();]]
+    - [[#.ceil()]]
+    - [[#.trim()]]
 # Sintassi
 ## Normale
 1. **Tipo di Ritorno**: Il tipo di dato che la funzione "restituisce" alla fine. Se non restituisce nulla, si usa void.
@@ -210,3 +229,16 @@ print(x.ceil());
 **Output:**
 ``` 
 4
+```
+
+## .trim()
+- rimuovere gli spazi bianchi
+``` Dart
+  String testo = "   Ciao mondo!   ";
+  print(testo.trim());
+```
+
+**Output:**
+```
+Ciao mondo
+```
