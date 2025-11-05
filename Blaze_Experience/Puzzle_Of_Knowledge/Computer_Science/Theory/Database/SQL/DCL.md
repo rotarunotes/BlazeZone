@@ -7,14 +7,14 @@ ___
 Il **DQL (Data Query Language)** è la parte di SQL che si occupa del recupero e della visualizzazione dei dati.  
 Le principali operazioni derivate dall’**algebra relazionale** sono:
 
-| [[#Selezione]]           | `SELECT * FROM Studenti WHERE Età > 20;`                                                               |
-| ------------------------ | ------------------------------------------------------------------------------------------------------ |
-| [[#Proiezione]]          | SELECT Nome, Corso FROM Studenti;                                                                      |
-| [[#Unione]]              | SELECT * FROM Studenti1 UNION SELECT * FROM Studenti2;<br>                                             |
-| [[#Sottrazione]]         | SELECT * FROM Studenti1 EXCEPT SELECT * FROM Studenti2;                                                |
-| [[#Intersezione]]        | SELECT * FROM Studenti1 INTERSECT SELECT * FROM Studenti2;                                             |
-| [[#Prodotto cartesiano]] | SELECT * FROM Studenti, Corsi;                                                                         |
-| [[#Giunzione]]           | SELECT Studenti.Nome,<br>Corsi.NomeCorso FROM Studenti JOIN Corsi ON Studenti.IDCorso = Corsi.IDCorso; |
+| [[#Selezione]]           | `SELECT * FROM Studenti WHERE Età > 20;`                                                                     |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| [[#Proiezione]]          | `SELECT Nome, Corso FROM Studenti;`                                                                          |
+| [[#Unione]]              | `SELECT * FROM Studenti1 UNION SELECT * FROM Studenti2;`<br>                                                 |
+| [[#Sottrazione]]         | `SELECT * FROM Studenti1 EXCEPT SELECT * FROM Studenti2;`                                                    |
+| [[#Intersezione]]        | `SELECT * FROM Studenti1 INTERSECT SELECT * FROM Studenti2;`                                                 |
+| [[#Prodotto cartesiano]] | `SELECT * FROM Studenti, Corsi;`                                                                             |
+| [[#Giunzione]]           | ```SELECT Studenti.Nome,<br>Corsi.NomeCorso FROM Studenti JOIN Corsi ON Studenti.IDCorso = Corsi.IDCorso;``` |
 
 
 ---
@@ -26,11 +26,11 @@ Filtra le righe in base a una condizione.
 
 **Esempio:** Tabella Studenti
 
-|ID|Nome|Età|Corso|
-|---|---|---|---|
-|1|Luca|22|Matematica|
-|2|Anna|19|Informatica|
-|3|Marco|24|Fisica|
+| ID  | Nome  | Età | Corso       |
+| --- | ----- | --- | ----------- |
+| 1   | Luca  | 22  | Matematica  |
+| 2   | Anna  | 19  | Informatica |
+| 3   | Marco | 24  | Fisica      |
 
 **Query:**
 
