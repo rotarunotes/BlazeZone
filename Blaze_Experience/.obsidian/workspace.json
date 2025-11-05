@@ -1,0 +1,261 @@
+{
+  "main": {
+    "id": "d2689c039ad2236d",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ec38771d7dcac0d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "46dca4a31266b704",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
+          },
+          {
+            "id": "e7b34d27f3521d4a",
+            "type": "leaf",
+            "state": {
+              "type": "full-calendar-view",
+              "state": {},
+              "icon": "calendar-glyph",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "b584948b2e4cd286",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DML"
+            }
+          },
+          {
+            "id": "5447d08b2405b69c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DCL"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "12ddf7baffcade06",
+    "type": "split",
+    "children": [
+      {
+        "id": "d88e6a7645cca974",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "15d996e487f2104e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "620aca078cde17dd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1adc0f25acfb726c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2b0ea1a7653991df",
+    "type": "split",
+    "children": [
+      {
+        "id": "48338e10d16084b0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "453eddffb405315c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for DML"
+            }
+          },
+          {
+            "id": "f689a4afa0a2707e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from DML"
+            }
+          },
+          {
+            "id": "979501197b51796c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3d8657c677eb05bd",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "8672efc9b5c88e2f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of DML"
+            }
+          },
+          {
+            "id": "edeff2f03663e81a",
+            "type": "leaf",
+            "state": {
+              "type": "chronology-calendar-view",
+              "state": {},
+              "icon": "clock",
+              "title": "Chronology"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-trash-explorer:Open trash explorer": false,
+      "templater-obsidian:Templater": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "chronology:Open Chronology": false
+    }
+  },
+  "active": "b584948b2e4cd286",
+  "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Subnetting_Practice/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/README.md",
+    "README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DNS.md",
+    "School/3ID_2023-24/sistemi.md",
+    "Red_Lab/README.md",
+    "hdfhadfoiaf.md",
+    "2025-11-05.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
+    "Setup_Archive/Rules/Short_Cut.md",
+    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md"
+  ]
+}
