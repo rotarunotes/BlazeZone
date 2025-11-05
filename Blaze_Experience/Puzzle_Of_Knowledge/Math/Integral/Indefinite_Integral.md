@@ -1,4 +1,4 @@
-Data: 2025-10-25
+dData: 2025-10-25
 [Integral](./README.md)
 #Puzzle_Of_Knowledge/Math/Integral
 ___
