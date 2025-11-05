@@ -18,14 +18,14 @@ ___
 ## Categorie principali di comandi SQL
 
 I comandi SQL si dividono in **cinque gruppi fondamentali**:
-		 
-| Categoria | Scopo             | Comandi principali      |
-| --------- | ----------------- | ----------------------- |
-| **DDL**   | Struttura del DB  | CREATE, ALTER, DROP     |
-| **DML**   | Gestione dei dati | INSERT, UPDATE, DELETE  |
-| **DCL**   | Interrogazioni    | SELECT, WHERE, ORDER BY |
-| **TCL**   | Sicurezza         | GRANT, REVOKE           |
-| **DQL**   | Transazioni       | COMMIT, ROLLBACK        |
+
+|**Categoria**|**Acronimo**|**Scopo**|**Comandi principali**|
+|---|---|---|---|
+|**DDL**|Data Definition Language|Definizione della struttura del database (tabelle, schemi, vincoli)|`CREATE`, `ALTER`, `DROP`|
+|**DML**|Data Manipulation Language|Gestione e modifica dei dati nelle tabelle|`INSERT`, `UPDATE`, `DELETE`|
+|**DQL**|Data Query Language|Interrogazione dei dati|`SELECT`, `WHERE`, `ORDER BY`|
+|**DCL**|Data Control Language|Controllo degli accessi e dei permessi|`GRANT`, `REVOKE`|
+|**TCL**|Transaction Control Language|Gestione delle transazioni|`COMMIT`, `ROLLBACK`, `SAVEPOINT`|
 
 ---
 

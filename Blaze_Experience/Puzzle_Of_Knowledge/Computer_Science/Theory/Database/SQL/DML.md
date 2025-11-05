@@ -18,7 +18,7 @@ ___
 **Descrizione:**  
 Filtra le righe in base a una condizione.
 
-**Esempio:** Tabella Studenti
+**Studenti**
 
 | ID  | Nome  | Età | Corso       |
 | --- | ----- | --- | ----------- |
@@ -46,7 +46,7 @@ ___
 Si usa per **aggiungere** una nuova riga alla tabella
 
 
-**Esempio:** Tabella Studenti
+**Studenti**
 
 | ID  | Nome  | Età | Corso       |
 | --- | ----- | --- | ----------- |
@@ -73,7 +73,7 @@ ___
 **Descrizione:**
 Si usa per **modificare** i dati in una riga che esiste già.
 
-**Esempio:** Tabella Studenti
+**Studenti**
 
 | ID  | Nome  | Età | Corso       |
 | --- | ----- | --- | ----------- |
@@ -99,7 +99,7 @@ ___
 **Descrizione:**
 Si usa per **rimuovere** una o più righe dalla tabella
 
-**Esempio:** Tabella Studenti
+**Studenti**
 
 | ID  | Nome  | Età | Corso       |
 | --- | ----- | --- | ----------- |
