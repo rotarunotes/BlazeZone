@@ -109,7 +109,7 @@ Quello che la tua funzione  **restituisce** (return) è il valore che viene **em
 
 Il suo scopo è creare un nuovo stream che emette **ciascun elemento** della collezione (tecnicamente, un Iterable, come la List) che gli passi come argomento, uno dopo l'altro, e **poi si chiude**.
 
-Lo stream rilascia **immediatamente**, ciascun elemento della **collezione** ,senza alcuna pausa temporale **predefinita**.
+Lo stream rilascia **immediatamente**, ciascun elemento della **collezione**, senza alcuna pausa temporale **predefinita**.
 
 [[#es003 Named Constructor|Esempio:]]
 
