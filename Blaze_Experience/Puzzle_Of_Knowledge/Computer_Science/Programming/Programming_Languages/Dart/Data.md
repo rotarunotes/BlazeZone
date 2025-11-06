@@ -43,7 +43,7 @@ valore = valore.lenght
 
 ___
 ## Const
-- La variabile è una **costante**,  io suo valore è noto in compilazione e non può mai cambiare.
+- La variabile è una **costante**,  il suo valore è noto in compilazione e non può mai cambiare.
 
 ``` Dart
 const double PI = 3.14159;
@@ -58,8 +58,9 @@ const oraAttuale = DateTime.now();
 ``` Dart
 final listaFinal = [1, 2, 3];
 listaFinal.add(4);
+
 // ❌ Errore di esecuzione
-listaFinal = [5, 6]),
+listaFinal = [5, 6];
 
 const listaConst = [1, 2, 3];
 // ❌ Errore di complilazione
