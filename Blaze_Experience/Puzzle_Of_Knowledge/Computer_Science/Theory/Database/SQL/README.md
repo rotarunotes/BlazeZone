@@ -6,6 +6,33 @@ ___
 **SQL** è un linguaggio utilizzato per creare, gestire e interrogare i **Database** relazionali.  
 Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, aggiornamento, eliminazione).
 
+## Funzioni di aggregazione
+
+| Funzione  | Descrizione    | Esempio                             |
+| --------- | -------------- | ----------------------------------- |
+| `COUNT()` | Conta i record | `SELECT COUNT(*) FROM studenti;`    |
+| `SUM()`   | Somma valori   | `SELECT SUM(prezzo) FROM prodotti;` |
+| `AVG()`   | Media          | `SELECT AVG(eta) FROM studenti;`    |
+| `MIN()`   | Valore minimo  | `SELECT MIN(prezzo) FROM prodotti;` |
+| `MAX()`   | Valore massimo | `SELECT MAX(prezzo) FROM prodotti;` |
+
+## Operator logici
+
+|Operatore|Descrizione|Esempio di utilizzo|
+|---|---|---|
+|`AND`|Operatore logico "E"|`WHERE età > 18 AND stipendio > 2000`|
+|`OR`|Operatore logico "O"|`WHERE età > 18 OR stipendio > 2000`|
+|`NOT`|Operatore logico "NON"|`WHERE NOT (età > 18)`|
+|`LIKE`|Ricerche parziali|`WHERE nome LIKE 'Mar%'`|
+|`IN`|Controllo su un elenco di valori|`WHERE classe IN ('1A','2B')`|
+|`BETWEEN`|Controllo su un intervallo di valori|`WHERE prezzo BETWEEN 100 AND 500`|
+|`<`|Minore di|`WHERE età < 30`|
+|`>`|Maggiore di|`WHERE prezzo > 100`|
+|`<=`|Minore o uguale a|`WHERE età <= 30`|
+|`>=`|Maggiore o uguale a|`WHERE prezzo >= 100`|
+|`=`|Uguale a|`WHERE nome = 'Mario'`|
+|`<>` o `!=`|Diverso da|`WHERE nome <> 'Mario'`|
+
 ___
 # Indice
 - [DDL](DDL.md)
@@ -65,25 +92,6 @@ Serve per **gestire le transazioni**.
 | `ROLLBACK` | Annulla le modifiche non confermate | `ROLLBACK;` |
 | `SAVEPOINT` | Imposta un punto di ripristino | `SAVEPOINT punto1;` |
 
----
-
-## 🧮 Funzioni e operatori comuni in SQL
-
-### 🔸 Funzioni di aggregazione
-
-| Funzione | Descrizione | Esempio |
-|-----------|--------------|----------|
-| `COUNT()` | Conta i record | `SELECT COUNT(*) FROM studenti;` |
-| `SUM()` | Somma valori | `SELECT SUM(prezzo) FROM prodotti;` |
-| `AVG()` | Media | `SELECT AVG(eta) FROM studenti;` |
-| `MIN()` | Valore minimo | `SELECT MIN(prezzo) FROM prodotti;` |
-| `MAX()` | Valore massimo | `SELECT MAX(prezzo) FROM prodotti;` |
-
-### 🔸 Operator logici
-- `AND`, `OR`, `NOT`  
-- `LIKE` → ricerche parziali (`WHERE nome LIKE 'Mar%'`)  
-- `IN` → elenchi (`WHERE classe IN ('1A','2B')`)  
-- `BETWEEN` → intervalli (`WHERE prezzo BETWEEN 100 AND 500`)  
 
 ---
 

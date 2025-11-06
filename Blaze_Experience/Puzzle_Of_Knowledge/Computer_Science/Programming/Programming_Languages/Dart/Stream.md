@@ -28,7 +28,7 @@ ___
     - [[#es004 Stream Da Una Collezione di Future]]
     - [[#es005 Done Event]]
     - [[#eso06 Errori da Stream]]
-    - [[#007 For Each]]
+    - [[#es007 For Each]]
     - [[#008 Selezione ed Approccio funzionale alla creazione di uno stream]]
     - [[#es009 Approccio Ricorsivo]]
     - [[#es010 StreamController]]
@@ -490,7 +490,7 @@ yeld: 3
 Exception: go sbajà
 ```
 
-## 007 For Each
+## es007 For Each
 
 ``` Dart
 void main() {

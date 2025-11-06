@@ -7,19 +7,18 @@ ___
 Il **DQL (Data Query Language)** è la parte di SQL che si occupa del recupero e della visualizzazione dei dati.  
 Le principali operazioni derivate dall’**algebra relazionale** sono:
 
-| [[#Selezione]]           | SELECT * FROM Studenti WHERE Età > 20;                                                                                       |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
-| [[#Proiezione]]          | SELECT Nome, Corso FROM Studenti;                                                                                            |
-| [[#Unione]]              | SELECT  FROM Studenti1 UNION SELECT  FROM Studenti2;<br>                                                                     |
-| [[#Sottrazione]]         | SELECT  FROM Studenti1 EXCEPT SELECT  FROM Studenti2;                                                                        |
-| [[#Intersezione]]        | SELECT  FROM Studenti1 INTERSECT SELECT  FROM Studenti2;                                                                     |
-| [[#Prodotto cartesiano]] | SELECT * FROM Studenti, Corsi;                                                                                               |
-| [[#Natural Join]]        | SELECT Studenti.Nome,<br>Corsi.NomeCorso FROM Studenti JOIN Corsi ON Studenti.IDCorso = Corsi.IDCorso;                       |
-| [[#Theta Join]]          | SELECT Studenti.Nome,<br>       Corsi.NomeCorso<br>FROM Studenti<br>JOIN Corsi<br>ON Studenti.IDCorso > Corsi.IDCorso;       |
-| [[#Equi Join]]           | SELECT Studenti.Nome,        <br>		Corsi.NomeCorso <br>FROM Studenti <br>JOIN Corsi <br>ON Studenti.IDCorso = Corsi.IDCorso; |
+| [[#Selezione]]           | SELECT * FROM Studenti WHERE Età > 20;                                                                                      |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| [[#Proiezione]]          | SELECT Nome, Corso FROM Studenti;                                                                                           |
+| [[#Unione]]              | SELECT  FROM Studenti1 UNION SELECT  FROM Studenti2;<br>                                                                    |
+| [[#Sottrazione]]         | SELECT  FROM Studenti1 EXCEPT SELECT  FROM Studenti2;                                                                       |
+| [[#Intersezione]]        | SELECT  FROM Studenti1 INTERSECT SELECT  FROM Studenti2;                                                                    |
+| [[#Prodotto cartesiano]] | SELECT * FROM Studenti, Corsi;                                                                                              |
+| [[#Natural Join]]        | SELECT impiegati2.`*`,dipartimenti.`*`<br>FROM impiegati2, dipartimenti<br>WHERE impiegati2.codice=dipartimenti.codice;     |
+| [[#Theta Join]]          | SELECT impiegati.`*`,dipartimenti.`*`<br>FROM impiegati, dipartimenti<br>WHERE impiegati.dipartimento<>dipartimenti.codice; |
+| [[#Equi Join]]           | SELECT impiegati.`*`,dipartimenti.`*`<br>FROM impiegati,dipartimenti<br>WHERE impiegati.dipartimento=dipartimenti.codice;   |
 
 ---
-
 # Selezione
 
 **Descrizione:**  
@@ -53,7 +52,6 @@ SELECT * FROM Studenti WHERE Età > 20;
 - `FROM Studenti` indica **da quale tabella** prendere i dati.
 - `WHERE Età > 20`  applica una **condizione di filtro**: mostra solo le righe dove l’età è maggiore di 20.
 ---
-
 # Proiezione
 **Scopo:**  
 Scegliere le colonne (attributi) da visualizzare, eliminando i duplicati se necessario.
@@ -85,7 +83,6 @@ SELECT Nome, Corso FROM Studenti;
 - `FROM Studenti` indica **da quale tabella** prendere i dati.
 
 ---
-
 # Unione
 
 **Descrizione:**  
@@ -129,7 +126,6 @@ SELECT * FROM Studenti1 UNION SELECT * FROM Studenti2;
 - `UNION ALL` mantiene anche i **duplicati**.
 
 ---
-
 # Sottrazione
 
 **Descrizione:**  
@@ -169,7 +165,6 @@ SELECT * FROM Studenti1 EXCEPT SELECT * FROM Studenti2;
 - `EXCEPT`  restituisce le righe **che appaiono solo nella prima query**.
 
 ---
-
 # Intersezione
 
 **Descrizione:**  
@@ -212,7 +207,6 @@ SELECT * FROM Studenti1 INTERSECT SELECT * FROM Studenti2;
 - Elimina automaticamente i **duplicati**.
 
 ---
-
 # Prodotto cartesiano
 
 **Descrizione:**  
@@ -254,7 +248,6 @@ SELECT * FROM Studenti, Corsi;
 - Il **prodotto cartesiano** è la base di tutte le **giunzioni**
 
 ---
-
 # Natural Join
 
 **Descrizione:**  
@@ -272,39 +265,75 @@ Combina i dati di **due o più tabelle** basandosi su una **condizione di colleg
 
 **Corsi**
 
-|IDCorso|NomeCorso|
-|---|---|
-|101|Matematica|
-|102|Informatica|
-|103|Fisica|
+| IDCorsiMaterie | NomeCorso   |
+| -------------- | ----------- |
+| 101            | Matematica  |
+| 102            | Informatica |
+| 103            | Fisica      |
 
 **Query:**
 
 ``` SQL
-SELECT Studenti.Nome,
-Corsi.NomeCorso FROM Studenti JOIN Corsi ON Studenti.IDCorso = Corsi.IDCorso;
+SELECT Studenti.*,Corsi.*
+FROM Studenti, Corsi
+WHERE Studenti.IDCorsi = Corsi.IDCorsiMaterie;
 ```
 
 **Risultato:**
 
-|Nome|NomeCorso|
-|---|---|
-|Luca|Matematica|
-|Anna|Informatica|
-|Marco|Fisica|
-
-**Spiegazione:**
-
-- `JOIN` unisce righe da più tabelle in base a una **condizione di uguaglianza** tra chiavi (es. `IDCorso`).
+| ID  | Nome  | IDCorso | IDCorsiMaterie | NomeCorso   |
+| --- | ----- | ------- | -------------- | ----------- |
+| 1   | Luca  | 101     | 101            | Matematica  |
+| 2   | Anna  | 102     | 102            | Informatica |
+| 3   | Marco | 103     | 103            | Fisica      |
 
 ---
-
 # Theta Join
 **Descrizione:**
 $R_a$ ⋈θ $R_b$
 La **theta join** è una **giunzione** tra due tabelle che usa **una condizione qualsiasi (θ)**, non solo l’uguaglianza.  
 
 Il simbolo **θ** rappresenta un operatore di confronto come `=`, `<`, `>`, `<=`, `>=`, `<>`.
+
+**Studenti**
+
+| ID  | Nome  | IDCorso |
+| --- | ----- | ------- |
+| 1   | Luca  | 101     |
+| 2   | Anna  | 102     |
+| 3   | Marco | 103     |
+
+**Corsi**
+
+| IDCorsiMaterie | NomeCorso   |
+| -------------- | ----------- |
+| 101            | Matematica  |
+| 102            | Informatica |
+| 103            | Fisica      |
+
+**Query:**
+
+``` SQL
+SELECT Studenti.*,Corsi.*
+FROM Studenti, Corsi
+WHERE Studenti.IDCorso <= Corsi.IDCorsiMaterie;
+```
+
+**Risultato:**
+
+|ID|Nome|IDCorso|IDCorsiMaterie|NomeCorso|
+|---|---|---|---|---|
+|1|Luca|101|101|Matematica|
+|1|Luca|101|102|Informatica|
+|1|Luca|101|103|Fisica|
+|2|Anna|102|102|Informatica|
+|2|Anna|102|103|Fisica|
+|3|Marco|103|103|Fisica|
+
+___
+# Equi Join
+**Descrizione:**  
+L’**Equi Join** è un tipo di **giunzione (JOIN)** in cui le righe di due tabelle vengono combinate usando una **condizione di uguaglianza (`=`)** tra colonne corrispondenti.
 
 **Studenti**
 
@@ -325,65 +354,16 @@ Il simbolo **θ** rappresenta un operatore di confronto come `=`, `<`, `>`, `<=`
 **Query:**
 
 ``` SQL
-SELECT Studenti.Nome,
-       Corsi.NomeCorso
-FROM Studenti
-JOIN Corsi
-ON Studenti.IDCorso > Corsi.IDCorso;
+SELECT Studenti.*,Corsi.*
+FROM Studenti,Corsi
+WHERE Studenti.IDCorso=Corsi.IDCorso;
 ```
 
 **Risultato:**
 
-|Nome|NomeCorso|
-|---|---|
-|Anna|Matematica|
-|Marco|Matematica|
-|Marco|Informatica|
+| ID  | Nome  | IDCorso | IDCorsiMaterie | NomeCorso   |
+| --- | ----- | ------- | -------------- | ----------- |
+| 1   | Luca  | 101     | 101            | Matematica  |
+| 2   | Anna  | 102     | 102            | Informatica |
+| 3   | Marco | 103     | 103            | Fisica      |
 
-**Spiegazione:**
-- La condizione della join è **`Corsi.IDCorso > Studenti.id`**, non una semplice uguaglianza.
-- Questo significa che ogni studente viene abbinato a tutti i corsi con `IDCorso` **minore** del suo.
-- È quindi una **θ-join** (theta join), perché la condizione di collegamento usa un **operatore θ generico**, non solo `=`.
-
-___
-
-# Equi Join
-**Descrizione:**  
-L’**Equi Join** è un tipo di **giunzione (JOIN)** in cui le righe di due tabelle vengono combinate usando una **condizione di uguaglianza (`=`)** tra colonne corrispondenti.
-
-**Studenti**
-
-|ID|Nome|IDCorso|
-|---|---|---|
-|1|Luca|101|
-|2|Anna|102|
-|3|Marco|103|
-
-**Corsi**
-
-|IDCorso|NomeCorso|
-|---|---|
-|101|Matematica|
-|102|Informatica|
-|103|Fisica|
-
-**Query:**
-``` SQL
-SELECT Studenti.Nome,        
-		Corsi.NomeCorso 
-FROM Studenti 
-JOIN Corsi 
-ON Studenti.IDCorso = Corsi.IDCorso;
-```
-
-**Risultato:**
-
-|Nome|NomeCorso|
-|---|---|
-|Luca|Matematica|
-|Anna|Informatica|
-|Marco|Fisica|
-
-**Spiegazione:**
-- La condizione `Studenti.IDCorso = Corsi.IDCorso` è una **condizione di uguaglianza**, quindi è una **Equi Join**.
-- È la forma più comune di join ed è la base anche per la **INNER JOIN** in SQL.
