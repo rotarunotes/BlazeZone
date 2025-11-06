@@ -44,7 +44,6 @@ ___
     - [[#eso20 Pause in Broadcast]]
     - [[#es021 Ancora sulla Bufferizzazione]]
     - [[#es022 Ultimo Esempio]]
-    - 
 # Stream \<T\>
 uno stream è una **sequenza di risultati.** dati che arriva nel tempo. È possibile rimanere in **ascolto** su uno stream per ricevere **notifiche** sui risultati (sia dati che errori) e sulla sua **chiusura**. È anche possibile mettere in **pausa** l'ascolto o **interromperlo** prima che sia completato.
 
