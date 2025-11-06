@@ -74,5 +74,13 @@
       ],
       "key": "A"
     }
+  ],
+  "editor:toggle-code": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Numpad3"
+    }
   ]
 }

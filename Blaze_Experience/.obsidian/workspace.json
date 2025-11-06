@@ -8,69 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "29a97514c33d98f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Stream"
-            }
-          },
-          {
             "id": "2f7cf3f5daff061c",
             "type": "leaf",
             "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
-            }
-          },
-          {
-            "id": "89a4cf0f91e84248",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Libraries.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "title": "Libraries"
             }
           },
           {
-            "id": "20de2013cdd6d7c7",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-view",
-              "state": {},
-              "icon": "calendar-glyph",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "70bfa4d22dd4440b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Io.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Io"
-            }
-          },
-          {
-            "id": "a397bcd5717c2ea2",
+            "id": "47b035b91d6c02aa",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -84,21 +36,59 @@
             }
           },
           {
-            "id": "4e9a6b4b6f37cbaa",
+            "id": "887620872dd1c789",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Future.md",
+                "file": "School/5ID_2025-26/TPSIT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Future"
+              "title": "TPSIT"
+            }
+          },
+          {
+            "id": "114882776f15dbcb",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
+          },
+          {
+            "id": "8150d2847420ae83",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Libraries.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Libraries"
+            }
+          },
+          {
+            "id": "ffaa4985d5fd8d60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Senza nome.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Senza nome"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -165,7 +155,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 426
+    "width": 300
   },
   "right": {
     "id": "dd71b14831b0ad51",
@@ -297,22 +287,26 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "89a4cf0f91e84248",
+  "active": "114882776f15dbcb",
   "lastOpenFiles": [
+    "School/5ID_2025-26/TPSIT.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Data.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Future.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Io.md",
+    "Senza nome.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Libraries.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Class.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Function.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
     "conflict-files-obsidian-git.md",
     "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
     "Red_Lab/Ex_School/SQL",
     "Red_Lab/Ex_School",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
     "README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Future.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Class.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Data.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Io.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Libraries.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
     "Puzzle_Of_Knowledge/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
@@ -322,11 +316,7 @@
     "School/3ID_2023-24/sistemi.md",
     "2025-11-05.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Function.md",
     "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
-    "Setup_Archive/Obsidian_Base/Formatting.md",
-    "futureMag.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Senza nome.md",
     "Senza nome.base",
     "Pasted image 20251030093955.png",
     "Senza nome 3.base",

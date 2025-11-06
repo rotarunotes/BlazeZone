@@ -28,7 +28,6 @@ nome = "Luigi Verdi"; //Perfettamente valido
 // ❌ Errore di compilazione
 nome = 100; 
 ```
-
 ## Dynamic
 - È una variabile che può contenere **qualsiasi** tipo di dato (String, int, double).
 - Il compilatore controllerà il tipo di dato solo a **runtime**.

@@ -435,7 +435,5 @@ void handleGetRequest(HttpRequest req) {
 ## es012 File
 **Client:**
 **Server:**
-
->>>>>>> origin/main
 ___
  

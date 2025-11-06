@@ -67,28 +67,25 @@ livelli di astrazione:
 - **Sockets (Il livello base):**
 
 ### Spiegazione della Classe Socket
-Un oggetto Socket è la rappresentazione di una connessione di rete a basso livello. È come un "tubo" digitale tra due computer.
+Un oggetto Socket è la rappresentazione di una connessione di rete TCP a basso livello. È come un "tubo" digitale tra due computer.
 
 Un oggetto Socket è:
 	[[#1) Il Socket come IOSink (Output)]]
 	[[#2) Il Socket come Stream <Uint8List> (Input / Ascoltare]]  
 
  L'oggetto **Socket** in Dart è un singolo oggetto che implementa due interfacce (contratti) separate:
-
-Quindi, quando si crea o si riceve un Socket, si ottiene un singolo oggetto che puoi usare **contemporaneamente** per inviare dati (usandolo come IOSink) e per ricevere dati (usandolo come Stream).
-
 #### 1) Il Socket come IOSink (Output)
 **Un sink:** è un posto dove i dati "entrano" per essere inviati via. Significa che si può usare il l'oggetto socket per **scrivere dati** e inviarli attraverso la rete.
 
 **Utilizzo:** Usi metodi come **socket.write("Ciao server!")** o **socket.add(lista_di_byte)** per inviare messaggi.
 
-#### 2) Il Socket come Stream\<Uint8List> (Input / Ascoltare
+#### 2) Il Socket come Stream\<Uint8List> (Input / Ascoltare)
 **Stream:** Lo stream ha compito di mettere in ascolto il tuo oggetto socket per **ricevere dati** non appena arrivano dalla rete. 
 
 **Uint8List:** La rete non capisce "testo" o "immagini"; capisce solo **byte** (dati grezzi). Uint8List è semplicemente una lista di numeri (byte) che rappresentano i dati ricevuti. Poi si può convertire byte in testo.
 
 **Utilizzo:** Usi socket.listen((dati_ricevuti) { ... }). Il codice dentro listen viene eseguito ogni volta che arriva un nuovo "pacchetto" di dati.
-### Server `ServerSocket`
+### Server ServerSocket
 È una classe che serve per creare un **server TCP**. Il suo compito è "ascoltare" su una porta specifica e accettare connessioni in arrivo da client.
 
 Non gestisce lo scambio di dati (lo fa il `Socket`), ma gestisce solo l'**accettazione** delle connessioni.
