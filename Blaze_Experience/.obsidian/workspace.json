@@ -69,8 +69,7 @@
               "title": "2025-11-05"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -249,7 +248,7 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "16004af29ac0af94",
+  "active": "46dca4a31266b704",
   "lastOpenFiles": [
     "Setup_Archive/Plugin/Calendar/Exam/2025-11-06 fdafas.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
