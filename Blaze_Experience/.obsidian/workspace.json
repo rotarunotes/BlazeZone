@@ -53,10 +53,14 @@
             "id": "114882776f15dbcb",
             "type": "leaf",
             "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Definite_Integral"
             }
           },
           {
@@ -86,9 +90,37 @@
               "icon": "lucide-file",
               "title": "Senza nome"
             }
+          },
+          {
+            "id": "73a07c871fe65a14",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Stream"
+            }
+          },
+          {
+            "id": "357439979766e764",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Definite_Integral"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -287,16 +319,17 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "114882776f15dbcb",
+  "active": "73a07c871fe65a14",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
     "School/5ID_2025-26/TPSIT.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Data.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Future.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Io.md",
     "Senza nome.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Libraries.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Class.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Function.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
@@ -311,7 +344,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
     "Setup_Archive/Plugin/Excalidraw/Drawing .md",
     "School/3ID_2023-24/sistemi.md",
     "2025-11-05.md",
