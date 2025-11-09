@@ -4,123 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "347eb7338fbc6a13",
+        "id": "3b4981a8f43e635c",
         "type": "tabs",
         "children": [
           {
-            "id": "2f7cf3f5daff061c",
+            "id": "c408c61dc7ec994d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Libraries.md",
+                "file": "34fg.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Libraries"
+              "title": "34fg"
             }
           },
           {
-            "id": "47b035b91d6c02aa",
+            "id": "3bae3561ca8d13c4",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
+          },
+          {
+            "id": "8e0c3d4d322bd0d7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Data.md",
+                "file": "tolc.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Data"
-            }
-          },
-          {
-            "id": "887620872dd1c789",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "School/5ID_2025-26/TPSIT.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "TPSIT"
-            }
-          },
-          {
-            "id": "114882776f15dbcb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Definite_Integral"
-            }
-          },
-          {
-            "id": "8150d2847420ae83",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Libraries.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Libraries"
-            }
-          },
-          {
-            "id": "ffaa4985d5fd8d60",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Senza nome.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Senza nome"
-            }
-          },
-          {
-            "id": "73a07c871fe65a14",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Stream"
-            }
-          },
-          {
-            "id": "357439979766e764",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Definite_Integral"
+              "title": "tolc"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -319,17 +245,22 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "73a07c871fe65a14",
+  "active": "8e0c3d4d322bd0d7",
   "lastOpenFiles": [
+    "Pasted image 20251109224335.png",
+    "tolc.md",
+    "34fg.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/Relation.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/README.md",
     "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Libraries.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Data.md",
+    "School/5ID_2025-26/TPSIT.md",
+    "Senza nome.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
-    "School/5ID_2025-26/TPSIT.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Data.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Future.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Io.md",
-    "Senza nome.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Libraries.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Class.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Function.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
@@ -344,11 +275,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
-    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
-    "School/3ID_2023-24/sistemi.md",
-    "2025-11-05.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
-    "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
     "Senza nome.base",
     "Pasted image 20251030093955.png",
     "Senza nome 3.base",
