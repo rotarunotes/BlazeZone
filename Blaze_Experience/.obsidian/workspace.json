@@ -86,7 +86,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -285,10 +285,11 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "6351a69e05c57a56",
+  "active": "3f7eb6d39b67a444",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
+    "conflict-files-obsidian-git.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
     "34fg.md",
     "futureMag.md",
@@ -319,7 +320,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Libraries.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Data.md",
-    "School/5ID_2025-26/TPSIT.md",
     "Red_Lab/Ex_School/SQL",
     "Red_Lab/Ex_School",
     "Senza nome.base",
