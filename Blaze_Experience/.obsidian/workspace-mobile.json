@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+                "file": "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Definite_Integral"
+              "title": "Indefinite_Integral"
             }
           }
         ],
@@ -228,6 +228,7 @@
   },
   "active": "f1c3ab9b8e707c12",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
     "Setup_Archive/Plugin/Excalidraw/Schema_Divisione_Polinomi.md",
     "Puzzle_Of_Knowledge/Math/README.md",
@@ -260,7 +261,6 @@
     "Setup_Archive/Images/Pasted Image 20251102202027_317.png",
     "Setup_Archive/Images/Pasted Image 20251102195725_766.png",
     "Senza nome.md",
-    "School/5ID_2025-26/TPSIT.md",
     "Red_Lab/Ex_School/SQL",
     "Red_Lab/Ex_School",
     "Pasted image 20251030093955.png"
