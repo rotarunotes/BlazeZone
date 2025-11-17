@@ -94,6 +94,15 @@ $$
 
 ![[Integrale_definito_Media|200]]
 
+# Derivata Della Primitiva
+Se:
+$$
+G(x) = \int_{x_0}^{f(x)} g(t) \ dt
+$$
+Allora:
+$$
+G'(x) = g(f(x))\  \cdot f'(x) 
+$$
 ___
 # Teorema Fondamentale Del Calcolo Integrale
 Se una funzione $f(x)$ è continua in $[a;b]$, allora esiste la derivata della sua funzione integrale

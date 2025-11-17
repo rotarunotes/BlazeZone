@@ -24,16 +24,16 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "futureMag.md",
-      "timestamp": 1763339062934
+      "filepath": "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
+      "timestamp": 1763407990707
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+      "timestamp": 1763407503380
     },
     {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
-      "timestamp": 1763339059978
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
-      "timestamp": 1763339059776
+      "timestamp": 1763392318293
     }
   ],
   "bookmarkedFileStore": [],
