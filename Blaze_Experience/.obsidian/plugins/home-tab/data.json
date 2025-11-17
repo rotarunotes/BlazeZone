@@ -24,24 +24,12 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+      "timestamp": 1763370427963
+    },
+    {
       "filepath": "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
-      "timestamp": 1763361797110
-    },
-    {
-      "filepath": "Setup_Archive/Plugin/Excalidraw/Schema_Divisione_Polinomi.md",
-      "timestamp": 1763361795836
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Math/README.md",
-      "timestamp": 1763361306999
-    },
-    {
-      "filepath": "README.md",
-      "timestamp": 1763361296723
-    },
-    {
-      "filepath": "futureMag.md",
-      "timestamp": 1763361289125
+      "timestamp": 1763370416660
     }
   ],
   "bookmarkedFileStore": [],
