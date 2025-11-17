@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "86de272040da0bd5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "futureMag.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "futureMag"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -151,9 +166,19 @@
           "icon": "lucide-list",
           "title": "Outline"
         }
+      },
+      {
+        "id": "d11146a09ee99b2b",
+        "type": "leaf",
+        "state": {
+          "type": "chronology-calendar-view",
+          "state": {},
+          "icon": "clock",
+          "title": "Chronology"
+        }
       }
     ],
-    "currentTab": 0
+    "currentTab": 3
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -163,11 +188,19 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-trash-explorer:Open trash explorer": false,
+      "templater-obsidian:Templater": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "chronology:Open Chronology": false
     }
   },
-  "active": "13ea67caa82bca95",
+  "active": "86de272040da0bd5",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
     "Setup_Archive/Rules/Short_Cut.md",
     "Setup_Archive/Plugin/Excalidraw/Schema_Divisione_Polinomi.md",
     "Setup_Archive/Plugin/Excalidraw/Integrale_definito_Media.md",
@@ -202,7 +235,6 @@
     "Red_Lab/Ex_School",
     "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Io.md",
     "Pasted image 20251030093955.png"
   ]
 }
