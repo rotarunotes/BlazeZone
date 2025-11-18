@@ -24,16 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
-      "timestamp": 1763459354648
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
+      "timestamp": 1763472233039
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
-      "timestamp": 1763456572988
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch/VLAN.md",
+      "timestamp": 1763472229625
     },
     {
-      "filepath": "Setup_Archive/Plugin/Excalidraw/Integrale_definito_aree_curve.md",
-      "timestamp": 1763456329094
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/README.md",
+      "timestamp": 1763472229231
+    },
+    {
+      "filepath": "Router Mag.md",
+      "timestamp": 1763472150343
+    },
+    {
+      "filepath": "Switch.md",
+      "timestamp": 1763471997605
     }
   ],
   "bookmarkedFileStore": [],
