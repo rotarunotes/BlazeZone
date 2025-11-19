@@ -20,8 +20,29 @@
               "icon": "lucide-file",
               "title": "Io"
             }
+          },
+          {
+            "id": "93b549e41516772d",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
+          },
+          {
+            "id": "21eb40158b652ded",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -78,8 +99,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "2b0ea1a7653991df",
@@ -201,10 +221,10 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "b584948b2e4cd286",
+  "active": "21eb40158b652ded",
   "lastOpenFiles": [
-    "2025-11-05.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Io.md",
+    "2025-11-05.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
     "README.md",
