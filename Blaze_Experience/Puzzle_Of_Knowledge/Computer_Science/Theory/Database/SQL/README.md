@@ -6,6 +6,18 @@ ___
 **SQL** è un linguaggio utilizzato per creare, gestire e interrogare i **Database** relazionali.  
 Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, aggiornamento, eliminazione).
 
+# Indice
+
+| **Categoria** | **Comandi Chiave**           | **Azione Principale**                                     |
+| ------------- | ---------------------------- | --------------------------------------------------------- |
+| [DQL](DQL.md) | `SELECT`                     | **Recupera dati** (Interrogazione)                        |
+| [DML](DML.md) | `INSERT`, `UPDATE`, `DELETE` | **Manipola dati** (Aggiunge, modifica, elimina record)    |
+| [DDL](DDL.md) | `CREATE`, `ALTER`, `DROP`    | **Definisce struttura** (Crea, modifica, elimina tabelle) |
+| [TCL](TCL.md) | `COMMIT`, `ROLLBACK`         | **Gestisce transazioni** (Salva o annulla operazioni DML) |
+| [DCL](DCL.md) | `GRANT`, `REVOKE`            | **Controlla accessi** (Concede o revoca permessi)         |
+
+- [[#Funzioni di aggregazione]]
+- [[#Operator logici]]
 ## Funzioni di aggregazione
 
 | Funzione  | Descrizione    | Esempio                             |
@@ -33,40 +45,19 @@ Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, agg
 |`=`|Uguale a|`WHERE nome = 'Mario'`|
 |`<>` o `!=`|Diverso da|`WHERE nome <> 'Mario'`|
 
-___
-# Indice
-- [DDL](DDL.md)
-- [DML](DML.md)
-- [DCL](DCL.md)
-- [TCL](TCL.md)
-- [DQL](DQL.md)
-
-___
-## Categorie principali di comandi SQL
-
-I comandi SQL si dividono in **cinque gruppi fondamentali**:
-
-|**Categoria**|**Acronimo**|**Scopo**|**Comandi principali**|
-|---|---|---|---|
-|**DDL**|Data Definition Language|Definizione della struttura del database (tabelle, schemi, vincoli)|`CREATE`, `ALTER`, `DROP`|
-|**DML**|Data Manipulation Language|Gestione e modifica dei dati nelle tabelle|`INSERT`, `UPDATE`, `DELETE`|
-|**DQL**|Data Query Language|Interrogazione dei dati|`SELECT`, `WHERE`, `ORDER BY`|
-|**DCL**|Data Control Language|Controllo degli accessi e dei permessi|`GRANT`, `REVOKE`|
-|**TCL**|Transaction Control Language|Gestione delle transazioni|`COMMIT`, `ROLLBACK`, `SAVEPOINT`|
-
 ---
 
 ## 🧩 1️⃣ DDL – Data Definition Language
 
 Serve per **creare o modificare la struttura del database**.
 
-| Comando | Funzione | Esempio |
-|----------|-----------|----------|
-| `CREATE` | Crea una tabella o database | `CREATE TABLE studenti (...);` |
-| `ALTER` | Modifica una tabella esistente | `ALTER TABLE studenti ADD email CHAR(50);` |
-| `DROP` | Elimina una tabella o database | `DROP TABLE studenti;` |
-| `RENAME` | Rinomina una tabella | `RENAME TABLE studenti TO alunni;` |
-| `TRUNCATE` | Cancella tutti i dati ma mantiene la struttura | `TRUNCATE TABLE studenti;` |
+| Comando    | Funzione                                       | Esempio                                    |
+| ---------- | ---------------------------------------------- | ------------------------------------------ |
+| `CREATE`   | Crea una tabella o database                    | `CREATE TABLE studenti (...);`             |
+| `ALTER`    | Modifica una tabella esistente                 | `ALTER TABLE studenti ADD email CHAR(50);` |
+| `DROP`     | Elimina una tabella o database                 | `DROP TABLE studenti;`                     |
+| `RENAME`   | Rinomina una tabella                           | `RENAME TABLE studenti TO alunni;`         |
+| `TRUNCATE` | Cancella tutti i dati ma mantiene la struttura | `TRUNCATE TABLE studenti;`                 |
 
 ---
 
