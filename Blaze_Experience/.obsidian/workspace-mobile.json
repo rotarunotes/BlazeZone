@@ -243,8 +243,8 @@
         "state": {
           "type": "chronology-calendar-view",
           "state": {},
-          "icon": "clock",
-          "title": "Chronology"
+          "icon": "lucide-ghost",
+          "title": "chronology-calendar-view"
         }
       }
     ],
@@ -258,14 +258,7 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "obsidian-trash-explorer:Open trash explorer": false,
-      "templater-obsidian:Templater": false,
-      "omnisearch:Omnisearch": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-full-calendar:Open Full Calendar": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "chronology:Open Chronology": false
+      "bases:Create new base": false
     }
   },
   "active": "b140575735e508b8",
