@@ -12,12 +12,11 @@ dopo aver individuato queste farm, fare lo storage in modo centrare e comodo
 2. farm di caterium
 3. farm zolfo
 4. farm di quarzo
-5. sistemare carbone
-6. farm di carbone compattato
-7. 
-8. rifare farm di ferro
-9. rifare farm di rame
-10. rifare farm di calcare
+5. sistemare carbone con le tanche
+6. farm di "carbone compattato"
+7. rifare farm di ferro
+8. rifare farm di rame
+9. rifare farm di calcare
 
 
 ## cose sistematiche
