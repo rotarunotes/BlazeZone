@@ -90,9 +90,19 @@
               "icon": "lucide-file",
               "title": "Switch"
             }
+          },
+          {
+            "id": "5b56b8e448026d62",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -254,10 +264,12 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "0339b75480fe714d",
+  "active": "5b56b8e448026d62",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+    "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DHCP.md",
     "Switch.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Screenshot 2025-11-18 140914.png",
     "Router Mag.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
@@ -282,8 +294,6 @@
     "Setup_Archive/Plugin/Calendar/Exam/2025-11-07 TPSIT Teoria_Dart.md",
     "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-09 Inglese Studio.md",
     "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-08 Inglese Appunti.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-06 TipSit Ripasso.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-05 io e isolate.md",
     "Setup_Archive/Images/Puzzle.jpg",
     "Setup_Archive/Images/Pasted Image 20251103175312_794.png",
     "Setup_Archive/Images/Pasted Image 20251102215250_469.png",
