@@ -24,6 +24,10 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "Senza nome 1.md",
+      "timestamp": 1763594099112
+    },
+    {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
       "timestamp": 1763594091972
     },
@@ -38,10 +42,6 @@
     {
       "filepath": "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
       "timestamp": 1763594033130
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
-      "timestamp": 1763594026557
     }
   ],
   "bookmarkedFileStore": [],
