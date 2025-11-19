@@ -7,9 +7,9 @@ ___
 Il **DQL (Data Query Language)** è la parte di SQL che si occupa del recupero e della visualizzazione dei dati.  
 Le principali operazioni derivate dall’**algebra relazionale** sono:
 
-| [[#Selezione]]           | SELECT * FROM Studenti WHERE Età > 20;                                                                                      |
+| [[#Selezione]]           | SELECT * FROM Studenti WHERE età > 20;                                                                                      |
 | ------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| [[#Proiezione]]          | SELECT Nome, Corso FROM Studenti;                                                                                           |
+| [[#Proiezione]]          | SELECT nome, corso FROM Studenti;                                                                                           |
 | [[#Unione]]              | SELECT  FROM Studenti1 UNION SELECT  FROM Studenti2;<br>                                                                    |
 | [[#Sottrazione]]         | SELECT  FROM Studenti1 EXCEPT SELECT  FROM Studenti2;                                                                       |
 | [[#Intersezione]]        | SELECT  FROM Studenti1 INTERSECT SELECT  FROM Studenti2;                                                                    |
@@ -26,7 +26,7 @@ Filtra le righe in base a una condizione.
 
 **Esempio:** Tabella Studenti
 
-| ID  | Nome  | Età | Corso       |
+| id  | nome  | età | corso       |
 | --- | ----- | --- | ----------- |
 | 1   | Luca  | 22  | Matematica  |
 | 2   | Anna  | 19  | Informatica |
@@ -35,22 +35,22 @@ Filtra le righe in base a una condizione.
 **Query:**
 
 ``` SQL
-SELECT * FROM Studenti WHERE Età > 20;
+SELECT * FROM Studenti WHERE età > 20;
 ```
 
 **Risultato:**
 
-|ID|Nome|Età|Corso|
-|---|---|---|---|
-|1|Luca|22|Matematica|
-|3|Marco|24|Fisica|
+| id  | nome  | età | corso      |
+| --- | ----- | --- | ---------- |
+| 1   | Luca  | 22  | Matematica |
+| 3   | Marco | 24  | Fisica     |
 
  **Spiegazione:**
 
 - `SELECT`  serve per scegliere **quali colonne** visualizzare nel risultato.
 - `*` è un **metacarattere** che rappresenta **tutte le colonne** della tabella.
 - `FROM Studenti` indica **da quale tabella** prendere i dati.
-- `WHERE Età > 20`  applica una **condizione di filtro**: mostra solo le righe dove l’età è maggiore di 20.
+- `WHERE età > 20`  applica una **condizione di filtro**: mostra solo le righe dove l’età è maggiore di 20.
 ---
 # Proiezione
 **Scopo:**  
@@ -58,28 +58,28 @@ Scegliere le colonne (attributi) da visualizzare, eliminando i duplicati se nece
 
 **Esempio:** Tabella Studenti
 
-|ID|Nome|Età|Corso|
-|---|---|---|---|
-|1|Luca|22|Matematica|
-|2|Anna|19|Informatica|
-|3|Marco|24|Fisica|
+| id  | nome  | età | corso       |
+| --- | ----- | --- | ----------- |
+| 1   | Luca  | 22  | Matematica  |
+| 2   | Anna  | 19  | Informatica |
+| 3   | Marco | 24  | Fisica      |
 
 **Query:**
 
 ```  SQL
-SELECT Nome, Corso FROM Studenti;
+SELECT nome, corso FROM Studenti;
 ```
 
 **Risultato:**
 
-|Nome|Corso|
-|---|---|
-|Luca|Matematica|
-|Anna|Informatica|
-|Marco|Fisica|
+| nome  | corso       |
+| ----- | ----------- |
+| Luca  | Matematica  |
+| Anna  | Informatica |
+| Marco | Fisica      |
 
 - `SELECT` è il comando SQL che serve per **scegliere quali colonne** (campi) vuoi visualizzare nel risultato della query.
-- `Nome, Corso` sono i **nomi delle colonne** che vuoi mostrare
+- `nome, corso` sono i **nomi delle colonne** che vuoi mostrare
 - `FROM Studenti` indica **da quale tabella** prendere i dati.
 
 ---
@@ -92,17 +92,17 @@ Combina le righe di **due tabelle** con **lo stesso numero di colonne e tipi com
 
 **Studenti1**
 
-|ID|Nome|Corso|
-|---|---|---|
-|1|Luca|Matematica|
-|2|Anna|Informatica|
+| id  | nome | corso       |
+| --- | ---- | ----------- |
+| 1   | Luca | Matematica  |
+| 2   | Anna | Informatica |
 
 **Studenti2**
 
-|ID|Nome|Corso|
-|---|---|---|
-|3|Marco|Fisica|
-|4|Anna|Informatica|
+| id  | nome  | corso       |
+| --- | ----- | ----------- |
+| 3   | Marco | Fisica      |
+| 4   | Anna  | Informatica |
 
 **Query:**
 
@@ -113,7 +113,7 @@ SELECT * FROM Studenti1 UNION SELECT * FROM Studenti2;
 
 **Risultato:**
 
-| ID  | Nome  | Corso       |
+| id  | nome  | corso       |
 | --- | ----- | ----------- |
 | 1   | Luca  | Matematica  |
 | 2   | Anna  | Informatica |
@@ -135,18 +135,18 @@ Restituisce le righe presenti nella **prima tabella** ma **non nella seconda**.
 
 **Studenti1**
 
-|Nome|Corso|
-|---|---|
-|Luca|Matematica|
-|Anna|Informatica|
-|Marco|Fisica|
+| nome  | corso       |
+| ----- | ----------- |
+| Luca  | Matematica  |
+| Anna  | Informatica |
+| Marco | Fisica      |
 
 **Studenti2**
 
-|Nome|Corso|
-|---|---|
-|Anna|Informatica|
-|Marco|Fisica|
+| nome  | corso       |
+| ----- | ----------- |
+| Anna  | Informatica |
+| Marco | Fisica      |
 
 **Query:**
 
@@ -156,9 +156,9 @@ SELECT * FROM Studenti1 EXCEPT SELECT * FROM Studenti2;
 
 **Risultato:**
 
-|Nome|Corso|
-|---|---|
-|Luca|Matematica|
+| nome | corso      |
+| ---- | ---------- |
+| Luca | Matematica |
 
 **Spiegazione:**
 
@@ -174,19 +174,19 @@ Restituisce solo le righe **presenti in entrambe le tabelle**.
 
 **Studenti1**
 
-|Nome|Corso|
-|---|---|
-|Luca|Matematica|
-|Anna|Informatica|
-|Marco|Fisica|
+| nome  | corso       |
+| ----- | ----------- |
+| Luca  | Matematica  |
+| Anna  | Informatica |
+| Marco | Fisica      |
 
 **Studenti2**
 
-|Nome|Corso|
-|---|---|
-|Anna|Informatica|
-|Marco|Fisica|
-|Giulia|Chimica|
+| nome   | corso       |
+| ------ | ----------- |
+| Anna   | Informatica |
+| Marco  | Fisica      |
+| Giulia | Chimica     |
 
 **Query:**
 
@@ -196,10 +196,10 @@ SELECT * FROM Studenti1 INTERSECT SELECT * FROM Studenti2;
 
 **Risultato:**
 
-|Nome|Corso|
-|---|---|
-|Anna|Informatica|
-|Marco|Fisica|
+| nome  | corso       |
+| ----- | ----------- |
+| Anna  | Informatica |
+| Marco | Fisica      |
 
 **Spiegazione:**
 
@@ -216,17 +216,17 @@ Combina **ogni riga della prima tabella** con **ogni riga della seconda**, gener
 
 **Studenti**
 
-|Nome|
-|---|
-|Luca|
-|Anna|
+| nome |
+| ---- |
+| Luca |
+| Anna |
 
 **Corsi**
 
-|Corso|
-|---|
-|Matematica|
-|Fisica|
+| corso      |
+| ---------- |
+| Matematica |
+| Fisica     |
 
 **Query:**
 
@@ -236,7 +236,7 @@ SELECT * FROM Studenti, Corsi;
 
 **Risultato:**
 
-| Nome | Corso      |
+| nome | corso      |
 | ---- | ---------- |
 | Luca | Matematica |
 | Luca | Fisica     |
@@ -257,35 +257,35 @@ Combina i dati di **due o più tabelle** basandosi su una **condizione di colleg
 
 **Studenti**
 
-| ID  | Nome  | IDCorso |
-| --- | ----- | ------- |
-| 1   | Luca  | 101     |
-| 2   | Anna  | 102     |
-| 3   | Marco | 103     |
+| id  | nome  | id_corso |
+| --- | ----- | -------- |
+| 1   | Luca  | 101      |
+| 2   | Anna  | 102      |
+| 3   | Marco | 103      |
 
 **Corsi**
 
-| IDCorsiMaterie | NomeCorso   |
-| -------------- | ----------- |
-| 101            | Matematica  |
-| 102            | Informatica |
-| 103            | Fisica      |
+| id_corsi_materie | nome_corso  |
+| ---------------- | ----------- |
+| 101              | Matematica  |
+| 102              | Informatica |
+| 103              | Fisica      |
 
 **Query:**
 
 ``` SQL
 SELECT Studenti.*,Corsi.*
 FROM Studenti, Corsi
-WHERE Studenti.IDCorsi = Corsi.IDCorsiMaterie;
+WHERE Studenti.id_corso = Corsi.id_corsi_materie;
 ```
 
 **Risultato:**
 
-| ID  | Nome  | IDCorso | IDCorsiMaterie | NomeCorso   |
-| --- | ----- | ------- | -------------- | ----------- |
-| 1   | Luca  | 101     | 101            | Matematica  |
-| 2   | Anna  | 102     | 102            | Informatica |
-| 3   | Marco | 103     | 103            | Fisica      |
+| id  | nome  | id_corso | id_corsi_materie | nome_corso  |
+| --- | ----- | -------- | ---------------- | ----------- |
+| 1   | Luca  | 101      | 101              | Matematica  |
+| 2   | Anna  | 102      | 102              | Informatica |
+| 3   | Marco | 103      | 103              | Fisica      |
 
 ---
 # Theta Join
@@ -297,38 +297,38 @@ Il simbolo **θ** rappresenta un operatore di confronto come `=`, `<`, `>`, `<=`
 
 **Studenti**
 
-| ID  | Nome  | IDCorso |
-| --- | ----- | ------- |
-| 1   | Luca  | 101     |
-| 2   | Anna  | 102     |
-| 3   | Marco | 103     |
+| id  | nome  | id_corso |
+| --- | ----- | -------- |
+| 1   | Luca  | 101      |
+| 2   | Anna  | 102      |
+| 3   | Marco | 103      |
 
 **Corsi**
 
-| IDCorsiMaterie | NomeCorso   |
-| -------------- | ----------- |
-| 101            | Matematica  |
-| 102            | Informatica |
-| 103            | Fisica      |
+| id_corsi_materie | nome_corso  |
+| ---------------- | ----------- |
+| 101              | Matematica  |
+| 102              | Informatica |
+| 103              | Fisica      |
 
 **Query:**
 
 ``` SQL
 SELECT Studenti.*,Corsi.*
 FROM Studenti, Corsi
-WHERE Studenti.IDCorso <= Corsi.IDCorsiMaterie;
+WHERE Studenti.id_corso <= Corsi.id_corsi_materie;
 ```
 
 **Risultato:**
 
-|ID|Nome|IDCorso|IDCorsiMaterie|NomeCorso|
-|---|---|---|---|---|
-|1|Luca|101|101|Matematica|
-|1|Luca|101|102|Informatica|
-|1|Luca|101|103|Fisica|
-|2|Anna|102|102|Informatica|
-|2|Anna|102|103|Fisica|
-|3|Marco|103|103|Fisica|
+| id  | nome  | id_corso | id_corsi_materie | nome_corso  |
+| --- | ----- | -------- | ---------------- | ----------- |
+| 1   | Luca  | 101      | 101              | Matematica  |
+| 1   | Luca  | 101      | 102              | Informatica |
+| 1   | Luca  | 101      | 103              | Fisica      |
+| 2   | Anna  | 102      | 102              | Informatica |
+| 2   | Anna  | 102      | 103              | Fisica      |
+| 3   | Marco | 103      | 103              | Fisica      |
 
 ___
 # Equi Join
@@ -337,33 +337,33 @@ L’**Equi Join** è un tipo di **giunzione (JOIN)** in cui le righe di due tabe
 
 **Studenti**
 
-| ID  | Nome  | IDCorso |
-| --- | ----- | ------- |
-| 1   | Luca  | 101     |
-| 2   | Anna  | 102     |
-| 3   | Marco | 103     |
+| id  | nome  | id_corso |
+| --- | ----- | -------- |
+| 1   | Luca  | 101      |
+| 2   | Anna  | 102      |
+| 3   | Marco | 103      |
 
 **Corsi**
 
-| IDCorso | NomeCorso   |
-| ------- | ----------- |
-| 101     | Matematica  |
-| 102     | Informatica |
-| 103     | Fisica      |
+| id_corsi_materie | nome_corso  |
+| ---------------- | ----------- |
+| 101              | Matematica  |
+| 102              | Informatica |
+| 103              | Fisica      |
 
 **Query:**
 
 ``` SQL
 SELECT Studenti.*,Corsi.*
 FROM Studenti,Corsi
-WHERE Studenti.IDCorso=Corsi.IDCorso;
+WHERE Studenti.id_corsi_materie=Corsi.id_corso;
 ```
 
 **Risultato:**
 
-| ID  | Nome  | IDCorso | IDCorsiMaterie | NomeCorso   |
-| --- | ----- | ------- | -------------- | ----------- |
-| 1   | Luca  | 101     | 101            | Matematica  |
-| 2   | Anna  | 102     | 102            | Informatica |
-| 3   | Marco | 103     | 103            | Fisica      |
+| id  | nome  | id_corso | id_corsi_materie | nome_corso  |
+| --- | ----- | -------- | ---------------- | ----------- |
+| 1   | Luca  | 101      | 101              | Matematica  |
+| 2   | Anna  | 102      | 102              | Informatica |
+| 3   | Marco | 103      | 103              | Fisica      |
 

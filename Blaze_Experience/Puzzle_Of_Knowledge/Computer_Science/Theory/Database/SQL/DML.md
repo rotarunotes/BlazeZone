@@ -20,7 +20,7 @@ Filtra le righe in base a una condizione.
 
 **Studenti**
 
-| ID  | Nome  | Età | Corso       |
+| id  | nome  | età | corso       |
 | --- | ----- | --- | ----------- |
 | 1   | Luca  | 22  | Matematica  |
 | 2   | Anna  | 19  | Informatica |
@@ -29,12 +29,12 @@ Filtra le righe in base a una condizione.
 **Query:**
 
 ``` SQL
-SELECT Nome, Corso FROM Studenti WHERE Età < 23;
+SELECT nome, corso FROM Studenti WHERE età < 23;
 ```
 
 **Risultato:**
 
-| Nome  | Corso       |
+| nome  | corso       |
 | ----- | ----------- |
 | Luca  | Matematica  |
 | Anna  | Informatica |
@@ -48,7 +48,7 @@ Si usa per **aggiungere** una nuova riga alla tabella
 
 **Studenti**
 
-| ID  | Nome  | Età | Corso       |
+| id  | nome  | età | corso       |
 | --- | ----- | --- | ----------- |
 | 1   | Luca  | 22  | Matematica  |
 | 2   | Anna  | 19  | Informatica |
@@ -56,12 +56,12 @@ Si usa per **aggiungere** una nuova riga alla tabella
 
 **Query:**
 ``` SQL
-INSERT INTO Studenti (ID, Nome, Età, Corso) VALUES (4, 'Giulia', 21, 'Chimica');
+INSERT INTO Studenti (id, nome, età, corso) VALUES (4, 'Giulia', 21, 'Chimica');
 ```
 
 **Risultato:**
 
-| ID  | Nome   | Età | Corso       |
+| id  | nome   | età | corso       |
 | --- | ------ | --- | ----------- |
 | 1   | Luca   | 22  | Matematica  |
 | 2   | Anna   | 19  | Informatica |
@@ -75,7 +75,7 @@ Si usa per **modificare** i dati in una riga che esiste già.
 
 **Studenti**
 
-| ID  | Nome  | Età | Corso       |
+| id  | nome  | età | corso       |
 | --- | ----- | --- | ----------- |
 | 1   | Luca  | 22  | Matematica  |
 | 2   | Anna  | 19  | Informatica |
@@ -83,12 +83,12 @@ Si usa per **modificare** i dati in una riga che esiste già.
 
 **Query:**
 ``` SQL
-UPDATE Studenti SET Corso = 'Informatica' WHERE ID = 1;
+UPDATE Studenti SET corso = 'Informatica' WHERE ID = 1;
 ```
 
 **Risultato:**
 
-| ID  | Nome  | Età | Corso       |
+| id  | nome  | età | corso       |
 | --- | ----- | --- | ----------- |
 | 1   | Luca  | 22  | Informatica |
 | 2   | Anna  | 19  | Informatica |
@@ -101,7 +101,7 @@ Si usa per **rimuovere** una o più righe dalla tabella
 
 **Studenti**
 
-| ID  | Nome  | Età | Corso       |
+| id  | nome  | età | corso       |
 | --- | ----- | --- | ----------- |
 | 1   | Luca  | 22  | Matematica  |
 | 2   | Anna  | 19  | Informatica |
@@ -114,9 +114,9 @@ DELETE FROM Studenti WHERE ID = 3;
 
 **Risultato:**
 
-| ID  | Nome  | Età | Corso       |
-| --- | ----- | --- | ----------- |
-| 1   | Luca  | 22  | Informatica |
-| 2   | Anna  | 19  | Informatica |
+| id  | nome | età | corso       |
+| --- | ---- | --- | ----------- |
+| 1   | Luca | 22  | Informatica |
+| 2   | Anna | 19  | Informatica |
 
 ___
