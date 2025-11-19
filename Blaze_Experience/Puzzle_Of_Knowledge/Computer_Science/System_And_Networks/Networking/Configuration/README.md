@@ -1,8 +1,8 @@
 Data: 2025-10-17
 [Networking](../README.md)
-#Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/1Router_Configuration
+#Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration
 ___
-# Router_Configuration
+Configuration
 Di cosa parla questa MOC.
 ___
 # Indice

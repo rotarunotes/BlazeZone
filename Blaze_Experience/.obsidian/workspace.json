@@ -40,9 +40,23 @@
               "icon": "search",
               "title": "Home tab"
             }
+          },
+          {
+            "id": "c32e8891cce89f75",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -221,8 +235,29 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "21eb40158b652ded",
+  "active": "c32e8891cce89f75",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "tolc.md",
+    "Switch.md",
+    "Setup_Archive/Plugin/Excalidraw/VLAN_Untagged.md",
+    "Setup_Archive/Plugin/Excalidraw/VLAN_Tagged.md",
+    "Senza nome.md",
+    "Screenshot 2025-11-18 140914.png",
+    "School/5ID_2025-26/TPSIT.md",
+    "Router Mag.md",
+    "Red_Lab/Giochi/Reverse/Regole.md",
+    "Red_Lab/Giochi/Reverse",
+    "Red_Lab/Giochi",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/VLAN.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch/VLAN.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration",
+    "Pasted image 20251109224335.png",
+    "34fg.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Io.md",
     "2025-11-05.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
@@ -239,19 +274,6 @@
     "Red_Lab/Ex_School.md",
     "Red_Lab/Ex_School",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
-    "conflict-files-obsidian-git.md",
-    "Setup_Archive/Plugin/Calendar/Exam/2025-11-06 fdafas.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
-    "Puzzle_Of_Knowledge/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/SQL/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/SQL",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/Relation.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Subnetting_Practice/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/README.md"
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/SQL"
   ]
 }
