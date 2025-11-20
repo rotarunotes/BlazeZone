@@ -19,7 +19,7 @@ dopo aver individuato queste farm, fare lo storage in modo centrare e comodo
 | Motore                  | 10          |       |         |         |              | 20     |                 | 20      |
 | TOT materiali           |             | 480   | 480     | 225     |              |        |                 |         |
 
-per farmare sia statore e motore i tubi d'acciaio da 120 pezzi passano a 120-90= 30/m
+per farmare sia **statore** e **motore** i tubi d'acciaio da 120 pezzi passano a 120-90= 30/m
 
 
 2. farm di caterium
