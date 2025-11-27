@@ -146,9 +146,19 @@
               "icon": "lucide-file",
               "title": "Indefinite_Integral"
             }
+          },
+          {
+            "id": "bf3f829a8af5bd42",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -320,8 +330,9 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "299458dff9f56fa7",
+  "active": "bf3f829a8af5bd42",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
     "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
@@ -330,7 +341,6 @@
     "Screenshot 2025-11-18 140914.png",
     "Router Mag.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
     "Setup_Archive/Plugin/Excalidraw/Integrale_definito_aree_curve.md",
     "Setup_Archive/Plugin/Excalidraw/Schema_Divisione_Polinomi.md",
     "Puzzle_Of_Knowledge/Math/README.md",
