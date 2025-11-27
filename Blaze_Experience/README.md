@@ -16,7 +16,7 @@ ___
 			- [Data_Structures](Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/README.md)
 				- [Relation](Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/README.md)
 			- [Database](Puzzle_Of_Knowledge/Computer_Science/Theory/Database/README.md)
-				- [Relational_Algebra](Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra/README.md)
+				- [Relational_Algebra](Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md)
 					- [SQL](Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md)
 						- [DDL](Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md)
 						- [DML](Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md)
