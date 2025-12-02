@@ -10,11 +10,11 @@ Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, agg
 
 | **Categoria** | **Comandi Chiave**           | **Azione Principale**                                     |
 | ------------- | ---------------------------- | --------------------------------------------------------- |
-| [DQL](DQL.md) | `SELECT`                     | **Recupera dati** (Interrogazione)                        |
+| [DCL](DCL.md) | `GRANT`, `REVOKE`            | **Controlla accessi** (Concede o revoca permessi)         |
 | [DML](DML.md) | `INSERT`, `UPDATE`, `DELETE` | **Manipola dati** (Aggiunge, modifica, elimina record)    |
 | [DDL](DDL.md) | `CREATE`, `ALTER`, `DROP`    | **Definisce struttura** (Crea, modifica, elimina tabelle) |
 | [TCL](TCL.md) | `COMMIT`, `ROLLBACK`         | **Gestisce transazioni** (Salva o annulla operazioni DML) |
-| [DCL](DCL.md) | `GRANT`, `REVOKE`            | **Controlla accessi** (Concede o revoca permessi)         |
+| [DQL](DQL.md) | `SELECT`                     | **Recupera dati** (Interrogazione)                        |
 
 - [[#Funzioni di aggregazione]]
 - [[#Operator logici]]
