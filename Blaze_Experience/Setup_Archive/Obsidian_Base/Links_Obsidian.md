@@ -14,6 +14,8 @@ ___
 # link su un blocco di testo
 sintassi: "^^parola chiave", ^^ questo server per cercare in tutte le note
 [[Example_Of_Text#^90aebb|link per un blocco di testo]]
+
+[[Formatting]]
 ___
 # link su un citazione
 col "!" la citazione diventa visibile
