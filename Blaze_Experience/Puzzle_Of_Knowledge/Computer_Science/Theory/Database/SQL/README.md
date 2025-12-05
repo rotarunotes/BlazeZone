@@ -6,6 +6,8 @@ ___
 **SQL** è un linguaggio utilizzato per creare, gestire e interrogare i **Database** relazionali.  
 Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, aggiornamento, eliminazione).
 
+### manca like e le join
+
 # Indice
 
 | **Categoria** | **Comandi Chiave**           | **Azione Principale**                                     |
