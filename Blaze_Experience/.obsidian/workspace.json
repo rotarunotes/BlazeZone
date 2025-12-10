@@ -11,7 +11,6 @@
             "id": "88951a1786e47bdb",
             "type": "leaf",
             "state": {
-<<<<<<< HEAD
               "type": "markdown",
               "state": {
                 "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
@@ -26,30 +25,14 @@
             "id": "61244f0d180e1262",
             "type": "leaf",
             "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
-=======
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "home-tab-view"
-            }
-          },
-          {
-            "id": "7def3e963095e55d",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
-                "mode": "preview",
-                "source": true
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "DQL"
->>>>>>> origin/main
+              "title": "README"
             }
           }
         ],
@@ -76,7 +59,7 @@
                 "autoReveal": true
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Esplora risorse"
             }
           },
           {
@@ -112,8 +95,8 @@
             "state": {
               "type": "trash-explorer",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "trash-explorer"
+              "icon": "trash",
+              "title": "Trash explorer"
             }
           }
         ]
@@ -166,8 +149,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -226,68 +209,49 @@
               "icon": "lucide-archive",
               "title": "Tutte le proprietà"
             }
-          },
-          {
-            "id": "ba98636b6a75b9cf",
-            "type": "leaf",
-            "state": {
-              "type": "chronology-calendar-view",
-              "state": {},
-              "icon": "clock",
-              "title": "Chronology"
-            }
           }
         ],
         "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 205
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:Apri selezione rapida": true,
+      "graph:Apri vista grafo": true,
+      "canvas:Crea nuova lavagna": true,
+      "daily-notes:Apri nota del giorno": true,
+      "templates:Inserisci modello": true,
       "bases:Create new base": true,
-      "obsidian-trash-explorer:Open trash explorer": false,
-      "templater-obsidian:Templater": false,
-      "omnisearch:Omnisearch": false,
-      "obsidian-git:Open Git source control": false,
+      "obsidian-git:Open Git source control": true,
+      "command-palette:Apri riquadro comandi": true,
+      "templater-obsidian:Templater": true,
       "obsidian-full-calendar:Open Full Calendar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "chronology:Open Chronology": false
+      "omnisearch:Omnisearch": true,
+      "chronology:Open Chronology": true,
+      "obsidian-trash-explorer:Open trash explorer": false
     }
   },
   "active": "61244f0d180e1262",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
-    "README.md",
-=======
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
     "README.md",
-    "tolc.md",
-    "bo.md",
->>>>>>> origin/main
     "conflict-files-obsidian-git.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
     "Z_MAUGER/futureMag.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch/VLAN.md",
     "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
+    "tolc.md",
     "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Z_MAUGER/Switch.md",
     "Z_MAUGER/Router Mag.md",
     "Pasted image 20251030093955.png",
+    "bo.md",
     "Screenshot 2025-11-18 140914.png",
     "Pasted image 20251109224335.png",
     "SATISFACTORY.md",
@@ -302,10 +266,7 @@
     "34fg.md",
     "Z_MAUGER",
     "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
-<<<<<<< HEAD
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
-=======
->>>>>>> origin/main
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra",
     "Red_Lab/Giochi/Reverse",
     "Red_Lab/Giochi",

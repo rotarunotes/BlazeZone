@@ -33,20 +33,20 @@ Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, agg
 
 ## Operator logici
 
-|Operatore|Descrizione|Esempio di utilizzo|
-|---|---|---|
-|`AND`|Operatore logico "E"|`WHERE età > 18 AND stipendio > 2000`|
-|`OR`|Operatore logico "O"|`WHERE età > 18 OR stipendio > 2000`|
-|`NOT`|Operatore logico "NON"|`WHERE NOT (età > 18)`|
-|`LIKE`|Ricerche parziali|`WHERE nome LIKE 'Mar%'`|
-|`IN`|Controllo su un elenco di valori|`WHERE classe IN ('1A','2B')`|
-|`BETWEEN`|Controllo su un intervallo di valori|`WHERE prezzo BETWEEN 100 AND 500`|
-|`<`|Minore di|`WHERE età < 30`|
-|`>`|Maggiore di|`WHERE prezzo > 100`|
-|`<=`|Minore o uguale a|`WHERE età <= 30`|
-|`>=`|Maggiore o uguale a|`WHERE prezzo >= 100`|
-|`=`|Uguale a|`WHERE nome = 'Mario'`|
-|`<>` o `!=`|Diverso da|`WHERE nome <> 'Mario'`|
+| Operatore   | Descrizione                          | Esempio di utilizzo                   |
+| ----------- | ------------------------------------ | ------------------------------------- |
+| `AND`       | Operatore logico "E"                 | `WHERE età > 18 AND stipendio > 2000` |
+| `OR`        | Operatore logico "O"                 | `WHERE età > 18 OR stipendio > 2000`  |
+| `NOT`       | Operatore logico "NON"               | `WHERE NOT (età > 18)`                |
+| `LIKE`      | Ricerche parziali                    | `WHERE nome LIKE 'Mar%'`              |
+| `IN`        | Controllo su un elenco di valori     | `WHERE classe IN ('1A','2B')`         |
+| `BETWEEN`   | Controllo su un intervallo di valori | `WHERE prezzo BETWEEN 100 AND 500`    |
+| `<`         | Minore di                            | `WHERE età < 30`                      |
+| `>`         | Maggiore di                          | `WHERE prezzo > 100`                  |
+| `<=`        | Minore o uguale a                    | `WHERE età <= 30`                     |
+| `>=`        | Maggiore o uguale a                  | `WHERE prezzo >= 100`                 |
+| `=`         | Uguale a                             | `WHERE nome = 'Mario'`                |
+| `<>` o `!=` | Diverso da                           | `WHERE nome <> 'Mario'`               |
 
 ## DISTINCT & ALL
 **DISTINCT**  si usa per eliminare le righe duplicate dato che  di default esistono duplicati nel database.
@@ -88,4 +88,21 @@ SELECT I.cognome,I.nome,D.descrizione
 FROM impiegati AS I, dipartimenti AS D
 WHERE (I.dipartimento=D.codice) AND (D.sede='Roma');
 ```
----
+___
+## LIMIT
+Questa funzione di permette di limitare il numero di righe in output della tua query
+
+``` SQL
+SELECT prodotto_id, prezzo 
+FROM prodotti 
+ORDER BY prodotto_id 
+LIMIT 3;
+```
+
+**Risultato:**
+
+| prodotto_id | prezzo |
+| ----------- | ------ |
+| aaa         | 10     |
+| bbb         | 20     |
+| ccc         | 30     |
