@@ -13,8 +13,8 @@
             "state": {
               "type": "home-tab-view",
               "state": {},
-              "icon": "search",
-              "title": "Home tab"
+              "icon": "lucide-ghost",
+              "title": "home-tab-view"
             }
           },
           {
@@ -23,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "title": "DQL"
             }
           }
         ],
@@ -55,7 +55,7 @@
                 "autoReveal": true
               },
               "icon": "lucide-folder-closed",
-              "title": "Esplora risorse"
+              "title": "Files"
             }
           },
           {
@@ -91,8 +91,8 @@
             "state": {
               "type": "trash-explorer",
               "state": {},
-              "icon": "trash",
-              "title": "Trash explorer"
+              "icon": "lucide-ghost",
+              "title": "trash-explorer"
             }
           }
         ]
@@ -145,8 +145,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           },
           {
@@ -205,6 +205,16 @@
               "icon": "lucide-archive",
               "title": "Tutte le proprietà"
             }
+          },
+          {
+            "id": "ba98636b6a75b9cf",
+            "type": "leaf",
+            "state": {
+              "type": "chronology-calendar-view",
+              "state": {},
+              "icon": "clock",
+              "title": "Chronology"
+            }
           }
         ],
         "currentTab": 3
@@ -215,34 +225,40 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Apri selezione rapida": true,
-      "graph:Apri vista grafo": true,
-      "canvas:Crea nuova lavagna": true,
-      "daily-notes:Apri nota del giorno": true,
-      "templates:Inserisci modello": true,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "bases:Create new base": true,
-      "obsidian-git:Open Git source control": true,
-      "command-palette:Apri riquadro comandi": true,
-      "templater-obsidian:Templater": true,
+      "obsidian-trash-explorer:Open trash explorer": false,
+      "templater-obsidian:Templater": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-git:Open Git source control": false,
       "obsidian-full-calendar:Open Full Calendar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "omnisearch:Omnisearch": true,
-      "chronology:Open Chronology": true,
-      "obsidian-trash-explorer:Open trash explorer": false
+      "chronology:Open Chronology": false
     }
   },
   "active": "7def3e963095e55d",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
+    "README.md",
+    "tolc.md",
+    "bo.md",
     "conflict-files-obsidian-git.md",
     "Z_MAUGER/futureMag.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch/VLAN.md",
     "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
-    "tolc.md",
     "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Z_MAUGER/Switch.md",
     "Z_MAUGER/Router Mag.md",
     "Pasted image 20251030093955.png",
-    "bo.md",
     "Screenshot 2025-11-18 140914.png",
     "Pasted image 20251109224335.png",
     "SATISFACTORY.md",
@@ -257,12 +273,7 @@
     "34fg.md",
     "Z_MAUGER",
     "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
-    "README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
     "Red_Lab/Giochi/Reverse",
     "Red_Lab/Giochi",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting",
