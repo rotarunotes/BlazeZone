@@ -20,6 +20,7 @@ Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, agg
 
 - [[#Funzioni di aggregazione]]
 - [[#Operator logici]]
+- [[#DISTINCT & ALL]]
 ## Funzioni di aggregazione
 
 | Funzione  | Descrizione    | Esempio                             |
@@ -47,45 +48,44 @@ Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, agg
 |`=`|Uguale a|`WHERE nome = 'Mario'`|
 |`<>` o `!=`|Diverso da|`WHERE nome <> 'Mario'`|
 
+## DISTINCT & ALL
+**DISTINCT**  si usa per eliminare le righe duplicate dato che  di default esistono duplicati nel database.
+``` SQL
+SELECT DISTINCT residenza
+FROM impiegati
+WHERE residenza='Torino';
+```
+
+**ALL** è impostato di default  e seleziona anche i duplicati
+``` SQL
+SELECT ALL residenza
+FROM impiegati
+WHERE residenza='Torino';
+```
+
+## Alias
+Quando voglio assegnare Assegno un nuovo nome ad un attributo tramite un ALIAS:
+- Indico  il nome vecchio AS il nome nuovo da assegnare 
+
+``` SQL
+SELECT id AS matricola, nome, cognome
+FROM impiegati;
+```
+
+Posso creare una nuova colonna (attributo) a cui gli assegno un alias che è il risultato di una espressione (in questo caso risultato double)
+
+``` sql
+SELECT cognome, nome, 
+	stipendio AS stipendio_attuale, 
+	stipendio*1.05 AS nuovo_stipendio  
+FROM impiegati;
+```
+
+Posso anche dare un nuovo nome con un alias ad un tabella. Posso usare quell'alias in SELECT e in WHERE per indicare quella tabella
+
+``` SQL
+SELECT I.cognome,I.nome,D.descrizione
+FROM impiegati AS I, dipartimenti AS D
+WHERE (I.dipartimento=D.codice) AND (D.sede='Roma');
+```
 ---
-
-## 🧩 1️⃣ DDL – Data Definition Language
-
-Serve per **creare o modificare la struttura del database**.
-
-| Comando    | Funzione                                       | Esempio                                    |
-| ---------- | ---------------------------------------------- | ------------------------------------------ |
-| `CREATE`   | Crea una tabella o database                    | `CREATE TABLE studenti (...);`             |
-| `ALTER`    | Modifica una tabella esistente                 | `ALTER TABLE studenti ADD email CHAR(50);` |
-| `DROP`     | Elimina una tabella o database                 | `DROP TABLE studenti;`                     |
-| `RENAME`   | Rinomina una tabella                           | `RENAME TABLE studenti TO alunni;`         |
-| `TRUNCATE` | Cancella tutti i dati ma mantiene la struttura | `TRUNCATE TABLE studenti;`                 |
-
----
-
-## 💾 2️⃣ DML – Data Manipulation Language
-
-Serve per **inserire, aggiornare o cancellare i dati** dentro le tabelle.
-
-| Comando | Funzione | Esempio |
-|----------|-----------|----------|
-| `INSERT INTO` | Inserisce nuovi record | `INSERT INTO studenti (id, nome) VALUES (1, 'Mario');` |
-| `UPDATE` | Modifica dati esistenti | `UPDATE studenti SET nome='Luca' WHERE id=1;` |
-| `DELETE` | Elimina record | `DELETE FROM studenti WHERE id=1;` |
-
----
-## DQL
-## 🔁 5️⃣ TCL – Transaction Control Language
-
-Serve per **gestire le transazioni**.
-
-| Comando | Funzione | Esempio |
-|----------|-----------|----------|
-| `COMMIT` | Conferma definitivamente le modifiche | `COMMIT;` |
-| `ROLLBACK` | Annulla le modifiche non confermate | `ROLLBACK;` |
-| `SAVEPOINT` | Imposta un punto di ripristino | `SAVEPOINT punto1;` |
-
-
----
-
-

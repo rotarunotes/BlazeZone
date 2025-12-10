@@ -400,14 +400,6 @@ WHERE Studenti.id_corsi_materie=Corsi.id_corso;
 ___
 # ORDER BY
 
-``` SQL
-SELECT -- Attributi che vuoi visualizzare
-FROM -- Tabella
-WHERE -- Pre Filtro
-GROUP BUY -- Attributo per cui vuole fare un gruppo
-HAVING --Opertato di aggregazione, filtro sul gruppo
-```
-
 **Descrizione:**
 Il comando ORDER BY in SQL serve per mettere in ordine i risultati che ottieni da una tabella. Immagina di avere un elenco di dati e vuoi che siano disposti in un certo modo, ad esempio in ordine alfabetico, per data, o dal valore più piccolo al più grande.
 
@@ -496,3 +488,74 @@ ORDER BY Autore ASC, Pagine DESC;
 |1984|Orwell|328|
 |**Il Signore degli Anelli**|**Tolkien**|**1216**|
 |**Lo Hobbit**|**Tolkien**|**310**|
+
+## Limit
+
+## Like
+
+L'operatore `LIKE` viene utilizzato nella clausola `WHERE` per eseguire ricerche che corrispondano a un modello (pattern) specifico. È fondamentale quando devi trovare righe in base a corrispondenze parziali di stringhe, come trovare tutti i nomi che iniziano con una certa lettera.
+
+Caratteri jolly (wildcard):
+
+|**Carattere Jolly**|**Significato**|**Esempio**|**Descrizione**|
+|---|---|---|---|
+|**`%`** (Percentuale)|Corrisponde a **zero o più** caratteri qualsiasi.|`P%`|Trova qualsiasi stringa che inizia con 'P'|
+|**`\_`** (Sottolinea)|Corrisponde a un **singolo** carattere qualsiasi.|`_tto`|Trova qualsiasi stringa di 4 lettere che termina con 'tto' (es. `atto`, `otto`)|
+
+---
+
+**Esempio:** Trovare tutti i docenti il cui nome inizia con la lettera 'L'.
+
+``` sql
+SELECT nome, cognome
+FROM Docenti
+WHERE nome LIKE 'L%';
+```
+
+**Risultato (usando i dati del database `ScuolaDB`):**
+
+|**nome**|**cognome**|
+|---|---|
+|Laura|Bianchi|
+|Luca|Gialli|
+|Luca|Esposito|
+
+**Esempio:** Trovare tutti gli studenti il cui cognome termina con la sequenza 'o'.
+
+``` SQL
+SELECT nome, cognome
+FROM Studenti
+WHERE cognome LIKE '%o';
+```
+
+**Risultato:**
+
+|**nome**|**cognome**|
+|---|---|
+|Simone|Gallo|
+|Marco|Rizzo|
+|Luca|Esposito|
+___
+
+## GROUP BY
+
+``` SQL
+SELECT -- Attributi che vuoi visualizzare
+FROM -- Tabella
+WHERE -- Pre Filtro
+GROUP BY -- Attributo per cui vuole fare un gruppo
+HAVING --Opertato di aggregazione, filtro sul gruppo
+ORDER BY -- Ordina poi il gruppo
+```
+
+Si usa per suddividere la tabella in gruppi, ogni gruppo presenta le righe che hanno uno stesso valore dell'attributo indicato nel **GROUP BY**
+
+- **Esempio**: vendite (id, prodotto_id, quantità, importo, data);
+Trovare l'importo totale delle vendite per ogni prodotto mostrando solo i prodotti con vendite superiori a 1000
+
+``` SQL
+SELECT prodotto_id, SUM(importo * quantità) as totale
+FROM vendite
+GROUP BY prodotto
+HAVING totale > 1000
+```
