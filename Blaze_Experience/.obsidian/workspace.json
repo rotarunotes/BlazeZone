@@ -34,9 +34,19 @@
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "72a3bd1e0f3f8a1d",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -235,10 +245,10 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "61244f0d180e1262",
+  "active": "72a3bd1e0f3f8a1d",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
     "README.md",
     "conflict-files-obsidian-git.md",
