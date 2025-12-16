@@ -22,7 +22,12 @@
   "showShortcuts": true,
   "markdownOnly": false,
   "unresolvedLinks": false,
-  "recentFilesStore": [],
+  "recentFilesStore": [
+    {
+      "filepath": "Puzzle_Of_Knowledge/Math/README.md",
+      "timestamp": 1765886716035
+    }
+  ],
   "bookmarkedFileStore": [],
   "searchDelay": 0,
   "replaceNewTabs": true,
