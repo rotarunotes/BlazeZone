@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Math/README.md",
+                "file": "Puzzle_Of_Knowledge/Math/Integral/README.md",
                 "mode": "source",
                 "source": false
               },
@@ -247,6 +247,10 @@
   },
   "active": "be398802097e32ce",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
+    "Puzzle_Of_Knowledge/Math/Integral/README.md",
+    "Puzzle_Of_Knowledge/Math/README.md",
     "conflict-files-obsidian-git.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
     "Z_MAUGER/Switch.md",
@@ -261,9 +265,7 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Untitled.md",
     "Screenshot 2025-11-18 140914.png",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
     "tolc.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
     "34fg.md",
     "futureMag.md",
@@ -278,8 +280,6 @@
     "Setup_Archive/Plugin/Excalidraw/VLAN_Tagged.md",
     "Setup_Archive/Plugin/Excalidraw/VLAN_Tagged.md",
     "Setup_Archive/Plugin/Excalidraw/Drawing .md",
-    "Setup_Archive/Plugin/Excalidraw/VLAN_Untagged.md",
-    "Setup_Archive/Plugin/Excalidraw/Integrale_definito_Aree.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router",
