@@ -20,6 +20,16 @@
               "icon": "lucide-file",
               "title": "Router"
             }
+          },
+          {
+            "id": "be398802097e32ce",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ]
       }
@@ -210,8 +220,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,9 +242,9 @@
   },
   "active": "deb08d242062cd25",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch/VLAN.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
     "Router Mag.md",
     "Switch.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Untitled.md",
