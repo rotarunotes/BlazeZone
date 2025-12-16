@@ -6,6 +6,21 @@ ___
 **SQL** è un linguaggio utilizzato per creare, gestire e interrogare i **Database** relazionali.  
 Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, aggiornamento, eliminazione).
 
+### manca like e le join
+
+# Indice
+
+| **Categoria** | **Comandi Chiave**           | **Azione Principale**                                     |
+| ------------- | ---------------------------- | --------------------------------------------------------- |
+| [DCL](DCL.md) | `GRANT`, `REVOKE`            | **Controlla accessi** (Concede o revoca permessi)         |
+| [DML](DML.md) | `INSERT`, `UPDATE`, `DELETE` | **Manipola dati** (Aggiunge, modifica, elimina record)    |
+| [DDL](DDL.md) | `CREATE`, `ALTER`, `DROP`    | **Definisce struttura** (Crea, modifica, elimina tabelle) |
+| [TCL](TCL.md) | `COMMIT`, `ROLLBACK`         | **Gestisce transazioni** (Salva o annulla operazioni DML) |
+| [DQL](DQL.md) | `SELECT`                     | **Recupera dati** (Interrogazione)                        |
+
+- [[#Funzioni di aggregazione]]
+- [[#Operator logici]]
+- [[#DISTINCT & ALL]]
 ## Funzioni di aggregazione
 
 | Funzione  | Descrizione    | Esempio                             |
@@ -18,81 +33,76 @@ Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, agg
 
 ## Operator logici
 
-|Operatore|Descrizione|Esempio di utilizzo|
-|---|---|---|
-|`AND`|Operatore logico "E"|`WHERE età > 18 AND stipendio > 2000`|
-|`OR`|Operatore logico "O"|`WHERE età > 18 OR stipendio > 2000`|
-|`NOT`|Operatore logico "NON"|`WHERE NOT (età > 18)`|
-|`LIKE`|Ricerche parziali|`WHERE nome LIKE 'Mar%'`|
-|`IN`|Controllo su un elenco di valori|`WHERE classe IN ('1A','2B')`|
-|`BETWEEN`|Controllo su un intervallo di valori|`WHERE prezzo BETWEEN 100 AND 500`|
-|`<`|Minore di|`WHERE età < 30`|
-|`>`|Maggiore di|`WHERE prezzo > 100`|
-|`<=`|Minore o uguale a|`WHERE età <= 30`|
-|`>=`|Maggiore o uguale a|`WHERE prezzo >= 100`|
-|`=`|Uguale a|`WHERE nome = 'Mario'`|
-|`<>` o `!=`|Diverso da|`WHERE nome <> 'Mario'`|
+| Operatore   | Descrizione                          | Esempio di utilizzo                   |
+| ----------- | ------------------------------------ | ------------------------------------- |
+| `AND`       | Operatore logico "E"                 | `WHERE età > 18 AND stipendio > 2000` |
+| `OR`        | Operatore logico "O"                 | `WHERE età > 18 OR stipendio > 2000`  |
+| `NOT`       | Operatore logico "NON"               | `WHERE NOT (età > 18)`                |
+| `LIKE`      | Ricerche parziali                    | `WHERE nome LIKE 'Mar%'`              |
+| `IN`        | Controllo su un elenco di valori     | `WHERE classe IN ('1A','2B')`         |
+| `BETWEEN`   | Controllo su un intervallo di valori | `WHERE prezzo BETWEEN 100 AND 500`    |
+| `<`         | Minore di                            | `WHERE età < 30`                      |
+| `>`         | Maggiore di                          | `WHERE prezzo > 100`                  |
+| `<=`        | Minore o uguale a                    | `WHERE età <= 30`                     |
+| `>=`        | Maggiore o uguale a                  | `WHERE prezzo >= 100`                 |
+| `=`         | Uguale a                             | `WHERE nome = 'Mario'`                |
+| `<>` o `!=` | Diverso da                           | `WHERE nome <> 'Mario'`               |
 
+## DISTINCT & ALL
+**DISTINCT**  si usa per eliminare le righe duplicate dato che  di default esistono duplicati nel database.
+``` SQL
+SELECT DISTINCT residenza
+FROM impiegati
+WHERE residenza='Torino';
+```
+
+**ALL** è impostato di default  e seleziona anche i duplicati
+``` SQL
+SELECT ALL residenza
+FROM impiegati
+WHERE residenza='Torino';
+```
+
+## Alias
+Quando voglio assegnare Assegno un nuovo nome ad un attributo tramite un ALIAS:
+- Indico  il nome vecchio AS il nome nuovo da assegnare 
+
+``` SQL
+SELECT id AS matricola, nome, cognome
+FROM impiegati;
+```
+
+Posso creare una nuova colonna (attributo) a cui gli assegno un alias che è il risultato di una espressione (in questo caso risultato double)
+
+``` sql
+SELECT cognome, nome, 
+	stipendio AS stipendio_attuale, 
+	stipendio*1.05 AS nuovo_stipendio  
+FROM impiegati;
+```
+
+Posso anche dare un nuovo nome con un alias ad un tabella. Posso usare quell'alias in SELECT e in WHERE per indicare quella tabella
+
+``` SQL
+SELECT I.cognome,I.nome,D.descrizione
+FROM impiegati AS I, dipartimenti AS D
+WHERE (I.dipartimento=D.codice) AND (D.sede='Roma');
+```
 ___
-# Indice
-- [DDL](DDL.md)
-- [DML](DML.md)
-- [DCL](DCL.md)
-- [TCL](TCL.md)
-- [DQL](DQL.md)
+## LIMIT
+Questa funzione di permette di limitare il numero di righe in output della tua query
 
-___
-## Categorie principali di comandi SQL
+``` SQL
+SELECT prodotto_id, prezzo 
+FROM prodotti 
+ORDER BY prodotto_id 
+LIMIT 3;
+```
 
-I comandi SQL si dividono in **cinque gruppi fondamentali**:
+**Risultato:**
 
-|**Categoria**|**Acronimo**|**Scopo**|**Comandi principali**|
-|---|---|---|---|
-|**DDL**|Data Definition Language|Definizione della struttura del database (tabelle, schemi, vincoli)|`CREATE`, `ALTER`, `DROP`|
-|**DML**|Data Manipulation Language|Gestione e modifica dei dati nelle tabelle|`INSERT`, `UPDATE`, `DELETE`|
-|**DQL**|Data Query Language|Interrogazione dei dati|`SELECT`, `WHERE`, `ORDER BY`|
-|**DCL**|Data Control Language|Controllo degli accessi e dei permessi|`GRANT`, `REVOKE`|
-|**TCL**|Transaction Control Language|Gestione delle transazioni|`COMMIT`, `ROLLBACK`, `SAVEPOINT`|
-
----
-
-## 🧩 1️⃣ DDL – Data Definition Language
-
-Serve per **creare o modificare la struttura del database**.
-
-| Comando | Funzione | Esempio |
-|----------|-----------|----------|
-| `CREATE` | Crea una tabella o database | `CREATE TABLE studenti (...);` |
-| `ALTER` | Modifica una tabella esistente | `ALTER TABLE studenti ADD email CHAR(50);` |
-| `DROP` | Elimina una tabella o database | `DROP TABLE studenti;` |
-| `RENAME` | Rinomina una tabella | `RENAME TABLE studenti TO alunni;` |
-| `TRUNCATE` | Cancella tutti i dati ma mantiene la struttura | `TRUNCATE TABLE studenti;` |
-
----
-
-## 💾 2️⃣ DML – Data Manipulation Language
-
-Serve per **inserire, aggiornare o cancellare i dati** dentro le tabelle.
-
-| Comando | Funzione | Esempio |
-|----------|-----------|----------|
-| `INSERT INTO` | Inserisce nuovi record | `INSERT INTO studenti (id, nome) VALUES (1, 'Mario');` |
-| `UPDATE` | Modifica dati esistenti | `UPDATE studenti SET nome='Luca' WHERE id=1;` |
-| `DELETE` | Elimina record | `DELETE FROM studenti WHERE id=1;` |
-
----
-## DQL
-## 🔁 5️⃣ TCL – Transaction Control Language
-
-Serve per **gestire le transazioni**.
-
-| Comando | Funzione | Esempio |
-|----------|-----------|----------|
-| `COMMIT` | Conferma definitivamente le modifiche | `COMMIT;` |
-| `ROLLBACK` | Annulla le modifiche non confermate | `ROLLBACK;` |
-| `SAVEPOINT` | Imposta un punto di ripristino | `SAVEPOINT punto1;` |
-
-
----
-
-
+| prodotto_id | prezzo |
+| ----------- | ------ |
+| aaa         | 10     |
+| bbb         | 20     |
+| ccc         | 30     |

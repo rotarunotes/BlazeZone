@@ -97,91 +97,114 @@ R(config-if)# ip helper-address 192.168.99.100 // IP del server
 È un'eccezione che deve essere configurata **per ogni singola interfaccia virtuale (sub-interfaccia)**, 
 - Se hai 5 VLAN (10, 20, 30, 40, 50), devi configurare il comando `ip helper-address` separatamente su `fastEthernet 0/0.10`, `fastEthernet 0/0.20`, `fastEthernet 0/0.30`, ecc., per permettere a tutti gli host in quelle VLAN di raggiungere il server DHCP centralizzato.
 
+___
+# VOIP
+telefono dispositivo fisico
+la linea è il collegamento astratto quale numero (telefono sim)
 
+Questa configurazione riguarda un'implementazione VOIP che utilizza una **VLAN dedicata** per il traffico voce.
 
-	VLAN VOIC ---> VOIP
-192.168.101.0/24
-
-(schema switcht - tel -pc)
-avendo la vlan assegnata al voip, dobbiamo assegnare la porta che collega lo switch al telefono:
-switchport voice vlan "x"
-
-
-router 2811
-creo una pool con un dhcp server col router 2811
-
-ip dhcp pool voice
-network(ip  del voice) mask
-option 150 indiritzzo del centralino
-
-
-ora configurazione della linea
-
-switch
+- Si utilizza il router 2811
+### 1. Rete e VLAN VOIP
 ``` CLI
-conf t/telephony-service
-ip source-address (gatawey che da verso il voip) port 2000
-
-max-dn 5
-max-ephones 5
-
-//creo le linee telefoniche che corrispondono per ogni telefono
-ephone-dn 1
-number 11
-exit
-ephone-dn 2
-number 12
-exit
-ephone-dn 3
-number 21
-exit
-ephone-dn 4
-number 22
-exit
-
-//assegno i telefoni a delle ephone
-/telephony-service
-auto-reg-ephone
-
-verifico se ci sono i telefoni
-con show running-config
-
-avendo ora l'assegnazione dei telefoni, però sono stati assegnati in modo casuale, quindi ora assegnamo manualmente ogni linea-telefono alla corretta linea
-per esempio se avessimo:
-telefono 1, telefono 2, telefono 3, telefono 4
-
-ephone 1 telefono 1
-ephone 2 telefono 3
-ephone 3 telefono 2
-ephone 4 telefono 4
+SW(config-vlan)#switchport voice vlan [Numero vlan voice]]
+```
+### 2. Configurazione DHCP per il VOIP (Opzione 150)  Sul router
+``` CLI
+R(config)# ip dhcp pool VOICE
+R(dhcp-config)# network [Gateway] [Maschera]
+R(dhcp-config)# default-router [Indirizzo dell'interfaccia del router]
+R(dhcp-config)# option 150 ip [Gateway]
+R(dhcp-config)# exit
+R(config)# ip dhcp excluded-address [Indirizzo dell'interfaccia del router]
 
 
-
-//associo bottone 1 alla linea 1
-ephone 1
-button 1:1
-
-//associo bottone 1 alla linea 2
-ephone 3 
-button 1:2
-
-ephone 2
-//associo bottone 1 alla linea 3
-button 1:3
-
-ephone 4
-//associo bottone 1 alla linea 4
-button 1:4
-
-
-
-
+//ESEMPIO
+R(config)# ip dhcp pool VOICE
+R(dhcp-config)# network 192.168.101.0 255.255.255.0
+R(dhcp-config)# default-router [192.168.101.254]
+R(dhcp-config)# option 150 ip 192.168.101.1
+R(config)# ip dhcp excluded-address [192.168.101.254]
 ```
 
+### 3. Configurazione del Centralino
+``` CLI
+router(config)# telephony-service
+router(config-telephony)# ip source-address [Gateway] port 2000
+router(config-telephony)# max-dn [Massimi linee (Numeri di telefono)]
+router(config-telephony)# max-ephones [Massimo dispositivi fisici]
+```
 
- massimi di linee telefoniche 
- massimi di telefoni
- 
-telefono dispositivo fisico
-la linea è il collegamento astratto qule numero (telefono sim)
+### 4. Creazione delle Linee Telefoniche (ephone-dn)
+``` CLI
+router(config-telephony)# ephone-dn [Numero Linea]
+router(config-ephone-dn)# number [Numero del dispositivo]
+router(config-ephone-dn)# exit
 
+//esempi
+router(config-telephony)# ephone-dn 1
+router(config-ephone-dn)# number 11
+router(config-ephone-dn)# exit
+
+router(config-telephony)# ephone-dn 2
+router(config-ephone-dn)# number 12
+router(config-ephone-dn)# exit
+
+router(config-telephony)# ephone-dn 3
+router(config-ephone-dn)# number 21
+router(config-ephone-dn)# exit
+
+router(config-telephony)# ephone-dn 4
+router(config-ephone-dn)# number 22
+router(config-ephone-dn)# exit
+```
+
+### 5. Assegnazione Iniziale dei Telefoni Fisici (ephone)
+- **Assegnazione Automatica Iniziale:** Permette ai telefoni di registrarsi inizialmente, ma l'assegnazione sarà casuale.
+
+``` CLI
+router(config-telephony)# auto-reg-ephone
+```
+
+- **Verifica:** Controlla i telefoni che si sono registrati (e a quali numeri MAC sono stati assegnati i numeri `ephone` casualmente). Code snippet
+
+``` CLI
+router# show running-config
+```
+### 6. Associazione Manuale Linea-Telefono (Button Assignment)
+- **Scenario Esempio:**
+    - Telefoni Fisici: T1, T2, T3, T4  
+        
+    - Associazioni casuali: `ephone 1` (T1), `ephone 2` (T3), `ephone 3` (T2), `ephone 4` (T4)  
+        
+    - Linee: Linea 1 (dn 1), Linea 2 (dn 2), Linea 3 (dn 3), Linea 4 (dn 4)  
+        
+- **Comando di Associazione:** `button 1:X`
+    - **1:** Indica il primo bottone del telefono.  
+        
+    - **X:** Indica il numero dell'`ephone-dn` (linea) che deve essere associato a quel bottone.
+
+Dopo l'assegnazione automatica casuale, si procede all'associazione **manuale** della linea (**ephone-dn**) al bottone del telefono fisico (**ephone**) per garantire la corretta numerazione.
+``` CLI
+router(config-telephony)# ephone [Numero del telefono]
+router(config-ephone)# 
+button [bottone del telefono]:[Indica il numero dell'ephone-dn (linea]
+router(config-ephone)# exit
+
+//Esempi
+router(config-telephony)# ephone 1
+router(config-ephone)# button 1:1  // Associa il bottone 1 alla Linea 1 (Numero 11)
+router(config-ephone)# exit
+
+router(config-telephony)# ephone 3  // Associa al telefono 3 (T2)
+router(config-ephone)# button 1:2  // Associa il bottone 1 alla Linea 2 (Numero 12)
+router(config-ephone)# exit
+
+router(config-telephony)# ephone 2  // Associa al telefono 2 (T3)
+router(config-ephone)# button 1:3  // Associa il bottone 1 alla Linea 3 (Numero 21)
+router(config-ephone)# exit
+
+router(config-telephony)# ephone 4
+router(config-ephone)# button 1:4  // Associa il bottone 1 alla Linea 4 (Numero 22)
+router(config-ephone)# exit
+```

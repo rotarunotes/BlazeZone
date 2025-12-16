@@ -15,7 +15,7 @@ ___
 - [[#Theta Junction]]
 - [[#Ridenominazione]]
 ##### Grado e Cardinalità
--[[#Grado e Cardinalità]]
+-[[#Grado e Cardinalita]]
 
 ___
 # **Relazione $R_1$**
