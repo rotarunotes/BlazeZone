@@ -219,8 +219,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -242,8 +241,8 @@
   },
   "active": "9b21753169ce8be5",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
     "README.md",
     "Setup_Archive/Obsidian_Base/README.md",
     "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
