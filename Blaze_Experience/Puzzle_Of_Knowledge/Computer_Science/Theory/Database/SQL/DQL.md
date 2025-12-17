@@ -7,18 +7,21 @@ ___
 Il **DQL (Data Query Language)** è la parte di SQL che si occupa del recupero e della visualizzazione dei dati.  
 Le principali operazioni derivate dall’**algebra relazionale** sono:
 
-| **Tipo**                 | **Esempio**                                                                                                                 |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| [[#Selezione]]           | SELECT * FROM Studenti WHERE età > 20;                                                                                      |
-| [[#Distinct]]            | SELECT DISTINCT citta FROM Sede;                                                                                            |
-| [[#Proiezione]]          | SELECT nome, corso FROM Studenti;                                                                                           |
-| [[#Unione]]              | SELECT  FROM Studenti1 UNION SELECT  FROM Studenti2;<br>                                                                    |
-| [[#Sottrazione]]         | SELECT  FROM Studenti1 EXCEPT SELECT  FROM Studenti2;                                                                       |
-| [[#Intersezione]]        | SELECT  FROM Studenti1 INTERSECT SELECT  FROM Studenti2;                                                                    |
-| [[#Prodotto cartesiano]] | SELECT * FROM Studenti, Corsi;                                                                                              |
-| [[#Natural Join]]        | SELECT impiegati2.`*`,dipartimenti.`*`<br>FROM impiegati2, dipartimenti<br>WHERE impiegati2.codice=dipartimenti.codice;     |
-| [[#Theta Join]]          | SELECT impiegati.`*`,dipartimenti.`*`<br>FROM impiegati, dipartimenti<br>WHERE impiegati.dipartimento<>dipartimenti.codice; |
-| [[#Equi Join]]           | SELECT impiegati.`*`,dipartimenti.`*`<br>FROM impiegati,dipartimenti<br>WHERE impiegati.dipartimento=dipartimenti.codice;   |
+| **Tipo**                 | **Esempio**                                                                                                                                                                                                                           |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[#Selezione]]           | SELECT * FROM Studenti WHERE età > 20;                                                                                                                                                                                                |
+| [[#Distinct]]            | SELECT DISTINCT citta FROM Sede;                                                                                                                                                                                                      |
+| [[#Proiezione]]          | SELECT nome, corso FROM Studenti;                                                                                                                                                                                                     |
+| [[#Unione]]              | SELECT  FROM Studenti1 UNION SELECT  FROM Studenti2;<br>                                                                                                                                                                              |
+| [[#Sottrazione]]         | SELECT  FROM Studenti1 EXCEPT SELECT  FROM Studenti2;                                                                                                                                                                                 |
+| [[#Intersezione]]        | SELECT  FROM Studenti1 INTERSECT SELECT  FROM Studenti2;                                                                                                                                                                              |
+| [[#Prodotto cartesiano]] | SELECT * FROM Studenti, Corsi;                                                                                                                                                                                                        |
+| [[#Natural Join]]        | SELECT impiegati2.`*`,dipartimenti.`*`<br>FROM impiegati2, dipartimenti<br>WHERE impiegati2.codice=dipartimenti.codice;                                                                                                               |
+| [[#Theta Join]]          | SELECT impiegati.`*`,dipartimenti.`*`<br>FROM impiegati, dipartimenti<br>WHERE impiegati.dipartimento<>dipartimenti.codice;                                                                                                           |
+| [[#Equi Join]]           | SELECT impiegati.`*`,dipartimenti.`*`<br>FROM impiegati,dipartimenti<br>WHERE impiegati.dipartimento=dipartimenti.codice;                                                                                                             |
+| [[#ORDER BY]]            | SELECT Titolo, Pagine <br>FROM Libri<br>ORDER BY Titolo ASC;                                                                                                                                                                          |
+| [[#Like]]                | SELECT nome, cognome<br>FROM Docenti<br>WHERE nome LIKE 'L%';                                                                                                                                                                         |
+| [[#GROUP BY]]            | SELECT -- Attributi che vuoi visualizzare<br>FROM -- Tabella<br>WHERE -- Pre Filtro<br>GROUP BY -- Attributo per cui vuole fare un gruppo<br>HAVING --Opertato di aggregazione, filtro sul gruppo<br>ORDER BY -- Ordina poi il gruppo |
 
 ---
 # Selezione
@@ -37,7 +40,9 @@ Filtra le righe in base a una condizione.
 **Query:**
 
 ``` SQL
-SELECT * FROM Studenti WHERE età > 20;
+SELECT * 
+FROM Studenti 
+WHERE età > 20;
 ```
 
 **Risultato:**
@@ -71,7 +76,8 @@ SELECT * FROM Studenti WHERE età > 20;
 **Query:**
 
 ``` SQL
-SELECT DISTINCT citta FROM Sede;
+SELECT DISTINCT citta 
+FROM Sede;
 ```
 
 **Risultato:**
@@ -97,7 +103,8 @@ Scegliere le colonne (attributi) da visualizzare, eliminando i duplicati se nece
 **Query:**
 
 ```  SQL
-SELECT nome, corso FROM Studenti;
+SELECT nome, corso 
+FROM Studenti;
 ```
 
 **Risultato:**
@@ -137,7 +144,10 @@ Combina le righe di **due tabelle** con **lo stesso numero di colonne e tipi com
 **Query:**
 
 ``` SQL
-SELECT * FROM Studenti1 UNION SELECT * FROM Studenti2;
+SELECT * 
+FROM Studenti1 UNION 
+SELECT * 
+FROM Studenti2;
 ```
 
 
@@ -181,7 +191,9 @@ Restituisce le righe presenti nella **prima tabella** ma **non nella seconda**.
 **Query:**
 
 ``` SQL
-SELECT * FROM Studenti1 EXCEPT SELECT * FROM Studenti2;
+SELECT * 
+FROM Studenti1 EXCEPT 
+SELECT * FROM Studenti2;
 ```
 
 **Risultato:**
@@ -221,7 +233,10 @@ Restituisce solo le righe **presenti in entrambe le tabelle**.
 **Query:**
 
 ``` SQL
-SELECT * FROM Studenti1 INTERSECT SELECT * FROM Studenti2;
+SELECT * 
+FROM Studenti1 INTERSECT 
+SELECT * 
+FROM Studenti2;
 ```
 
 **Risultato:**
@@ -261,7 +276,8 @@ Combina **ogni riga della prima tabella** con **ogni riga della seconda**, gener
 **Query:**
 
 ``` SQL
-SELECT * FROM Studenti, Corsi;
+SELECT * 
+FROM Studenti, Corsi;
 ```
 
 **Risultato:**
@@ -400,14 +416,6 @@ WHERE Studenti.id_corsi_materie=Corsi.id_corso;
 ___
 # ORDER BY
 
-``` SQL
-SELECT -- Attributi che vuoi visualizzare
-FROM -- Tabella
-WHERE -- Pre Filtro
-GROUP BUY -- Attributo per cui vuole fare un gruppo
-HAVING --Opertato di aggregazione, filtro sul gruppo
-```
-
 **Descrizione:**
 Il comando ORDER BY in SQL serve per mettere in ordine i risultati che ottieni da una tabella. Immagina di avere un elenco di dati e vuoi che siano disposti in un certo modo, ad esempio in ordine alfabetico, per data, o dal valore più piccolo al più grande.
 
@@ -426,13 +434,15 @@ Questo comando viene sempre aggiunto **alla fine** della tua query `SELECT`.
 ## Ordine Crescente
 
 L'ordine predefinito è **crescente** (`ASC`, Ascending). Se ordini dei numeri, vanno dal piccolo al grande (1, 2, 3...). Se ordini del testo, va in ordine alfabetico (A, B, C...).
+`ASC` è impostato di default
 
 **Query:**
 
 Ordiniamo i libri in base al Titolo in ordine alfabetico (crescente).
 
 ``` SQL
-SELECT Titolo, Pagine FROM Libri
+SELECT Titolo, Pagine 
+FROM Libri
 ORDER BY Titolo ASC;
 ```
 
@@ -455,7 +465,8 @@ Se vuoi l'ordine inverso, devi specificare **`DESC`** (Descending). Per i numeri
 Ordiniamo i libri in base al numero di Pagine dal più grande al più piccolo.
 
 ``` SQL
-SELECT Titolo, Pagine FROM Libri
+SELECT Titolo, Pagine 
+FROM Libri
 ORDER BY Pagine DESC;
 ```
 
@@ -484,15 +495,85 @@ Aggiungiamo un libro alla nostra tabella:
 Ordiniamo prima per Autore (ASC) e, se gli autori sono uguali (come i due libri di Tolkien), ordiniamo per Pagine (DESC).
 
 ``` SQL
-SELECT Titolo, Autore, Pagine FROM Libri
+SELECT Titolo, Autore, Pagine 
+FROM Libri
 ORDER BY Autore ASC, Pagine DESC;
 ```
 
 **Risultato:**
 
-|**Titolo**|**Autore**|**Pagine**|
-|---|---|---|
-|Moby Dick|Melville|585|
-|1984|Orwell|328|
-|**Il Signore degli Anelli**|**Tolkien**|**1216**|
-|**Lo Hobbit**|**Tolkien**|**310**|
+| **Titolo**                  | **Autore**  | **Pagine** |
+| --------------------------- | ----------- | ---------- |
+| Moby Dick                   | Melville    | 585        |
+| 1984                        | Orwell      | 328        |
+| **Il Signore degli Anelli** | **Tolkien** | **1216**   |
+| **Lo Hobbit**               | **Tolkien** | **310**    |
+
+# Like
+
+L'operatore `LIKE` viene utilizzato nella clausola `WHERE` per eseguire ricerche che corrispondano a un modello (pattern) specifico. È fondamentale quando devi trovare righe in base a corrispondenze parziali di stringhe, come trovare tutti i nomi che iniziano con una certa lettera.
+
+Caratteri jolly (wildcard):
+
+|**Carattere Jolly**|**Significato**|**Esempio**|**Descrizione**|
+|---|---|---|---|
+|**`%`** (Percentuale)|Corrisponde a **zero o più** caratteri qualsiasi.|`P%`|Trova qualsiasi stringa che inizia con 'P'|
+|**`\_`** (Sottolinea)|Corrisponde a un **singolo** carattere qualsiasi.|`_tto`|Trova qualsiasi stringa di 4 lettere che termina con 'tto' (es. `atto`, `otto`)|
+
+---
+
+**Esempio:** Trovare tutti i docenti il cui nome inizia con la lettera 'L'.
+
+``` sql
+SELECT nome, cognome
+FROM Docenti
+WHERE nome LIKE 'L%';
+```
+
+**Risultato (usando i dati del database `ScuolaDB`):**
+
+|**nome**|**cognome**|
+|---|---|
+|Laura|Bianchi|
+|Luca|Gialli|
+|Luca|Esposito|
+
+**Esempio:** Trovare tutti gli studenti il cui cognome termina con la sequenza 'o'.
+
+``` SQL
+SELECT nome, cognome
+FROM Studenti
+WHERE cognome LIKE '%o';
+```
+
+**Risultato:**
+
+|**nome**|**cognome**|
+|---|---|
+|Simone|Gallo|
+|Marco|Rizzo|
+|Luca|Esposito|
+___
+
+# GROUP BY
+
+``` SQL
+SELECT -- Attributi che vuoi visualizzare
+FROM -- Tabella
+WHERE -- Pre Filtro
+GROUP BY -- Attributo per cui vuole fare un gruppo
+HAVING --Opertato di aggregazione, filtro sul gruppo
+ORDER BY -- Ordina poi il gruppo
+```
+
+Si usa per suddividere la tabella in gruppi, ogni gruppo presenta le righe che hanno uno stesso valore dell'attributo indicato nel **GROUP BY**
+
+- **Esempio:** vendite (id, prodotto_id, quantità, importo, data);
+Trovare l'importo totale delle vendite per ogni prodotto mostrando solo i prodotti con vendite superiori a 1000
+
+``` SQL
+SELECT prodotto_id, SUM(importo * quantità) as totale
+FROM vendite
+GROUP BY prodotto
+HAVING totale > 1000
+```

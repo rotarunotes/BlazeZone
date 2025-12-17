@@ -83,7 +83,9 @@ Si usa per **modificare** i dati in una riga che esiste già.
 
 **Query:**
 ``` SQL
-UPDATE Studenti SET corso = 'Informatica' WHERE ID = 1;
+UPDATE Studenti 
+SET corso = 'Informatica' 
+WHERE ID = 1;
 ```
 
 **Risultato:**
