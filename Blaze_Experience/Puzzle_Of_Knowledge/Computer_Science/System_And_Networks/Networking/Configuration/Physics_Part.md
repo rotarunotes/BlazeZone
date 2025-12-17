@@ -37,7 +37,7 @@ Stanze:
 		- Switch: Collega le varie stanza
 - **Laboratorio di informatica**
 	- Rack:
-		- switch: Collegato all'armadio di piano![[Collegamento_In_Cross|1000]]
+		- switch: Collegato all'armadio di piano ![[Collegamento_In_Cross|1000]]
 	- Postazione Fisica
 		- 12 postazioni studenti
 		- 2 postazioni docenti

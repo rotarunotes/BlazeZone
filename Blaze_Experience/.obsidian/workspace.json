@@ -8,35 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e35723f2e1b0a97d",
+            "id": "2e95e07b20b0f2cf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
-                "mode": "source",
-                "source": false
+                "file": "Setup_Archive/Plugin/Excalidraw/D_Math/Schema_Divisione_Polinomi.md"
               },
-              "icon": "lucide-file",
-              "title": "README"
+              "icon": "excalidraw-icon",
+              "title": "Schema_Divisione_Polinomi"
             }
           },
           {
-            "id": "605e831b2328c6dc",
+            "id": "9e23a39e2f1a594b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
-                "mode": "source",
-                "source": false
+                "file": "Setup_Archive/Plugin/Excalidraw/D_Math/Grafico_integrale.md"
               },
-              "icon": "lucide-file",
-              "title": "Relational_Algebra"
+              "icon": "excalidraw-icon",
+              "title": "Grafico_integrale"
             }
           },
           {
-            "id": "c4138872cb923e94",
+            "id": "e662646ad2212b80",
             "type": "leaf",
             "state": {
               "type": "home-tab-view",
@@ -46,31 +42,29 @@
             }
           },
           {
-            "id": "9b21753169ce8be5",
+            "id": "cd8f67c6e8b516e4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
-                "mode": "source",
-                "source": false
+                "file": "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Collegamento_In_Cross.md"
               },
-              "icon": "lucide-file",
-              "title": "README"
+              "icon": "excalidraw-icon",
+              "title": "Collegamento_In_Cross"
             }
           },
           {
-            "id": "5366575d639520c9",
+            "id": "ce1941795c8d6ede",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Setup_Archive/Obsidian_Base/Formatting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "title": "Formatting"
             }
           }
         ],
@@ -253,46 +247,53 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "5366575d639520c9",
+  "active": "ce1941795c8d6ede",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
-    "conflict-files-obsidian-git.md",
-    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
-    "Setup_Archive/Plugin/Excalidraw/Distribuzioni_Semplici.md",
-    "Setup_Archive/Plugin/Excalidraw/Collegamento_In_Cross.md",
-    "Setup_Archive/Plugin/Excalidraw/Carattere.md",
-    "Puzzle_Of_Knowledge/Math/Statistica.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
-    "Pasted Image 20251215184541_478.png",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
-    "README.md",
-    "Setup_Archive/Obsidian_Base/README.md",
     "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
-    "Setup_Archive/Obsidian_Base/Formatting.md",
-    "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
+    "README.md",
     "Puzzle_Of_Knowledge/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/Computability_Theory/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/Complexity_Theory/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
-    "Red_Lab/Ex_School/SQL/Consegna 6.md",
-    "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
-    "Z_MAUGER",
-    "Screenshot 2025-11-18 140914.png",
-    "Red_Lab/Giochi/Reverse",
-    "Red_Lab/Giochi",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Collegamento_In_Cross.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+    "'.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/VLAN.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
+    "Setup_Archive/Images/I_Other/Puzzle.jpg",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Grafico_integrale.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_Aree.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Insieme_Derivate.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Distribuzioni_Semplici.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Carattere.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_3casi.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Schema_Divisione_Polinomi.md",
+    "Setup_Archive/Images/Screenshot 2025-10-13 193542.png",
+    "Setup_Archive/Images/I_Math/Pasted Image 20251103175312_794.png",
+    "Setup_Archive/Images/I_Math/Pasted Image 20251102215250_469.png",
+    "Setup_Archive/Images/I_Math/Pasted Image 20251102210735_629.png",
+    "Setup_Archive/Images/I_Math/Pasted Image 20251102202027_317.png",
+    "Setup_Archive/Images/I_Math/Pasted Image 20251102195725_766.png",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/VLAN_Tagged.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Schema_Insieme_Primitive_Infinite.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_Indica.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_aree_curve.md",
+    "Setup_Archive/Plugin/Excalidraw/Drawing _0.md",
+    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Theory",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science",
+    "Setup_Archive/Plugin/Excalidraw/Scheme",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_Media.md",
+    "Puzzle_Of_Knowledge/Math/README.md",
+    "Pasted image 20251030093955.png",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
+    "Setup_Archive/Images/I_Other",
+    "Setup_Archive/Images/I_Math",
+    "Setup_Archive/Images/I_Compiuter_Science",
     "Pasted image 20251109224335.png",
-    "Untitled",
-    "Red_Lab/Ex_School/SQL",
-    "Red_Lab/Ex_School",
-    "Red_Lab/Ex_School"
+    "Pasted Image 20251215184541_478.png",
+    "Z_MAUGER"
   ]
 }

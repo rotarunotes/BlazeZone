@@ -2,7 +2,7 @@
   "logoType": "imagePath",
   "logo": {
     "lucideIcon": "",
-    "imagePath": "Setup_Archive/Images/Puzzle.jpg",
+    "imagePath": "Setup_Archive/Images/I_Other/Puzzle.jpg",
     "imageLink": ""
   },
   "logoScale": 1.3,
@@ -24,8 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
-      "timestamp": 1765962509449
+      "filepath": "Setup_Archive/Obsidian_Base/Formatting.md",
+      "timestamp": 1765964721515
+    },
+    {
+      "filepath": "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
+      "timestamp": 1765964720102
+    },
+    {
+      "filepath": "README.md",
+      "timestamp": 1765964464936
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/README.md",
+      "timestamp": 1765964463037
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/README.md",
+      "timestamp": 1765964461534
     }
   ],
   "bookmarkedFileStore": [],
