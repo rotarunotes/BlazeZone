@@ -42,6 +42,20 @@
             }
           },
           {
+            "id": "9cd8a5c0802ece34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics_Part"
+            }
+          },
+          {
             "id": "9192b0641e5b026e",
             "type": "leaf",
             "state": {
@@ -54,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -253,9 +267,14 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "2eb07a73839ad2c5",
+  "active": "9192b0641e5b026e",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
     "Setup_Archive/Plugin/Excalidraw/Distribuzioni_Semplici.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/README.md",
+    "README.md",
+    "Setup_Archive/Plugin/Excalidraw/Collegamento_In_Cross.md",
     "Setup_Archive/Plugin/Excalidraw/Drawing .md",
     "Setup_Archive/Plugin/Excalidraw/VLAN_Tagged.md",
     "Setup_Archive/Plugin/Excalidraw/Carattere.md",
@@ -266,8 +285,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
-    "README.md",
-    "conflict-files-obsidian-git.md",
     "Z_MAUGER/futureMag.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch/VLAN.md",
     "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
@@ -282,9 +299,6 @@
     "SATISFACTORY.md",
     "Red_Lab/Ex_School/SQL/Consegna 6.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
-    "Senza nome.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/VLAN.md",
     "Z_MAUGER",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra",
     "Red_Lab/Giochi/Reverse",
