@@ -1,7 +1,8 @@
 {
   "cssTheme": "Catppuccin",
   "enabledCssSnippets": [
-    "Formattazione_Testo"
+    "Formattazione_Testo",
+    "Center_Image"
   ],
   "baseFontSize": 16
 }

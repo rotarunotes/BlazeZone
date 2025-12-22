@@ -21,6 +21,7 @@ Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, agg
 - [[#Funzioni di aggregazione]]
 - [[#Operator logici]]
 - [[#DISTINCT & ALL]]
+- [[#Query Annidate]]
 ## Funzioni di aggregazione
 
 | Funzione  | Descrizione    | Esempio                             |
@@ -106,3 +107,77 @@ LIMIT 3;
 | aaa         | 10     |
 | bbb         | 20     |
 | ccc         | 30     |
+## Query Annidate
+
+**Studenti:**
+
+| **ID Studente** | **Nome e Cognome** | **Matematica** | **Italiano** | **Inglese** | **Media Voti** |
+| --------------- | ------------------ | -------------- | ------------ | ----------- | -------------- |
+| 001             | Mario Rossi        | 8              | 7            | 9           | 8.0            |
+| 002             | Giulia Bianchi     | 9              | 9            | 8           | 8.6            |
+| 003             | Luca Verdi         | 6              | 7            | 6           | 6.3            |
+| 004             | Elena Neri         | 10             | 8            | 9           | 9.0            |
+| 005             | Marco Gialli       | 5              | 6            | 7           | 6.0            |
+
+
+-- sottoquery (che genera 1 valore) dopo condizione >  
+``` SQL
+SELECT ID_Studente, Nome_Cognome, Matematica
+FROM Studenti
+WHERE Matematica > (
+	SELECT AVG(Matematica) 
+	FROM Studenti
+);
+```
+  
+-- sottoquery (che genera 1 valore) dopo condizione =  
+``` SQL
+SELECT ID_Studente, Nome_Cognome, Matematica
+FROM Studenti
+WHERE Matematica = (
+	SELECT MAX(Matematica
+	) 
+FROM Studenti
+);
+```
+  
+-- sottoquery (che genera un insieme di valori) dopo IN  
+``` SQL
+SELECT ID_Studente, Nome_Cognome
+FROM Studenti
+WHERE ID_Studente IN (
+	SELECT ID_Studente 
+	FROM Studenti 
+	WHERE Matematica = 10 OR Italiano = 10
+);
+```
+  
+-- sottoquery (che genera un insieme di valori) dopo NOT IN  
+``` SQL
+SELECT Code, Name  
+FROM country  
+WHERE Code NOT IN (
+	SELECT CountryCode 
+	FROM countrylanguage
+);    
+```
+  
+-- sottoquery (che genera un insieme di valori) dopo > ANY  
+``` SQL
+SELECT Code, Name, Continent, Region  
+FROM country  
+WHERE Population > ANY (
+	SELECT AVG(Population) 
+	FROM country
+)  
+```
+  
+-- sottoquery (che genera un insieme di valori) dopo < ALL  
+``` SQL
+SELECT Code, Name, Continent, Region  
+FROM country  
+WHERE Population < ALL (
+	SELECT AVG(Population) 
+	FROM country
+)
+```
