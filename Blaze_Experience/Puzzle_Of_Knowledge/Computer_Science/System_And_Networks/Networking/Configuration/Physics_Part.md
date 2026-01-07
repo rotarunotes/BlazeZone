@@ -1,6 +1,3 @@
-
-
-
 # Esercizio
 Creare una rete di una scuola a più piani seguendo queste caratteristiche
 - Tutti gli aspetti tecnici li teniamo nella Vlan 99
