@@ -62,18 +62,6 @@
             }
           },
           {
-            "id": "1a141943e1011cbd",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Setup_Archive/Plugin/Excalidraw/Collegamento_In_Cross.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Collegamento_In_Cross"
-            }
-          },
-          {
             "id": "bffa10f640bfa9f8",
             "type": "leaf",
             "state": {
@@ -84,7 +72,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -293,8 +281,40 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "b9ac9dc7572a7769",
+  "active": "bffa10f640bfa9f8",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Schema_Insieme_Primitive_Infinite.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Schema_Divisione_Polinomi.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_Media.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_Indica.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_aree_curve.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_Aree.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_3casi.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Insieme_Derivate.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Grafico_integrale.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Distribuzioni_Semplici.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Carattere.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/VLAN_Untagged.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/VLAN_Tagged.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Collegamento_In_Cross.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science",
+    "Setup_Archive/Images/I_Other/Puzzle.jpg",
+    "Setup_Archive/Images/I_Other",
+    "Setup_Archive/Images/I_Math/Pasted Image 20251215184541_478.png",
+    "Setup_Archive/Images/I_Math/Pasted Image 20251103175312_794.png",
+    "Setup_Archive/Images/I_Math/Pasted Image 20251102215250_469.png",
+    "Setup_Archive/Images/I_Math/Pasted Image 20251102210735_629.png",
+    "Setup_Archive/Images/I_Math/Pasted Image 20251102202027_317.png",
+    "Setup_Archive/Images/I_Math/Pasted Image 20251102195725_766.png",
+    "Setup_Archive/Images/I_Math",
+    "Red_Lab/Unity/Base.md",
+    "Red_Lab/Unity",
+    "Red_Lab/Ex_School/SQL/Progettazione Concettuale.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Conceptual Design.md",
+    "Pasted image 20251222213944.png",
     "Setup_Archive/Plugin/Excalidraw/Collegamento_In_Cross.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
@@ -303,44 +323,12 @@
     "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
     "Puzzle_Of_Knowledge/Math/Integral/README.md",
-    "Puzzle_Of_Knowledge/Math/README.md",
-    "conflict-files-obsidian-git.md",
-    "Z_MAUGER/Switch.md",
-    "Z_MAUGER/Router Mag.md",
-    "Z_MAUGER/futureMag.md",
     "Z_MAUGER",
     "Pasted Image 20251215184541_478.png",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch/VLAN.md",
-    "Router Mag.md",
-    "Switch.md",
     "Screenshot 2025-11-18 140914.png",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
-    "tolc.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
-    "34fg.md",
-    "futureMag.md",
-    "Senza nome.md",
-    "Pasted image 20251030093955.png",
-    "Pasted image 20251109224335.png",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
-    "Red_Lab/Giochi/Reverse/Regole.md",
     "Red_Lab/Giochi/Reverse",
     "Red_Lab/Giochi",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/VLAN.md",
-    "Setup_Archive/Plugin/Excalidraw/VLAN_Tagged.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router",
-    "Red_Lab/Ex_School/SQL",
-    "Red_Lab/Ex_School",
-    "Senza nome.base",
-    "Senza nome 3.base",
-    "Setup_Archive/Images/Pasted Image 20251103175312_794.png",
-    "Setup_Archive/Images/Pasted Image 20251102215250_469.png",
-    "Setup_Archive/Images/Pasted Image 20251102215136_911.png",
-    "Setup_Archive/Images/Pasted Image 20251102210735_629.png",
-    "Setup_Archive/Images/Pasted Image 20251102195725_766.png",
-    "Setup_Archive/Images/Pasted Image 20251102202027_317.png",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]
 }

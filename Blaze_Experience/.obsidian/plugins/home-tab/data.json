@@ -22,16 +22,7 @@
   "showShortcuts": true,
   "markdownOnly": false,
   "unresolvedLinks": false,
-  "recentFilesStore": [
-    {
-      "filepath": "Setup_Archive/Plugin/Excalidraw/Collegamento_In_Cross.md",
-      "timestamp": 1768305944767
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
-      "timestamp": 1768305944628
-    }
-  ],
+  "recentFilesStore": [],
   "bookmarkedFileStore": [],
   "searchDelay": 0,
   "replaceNewTabs": true,
