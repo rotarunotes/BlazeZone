@@ -2,7 +2,7 @@
   "logoType": "imagePath",
   "logo": {
     "lucideIcon": "",
-    "imagePath": "Setup_Archive/Images/Puzzle.jpg",
+    "imagePath": "Setup_Archive/Images/I_Other/Puzzle.jpg",
     "imageLink": ""
   },
   "logoScale": 1.3,
@@ -24,8 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Pasted image 20251222213944.png",
-      "timestamp": 1768321560215
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
+      "timestamp": 1768324196025
+    },
+    {
+      "filepath": "Z_MAUGER/Router Mag.md",
+      "timestamp": 1768324189957
+    },
+    {
+      "filepath": "Setup_Archive/Images/I_Other/Puzzle.jpg",
+      "timestamp": 1768323448661
+    },
+    {
+      "filepath": "Senza nome.md",
+      "timestamp": 1768323364180
+    },
+    {
+      "filepath": "Pasted image 20251109224335.png",
+      "timestamp": 1768323346497
     }
   ],
   "bookmarkedFileStore": [],
