@@ -72,9 +72,19 @@
               "icon": "excalidraw-icon",
               "title": "Collegamento_In_Cross"
             }
+          },
+          {
+            "id": "bffa10f640bfa9f8",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -263,8 +273,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -284,7 +293,7 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "45516d2578326e2f",
+  "active": "b9ac9dc7572a7769",
   "lastOpenFiles": [
     "Setup_Archive/Plugin/Excalidraw/Collegamento_In_Cross.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
