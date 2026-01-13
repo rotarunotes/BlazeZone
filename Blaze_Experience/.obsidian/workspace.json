@@ -20,8 +20,31 @@
               "icon": "lucide-file",
               "title": "Physics_Part"
             }
+          },
+          {
+            "id": "89fa259c8e6824b2",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Note di rilascio 1.11.4"
+            }
+          },
+          {
+            "id": "d38c7ea99e20a157",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "7111509c6a28e6ee",
@@ -220,17 +243,16 @@
       }
     ],
     "direction": "horizontal",
-    "width": 205,
-    "collapsed": true
+    "width": 205
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Crea nuova Base": false,
       "switcher:Apri selezione rapida": true,
       "graph:Apri vista grafo": true,
       "canvas:Crea nuova lavagna": true,
       "daily-notes:Apri nota del giorno": true,
       "templates:Inserisci modello": true,
-      "bases:Create new base": true,
       "obsidian-git:Open Git source control": true,
       "command-palette:Apri riquadro comandi": true,
       "templater-obsidian:Templater": true,
@@ -241,7 +263,7 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "aa4287ada08579fc",
+  "active": "d38c7ea99e20a157",
   "lastOpenFiles": [
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
