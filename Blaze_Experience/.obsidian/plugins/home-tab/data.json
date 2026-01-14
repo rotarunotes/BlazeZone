@@ -24,24 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "Setup_Archive/Images/I_Other/Schema ER.png",
+      "timestamp": 1768412746735
+    },
+    {
+      "filepath": "Setup_Archive/Images/I_Other/Puzzle.jpg",
+      "timestamp": 1768412744726
+    },
+    {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
-      "timestamp": 1768412669437
+      "timestamp": 1768412683302
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Terminal_And_Shell/README.md",
+      "timestamp": 1768412682274
     },
     {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
       "timestamp": 1768324976711
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/README.md",
-      "timestamp": 1768324975421
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
-      "timestamp": 1768324963802
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch/VLAN.md",
-      "timestamp": 1768324958305
     }
   ],
   "bookmarkedFileStore": [],
