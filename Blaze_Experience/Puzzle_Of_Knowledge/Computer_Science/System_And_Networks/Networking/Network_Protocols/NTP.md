@@ -2,7 +2,7 @@ Data: 2026-01-14
 [Network_Protocols](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols
 ___
-Video: "Nessun video utilizzato
+Video: "Nessun video utilizzato"
 # Index
 - [[#Network Time Protocol (NTP)]]
 - [[#Caratteristiche Principali]]
