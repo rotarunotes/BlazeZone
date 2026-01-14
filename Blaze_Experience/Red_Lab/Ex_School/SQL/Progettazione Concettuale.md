@@ -23,3 +23,5 @@ Entità:
 4. lista collezione
 	1. Giochi da tavolo
 Attributi:
+
+![[Schema ER.png]]
