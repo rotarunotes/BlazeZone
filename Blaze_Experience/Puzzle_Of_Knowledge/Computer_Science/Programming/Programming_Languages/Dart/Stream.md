@@ -1,4 +1,4 @@
-(Data: 2025-10-30
+Data: 2025-10-30
 [Dart](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
 ___
