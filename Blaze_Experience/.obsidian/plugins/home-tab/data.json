@@ -24,24 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Setup_Archive/Images/I_Other/Schema ER.png",
-      "timestamp": 1768412746735
-    },
-    {
-      "filepath": "Setup_Archive/Images/I_Other/Puzzle.jpg",
-      "timestamp": 1768412744726
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
-      "timestamp": 1768412683302
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Terminal_And_Shell/README.md",
-      "timestamp": 1768412682274
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/NTP.md",
+      "timestamp": 1768416951475
     },
     {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
-      "timestamp": 1768324976711
+      "timestamp": 1768416891536
+    },
+    {
+      "filepath": "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Algoritmo_NTP.md",
+      "timestamp": 1768414911487
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/VLAN.md",
+      "timestamp": 1768414876258
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch/VLAN.md",
+      "timestamp": 1768414868694
     }
   ],
   "bookmarkedFileStore": [],
