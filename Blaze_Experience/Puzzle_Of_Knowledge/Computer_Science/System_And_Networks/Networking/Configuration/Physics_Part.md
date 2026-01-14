@@ -52,4 +52,4 @@ Stanze:
 - **Corridoi**
 	- access point wi-fi, 
 	- fotocopiatore (stampante wi-fi)
-	- , postazione collaboratore scolastico con IP phone
+	- postazione collaboratore scolastico con IP phone
