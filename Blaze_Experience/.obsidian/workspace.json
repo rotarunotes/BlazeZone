@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -259,9 +259,16 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "cd8f67c6e8b516e4",
+  "active": "ce1941795c8d6ede",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Collegamento_In_Cross.md",
+    "ntp.pdf",
+    "Untitled.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Algoritmo_NTP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/NTP.md",
+    "Pasted Image 20260114191818_175.png",
+    "Pasted Image 20260114191753_348.png",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Function.md",
@@ -277,7 +284,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch/VLAN.md",
     "Red_Lab/Ex_School/SQL/Progettazione Concettuale.md",
-    "conflict-files-obsidian-git.md",
     "Red_Lab/Ex_School/SQL/Consegna 6.md",
     "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
     "Setup_Archive/Images/I_Other/Schema ER.png",
@@ -289,9 +295,6 @@
     "Setup_Archive/Plugin/Excalidraw/D_Math/Schema_Divisione_Polinomi.md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_Media.md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_Indica.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_aree_curve.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_Aree.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_3casi.md",
     "Setup_Archive/Images/I_Math/Pasted Image 20251102210735_629.png",
     "Setup_Archive/Images/I_Math/Pasted Image 20251103175312_794.png",
     "Setup_Archive/Images/I_Math/Pasted Image 20251215184541_478.png",
@@ -300,12 +303,9 @@
     "Red_Lab/Unity",
     "Pasted image 20251030093955.png",
     "Pasted Image 20251217101511_235.png",
-    "Setup_Archive/Images/I_Math/Pasted Image 20251102202027_317.png",
-    "Setup_Archive/Images/I_Math/Pasted Image 20251102215250_469.png",
     "Setup_Archive/Plugin/Excalidraw/D_Math",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Theory",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science"
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming"
   ]
 }

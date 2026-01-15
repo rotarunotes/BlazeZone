@@ -3,7 +3,6 @@ Data: 2025-10-22
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols
 ___
 Video: https://www.youtube.com/watch?v=H-rANwaumfM
-
 # Index
 - [[#Address Resolution Protocol?]]
 - [[#Perché è necessario?]]
