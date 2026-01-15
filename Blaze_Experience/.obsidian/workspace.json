@@ -66,9 +66,21 @@
               "icon": "lucide-file",
               "title": "Statements"
             }
+          },
+          {
+            "id": "8b6678516461b0d4",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.4"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -247,8 +259,9 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "15d996e487f2104e",
+  "active": "cd8f67c6e8b516e4",
   "lastOpenFiles": [
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Collegamento_In_Cross.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Function.md",
@@ -265,7 +278,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch/VLAN.md",
     "Red_Lab/Ex_School/SQL/Progettazione Concettuale.md",
     "conflict-files-obsidian-git.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Collegamento_In_Cross.md",
     "Red_Lab/Ex_School/SQL/Consegna 6.md",
     "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
     "Setup_Archive/Images/I_Other/Schema ER.png",
@@ -294,7 +306,6 @@
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Theory",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science",
-    "Setup_Archive/Plugin/Excalidraw/Scheme"
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science"
   ]
 }
