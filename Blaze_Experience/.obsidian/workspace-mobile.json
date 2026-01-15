@@ -188,9 +188,51 @@
               "icon": "lucide-file",
               "title": "Relational_Algebra"
             }
+          },
+          {
+            "id": "b6c818340da0e4ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/NTP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NTP"
+            }
+          },
+          {
+            "id": "e2a71cc57b9d3d8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
+          },
+          {
+            "id": "1f123c077aaea746",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/NTP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NTP"
+            }
           }
         ],
-        "currentTab": 12
+        "currentTab": 15
       }
     ],
     "direction": "vertical"
@@ -337,6 +379,16 @@
         "state": {
           "type": "chronology-calendar-view",
           "state": {},
+          "icon": "lucide-ghost",
+          "title": "chronology-calendar-view"
+        }
+      },
+      {
+        "id": "1375b66e138826f4",
+        "type": "leaf",
+        "state": {
+          "type": "chronology-calendar-view",
+          "state": {},
           "icon": "clock",
           "title": "Chronology"
         }
@@ -362,8 +414,13 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "7ec04471b679c568",
+  "active": "1f123c077aaea746",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/NTP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/VLAN.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
@@ -386,11 +443,6 @@
     "Setup_Archive/Rules/Short_Cut.md",
     "Setup_Archive/Plugin/Excalidraw/Integrale_definito_Media.md",
     "Setup_Archive/Plugin/Excalidraw/Integrale_definito_Indica.md",
-    "Setup_Archive/Plugin/Excalidraw/Integrale_definito_Aree.md",
-    "Setup_Archive/Plugin/Excalidraw/Integrale_definito_3casi.md",
-    "Setup_Archive/Plugin/Excalidraw/Grafico_integrale.md",
-    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
-    "Setup_Archive/Plugin/Calendar/Gym/2025-11-07 Gambe.md",
     "Setup_Archive/Plugin/Calendar/Gym",
     "Setup_Archive/Images/Puzzle.jpg",
     "Setup_Archive/Images/Pasted Image 20251103175312_794.png",
