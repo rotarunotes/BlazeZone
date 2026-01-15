@@ -4,5 +4,6 @@
     "Formattazione_Testo",
     "Center_Image"
   ],
-  "baseFontSize": 16
+  "baseFontSize": 16,
+  "textFontFamily": "Gadugi"
 }
