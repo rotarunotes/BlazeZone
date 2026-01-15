@@ -45,12 +45,12 @@
             "id": "cd8f67c6e8b516e4",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "pdf",
               "state": {
-                "file": "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Collegamento_In_Cross.md"
+                "file": "ntp.pdf"
               },
-              "icon": "excalidraw-icon",
-              "title": "Collegamento_In_Cross"
+              "icon": "lucide-file-text",
+              "title": "ntp"
             }
           },
           {
@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -259,12 +259,17 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "cd8f67c6e8b516e4",
+  "active": "e662646ad2212b80",
   "lastOpenFiles": [
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Collegamento_In_Cross.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
-    "conflict-files-obsidian-git.md",
     "ntp.pdf",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
+    "Puzzle_Of_Knowledge/README.md",
+    "gasi.java",
+    "Nuovo Documento di testo.txt",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/ARP.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Collegamento_In_Cross.md",
+    "conflict-files-obsidian-git.md",
     "Untitled.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Algoritmo_NTP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/NTP.md",
@@ -292,9 +297,6 @@
     "Senza nome.md",
     "tolc.md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Schema_Insieme_Primitive_Infinite.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Schema_Divisione_Polinomi.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_Media.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_Indica.md",
     "Setup_Archive/Images/I_Math/Pasted Image 20251102210735_629.png",
     "Setup_Archive/Images/I_Math/Pasted Image 20251103175312_794.png",
     "Setup_Archive/Images/I_Math/Pasted Image 20251215184541_478.png",
@@ -304,8 +306,6 @@
     "Pasted image 20251030093955.png",
     "Pasted Image 20251217101511_235.png",
     "Setup_Archive/Plugin/Excalidraw/D_Math",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Theory",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming"
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Theory"
   ]
 }
