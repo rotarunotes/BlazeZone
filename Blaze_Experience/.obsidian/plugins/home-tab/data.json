@@ -24,12 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/NTP.md",
-      "timestamp": 1768490512861
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
+      "timestamp": 1768499990186
     },
     {
-      "filepath": "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Algoritmo_NTP.md",
-      "timestamp": 1768490483915
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/SNMP.md",
+      "timestamp": 1768499689081
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/NTP.md",
+      "timestamp": 1768498838862
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
+      "timestamp": 1768498837862
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DNS.md",
+      "timestamp": 1768498835943
     }
   ],
   "bookmarkedFileStore": [],
