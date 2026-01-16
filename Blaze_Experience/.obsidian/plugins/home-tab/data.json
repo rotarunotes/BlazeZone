@@ -24,12 +24,16 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
-      "timestamp": 1768546219653
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/SNMP.md",
+      "timestamp": 1768546984857
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/SNMP.md",
-      "timestamp": 1768546211837
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
+      "timestamp": 1768546972934
+    },
+    {
+      "filepath": "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Risposta_HTTP.md",
+      "timestamp": 1768546970703
     },
     {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/NTP.md",
@@ -38,10 +42,6 @@
     {
       "filepath": "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Funzionamento_Generale_SNMP.md",
       "timestamp": 1768545835924
-    },
-    {
-      "filepath": "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/OID_SNMP.md",
-      "timestamp": 1768545723639
     }
   ],
   "bookmarkedFileStore": [],

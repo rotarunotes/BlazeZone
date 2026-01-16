@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -232,11 +232,12 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "2f3c0d42eda79bf8",
+  "active": "26320b36ad309e6a",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Risposta_HTTP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/SNMP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/NTP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Funzionamento_Generale_SNMP.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/OID_SNMP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
@@ -260,7 +261,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
     "Setup_Archive/Plugin/Excalidraw/Integrale_definito_aree_curve.md",
     "Setup_Archive/Plugin/Excalidraw/Schema_Divisione_Polinomi.md",
-    "Puzzle_Of_Knowledge/Math/README.md",
     "Setup_Archive/Plugin/Calendar/Gym",
     "Setup_Archive/Images/Puzzle.jpg",
     "Setup_Archive/Images/Pasted Image 20251103175312_794.png",
