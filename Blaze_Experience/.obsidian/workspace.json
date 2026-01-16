@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "HTTP"
             }
+          },
+          {
+            "id": "a76eaff0c3377ccf",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -220,10 +231,10 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "89fa259c8e6824b2",
+  "active": "a76eaff0c3377ccf",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/SNMP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/SNMP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/NTP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DNS.md",
