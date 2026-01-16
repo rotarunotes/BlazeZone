@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Subnetting_Practice/Subnetting_IPv4.md",
-                "mode": "preview",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/README.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Subnetting_IPv4"
+              "title": "README"
             }
           },
           {
@@ -234,6 +234,7 @@
   },
   "active": "26320b36ad309e6a",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Subnetting_Practice/Subnetting_IPv4.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/SNMP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/NTP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
@@ -260,7 +261,6 @@
     "Router Mag.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
     "Setup_Archive/Plugin/Excalidraw/Integrale_definito_aree_curve.md",
-    "Setup_Archive/Plugin/Excalidraw/Schema_Divisione_Polinomi.md",
     "Setup_Archive/Plugin/Calendar/Gym",
     "Setup_Archive/Images/Puzzle.jpg",
     "Setup_Archive/Images/Pasted Image 20251103175312_794.png",

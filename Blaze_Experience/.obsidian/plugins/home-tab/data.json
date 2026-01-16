@@ -24,6 +24,10 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/README.md",
+      "timestamp": 1768549230890
+    },
+    {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Subnetting_Practice/Subnetting_IPv4.md",
       "timestamp": 1768547555493
     },
@@ -38,10 +42,6 @@
     {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
       "timestamp": 1768546972934
-    },
-    {
-      "filepath": "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Risposta_HTTP.md",
-      "timestamp": 1768546970703
     }
   ],
   "bookmarkedFileStore": [],
