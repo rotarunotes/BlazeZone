@@ -34,9 +34,19 @@
               "icon": "lucide-file",
               "title": "Riassunto"
             }
+          },
+          {
+            "id": "21854a014d5bfff4",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -235,10 +245,10 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "a76eaff0c3377ccf",
+  "active": "21854a014d5bfff4",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/Riassunto.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter",
     "README.md",
