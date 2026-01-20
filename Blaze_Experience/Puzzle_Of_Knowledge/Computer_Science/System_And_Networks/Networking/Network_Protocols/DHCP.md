@@ -3,7 +3,6 @@ Data: 2025-10-22
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols
 ___
 Video: https://www.youtube.com/watch?v=T_RG-EyeIrc
-
 # Index
 - [[#Dynamic Host Configuration Protocol]]
 - [[#Lease]]
@@ -31,7 +30,7 @@ Permettere a un server di assegnare **dinamicamente**:
 Le assegnazioni sono temporanee, regolate da un periodo chiamato **lease (affitto)**.
 ___
 # Lease
-**noleggio a tempo** di un indirizzo IP. ⏱️
+**noleggio a tempo** di un indirizzo IP. 
 - Il router (server DHCP) "presta" un IP a un dispositivo (PC, telefono) per un periodo fisso (es. 24 ore).
 - Il dispositivo deve periodicamente **rinnovare** questo noleggio per tenerlo.
 - Se il dispositivo si scollega e il lease **scade**, l'IP torna libero e può essere "riciclato" per un nuovo dispositivo.
@@ -53,15 +52,11 @@ DHCP è un’evoluzione del protocollo **BOOTP** (Bootstrap Protocol).
 **Limiti di BOOTP**:
 - Nessuna gestione dinamica degli IP
 - Non adatto a dispositivi mobili (es. Wi-Fi)
-<<<<<<< HEAD
+
 ---
 # Funzionalità Principali
 ## Cosa fornisce un server DHCP?
-=======
-___
 
-# Cosa fornisce un server DHCP?
->>>>>>> origin/main
 - Indirizzo IP
 - Subnet Mask
 - Default Gateway

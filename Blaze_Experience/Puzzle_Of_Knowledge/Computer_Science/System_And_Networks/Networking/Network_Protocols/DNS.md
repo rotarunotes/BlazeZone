@@ -3,7 +3,6 @@ Data: 2025-10-22
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols
 ___
 Video: https://www.youtube.com/watch?v=-K3n2W1FmrQ
-
 # Index
 - [[#Domain Name System]]
 - [[#Le 3 Macro Componenti del DNS]]

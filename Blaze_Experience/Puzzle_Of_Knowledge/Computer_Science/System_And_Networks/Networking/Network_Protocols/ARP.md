@@ -3,7 +3,6 @@ Data: 2025-10-22
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols
 ___
 Video: https://www.youtube.com/watch?v=H-rANwaumfM
-
 # Index
 - [[#Address Resolution Protocol?]]
 - [[#Perché è necessario?]]
@@ -15,7 +14,7 @@ Video: https://www.youtube.com/watch?v=H-rANwaumfM
 - [[#Riepilogo]]
 
 ___
-# Address Resolution Protocol?
+# Address Resolution Protocol
 
 L’**ARP** è un protocollo fondamentale che opera all’interno di una rete locale (**LAN**).
 
