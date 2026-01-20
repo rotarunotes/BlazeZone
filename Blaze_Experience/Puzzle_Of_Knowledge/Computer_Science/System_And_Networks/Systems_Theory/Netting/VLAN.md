@@ -1,5 +1,5 @@
 Data: 2025-11-14
-[](README.md)
+[Netting](README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting
 ___
 **Pratica:** [[Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch/VLAN|VLAN_Pratica]]
