@@ -22,7 +22,12 @@
   "showShortcuts": true,
   "markdownOnly": false,
   "unresolvedLinks": false,
-  "recentFilesStore": [],
+  "recentFilesStore": [
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/WLAN.md",
+      "timestamp": 1768935452117
+    }
+  ],
   "bookmarkedFileStore": [],
   "searchDelay": 0,
   "replaceNewTabs": true,
