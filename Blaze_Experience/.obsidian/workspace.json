@@ -4,75 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "751f87d8c87cb965",
+        "id": "eb732bb1669c0b49",
         "type": "tabs",
         "children": [
           {
-            "id": "89fa259c8e6824b2",
+            "id": "0130b6ae44de3836",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Senza Nome.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HTTP"
-            }
-          },
-          {
-            "id": "a76eaff0c3377ccf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/Riassunto.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Riassunto"
-            }
-          },
-          {
-            "id": "21854a014d5bfff4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/WLAN.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "WLAN"
-            }
-          },
-          {
-            "id": "7a50ff2949b52f1d",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.5"
-              },
-              "icon": "lucide-book-up",
-              "title": "Note di rilascio 1.11.5"
-            }
-          },
-          {
-            "id": "46a288684362d9ae",
-            "type": "leaf",
-            "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
+              "title": "Senza Nome"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -271,8 +220,16 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "46a288684362d9ae",
+  "active": "0130b6ae44de3836",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Senza Nome.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/WLAN.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/Riassunto.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Terminal_And_Shell/README.md",
     "conflict-files-obsidian-git.md",
     "Setup_Archive/Images/I_Systems_And_Network/Pasted image 20260115182958.png",
@@ -286,16 +243,13 @@
     "Setup_Archive/Images/I_Systems_And_Network/Pasted Image 20260115181748_112.png",
     "Setup_Archive/Images/I_Systems_And_Network/Pasted Image 20260115181635_397.png",
     "Setup_Archive/Images/I_Systems_And_Network",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/WLAN.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Cryptography.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/Riassunto.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter",
     "README.md",
     "Senza nome.base",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/SNMP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/NTP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
@@ -309,16 +263,11 @@
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Connessione_Non_Persistente.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Connessionie_Persistente.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Richesta_HTTP.md",
-    "Untitled.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/README.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Algoritmo_NTP.md",
     "gasi.java",
     "ntp.pdf",
     "Red_Lab/Unity/Base",
     "Red_Lab/Unity",
     "Setup_Archive/Plugin/Excalidraw/D_Math",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]
 }
