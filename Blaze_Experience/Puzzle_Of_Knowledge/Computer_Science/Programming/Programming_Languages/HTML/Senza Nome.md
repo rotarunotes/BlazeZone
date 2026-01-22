@@ -1,4 +1,4 @@
-Ecco un riepilogo strutturato e chiaro dei tuoi appunti di HTML e CSS. Ho organizzato i contenuti in una scaletta logica per aiutarti a studiare o a consultare rapidamente i tag.
+riEcco un riepilogo strutturato e chiaro dei tuoi appunti di HTML e CSS. Ho organizzato i contenuti in una scaletta logica per aiutarti a studiare o a consultare rapidamente i tag.
 
 ---
 
