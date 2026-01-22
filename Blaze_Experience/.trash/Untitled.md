@@ -6,9 +6,7 @@ ___
 Di cosa parla questa MOC.
 ___
 # Indice
-
-
-
+- 
 ___
 
  
