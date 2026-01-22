@@ -42,18 +42,6 @@
             }
           },
           {
-            "id": "cd8f67c6e8b516e4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "ntp.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "ntp"
-            }
-          },
-          {
             "id": "ce1941795c8d6ede",
             "type": "leaf",
             "state": {
@@ -65,6 +53,20 @@
               },
               "icon": "lucide-file",
               "title": "Statements"
+            }
+          },
+          {
+            "id": "e0f2918ae6b08382",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
             }
           },
           {
@@ -259,22 +261,43 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "ce1941795c8d6ede",
+  "active": "e0f2918ae6b08382",
   "lastOpenFiles": [
-    "ntp.pdf",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
+    "conflict-files-obsidian-git.md",
+    "Setup_Archive/Images/I_Systems_And_Network/Pasted image 20260115182958.png",
+    "Setup_Archive/Images/I_Systems_And_Network/Pasted image 20260115182951.png",
+    "Setup_Archive/Images/I_Systems_And_Network/Pasted Image 20260115182317_027.png",
+    "Setup_Archive/Images/I_Systems_And_Network/Pasted Image 20260115182341_633.png",
+    "Setup_Archive/Images/I_Systems_And_Network/Pasted image 20260115181754.png",
+    "Setup_Archive/Images/I_Systems_And_Network/Pasted Image 20260115181748_112.png",
+    "Setup_Archive/Images/I_Systems_And_Network/Pasted Image 20260115181635_397.png",
+    "Setup_Archive/Images/I_Systems_And_Network/Pasted Image 20260115173505_795.png",
+    "Setup_Archive/Images/I_Systems_And_Network/Pasted Image 20260115170159_879.png",
+    "Setup_Archive/Images/I_Systems_And_Network/Pasted Image 20260115165930_853.png",
+    "Setup_Archive/Images/I_Systems_And_Network",
+    "Senza nome.base",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/WLAN.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Cryptography.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/SNMP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Senza Nome.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/Riassunto.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter",
+    "ntp.pdf",
     "Puzzle_Of_Knowledge/README.md",
     "gasi.java",
     "Nuovo Documento di testo.txt",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/ARP.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Collegamento_In_Cross.md",
-    "conflict-files-obsidian-git.md",
     "Untitled.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Algoritmo_NTP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/NTP.md",
-    "Pasted Image 20260114191818_175.png",
-    "Pasted Image 20260114191753_348.png",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Function.md",
@@ -285,27 +308,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Web_Programming/Untitled.canvas",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Web_Programming/HTML",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Web_Programming/HTML.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Web_Programming",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch/VLAN.md",
-    "Red_Lab/Ex_School/SQL/Progettazione Concettuale.md",
-    "Red_Lab/Ex_School/SQL/Consegna 6.md",
-    "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
-    "Setup_Archive/Images/I_Other/Schema ER.png",
-    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Conceptual Design.md",
-    "Senza nome.md",
-    "tolc.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Schema_Insieme_Primitive_Infinite.md",
-    "Setup_Archive/Images/I_Math/Pasted Image 20251102210735_629.png",
-    "Setup_Archive/Images/I_Math/Pasted Image 20251103175312_794.png",
-    "Setup_Archive/Images/I_Math/Pasted Image 20251215184541_478.png",
-    "Pasted image 20251222213944.png",
-    "Pasted image 20251109224335.png",
-    "Red_Lab/Unity",
-    "Pasted image 20251030093955.png",
-    "Pasted Image 20251217101511_235.png",
-    "Setup_Archive/Plugin/Excalidraw/D_Math",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Theory"
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md"
   ]
 }

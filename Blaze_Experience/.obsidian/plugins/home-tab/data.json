@@ -22,16 +22,7 @@
   "showShortcuts": true,
   "markdownOnly": false,
   "unresolvedLinks": false,
-  "recentFilesStore": [
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
-      "timestamp": 1769065527750
-    },
-    {
-      "filepath": "ntp.pdf",
-      "timestamp": 1769065527580
-    }
-  ],
+  "recentFilesStore": [],
   "bookmarkedFileStore": [],
   "searchDelay": 0,
   "replaceNewTabs": true,

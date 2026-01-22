@@ -7,6 +7,5 @@ Di cosa parla questa MOC.
 ___
 # Indice
 - [Subnetting_Practice](Subnetting_Practice/README.md)
-___
+___ 
 
- 
