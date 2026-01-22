@@ -22,7 +22,24 @@
   "showShortcuts": true,
   "markdownOnly": false,
   "unresolvedLinks": false,
-  "recentFilesStore": [],
+  "recentFilesStore": [
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+      "timestamp": 1769068742105
+    },
+    {
+      "filepath": "Setup_Archive/Plugin/Excalidraw/LIste_HTML.md",
+      "timestamp": 1769068708719
+    },
+    {
+      "filepath": "Setup_Archive/Plugin/Excalidraw/Formattazione_HTML.md",
+      "timestamp": 1769068705294
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
+      "timestamp": 1769067406636
+    }
+  ],
   "bookmarkedFileStore": [],
   "searchDelay": 0,
   "replaceNewTabs": true,
