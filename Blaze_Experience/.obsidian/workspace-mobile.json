@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HTTP"
+              "title": "README"
             }
           },
           {
@@ -76,9 +76,47 @@
               "icon": "lucide-file",
               "title": "Class"
             }
+          },
+          {
+            "id": "c384d9f42ae20acc",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
+          },
+          {
+            "id": "36dec13ad66fe0a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tolc.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "tolc"
+            }
+          },
+          {
+            "id": "8c13262161b16e1f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Syntax"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -260,9 +298,20 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "64c19f0fab4babb1",
+  "active": "8c13262161b16e1f",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/Riassunto.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+    "Untitled.md",
+    "Setup_Archive/Plugin/Excalidraw/Formattazione_HTML.md",
+    "tolc.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
+    "Ydurj.md",
+    "README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
+    "Setup_Archive/Plugin/Excalidraw/LIste_HTML.md",
+    "Setup_Archive/Plugin/Excalidraw/Tabella_HTML.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Class.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/SNMP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/README.md",
@@ -273,21 +322,10 @@
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Funzionamento_Generale_SNMP.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/OID_SNMP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
-    "Untitled.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
-    "README.md",
     "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
     "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Algoritmo_NTP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/VLAN.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
-    "Switch.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Screenshot 2025-11-18 140914.png",
     "Setup_Archive/Plugin/Calendar/Gym",
     "Setup_Archive/Images/Puzzle.jpg",
