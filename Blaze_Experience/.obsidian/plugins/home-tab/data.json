@@ -24,24 +24,12 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "Setup_Archive/Plugin/Excalidraw/Tabella_HTML.md",
+      "timestamp": 1769453231899
+    },
+    {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
-      "timestamp": 1769108468049
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
-      "timestamp": 1769107574095
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
-      "timestamp": 1769107541919
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Future.md",
-      "timestamp": 1769107284288
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
-      "timestamp": 1769107265977
+      "timestamp": 1769453225849
     }
   ],
   "bookmarkedFileStore": [],

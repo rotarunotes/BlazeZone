@@ -34,6 +34,16 @@
             }
           },
           {
+            "id": "b1094259140e670e",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
+          },
+          {
             "id": "389d7a947aaac8ed",
             "type": "leaf",
             "state": {
@@ -45,7 +55,8 @@
               "title": "Tabella_HTML"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -244,10 +255,11 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "0130b6ae44de3836",
+  "active": "b1094259140e670e",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
+    "Setup_Archive/Plugin/Excalidraw/Tabella_HTML.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Future.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
@@ -261,7 +273,6 @@
     "Pasted Image 20260122193403_774.png",
     "Pasted Image 20260122083540_161.png",
     "Pasted image 20260122193407.png",
-    "Setup_Archive/Plugin/Excalidraw/Tabella_HTML.md",
     "Setup_Archive/Plugin/Excalidraw/LIste_HTML.md",
     "Setup_Archive/Plugin/Excalidraw/Formattazione_HTML.md",
     "conflict-files-obsidian-git.md",
