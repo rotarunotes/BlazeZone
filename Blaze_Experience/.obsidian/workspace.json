@@ -22,41 +22,35 @@
             }
           },
           {
-            "id": "eef89c7eddc1e68f",
+            "id": "f69d936055483b61",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Setup_Archive/Plugin/Excalidraw/Tabella_HTML.md"
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Tabella_HTML"
+              "icon": "lucide-file",
+              "title": "README"
             }
           },
           {
-            "id": "b1094259140e670e",
+            "id": "6769f104627e989b",
             "type": "leaf",
             "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
-            }
-          },
-          {
-            "id": "389d7a947aaac8ed",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Setup_Archive/Plugin/Excalidraw/Tabella_HTML.md"
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/Riassunto.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Tabella_HTML"
+              "icon": "lucide-file",
+              "title": "Riassunto"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -255,13 +249,14 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "389d7a947aaac8ed",
+  "active": "6769f104627e989b",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "Untitled.md",
-    "Setup_Archive/Plugin/Excalidraw/Tabella_HTML.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
+    "Setup_Archive/Plugin/Excalidraw/Tabella_HTML.md",
+    "conflict-files-obsidian-git.md",
+    "Untitled.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Future.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
@@ -290,7 +285,6 @@
     "Setup_Archive/Images/I_Systems_And_Network",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Cryptography.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter",
     "README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/SNMP.md",
