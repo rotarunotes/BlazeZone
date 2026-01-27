@@ -22,12 +22,7 @@
   "showShortcuts": true,
   "markdownOnly": false,
   "unresolvedLinks": false,
-  "recentFilesStore": [
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Cryptography.md",
-      "timestamp": 1769515676458
-    }
-  ],
+  "recentFilesStore": [],
   "bookmarkedFileStore": [],
   "searchDelay": 0,
   "replaceNewTabs": true,
