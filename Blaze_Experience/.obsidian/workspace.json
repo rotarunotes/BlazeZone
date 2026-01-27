@@ -48,9 +48,19 @@
               "icon": "lucide-file",
               "title": "Riassunto"
             }
+          },
+          {
+            "id": "cbeff6f64faeec78",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -249,8 +259,9 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "6769f104627e989b",
+  "active": "cbeff6f64faeec78",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/Riassunto.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
@@ -275,7 +286,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/WLAN.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/Riassunto.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Terminal_And_Shell/README.md",
     "Setup_Archive/Images/I_Systems_And_Network/Pasted image 20260115182958.png",
