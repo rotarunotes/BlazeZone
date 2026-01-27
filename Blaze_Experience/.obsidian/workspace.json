@@ -20,6 +20,16 @@
               "icon": "lucide-file",
               "title": "Cryptography"
             }
+          },
+          {
+            "id": "849e499a49900a77",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ]
       }
@@ -221,8 +231,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
