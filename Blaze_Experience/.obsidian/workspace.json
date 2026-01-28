@@ -4,97 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a32b1c05fd0acf8d",
+        "id": "843cbd2e9555dfbf",
         "type": "tabs",
         "children": [
           {
-            "id": "e662646ad2212b80",
-            "type": "leaf",
-            "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
-            }
-          },
-          {
-            "id": "ce1941795c8d6ede",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Statements"
-            }
-          },
-          {
-            "id": "491195ad6f080cde",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
-            }
-          },
-          {
-            "id": "8b6678516461b0d4",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Pasted Image 20260122083540_161.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted Image 20260122083540_161"
-            }
-          },
-          {
-            "id": "3335c9ce5884b8ea",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Setup_Archive/Plugin/Excalidraw/Formattazione_HTML.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Formattazione_HTML"
-            }
-          },
-          {
-            "id": "297ad4dac9265540",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Setup_Archive/Plugin/Excalidraw/LIste_HTML.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "LIste_HTML"
-            }
-          },
-          {
-            "id": "484f0997ff863072",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Setup_Archive/Plugin/Excalidraw/LIste_HTML.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "LIste_HTML"
-            }
-          },
-          {
-            "id": "efb176aa3ebcefd7",
+            "id": "d0785b00eb0fc930",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -106,21 +20,8 @@
               "icon": "lucide-file",
               "title": "Syntax"
             }
-          },
-          {
-            "id": "3d96423e6ff9e5f4",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.5"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.5"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -172,13 +73,22 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "2395d28c78af5fdd",
+            "type": "leaf",
+            "state": {
+              "type": "trash-explorer",
+              "state": {},
+              "icon": "trash",
+              "title": "Trash explorer"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "2b0ea1a7653991df",
@@ -280,7 +190,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 233
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -300,54 +210,54 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "491195ad6f080cde",
+  "active": "d0785b00eb0fc930",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
+    "Setup_Archive/Obsidian_Base/Formatting.md",
+    "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
+    "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Terminal_And_Shell/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
+    "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
+    "Red_Lab/Ex_School/SQL/Consegna 6.md",
+    "Puzzle_Of_Knowledge/Computer_Science/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
+    "README.md",
+    "Puzzle_Of_Knowledge/README.md",
+    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/form_html.md",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260128105110_542.png",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Tabella_HTML.md",
+    "Setup_Archive/Images/I_Programming/Pasted Image 20260122193403_774.png",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260122084415_280.png",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260122085741_579.png",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260122193519_932.png",
+    "Setup_Archive/Images/I_Math/Pasted Image 20251102195725_766.png",
+    "Pasted Image 20260122083540_161.png",
+    "Pasted image 20260122193407.png",
+    "Untitled.base",
+    "Senza nome.base",
+    "bo.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/WLAN.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
     "conflict-files-obsidian-git.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Propagazione_Del_Segnale.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Tabella_HTML.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/LIste_HTML.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Formattazione_HTML.md",
-    "Setup_Archive/Images/I_Systems_And_Network/Pasted Image 20260127134642_717.png",
-    "Setup_Archive/Images/I_Programming/Pasted Image 20260122193403_774.png",
-    "Setup_Archive/Images/I_Programming/Pasted Image 20260122085741_579.png",
-    "Setup_Archive/Images/I_Programming/Pasted Image 20260122084415_280.png",
-    "Setup_Archive/Images/I_Programming",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260127134642_717.png",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Programming",
     "Setup_Archive/Plugin/Excalidraw/LIste_HTML.md",
     "Setup_Archive/Plugin/Excalidraw/Titoli_HTML.md",
-    "Setup_Archive/Plugin/Excalidraw/Formattazione_HTML.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
     "Pasted Image 20260122085741_579.png",
-    "Pasted Image 20260122084415_280.png",
-    "Pasted Image 20260122083540_161.png",
-    "CSS.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Untitled.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Grafico_integrale.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Schema_Divisione_Polinomi.md",
     "Untitled",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Class.md",
-    "Setup_Archive/Images/I_Systems_And_Network/Pasted image 20260115182958.png",
-    "Setup_Archive/Images/I_Systems_And_Network/Pasted image 20260115182951.png",
-    "Setup_Archive/Images/I_Systems_And_Network/Pasted Image 20260115182317_027.png",
-    "Setup_Archive/Images/I_Systems_And_Network",
-    "Senza nome.base",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/WLAN.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Cryptography.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/SNMP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/Riassunto.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter",
     "ntp.pdf",
-    "Puzzle_Of_Knowledge/README.md",
     "gasi.java",
-    "Nuovo Documento di testo.txt",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Web_Programming/Untitled.canvas"
   ]
 }

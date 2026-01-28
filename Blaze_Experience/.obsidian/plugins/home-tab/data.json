@@ -22,7 +22,28 @@
   "showShortcuts": true,
   "markdownOnly": false,
   "unresolvedLinks": false,
-  "recentFilesStore": [],
+  "recentFilesStore": [
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+      "timestamp": 1769596796117
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
+      "timestamp": 1769596794754
+    },
+    {
+      "filepath": "Setup_Archive/Obsidian_Base/Formatting.md",
+      "timestamp": 1769596781070
+    },
+    {
+      "filepath": "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
+      "timestamp": 1769596780644
+    },
+    {
+      "filepath": "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
+      "timestamp": 1769596779820
+    }
+  ],
   "bookmarkedFileStore": [],
   "searchDelay": 0,
   "replaceNewTabs": true,
