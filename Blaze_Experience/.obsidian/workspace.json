@@ -92,9 +92,21 @@
               "icon": "lucide-file",
               "title": "Syntax"
             }
+          },
+          {
+            "id": "3d96423e6ff9e5f4",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.5"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -254,8 +266,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -275,7 +286,7 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "efb176aa3ebcefd7",
+  "active": "ce1941795c8d6ede",
   "lastOpenFiles": [
     "Setup_Archive/Plugin/Excalidraw/LIste_HTML.md",
     "Setup_Archive/Plugin/Excalidraw/Titoli_HTML.md",
