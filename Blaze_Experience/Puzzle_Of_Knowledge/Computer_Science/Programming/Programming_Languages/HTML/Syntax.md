@@ -3,13 +3,15 @@ Data: 2026-01-22
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML
 ___
 # Index
-1. **Struttura della Pagina e Metadati**
-2. **Testo e Formattazione**
-3. **Organizzazione dei Contenuti (Contenitori e Liste)**
-4. **Elementi Multimediali (Immagini, Video, Embed)**
-5. **Collegamenti (Link)**
-6. **Tabelle**
-7. **Stile e Attributi (ID, Class e CSS)**
+- [[#Struttura Della Pagina e Metadati]]
+- [[#Formattazione]]
+- [[#Contenitore]]
+- [[#Liste]]
+- [[#Link]]
+- [[#Immagini]]
+- [[#Video]]
+- [[#Embed]]
+- [[#Tabelle]]
 
 ___
 # Struttura Della Pagina e Metadati
@@ -164,7 +166,6 @@ ___
 ![[LIste_HTML]]
 
 ___
-
 # Link
 Un link che ti porta a un'altra pagina web/html.
 - `<a>`: è la parte cliccabile che l'utente vedrà sulla pagina.
@@ -263,20 +264,48 @@ ___
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">                     <!--sito web  condividi  incorpora -->
 </iframe>
 ```
+
+___
 # Tabelle
 Le tabelle organizzano i dati in righe e colonne:
 - `<table>`: Contenitore della tabella.
-- `<tr>`: Definizione di una riga (Table Row).
+- `<tr>`: Definizione di una riga (Table Row). 
 - `<th>`: Cella di intestazione (Table Header, testo in grassetto).
 - `<td>`: Cella di dati (Table Data).
-# Stile e Attributi (ID, Class e CSS)
-Per dare un aspetto grafico (colori, margini) si usa il CSS:
-- **Style Inline**: Scritto direttamente nel tag (es. `<p style="color: red;">`).
-- **Selettori CSS**:
-    - **Tag**: Applica lo stile a tutti i tag di quel tipo (es. `p { ... }`).
-    - **ID (`#`)**: Identificativo univoco per un solo elemento (es. `#titolo-1`).
-    - **Class (`.`)**: Riutilizzabile su più elementi (es. `.text-red`). Si possono applicare più classi allo stesso tag separandole con uno spazio.
-- **Box Model**:
-    - `padding`: Spazio interno tra il contenuto e il bordo.
-    - `margin`: Spazio esterno tra il bordo e gli altri elementi.
-    - `width`/`height`: Larghezza e altezza dell'elemento.
+
+``` HTML
+<style>
+    table {
+        width: 100%; 
+        border-collapse: collapse; /*Fa si che il bordo sia uno e non sdoppiato*/
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #eee;
+    }
+</style>
+
+<table>
+  <tr>
+    <th>Articolo</th>
+    <th>Quantità</th>
+  </tr>
+  <tr>
+    <td>Pane</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Latte</td>
+    <td>1</td>
+  </tr>
+</table>
+```
+
+![[Tabella_HTML|1000]]
+
+___
+
