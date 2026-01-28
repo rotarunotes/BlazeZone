@@ -62,9 +62,19 @@
               "icon": "lucide-file",
               "title": "Riassunto"
             }
+          },
+          {
+            "id": "a059cd3924d27bca",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -263,8 +273,9 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "cbeff6f64faeec78",
+  "active": "a059cd3924d27bca",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/Riassunto.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/WLAN.md",
     "conflict-files-obsidian-git.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Propagazione_Del_Segnale.md",
@@ -277,7 +288,6 @@
     "Setup_Archive/Images/I_Programming/Pasted Image 20260122085741_579.png",
     "Setup_Archive/Images/I_Programming/Pasted Image 20260122084415_280.png",
     "Setup_Archive/Images/I_Programming",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/Riassunto.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
