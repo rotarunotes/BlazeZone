@@ -83,7 +83,7 @@ $$
 | Giacomo  | Sacco   | 21  | Mestre |
 | Mattia   | Scatto  | 42  | Mestre |
 ## Intersezione
--          
+- Elementi in comune
 $$
 Relazioen1 \cap Relazione2
 $$

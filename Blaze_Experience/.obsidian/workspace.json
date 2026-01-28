@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Syntax"
+              "title": "Relational_Algebra"
             }
           }
         ]
@@ -212,11 +212,19 @@
   },
   "active": "d0785b00eb0fc930",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Conceptual Design.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/Relation.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/Computability_Theory/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/Complexity_Theory/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/Automata_Theory/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
     "Setup_Archive/Obsidian_Base/Formatting.md",
     "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
     "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Terminal_And_Shell/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
     "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
@@ -240,16 +248,8 @@
     "Untitled.base",
     "Senza nome.base",
     "bo.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/WLAN.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
-    "conflict-files-obsidian-git.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Propagazione_Del_Segnale.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/LIste_HTML.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Formattazione_HTML.md",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260127134642_717.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming",
-    "Setup_Archive/Plugin/Excalidraw/LIste_HTML.md",
-    "Setup_Archive/Plugin/Excalidraw/Titoli_HTML.md",
     "Pasted Image 20260122085741_579.png",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS",
     "Untitled",

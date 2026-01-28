@@ -3,7 +3,7 @@ Data: 2025-10-27
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures
 ___
 # Definizione
-In informatica e nei database, una **relazione** è il termine tecnico e formale per definire una **tabella**.  
+In informatica e nei database, una **relazione** è il termine tecnico e formale per definire una **tabella**.
 È composta da due parti principali:
 
 - **Intestazione (Schema):** insieme degli **attributi** (nomi delle colonne).  
