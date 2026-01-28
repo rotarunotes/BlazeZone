@@ -114,9 +114,37 @@
               "icon": "lucide-file",
               "title": "Syntax"
             }
+          },
+          {
+            "id": "2f3a03cb4db4a54b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Math/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          },
+          {
+            "id": "e78fc918b1456728",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Indefinite_Integral"
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -298,13 +326,16 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "8c13262161b16e1f",
+  "active": "e78fc918b1456728",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/Riassunto.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
+    "Puzzle_Of_Knowledge/Math/README.md",
+    "tolc.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/Riassunto.md",
     "Untitled.md",
     "Setup_Archive/Plugin/Excalidraw/Formattazione_HTML.md",
-    "tolc.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
     "Ydurj.md",
     "README.md",
@@ -323,9 +354,6 @@
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/OID_SNMP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
-    "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
     "Screenshot 2025-11-18 140914.png",
     "Setup_Archive/Plugin/Calendar/Gym",
     "Setup_Archive/Images/Puzzle.jpg",
