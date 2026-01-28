@@ -3,7 +3,6 @@
   "catppuccin-theme-settings@@catppuccin-theme-accents": "ctp-accent-mauve",
   "catppuccin-interface-styles@@ctp-bold-folder-title": false,
   "catppuccin-icon-styles@@ctp-icon-hide": false,
-  "catppuccin-font-styles@@ctp-bold": "var(--ctp-lavender)",
   "catppuccin-font-styles@@ctp-italic": "var(--ctp-subtext0)",
   "catppuccin-font-styles@@ctp-strikethrough": "var(--ctp-subtext0)",
   "catppuccin-font-styles@@ctp-blockquote": "var(--ctp-accent)",
@@ -15,5 +14,6 @@
   "catppuccin-heading-settings@@ctp-h6": "var(--ctp-blue)",
   "catppuccin-heading-settings@@ctp-page-title": "var(--ctp-accent)",
   "obsidian-execute-code@@use-custom-output-color": false,
-  "obsidian-execute-code@@use-custom-error-color": false
+  "obsidian-execute-code@@use-custom-error-color": false,
+  "catppuccin-font-styles@@ctp-bold": "var(--ctp-peach)"
 }
