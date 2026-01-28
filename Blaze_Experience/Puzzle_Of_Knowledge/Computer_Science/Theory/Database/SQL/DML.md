@@ -5,8 +5,9 @@ ___
 # Data Manipulation Language
 Il DML  è la parte del linguaggio SQL utilizzata per **gestire e manipolare i dati** memorizzati all'interno delle tabelle di un database.
 
-| [[#Select]] | `SELECT Nome, Corso FROM Studenti WHERE Età < 23;`                                 |
+| **Tipo**    | **Esempio**                                                                        |
 | ----------- | ---------------------------------------------------------------------------------- |
+| [[#Select]] | `SELECT Nome, Corso FROM Studenti WHERE Età < 23;`                                 |
 | [[#Insert]] | `INSERT INTO Studenti (ID, Nome, Età, Corso) VALUES (4, 'Giulia', 21, 'Chimica');` |
 | [[#Update]] | `UPDATE Studenti SET Corso = 'Informatica' WHERE ID = 1;`<br>                      |
 | [[#Delete]] | `DELETE FROM Studenti WHERE ID = 3;`                                               |
