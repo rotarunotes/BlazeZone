@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration Block.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Declaration Block"
             }
           },
           {
@@ -32,17 +32,31 @@
             }
           },
           {
-            "id": "4bb632823fc974ec",
+            "id": "e1b1304271585220",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration Block.md",
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "title": "Declaration Block"
+            }
+          },
+          {
+            "id": "317e7360489109fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Semantic"
             }
           }
         ],
@@ -113,7 +127,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2b0ea1a7653991df",
@@ -235,20 +250,25 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "4bb632823fc974ec",
+  "active": "e1b1304271585220",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration Block.md",
+    "Untitled.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Conceptual Design.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
     "conflict-files-obsidian-git.md",
     "Setup_Archive/Plugin/Excalidraw/Selettore_css.md",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260128230853_089.png",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Conceptual Design.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/Relation.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/Computability_Theory/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/Complexity_Theory/README.md",
@@ -259,11 +279,6 @@
     "Setup_Archive/Obsidian_Base/Formatting.md",
     "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
     "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Terminal_And_Shell/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
-    "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
-    "Red_Lab/Ex_School/SQL/Consegna 6.md",
-    "Puzzle_Of_Knowledge/Computer_Science/README.md",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260128105110_542.png",
     "Setup_Archive/Images/I_Programming/Pasted Image 20260122193403_774.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260122084415_280.png",

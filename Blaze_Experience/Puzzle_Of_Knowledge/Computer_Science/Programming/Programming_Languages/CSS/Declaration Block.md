@@ -1,0 +1,99 @@
+Data: 2026-01-29
+[CSS](./README.md)
+#Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS
+
+---
+# Struttura e Modello a Scatola (Box Model)
+
+Il "Box Model" definisce come ogni elemento occupa spazio nella pagina.
+- **Distanza** in base a una direzione:
+	- `top:`
+	- `right:`
+	- `bottom:`
+	- `left:`
+- `width`: **Larghezza** dell'elemento (es. `20px`)
+	- `min-width` / `max-width`: Impostano limiti minimi e massimi della larghezza
+- `height`: **Altezza** dell'elemento (es. `20px`)
+	- `min-height` / `max-height`: Impostano limiti minimi e massimi dell'altezza
+- `margin`: Distanza **esterna** tra l'elemento e gli altri (es. `20px`).    
+- `padding`: Distanza **interna** tra il bordo e il contenuto (es. `20px`).
+- `border`: Crea un bordo con, (es.`grandezza stile colore;`), Esempi di stile:
+	- **solid**: Linea continua.
+	- **dashed**: linea tratteggiata.
+	- **dotted**: Linea fatta di piccoli punti.
+	- **double**:Doppio bordo sottile.
+	- **none**: Rimuove il bordo.
+- `border-radius`: Arrotonda gli angoli (es. `20px`).
+- `box-shadow`: Aggiunge un'**ombra** (es. `0px 5px 10px 3px black`).
+
+---
+
+# Tipografia e Testo
+
+Tutto ciò che riguarda la formattazione dei caratteri e dei paragrafi.
+
+- `font-family`: Definisce il carattere (es. 'Montserrat'). Si possono importare con `@import`.
+- `font-size`: Dimensione del testo.
+- `font-weight`: Spessore.
+	- **bold**: Grassetto standard.
+	- **normal**:Testo normale.
+	- **300**: Molto leggero/sottile, se il font lo supporta.
+	- **900**: Extra black, molto spesso.
+- `font-style`:
+	- **italic**: Corsivo.
+	- **normal**: In caso il testo ritorna normale.
+- `text-align`: Gestisce la **posizione** del testo nel suo contenitore.
+	- **center**: Testo centrato.
+	- **right**, **left**: Testo allineato a destra o sinistra.
+	- **justify**: Le righe hanno tutte la stessa lunghezza
+- `text-decoration`: Decorazioni.
+	- **underline**: Sottolineato.
+	- **line-through**: Testo sbarrato.
+	- **none**: In caso di decorazioni, il testo ritorna normale.
+- `text-shadow`: Ombra applicata al testo. (`ombra-X, ombra-Y, sfocatura, colore`).
+	- **none**: In caso rimuove l'ombra.
+- `color`: Colore del testo.
+
+---
+
+# Posizionamento e Layout
+
+Comandi che decidono dove un elemento appare nella pagina.
+
+- `position`: Posizione dell'elemento.
+    - **static**: (Default) segue il flusso normale del documento.
+    - **relative**: Si sposta rispetto alla sua posizione originale.
+	    - `position: relative; top: 10px; left: 20px;`
+    - **absolute**: Si posiziona rispetto al primo contenitore genitore che non sia "static".
+    - **fixed**: sta sempre fermo anche se si scorre la pagina.
+    - **sticky**: Si comporta come "relative" finché non raggiunge un punto, poi diventa "fixed".
+- `z-index`: Gestisce la profondità, (es. -1, manda l'elemento dietro agli anni)
+- `float`: Fa "fluttuare" l'elemento permettendo al testo di circondarlo.
+	- **top**
+	- **right**
+	- **bottom**
+	- **left**
+- `clear`:
+	- **both**: Evita che l'elemento salga di fianco a quelli fluttuanti.
+- `display`: 
+	- **none**: L'elemento sparisce e il resto della pagina si ricompatta come se non fosse mai esistito.
+- `visibility`: 
+	- **hidden**: Nasconde l'elemento ma lascia lo spazio vuoto dove si trovava.
+- flexbox/grid
+---
+
+# Sfondi e Colori
+
+- **`background-color`**: Colore di sfondo solido.
+- **`background-image`**: Immagine di sfondo (`url(...)`) o sfumature (`linear-gradient`).
+- **`background-size`**: `cover` adatta l'immagine per coprire tutto lo spazio.
+- **`background-position`**: Allineamento dell'immagine (es. `center`).
+- **`background-repeat`**: `no-repeat` evita che l'immagine si duplichi a mosaico.
+
+---
+
+# Animazioni e Responsività
+
+- **`transition`**: Crea animazioni fluide quando una proprietà cambia (es. `transition: color 10s`).
+- **`@media screen and (max-width: ...)`**: Permette di cambiare lo stile in base alla dimensione dello schermo (es. per cellulari).
+---
