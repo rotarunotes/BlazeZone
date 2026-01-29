@@ -48,9 +48,19 @@
               "icon": "lucide-file",
               "title": "Syntax"
             }
+          },
+          {
+            "id": "846b40e147255491",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -249,14 +259,14 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "5646f8eadf57f3ad",
+  "active": "846b40e147255491",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/README.md",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260128230853_089.png",
     "Setup_Archive/Plugin/Excalidraw/Selettore_css.md",
     "Setup_Archive/Plugin/Excalidraw/Drawing .md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
