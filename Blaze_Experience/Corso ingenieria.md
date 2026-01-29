@@ -1,5 +1,8 @@
 # Ex
-Organizzare un piano di studi riguardo alla laure  triennale di **ingegneria delle telecomunicazioni**
+Organizzare un piano di studi riguardo alla laure triennale di **ingegneria delle telecomunicazioni**
+
+180 CFU per 3 anni
+120 CFU per 2 anni magistrale
 
 | **Insegnamento 1 anno**                      | **Ore** | **CFU** |
 | -------------------------------------------- | ------- | ------- |
@@ -17,7 +20,7 @@ Organizzare un piano di studi riguardo alla laure  triennale di **ingegneria del
 | Machine Learning (*)                         | 48      | 6       |
 | Internet (*)                                 | 72      | 9       |
 | Elettronica                                  | 72      | 9       |
-| **Insegnamento**                             | **Ore** | **CFU** |
+| **Insegnamento 3 anno**                      | **Ore** | **CFU** |
 | Telecommunications (*)                       | 72      | 9       |
 | Transmission Media (*)                       | 48      | 6       |
 | Controlli Automatici                         | 72      | 9       |
@@ -27,10 +30,17 @@ Organizzare un piano di studi riguardo alla laure  triennale di **ingegneria del
 | **Cybersecurity laboratory (\*)**            | 48      | 6       |
 | **Internet and multimedia laboratory (\*)**  | 48      | 6       |
 
-Quelli evidenziati sono quelli che ho scelto io
+Quelli evidenziati sono quelli che ho scelto io, (\*), è inglese
 
-
-# Presentazione 2
-
-Opportunità dopo ingegneria.
-
+| **1 A SCELTA TRA I SEGUENTI 3 INSEGNAMENTI:**                                                      | **Ore** | **CFU** |
+| -------------------------------------------------------------------------------------------------- | ------- | ------- |
+| SIMULATION LABORATORY (*)                                                                          | 48      | 6       |
+| METODI NUMERICI PER L'ICT                                                                          | 48      | 6       |
+| OTTIMIZZAZIONE PER INTERNET E MULTIMEDIA                                                           | 48      | 6       |
+| **18 CREDITI A LIBERA SCELTA TRA I SEGUENTI INSEGNAMENTI E TRA QUELLI PRECEDENTEMENTE NON SCELTI** | **Ore** | **CFU** |
+| DATI E ALGORITMI                                                                                   | 48      | 6       |
+| INTERNET AND MULTIMEDIA LABORATORY (*)                                                             | 48      | 6       |
+| OPTICAL ENGINEERING LABORATORY (*)                                                                 | 48      | 6       |
+| TRANSMISSION MEDIA LABORATORY (*)                                                                  | 48      | 6       |
+| CYBERSECURITY LABORATORY (*)                                                                       | 48      | 6       |
+| SIGNALS AND MEASUREMENTS LABORATORY (\*)                                                           | 48      | 6       |
