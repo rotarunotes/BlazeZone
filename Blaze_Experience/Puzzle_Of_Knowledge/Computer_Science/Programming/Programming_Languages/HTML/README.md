@@ -7,6 +7,7 @@ L'**HTML** (HyperText Markup Language) è il linguaggio fondamentale del web. No
 
 Immagina l'HTML come lo **scheletro** di una casa: definisce dove vanno i muri, le finestre e le porte, ma non specifica ancora il colore delle pareti (che spetta al CSS) o come funzionano gli interruttori (che spetta a JavaScript).
 
+___
 # Struttura Della Pagina e Metadati
 Ogni documento HTML segue una gerarchia precisa:
 - `<!DOCTYPE html>`: Indica al browser che si tratta di un file **HTML5**.
@@ -39,6 +40,13 @@ Ogni documento HTML segue una gerarchia precisa:
 </html> 
 ```
 
+___
+# Percorsi
+1. **Stessa cartella**: `src="foto.jpg"`
+2. **Sottocartella**: `src="cartella/foto.jpg"`
+3. **Indirizzo assoluto** `src="C:\cartella\cartella\cartella\cartella\foto.jpg"`
+4. **Internet**: `src="https://link-immagine.com/foto.png"`
+   
 ___
 # Indice
 - [Syntax](Syntax.md)

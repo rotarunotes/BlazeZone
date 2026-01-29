@@ -2,7 +2,6 @@ Data: 2026-01-19
 [](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter
 ___
-
 # StatelessWidget (senza stato)
 - è immutabile
 - si usa per parti dell'interfaccia che non cambiano mai

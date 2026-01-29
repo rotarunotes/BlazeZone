@@ -147,18 +147,13 @@ ___
 # Immagini
 Tag: `<img>`
 Inserire una immagine all'interno della pagina:
-- **Percorsi**:
-    1. **Stessa cartella**: `src="foto.jpg"`
-    2. **Sottocartella**: `src="cartella/foto.jpg"`
-    3. **Indirizzo assoluto**: `src="C:\cartella\cartella\cartella\cartella\foto.jpg"`
-    4. **Internet**: `src="https://link-immagine.com/foto.png"`
 - **Nota**: Il tag `<img>` non richiede chiusura.
 [[#Attributi]]
 ``` HTML
-<img src="foto.jpg" width="100px" height="100px"></img>
-<img src="cartella/foto.jpg" width="100px" height="100px"></img> 
-<img src="indirizzo universale della cartella" width="100px" height="100px"></img> 
-<img src="link della immagine nel web" width="100PX" height="100px"></img>
+<img src="foto.jpg" width="100px" height="100px">
+<img src="cartella/foto.jpg" width="100px" height="100px">
+<img src="indirizzo universale della cartella" width="100px" height="100px">
+<img src="link della immagine nel web" width="100PX" height="100px">
 ```
 ___
 # Video
@@ -317,40 +312,48 @@ ___
 - [[#Media e Link]]
 - [[#Embed (Iframe)]]
 - [[#Form (Moduli)]]
+
+## Classi e ID
+``` CSS
+<div id="header-principale"> 
+	<p>Questo è il contenuto dell header unico.</p> 
+</div>
+<button class="btn">Bottone 1</button> 
+```
 ## Struttura e Metadati
-- **`<html>`**
+- **\<html\>**
     1. `lang`: (Consigliato) Indica la lingua della pagina (es. `lang="it"`).
-- **`<meta>`**
+- **\<meta>**
     1. `charset`: Definisce la codifica dei caratteri (quasi sempre `"UTF-8"`).
     2. `name` e `content`: Usati insieme per i metadati (es. per il `viewport` o la descrizione SEO).
-- **`<link>`**
+- **\<link>**
     1. `rel`: Specifica la relazione (per i CSS è sempre `"stylesheet"`).
     2. `href`: Il percorso del file esterno da collegare.
 ## Liste
-- **`<ul>`** (Liste puntate)
+- **\<ul>** (Liste puntate)
     1. `style`: Usato per cambiare il simbolo (es. `list-style-type: square\circle\none;`).
-- **`<ol>`** (Liste numerata)
+- **\<ol>** (Liste numerata)
     1. `type`: Definisce lo stile della numerazione (`1`, `A`, `a`, `I`, `i`).
     2. `start`: (Opzionale) Il numero da cui far partire il conteggio.
 ## Media e Link
-- **`<a>`** (Link)
+- **\<a>** (Link)
     1. `href`: Specifica l'indirizzo (URL) della pagina verso cui punta il link.
     2. `target`: Se impostato a `"_blank"`, apre il link in una nuova scheda.
-- **`<img>`** (Immagini)
+- **\<img>** (Immagini)
     1. `src`: Il percorso dell'immagine.
     2. `alt`: (Fondamentale) Testo alternativo per l'accessibilità se l'immagine non carica.
     3. `width` / `height`: Dimensioni dell'immagine.
-- **`<video>`**
+- **\<video>**
     1. `controls`: Mostra i tasti di riproduzione.
     2. `autoplay`: Fa partire il video da solo.
     3. `muted`: Toglie l'audio (spesso necessario per l'autoplay).
     4. `poster`: (Opzionale) Un'immagine da mostrare prima che il video parta.
     5. `type`: Formato (es. `video/mp4`).
-	- **`<source>`** (Dentro Video/Audio)
+	- **\<source>** (Dentro Video/Audio)
 	    1. `src`: Percorso del file multimediale.
 	    2. `type`: Formato del file (es. `video/mp4`).
 ## Embed (Iframe)
-- **`<iframe>`**
+- **\<iframe>**
     1. `src`: L'indirizzo del sito o video da incorporare.
     2. `width` / `height`: Dimensioni della finestra.
     3. `allow`: Permessi speciali:
@@ -363,12 +366,12 @@ ___
     4. `title`: Descrizione del contenuto per gli screen reader.
     5. `allowfullscreen`: Schermo intero
 ## Form (Moduli)
-- **`<form>`**
+- **\<form>**
     1. `action`: L'URL a cui inviare i dati.
     2. `method`: Il modo in cui i dati vengono spediti (`GET` o `POST`).
-- **`<label>`**
+- **\<label>**
     1. `for`: Deve corrispondere all' `id` dell'input per collegarli logicamente.
-- **`<input>`**
+- **\<input>**
     1. `type`: Determina il tipo di campo:
 	    1. `password`
 	    2. `text`
