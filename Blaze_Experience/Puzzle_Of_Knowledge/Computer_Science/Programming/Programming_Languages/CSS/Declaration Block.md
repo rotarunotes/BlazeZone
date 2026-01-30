@@ -15,7 +15,8 @@ Il "Box Model" definisce come ogni elemento occupa spazio nella pagina.
 	- `min-width` / `max-width`: Impostano limiti minimi e massimi della larghezza
 - `height`: **Altezza** dell'elemento (es. `20px`)
 	- `min-height` / `max-height`: Impostano limiti minimi e massimi dell'altezza
-- `margin`: Distanza **esterna** tra l'elemento e gli altri (es. `20px`).    
+- `margin`: Distanza **esterna** tra l'elemento e gli altri (es. `20px`). 
+	- **auto**: Aggiusta la distanza per essere al centro (affiancato da una grandezza)
 - `padding`: Distanza **interna** tra il bordo e il contenuto (es. `20px`).
 - `border`: Crea un bordo con, (es.`grandezza stile colore;`), Esempi di stile:
 	- **solid**: Linea continua.
@@ -27,7 +28,6 @@ Il "Box Model" definisce come ogni elemento occupa spazio nella pagina.
 - `box-shadow`: Aggiunge un'**ombra** (es. `0px 5px 10px 3px black`).
 
 ---
-
 # Tipografia e Testo
 
 Tutto ciò che riguarda la formattazione dei caratteri e dei paragrafi.
@@ -55,7 +55,6 @@ Tutto ciò che riguarda la formattazione dei caratteri e dei paragrafi.
 - `color`: Colore del testo.
 
 ---
-
 # Posizionamento e Layout
 
 Comandi che decidono dove un elemento appare nella pagina.
@@ -73,27 +72,114 @@ Comandi che decidono dove un elemento appare nella pagina.
 	- **right**
 	- **bottom**
 	- **left**
-- `clear`:
+- `clear`: Annulla l'effetto del float che hanno gli altri elementi.
 	- **both**: Evita che l'elemento salga di fianco a quelli fluttuanti.
 - `display`: 
 	- **none**: L'elemento sparisce e il resto della pagina si ricompatta come se non fosse mai esistito.
+	- **inline**: Si affianca ad altri elementi (come le parole in una frase), non inizia una nuova riga
+	- **block**: Prende tutta la larghezza disponibile (100% del contenitore), inizia sempre su una nuova riga.
+	- **inline-block**: L'elemento sta sulla stessa riga degli altri (come un inline), ma si comporta come un block per quanto riguarda le dimensioni.
+	- **flex**: Rende l'elemento flessibile in modo tale da gestire meglio il suo layout.
+		- Da usare con: justify-content e align-items.
+	- **grid**: Crea un layout come se fosse una tabella potenziata. https://www.w3schools.com/css/css_grid.asp
+		- **Fondamenta**:
+			1. Grid Container: L'elemento genitore su cui applichi `display: grid`.
+			2. Grid Item: I figli diretti del contenitore.
+			3. Grid Lines: Le linee invisibili (orizzontali e verticali) che separano le celle.
+			4. Grid Cell: Il singolo "quadratino" (l'unità base).
+			5. Grid Area: Un insieme di celle che formano un rettangolo (es. l'area della testata o della barra laterale).
+		- **Come utilizzarlo**:
+			- Grid permette di "disegnare" il layout con le parole:
+```css
+/*Grid Container*/
+.container {
+  display: grid;
+  /*Parte di progettazione della griglia*/
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 3px;
+  background-color: dodgerblue;
+  padding: 5px;
+}
+/*Grid Item*/
+.container div {
+  background-color: white;
+  padding: 10px;
+}
+/*Grid Item*/
+.container div.header {
+  grid-area: header;
+  text-align: center;
+}
+/*Grid Item*/
+.container div.menu {
+  grid-area: menu;
+}
+/*Grid Item*/
+.container div.content {
+  grid-area: content;
+}
+/*Grid Item*/
+.container div.footer {
+  grid-area: footer;
+  text-align: center;  
+}
+```
+![[Grid_css|1000]]
+
+- `justify-content`: Gestisce lo spazio tra e attorno gli elementi lungo l'asse x. (display: flex)
+	- **center**: Sposta tutti gli elementi al centro del contenitore. Lo spazio vuoto viene distribuito equamente a destra e a sinistra.
+	- **flex-start** (Default): Allinea gli elementi all'inizio del contenitore (solitamente a sinistra).
+	- **flex-end**: Allinea gli elementi alla fine del contenitore (solitamente a destra).
+	- **space-between**: Il primo elemento va all'inizio, l'ultimo alla fine, e lo spazio rimanente viene diviso equamente tra gli elementi centrali.
+	- **space-around**: Distribuisce lo spazio equamente attorno a ogni elemento (quindi lo spazio tra due elementi sarà il doppio rispetto a quello tra un elemento e il bordo).
+	- **space-evenly**: Lo spazio tra i bordi e tra ogni elemento è esattamente lo stesso.
+- `align-items`: Gestisce lo spazio tra e attorno gli elementi lungo l'asse y. (display: flex)
+	- **center**: Sposta tutti gli elementi al centro del contenitore. Lo spazio vuoto viene distribuito equamente a destra e a sinistra.
+	- **flex-start** (Default): Allinea gli elementi all'inizio del contenitore (solitamente a sinistra).
+	- **flex-end**: Allinea gli elementi alla fine del contenitore (solitamente a destra).
+	- **space-between**: Il primo elemento va all'inizio, l'ultimo alla fine, e lo spazio rimanente viene diviso equamente tra gli elementi centrali.
+	- **space-around**: Distribuisce lo spazio equamente attorno a ogni elemento (quindi lo spazio tra due elementi sarà il doppio rispetto a quello tra un elemento e il bordo).
+	- **space-evenly**: Lo spazio tra i bordi e tra ogni elemento è esattamente lo stesso.
 - `visibility`: 
 	- **hidden**: Nasconde l'elemento ma lascia lo spazio vuoto dove si trovava.
-- flexbox/grid
----
+- `overflow`: Controlla cosa succede quando il contenuto di un elemento è troppo grande per il contenitore che lo ospita.
+	- **visible**: Il contenuto esce fuori dai bordi (comportamento standard).
+	- **hidden**: Tutto quello che eccede i bordi viene tagliato e scompare.
+	- **scroll**: Aggiunge sempre le barre di scorrimento, anche se il contenuto ci sta perfettamente.
+	- **auto**: Aggiunge le barre di scorrimento solo se sono effettivamente necessarie.
 
+---
 # Sfondi e Colori
 
-- **`background-color`**: Colore di sfondo solido.
-- **`background-image`**: Immagine di sfondo (`url(...)`) o sfumature (`linear-gradient`).
-- **`background-size`**: `cover` adatta l'immagine per coprire tutto lo spazio.
-- **`background-position`**: Allineamento dell'immagine (es. `center`).
-- **`background-repeat`**: `no-repeat` evita che l'immagine si duplichi a mosaico.
+- `background-color`: Colore di sfondo solido.
+- `background-image`: Immagine di sfondo
+	- **url(...)**: Link alla immagine
+	- **linear-gradient**: un'immagine che consiste in una transizione progressiva tra due o più colori lungo una linea retta.
+	  https://www.w3schools.com/cssref/func_linear-gradient.php
+- `background-size`: Grandezza dell'immagine
+	- **cover**: adatta l'immagine per coprire tutto lo spazio.
+- `background-position`: Allineamento dell'immagine
+	- **center**: Immagine centrata
+- `background-repeat`: 
+	- **no-repeat**: evita che l'immagine si duplichi a mosaico.
 
 ---
-
 # Animazioni e Responsività
 
-- **`transition`**: Crea animazioni fluide quando una proprietà cambia (es. `transition: color 10s`).
-- **`@media screen and (max-width: ...)`**: Permette di cambiare lo stile in base alla dimensione dello schermo (es. per cellulari).
+- `transition`: Crea animazioni fluide quando una proprietà cambia. (da usare con :hover)
+	- transition: **proprietà**, **durata**, **curva di velocità**, **ritardo**
+	- **Proprietà**: Definisce quale caratteristica vuoi animare. (es. color)
+	- **Durata**: Definisce il tempo di durata dell'animazione, (es. 3s oppure 3ms)
+	- **Curva di velocità (Timing function)**: Definisce il "ritmo".
+	    - `linear`: Velocità costante.
+	    - `ease-in`: Parte lento e accelera.
+	    - `ease-out`: Parte veloce e rallenta alla fine (molto naturale).
+	- **Ritardo**: Definisce il tempo del ritardo
+	  https://www.w3schools.com/css/css3_transitions.asp
+- `@media screen and (max-width: ...)`: Permette di cambiare lo stile in base alla dimensione dello schermo (es. per cellulari).
+  
 ---

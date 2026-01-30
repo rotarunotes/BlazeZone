@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Syntax"
+              "title": "Semantic"
             }
           },
           {
@@ -67,10 +67,40 @@
             "id": "681b194d106b50a6",
             "type": "leaf",
             "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration Block.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Declaration Block"
+            }
+          },
+          {
+            "id": "e0b42f7619e6d6a1",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Grid_css.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Grid_css"
+            }
+          },
+          {
+            "id": "cbddfd6fcdada182",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setup_Archive/Obsidian_Base/Formatting.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Formatting"
             }
           }
         ],
@@ -275,15 +305,20 @@
   },
   "active": "681b194d106b50a6",
   "lastOpenFiles": [
-    "Corso ingenieria.md",
-    "conflict-files-obsidian-git.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Grid_css.md",
+    "Setup_Archive/Obsidian_Base/Formatting.md",
+    "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
+    "Setup_Archive/Obsidian_Base/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration Block.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260130190149_157.png",
+    "Corso ingenieria.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+    "Senza nome.base",
+    "conflict-files-obsidian-git.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/README.md",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260128230853_089.png",
     "Setup_Archive/Plugin/Excalidraw/Selettore_css.md",
-    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
@@ -299,10 +334,7 @@
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Class.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Future.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/ARP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DNS.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Untitled.base",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/form_html.md",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260127134642_717.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted image 20260115182958.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted image 20260115182951.png",
@@ -311,13 +343,11 @@
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted image 20260115181754.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260115181748_112.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260115173505_795.png",
-    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260115181635_397.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming",
     "Setup_Archive/Images/I_Compiuter_Science",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming",
     "Setup_Archive/Images/I_Programming",
-    "Senza nome.base",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML",
     "Setup_Archive/Images/I_Systems_And_Network",
