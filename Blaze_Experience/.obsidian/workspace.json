@@ -62,9 +62,19 @@
               "icon": "lucide-file",
               "title": "Corso ingenieria"
             }
+          },
+          {
+            "id": "681b194d106b50a6",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -263,11 +273,11 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "846b40e147255491",
+  "active": "681b194d106b50a6",
   "lastOpenFiles": [
+    "Corso ingenieria.md",
     "conflict-files-obsidian-git.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration Block.md",
-    "Corso ingenieria.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/README.md",
