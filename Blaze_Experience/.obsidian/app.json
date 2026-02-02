@@ -3,10 +3,10 @@
   "promptDelete": false,
   "pdfExportSettings": {
     "includeName": true,
-    "pageSize": "Letter",
+    "pageSize": "A4",
     "landscape": false,
     "margin": "0",
-    "downscalePercent": 50
+    "downscalePercent": 56
   },
   "trashOption": "local",
   "showUnsupportedFiles": true
