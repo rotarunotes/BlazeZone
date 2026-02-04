@@ -19,18 +19,6 @@
             }
           },
           {
-            "id": "2cb8aed3e914dc5f",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Setup_Archive/Plugin/Excalidraw/D_Math/Eventi_Elementari.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Eventi_Elementari"
-            }
-          },
-          {
             "id": "c3c509827a3a95ed",
             "type": "leaf",
             "state": {
@@ -57,13 +45,13 @@
             }
           },
           {
-            "id": "d9756b67fe5f8c2a",
+            "id": "3a28c88a715a0b36",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Puzzle_Of_Knowledge/Math/Probability.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -71,7 +59,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -271,10 +259,26 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "d9756b67fe5f8c2a",
+  "active": "3a28c88a715a0b36",
   "lastOpenFiles": [
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Drawing .md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Eventi_Compatibili_Incompatibili.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+    "Puzzle_Of_Knowledge/Math/Probability.md",
+    "Puzzle_Of_Knowledge/Math/Statistica.md",
+    "Setup_Archive/Rules/Short_Cut.md",
+    "Setup_Archive/Obsidian_Base/Formatting.md",
+    "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
+    "Setup_Archive/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration_Block.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Drawing .md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Albero_Di_Esempi.md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Schema_Assioma_Probabilità.md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Drawing .restored.md",
@@ -282,28 +286,13 @@
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Selettore_css.md",
     "Pasted Image 20260204165004_033.png",
     "Setup_Archive/Images/I_Math/Pasted Image 20260204162356_255.png",
-    "Puzzle_Of_Knowledge/Math/Probability.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DHCP.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Senza nome 1",
     "Senza nome",
-    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
     "Puzzle_Of_Knowledge/Math/Integral/README.md",
-    "Puzzle_Of_Knowledge/Math/Statistica.md",
     "Inglese.md",
-    "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Grid_css.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration Block.md",
-    "Corso ingenieria.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
-    "pdf.md",
-    "Setup_Archive/Obsidian_Base/Formatting.md",
-    "Setup_Archive/Obsidian_Base/README.md",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260130190149_157.png",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
     "Senza nome.base",
-    "conflict-files-obsidian-git.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/README.md",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260128230853_089.png",
     "Untitled.base",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260127134642_717.png",
