@@ -130,6 +130,23 @@ p(E_2 - E_1) = p(E_2) - p(E_1)
 $$
 Se l'evento $E_1$ è **interamente contenuto** dentro $E_2$ (**sottoinsieme**), allora la loro intersezione coincide esattamente con $E_1 = E_1 \cap E_2$.
 
+> [!Esempio]
+> L'insieme di tutti i risultati possibili (lo spazio campionario) è $\{1, 2, 3, 4, 5, 6\}$.
+> Definiamo due eventi in modo che uno sia contenuto nell'altro:
+> - **Evento $E_2$ (Il "contenitore"):** Esce un numero pari.
+>     $E_2 = \{2, 4, 6\}$
+>     La probabilità è $p(E_2) = \frac{3}{6} = 0,5$.
+> - **Evento $E_1$ (Il "sottoinsieme"):** Esce il numero 2.
+>     $E_1 = \{2\}$
+>     La probabilità è $p(E_1) = \frac{1}{6} \approx 0,16$.
+>___
+> Siccome il numero 2 è un numero pari, è ovvio che $E_1 \subseteq E_2$. In questo caso, l'intersezione $E_1 \cap E_2$ è proprio $\{2\}$, ovvero $E_1$ stesso.
+> La Differenza
+> Ora calcoliamo l'evento **$E_2 - E_1$**. Questo rappresenta l'evento: "Esce un numero pari, ma **non** il 2"
+> 1. Sottraendo gli elementi: $\{2, 4, 6\} - \{2\} = \{4, 6\}$.
+> 2. La probabilità di questo nuovo evento è $\frac{2}{6}$.
+> Usando la formula:
+> $$p(E_2 - E_1) = p(E_2) - p(E_1) = \frac{3}{6} - \frac{1}{6} = \frac{2}{6}$$
 ___
 # Somma Logica Di Eventi
 

@@ -52,7 +52,7 @@
               "state": {
                 "file": "Puzzle_Of_Knowledge/Math/Probability.md",
                 "mode": "preview",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "Probability"
