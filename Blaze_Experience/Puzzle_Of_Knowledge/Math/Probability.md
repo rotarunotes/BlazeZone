@@ -239,6 +239,7 @@ $$p(E_1 \cap E_2) = p(E_1) \cdot p(E_2) = \frac{6}{10} \cdot \frac{6}{10} = \fra
 	- **Indipendenti** se il verificarsi di uno non influenza la probabilità di verificarsi dell'altro (Lancio di una moneta)
 	- **Dipendenti** in caso contrario, (In un sacco estrarre più biglie senza rimetterle nel sacco)
 
+___
 # Schema Delle Prove Ripetute (o di Bernoulli)
 
 - Dato un esperimento **aleatorio** ripetuto nelle stesse condizioni $n$ volte e indicato con $E$ un evento che rappresenta il successo dell'esperimento e ha probabilità costante $p$ di verificarsi e probabilità $q = 1 - p$ di non verificarsi, la probabilità di ottenere $k$ successi su $n$ prove è:
@@ -284,15 +285,15 @@ ___
 
 # Formulario
 
-|**Concetto**|**Formula**|**Note**|
-|---|---|---|
-|**Definizione Classica**|$p(E) = \frac{f}{u}$|$f$: casi favorevoli; $u$: casi possibili.|
-|**Evento Contrario**|$p(\overline{E}) = 1 - p(E)$|La somma $p(E) + p(\overline{E})$ è sempre 1.|
-|**Assiomi di Base**|$0 \le p(E) \le 1$|$0$ (impossibile), $1$ (certo).|
-|**Somma Logica (Unione)**|$p(E_1 \cup E_2) = p(E_1) + p(E_2) - p(E_1 \cap E_2)$|Sottrai l'intersezione se sono **compatibili**.|
-|**Eventi Incompatibili**|$p(E_1 \cup E_2) = p(E_1) + p(E_2)$|Quando $E_1 \cap E_2 = \emptyset$.|
-|**Probabilità Condizionata**|$p(E_2 \vert E_1) = \frac{p(E_1 \cap E_2)}{p(E_1)}$|Probabilità di $E_2$ sapendo che $E_1$ è avvenuto.|
-|**Prodotto Logico (Intersezione)**|$p(E_1 \cap E_2) = p(E_1) \cdot p(E_2 \vert E_1)$|Usata per eventi **dipendenti**.|
-|**Eventi Indipendenti**|$p(E_1 \cap E_2) = p(E_1) \cdot p(E_2)$|Il verificarsi di uno non influenza l'altro.|
-|**Coefficiente Binomiale**|$\binom{n}{k} = \frac{n!}{k!(n-k)!}$|Modi di scegliere $k$ successi in $n$ prove.|
-|**Prove Ripetute (Bernoulli)**|$p_{(k,n)} = \binom{n}{k} p^k \cdot q^{n-k}$|$p$: successo; $q = 1-p$: insuccesso.|
+| **Concetto**                       | **Formula**                                           | **Note**                                           |
+| ---------------------------------- | ----------------------------------------------------- | -------------------------------------------------- |
+| **Definizione Classica**           | $p(E) = \frac{f}{u}$                                  | $f$: casi favorevoli; $u$: casi possibili.         |
+| **Evento Contrario**               | $p(\overline{E}) = 1 - p(E)$                          | La somma $p(E) + p(\overline{E})$ è sempre 1.      |
+| **Assiomi di Base**                | $0 \le p(E) \le 1$                                    | $0$ (impossibile), $1$ (certo).                    |
+| **Somma Logica (Unione)**          | $p(E_1 \cup E_2) = p(E_1) + p(E_2) - p(E_1 \cap E_2)$ | Sottrai l'intersezione se sono **compatibili**.    |
+| **Eventi Incompatibili**           | $p(E_1 \cup E_2) = p(E_1) + p(E_2)$                   | Quando $E_1 \cap E_2 = \emptyset$.                 |
+| **Probabilità Condizionata**       | $p(E_2 \vert E_1) = \frac{p(E_1 \cap E_2)}{p(E_1)}$   | Probabilità di $E_2$ sapendo che $E_1$ è avvenuto. |
+| **Prodotto Logico (Intersezione)** | $p(E_1 \cap E_2) = p(E_1) \cdot p(E_2 \vert E_1)$     | Usata per eventi **dipendenti**.                   |
+| **Eventi Indipendenti**            | $p(E_1 \cap E_2) = p(E_1) \cdot p(E_2)$               | Il verificarsi di uno non influenza l'altro.       |
+| **Coefficiente Binomiale**         | $\binom{n}{k} = \frac{n!}{k!(n-k)!}$                  | Modi di scegliere $k$ successi in $n$ prove.       |
+| **Prove Ripetute (Bernoulli)**     | $p_{(k,n)} = \binom{n}{k} p^k \cdot q^{n-k}$          | $p$: successo; $q = 1-p$: insuccesso.              |
