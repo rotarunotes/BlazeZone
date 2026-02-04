@@ -2,7 +2,7 @@ Data: 2026-02-04
 [](./README.md)
 #Puzzle_Of_Knowledge/Math
 ___
-###### parte non fatta che non chiede
+###### parte non fatta che non chiede 4b
 p1400 probabilità e calcolo combinatorio
 p1401-1404 tutto
 p1415 in poi
