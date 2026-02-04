@@ -6,15 +6,82 @@
       {
         "id": "c8864cc7e3650ae7",
         "type": "tabs",
+        "dimension": 99.99999999999999,
         "children": [
           {
             "id": "7ef86a56d7b45c32",
             "type": "leaf",
             "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Math/Probability.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Probability"
+            }
+          },
+          {
+            "id": "5aa7e123a7da56f9",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Setup_Archive/Plugin/Excalidraw/Drawing .md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing"
+            }
+          },
+          {
+            "id": "10457b2c00a8f71e",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Setup_Archive/Plugin/Excalidraw/Drawing .restored.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing .restored"
+            }
+          },
+          {
+            "id": "2cb8aed3e914dc5f",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Setup_Archive/Plugin/Excalidraw/Eventi_Elementari.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Eventi_Elementari"
+            }
+          },
+          {
+            "id": "c3c509827a3a95ed",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Setup_Archive/Plugin/Excalidraw/Eventi_Compatibili_Incompatibili.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Eventi_Compatibili_Incompatibili"
+            }
+          },
+          {
+            "id": "8221b32f50f62c57",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Definite_Integral"
             }
           }
         ]
@@ -84,7 +151,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338
+    "width": 338,
+    "collapsed": true
   },
   "right": {
     "id": "dd71b14831b0ad51",
@@ -196,7 +264,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 205
+    "width": 205,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,6 +287,22 @@
   },
   "active": "7ef86a56d7b45c32",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DHCP.md",
+    "Puzzle_Of_Knowledge/Math/Probability.md",
+    "Setup_Archive/Plugin/Excalidraw/Eventi_Elementari.md",
+    "Setup_Archive/Plugin/Excalidraw/Eventi_Compatibili_Incompatibili.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
+    "Setup_Archive/Plugin/Excalidraw/Drawing .restored.md",
+    "Setup_Archive/Plugin/Excalidraw/Schema_Assioma_Probabilità.md",
+    "Senza nome 1",
+    "Senza nome",
+    "Setup_Archive/Plugin/Excalidraw/Albero_Di_Esempi.md",
+    "Pasted Image 20260204165004_033.png",
+    "Pasted Image 20260204162356_255.png",
+    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
+    "Puzzle_Of_Knowledge/Math/Integral/README.md",
+    "Puzzle_Of_Knowledge/Math/Statistica.md",
     "Inglese.md",
     "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Grid_css.md",
@@ -235,18 +320,6 @@
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260128230853_089.png",
     "Setup_Archive/Plugin/Excalidraw/Selettore_css.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/Riassunto.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DHCP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Function.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Libraries.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Io.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Class.md",
     "Untitled.base",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260127134642_717.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted image 20260115182958.png",
@@ -254,16 +327,12 @@
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260115182341_633.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260115182317_027.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted image 20260115181754.png",
-    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260115181748_112.png",
-    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260115173505_795.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming",
     "Setup_Archive/Images/I_Compiuter_Science",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming",
     "Setup_Archive/Images/I_Programming",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML",
-    "Setup_Archive/Images/I_Systems_And_Network",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]
 }
