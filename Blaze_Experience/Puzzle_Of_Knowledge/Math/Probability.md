@@ -216,11 +216,12 @@ ___
 
 # Probabilità Condizionata
 
-- La probabilità condizionata di un evento $E_2$ rispetto a un evento $E_1$, non impossibile è:
+- La probabilità condizionata di un evento $E_2$ rispetto a un evento $E_1$, non impossibile, ma non è detto che si verifichi:
 $$
 p(E_2 | E_1) = \frac{p(E_2 \cap E_1)}{p(E_1)}, \quad \text{con } p(E_1) \neq 0
 $$
 La | si legge: "dato che"
+In parole povere: La probabilità che avvenga $E_2$ se $E_1$ è avvenuto
 
 > [!Esempio]
 > Immagina un'urna con 3 palline rosse (R) e 2 nere (N).
@@ -242,6 +243,7 @@ ___
 $$p(E_1 \cap E_2) = p(E_1) \cdot p(E_2 | E_1)$$
 	In particolare, nel caso di eventi **indipendenti**:
 $$p(E_1 \cap E_2) = p(E_1) \cdot p(E_2)$$
+In parole povere: La probabilità che $E_1$ e $E_2$ di verifichino **entrambi**
 
 > [!Esempio]
 > Eventi **Dipendenti** (Senza reinserimento)
@@ -317,15 +319,20 @@ ___
 
 # Formulario
 
-| **Concetto**                       | **Formula**                                           | **Note**                                           |
-| ---------------------------------- | ----------------------------------------------------- | -------------------------------------------------- |
-| **Definizione Classica**           | $p(E) = \frac{f}{u}$                                  | $f$: casi favorevoli; $u$: casi possibili.         |
-| **Evento Contrario**               | $p(\overline{E}) = 1 - p(E)$                          | La somma $p(E) + p(\overline{E})$ è sempre 1.      |
-| **Assiomi di Base**                | $0 \le p(E) \le 1$                                    | $0$ (impossibile), $1$ (certo).                    |
-| **Somma Logica (Unione)**          | $p(E_1 \cup E_2) = p(E_1) + p(E_2) - p(E_1 \cap E_2)$ | Sottrai l'intersezione se sono **compatibili**.    |
-| **Eventi Incompatibili**           | $p(E_1 \cup E_2) = p(E_1) + p(E_2)$                   | Quando $E_1 \cap E_2 = \emptyset$.                 |
-| **Probabilità Condizionata**       | $p(E_2 \vert E_1) = \frac{p(E_1 \cap E_2)}{p(E_1)}$   | Probabilità di $E_2$ sapendo che $E_1$ è avvenuto. |
-| **Prodotto Logico (Intersezione)** | $p(E_1 \cap E_2) = p(E_1) \cdot p(E_2 \vert E_1)$     | Usata per eventi **dipendenti**.                   |
-| **Eventi Indipendenti**            | $p(E_1 \cap E_2) = p(E_1) \cdot p(E_2)$               | Il verificarsi di uno non influenza l'altro.       |
-| **Coefficiente Binomiale**         | $\binom{n}{k} = \frac{n!}{k!(n-k)!}$                  | Modi di scegliere $k$ successi in $n$ prove.       |
-| **Prove Ripetute (Bernoulli)**     | $p_{(k,n)} = \binom{n}{k} p^k \cdot q^{n-k}$          | $p$: successo; $q = 1-p$: insuccesso.              |
+| **Concetto**                     | **Formula**                                           | **Note**                                                                                                 |
+| -------------------------------- | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **Definizione Classica**         | $p(E) = \frac{f}{u}$                                  | $f$: casi favorevoli; $u$: casi possibili.                                                               |
+| **Evento Contrario**             | $p(\overline{E}) = 1 - p(E)$                          | La somma $p(E) + p(\overline{E})$ è sempre 1.                                                            |
+| **Assiomi di Base**              | $0 \le p(E) \le 1$                                    | $0$ (impossibile), $1$ (certo).                                                                          |
+| **Differenza tra eventi in cu**i | $p(E_2 - E_1) = p(E_2) - p(E_1)$                      | $E_1$ è sottoinsieme di $E_2$                                                                            |
+| **Somma Logica, compatibile**    | $p(E_1 \cup E_2) = p(E_1) + p(E_2) - p(E_1 \cap E_2)$ | Sottrai l'intersezione se sono **compatibili**.                                                          |
+| **Eventi Incompatibili**         | $p(E_1 \cup E_2) = p(E_1) + p(E_2)$                   | Quando $E_1 \cap E_2 = \emptyset$.                                                                       |
+| **Probabilità Condizionata**     | $p(E_2 \vert E_1) = \frac{p(E_1 \cap E_2)}{p(E_1)}$   | Probabilità di $E_2$ sapendo che $E_1$ è **avvenuto**, non necessariamente che sia stato **verificato**. |
+| **Prodotto Logico, dipendenti**  | $p(E_1 \cap E_2) = p(E_1) \cdot p(E_2 \vert E_1)$     | Usata per eventi **dipendenti**.                                                                         |
+| **Eventi Indipendenti**          | $p(E_1 \cap E_2) = p(E_1) \cdot p(E_2)$               | Il verificarsi di uno non influenza l'altro.                                                             |
+| **Coefficiente Binomiale**       | $\binom{n}{k} = \frac{n!}{k!(n-k)!}$                  | Modi di scegliere $k$ successi in $n$ prove.                                                             |
+| **Prove Ripetute (Bernoulli)**   | $p_{(k,n)} = \binom{n}{k} p^k \cdot q^{n-k}$          | $p$: successo; $q = 1-p$: insuccesso.                                                                    |
+
+
+
+
