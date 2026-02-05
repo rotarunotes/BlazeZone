@@ -55,7 +55,8 @@ $$
 > $p(E) = \frac{3}{6}= \frac{1}{2} = 50\%$ 
 > 
 > Possiamo fare le seguenti osservazioni:
-> Dato che $f \le u$, allora:
+
+Dato che $f \le u$, allora:
 
 $$
 0 \le p(E) \le 1
@@ -147,6 +148,7 @@ Se l'evento $E_1$ è **interamente contenuto** dentro $E_2$ (**sottoinsieme**), 
 > 2. La probabilità di questo nuovo evento è $\frac{2}{6}$.
 > Usando la formula:
 > $$p(E_2 - E_1) = p(E_2) - p(E_1) = \frac{3}{6} - \frac{1}{6} = \frac{2}{6}$$
+
 ___
 # Somma Logica Di Eventi
 
