@@ -6,7 +6,6 @@
       {
         "id": "c8864cc7e3650ae7",
         "type": "tabs",
-        "dimension": 99.99999999999999,
         "children": [
           {
             "id": "7ef86a56d7b45c32",
@@ -59,7 +58,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -238,8 +237,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 205,
-    "collapsed": true
+    "width": 205
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -259,11 +257,11 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "3a28c88a715a0b36",
+  "active": "c3c509827a3a95ed",
   "lastOpenFiles": [
     "Setup_Archive/Plugin/Excalidraw/D_Math/Eventi_Compatibili_Incompatibili.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Puzzle_Of_Knowledge/Math/Probability.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Puzzle_Of_Knowledge/Math/Statistica.md",
     "Setup_Archive/Rules/Short_Cut.md",
     "Setup_Archive/Obsidian_Base/Formatting.md",
