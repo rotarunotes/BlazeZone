@@ -148,7 +148,7 @@ La logica segue il senso orario (partendo dall'alto):
 
 ___
 
-# Conflitti e Specificità
+# Conflitti
 
 Quando due o più regole CSS si applicano allo stesso elemento, il browser decide quale vincere seguendo una scala di potere (dal più debole al più forte):
 1. **L'ordine di scrittura**: Se due regole hanno lo stesso peso, vince l'**ultima** indicata nel codice.

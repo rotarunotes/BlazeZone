@@ -37,4 +37,6 @@ Esistono tre modi per collegare il CSS all'HTML:
 ___
 # Indice
 
-[[Semantic]]
+# Indice
+- [Semantic](Semantic.md)
+- [Declaration_Block](Declaration_block)
