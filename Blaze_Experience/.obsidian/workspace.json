@@ -61,28 +61,18 @@
             "id": "d332140b87b7fb23",
             "type": "leaf",
             "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
-            }
-          },
-          {
-            "id": "3ae06c34c4c1d159",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "title": "Consegna N.5- tipologie di JOIN"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -281,7 +271,7 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "3ae06c34c4c1d159",
+  "active": "d332140b87b7fb23",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Tipi_Di_Input.md",
