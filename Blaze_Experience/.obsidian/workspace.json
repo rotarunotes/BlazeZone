@@ -56,9 +56,19 @@
               "icon": "lucide-file",
               "title": "Probability"
             }
+          },
+          {
+            "id": "d332140b87b7fb23",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -257,7 +267,7 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "c3c509827a3a95ed",
+  "active": "d332140b87b7fb23",
   "lastOpenFiles": [
     "Setup_Archive/Plugin/Excalidraw/D_Math/Eventi_Compatibili_Incompatibili.md",
     "Puzzle_Of_Knowledge/Math/Probability.md",
