@@ -11,6 +11,8 @@ ___
 - [[#Video]]
 - [[#Embed]]
 - [[#Tabelle]]
+- [[#Inputs]]
+- [[#Form]]
 
 - [[#Attributi]]
 ___
@@ -242,6 +244,20 @@ Le tabelle organizzano i dati in righe e colonne:
 ![[Tabella_HTML|1000]]
 
 ___
+# Inputs
+``` HTML
+<input type="text" placeholder="Nome">
+<input type="password" placeholder="Password">
+<input type="email" placeholder="Email">
+<input type="number" min="1" max="10">
+<input type="date">
+<input type="color">
+<input type="checkbox"> Accetto i termini
+```
+[[#Attributi]]
+![[Tipi_Di_Input|300]]
+
+___
 # Form
 Tag: `<form>`
 I form permettono agli utenti di inviare dati a un server. 
@@ -311,6 +327,7 @@ ___
 - [[#Liste]]
 - [[#Media e Link]]
 - [[#Embed (Iframe)]]
+- [[#Input]]
 - [[#Form (Moduli)]]
 
 ## Classi e ID
@@ -365,6 +382,17 @@ ___
 		6. `picture-in-picture`: permette di rimpicciolire il video in un angolo dello schermo mentre continui a navigare.
     4. `title`: Descrizione del contenuto per gli screen reader.
     5. `allowfullscreen`: Schermo intero
+## Input
+- **\<input>**
+	- `type`: Determina il tipo di campo:
+		1. `text`: Il campo standard per inserire una riga di testo (es. Nome o Cognome).
+		2. `password`: Simile al testo, ma i caratteri vengono mascherati con dei puntini per sicurezza.
+		3. `email`: Verifica automaticamente che il testo inserito abbia il formato di un indirizzo email (presenza della `@` e del punto).
+		4. `number`: Accetta solo numeri e spesso mostra delle freccette per aumentare o diminuire il valore. Si possono usare gli attributi `min` e `max`.
+		5. `date`: Apre un mini-calendario nativo del browser per selezionare giorno, mese e anno.
+		6. `color`: Apre un selettore di colori (color picker) che restituisce il codice esadecimale del colore scelto.
+		7. `checkbox`: Una casella da spuntare, usata per scelte multiple o per accettare termini e condizioni.
+	- `placeholder`: Testo visualizzato nell'input
 ## Form (Moduli)
 - **\<form>**
     1. `action`: L'URL a cui inviare i dati.
