@@ -24,20 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "Untitled.md",
+      "timestamp": 1770661427373
+    },
+    {
+      "filepath": "Senza nome.base",
+      "timestamp": 1770661414823
+    },
+    {
+      "filepath": "bo.md",
+      "timestamp": 1770661404262
+    },
+    {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/README.md",
       "timestamp": 1770588922481
     },
     {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Statements.md",
       "timestamp": 1770326660365
-    },
-    {
-      "filepath": "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
-      "timestamp": 1770326660213
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Math/Probability.md",
-      "timestamp": 1770326660001
     }
   ],
   "bookmarkedFileStore": [],
