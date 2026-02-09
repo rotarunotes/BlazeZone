@@ -24,6 +24,10 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/README.md",
+      "timestamp": 1770588922481
+    },
+    {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Statements.md",
       "timestamp": 1770326660365
     },
@@ -38,10 +42,6 @@
     {
       "filepath": "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
       "timestamp": 1770326659834
-    },
-    {
-      "filepath": "Setup_Archive/Plugin/Excalidraw/D_Math/Eventi_Compatibili_Incompatibili.md",
-      "timestamp": 1770326659642
     }
   ],
   "bookmarkedFileStore": [],

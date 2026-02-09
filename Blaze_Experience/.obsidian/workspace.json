@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "47338cece47f5055",
+        "id": "8d8cab8bf57da02a",
         "type": "tabs",
         "children": [
           {
-            "id": "23b25ddcf88dd7ac",
+            "id": "54fd173db1705850",
             "type": "leaf",
             "state": {
               "type": "home-tab-view",
@@ -16,21 +16,8 @@
               "icon": "search",
               "title": "Home tab"
             }
-          },
-          {
-            "id": "d5999c8eeebe40ab",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Note di rilascio 1.11.7"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -53,7 +40,7 @@
                 "autoReveal": true
               },
               "icon": "lucide-folder-closed",
-              "title": "Esplora risorse"
+              "title": "Files"
             }
           },
           {
@@ -89,8 +76,8 @@
             "state": {
               "type": "trash-explorer",
               "state": {},
-              "icon": "trash",
-              "title": "Trash explorer"
+              "icon": "lucide-ghost",
+              "title": "trash-explorer"
             }
           }
         ]
@@ -143,8 +130,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           },
           {
@@ -203,6 +190,16 @@
               "icon": "lucide-archive",
               "title": "Tutte le proprietà"
             }
+          },
+          {
+            "id": "14af93c162431e69",
+            "type": "leaf",
+            "state": {
+              "type": "chronology-calendar-view",
+              "state": {},
+              "icon": "clock",
+              "title": "Chronology"
+            }
           }
         ],
         "currentTab": 3
@@ -213,24 +210,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Crea nuova Base": false,
-      "switcher:Apri selezione rapida": true,
-      "graph:Apri vista grafo": true,
-      "canvas:Crea nuova lavagna": true,
-      "daily-notes:Apri nota del giorno": true,
-      "templates:Inserisci modello": true,
-      "obsidian-git:Open Git source control": true,
-      "command-palette:Apri riquadro comandi": true,
-      "templater-obsidian:Templater": true,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-trash-explorer:Open trash explorer": false,
+      "templater-obsidian:Templater": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-git:Open Git source control": false,
       "obsidian-full-calendar:Open Full Calendar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "omnisearch:Omnisearch": true,
-      "chronology:Open Chronology": true,
-      "obsidian-trash-explorer:Open trash explorer": false
+      "chronology:Open Chronology": false
     }
   },
-  "active": "d5999c8eeebe40ab",
+  "active": "54fd173db1705850",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Statements.md",
     "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
     "Puzzle_Of_Knowledge/Math/Probability.md",
@@ -252,7 +250,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration_Block.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
