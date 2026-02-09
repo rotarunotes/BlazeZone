@@ -18,19 +18,34 @@
             }
           },
           {
-            "id": "d5999c8eeebe40ab",
+            "id": "44b10109519c4256",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.11.7"
+                "file": "Corso ingenieria.md",
+                "mode": "preview",
+                "source": true
               },
-              "icon": "lucide-book-up",
-              "title": "Note di rilascio 1.11.7"
+              "icon": "lucide-file",
+              "title": "Corso ingenieria"
+            }
+          },
+          {
+            "id": "cfed5bd26173081b",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "Senza nome.base",
+                "viewName": "Tabella"
+              },
+              "icon": "lucide-table",
+              "title": "Senza nome"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -209,7 +224,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 205
+    "width": 206.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -229,11 +244,23 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "d5999c8eeebe40ab",
+  "active": "3f7eb6d39b67a444",
   "lastOpenFiles": [
+    "bo.md",
+    "tolc.md",
+    "Corso ingenieria.md",
+    "Senza nome.base",
+    "Inglese.md",
+    "pdf.md",
+    "GitHub.md",
+    "Puzzle_Of_Knowledge/Math/Probability.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems/Theory",
+    "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems",
+    "Puzzle_Of_Knowledge/Senza nome",
+    "Progettazione.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Statements.md",
     "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
-    "Puzzle_Of_Knowledge/Math/Probability.md",
     "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Eventi_Compatibili_Incompatibili.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/README.md",
@@ -242,7 +269,6 @@
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Tipi_Di_Input.md",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260205094039_033.png",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS",
-    "Progettazione.md",
     "Puzzle_Of_Knowledge/Math/Statistica.md",
     "Setup_Archive/Rules/Short_Cut.md",
     "Setup_Archive/Obsidian_Base/Formatting.md",
@@ -252,19 +278,11 @@
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration_Block.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Drawing .md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Albero_Di_Esempi.md",
     "Pasted Image 20260204165004_033.png",
     "Setup_Archive/Images/I_Math/Pasted Image 20260204162356_255.png",
     "Senza nome 1",
     "Senza nome",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260130190149_157.png",
-    "Senza nome.base",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260128230853_089.png",
     "Untitled.base",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260127134642_717.png",
@@ -274,9 +292,6 @@
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260115182317_027.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming",
-    "Setup_Archive/Images/I_Compiuter_Science",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming",
-    "Setup_Archive/Images/I_Programming",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]
 }
