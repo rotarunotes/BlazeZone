@@ -122,8 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 399,
-    "collapsed": true
+    "width": 399
   },
   "right": {
     "id": "dd71b14831b0ad51",
@@ -276,7 +275,7 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "a89ac599366c08a1",
+  "active": "602b77949f57ebe8",
   "lastOpenFiles": [
     "Setup_Archive/Plugin/Excalidraw/Schema_Bande_Interferenze.md",
     "Pasted Image 20260210142514_864.png",
