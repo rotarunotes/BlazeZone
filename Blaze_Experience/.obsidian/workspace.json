@@ -34,9 +34,41 @@
               "icon": "lucide-file",
               "title": "WLAN"
             }
+          },
+          {
+            "id": "32081f4d745ca36a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.5"
+            }
+          },
+          {
+            "id": "6e6d82561b54b018",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
+          },
+          {
+            "id": "3e0c9c0ee9304258",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -236,8 +268,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -257,7 +288,7 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "d2359ff5d3937e68",
+  "active": "3e0c9c0ee9304258",
   "lastOpenFiles": [
     "Senza nome.base",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Propagazione_Del_Segnale.md",
