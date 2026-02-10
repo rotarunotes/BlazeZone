@@ -14,6 +14,8 @@ ___
 | ctrl + alt + a    | Nuovo disegno       |
 | ctrl + numpad + 1 | Codice              |
 | ctrl + nupad + 2  | latex               |
+| ctrl + q          | Call out            |
+
 
 ___
 # Titolo 2

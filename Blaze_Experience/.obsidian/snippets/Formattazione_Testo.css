@@ -4,40 +4,59 @@ Colori Personalizzati Obsidian
 ==============================
 */
 
-/* ======= Titoli H1-H6 ======= */
-.markdown-rendered h1, .cm-header.cm-header-1 { color: #f06a52; }
-.markdown-rendered h2, .cm-header.cm-header-2 { color: #fc9106; }
-.markdown-rendered h3, .cm-header.cm-header-3 { color: #fffc3c; }
-.markdown-rendered h4, .cm-header.cm-header-4 { color: #35ca18; }
-.markdown-rendered h5, .cm-header.cm-header-5 { color: #2744e7; }
-.markdown-rendered h6, .cm-header.cm-header-6 { color: #11ece1; }
+/* ======= Titoli H1-H6 (Partenza Verde) ======= */
+/* 1) Verde Neon - Energico e fresco per l'apertura */
+.markdown-rendered h1, .cm-header.cm-header-1 { color: #52ff82; } 
+
+/* 2) Ciano Cristallo - Perfetto per i contenuti tecnici */
+.markdown-rendered h2, .cm-header.cm-header-2 { color: #00f5ff; } 
+
+/* 3) Blu Cielo - Si collega ai tuoi link interni */
+.markdown-rendered h3, .cm-header.cm-header-3 { color: #70a1ff; } 
+
+/* 4) Viola Elettrico - Molto visibile sul fondo scuro */
+.markdown-rendered h4, .cm-header.cm-header-4 { color: #bf5af2; } 
+
+/* 5) Rosa Magenta - Si abbina al tuo corsivo #b11a60 */
+.markdown-rendered h5, .cm-header.cm-header-5 { color: #ff60ad; } 
+
+/* 6) Rosso Fuoco - Una chiusura forte e vibrante */
+.markdown-rendered h6, .cm-header.cm-header-6 { color: #ff4d4d; }
 
 /* ======= Formattazione Testo ======= */
+
+/* Grassetto - Arancio vibrante (ponte tra H1 e H2) */
+.markdown-rendered strong, .cm-strong {
+  color: #ffb347;
+}
+
+/* Corsivo - Rosa scuro (esistente) */
 .markdown-rendered em, .cm-em {
-  color: #b11a60; /* Corsivo */
+  color: #b11a60;
+}
+
+/* Evidenziato - Lime Neon (ponte tra H3 e H4) */
+.markdown-rendered mark {
+  background-color: #dfff11;
+  color: #1a1a1a; /* Testo scuro per leggibilità */
+  padding: 0 4px;
+  border-radius: 3px;
+}
+
+/* Testo Barrato - Blu Dodger (ponte tra H5 e H6) */
+.markdown-rendered s, .cm-strikethrough {
+  color: #1e90ff;
+  opacity: 0.8;
 }
 
 /* ======= Colori Link ======= */
 
-
-/*
-==============================
-Colori Personalizzati Link
-==============================
-*/
-
 body {
   /* --- LINK INTERNI --- */
-  /* Imposta i link interni al colore #94f1e7 */
   --link-color: #94f1e7;
+  --link-color-hover: #00f5ff; /* Effetto neon al passaggio */
   
-  /* Imposta l'hover allo STESSO colore */
-  --link-color-hover: #94f1e7;
-
   /* --- LINK ESTERNI --- */
-  /* Imposta i link esterni al colore #ec82ec */
   --link-external-color: #ec82ec;
-  
-  /* Imposta l'hover allo STESSO colore */
-  --link-external-color-hover: #ec82ec;
+  --link-external-color-hover: #ff7eb6; /* Effetto neon al passaggio */
 }
