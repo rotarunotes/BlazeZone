@@ -14,7 +14,6 @@ ___
 - [[#Break e Continue]]
 - [[#Switch]]
 
-
 ___
 # If
 ``` JavaScript
