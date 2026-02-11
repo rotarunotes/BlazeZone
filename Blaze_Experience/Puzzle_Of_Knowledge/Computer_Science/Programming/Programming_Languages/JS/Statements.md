@@ -6,20 +6,13 @@ ___
 - [[#If]]
     - [[#Operatori Logici]]
     - [[#Operatore Ternario]]
-- [[#Switch]]
-    
 - [[#Cicli]]
-    
     - [[#For]]
-        
     - [[#For-of]]
-        
     - [[#While]]
-        
     - [[#Do-While]]
-        
 - [[#Break e Continue]]
-
+- [[#Switch]]
 
 ___
 # If
@@ -117,6 +110,7 @@ for (let n of array) {
     console.log(n);           // Stampa solo i dispari minori di 100
 }
 ```
+
 ___
 # Switch
 

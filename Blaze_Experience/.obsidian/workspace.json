@@ -30,6 +30,20 @@
             }
           },
           {
+            "id": "71af4cb8bd781bf3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
+          },
+          {
             "id": "bfe6d49b74d3527d",
             "type": "leaf",
             "state": {
@@ -58,7 +72,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "53d8a6702f6e0999",
@@ -267,8 +281,25 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "5fa69a4e0fcee148",
+  "active": "71af4cb8bd781bf3",
   "lastOpenFiles": [
+    "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260205094039_033.png",
+    "conflict-files-obsidian-git.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLAN_Controller_Esempio.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Tabella_Del_Segnale.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Schema_Roaming.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Schema_Bande_Interferenze.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Repeater_Esempio.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Bridge_Esempio.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Access_Point.md",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210192257_356.png",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210191733_647.png",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210191039_023.png",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210190754_392.png",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210142514_864.png",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210133152_637.png",
+    "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems",
     "Senza nome.base",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
     "pdf.md",
@@ -276,7 +307,6 @@
     "Corso ingenieria.md",
     "bo.md",
     "tolc.md",
-    "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260205094039_033.png",
     "Puzzle_Of_Knowledge/Math/Probability.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Tipi_Di_Input.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
@@ -287,25 +317,10 @@
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Data.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Data.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS",
-    "conflict-files-obsidian-git.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration Block.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Schema_Assioma_Probabilità.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Eventi_Elementari.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Eventi_Compatibili_Incompatibili.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Albero_Di_Esempi.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Selettore_css.md",
     "Setup_Archive/Images/I_Math/Pasted Image 20260204162356_255.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260130190149_157.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260128230853_089.png",
-    "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260128105110_542.png",
-    "Setup_Archive/Images/I_Programming/Pasted Image 20260122193403_774.png",
-    "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260122084415_280.png",
-    "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260122085741_579.png",
-    "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260122193519_932.png",
-    "Setup_Archive/Images/I_Math/Pasted Image 20251102195725_766.png",
     "Untitled.base",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS",
@@ -313,7 +328,6 @@
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter",
-    "ntp.pdf",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Web_Programming/Untitled.canvas"
   ]
 }
