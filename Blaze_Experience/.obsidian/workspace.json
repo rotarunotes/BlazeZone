@@ -18,29 +18,6 @@
             }
           },
           {
-            "id": "54ad02b24e66dcda",
-            "type": "leaf",
-            "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
-            }
-          },
-          {
-            "id": "abcb9a6a2c485f5d",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "Senza nome.base",
-                "viewName": "Tabella"
-              },
-              "icon": "lucide-table",
-              "title": "Senza nome"
-            }
-          },
-          {
             "id": "5fa69a4e0fcee148",
             "type": "leaf",
             "state": {
@@ -81,7 +58,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "53d8a6702f6e0999",
@@ -270,8 +247,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233,
-    "collapsed": true
+    "width": 233
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -291,15 +267,15 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "0e950daad975c1ad",
+  "active": "5fa69a4e0fcee148",
   "lastOpenFiles": [
     "Senza nome.base",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
     "pdf.md",
     "Inglese.md",
     "Corso ingenieria.md",
     "bo.md",
     "tolc.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260205094039_033.png",
     "Puzzle_Of_Knowledge/Math/Probability.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Tipi_Di_Input.md",
