@@ -36,6 +36,16 @@
             }
           },
           {
+            "id": "d0d4a692aa2ceda8",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
+          },
+          {
             "id": "705187092f059ffd",
             "type": "leaf",
             "state": {
@@ -75,7 +85,8 @@
               "title": "README"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -265,11 +276,11 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "5bf111ac0afe1274",
+  "active": "705187092f059ffd",
   "lastOpenFiles": [
-    "Setup_Archive/Plugin/Excalidraw/Progettazione_Dati_Logica_Esempio.md",
     "MVC.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
+    "Setup_Archive/Plugin/Excalidraw/Progettazione_Dati_Logica_Esempio.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
