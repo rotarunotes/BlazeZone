@@ -298,6 +298,7 @@ Object.entries(auto); // [ [marca, Fiat], [anno, 2020] ]
 ```
 
 ## Symbol
+Una variabile che funziona da chiave 
 ``` JavaScript
 const SEGRETO = Symbol("id");
 
