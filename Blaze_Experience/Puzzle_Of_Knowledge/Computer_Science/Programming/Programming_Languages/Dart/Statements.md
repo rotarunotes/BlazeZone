@@ -26,7 +26,6 @@ print("Risultato: Sufficiente.");
 print("Risultato: Insufficiente.");
 }
 ```
-
 ## If Operatore Ternario
 
 ``` Dart

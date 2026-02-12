@@ -24,20 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
-      "timestamp": 1770880041212
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/AJAX.md",
+      "timestamp": 1770885917519
     },
     {
-      "filepath": "MVC.md",
-      "timestamp": 1770880040642
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/DOM.md",
+      "timestamp": 1770884153624
     },
     {
-      "filepath": "Setup_Archive/Plugin/Excalidraw/Progettazione_Dati_Logica_Esempio.md",
-      "timestamp": 1770879978370
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Function.md",
+      "timestamp": 1770883247086
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
-      "timestamp": 1770879976386
+      "filepath": "Setup_Archive/Rules/Short_Cut.md",
+      "timestamp": 1770883202965
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Statements.md",
+      "timestamp": 1770882696042
     }
   ],
   "bookmarkedFileStore": [],

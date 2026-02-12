@@ -1,4 +1,4 @@
-Data: 2025-10-27
+wData: 2025-10-27
 [Database](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database
 ___

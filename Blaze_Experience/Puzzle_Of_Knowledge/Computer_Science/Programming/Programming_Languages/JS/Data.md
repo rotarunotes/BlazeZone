@@ -5,6 +5,8 @@ ___
 # Index
 - [[#Variabili]]
     - [[#Tipo Primitivi]]
+	    - [[#Stringhe (Approfondimento)]]
+		- [[#Casting]]
     - [[#Let]]
     - [[#Var]]
     - [[#Const]]
@@ -59,6 +61,45 @@ console.log(typeof [1,2]);       // "object" (Attenzione: gli array sono oggetti
 console.log(typeof null);        // "object" (Questo è un bug storico di JS, ma è rimasto così)
 ```
 
+### Stringhe (Approfondimento)
+Le stringhe in JS sono **immutabili**: non è possibile cambiare un singolo carattere direttamente, ma è necessario creare una nuova stringa.
+- **Confronto**: Si usano gli operatori `==` o `===`.
+- **Accesso**: Tramite indice, es. `s[1]`.
+- **Metodi principali**:
+    - `.length`: Restituisce la lunghezza.
+    - `.slice(inizio, fine)`: Estrae una parte (fine esclusa).
+    - `.charCodeAt(indice)`: Restituisce il codice ASCII/Unicode.
+    - `String.fromCharCode(codice)`: Converte un codice numerico in carattere.
+
+``` javascript
+let s3 = "hello";
+
+// Lunghezza e Accesso
+console.log(s3.length); // 5
+console.log(s3[1]);     // "e"
+
+// Immutabilità: s3[1] = "x" NON funziona.
+// Per "modificare" bisogna ricostruirla:
+s3 = s3.slice(0, 3) + "x" + s3.slice(4); 
+console.log(s3); // "helxo"
+
+// ASCII
+console.log("a".charCodeAt(0));      // 97
+console.log(String.fromCharCode(97)); // "a"
+
+```
+
+### Casting
+È possibile **convertire**  un valore da un tipo all'altro utilizzando le funzioni costruttore:
+- **String(valore)**: Converte in stringa.
+- **Number(valore)**: Converte in numero.
+- **Boolean(valore)**: Converte in booleano.
+
+``` javascript
+console.log(String(12));   // "12"
+console.log(Number("12")); // 12
+```
+
 ## Let
 - Dichiarazione di variabili con **scope locale**.
 - Può assumere qualsiasi valore primitivo
@@ -104,6 +145,7 @@ console.log(globale); // ✅ Stampa anche fuori dall'if
 
 ``` JavaScript
 const PI = 3.14;
+
 // ❌ Errore: Assignment to constant variable
 PI = 4; 
 
@@ -260,7 +302,6 @@ const listaPrezzi = [...shop.values()]; // [0.5, 0.8, 1.2]
 - In JavaScript, l'oggetto è una collezione di coppie **chiave: valore**.
 - Le chiavi sono solitamente stringhe o simboli.
 - È la struttura fondamentale per rappresentare dati complessi.
-
 ## Creazione e Lettura
 1. `Object.keys(cane).length`: Lunghezza dell'oggetto
 ``` JavaScript
@@ -275,14 +316,12 @@ console.log(cane.nome);  // Punto: facile e veloce
 console.log(cane["nome"]); // Quadre: utile se il nome è in una variabile
 const lunghezza = Object.keys(cane).length; //Output: 3
 ```
-
 ## Aggiungere e Modificare
 
 ``` JavaScript
 cane.colore = "Marrone"; // Aggiunto
 cane.zampe = 3;          // Modificato
 ```
-
 ## Metodi "Sblocca-Dati"
 Da oggetto a lista:
 1. `Object.keys(obj)`: Prende solo i **nomi** (le chiavi).
@@ -296,7 +335,6 @@ Object.keys(auto);   // ["marca", "anno"]
 Object.values(auto); // ["Fiat", 2020]
 Object.entries(auto); // [ [marca, Fiat], [anno, 2020] ]
 ```
-
 ## Symbol
 Una variabile che funziona da chiave 
 ``` JavaScript
@@ -308,7 +346,6 @@ utente[SEGRETO] = 999;
 console.log(utente[SEGRETO]); // 999
 console.log(Object.keys(utente)); // ["nome"] -> Il segreto non si vede!
 ```
-
 ## Scomposizione Rapida (Destructuring)
 
 ``` JavaScript
