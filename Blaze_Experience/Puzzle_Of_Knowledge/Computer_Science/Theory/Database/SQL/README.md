@@ -6,8 +6,6 @@ ___
 **SQL** è un linguaggio utilizzato per creare, gestire e interrogare i **Database** relazionali.  
 Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, aggiornamento, eliminazione).
 
-### manca like e le join
-
 # Indice
 
 | **Categoria** | **Comandi Chiave**           | **Azione Principale**                                     |
@@ -17,7 +15,7 @@ Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, agg
 | [DDL](DDL.md) | `CREATE`, `ALTER`, `DROP`    | **Definisce struttura** (Crea, modifica, elimina tabelle) |
 | [TCL](TCL.md) | `COMMIT`, `ROLLBACK`         | **Gestisce transazioni** (Salva o annulla operazioni DML) |
 | [DQL](DQL.md) | `SELECT`                     | **Recupera dati** (Interrogazione)                        |
-
+# Index
 - [[#Funzioni di aggregazione]]
 - [[#Operator logici]]
 - [[#DISTINCT & ALL]]
@@ -89,7 +87,7 @@ SELECT I.cognome,I.nome,D.descrizione
 FROM impiegati AS I, dipartimenti AS D
 WHERE (I.dipartimento=D.codice) AND (D.sede='Roma');
 ```
-___
+
 ## LIMIT
 Questa funzione di permette di limitare il numero di righe in output della tua query
 

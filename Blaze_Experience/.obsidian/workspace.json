@@ -44,9 +44,33 @@
               "icon": "search",
               "title": "Home tab"
             }
+          },
+          {
+            "id": "354d85095bf28304",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
+          },
+          {
+            "id": "41e870686d07b2eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -236,8 +260,21 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "e6e90904cdbbd41f",
+  "active": "41e870686d07b2eb",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Setup_Archive/Plugin/Excalidraw/Schema_E-R_Esempio.md",
+    "Setup_Archive/Plugin/Excalidraw/Progettazione_Dati_Logica_Esempio.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLAN_Controller_Esempio.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Tabella_Del_Segnale.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Schema_Roaming.md",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210142514_864.png",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210133152_637.png",
+    "Schema_E-R_Esempio!1000.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems",
+    "MVC.md",
     "Puzzle_Of_Knowledge/Math/Probability.md",
     "Progettazione.md",
     "pdf.md",
@@ -256,16 +293,7 @@
     "tolc.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Tipi_Di_Input.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Libraries.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Function.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Data.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS",
-    "conflict-files-obsidian-git.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration Block.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Schema_Assioma_Probabilità.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Eventi_Elementari.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Eventi_Compatibili_Incompatibili.md",
     "Setup_Archive/Images/I_Math/Pasted Image 20260204162356_255.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260130190149_157.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260128230853_089.png",
@@ -273,8 +301,6 @@
     "Setup_Archive/Images/I_Programming/Pasted Image 20260122193403_774.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260122084415_280.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260122085741_579.png",
-    "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260122193519_932.png",
-    "Setup_Archive/Images/I_Math/Pasted Image 20251102195725_766.png",
     "Untitled.base",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS",
@@ -282,7 +308,6 @@
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter",
-    "ntp.pdf",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Web_Programming/Untitled.canvas"
   ]
 }

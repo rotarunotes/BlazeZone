@@ -174,14 +174,10 @@ router# show running-config
 ### 6. Associazione Manuale Linea-Telefono (Button Assignment)
 - **Scenario Esempio:**
     - Telefoni Fisici: T1, T2, T3, T4  
-        
     - Associazioni casuali: `ephone 1` (T1), `ephone 2` (T3), `ephone 3` (T2), `ephone 4` (T4)  
-        
     - Linee: Linea 1 (dn 1), Linea 2 (dn 2), Linea 3 (dn 3), Linea 4 (dn 4)  
-        
 - **Comando di Associazione:** `button 1:X`
     - **1:** Indica il primo bottone del telefono.  
-        
     - **X:** Indica il numero dell'`ephone-dn` (linea) che deve essere associato a quel bottone.
 
 Dopo l'assegnazione automatica casuale, si procede all'associazione **manuale** della linea (**ephone-dn**) al bottone del telefono fisico (**ephone**) per garantire la corretta numerazione.

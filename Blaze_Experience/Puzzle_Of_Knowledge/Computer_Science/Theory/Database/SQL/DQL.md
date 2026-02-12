@@ -508,7 +508,7 @@ ORDER BY Autore ASC, Pagine DESC;
 | 1984                        | Orwell      | 328        |
 | **Il Signore degli Anelli** | **Tolkien** | **1216**   |
 | **Lo Hobbit**               | **Tolkien** | **310**    |
-
+___
 # Like
 
 L'operatore `LIKE` viene utilizzato nella clausola `WHERE` per eseguire ricerche che corrispondano a un modello (pattern) specifico. È fondamentale quando devi trovare righe in base a corrispondenze parziali di stringhe, come trovare tutti i nomi che iniziano con una certa lettera.
