@@ -34,9 +34,19 @@
               "icon": "lucide-file",
               "title": "Probability"
             }
+          },
+          {
+            "id": "e6e90904cdbbd41f",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -226,11 +236,11 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "b93eb4a84e302ee2",
+  "active": "e6e90904cdbbd41f",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Math/Probability.md",
     "Progettazione.md",
     "pdf.md",
-    "Puzzle_Of_Knowledge/Math/Probability.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Statements.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260205094039_033.png",
