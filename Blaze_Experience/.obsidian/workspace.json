@@ -36,26 +36,6 @@
             }
           },
           {
-            "id": "e6e90904cdbbd41f",
-            "type": "leaf",
-            "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "home-tab-view"
-            }
-          },
-          {
-            "id": "354d85095bf28304",
-            "type": "leaf",
-            "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
-            }
-          },
-          {
             "id": "d4374750b455ae70",
             "type": "leaf",
             "state": {
@@ -70,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -273,6 +253,7 @@
   },
   "active": "d4374750b455ae70",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/DOM.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/README.md",
     "conflict-files-obsidian-git.md",
@@ -303,7 +284,6 @@
     "Corso ingenieria.md",
     "bo.md",
     "tolc.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Tipi_Di_Input.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS",
     "Setup_Archive/Images/I_Math/Pasted Image 20260204162356_255.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260130190149_157.png",
