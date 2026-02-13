@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "tolc"
             }
+          },
+          {
+            "id": "bc777c8e64319bd2",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -220,8 +231,9 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "423854d2f2afca1e",
+  "active": "bc777c8e64319bd2",
   "lastOpenFiles": [
+    "tolc.md",
     "bo.md",
     "Senza nome.base",
     "Inglese.md",
@@ -248,7 +260,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Repeater_Esempio.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Tabella_Del_Segnale.md",
     "Pasted image 20260210132229.png",
     "Pasted image 20260210132159.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210192257_356.png",
