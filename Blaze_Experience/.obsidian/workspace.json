@@ -25,28 +25,18 @@
             "id": "bc777c8e64319bd2",
             "type": "leaf",
             "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
-            }
-          },
-          {
-            "id": "e209133f9d53b766",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Schema_E-R_Esempio!1000.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "title": "Schema_E-R_Esempio!1000"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -245,8 +235,9 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "e209133f9d53b766",
+  "active": "bc777c8e64319bd2",
   "lastOpenFiles": [
+    "MVC.md",
     "conflict-files-obsidian-git.md",
     "Setup_Archive/Plugin/Excalidraw/Schema_E-R_Esempio.md",
     "Setup_Archive/Plugin/Excalidraw/Progettazione_Dati_Logica_Esempio.md",
@@ -255,7 +246,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Function.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/DOM.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/AJAX.md",
-    "MVC.md",
     "tolc.md",
     "bo.md",
     "Senza nome.base",
