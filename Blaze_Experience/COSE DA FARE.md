@@ -3,3 +3,4 @@
 - [ ] Matematica statistica ineferenziale
 - [ ] Informatica relazionale
 - [ ] Informatica php
+- [ ] Sistemi switch va bene 
