@@ -1,12 +1,11 @@
 Data: 2026-01-22
-[HTML](./README.md)
+[HTML](README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML
 ___
 
 
 da fare:
-button
-select option
+tag:  button select(option)
 
 # Index
 - [[#Formattazione]]
@@ -415,6 +414,7 @@ ___
 			6. `color`
 			7. `checkbox`
 			8. `submit`: Pulsante per inviare il modulo
+			9. `hidden`: Nasconde il campo (utile per passare informazioni nell'url)
     2. `name`: (Critico) Il nome del dato che arriverà al server, stampato nell'ulr
     3. `placeholder`: Testo di suggerimento nel campo.
     4. `required`: Impedisce l'invio se il campo è vuoto.

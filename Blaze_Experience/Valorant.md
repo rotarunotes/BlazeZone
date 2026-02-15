@@ -6,3 +6,5 @@ Ruoli valorant
 
 armi valorant
 ![[Pasted image 20260215170507.png]]
+
+![[Pasted image 20260215173907.png]]![[Pasted image 20260215183623.png]]
