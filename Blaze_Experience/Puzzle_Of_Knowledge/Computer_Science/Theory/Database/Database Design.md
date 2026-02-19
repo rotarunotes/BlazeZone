@@ -60,114 +60,12 @@ In questa fase si identificano le **entità** principali, i loro **attributi** e
 - **Stabilire le relazioni**: Come le entità sono collegate tra loro (es. Cliente effettua Ordini)-
 - **Rappresentare i vincoli**: Le cardinalità, definire quante istanze sono coinvolte nelle relazioni (es. un ordine deve avere almeno un prodotto).
   
-
 ## Cardinalità
 La **cardinalità** definisce le regole quantitative delle relazioni tra entità. 
-## Definizione completa
-
 La cardinalità stabilisce:
-
 - **Numero minimo** di occorrenze (cardinalità minima): 0 o 1
 - **Numero massimo** di occorrenze (cardinalità massima): 1 o N (molti)
-
 Si esprime con la notazione **(min, max)** su entrambi i lati della relazione.
-
-### Tipi di Cardinalità Dettagliati
-
-#### 1. Uno a Uno (1:1)
-
-**Caratteristiche**:
-
-- Ogni istanza di A è associata al massimo a una istanza di B
-- Ogni istanza di B è associata al massimo a una istanza di A
-- Relazione bidirezionale univoca
-
-**Esempi pratici**:
-
-```
-PERSONA (1,1) ───── (1,1) CARTA_IDENTITÀ
-- Una persona deve avere esattamente una carta d'identità
-- Una carta d'identità appartiene a esattamente una persona
-
-PAESE (1,1) ───── (0,1) CAPITALE
-- Un paese ha una sola capitale
-- Una città può essere capitale di un solo paese (o di nessuno)
-```
-
-**Implementazione nel database**:
-
-- Si può includere la chiave esterna in una delle due tabelle
-- Oppure creare una tabella separata per la relazione (meno comune)
-
-#### 2. Uno a Molti (1:N)
-
-**Caratteristiche**:
-
-- Un'istanza di A può essere associata a molte istanze di B
-- Un'istanza di B è associata a una sola istanza di A
-- Relazione più comune nei database
-
-**Esempi pratici**:
-
-```
-DIPARTIMENTO (1,1) ───── (0,N) DIPENDENTE
-- Un dipartimento può avere molti dipendenti (o nessuno)
-- Un dipendente lavora in un solo dipartimento
-
-CLIENTE (1,1) ───── (0,N) ORDINE
-- Un cliente può fare molti ordini
-- Un ordine appartiene a un solo cliente
-
-AUTORE (1,1) ───── (1,N) LIBRO
-- Un autore scrive almeno un libro (altrimenti non è nel DB)
-- Un libro ha un solo autore principale
-```
-
-**Implementazione nel database**:
-
-- La chiave primaria del lato "1" diventa chiave esterna nel lato "N"
-- Esempio: tabella ORDINE contiene `cliente_id` (FK verso CLIENTE)
-
-#### 3. Molti a Molti (N:M)
-
-**Caratteristiche**:
-
-- Un'istanza di A può essere associata a molte istanze di B
-- Un'istanza di B può essere associata a molte istanze di A
-- Relazione simmetrica e flessibile
-
-**Esempi pratici**:
-
-```
-STUDENTE (1,N) ───── (0,N) CORSO
-- Uno studente frequenta molti corsi
-- Un corso ha molti studenti
-
-ATTORE (0,N) ───── (1,N) FILM
-- Un attore recita in molti film (o in nessuno)
-- Un film ha almeno un attore
-
-PRODOTTO (1,N) ───── (1,N) ORDINE
-- Un prodotto può essere in molti ordini
-- Un ordine contiene molti prodotti
-```
-
-**Implementazione nel database**:
-
-- Si crea una **tabella di associazione** (junction table)
-- Contiene le chiavi esterne di entrambe le entità
-- Può contenere attributi aggiuntivi della relazione
-
-```sql
--- Esempio: STUDENTE N:M CORSO
-TABELLA ISCRIZIONE
-- id_studente (FK)
-- id_corso (FK)
-- data_iscrizione (attributo della relazione)
-- voto (attributo della relazione)
-```
-
-### Notazione delle Cardinalità
 
 **Notazione (min, max)**:
 
@@ -176,16 +74,7 @@ TABELLA ISCRIZIONE
 - (0,N): opzionale, può essere molti
 - (1,N): obbligatorio, almeno uno
 
-**Esempio completo con notazione**:
 
-```
-AZIENDA (1,1) ──── IMPIEGA ──── (0,N) DIPENDENTE
-```
-
-Significato:
-
-- Ogni dipendente **deve** lavorare per esattamente un'azienda (1,1)
-- Un'azienda **può** avere molti dipendenti o nessuno (0,N)
 ## Schema E-R (Entità-Relazione)
 Lo **Schema E-R (Entity-Relationship)** è un modello grafico utilizzato nella progettazione concettuale per rappresentare visivamente entità, attributi e relazioni.
 
