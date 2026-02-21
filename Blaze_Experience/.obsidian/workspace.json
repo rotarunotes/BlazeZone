@@ -20,19 +20,8 @@
               "icon": "lucide-file",
               "title": "WPA3"
             }
-          },
-          {
-            "id": "affc4f7d80a75969",
-            "type": "leaf",
-            "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -232,7 +221,7 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "affc4f7d80a75969",
+  "active": "b8d590c17b154908",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "WPA3.md",
