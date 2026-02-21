@@ -31,7 +31,8 @@
               "title": "Home tab"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -231,7 +232,7 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "b8d590c17b154908",
+  "active": "affc4f7d80a75969",
   "lastOpenFiles": [
     "WPA3.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",

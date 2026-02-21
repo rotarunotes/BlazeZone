@@ -18,8 +18,7 @@ Il fine ultimo non è usare la tua password per cifrare i dati, ma usarla come "
 2) È fortemente **consigliato cambiare la password** di default del router perchè i produttori spesso impostano password predefinite che si possono facilmente reperire online, e quindi possono compromettere la sicurezza della rete.
 3) Mentre **WPA2** è vulnerabile ad alcuni attacchi offline se la password è debole, il **WPA3** introduce una protezione maggiore. Tuttavia, per entrambi, se la password è debole la cifratura è facile da abbattere.
 4) **Entropia**: È la misura della casualità e complessità della password. Più è alta, più è difficile per un hacker indovinarla tramite "brute force" (tentativi automatici).
-
-
+___
 # Violazione
 ## Handshake Capture & Dictionary Attack:
 Poiché il **WPA2** scambia dati derivati dalla password durante l'handshake, un **attaccante** può catturare questi messaggi "nell'aria".
@@ -33,8 +32,7 @@ A quel punto, l'attaccante può mostrarti una **finta pagina di login** per ruba
 ## Deauthentication Attack:
 È il precursore del furto dell'**handshake**. L'attaccante invia pacchetti speciali ("deauth") che dicono al tuo PC di disconnettersi dal router. Il tuo dispositivo proverà subito a ricollegarsi automaticamente, eseguendo un nuovo handshake che l'attaccante è pronto a catturare.
 
-
-
+___
 # Strumenti Di Analisi
 
 ## Aircrack-ng
@@ -61,7 +59,7 @@ Poiché le schede video **sono migliaia di volte** più veloci nei calcoli matem
 Il WPA3 sostituisce l'handshake tradizionale con il protocollo **SAE** (Simultaneous Authentication of Equals). La differenza fondamentale è chze il WPA3 rende inutili gli attacchi offline (Dictionary Attack): l'attaccante non può più provare milioni di password sul suo PC dopo aver catturato un pacchetto.
 
 ## Aggiornamento Firmware
-Molti attacchi (come il celebre **KRACK**) sfruttano bug nel codice del router. 
+Molti attacchi (come il celebre **KRACK** sfruttano bug nel codice del router. 
 Aggiornare il software del router chiude queste **"porte di servizio"** che gli hacker potrebbero usare senza nemmeno conoscere la **password**.
 
 ## Disabilitare il WPS
