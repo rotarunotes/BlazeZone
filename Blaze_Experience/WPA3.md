@@ -56,7 +56,7 @@ Poiché le schede video **sono migliaia di volte** più veloci nei calcoli matem
 # Best Practices
 
 ## Passare a WPA3
-Il WPA3 sostituisce l'handshake tradizionale con il protocollo **SAE** (Simultaneous Authentication of Equals). La differenza fondamentale è chze il WPA3 rende inutili gli attacchi offline (Dictionary Attack): l'attaccante non può più provare milioni di password sul suo PC dopo aver catturato un pacchetto.
+Il WPA3 sostituisce l'handshake tradizionale con il protocollo **SAE** (Simultaneous Authentication of Equals). La differenza fondamentale è che il WPA3 rende inutili gli attacchi offline (Dictionary Attack): l'attaccante non può più provare milioni di password sul suo PC dopo aver catturato un pacchetto.
 
 ## Aggiornamento Firmware
 Molti attacchi (come il celebre **KRACK** sfruttano bug nel codice del router. 
