@@ -24,8 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "WPA3.md",
-      "timestamp": 1771633447397
+      "filepath": "Puzzle_Of_Knowledge/Math/Statistica.md",
+      "timestamp": 1771697010851
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Math/Probability.md",
+      "timestamp": 1771696134984
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Math/Circumference.md",
+      "timestamp": 1771693582820
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+      "timestamp": 1771693571062
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
+      "timestamp": 1771693518430
     }
   ],
   "bookmarkedFileStore": [],
