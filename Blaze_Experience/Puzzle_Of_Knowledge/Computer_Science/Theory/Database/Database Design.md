@@ -1,15 +1,30 @@
 Data: 2026-02-11
-[Database](./README.md)
+[Database](README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database
 ___
 # Index
- 
 
-___
+- [[#Introduzione]]
+    - [[#Progettazione Basi Di Dati MVC]]
+- [[#Progettazione Concettuale]]
+    - [[#Obiettivi della progettazione concettuale]]
+    - [[#Schema E-R (Entità-Relazione)]]
+    - [[#Cardinalità]]
+- [[#Progettazione Logica]]
+    - [[#Obiettivi]]
+    - [[#Regole di Traduzione E-R → Relazionale]]
+    - [[#Cardinalità in Tabelle]]
+	    - [[#Relazioni 1 N]]
+	    - [[#Relazioni 1 1]]
+	    - [[#Relazioni N M]]
+    - [[#Dipendenza funzionale]]
+    - [[#Definizioni di Chiave]]
+    - [[#Normalizzazione]]
+	    - [[#Prima Forma Normale]]
+	    - [[#Seconda Forma Normale]]
+	    - [[#Terza Forma Normale]]
+    - [[#Esempio Completo di Progettazione Logica]]
 
-
-
-  
 ___
 # Introduzione
 
@@ -67,13 +82,14 @@ Si esprime con la notazione **(min, max)** su entrambi i lati della relazione.
 
 In questa fase si decide come rappresentare entità, attributi e relazioni attraverso **tabelle**, mantenendo le proprietà e i vincoli definiti nella fase concettuale.
 ## Obiettivi
-- **Tradurre lo schema E-R in tabelle relazionali**
-- **Eliminare ridondanze** e anomalie
-- **Normalizzare** i dati (applicare le forme normali)
-- **Definire chiavi primarie ed esterne**
-
+- **Tradurre** lo schema E-R in tabelle relazionali
+- Eliminare **anomalie** (una relazione con molti attributi)
+	- **Inserimento**: Se manca un parametro, non puoi aggiungere una riga 
+	- **Aggiornamento**: Se vuoi aggiornare un parametro, devi aggiornare tutte le righe con quel parametro (SPOT, Single Point Of Truth)
+	- **Cancellazione**: Elimina più riga anche quelle non desiderate
+- **Normalizzare** i dati (eliminare la ridondanza)
+- Definire chiavi **primarie** ed **esterne**
 ## Regole di Traduzione E-R → Relazionale
-
 Ogni ENTITÀ diventa una TABELLA
 
 ```
@@ -81,25 +97,25 @@ Entità CLIENTE → Tabella CLIENTE
 Attributi: id, nome, cognome, email
 ```
 
+## Cardinalità in Tabelle
 ### Relazioni 1:N
 La chiave primaria del lato "1" diventa chiave esterna nel lato "N"
 ```
 DIPARTIMENTO (1) ──── (N) DIPENDENTE
 
 Tabella DIPARTIMENTO (id_dipartimento, nome_dipartimento)
-Tabella DIPENDENTE (id, nome, cognome, id_dipartimento)
+Tabella DIPENDENTE (id, nome, cognome, id_dipartimento (chiave esterna))
 ```
 
 ### Relazioni 1:1
-- Si può includere la chiave esterna in una delle due tabelle
-
+Si possono incorporare **entrambe** le entità in una unica tabella.
 ```
 PERSONA (1) ──── (1) PASSAPORTO
 
 PASSAPORTO (id, numero, data_scadenza, id_persona (chaive esterna))
 ```
 ### Relazioni N:M
-Si crea una **tabella di associazione** con le chiavi di entrambe le entità
+Si crea una **tabella di associazione** con le chiavi di entrambe le entità.
 ```
 STUDENTE (N) ──── (M) CORSO
 
@@ -108,6 +124,18 @@ Tabella CORSO (id_corso, titolo, crediti)
 Tabella ISCRIZIONE (id_studente(chiave esterna), id_corso(chiave esterna), data_iscrizione)
 ```
 
+
+## Dipendenza funzionale
+
+Si ha dipendenza **funzionale** tra attributi quando il valore di un insieme di attributi $A$ determina un singolo valore dell'**attributo** $B$, e si indica con $A \rightarrow B$. Si dice anche che $B$ dipende da $A$, o che $A$ è un determinante per $B$.
+## Definizioni di Chiave
+1. **Chiave Primaria:** Insieme di uno o più attributi che identificano in modo univoco una tupla.
+2. **Chiave Candidata:** Insieme minimale di uno o più attributi che possono essere potenzialmente una chiave primaria.
+3. **Chiave Non Primaria:** Attributi che non fanno parte della chiave primaria.
+
+**Esempi pratici:**
+- Se vivi a Vicenza $\rightarrow$ Vivi in Veneto $\rightarrow$ Italia $\rightarrow$ Europa.
+- Nome scuola $\rightarrow$ Indirizzo fisico.
 ## Normalizzazione
 La **normalizzazione** è il processo di organizzazione delle tabelle per:
 - Eliminare ridondanze
@@ -115,70 +143,92 @@ La **normalizzazione** è il processo di organizzazione delle tabelle per:
 - Garantire coerenza dei dati
 
 ### Prima Forma Normale
+No tuple ripetute
+- Di solito già si eliminano con la definizione di relazione
+No liste di attributi
 
-- Ogni campo contiene valori atomici (non ripetuti)
-- Niente gruppi ripetuti
+- **Esempio:**
 
+| Persona | nome  | colori_preferiti  |
+| ------- | ----- | ----------------- |
+|         | Mario | rosso, blu, viola |
+|         | Luca  | blu, arancione    |
+
+Diventa:
+
+| Persona | nome  |
+| ------- | ----- |
+|         | Mario |
+
+| Colori | nome_colore |
+| ------ | ----------- |
+|        | blu         |
+|        | arancione   |
+
+| colori_preferiti | nome  | colore_preferito |
+| ---------------- | ----- | ---------------- |
+|                  | Mario | rosso            |
+|                  | Luca  | viola            |
+|                  | Mario | marrone          |
 ### Seconda Forma Normale
-- Soddisfa 1NF
-- Ogni attributo non chiave dipende completamente dalla chiave primaria
+Soddisfa 1NF
+- Bon
+Non ci devono essere dipendenze parziali dalla chiave, devono essere solo totali, tutti gli attributi non chiave dipendono dalla completa chiave
+- **Esempio:**
 
+| Persona | nome  | cognome | IBAN           | soldi |
+| ------- | ----- | ------- | -------------- | ----- |
+|         | Mario | Blaze   | IT 405234382N3 | 42    |
+
+Soldi dipende dalla chiave: IBAN
+
+| Persona | nome  | cognome | IBAN           |
+| ------- | ----- | ------- | -------------- |
+|         | Mario | Blaze   | IT 405234382N3 |
+
+| Conto | IBAN           | soldi |
+| ----- | -------------- | ----- |
+|       | IT 405234382N3 | 42    |
 ### Terza Forma Normale
-- Soddisfa 2NF
-- Nessuna dipendenza transitiva (attributi non chiave non dipendono da altri attributi non chiave)
+Soddisfa 2NF
+- Bon
+Nessuna dipendenza transitiva
+- $A \to B \to C$, si scompone in 2 tabelle:  $A \to B \bowtie B\to C$
 
-### Esempio Completo di Progettazione Logica
+## Esempio Completo di Progettazione Logica
 
-**Schema E-R di partenza**:
+**Schema non normalizzato:** 
+**ASCOLTI**: 
+(**ID-ASCOLTO**, EMAIL, DATA-ASCOLTO, TITOLO_CANZONE, ARTISTA, NAZIONALITA_ARTISTA, GENERE_ARTISTA, ALBUM, ANNO_ALBUM, ETICHETTA, USERNAME, DURATA)
 
-```
-CLIENTE (1) ──── EFFETTUA ──── (N) ORDINE (N) ──── CONTIENE ──── (M) PRODOTTO
-```
+### 1 Forma Normale
+Scorporare GENERE-ARTISTA, perché è una lista di attributi.
 
-**Schema Logico (Tabelle)**:
+**ASCOLTI**: (**ID-ASCOLTO**, EMAIL, DATA-ASCOLTO, TITOLO_CANZONE, **ARTISTA**, NAZIONALITA_ARTISTA, ALBUM, ANNO_ALBUM, ETICHETTA, USERNAME, DURATA)
+**GENERE_ARTISTA**: (**ARTISTA**, **GENERE**)
 
-```sql
-CLIENTE (
-  id INT PRIMARY KEY,
-  nome VARCHAR(100),
-  email VARCHAR(100) UNIQUE,
-  data_registrazione DATE
-)
+### 2 Forma Normale
+Dipendenze parziali
 
-ORDINE (
-  id INT PRIMARY KEY,
-  data_ordine DATE,
-  totale DECIMAL(10,2),
-  cliente_id INT,
-  FOREIGN KEY (cliente_id) REFERENCES CLIENTE(id)
-)
+**ASCOLTI** (**ID-ASCOLTO**, USERNAME, DATA-ASCOLTO, TITOLO_CANZONE)
+**INDIVIDUO** (**USERNAME**, EMAIL)
+**ARTISTI** (**ARTISTA**, NAZIONALITA_ARTISTA)
+**CANZONE** (**TITOLO_CANZONE**, ALBUM, DURATA)
+**GENERI** (**GENERE**)
+**GENERE_ARTISTA** (**ARTISTA**, **GENERE**)
+**ALBUM** (**ALBUM**, ANNO_ALBUM, ETICHETTA, ARTISTA)
 
-PRODOTTO (
-  id INT PRIMARY KEY,
-  nome VARCHAR(100),
-  prezzo DECIMAL(10,2),
-  quantita_magazzino INT
-)
+### 3 Forma Normale
+È già in 3 forma normale
 
-RIGA_ORDINE ( -- Tabella di associazione N:M
-  ordine_id INT,
-  prodotto_id INT,
-  quantita INT,
-  prezzo_unitario DECIMAL(10,2),
-  PRIMARY KEY (ordine_id, prodotto_id),
-  FOREIGN KEY (ordine_id) REFERENCES ORDINE(id),
-  FOREIGN KEY (prodotto_id) REFERENCES PRODOTTO(id)
-)
-```
+**ASCOLTI** (**ID-ASCOLTO**, USERNAME, DATA-ASCOLTO, TITOLO_CANZONE)
+**INDIVIDUO** (**USERNAME**, EMAIL)
+**ARTISTI** (**ARTISTA**, NAZIONALITA_ARTISTA)
+**CANZONE** (**TITOLO_CANZONE**, ALBUM, DURATA)
+**GENERI** (**GENERE**)
+**GENERE_ARTISTA** (**ARTISTA**, **GENERE**)
+**ALBUM** (**ALBUM**, ANNO_ALBUM, ETICHETTA, ARTISTA)
 
-### Vincoli di Integrità
-
-Durante la progettazione logica si definiscono:
-
-- **Integrità di entità**: ogni tabella deve avere una chiave primaria
-- **Integrità referenziale**: le chiavi esterne devono riferirsi a chiavi primarie esistenti
-- **Integrità di dominio**: vincoli sui valori (NOT NULL, CHECK, UNIQUE)
-- **Integrità aziendale**: regole di business specifiche
 
 ---
 
