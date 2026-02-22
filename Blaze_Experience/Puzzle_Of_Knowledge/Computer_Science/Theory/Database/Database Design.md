@@ -7,31 +7,9 @@ ___
 
 ___
 
-# Progettazione Basi Di Dati MVC
-
-![[Progettazione_Dati_Logica_Esempio|300]]
-
-# Progettazione Concettuale
-
-Individuo tute le entità che vanno a interferire nel mio software
-## Schema E-R
 
 
-
-
-## Cardinalità
-
-La **cardinalità** definisce quante volte un'entità può essere collegata a un'altra entità in una relazione, specificando il numero minimo e massimo di associazioni possibili.
-
-Tipi di cardinalità:
-- $1:1$
-- $1:N$
-- $N:M$ 
-
-# Progettazione Logica
-
-# Progettazione fisica
-
+  
 ___
 # Introduzione
 
@@ -43,11 +21,11 @@ Un database ben progettato **garantisce**:
 3) Facilità di manutenzione.
 4) Scalabilità del sistema.
 
-La progettazione si articola in diverse fasi, ognuna con obiettivi specifici
-- dalla comprensione dei requisiti alla realizzazione fisica del database. 
+## Progettazione Basi Di Dati MVC
+
+![[Progettazione_Dati_Logica_Esempio|300]]
 
 ---
-
 # Progettazione Concettuale
 
 La **progettazione concettuale** è la prima fase della progettazione di database. 
@@ -60,91 +38,81 @@ In questa fase si identificano le **entità** principali, i loro **attributi** e
 - **Stabilire le relazioni**: Come le entità sono collegate tra loro (es. Cliente effettua Ordini)-
 - **Rappresentare i vincoli**: Le cardinalità, definire quante istanze sono coinvolte nelle relazioni (es. un ordine deve avere almeno un prodotto).
   
-## Cardinalità
-La **cardinalità** definisce le regole quantitative delle relazioni tra entità. 
-La cardinalità stabilisce:
-- **Numero minimo** di occorrenze (cardinalità minima): 0 o 1
-- **Numero massimo** di occorrenze (cardinalità massima): 1 o N (molti)
-Si esprime con la notazione **(min, max)** su entrambi i lati della relazione.
-
-**Notazione (min, max)**:
-
-- (0,1): opzionale, al massimo uno
-- (1,1): obbligatorio, esattamente uno
-- (0,N): opzionale, può essere molti
-- (1,N): obbligatorio, almeno uno
-
-
 ## Schema E-R (Entità-Relazione)
 Lo **Schema E-R (Entity-Relationship)** è un modello grafico utilizzato nella progettazione concettuale per rappresentare visivamente entità, attributi e relazioni.
 
 ![[Schema_E-R_Esempio|1000]]
 
+## Cardinalità
+La **cardinalità** definisce quante volte un'entità può essere collegata a un'altra entità in una relazione
+
+Tipi di cardinalità:
+- $1:1$
+- $1:N$
+- $N:M$ 
+
+Là cardinalità può anche specificare:
+- **Numero minimo** di occorrenze (cardinalità minima): 0 o 1
+- **Numero massimo** di occorrenze (cardinalità massima): 1 o N (molti)
+Si esprime con la notazione **(min, max)** su entrambi i lati della relazione.
+
+**Notazione (min, max)**:
+- (0,1): opzionale, al massimo uno
+- (1,1): obbligatorio, esattamente uno
+- (0,N): opzionale, può essere molti
+- (1,N): almeno uno
+
 ---
+# Progettazione Logica
 
-## Progettazione Logica
-
-### Introduzione
-
-La **progettazione logica** è la seconda fase della progettazione di database, in cui lo schema concettuale (E-R) viene trasformato in uno **schema logico** compatibile con il modello di database scelto, tipicamente il **modello relazionale**. In questa fase si decide come rappresentare entità, attributi e relazioni attraverso **tabelle**, mantenendo le proprietà e i vincoli definiti nella fase concettuale.
-
-### Obiettivi
-
+In questa fase si decide come rappresentare entità, attributi e relazioni attraverso **tabelle**, mantenendo le proprietà e i vincoli definiti nella fase concettuale.
+## Obiettivi
 - **Tradurre lo schema E-R in tabelle relazionali**
 - **Eliminare ridondanze** e anomalie
 - **Normalizzare** i dati (applicare le forme normali)
 - **Definire chiavi primarie ed esterne**
-- **Garantire l'integrità referenziale**
-- Ottimizzare per performance e scalabilità
 
-### Regole di Traduzione E-R → Relazionale
+## Regole di Traduzione E-R → Relazionale
 
-**1. Ogni ENTITÀ diventa una TABELLA**
+Ogni ENTITÀ diventa una TABELLA
 
 ```
 Entità CLIENTE → Tabella CLIENTE
 Attributi: id, nome, cognome, email
 ```
 
-**2. Relazioni 1:N**
-
-- La chiave primaria del lato "1" diventa chiave esterna nel lato "N"
-
+### Relazioni 1:N
+La chiave primaria del lato "1" diventa chiave esterna nel lato "N"
 ```
 DIPARTIMENTO (1) ──── (N) DIPENDENTE
 
-Tabella DIPARTIMENTO (id, nome)
-Tabella DIPENDENTE (id, nome, cognome, dipartimento_id FK)
+Tabella DIPARTIMENTO (id_dipartimento, nome_dipartimento)
+Tabella DIPENDENTE (id, nome, cognome, id_dipartimento)
 ```
 
-**3. Relazioni N:M**
-
-- Si crea una **tabella di associazione** con le chiavi di entrambe le entità
-
-```
-STUDENTE (N) ──── (M) CORSO
-
-Tabella STUDENTE (id, nome, cognome)
-Tabella CORSO (id, titolo, crediti)
-Tabella ISCRIZIONE (id_studente FK, id_corso FK, data_iscrizione)
-```
-
-**4. Relazioni 1:1**
-
-- Si può includere la FK in una delle due tabelle
+### Relazioni 1:1
+- Si può includere la chiave esterna in una delle due tabelle
 - Oppure creare una tabella separata (meno comune)
-
 ```
 PERSONA (1) ──── (1) PASSAPORTO
 
 Opzione 1: PASSAPORTO (id, numero, data_scadenza, persona_id FK UNIQUE)
-Opzione 2: Tabella separata POSSESSO (persona_id FK, passaporto_id FK)
+Opzione 2: Tabella separata POSSESSO (persona_id (chiave estern), passaporto_id (chiave estern))
+```
+### Relazioni N:M
+Si crea una **tabella di associazione** con le chiavi di entrambe le entità
+```
+STUDENTE (N) ──── (M) CORSO
+
+Tabella STUDENTE (id_studente, nome, cognome)
+Tabella CORSO (id_corso, titolo, crediti)
+Tabella ISCRIZIONE (id_studente(chiave esterna), id_corso(chiave esterna), data_iscrizione)
 ```
 
+
+
 ### Normalizzazione
-
 La **normalizzazione** è il processo di organizzazione delle tabelle per:
-
 - Eliminare ridondanze
 - Prevenire anomalie di inserimento, aggiornamento e cancellazione
 - Garantire coerenza dei dati
@@ -221,9 +189,9 @@ Durante la progettazione logica si definiscono:
 
 ---
 
-## Progettazione Fisica
+# Progettazione Fisica
 
-### Introduzione
+## Introduzione
 
 La **progettazione fisica** è l'ultima fase della progettazione di database, in cui lo schema logico viene implementato concretamente su un **DBMS specifico** (Database Management System come MySQL, PostgreSQL, Oracle, SQL Server). In questa fase si prendono decisioni tecniche per ottimizzare **performance**, **sicurezza** e **storage**, considerando le caratteristiche hardware e software del sistema.
 

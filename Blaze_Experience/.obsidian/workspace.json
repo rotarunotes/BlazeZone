@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Math/Statistica.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Statistica"
+              "title": "Database Design"
             }
           }
         ]
@@ -139,22 +139,12 @@
             }
           },
           {
-            "id": "c2128fdc80b4a83a",
-            "type": "leaf",
-            "state": {
-              "type": "chronology-calendar-view",
-              "state": {},
-              "icon": "clock",
-              "title": "Chronology"
-            }
-          },
-          {
             "id": "6dc0ecf411e6a665",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +154,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a Stream"
+              "title": "Riferimenti a Database Design"
             }
           },
           {
@@ -194,9 +184,19 @@
               "icon": "lucide-archive",
               "title": "Tutte le proprietà"
             }
+          },
+          {
+            "id": "06e3fe9f1cb1135d",
+            "type": "leaf",
+            "state": {
+              "type": "chronology-calendar-view",
+              "state": {},
+              "icon": "clock",
+              "title": "Chronology"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -222,15 +222,20 @@
   },
   "active": "b8d590c17b154908",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Math/Probability.md",
-    "Puzzle_Of_Knowledge/Math/Circumference.md",
-    "Puzzle_Of_Knowledge/Math/Statistica.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
-    "WPA3.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Conceptual Design.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+    "Setup_Archive/Plugin/Excalidraw/Schema_E-R_Esempio.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
+    "Puzzle_Of_Knowledge/Math/Statistica.md",
+    "COSE DA FARE.md",
+    "Senza nome.base",
+    "bo.md",
+    "Inglese.md",
+    "WPA3.md",
+    "Puzzle_Of_Knowledge/Math/Circumference.md",
+    "Puzzle_Of_Knowledge/Math/Probability.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
     "conflict-files-obsidian-git.md",
     "Setup_Archive/Plugin/Calendar/Exam/2025-10-28 Informatica Algebra Relazione.md",
     "tolc.md",
@@ -239,8 +244,6 @@
     "Setup_Archive/Plugin/Calendar/Exam/2025-10-24 Sistemi SubNeEx DHCP DNS ARP.md",
     "Setup_Archive/Plugin/Calendar/Exam/2025-10-30 Mate Integrali Indefiniti.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DHCP.md",
-    "bo.md",
-    "Senza nome.base",
     "Corso ingenieria.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
     "Valorant.md",
@@ -251,9 +254,6 @@
     "Pasted image 20260215170507.png",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
     "Pasted image 20260215173907.png",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration_Block.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP",
     "Pasted image 20260210132229.png",
     "Pasted image 20260210132159.png",
