@@ -92,12 +92,11 @@ Tabella DIPENDENTE (id, nome, cognome, id_dipartimento)
 
 ### Relazioni 1:1
 - Si può includere la chiave esterna in una delle due tabelle
-- Oppure creare una tabella separata (meno comune)
+
 ```
 PERSONA (1) ──── (1) PASSAPORTO
 
-Opzione 1: PASSAPORTO (id, numero, data_scadenza, persona_id FK UNIQUE)
-Opzione 2: Tabella separata POSSESSO (persona_id (chiave estern), passaporto_id (chiave estern))
+PASSAPORTO (id, numero, data_scadenza, id_persona (chaive esterna))
 ```
 ### Relazioni N:M
 Si crea una **tabella di associazione** con le chiavi di entrambe le entità
@@ -109,28 +108,22 @@ Tabella CORSO (id_corso, titolo, crediti)
 Tabella ISCRIZIONE (id_studente(chiave esterna), id_corso(chiave esterna), data_iscrizione)
 ```
 
-
-
-### Normalizzazione
+## Normalizzazione
 La **normalizzazione** è il processo di organizzazione delle tabelle per:
 - Eliminare ridondanze
 - Prevenire anomalie di inserimento, aggiornamento e cancellazione
 - Garantire coerenza dei dati
 
-**Forme Normali Principali**:
-
-**1NF (Prima Forma Normale)**:
+### Prima Forma Normale
 
 - Ogni campo contiene valori atomici (non ripetuti)
 - Niente gruppi ripetuti
 
-**2NF (Seconda Forma Normale)**:
-
+### Seconda Forma Normale
 - Soddisfa 1NF
 - Ogni attributo non chiave dipende completamente dalla chiave primaria
 
-**3NF (Terza Forma Normale)**:
-
+### Terza Forma Normale
 - Soddisfa 2NF
 - Nessuna dipendenza transitiva (attributi non chiave non dipendono da altri attributi non chiave)
 
