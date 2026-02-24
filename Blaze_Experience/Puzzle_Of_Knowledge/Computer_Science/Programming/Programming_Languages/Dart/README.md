@@ -22,7 +22,7 @@ ___
 # Indice
 - [Data](Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Data.md)
 - [Statements](Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md)
-- [Function](Function.md)
+- [Function](Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Function.md)
 - [Class](Class.md)
 - [Libraries](Libraries.md)
 - [Future](Future.md)

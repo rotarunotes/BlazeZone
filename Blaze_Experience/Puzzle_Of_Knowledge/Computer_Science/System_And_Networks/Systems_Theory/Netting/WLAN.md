@@ -2,62 +2,41 @@ Data: 2026-01-13
 [Netting](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting
 ___
+# Index
 
-# Wirless Local Area Network
+- [[#Wireless Local Area Network (WLAN)]]
+- [[#Cenni Teorici e Dimensioni]]
+    - [[#Dimensioni delle Reti Wireless]]
+    - [[#Standard IEEE 802.11]]
+- [[#Modulazione e Frequenze]]
+    - [[#Bande ISM (Industrial, Scientific, Medical)]]
+    - [[#Hiperlan]]
+- [[#Apparati Wi-Fi]]
+    - [[#Access Point (AP)]]
+    - [[#Repeater]]
+    - [[#Bridge]]
+    - [[#WLAN Controller (WLC)]]
+- [[#Progettazione di una WLAN]]
+    - [[#Requisiti AP]]
+        - [[#Posizionamento]]
+        - [[#Requisiti]]
+        - [[#Numero]]
+        - [[#Priorità]]
+    - [[#Valutazione Dell'Ambiente]]
+        - [[#Attenuazione del segnale]]
+        - [[#Interferenze]]
+        - [[#Propagazione su più cammini]]
+        - [[#Canale Radio]]
+- [[#Principali Parametri Di Configurazione]]
+    - [[#Configurazione e Prestazioni]]
+- [[#Sicurezza degli Accessi]]
+    - [[#Protocolli di Sicurezza]]
+    - [[#Sicurezza Enterprise (IEEE 802.1X / RADIUS)]]
 
-# Appunti
+---
 
-- Modulare un segnale
-- fm frequency modulacion, cambia la frequenza in base al dato
-
-- cercare di incastraer dei dati in tempi più brevi nel segnale, grazie allo studio della modulazione
-cosa cambia tra telefono e antenna hiperlan nella banda 5Ghz
-- la parabola è dirizionata invece i telefoni sono omnidirizionale, questo permette di concentrare il segnale in un determinato punto, in più l'hyperlan eroga più potenza
-
-Dispositivi:
-1. Access Point (AP):
-	1. BSA è l'area che copre quel determinato access point 
-	2. BSS, è l'access point che copre BSA
-	3. Access point gestisce tutta l'infrastruttura della rete
-2. Reapeter:
-	1. ripete il segnale, esso è un semplice AP che viene configurato per interconnettersi via radio con un altro AP con la LAN cablata
-3. bridge:
-	1. punto-punto
-	2. punto-multipunto
-4. WLAN Controller
-	1. Mi permette di agevolare l'installazione e la configurazione di reti wireless, loro prendono il controllo di N AP, assumono la configurazione dall'utente e la propagano agli AP tramite dei protocolli.
-
-Quality of service è un protocollo che stabilisce la qualità di un servizio
-
-
-Configurazione:
-1. 
-___
-# Modulare un segnale
-- fm frequency modulacion, cambia la frequenza in base al dato
-
-- cercare di incastraer dei dati in tempi più brevi nel segnale, grazie allo studio della modulazione
-cosa cambia tra telefono e antenna hiperlan nella banda 5Ghz
-- la parabola è dirizionata invece i telefoni sono omnidirizionale, questo permette di concentrare il segnale in un determinato punto, in più l'hyperlan eroga più potenza
-
-Dispositivi:
-1. Access Point (AP):
-	1. BSA è l'area che copre quel determinato access point 
-	2. BSS, è l'access point che copre BSA
-	3. Access point gestisce tutta l'infrastruttura della rete
-2. Reapeter:
-	1. ripete il segnale, esso è un semplice AP che viene configurato per interconnettersi via radio con un altro AP con la LAN cablata
-3. bridge:
-	1. punto-punto
-	2. punto-multipunto
-4. WLAN Controller
-	1. Mi permette di agevolare l'installazione e la configurazione di reti wireless, loro prendono il controllo di N AP, assumono la configurazione dall'utente e la propagano agli AP tramite dei protocolli.
-
-Quality of service è un protocollo che stabilisce la qualità di un servizio
-
-
+Ti serve che io trasformi anche i titoli nel corpo del testo in intestazioni cliccabili per questi link?
 # Wireless Local Area Network (WLAN)
-
 
 Una **WLAN** è una tecnologia che permette l'accesso e connessione di host rete tramite **onde radio**, eliminando la necessità di collegamenti fisici **cablati**. 
 
@@ -93,16 +72,26 @@ Il segnale wireless deve essere **modulato** per trasportare dati.
 La ricerca tecnologica punta a "incastrare" più dati in tempi brevi ottimizzando proprio la modulazione.
 - **FM (Frequency Modulation):** La frequenza cambia in base al dato trasmesso.
 - **Bande ISM (Industrial, Scientific, Medical):**
-    - **2.4 GHz:** Banda pubblica soggetta a molte interferenze (Bluetooth, microonde).
-    - **5 GHz:** Offre canali più ampi e meno affollati; utilizzata dagli standard più recenti come 802.11ac.
-	 - **Interferenze**: Poiché le frequenze centrali distano solo 5 MHz, i canali si sovrappongono. Per evitarlo, si utilizzano i canali **1**, **6** e **11** che mantengono una spaziatura di 5 canali.
+    - **2.4 GHz**: Le onde a frequenza bassa, hanno una lunghezza d'onda maggiore, queste permette di coprire una distanza maggiore.
+    - **5 GHz**: Offre canali più ampi e meno affollati.
+ - **Interferenze**: Nella banda a **2.4 GHz**, lo spazio totale disponibile è limitato e ogni canale occupa una larghezza di circa 20-22 MHz. Poiché le frequenze centrali dei canali sono distanti tra loro solo 5 MHz, la maggior parte dei canali finisce per "calpestare" quelli vicini, creando interferenze.
+   Per questo motivo, si utilizzano i canali **1**, **6** e **11**: sono gli unici tre che mantengono una distanza sufficiente a non sovrapporsi mai, garantendo una trasmissione pulita e senza errori.
 ![[Schema_Bande_Interferenze|500]]
 
+| **Caratteristica**         | **2.4 GHz**                                             | **5 GHz**                                                     |
+| -------------------------- | ------------------------------------------------------- | ------------------------------------------------------------- |
+| **Copertura (Range)**      | Maggiore: copre distanze più ampie.                     | Minore: il segnale si affievolisce più velocemente.           |
+| **Penetrazione Ostacoli**  | Ottima: attraversa meglio muri e oggetti solidi.        | Scarsa: viene facilmente riflessa o assorbita dai muri.       |
+| **Velocità (Data Rate)**   | Inferiore: canali più stretti e meno banda disponibile. | Superiore: supporta canali più ampi per trasferimenti veloci. |
+| **Interferenze**           | Elevate: affollata da Bluetooth, microonde e altri AP.  | Ridotte: meno dispositivi operano su questa frequenza.        |
+| **Canali non sovrapposti** | Solo 3 (tipicamente 1, 6, 11).                          | Molti di più (fino a 24), riducendo la congestione.           |
+| **Uso Principale**         | Dispositivi IoT, smart home e lunghe distanze.          | Gaming, streaming 4K, videochiamate e alte prestazioni.       |
+
 ## Hiperlan
-Proprio come lo standard **IEEE 802.11** definisce come funziona il Wi-Fi, **HIPERLAN/2** è lo standard europeo che definisce come devono viaggiare i dati a 5 GHz per le connessioni a lungo raggio.
+Proprio come lo standard **IEEE 802.11** definisce come funziona il WI-FI, **HIPERLAN/2** è lo standard europeo che definisce come devono viaggiare i dati a 5 GHz per le connessioni a lungo raggio.
 - Mentre il Wi-Fi è nato per l'uso interno (uffici, case), HIPERLAN è stato ottimizzato per la trasmissione dati ad alta **velocità** in ambienti **esterni**.
 
-Differenze strutturali:
+Differenze strutturali tra Hiperlan e WI-FI:
 1) **Direzionalità**: I telefoni sono omnidirezionali (irradiano in tutte le direzioni); le antenne Hiperlan usano parabole direttive per concentrare il segnale in un punto preciso.
 2) **Potenza**: L'Hiperlan eroga più potenza fino a 1000mW, per mantenere la riservatezza e l'integrità dei dati permettendo di coprire distanze fino a 10 km.
 
@@ -110,61 +99,54 @@ Differenze strutturali:
 # Apparati Wi-Fi
 
 ## Access Point (AP)
-
 È l'**interfaccia** tra il mondo wireless e la rete cablata Ethernet:
 1) Gestisce l'associazione dei client
 2) Controlla il traffico (i client non comunicano tra loro direttamente ma tramite l'AP).
 3) Filtra gli accessi tramite indirizzi MAC
-
 Definizioni:
 - **BSA (Basic Service Area):** L'area geografica (cella) coperta dal segnale dell'AP.
-- **BSS (Basic Service Set):** L'insieme dei client serviti dall'AP all'interno della BSA.  
+- **BSS (Basic Service Set):** L'insieme dei client serviti dall'AP all'interno della BSA. 
+  
+![[Access_Point]] 
 ## Repeater
 Estende il segnale in zone dove non arriva il cavo LAN, collegandosi via radio a un altro AP.
+![[Repeater_Esempio]]
 ## Bridge
 Permette di collegare due o più LAN distanti tra loro:
 - **Punto-punto:** Connessione tra due bridge per unire due edifici.
 - **Punto-multipunto:** Configurazione a stella con un bridge "root" e diversi bridge periferici.
+![[Bridge_Esempio|600]]
 ## WLAN Controller (WLC)
-
 Dispositivo per la gestione centralizzata di reti **medie/grand**i.
 - **Controllo:** Prende il controllo di N Access Point.    
 - **Propagazione:** L'amministratore imposta la configurazione sul WLC, che la propaga a tutti gli AP tramite protocolli specifici.
 - **QoS (Quality of Service):** Protocollo che stabilisce la priorità e la qualità dei servizi sulla rete.
+![[WLAN_Controller_Esempio|600]]
 
----
-# 4. Configurazione e Parametri Principali
+___
+# Progettazione di una WLAN
 
-1) SSID (Service Set Identifier): Il nome della rete wireless24. Può essere trasmesso in broadcast (visibile a tutti) o nascosto (richiede inserimento manuale sul client.
-
-2) Roaming (Handover): Permette a un utente di spostarsi tra diverse celle (BSA) mantenendo la connessione attiva senza interruzioni.
-
-# 5. Progettazione di una WLAN
-Abbiamo una infrastruttura cablata, ora inizia la progettazione della struttura wireless,
-I parametri di cui ho bisogno:
-- Numero di host
-- Grandezza dell' Area da coprire
-- materiale dell'edificio (gli edifici pubblici sono rinforzati 10 volte tanto), questo implica all'attenuazione del segnale. sulla base di questo capiamo il numero di Access Point corretto da inserire all'interno della rete.
-- Stabilire la priorità degli utenti
-
-## Access Point
-
-### Posizione
-l'**AP** va posizionato in punto strategico dove ha un'area di copertura abbastanza libera, di solito sono posizionati in alto:
+## Requisiti AP
+### Posizionamento
+l'**AP** va posizionato in punto strategico dove ha un'area di copertura abbastanza libera, di solito sono posizionati in **alto**:
 ### Requisiti
-Requisiti degli **AP**:
-- Potenza di trasmissione regolabile
-- Buona sensibilità in ricezione
-- Apparato multifunzione (AP, repeater e bridge)
-- Possibilità di impiego di antenne diverse per gestire meglio la copertura radio:
+1) Potenza di trasmissione **regolabile**
+2) Buona **sensibilità** in ricezione
+3) Apparato **multifunzione** (AP, repeater e bridge)
+4) Possibilità di impiego di **antenne** diverse per gestire meglio la copertura radio:
 	- Omnidirezionale
 	- Direttive
-- Configurabilità da remoto
-- In caso di AP deve essere compatibilità con i WLAN controller
-- Alimentazione dell'a AP direttamente tramite la porta Ethernet
+5) Configurabilità da **remoto**
+6) In caso di più AP deve essere **compatibilità** con i WLAN controller
+7) Alimentazione dell'a AP direttamente tramite la porta Ethernet
 ### Numero
 Per stabilire il numero di **AP** in base al numero di host, indicativamente ogni AP può avere 25 host.
+### Priorità
+Stabilire la **priorità** degli utenti
+
+## Valutazione Dell'Ambiente
 ### Attenuazione del segnale
+**Materiale** dell'edificio (gli edifici pubblici sono rinforzati 10 volte tanto), questo implica all'attenuazione del segnale. sulla base di questo capiamo il numero di Access Point corretto da inserire all'interno della rete.
 
 | **Materiale**        | **Attenuazione** | **Esempio**                                                       |
 | -------------------- | ---------------- | ----------------------------------------------------------------- |
@@ -187,33 +169,29 @@ Per stabilire il numero di **AP** in base al numero di host, indicativamente ogn
 | Cemento armato       | Alta             | Pavimento e muri esterni                                          |
 | Vetro antiproiettili | Alta             | Separé di sicurezza                                               |
 | Metalli              | Molto alta       | Scrivania, tramezzi d'uffici, specchi, armature in cemento armato |
-
 ### Interferenze
-Per dispositivi che trasmettono segnale a radiofrequenza su sui viaggiamo può essere condivisa da altri dispositivi o altri rumori ambientali come rumori, trasformatori, telecomandi, ecc., possono causare problemi.
+I dispositivi che trasmettono segnali a radiofrequenza operano su frequenze **condivise**.
+la presenza di altri **apparati** o di disturbi ambientali (come trasformatori, telecomandi e interferenze elettromagnetiche) può compromettere la **qualità** della trasmissione e causare problemi di connettività.
 ### Propagazione su più cammini
 Il segnale può subire 
 ![[Propagazione_Del_Segnale|500]]
 ### Canale Radio
-Capire il canale giusto da selezionare sulla base delle altre reti WI-FI
-Per evitare interferenze a 2.4 GHz, si usano canali distanziati di almeno 5 posizioni (tipicamente 1, 6, 11).
+Selezionare il canale corretto sulla base delle altre reti WI-FI, [[#Modulazione e Frequenze]]
 
-- dBm Unità di misura diversa per esprimere la potenza. Più vado in negativo e più la potenza è piccola
+dBm Unità di misura diversa per esprimere la potenza. Più è negativo il numero e più la potenza è bassa
 
 $$
 1dBm = 10 \log{10}{\frac{P}{1mW}}
 $$
-
-| **Parametri** | **Descrizione**                                                                                                                                                                             |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| dbm           | Unità di misura diversa per esprimere la potenza.<br>Più vado in negativo e più la potenza è piccola                                                                                        |
-| Signal (dbm)  | La potenza del sengale                                                                                                                                                                      |
-| Noise (dbm)   | La potenza del disturbo, se il disturbo supera il segnale, sovrasta il  segnale                                                                                                             |
-| SNR           | Signal Noise Ratio: Determina la qualità di un segnale<br>- rapporto tra potenza $\frac{signal}{noise}$ <br>- sottrazione se in dbm $signal - noise$<br>Più alto è, più il segnale è ottimo |
-
-
-
+##### chiedere al vex
 ![[Tabella_Del_Segnale|1000]]
 
+| **Parametri** | **Descrizione**                                                                                                                                                                           |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| dbm           | Unità di misura diversa per esprimere la potenza.<br>Più vado in negativo e più la potenza è piccola                                                                                      |
+| Signal (dBm)  | La potenza del sengale                                                                                                                                                                    |
+| Noise (dBm)   | La potenza del disturbo, se il disturbo supera il segnale, sovrasta il  segnale                                                                                                           |
+| SNR           | Signal Noise Ratio: Determina la qualità di un segnale, Più alto è, più il segnale è ottimo<br>- rapporto tra potenza $\frac{signal}{noise}$ <br>- sottrazione se in dBm $signal - noise$ |
 
 ---
 
@@ -223,18 +201,21 @@ $$
 
 - **Capacità di carico**: Un AP garantisce prestazioni accettabili per circa **20-25 client** contemporanei.
 - **SSID (Service Set Identifier)**: Stringa alfanumerica che rappresenta tutti i dispositivi collegati a un determinato access point. 
-	- Se in Broadcast, semplifica la connessione; se 
-	- Nascosto, aumenta leggermente la sicurezza ma richiede configurazione manuale sui client.
-- **Roaming (Handover)**: Permette all'utente di muoversi tra diverse celle (BSA) senza perdere la connessione. Richiede che le celle si sovrappongano e utilizzino canali diversi (1, 6, 11) per non interferire.
-	  - dal momento in cui mi aggancio dal secondo AP, devo ridire un'altra volta al secondo AP le credenziali.
-	-   l'AP1 e l'AP2  non parlano, non possono sapere che mi sono autenticato su un AP:
-	- Il roaming sfrutta WLC: autenticazione avverrà  nell'ap. il wlc mantiene le credenziali anche se cambiamo AP, questo ci permette di mantenere il servizio nonostante cambio AP
-	- I 2 AP devono trovarsi su canali diversi, altrimenti si potrebbero verificarsi dei disturbi, tipo, 1 - 2 - 3 - 2 - 1
-	- quella piccola variazione di AP di 1ms, è il tempo che ci mette il mio dispositivo a cambiare AP
+	- Se in **Broadcast**: semplifica la connessione;
+	- Se **Nascosto**: aumenta leggermente la **sicurezza** ma richiede configurazione manuale sui client.
+- **Roaming (Handover)**: Permette all'utente di muoversi tra diverse celle (BSA) senza perdere la connessione.
+	- **Sovrapposizione e Canali:** Per un roaming fluido, le celle degli Access Point (AP) devono sovrapporsi leggermente e utilizzare canali diversi (tipicamente **1, 6, 11** sulla banda 2.4 GHz) per evitare interferenze distruttive tra AP adiacenti.
+	- **Il Ruolo del WLC (Wireless LAN Controller):** 
+		1) Senza un controller, gli AP non comunicano tra loro e il dispositivo dovrebbe **ri-autenticarsi** ogni volta che cambia cella. 
+		2) Con il **WLC**, le credenziali vengono mantenute **centralmente**: quando il dispositivo passa dall'AP1 all'AP2.
+		   Questo ci permette di **mantenere** il servizio nonostante si cambi AP.
+		   quella piccola **variazione** di AP di 1ms, è il tempo che ci mette il mio dispositivo a **cambiare** AP, ed è invisibile all'utente.
 ![[Schema_Roaming|500]]
-- **EIRP**: Potenza irradiata comprensiva del guadagno dell'antenna + trasmettitore. 
-	-  Esistono limiti: legali (es. +20 dBm per i 2.4 GHz) per limitare l'inquinamento elettromagnetico.
-		- a 5GHz ha il doppio dell'EIRP perchè serve più potenza
+- **EIRP**: rappresenta la potenza totale effettivamente irradiata dall'antenna. 
+- ##### chiedere al vex
+	- **Formula:** Si calcola sommando la potenza del trasmettitore al guadagno dell'antenna, sottraendo le perdite dei cavi. 
+	- **Limiti Legali:** Per evitare l'inquinamento elettromagnetico e le interferenze, esistono limiti definiti per legge (es. **+20 dBm** o 100mW per la banda 2.4 GHz).
+	- **Differenza tra Bande:** Spesso sulla banda **5 GHz** sono permessi limiti EIRP più elevati poiché le frequenze alte hanno una portata inferiore e necessitano di più spinta per superare gli ostacoli.
 
 |**Banda**|**Utilizzo**|**EIRP massimo**|
 |---|---|---|
@@ -242,11 +223,11 @@ $$
 |**$5150 \div 5250$ MHz**|Indoor|**+ 23 dBm** (200 mW)|
 |**$5250 \div 5350$ MHz**|Indoor/outdoor|**+ 23 dBm** (200 mW)|
 |**$5470 \div 5725$ MHz**|Outdoor|**+ 30 dBm** (1 W)|
-
+___
 # Sicurezza degli Accessi
 
 Una rete sicura deve avere:
-- **Riservatezza**: i dati trasmessi attraverso il canale non devono essere intercettati e interpretati; 
+- **Riservatezza**: i dati trasmessi attraverso il canale non devono essere intercettati  e interpretati; 
 - **Controllo di accesso** (Access Control): alla rete possono accedere solo gli host autorizzati; 
 - **Integrità dei dati**: i messaggi trasmessi non devono essere manomessi, cioè devono giungere integri a destinazione.
   
@@ -267,10 +248,14 @@ Protocolli di Sicurezza:
 | WPA / WPA2 enterprise | IEEE 802.1X / EAP                           | TKIP                    | Enterprise            | Protezione forte; richiede l'impiego di un server RADIUS             |
 |                       | IEEE 802.1X / EAP                           | AES                     | Enterprise            | Protezione molto forte; richiede l'impiego di un server RADIUS       |
 | WPA3 enterprise       | Simultaneous Authentication of Equals (SAE) | AES                     | Enterprise            | Protezione molto forte; richiede l'impiego di un server RADIUS       |
-In una rete aziendale c'è bisogno di una rete che permetta di tracciare il traffico dei dati attraverso delle credenziali.
 
 ## Sicurezza Enterprise (IEEE 802.1X / RADIUS)
-Nelle aziende si usa il modello **AAA** (Authentication, Authorization, Accounting):
+In un'architettura di rete una rete aziendale, la protezione dell'accesso non si basa su una semplice password condivisa, ma sul framework **IEEE 802.1X**, che implementa il modello **AAA** (Authentication, Authorization, Accounting) che ne aumenta la sicurezza.
+- **Authentication**: verifica l'identità dell'utente chiedendo "Chi sei?".
+- **Authorization**: stabilisce i permessi dell'utente chiedendo "Cosa puoi fare?".
+- **Accounting**: traccia l'attività dell'utente registrando "Cosa hai fatto?".
+
+##### Chiedere al vex
 - **Supplicant:** Il client che richiede l'accesso.
 - **Authenticator:** L'Access Point che fa da tramite.
 - **RADIUS Server:** Il server che detiene il database degli utenti e le chiavi di accesso; verifica se l'utente è autorizzato ed emette la chiave crittografica.
@@ -280,54 +265,3 @@ Server AAA: verifica l'autorizzazione, verifica le credenziali, registra le info
 
 ---
 
-
-### Tipologie di Apparati
-
-- **Access Point (AP)**: Gestisce l'associazione dei client, controlla il traffico (i client non comunicano tra loro direttamente ma tramite l'AP) e può filtrare gli accessi tramite indirizzi MAC.
-    
-    +2
-    
-- **Repeater**: Estende il segnale in zone dove non arriva il cavo LAN, collegandosi via radio a un altro AP.
-    
-- **Bridge**: Collega LAN separate geograficamente. Può essere **punto-punto** o **punto-multipunto** (configurazione a stella con un bridge "root").
-    
-    +1
-    
-- **WLAN Controller (WLC)**: Necessario in reti grandi per centralizzare l'amministrazione di molti AP.
-    
-
-Considerazioni Ambientali
-
-Il segnale radio è soggetto ad attenuazione in base ai materiali attraversati:
-
-- **Bassa**: Legno, plastica, vetro, amianto.
-    
-- **Media**: Mattoni, marmo, esseri viventi (persone e vegetazione).
-    
-- **Alta**: Cemento armato, cartongesso, ceramica.
-    
-- **Molto Alta**: Metalli (scrivanie, armature, specchi).
-    
-
----
-
-## 4. Configurazione e Prestazioni
-
-- **Capacità di carico**: Un AP garantisce prestazioni accettabili per circa **20-25 client** contemporanei.
-    
-- **SSID (Service Set Identifier)**: Stringa alfanumerica che identifica la rete. Se irradiato (broadcast), semplifica la connessione; se nascosto, aumenta leggermente la sicurezza ma richiede configurazione manuale sui client.
-    
-    +2
-    
-- **Roaming (Handover)**: Permette all'utente di muoversi tra diverse celle (BSA) senza perdere la connessione. Richiede che le celle si sovrappongano e utilizzino canali diversi (1, 6, 11) per non interferire.
-    
-- **EIRP**: Potenza irradiata comprensiva del guadagno dell'antenna. Esistono limiti legali (es. +20 dBm per i 2.4 GHz) per limitare l'inquinamento elettromagnetico.
-    
-    +1
-    
-
----
-
-
-
-Desideri che approfondisca ulteriormente la parte riguardante i protocolli AAA o la gestione del roaming?

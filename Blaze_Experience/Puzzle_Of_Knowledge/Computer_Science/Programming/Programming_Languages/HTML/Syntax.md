@@ -1,7 +1,12 @@
 Data: 2026-01-22
-[HTML](./README.md)
+[HTML](README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML
 ___
+
+
+da fare:
+tag:  button select(option)
+
 # Index
 - [[#Formattazione]]
 - [[#Contenitore]]
@@ -401,15 +406,17 @@ ___
     1. `for`: Deve corrispondere all' `id` dell'input per collegarli logicamente.
 - **\<input>**
     1. `type`: Determina il tipo di campo:
-	    1. `password`
-	    2. `text`
-	    3. `email`
-	    4. `number`
-	    5. `date`
-	    6. `color`
-	    7. `checkbox`
-	    8. `submit`: Pulsante per inviare il modulo
-    2. `name`: (Critico) Il nome del dato che arriverà al server.
+			1. `password`
+			2. `text`
+			3. `email`
+			4. `number`
+			5. `date`
+			6. `color`
+			7. `checkbox`
+			8. `submit`: Pulsante per inviare il modulo
+			9. `hidden`: Nasconde il campo (utile per passare informazioni nell'url)
+    2. `name`: (Critico) Il nome del dato che arriverà al server, stampato nell'ulr
     3. `placeholder`: Testo di suggerimento nel campo.
     4. `required`: Impedisce l'invio se il campo è vuoto.
     5. `value`: (Opzionale) Imposta un valore predefinito:
+    6. `min`: impedisce all'utente di inserire campi vuoti a un numero stabilito

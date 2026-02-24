@@ -4,16 +4,17 @@ Data: 2026-02-05
 ___
 # Index
 - [[#If]]
+	- [[#Il concetto di "Truthy" e "Falsy"]]
     - [[#Operatori Logici]]
     - [[#Operatore Ternario]]
 - [[#Cicli]]
     - [[#For]]
     - [[#For-of]]
+    - [[#forEach]]
     - [[#While]]
     - [[#Do-While]]
 - [[#Break e Continue]]
 - [[#Switch]]
-
 
 ___
 # If
@@ -29,17 +30,23 @@ if (nome == 'Luca') {
 }
 ```
 
+## Il concetto di "Truthy" e "Falsy"
+[DOM](./DOM.md)
+In un'istruzione `if`, JavaScript non accetta solo `true` o `false`, ma valuta la "veridicità" di ciò che passi:
+- **Se l'elemento esiste**: `document.querySelector` restituisce un **oggetto**. Un oggetto è considerato "truthy" (vero), quindi il codice dentro l'IF viene eseguito.
+- **Se l'elemento NON esiste**: Il metodo restituisce `null`. Il valore `null` è considerato "falsy" (falso), quindi il codice dentro l'IF viene saltato.
+
 ## Operatori Logici
 - `&&` **(AND)**: Tutte le condizioni devono essere vere.
 - `||` **(OR)**: Almeno una condizione deve essere vera.
 - `!` **(NOT)**: Inverte il valore booleano.
-- `==` **Uguaglianza debole**
+- `==` **Uguaglianza debole** o `!=`
 ``` javascript
 console.log(5 == "5");  // true (La stringa "5" viene convertita in numero 5)
 console.log(1 == true); // true (Il booleano true viene convertito in 1)
 console.log(0 == false);// true (Il booleano false viene convertito in 0)
 ```
-- `===` **Uguaglianza stretta**
+- `===` **Uguaglianza stretta** o `!==`
 ``` javascript
 console.log(5 === "5");  // false (Perché Number è diverso da String)
 console.log(1 === true); // false (Perché Number è diverso da Boolean)
@@ -77,6 +84,27 @@ for (let valore of lista) {
 }
 ```
 
+## forEach
+[DOM](./DOM.md)
+[Function](./Function.md)
+``` javaScript
+let frutti = ["Mela", "Banana", "Pera"];
+
+// 1) Sintassi Standard (Funzione anonima)
+frutti.forEach(function(elemento, indice) {
+    console.log(`${indice}) ${elemento}`);
+});
+
+// 2) Sintassi Arrow Function (Più usata e compatta)
+frutti.forEach(frutto => console.log(`Frutto: ${frutto}`));
+
+// 3) Esempio con il DOM (querySelectorAll restituisce una NodeList)
+let bottoni = document.querySelectorAll("button");
+bottoni.forEach((bottone, i) => {
+    bottone.innerHTML = `Pulsante numero ${i + 1}`;
+    bottone.style.color = "blue";
+});
+```
 ## While
 
 ``` JavaScript

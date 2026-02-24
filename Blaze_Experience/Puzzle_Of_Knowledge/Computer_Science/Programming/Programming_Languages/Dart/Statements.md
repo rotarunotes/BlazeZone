@@ -12,6 +12,7 @@ ___
 - [[#Try-Catch]]
 - [[#Switch]]
 
+___
 # If
 Prende decisioni
 
@@ -25,7 +26,6 @@ print("Risultato: Sufficiente.");
 print("Risultato: Insufficiente.");
 }
 ```
-
 ## If Operatore Ternario
 
 ``` Dart

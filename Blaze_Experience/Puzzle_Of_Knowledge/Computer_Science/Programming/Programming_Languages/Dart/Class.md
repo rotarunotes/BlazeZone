@@ -9,6 +9,8 @@ ___
     - [[#Costruttore col Nome]]
     - [[#Costruttore Costante]]
     - [[#Costruttore Factory]]
+
+___
 #  Sintassi base
 ``` Dart
 class Veicolo {
