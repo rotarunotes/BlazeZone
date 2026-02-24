@@ -2,6 +2,8 @@ Data: 2026-01-13
 [Netting](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting
 ___
+**Pratica**: [[Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLAN|WLAN Pratica]]
+___
 # Index
 
 - [[#Wireless Local Area Network (WLAN)]]
@@ -183,8 +185,6 @@ dBm Unità di misura diversa per esprimere la potenza. Più è negativo il numer
 $$
 1dBm = 10 \log{10}{\frac{P}{1mW}}
 $$
-##### chiedere al vex
-![[Tabella_Del_Segnale|1000]]
 
 | **Parametri** | **Descrizione**                                                                                                                                                                           |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -265,3 +265,25 @@ Server AAA: verifica l'autorizzazione, verifica le credenziali, registra le info
 
 ---
 
+# Pratica
+## CAPWAP
+È il protocollo che gestisce la comunicazione tra AP e WLC
+
+- di solito si aggiunge una vlan, (vlan 100) per far transitare i dati 
+
+- rimuovere il dhcp pool
+- conroller: si crean sub interface
+	- port number
+	- ip address
+	- ip dhcp
+	  
+wlan:
+- ![[Pasted image 20260224133928.png]]
+  serve a delgare un server radius esterno
+
+
+![[Pasted image 20260224134039.png]]
+
+
+AP groups
+si crea l'associazioen tra ap e 

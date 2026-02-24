@@ -6,8 +6,6 @@ ___
 - **Router 1841**: 2 interfacce
 - **Router 2911**: 3 interfacce
 - **Router 2811**: 1 interfaccia/ VOIP
-
-
 # Reset Del Router
 ``` CLI
 R# show version    // Mostra versione e configurazione registro
@@ -79,8 +77,6 @@ R(config-router)# network [rete]    // Ripetere per ogni rete connessa direttame
 
 - Le rotte calcolate dinamicamente hanno una metrica molto alta
 
-
-
 ## Visualizzazione Tabelle Di Routing
 
 - Tabella di routing
@@ -101,7 +97,6 @@ R(config)# ip route 0.0.0.0 0.0.0.0 [next hop]
 Rotta statica di default per tutti i pacchetti sconosciuti
 
 ___
-
 # Impostare il DHCP
 1. **Configurare IP sull'interfaccia del router**
 

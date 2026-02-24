@@ -22,7 +22,28 @@
   "showShortcuts": true,
   "markdownOnly": false,
   "unresolvedLinks": false,
-  "recentFilesStore": [],
+  "recentFilesStore": [
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLAN.md",
+      "timestamp": 1771939640567
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/WLAN.md",
+      "timestamp": 1771939595862
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
+      "timestamp": 1771939565278
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/VLAN.md",
+      "timestamp": 1771939558718
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/VLAN.md",
+      "timestamp": 1771939540432
+    }
+  ],
   "bookmarkedFileStore": [],
   "searchDelay": 0,
   "replaceNewTabs": true,
