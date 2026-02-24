@@ -6,7 +6,7 @@
       {
         "id": "e6de78f322416d54",
         "type": "tabs",
-        "dimension": 50.1432664756447,
+        "dimension": 50.14326647564471,
         "children": [
           {
             "id": "602b77949f57ebe8",
@@ -23,6 +23,18 @@
             }
           },
           {
+            "id": "9c23278436fc47dc",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
+            }
+          },
+          {
             "id": "b6b6f13c817180d7",
             "type": "leaf",
             "state": {
@@ -33,13 +45,24 @@
               "icon": "excalidraw-icon",
               "title": "Schema_Bande_Interferenze"
             }
+          },
+          {
+            "id": "288b6e7f122439fa",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "85635a2b8f9434b4",
         "type": "tabs",
-        "dimension": 49.8567335243553,
+        "dimension": 49.85673352435529,
         "children": [
           {
             "id": "a89ac599366c08a1",
@@ -254,8 +277,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -275,7 +297,7 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "602b77949f57ebe8",
+  "active": "288b6e7f122439fa",
   "lastOpenFiles": [
     "Setup_Archive/Plugin/Excalidraw/Schema_Bande_Interferenze.md",
     "Pasted Image 20260210142514_864.png",
