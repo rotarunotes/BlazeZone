@@ -2,7 +2,7 @@ Data: 2025-11-14
 [Netting](README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting
 ___
-**Pratica:** [[Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch/VLAN|VLAN_Pratica]]
+**Pratica:** [[Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/VLAN|VLAN_Pratica]]
 # Virtual Local Area Network
 Una **VLAN** è una partizione logica di una rete locale (LAN) a livello 2 (Data Link Layer) del modello OSI. 
 
