@@ -31,8 +31,7 @@
               "title": "Home tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -221,7 +220,7 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "328c98927a61fab5",
+  "active": "fe19d36032ddb511",
   "lastOpenFiles": [
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
     "conflict-files-obsidian-git.md",
