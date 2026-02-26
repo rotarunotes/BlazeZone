@@ -5,5 +5,6 @@
     "Center_Image"
   ],
   "baseFontSize": 16,
-  "textFontFamily": "Gadugi"
+  "textFontFamily": "Gadugi",
+  "theme": "obsidian"
 }

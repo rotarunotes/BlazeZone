@@ -1,36 +1,29 @@
 Data: 2026-02-11
-[Database](./README.md)
+[Database](README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database
 ___
 # Index
- 
 
-___
-
-# Progettazione Basi Di Dati MVC
-
-![[Progettazione_Dati_Logica_Esempio|300]]
-
-# Progettazione Concettuale
-
-Individuo tute le entità che vanno a interferire nel mio software
-## Schema E-R
-
-
-
-
-## Cardinalità
-
-La **cardinalità** definisce quante volte un'entità può essere collegata a un'altra entità in una relazione, specificando il numero minimo e massimo di associazioni possibili.
-
-Tipi di cardinalità:
-- $1:1$
-- $1:N$
-- $N:M$ 
-
-# Progettazione Logica
-
-# Progettazione fisica
+- [[#Introduzione]]
+    - [[#Progettazione Basi Di Dati MVC]]
+- [[#Progettazione Concettuale]]
+    - [[#Obiettivi della progettazione concettuale]]
+    - [[#Schema E-R (Entità-Relazione)]]
+    - [[#Cardinalità]]
+- [[#Progettazione Logica]]
+    - [[#Obiettivi]]
+    - [[#Regole di Traduzione E-R → Relazionale]]
+    - [[#Cardinalità in Tabelle]]
+	    - [[#Relazioni 1 N]]
+	    - [[#Relazioni 1 1]]
+	    - [[#Relazioni N M]]
+    - [[#Dipendenza funzionale]]
+    - [[#Definizioni di Chiave]]
+    - [[#Normalizzazione]]
+	    - [[#Prima Forma Normale]]
+	    - [[#Seconda Forma Normale]]
+	    - [[#Terza Forma Normale]]
+    - [[#Esempio Completo di Progettazione Logica]]
 
 ___
 # Introduzione
@@ -43,11 +36,11 @@ Un database ben progettato **garantisce**:
 3) Facilità di manutenzione.
 4) Scalabilità del sistema.
 
-La progettazione si articola in diverse fasi, ognuna con obiettivi specifici
-- dalla comprensione dei requisiti alla realizzazione fisica del database. 
+## Progettazione Basi Di Dati MVC
+
+![[Progettazione_Dati_Logica_Esempio|300]]
 
 ---
-
 # Progettazione Concettuale
 
 La **progettazione concettuale** è la prima fase della progettazione di database. 
@@ -60,170 +53,188 @@ In questa fase si identificano le **entità** principali, i loro **attributi** e
 - **Stabilire le relazioni**: Come le entità sono collegate tra loro (es. Cliente effettua Ordini)-
 - **Rappresentare i vincoli**: Le cardinalità, definire quante istanze sono coinvolte nelle relazioni (es. un ordine deve avere almeno un prodotto).
   
-## Cardinalità
-La **cardinalità** definisce le regole quantitative delle relazioni tra entità. 
-La cardinalità stabilisce:
-- **Numero minimo** di occorrenze (cardinalità minima): 0 o 1
-- **Numero massimo** di occorrenze (cardinalità massima): 1 o N (molti)
-Si esprime con la notazione **(min, max)** su entrambi i lati della relazione.
-
-**Notazione (min, max)**:
-
-- (0,1): opzionale, al massimo uno
-- (1,1): obbligatorio, esattamente uno
-- (0,N): opzionale, può essere molti
-- (1,N): obbligatorio, almeno uno
-
-
 ## Schema E-R (Entità-Relazione)
 Lo **Schema E-R (Entity-Relationship)** è un modello grafico utilizzato nella progettazione concettuale per rappresentare visivamente entità, attributi e relazioni.
 
 ![[Schema_E-R_Esempio|1000]]
 
+## Cardinalità
+La **cardinalità** definisce quante volte un'entità può essere collegata a un'altra entità in una relazione
+
+Tipi di cardinalità:
+- $1:1$
+- $1:N$
+- $N:M$ 
+
+Là cardinalità può anche specificare:
+- **Numero minimo** di occorrenze (cardinalità minima): 0 o 1
+- **Numero massimo** di occorrenze (cardinalità massima): 1 o N (molti)
+Si esprime con la notazione **(min, max)** su entrambi i lati della relazione.
+
+**Notazione (min, max)**:
+- (0,1): opzionale, al massimo uno
+- (1,1): obbligatorio, esattamente uno
+- (0,N): opzionale, può essere molti
+- (1,N): almeno uno
+
 ---
+# Progettazione Logica
 
-## Progettazione Logica
-
-### Introduzione
-
-La **progettazione logica** è la seconda fase della progettazione di database, in cui lo schema concettuale (E-R) viene trasformato in uno **schema logico** compatibile con il modello di database scelto, tipicamente il **modello relazionale**. In questa fase si decide come rappresentare entità, attributi e relazioni attraverso **tabelle**, mantenendo le proprietà e i vincoli definiti nella fase concettuale.
-
-### Obiettivi
-
-- **Tradurre lo schema E-R in tabelle relazionali**
-- **Eliminare ridondanze** e anomalie
-- **Normalizzare** i dati (applicare le forme normali)
-- **Definire chiavi primarie ed esterne**
-- **Garantire l'integrità referenziale**
-- Ottimizzare per performance e scalabilità
-
-### Regole di Traduzione E-R → Relazionale
-
-**1. Ogni ENTITÀ diventa una TABELLA**
+In questa fase si decide come rappresentare entità, attributi e relazioni attraverso **tabelle**, mantenendo le proprietà e i vincoli definiti nella fase concettuale.
+## Obiettivi
+- **Tradurre** lo schema E-R in tabelle relazionali
+- Eliminare **anomalie** (una relazione con molti attributi)
+	- **Inserimento**: Se manca un parametro, non puoi aggiungere una riga 
+	- **Aggiornamento**: Se vuoi aggiornare un parametro, devi aggiornare tutte le righe con quel parametro (SPOT, Single Point Of Truth)
+	- **Cancellazione**: Elimina più riga anche quelle non desiderate
+- **Normalizzare** i dati (eliminare la ridondanza)
+- Definire chiavi **primarie** ed **esterne**
+## Regole di Traduzione E-R → Relazionale
+Ogni ENTITÀ diventa una TABELLA
 
 ```
 Entità CLIENTE → Tabella CLIENTE
 Attributi: id, nome, cognome, email
 ```
 
-**2. Relazioni 1:N**
-
-- La chiave primaria del lato "1" diventa chiave esterna nel lato "N"
-
+## Cardinalità in Tabelle
+### Relazioni 1:N
+La chiave primaria del lato "1" diventa chiave esterna nel lato "N"
 ```
 DIPARTIMENTO (1) ──── (N) DIPENDENTE
 
-Tabella DIPARTIMENTO (id, nome)
-Tabella DIPENDENTE (id, nome, cognome, dipartimento_id FK)
+Tabella DIPARTIMENTO (id_dipartimento, nome_dipartimento)
+Tabella DIPENDENTE (id, nome, cognome, id_dipartimento (chiave esterna))
 ```
 
-**3. Relazioni N:M**
-
-- Si crea una **tabella di associazione** con le chiavi di entrambe le entità
-
-```
-STUDENTE (N) ──── (M) CORSO
-
-Tabella STUDENTE (id, nome, cognome)
-Tabella CORSO (id, titolo, crediti)
-Tabella ISCRIZIONE (id_studente FK, id_corso FK, data_iscrizione)
-```
-
-**4. Relazioni 1:1**
-
-- Si può includere la FK in una delle due tabelle
-- Oppure creare una tabella separata (meno comune)
-
+### Relazioni 1:1
+Si possono incorporare **entrambe** le entità in una unica tabella.
 ```
 PERSONA (1) ──── (1) PASSAPORTO
 
-Opzione 1: PASSAPORTO (id, numero, data_scadenza, persona_id FK UNIQUE)
-Opzione 2: Tabella separata POSSESSO (persona_id FK, passaporto_id FK)
+PASSAPORTO (id, numero, data_scadenza, id_persona (chaive esterna))
+```
+### Relazioni N:M
+Si crea una **tabella di associazione** con le chiavi di entrambe le entità.
+```
+STUDENTE (N) ──── (M) CORSO
+
+Tabella STUDENTE (id_studente, nome, cognome)
+Tabella CORSO (id_corso, titolo, crediti)
+Tabella ISCRIZIONE (id_studente(chiave esterna), id_corso(chiave esterna), data_iscrizione)
 ```
 
-### Normalizzazione
 
+## Dipendenza funzionale
+
+Si ha dipendenza **funzionale** tra attributi quando il valore di un insieme di attributi $A$ determina un singolo valore dell'**attributo** $B$, e si indica con $A \rightarrow B$. Si dice anche che $B$ dipende da $A$, o che $A$ è un determinante per $B$.
+## Definizioni di Chiave
+1. **Chiave Primaria:** Insieme di uno o più attributi che identificano in modo univoco una tupla.
+2. **Chiave Candidata:** Insieme minimale di uno o più attributi che possono essere potenzialmente una chiave primaria.
+3. **Chiave Non Primaria:** Attributi che non fanno parte della chiave primaria.
+
+**Esempi pratici:**
+- Se vivi a Vicenza $\rightarrow$ Vivi in Veneto $\rightarrow$ Italia $\rightarrow$ Europa.
+- Nome scuola $\rightarrow$ Indirizzo fisico.
+## Normalizzazione
 La **normalizzazione** è il processo di organizzazione delle tabelle per:
-
 - Eliminare ridondanze
 - Prevenire anomalie di inserimento, aggiornamento e cancellazione
 - Garantire coerenza dei dati
 
-**Forme Normali Principali**:
+### Prima Forma Normale
+No tuple ripetute
+- Di solito già si eliminano con la definizione di relazione
+No liste di attributi
 
-**1NF (Prima Forma Normale)**:
+- **Esempio:**
 
-- Ogni campo contiene valori atomici (non ripetuti)
-- Niente gruppi ripetuti
+| Persona | nome  | colori_preferiti  |
+| ------- | ----- | ----------------- |
+|         | Mario | rosso, blu, viola |
+|         | Luca  | blu, arancione    |
 
-**2NF (Seconda Forma Normale)**:
+Diventa:
 
-- Soddisfa 1NF
-- Ogni attributo non chiave dipende completamente dalla chiave primaria
+| Persona | nome  |
+| ------- | ----- |
+|         | Mario |
 
-**3NF (Terza Forma Normale)**:
+| Colori | nome_colore |
+| ------ | ----------- |
+|        | blu         |
+|        | arancione   |
 
-- Soddisfa 2NF
-- Nessuna dipendenza transitiva (attributi non chiave non dipendono da altri attributi non chiave)
+| colori_preferiti | nome  | colore_preferito |
+| ---------------- | ----- | ---------------- |
+|                  | Mario | rosso            |
+|                  | Luca  | viola            |
+|                  | Mario | marrone          |
+### Seconda Forma Normale
+Soddisfa 1NF
+- Bon
+Non ci devono essere dipendenze parziali dalla chiave, devono essere solo totali, tutti gli attributi non chiave dipendono dalla completa chiave
+- **Esempio:**
 
-### Esempio Completo di Progettazione Logica
+| Persona | nome  | cognome | IBAN           | soldi |
+| ------- | ----- | ------- | -------------- | ----- |
+|         | Mario | Blaze   | IT 405234382N3 | 42    |
 
-**Schema E-R di partenza**:
+Soldi dipende dalla chiave: IBAN
 
-```
-CLIENTE (1) ──── EFFETTUA ──── (N) ORDINE (N) ──── CONTIENE ──── (M) PRODOTTO
-```
+| Persona | nome  | cognome | IBAN           |
+| ------- | ----- | ------- | -------------- |
+|         | Mario | Blaze   | IT 405234382N3 |
 
-**Schema Logico (Tabelle)**:
+| Conto | IBAN           | soldi |
+| ----- | -------------- | ----- |
+|       | IT 405234382N3 | 42    |
+### Terza Forma Normale
+Soddisfa 2NF
+- Bon
+Nessuna dipendenza transitiva
+- $A \to B \to C$, si scompone in 2 tabelle:  $A \to B \bowtie B\to C$
 
-```sql
-CLIENTE (
-  id INT PRIMARY KEY,
-  nome VARCHAR(100),
-  email VARCHAR(100) UNIQUE,
-  data_registrazione DATE
-)
+## Esempio Completo di Progettazione Logica
 
-ORDINE (
-  id INT PRIMARY KEY,
-  data_ordine DATE,
-  totale DECIMAL(10,2),
-  cliente_id INT,
-  FOREIGN KEY (cliente_id) REFERENCES CLIENTE(id)
-)
+**Schema non normalizzato:** 
+**ASCOLTI**: 
+(**ID-ASCOLTO**, EMAIL, DATA-ASCOLTO, TITOLO_CANZONE, ARTISTA, NAZIONALITA_ARTISTA, GENERE_ARTISTA, ALBUM, ANNO_ALBUM, ETICHETTA, USERNAME, DURATA)
 
-PRODOTTO (
-  id INT PRIMARY KEY,
-  nome VARCHAR(100),
-  prezzo DECIMAL(10,2),
-  quantita_magazzino INT
-)
+### 1 Forma Normale
+Scorporare GENERE-ARTISTA, perché è una lista di attributi.
 
-RIGA_ORDINE ( -- Tabella di associazione N:M
-  ordine_id INT,
-  prodotto_id INT,
-  quantita INT,
-  prezzo_unitario DECIMAL(10,2),
-  PRIMARY KEY (ordine_id, prodotto_id),
-  FOREIGN KEY (ordine_id) REFERENCES ORDINE(id),
-  FOREIGN KEY (prodotto_id) REFERENCES PRODOTTO(id)
-)
-```
+**ASCOLTI**: (**ID-ASCOLTO**, EMAIL, DATA-ASCOLTO, TITOLO_CANZONE, **ARTISTA**, NAZIONALITA_ARTISTA, ALBUM, ANNO_ALBUM, ETICHETTA, USERNAME, DURATA)
+**GENERE_ARTISTA**: (**ARTISTA**, **GENERE**)
 
-### Vincoli di Integrità
+### 2 Forma Normale
+Dipendenze parziali
 
-Durante la progettazione logica si definiscono:
+**ASCOLTI** (**ID-ASCOLTO**, USERNAME, DATA-ASCOLTO, TITOLO_CANZONE)
+**INDIVIDUO** (**USERNAME**, EMAIL)
+**ARTISTI** (**ARTISTA**, NAZIONALITA_ARTISTA)
+**CANZONE** (**TITOLO_CANZONE**, ALBUM, DURATA)
+**GENERI** (**GENERE**)
+**GENERE_ARTISTA** (**ARTISTA**, **GENERE**)
+**ALBUM** (**ALBUM**, ANNO_ALBUM, ETICHETTA, ARTISTA)
 
-- **Integrità di entità**: ogni tabella deve avere una chiave primaria
-- **Integrità referenziale**: le chiavi esterne devono riferirsi a chiavi primarie esistenti
-- **Integrità di dominio**: vincoli sui valori (NOT NULL, CHECK, UNIQUE)
-- **Integrità aziendale**: regole di business specifiche
+### 3 Forma Normale
+È già in 3 forma normale
+
+**ASCOLTI** (**ID-ASCOLTO**, USERNAME, DATA-ASCOLTO, TITOLO_CANZONE)
+**INDIVIDUO** (**USERNAME**, EMAIL)
+**ARTISTI** (**ARTISTA**, NAZIONALITA_ARTISTA)
+**CANZONE** (**TITOLO_CANZONE**, ALBUM, DURATA)
+**GENERI** (**GENERE**)
+**GENERE_ARTISTA** (**ARTISTA**, **GENERE**)
+**ALBUM** (**ALBUM**, ANNO_ALBUM, ETICHETTA, ARTISTA)
+
 
 ---
 
-## Progettazione Fisica
+# Progettazione Fisica
 
-### Introduzione
+## Introduzione
 
 La **progettazione fisica** è l'ultima fase della progettazione di database, in cui lo schema logico viene implementato concretamente su un **DBMS specifico** (Database Management System come MySQL, PostgreSQL, Oracle, SQL Server). In questa fase si prendono decisioni tecniche per ottimizzare **performance**, **sicurezza** e **storage**, considerando le caratteristiche hardware e software del sistema.
 

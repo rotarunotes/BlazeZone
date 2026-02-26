@@ -324,7 +324,7 @@ ___
 | **Definizione Classica**         | $p(E) = \frac{f}{u}$                                  | $f$: casi favorevoli; $u$: casi possibili.                                                               |
 | **Evento Contrario**             | $p(\overline{E}) = 1 - p(E)$                          | La somma $p(E) + p(\overline{E})$ è sempre 1.                                                            |
 | **Assiomi di Base**              | $0 \le p(E) \le 1$                                    | $0$ (impossibile), $1$ (certo).                                                                          |
-| **Differenza tra eventi in cu**i | $p(E_2 - E_1) = p(E_2) - p(E_1)$                      | $E_1$ è sottoinsieme di $E_2$                                                                            |
+| **Differenza tra eventi in cui** | $p(E_2 - E_1) = p(E_2) - p(E_1)$                      | $E_1$ è sottoinsieme di $E_2$                                                                            |
 | **Somma Logica, compatibile**    | $p(E_1 \cup E_2) = p(E_1) + p(E_2) - p(E_1 \cap E_2)$ | Sottrai l'intersezione se sono **compatibili**.                                                          |
 | **Eventi Incompatibili**         | $p(E_1 \cup E_2) = p(E_1) + p(E_2)$                   | Quando $E_1 \cap E_2 = \emptyset$.                                                                       |
 | **Probabilità Condizionata**     | $p(E_2 \vert E_1) = \frac{p(E_1 \cap E_2)}{p(E_1)}$   | Probabilità di $E_2$ sapendo che $E_1$ è **avvenuto**, non necessariamente che sia stato **verificato**. |
