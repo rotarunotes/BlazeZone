@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "Database Design"
             }
+          },
+          {
+            "id": "328c98927a61fab5",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -210,10 +221,10 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "fe19d36032ddb511",
+  "active": "328c98927a61fab5",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
+    "conflict-files-obsidian-git.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
     "COSE DA FARE.md",
     "Schema_E-R_Esempio!1000.md",
