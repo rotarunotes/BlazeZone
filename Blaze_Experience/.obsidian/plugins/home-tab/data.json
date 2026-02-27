@@ -22,7 +22,24 @@
   "showShortcuts": true,
   "markdownOnly": false,
   "unresolvedLinks": false,
-  "recentFilesStore": [],
+  "recentFilesStore": [
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
+      "timestamp": 1772187621173
+    },
+    {
+      "filepath": "tolc.md",
+      "timestamp": 1772187356886
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Math/README.md",
+      "timestamp": 1772187161737
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Math/Statistica.md",
+      "timestamp": 1772187161673
+    }
+  ],
   "bookmarkedFileStore": [],
   "searchDelay": 0,
   "replaceNewTabs": true,
