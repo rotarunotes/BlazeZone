@@ -107,12 +107,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Math/Statistica.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Statistica"
+              "title": "Stream"
             }
           },
           {
@@ -200,7 +200,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -402,12 +402,12 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "36dec13ad66fe0a4",
+  "active": "8c13262161b16e1f",
   "lastOpenFiles": [
-    "tolc.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
-    "Puzzle_Of_Knowledge/Math/README.md",
     "Puzzle_Of_Knowledge/Math/Statistica.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
+    "tolc.md",
+    "Puzzle_Of_Knowledge/Math/README.md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Carattere.md",
     "WPA3.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
