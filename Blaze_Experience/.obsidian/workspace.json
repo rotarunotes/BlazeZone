@@ -22,21 +22,21 @@
             }
           },
           {
-            "id": "a74d22d1c5025879",
+            "id": "328c98927a61fab5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "title": "Syntax"
             }
           },
           {
-            "id": "328c98927a61fab5",
+            "id": "31b32effe2d148ab",
             "type": "leaf",
             "state": {
               "type": "home-tab-view",
@@ -46,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -235,10 +235,12 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "a74d22d1c5025879",
+  "active": "31b32effe2d148ab",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
     "conflict-files-obsidian-git.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
     "WPA3.md",
     "Puzzle_Of_Knowledge/Math/Circumference.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLAN.md",
@@ -264,8 +266,6 @@
     "DOM.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Data.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/DOM",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Function",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260205094039_033.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210192257_356.png",
