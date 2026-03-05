@@ -39,6 +39,31 @@
             "id": "31b32effe2d148ab",
             "type": "leaf",
             "state": {
+              "type": "bases",
+              "state": {
+                "file": "Senza nome.base",
+                "viewName": "Tabella"
+              },
+              "icon": "lucide-table",
+              "title": "Senza nome"
+            }
+          },
+          {
+            "id": "56775a67708af4e3",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Note di rilascio 1.12.4"
+            }
+          },
+          {
+            "id": "763c4d16c4320744",
+            "type": "leaf",
+            "state": {
               "type": "home-tab-view",
               "state": {},
               "icon": "search",
@@ -46,7 +71,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -69,7 +94,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Esplora risorse"
             }
           },
           {
@@ -219,13 +244,13 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:Apri selezione rapida": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota del giorno": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "bases:Crea nuova Base": false,
       "obsidian-trash-explorer:Open trash explorer": false,
       "templater-obsidian:Templater": false,
       "omnisearch:Omnisearch": false,
@@ -235,8 +260,10 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "31b32effe2d148ab",
+  "active": "763c4d16c4320744",
   "lastOpenFiles": [
+    "Pasted image 20260224134039.png",
+    "Pasted image 20260224133928.png",
     "conflict-files-obsidian-git.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
@@ -245,8 +272,6 @@
     "Puzzle_Of_Knowledge/Math/Circumference.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLAN.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/VLAN.md",
-    "Pasted image 20260224134039.png",
-    "Pasted image 20260224133928.png",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
     "COSE DA FARE.md",
     "Schema_E-R_Esempio!1000.md",
@@ -264,7 +289,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems/README.md",
     "README.md",
     "DOM.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Data.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/DOM",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Function",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming/Pasted Image 20260205094039_033.png",
