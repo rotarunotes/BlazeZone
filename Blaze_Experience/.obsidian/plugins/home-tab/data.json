@@ -24,20 +24,16 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+      "timestamp": 1772712345744
+    },
+    {
       "filepath": "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
-      "timestamp": 1772704356565
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Math/Circumference.md",
-      "timestamp": 1772703387410
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Math/README.md",
-      "timestamp": 1772703381302
+      "timestamp": 1772712344431
     },
     {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
-      "timestamp": 1772703381278
+      "timestamp": 1772712335204
     }
   ],
   "bookmarkedFileStore": [],
