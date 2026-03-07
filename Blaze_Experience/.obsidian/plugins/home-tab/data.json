@@ -24,8 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
-      "timestamp": 1772900594748
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+      "timestamp": 1772905641574
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
+      "timestamp": 1772905637783
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration_Block.md",
+      "timestamp": 1772905635769
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Language.md",
+      "timestamp": 1772903067249
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/MYSQLI.md",
+      "timestamp": 1772903066188
     }
   ],
   "bookmarkedFileStore": [],

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Database Design"
+              "title": "Syntax"
             }
           },
           {
@@ -85,8 +85,7 @@
               "title": "Probability"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -285,16 +284,20 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "43aff384fb99a0c8",
+  "active": "b8d590c17b154908",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
-    "Puzzle_Of_Knowledge/Math/Probability.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Cookie_Session.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/MYSQLI.md",
-    "Pasted image 20260224133928.png",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration_Block.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Language.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/MYSQLI.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Functions.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Cookie_Session.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
+    "conflict-files-obsidian-git.md",
+    "Puzzle_Of_Knowledge/Math/Probability.md",
+    "Pasted image 20260224133928.png",
     "Pasted image 20260224134039.png",
     "Puzzle_Of_Knowledge/Math/Statistica.md",
     "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
@@ -302,7 +305,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/VLAN.md",
     "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
     "COSE DA FARE.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Conceptual Design.md",
     "Setup_Archive/Plugin/Excalidraw/Schema_E-R_Esempio.md",
@@ -313,8 +315,6 @@
     "Puzzle_Of_Knowledge/Math/Circumference.md",
     "Setup_Archive/Plugin/Calendar/Exam/2025-10-28 Informatica Algebra Relazione.md",
     "tolc.md",
-    "Setup_Archive/Plugin/Calendar/Exam/2025-10-27 Italiano Leopardi.md",
-    "Setup_Archive/Plugin/Calendar/Exam/2025-10-24 Sistemi SubNeEx DHCP DNS ARP.md",
     "Pasted image 20260214192634.png",
     "Pasted image 20260215183623.png",
     "Pasted image 20260215000803.png",
