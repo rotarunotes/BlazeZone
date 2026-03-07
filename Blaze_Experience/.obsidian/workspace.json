@@ -86,7 +86,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -285,18 +285,18 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "43aff384fb99a0c8",
+  "active": "bd85dfe7f40953e3",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
+    "Puzzle_Of_Knowledge/Math/Probability.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Cookie_Session.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/MYSQLI.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
     "conflict-files-obsidian-git.md",
     "Pasted image 20260224133928.png",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Language.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Functions.md",
     "Pasted image 20260224134039.png",
     "Puzzle_Of_Knowledge/Math/Statistica.md",
-    "Puzzle_Of_Knowledge/Math/Probability.md",
     "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLAN.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/VLAN.md",
