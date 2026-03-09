@@ -46,9 +46,23 @@
               "icon": "lucide-file",
               "title": "EX"
             }
+          },
+          {
+            "id": "ab923c08fc1c6233",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -247,11 +261,12 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "bd8ae03985450641",
+  "active": "ab923c08fc1c6233",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/EX.md",
+    "conflict-files-obsidian-git.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/VLAN.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLAN.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/EX.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/README.md",
@@ -269,7 +284,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Cookie_Session.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
-    "conflict-files-obsidian-git.md",
     "Pasted image 20260224133928.png",
     "Pasted image 20260224134039.png",
     "Puzzle_Of_Knowledge/Math/Statistica.md",
