@@ -93,12 +93,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/VLAN.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Stream"
+              "title": "VLAN"
             }
           },
           {
@@ -214,7 +214,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -416,11 +416,14 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "8c13262161b16e1f",
+  "active": "36dec13ad66fe0a4",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/VLAN.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/VLAN.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
     "Puzzle_Of_Knowledge/Math/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DHCP.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
     "Puzzle_Of_Knowledge/Math/Integral/README.md",
     "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Puzzle_Of_Knowledge/Math/Circumference.md",
@@ -441,9 +444,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/HTTP.md",
     "Setup_Archive/Plugin/Excalidraw/LIste_HTML.md",
     "Setup_Archive/Plugin/Excalidraw/Tabella_HTML.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Class.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/SNMP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
     "Screenshot 2025-11-18 140914.png",
     "Setup_Archive/Plugin/Calendar/Gym",
     "Setup_Archive/Images/Puzzle.jpg",
