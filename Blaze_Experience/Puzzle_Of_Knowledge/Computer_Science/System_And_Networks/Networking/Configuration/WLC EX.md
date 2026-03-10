@@ -85,3 +85,4 @@ SW(config-if)# switchport access vlan [numero_vlan]
 	![[WLC_Guppi_WLANs|10000]]
 	4) APs
 	![[WLC_Grupp_APs|10000]]
+9) Laptop cambio scheda
