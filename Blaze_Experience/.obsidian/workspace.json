@@ -34,7 +34,7 @@
             }
           },
           {
-            "id": "5d4ae145fa8de1dc",
+            "id": "dda015fe6e4612ec",
             "type": "leaf",
             "state": {
               "type": "home-tab-view",
@@ -243,9 +243,10 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "5d4ae145fa8de1dc",
+  "active": "dda015fe6e4612ec",
   "lastOpenFiles": [
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLC EX.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Connessione_Non_Persistente.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Server_Radius_WLC.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Security_Layer2.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLAN.md",
@@ -282,7 +283,6 @@
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Radius_New.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Radius.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Server_Radius_Nome_Utenti.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Interfacce_Apply.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP",
     "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems/Theory",
     "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems",
