@@ -22,7 +22,28 @@
   "showShortcuts": true,
   "markdownOnly": false,
   "unresolvedLinks": false,
-  "recentFilesStore": [],
+  "recentFilesStore": [
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Cookie_Session.md",
+      "timestamp": 1773224892932
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
+      "timestamp": 1773221128638
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/MYSQLI.md",
+      "timestamp": 1773220148405
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
+      "timestamp": 1773220147965
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLC EX.md",
+      "timestamp": 1773220144150
+    }
+  ],
   "bookmarkedFileStore": [],
   "searchDelay": 0,
   "replaceNewTabs": true,

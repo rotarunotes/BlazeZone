@@ -51,7 +51,7 @@ Ogni client è identificato da un ID sessione univoco (spesso scambiato tramite 
 4. **Chiusura totale**: `session_unset()` svuota le variabili, `session_destroy()` elimina la sessione dal server.
 
 ``` PHP
-	session_start(); // Inizializza o riprende la sessione
+session_start(); // Inizializza o riprende la sessione
 
 // Salvataggio dati
 $_SESSION["utente"] = "aaaa";
