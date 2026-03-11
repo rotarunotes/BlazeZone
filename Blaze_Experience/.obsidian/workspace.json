@@ -73,9 +73,19 @@
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "23f891b4aa8c1f51",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -264,10 +274,10 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "763c4d16c4320744",
+  "active": "23f891b4aa8c1f51",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/MYSQLI.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/MYSQLI.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Cookie_Session.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Functions.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Language.md",
