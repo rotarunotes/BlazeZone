@@ -13,26 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+                "file": "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Syntax"
-            }
-          },
-          {
-            "id": "a73e82555f016031",
-            "type": "leaf",
-            "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
+              "title": "13-03-2026"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -86,7 +75,7 @@
             }
           },
           {
-            "id": "a80c0479e1c65dbc",
+            "id": "17e9d3bdb8fd981f",
             "type": "leaf",
             "state": {
               "type": "trash-explorer",
@@ -228,32 +217,43 @@
       "obsidian-excalidraw-plugin:New drawing": false,
       "omnisearch:Omnisearch": true,
       "chronology:Open Chronology": true,
-      "obsidian-trash-explorer:Open trash explorer": false
+      "obsidian-trash-explorer:Open trash explorer": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "a73e82555f016031",
+  "active": "598b2a2d7c7c0614",
   "lastOpenFiles": [
-    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
+    "Setup_Archive/Templates/Daily_Template.md",
+    "Setup_Archive/Templates/Weekly_Template.md",
+    "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
+    "Setup_Archive/Rules/Short_Cut.md",
+    "Setup_Archive/Templates/README_Template.md",
+    "Setup_Archive/Templates/Note_Template.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Function.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Terminal_And_Shell/README.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+    "Red_Lab/Unity/Base.md",
+    "Setup_Archive/README.md",
+    "Setup_Archive/Plugin/Calendar/Exam/2025-10-24 Sistemi SubNeEx DHCP DNS ARP.md",
+    "Setup_Archive/Plugin/Pearls/Weekly",
+    "Setup_Archive/Plugin/Pearls/Daily",
+    "Setup_Archive/Plugin/Pearls",
+    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-08 Inglese Appunti.md",
+    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-09 Inglese Studio.md",
+    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-22 DHCP DNS.md",
+    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-23 ARP SubNetEx.md",
+    "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
+    "Setup_Archive/Obsidian_Base/Formatting.md",
+    "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
+    "Setup_Archive/Obsidian_Base/README.md",
+    "Setup_Archive/Rules/README.md",
+    "Z_MAUGER/futureMag.md",
+    "Setup_Archive/Senza nome",
+    "Name_Folder",
+    "Z_MAUGER/Switch.md",
+    "Z_MAUGER/Router Mag.md",
     "Setup_Archive/Images/Pasted Image 20260313212041_408.png",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Tipi_Di_Input.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/DOM.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Server_Radius_WLC.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLC EX.md",
-    "Puzzle_Of_Knowledge/Math/Probability.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Language.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
-    "conflict-files-obsidian-git.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Connessione_Non_Persistente.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Security_Layer2.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLAN.md",
-    "Inglese.md",
-    "Corso ingenieria.md",
-    "tolc.md",
     "Senza nome.base",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WPA3.md",
-    "COSE DA FARE.md",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309220904_377.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309221314_585.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309212633_897.png",
@@ -264,20 +264,9 @@
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309220259_406.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309212815_598.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309212437_841.png",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/VLAN.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Admin_Set_Up_Your_Controller.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Admin_Advanced_Setting.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Admin_Create_Your_Wireless_Networks.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Configurazione_WLAN.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_General.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP",
     "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems/Theory",
     "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems",
-    "Puzzle_Of_Knowledge/Senza nome",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS",
-    "Senza nome 1",
-    "Senza nome",
-    "Untitled.base",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]
 }

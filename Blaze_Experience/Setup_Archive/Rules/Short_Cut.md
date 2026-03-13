@@ -9,7 +9,7 @@ ___
 | ctrl + ,         | impostazioni        |
 | ctrl + n         | crea nuova nota     |
 | ctrl + +         | crea nuova cartella |
-| shift + alr + c  | apri cestino        |
+| shift + alt + c  | apri cestino        |
 | ctrl + shift + p | apri calendario     |
 | ctrl + alt + a   | Nuovo disegno       |
 | ctrl + numpad1   | Codice              |
