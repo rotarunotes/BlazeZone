@@ -46,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -246,7 +246,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "381b10321437c96e",
+  "active": "f24839d9c109c95a",
   "lastOpenFiles": [
     "Setup_Archive/Plugin/Pearls/Daily/15-03-2026.md",
     "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
