@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "13-03-2026"
             }
+          },
+          {
+            "id": "f24839d9c109c95a",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -221,11 +232,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "598b2a2d7c7c0614",
+  "active": "f24839d9c109c95a",
   "lastOpenFiles": [
+    "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
     "Setup_Archive/Templates/Daily_Template.md",
     "Setup_Archive/Templates/Weekly_Template.md",
-    "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
     "Setup_Archive/Rules/Short_Cut.md",
     "Setup_Archive/Templates/README_Template.md",
     "Setup_Archive/Templates/Note_Template.md",
