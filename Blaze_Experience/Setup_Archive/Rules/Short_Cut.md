@@ -16,6 +16,8 @@ ___
 | ctrl + numpad 2  | latex               |
 | ctrl + numpag 3  | Codice in line      |
 | ctrl + numpag 4  | Call out            |
+| ctrl + alt + p   | daily note          |
+| ctrl + alt + o   | weekly note         |
 
 
 ___
