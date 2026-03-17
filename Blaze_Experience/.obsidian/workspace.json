@@ -46,16 +46,6 @@
             }
           },
           {
-            "id": "6c271b3d973a8b24",
-            "type": "leaf",
-            "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
-            }
-          },
-          {
             "id": "ecc5aee846acfd6c",
             "type": "leaf",
             "state": {
@@ -70,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -266,12 +256,12 @@
       "obsidian-excalidraw-plugin:New drawing": false,
       "omnisearch:Omnisearch": true,
       "chronology:Open Chronology": true,
-      "obsidian-trash-explorer:Open trash explorer": false,
-      "periodic-notes:Open today": false
+      "obsidian-trash-explorer:Open trash explorer": false
     }
   },
   "active": "ecc5aee846acfd6c",
   "lastOpenFiles": [
+    "Corso ingenieria.md",
     "Senza nome.md",
     "Setup_Archive/Plugin/Pearls/Daily/16-03-2026.md",
     "Setup_Archive/Rules/Short_Cut.md",
@@ -302,7 +292,6 @@
     "Z_MAUGER/futureMag.md",
     "Setup_Archive/Senza nome",
     "Name_Folder",
-    "Z_MAUGER/Switch.md",
     "Setup_Archive/Images/Pasted Image 20260313212041_408.png",
     "Senza nome.base",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309220904_377.png",
