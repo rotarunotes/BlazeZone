@@ -63,12 +63,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
+                "file": "Corso ingenieria.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Corso ingenieria"
             }
           },
           {
@@ -309,8 +309,10 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "43aff384fb99a0c8",
+  "active": "3f7eb6d39b67a444",
   "lastOpenFiles": [
+    "Inglese.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
     "conflict-files-obsidian-git.md",
     "Setup_Archive/Templates/Weekly_Template.md",
     "Setup_Archive/Templates/Daily_Template.md",
@@ -330,7 +332,6 @@
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Progettazione_Dati_Logica_Esempio.md",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309221314_585.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309205349_346.png",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
     "Puzzle_Of_Knowledge/Math/Probability.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Cookie_Session.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/MYSQLI.md",
@@ -342,7 +343,6 @@
     "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLAN.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/VLAN.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
     "Senza nome.base",
     "Pasted image 20260214192634.png",
     "Pasted image 20260215183623.png",
