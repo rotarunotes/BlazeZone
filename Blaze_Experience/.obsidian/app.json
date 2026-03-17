@@ -9,5 +9,6 @@
     "downscalePercent": 56
   },
   "trashOption": "local",
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "Setup_Archive/Images"
 }

@@ -9,13 +9,15 @@ ___
 | ctrl + ,         | impostazioni        |
 | ctrl + n         | crea nuova nota     |
 | ctrl + +         | crea nuova cartella |
-| shift + alr + c  | apri cestino        |
+| shift + alt + c  | apri cestino        |
 | ctrl + shift + p | apri calendario     |
 | ctrl + alt + a   | Nuovo disegno       |
 | ctrl + numpad1   | Codice              |
 | ctrl + numpad 2  | latex               |
 | ctrl + numpag 3  | Codice in line      |
 | ctrl + numpag 4  | Call out            |
+| ctrl + alt + p   | daily note          |
+| ctrl + alt + o   | weekly note         |
 
 
 ___
