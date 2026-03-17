@@ -63,12 +63,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Corso ingenieria.md",
+                "file": "COSE DA FARE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Corso ingenieria"
+              "title": "COSE DA FARE"
             }
           },
           {
@@ -309,8 +309,9 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "3f7eb6d39b67a444",
+  "active": "43aff384fb99a0c8",
   "lastOpenFiles": [
+    "Corso ingenieria.md",
     "Inglese.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
     "conflict-files-obsidian-git.md",
@@ -342,7 +343,6 @@
     "Puzzle_Of_Knowledge/Math/Statistica.md",
     "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLAN.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/VLAN.md",
     "Senza nome.base",
     "Pasted image 20260214192634.png",
     "Pasted image 20260215183623.png",
