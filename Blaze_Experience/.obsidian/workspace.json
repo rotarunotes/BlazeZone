@@ -41,8 +41,8 @@
             "state": {
               "type": "home-tab-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "home-tab-view"
+              "icon": "search",
+              "title": "Home tab"
             }
           },
           {
@@ -69,16 +69,6 @@
               },
               "icon": "lucide-file",
               "title": "README"
-            }
-          },
-          {
-            "id": "5f68b841362058f1",
-            "type": "leaf",
-            "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
             }
           },
           {
@@ -110,7 +100,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -319,10 +309,10 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "1e3769e93b92242d",
+  "active": "bd85dfe7f40953e3",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Math/Probability.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
+    "Puzzle_Of_Knowledge/Math/Probability.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Cookie_Session.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/MYSQLI.md",
     "conflict-files-obsidian-git.md",
