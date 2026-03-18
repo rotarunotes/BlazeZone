@@ -100,19 +100,9 @@
               "icon": "lucide-file",
               "title": "DML"
             }
-          },
-          {
-            "id": "045eec22309accf9",
-            "type": "leaf",
-            "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
-            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -312,7 +302,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "045eec22309accf9",
+  "active": "ecc5aee846acfd6c",
   "lastOpenFiles": [
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
     "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
