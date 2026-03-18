@@ -72,7 +72,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -262,9 +262,17 @@
       "chronology:Open Chronology": false
     }
   },
-  "active": "56775a67708af4e3",
+  "active": "763c4d16c4320744",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
+    "Setup_Archive/Templates/Weekly_Template.md",
+    "Setup_Archive/Templates/Daily_Template.md",
+    "Setup_Archive/Plugin/Pearls/Daily/16-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/15-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily",
+    "Setup_Archive/Plugin/Pearls",
+    "Senza nome.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Cookie_Session.md",
@@ -284,12 +292,6 @@
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Interfacce.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Guppi_WLANs.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Grupp_APs.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_AP_Groups.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Server_Radius_WLC.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Server_Radius_Nome_Utenti.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/DHCP_Scope_Remove.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Schema_E-R_Esempio.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Progettazione_Dati_Logica_Esempio.md",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309221314_585.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309220904_377.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309220539_298.png",
@@ -308,8 +310,6 @@
     "Untitled.base",
     "Setup_Archive/Images/I_Compiuter_Science/I_Programming",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS",
-    "Untitled",
-    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Web_Programming/Untitled.canvas"
   ]
 }
