@@ -22,20 +22,7 @@
   "showShortcuts": true,
   "markdownOnly": false,
   "unresolvedLinks": false,
-  "recentFilesStore": [
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
-      "timestamp": 1773299483455
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
-      "timestamp": 1773299482845
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Cookie_Session.md",
-      "timestamp": 1773299481070
-    }
-  ],
+  "recentFilesStore": [],
   "bookmarkedFileStore": [],
   "searchDelay": 0,
   "replaceNewTabs": true,
