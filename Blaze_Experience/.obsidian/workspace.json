@@ -102,7 +102,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -302,11 +302,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "ecc5aee846acfd6c",
+  "active": "756306170abb8a61",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Corso ingenieria.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
     "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
-    "Corso ingenieria.md",
     "Senza nome.md",
     "Setup_Archive/Plugin/Pearls/Daily/16-03-2026.md",
     "Setup_Archive/Rules/Short_Cut.md",
@@ -332,7 +333,6 @@
     "Setup_Archive/Obsidian_Base/Formatting.md",
     "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
     "Setup_Archive/Obsidian_Base/README.md",
-    "Setup_Archive/Rules/README.md",
     "Setup_Archive/Senza nome",
     "Name_Folder",
     "Setup_Archive/Images/Pasted Image 20260313212041_408.png",
