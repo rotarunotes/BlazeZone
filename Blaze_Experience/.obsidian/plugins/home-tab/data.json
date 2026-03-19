@@ -24,6 +24,14 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "Setup_Archive/Plugin/Pearls/Daily/19-03-2026.md",
+      "timestamp": 1773951695658
+    },
+    {
+      "filepath": "Setup_Archive/Plugin/Pearls/Daily/16-03-2026.md",
+      "timestamp": 1773951694154
+    },
+    {
       "filepath": "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
       "timestamp": 1773871553120
     },
@@ -34,10 +42,6 @@
     {
       "filepath": "Corso ingenieria.md",
       "timestamp": 1773871552505
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
-      "timestamp": 1773871552064
     }
   ],
   "bookmarkedFileStore": [],

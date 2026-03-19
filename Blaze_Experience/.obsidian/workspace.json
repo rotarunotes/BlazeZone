@@ -8,13 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "663ba9d3a71c20df",
+            "id": "eb9eebc27c41f475",
             "type": "leaf",
             "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
+              "type": "markdown",
+              "state": {
+                "file": "Setup_Archive/Plugin/Pearls/Daily/19-03-2026.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "19-03-2026"
             }
           }
         ]
@@ -217,8 +221,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "663ba9d3a71c20df",
+  "active": "eb9eebc27c41f475",
   "lastOpenFiles": [
+    "Setup_Archive/Plugin/Pearls/Daily/16-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/19-03-2026.md",
+    "Senza nome 1.md",
     "conflict-files-obsidian-git.md",
     "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
     "Setup_Archive/Plugin/Pearls/Daily/15-03-2026.md",
@@ -226,7 +233,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
     "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Senza nome.md",
-    "Setup_Archive/Plugin/Pearls/Daily/16-03-2026.md",
     "Setup_Archive/Rules/Short_Cut.md",
     "Setup_Archive/Templates/Daily_Template.md",
     "Setup_Archive/Templates/Weekly_Template.md",
@@ -246,8 +252,6 @@
     "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-23 ARP SubNetEx.md",
     "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
     "Setup_Archive/Obsidian_Base/Formatting.md",
-    "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
-    "Setup_Archive/Obsidian_Base/README.md",
     "Setup_Archive/Senza nome",
     "Name_Folder",
     "Setup_Archive/Images/Pasted Image 20260313212041_408.png",
