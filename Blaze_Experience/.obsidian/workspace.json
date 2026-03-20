@@ -100,7 +100,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -306,11 +306,14 @@
       "obsidian-git:Open Git source control": false,
       "obsidian-full-calendar:Open Full Calendar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "chronology:Open Chronology": false
+      "chronology:Open Chronology": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "43aff384fb99a0c8",
+  "active": "6c7c2a42aeee22f3",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Math/Probability.md",
+    "COSE DA FARE.md",
     "Corso ingenieria.md",
     "Inglese.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
@@ -333,7 +336,6 @@
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Programming/Progettazione_Dati_Logica_Esempio.md",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309221314_585.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309205349_346.png",
-    "Puzzle_Of_Knowledge/Math/Probability.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Cookie_Session.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/MYSQLI.md",
     "Pasted image 20260224133928.png",
@@ -342,7 +344,6 @@
     "Pasted image 20260224134039.png",
     "Puzzle_Of_Knowledge/Math/Statistica.md",
     "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLAN.md",
     "Senza nome.base",
     "Pasted image 20260214192634.png",
     "Pasted image 20260215183623.png",
