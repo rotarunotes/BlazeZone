@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "398551074a35026a",
+        "id": "52a7338ac04c02a9",
         "type": "tabs",
         "children": [
           {
-            "id": "b188d216a90c59bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Relazione esame.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Relazione esame"
-            }
-          },
-          {
-            "id": "e191f073f3e80798",
+            "id": "20103ec863c1bb57",
             "type": "leaf",
             "state": {
               "type": "home-tab-view",
@@ -31,43 +17,7 @@
               "title": "Home tab"
             }
           }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "4d9440b5c983976b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "dafb5fe82b5b87bc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Relazione esame.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Relazione esame"
-            }
-          },
-          {
-            "id": "f2958e1651eb62b4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Subnetting_Practice/Subnetting_IPv4.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Subnetting_IPv4"
-            }
-          }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -274,10 +224,11 @@
       "obsidian-git:Open Git source control": false,
       "obsidian-full-calendar:Open Full Calendar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "chronology:Open Chronology": false
+      "chronology:Open Chronology": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "f2958e1651eb62b4",
+  "active": "20103ec863c1bb57",
   "lastOpenFiles": [
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Relazione esame.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Subnetting_Practice/Subnetting_IPv4.md",
