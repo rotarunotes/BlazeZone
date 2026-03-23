@@ -23,7 +23,22 @@ Serie: (id (PK), giorno_id, esercizio_id, numero_serie, numero_ripetizioni, temp
 Ma in questo modo prendo tutti i dati di tutto, invece che prendere i dati dell'utente specifico, vabbè, farò in modo che sia il server a restituirmi i dati di quello specifico utente
 
 2)  Ho fatto le query di create table del db locale
+   
+#### 23/03
+1) Metodi di inserimento
+	1) Ho finito il processo che carica il db server nel db locale
 ___
-# Titolo 2
+# README
+1) `PRAGMA` usato quando istanziamo il databese
+2) Metodo getter, usato per il singleton del database
+	- **Senza get:** `await DatabaseHelper.database();` (Sembra una chiamata a un comando).
+	- **Con get:** `await DatabaseHelper.database;` (Sembra di leggere una variabile).
+3) batch 
+```
+// Iniziamo un batch (una serie di operazioni raggruppate)  
+Batch batch = db.batch();
+// Eseguiamo tutto in un'unica transazione atomica await batch.commit(noResult: true);
+```
+1) nella funzione di insert, ritorna l'id dell'utente appena creato
 ___
  
