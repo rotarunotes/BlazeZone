@@ -1,5 +1,5 @@
 Data: 2025-10-31
-[Rules](./README.md)
+[Rules](README.md)
 #Setup_Archive/Rules
 ___
 
@@ -18,6 +18,7 @@ ___
 | ctrl + numpag 4  | Call out            |
 | ctrl + alt + p   | daily note          |
 | ctrl + alt + o   | weekly note         |
+| ctrl + numpad5   |                     |
 
 
 ___

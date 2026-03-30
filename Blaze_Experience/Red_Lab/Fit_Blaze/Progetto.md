@@ -6,11 +6,11 @@ Inizio lavoro: 20/03/2026
 
 # Progettazione concettuale:
 ```
-Utente:(id (PK), nome_utente, nome, cognome, password_hash)
-Scheda: (id (PK), utente_id (FK), nome_scheda, data_creazione, is_active)
-Allenamento_quotidiano: (id (PK), scheda_id (FK), nome_giorno)
-Esercizio: (id (PK), nome_esercizio (FK), fascio_muscolare, video_url, tipologia)
-Serie: (id (PK), giorno_id, esercizio_id, numero_serie, numero_ripetizioni, tempo_recupero, peso, note)
+User: (`id` (PK), `username`, `first_name`, `last_name`, `password_hash`)
+Workout_Plan: (`id` (PK), `user_id` (FK), `plan_name`, `creation_date`, `is_active`)
+Daily_Workout: (`id` (PK), `plan_id` (FK), `day_name`)
+Exercise: (`id` (PK), `exercise_name` (FK), `muscle_group`, `video_url`, `type`)
+Set: (`id` (PK), `day_id` (FK), `exercise_id` (FK), `set_number`, `reps_count`, `rest_time`, `weight`, `notes`)
 ```
 
 #### 22/03
@@ -27,6 +27,11 @@ Ma in questo modo prendo tutti i dati di tutto, invece che prendere i dati dell'
 #### 23/03
 1) Metodi di inserimento
 	1) Ho finito il processo che carica il db server nel db locale
+
+#### 30/03
+1) Ho capito l'archittettura server db locale db
+	1) non ho capito gli endpoiint
+2) ho creato il db e ho fatto gli insert
 ___
 # README
 1) `PRAGMA` usato quando istanziamo il databese
