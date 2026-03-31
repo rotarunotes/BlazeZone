@@ -1,10 +1,11 @@
 {
   "cssTheme": "Tokyo Night",
   "enabledCssSnippets": [
-    "Formattazione_Testo",
-    "Center_Image"
+    "Center_Image",
+    "Formattazione_Testo"
   ],
   "baseFontSize": 16,
   "textFontFamily": "Gadugi",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "accentColor": ""
 }

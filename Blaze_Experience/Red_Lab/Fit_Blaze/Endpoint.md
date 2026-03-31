@@ -163,3 +163,4 @@ ORDER BY s.id;
 
 SELECT '✅ Database FitBlaze setup completato con successo!' AS status;
 ```
+
