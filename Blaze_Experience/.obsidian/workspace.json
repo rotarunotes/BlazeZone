@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "Progetto"
             }
+          },
+          {
+            "id": "3c806b60be185e7e",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -217,12 +228,12 @@
       "obsidian-excalidraw-plugin:New drawing": false,
       "omnisearch:Omnisearch": true,
       "chronology:Open Chronology": true,
-      "obsidian-trash-explorer:Open trash explorer": false,
-      "periodic-notes:Open today": false
+      "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "13143ccddcae57f0",
+  "active": "3c806b60be185e7e",
   "lastOpenFiles": [
+    "Red_Lab/Fit_Blaze/Progetto.md",
     "Red_Lab/Fit_Blaze/Endpoint.md",
     "Setup_Archive/Rules/Short_Cut.md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_3casi.md",
@@ -234,7 +245,6 @@
     "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
     "Inglese.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Data.md",
-    "Red_Lab/Fit_Blaze/Progetto.md",
     "Inglese2.md",
     "conflict-files-obsidian-git.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Relazione esame.md",
