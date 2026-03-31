@@ -114,7 +114,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338
+    "width": 338,
+    "collapsed": true
   },
   "right": {
     "id": "dd71b14831b0ad51",
@@ -170,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,7 +181,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a Database Design"
+              "title": "Riferimenti a FIREWALL"
             }
           },
           {
@@ -232,12 +233,11 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 202.5,
-    "collapsed": true
+    "width": 202.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -258,12 +258,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "89c5f7afa62fd686",
+  "active": "6dc0ecf411e6a665",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Libraries.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL.md",
     "Setup_Archive/Plugin/Excalidraw/ACL_Spiegazione.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Libraries.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
     "Red_Lab/Fit_Blaze/Progetto.md",
     "Setup_Archive/Rules/Short_Cut.md",

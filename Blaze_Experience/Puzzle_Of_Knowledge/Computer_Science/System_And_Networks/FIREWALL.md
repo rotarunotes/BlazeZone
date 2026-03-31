@@ -73,9 +73,10 @@ R#(config-if)# no shutdown
 show ip access-lists
 
 // Creo l'ACL
-R(config)# access-list [Numero_ACL] [Policy] [Indirizzo di rete] [Wildcard musk]
+R(config)# access-list [N_ACL] [Policy] [Indirizzo di rete] [Wildcard musk]
 
 //SI entra nella singola interfaccia
 R(config)# interface fastEthernet 0/0
-R(config-if# ip access-group 1 out
+R(config-if# ip access-group [N_ACL] [out/in]
+
 ```
