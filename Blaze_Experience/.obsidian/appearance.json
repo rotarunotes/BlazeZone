@@ -1,5 +1,5 @@
 {
-  "cssTheme": "Tokyo Night",
+  "cssTheme": "GitHub Theme",
   "enabledCssSnippets": [
     "Center_Image",
     "Formattazione_Testo"
@@ -7,5 +7,5 @@
   "baseFontSize": 16,
   "textFontFamily": "Gadugi",
   "theme": "obsidian",
-  "accentColor": ""
+  "accentColor": "#2493f8"
 }

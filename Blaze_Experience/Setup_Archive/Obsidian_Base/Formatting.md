@@ -64,14 +64,15 @@ ___
 > citazione 
 > questa è una citazione 
 # Citazione |  \[!NOTE]
+
 > [!NOTE] bella
 > Contents
 > ok 
 > basi
 
+
+
 # Codice |  \`\`\`
 ```python
 	python def hello(): print("Hello, world!")
 ```
-
- 

@@ -1,6 +1,6 @@
 {
   "scheme": "csDefault",
-  "increaseContrast": true,
+  "increaseContrast": false,
   "folderList": [
     "Puzzle_Of_Knowledge",
     "Red_Lab",

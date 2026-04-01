@@ -1,5 +1,3 @@
-
-
 # Scarica la repo nel pc locale
 `git clone` "url della repository"
 # Per sincronizzare il file locale con GitHub
