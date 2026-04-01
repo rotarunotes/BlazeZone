@@ -74,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -274,12 +274,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "58ca7aa72307bf0c",
+  "active": "55b4b6eb3508887b",
   "lastOpenFiles": [
-    "Setup_Archive/Images/Pasted image 20260331220606.png",
-    "Setup_Archive/Images/Pasted image 20260331220152.png",
     "Setup_Archive/Templates/Note_Template.md",
     "Senza nome 1.md",
+    "Setup_Archive/Images/Pasted image 20260331220606.png",
+    "Setup_Archive/Images/Pasted image 20260331220152.png",
     "nuova nota.md",
     "Setup_Archive/Templates/README_Template.md",
     "Setup_Archive/Templates/Daily_Template.md",
@@ -320,7 +320,6 @@
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WC",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309220539_298.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309220259_406.png",
-    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309212815_598.png",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]
