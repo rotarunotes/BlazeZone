@@ -108,5 +108,14 @@
       ],
       "key": "O"
     }
+  ],
+  "editor:toggle-checklist-status": [],
+  "editor:insert-table": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Numpad5"
+    }
   ]
 }

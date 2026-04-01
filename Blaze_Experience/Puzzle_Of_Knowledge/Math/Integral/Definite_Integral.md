@@ -192,7 +192,7 @@ ___
 1) Consideriamo per primo il caso in cui la funzione $f(x)$ sia continua in tutti i punti dell'intervallo , ma con una singolarità in $b$, cioè $f(x)$ non è definita in $b$ o è definita ma è discontinua in $b$.
 
 	Consideriamo un punto $z$ interno all'intervallo  $[a;b]$: 
-	La funzione $f(x)$ è continua nell'intervallo    $[a;z]$, quindi esiste l'integrale $\int_a^z f(x) \ dx$, il cui valore è un numero reale.
+	La funzione $f(x)$ è continua nell'intervallo $[a;z]$, quindi esiste l'integrale $\int_a^z f(x) \ dx$, il cui valore è un numero reale.
 	
 	Questo vale per tutti i punti $z$ dell'intervallo  $[a;b]$, perciò possiamo costruire la funzione integrale
 	$$
