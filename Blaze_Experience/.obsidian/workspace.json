@@ -1,112 +1,64 @@
 {
   "main": {
-    "id": "b37cf6095412c42d",
+    "id": "d2689c039ad2236d",
     "type": "split",
     "children": [
       {
-        "id": "267bab637d8ecb77",
+        "id": "4adcd889e142896a",
         "type": "tabs",
         "children": [
           {
-            "id": "13143ccddcae57f0",
+            "id": "89d2977f5c3b4be3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Setup_Archive/Obsidian_Base/Formatting.md",
-                "mode": "source",
+                "file": "README.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Formatting"
-            }
-          },
-          {
-            "id": "9f712fe1720f3174",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setup_Archive/Obsidian_Base/Formatting.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Formatting"
-            }
-          },
-          {
-            "id": "55b4b6eb3508887b",
-            "type": "leaf",
-            "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
-            }
-          },
-          {
-            "id": "356616397d22a8f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setup_Archive/Templates/Note_Template.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Note_Template"
-            }
-          },
-          {
-            "id": "58ca7aa72307bf0c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Senza nome 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Senza nome 1"
+              "title": "README"
             }
           }
+<<<<<<< HEAD
         ],
         "currentTab": 2
+=======
+        ]
+>>>>>>> origin/main
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "2170833b6754dc46",
+    "id": "12ddf7baffcade06",
     "type": "split",
     "children": [
       {
-        "id": "1f8181127b343eee",
+        "id": "d88e6a7645cca974",
         "type": "tabs",
         "children": [
           {
-            "id": "3f7eb6d39b67a444",
+            "id": "15d996e487f2104e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTimeReverse",
-                "autoReveal": true
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Esplora risorse"
             }
           },
           {
-            "id": "f6799ecdd20be35f",
+            "id": "620aca078cde17dd",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML",
+                "query": "tag:#Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/Complexity_Theory",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,21 +66,21 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Ricerca"
+              "title": "Search"
             }
           },
           {
-            "id": "56b1c02e2df95752",
+            "id": "1adc0f25acfb726c",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Segnalibri"
+              "title": "Bookmarks"
             }
           },
           {
-            "id": "17e9d3bdb8fd981f",
+            "id": "2395d28c78af5fdd",
             "type": "leaf",
             "state": {
               "type": "trash-explorer",
@@ -141,63 +93,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338
+    "width": 300
   },
   "right": {
-    "id": "dd71b14831b0ad51",
+    "id": "2b0ea1a7653991df",
     "type": "split",
     "children": [
       {
-        "id": "6355eb65486ff43a",
+        "id": "48338e10d16084b0",
         "type": "tabs",
         "children": [
           {
-            "id": "134bca9451b1ac29",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": false,
-                "showSearch": true,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Etichette"
-            }
-          },
-          {
-            "id": "67a153047c7c72ed",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Struttura di Stream"
-            }
-          },
-          {
-            "id": "99c5e330c6e6350b",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          },
-          {
-            "id": "6dc0ecf411e6a665",
+            "id": "453eddffb405315c",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,25 +119,40 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a Database Design"
+              "title": "Backlinks for DCL"
             }
           },
           {
-            "id": "715cb04f903d2900",
+            "id": "f689a4afa0a2707e",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Stream"
+              "title": "Outgoing links from DCL"
             }
           },
           {
-            "id": "79b4e543b1e4a2ab",
+            "id": "979501197b51796c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3d8657c677eb05bd",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -235,11 +162,36 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "Tutte le proprietà"
+              "title": "All properties"
             }
           },
           {
-            "id": "06e3fe9f1cb1135d",
+            "id": "8672efc9b5c88e2f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of DCL"
+            }
+          },
+          {
+            "id": "edeff2f03663e81a",
+            "type": "leaf",
+            "state": {
+              "type": "chronology-calendar-view",
+              "state": {},
+              "icon": "clock",
+              "title": "Chronology"
+            }
+          },
+          {
+            "id": "d792b122e0f348d3",
             "type": "leaf",
             "state": {
               "type": "chronology-calendar-view",
@@ -249,31 +201,32 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 202.5
+    "width": 233
   },
   "left-ribbon": {
     "hiddenItems": {
+      "switcher:Apri selezione rapida": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota del giorno": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
       "bases:Crea nuova Base": false,
-      "switcher:Apri selezione rapida": true,
-      "graph:Apri vista grafo": true,
-      "canvas:Crea nuova lavagna": true,
-      "daily-notes:Apri nota del giorno": true,
-      "templates:Inserisci modello": true,
-      "obsidian-git:Open Git source control": true,
-      "command-palette:Apri riquadro comandi": true,
-      "templater-obsidian:Templater": true,
+      "obsidian-trash-explorer:Open trash explorer": false,
+      "templater-obsidian:Templater": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-git:Open Git source control": false,
       "obsidian-full-calendar:Open Full Calendar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "omnisearch:Omnisearch": true,
-      "chronology:Open Chronology": true,
-      "obsidian-trash-explorer:Open trash explorer": false,
+      "chronology:Open Chronology": false,
       "periodic-notes:Open today": false
     }
   },
+<<<<<<< HEAD
   "active": "55b4b6eb3508887b",
   "lastOpenFiles": [
     "Setup_Archive/Templates/Note_Template.md",
@@ -283,44 +236,61 @@
     "nuova nota.md",
     "Setup_Archive/Templates/README_Template.md",
     "Setup_Archive/Templates/Daily_Template.md",
+=======
+  "active": "89d2977f5c3b4be3",
+  "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Math/Probability.md",
+    "Puzzle_Of_Knowledge/Math/Circumference.md",
+>>>>>>> origin/main
     "Setup_Archive/Obsidian_Base/Formatting.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Data.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
+    "GitPerSega.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Class.md",
+    "README.md",
+    "COSE DA FARE.md",
+    "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
+    "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/README.md",
+    "Puzzle_Of_Knowledge/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
+    "Red_Lab/Unity/Base.md",
+    "Red_Lab/Giochi/Reverse/Regole.md",
     "Red_Lab/Fit_Blaze/Endpoint.md",
     "Red_Lab/Fit_Blaze/Progetto.md",
-    "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
-    "Setup_Archive/Obsidian_Base/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WPA3.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/VLAN.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLAN.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
-    "README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/Computability_Theory/README.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Configurazione_WLAN.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/ACL_Spiegazione.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL.md",
-    "conflict-files-obsidian-git.md",
-    "Setup_Archive/Rules/Short_Cut.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_3casi.md",
-    "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
-    "Setup_Archive/Plugin/Pearls/Daily/23-03-2026.md",
-    "Senza nome",
-    "Setup_Archive/Rules/README.md",
+    "Corso ingenieria.md",
+    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
+    "Setup_Archive/Images/Pasted Image 20260401104003_442.png",
+    "Setup_Archive/Images/Pasted image 20260331220152.png",
+    "Setup_Archive/Images/Pasted image 20260331220606.png",
     "Red_Lab/Fit_Blaze",
-    "Setup_Archive/Plugin/Pearls/Weekly",
     "Setup_Archive/Plugin/Pearls/Daily",
     "Setup_Archive/Plugin/Pearls",
-    "Setup_Archive/Senza nome",
-    "Name_Folder",
-    "Setup_Archive/Images/Pasted Image 20260313212041_408.png",
-    "Senza nome.base",
-    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309220904_377.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309221314_585.png",
-    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309212633_897.png",
-    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309191009_342.png",
-    "Pasted Image 20260309220838_359.png",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WC",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309220904_377.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309220539_298.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309220259_406.png",
+<<<<<<< HEAD
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
+=======
+    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309212815_598.png",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309212633_897.png",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309212437_841.png",
+    "Senza nome.base",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/DOM",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Function",
+    "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS",
+    "Untitled.base",
+    "Setup_Archive/Images/I_Compiuter_Science/I_Programming",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Web_Programming/Untitled.canvas"
+>>>>>>> origin/main
   ]
 }
