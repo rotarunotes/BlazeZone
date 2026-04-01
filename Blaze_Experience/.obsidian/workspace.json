@@ -4,71 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "973b1a3d66311e47",
+        "id": "4adcd889e142896a",
         "type": "tabs",
         "children": [
           {
-            "id": "31b32effe2d148ab",
+            "id": "51e8a5e43f339776",
             "type": "leaf",
             "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/WLAN.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "WLAN"
             }
           },
           {
-            "id": "56775a67708af4e3",
+            "id": "b72187783b58d356",
             "type": "leaf",
             "state": {
               "type": "release-notes",
               "state": {
-                "currentVersion": "1.12.4"
+                "currentVersion": "1.12.7"
               },
               "icon": "lucide-book-up",
-              "title": "Note di rilascio 1.12.4"
+              "title": "Note di rilascio 1.12.7"
             }
           },
           {
-            "id": "763c4d16c4320744",
+            "id": "ebc3e63b71137420",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "23f891b4aa8c1f51",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/MYSQLI.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MYSQLI"
-            }
-          },
-          {
-            "id": "ae21c9e5be21ab99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DML"
+              "title": "Stream"
             }
           }
         ],
@@ -139,8 +115,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "2b0ea1a7653991df",
@@ -259,11 +234,15 @@
       "obsidian-git:Open Git source control": false,
       "obsidian-full-calendar:Open Full Calendar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "chronology:Open Chronology": false
+      "chronology:Open Chronology": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "763c4d16c4320744",
+  "active": "ebc3e63b71137420",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/MYSQLI.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
     "conflict-files-obsidian-git.md",
     "Setup_Archive/Templates/Weekly_Template.md",
     "Setup_Archive/Templates/Daily_Template.md",
@@ -276,9 +255,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Cookie_Session.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/MYSQLI.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLC EX.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Verifica_AP.md",
     "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_VLAN_Creazione.md",
