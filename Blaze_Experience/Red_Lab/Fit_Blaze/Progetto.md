@@ -13,6 +13,8 @@ Exercise: (`id` (PK), `exercise_name` (FK), `muscle_group`, `video_url`, `type`)
 Set: (`id` (PK), `day_id` (FK), `exercise_id` (FK), `set_number`, `reps_count`, `rest_time`, `weight`, `notes`)
 ```
 
+Sito modelli dart: https://javiercbk.github.io/json_to_dart/
+
 #### 22/03
 1) Ho fatto le funzioni di fetch che mi restituiscono le liste di:
 	- Utenti
@@ -32,6 +34,9 @@ Ma in questo modo prendo tutti i dati di tutto, invece che prendere i dati dell'
 1) Ho capito l'archittettura server db locale db
 	1) non ho capito gli endpoiint
 2) ho creato il db e ho fatto gli insert
+
+#### 02/04
+1) ho fatto il server rest parte get, e sono riuscito a testare tutto come si deve con flutter
 ___
 # README
 1) `PRAGMA` usato quando istanziamo il databese
