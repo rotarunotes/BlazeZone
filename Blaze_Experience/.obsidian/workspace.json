@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Setup_Archive/Templates/Note_Template.md",
-                "mode": "source",
+                "file": "Setup_Archive/Obsidian_Base/Formatting.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Note_Template"
+              "title": "Formatting"
             }
           }
         ],
@@ -158,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
+                "file": "Setup_Archive/Obsidian_Base/Formatting.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di Stream"
+              "title": "Struttura di Formatting"
             }
           },
           {
@@ -235,7 +235,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -260,22 +260,24 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "356616397d22a8f7",
+  "active": "67a153047c7c72ed",
   "lastOpenFiles": [
+    "Setup_Archive/Obsidian_Base/README.md",
+    "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
+    "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
+    "Red_Lab/Fit_Blaze/Endpoint.md",
+    "Corso ingenieria.md",
+    "Setup_Archive/Obsidian_Base/Formatting.md",
+    "Setup_Archive/Templates/Note_Template.md",
     "conflict-files-obsidian-git.md",
     "GitPerSega.md",
-    "Setup_Archive/Templates/Note_Template.md",
     "Senza nome 1.md",
     "Setup_Archive/Images/Pasted image 20260331220606.png",
     "Setup_Archive/Images/Pasted image 20260331220152.png",
     "nuova nota.md",
     "Setup_Archive/Templates/README_Template.md",
     "Setup_Archive/Templates/Daily_Template.md",
-    "Setup_Archive/Obsidian_Base/Formatting.md",
-    "Red_Lab/Fit_Blaze/Endpoint.md",
     "Red_Lab/Fit_Blaze/Progetto.md",
-    "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
-    "Setup_Archive/Obsidian_Base/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WPA3.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/VLAN.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLAN.md",
@@ -288,9 +290,7 @@
     "Setup_Archive/Rules/Short_Cut.md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_3casi.md",
     "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
-    "Setup_Archive/Plugin/Pearls/Daily/23-03-2026.md",
     "Senza nome",
-    "Setup_Archive/Rules/README.md",
     "Red_Lab/Fit_Blaze",
     "Setup_Archive/Plugin/Pearls/Weekly",
     "Setup_Archive/Plugin/Pearls/Daily",

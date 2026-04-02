@@ -24,8 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Setup_Archive/Templates/Note_Template.md",
-      "timestamp": 1775075636578
+      "filepath": "Setup_Archive/Obsidian_Base/Formatting.md",
+      "timestamp": 1775078129440
+    },
+    {
+      "filepath": "Setup_Archive/Obsidian_Base/README.md",
+      "timestamp": 1775078128713
+    },
+    {
+      "filepath": "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
+      "timestamp": 1775078128214
+    },
+    {
+      "filepath": "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
+      "timestamp": 1775078113480
+    },
+    {
+      "filepath": "Red_Lab/Fit_Blaze/Endpoint.md",
+      "timestamp": 1775078095678
     }
   ],
   "bookmarkedFileStore": [],
