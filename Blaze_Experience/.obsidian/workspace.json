@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Red_Lab/Fit_Blaze/Coude.md",
+                "file": "Red_Lab/Fit_Blaze/Endpoint.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Coude"
+              "title": "Endpoint"
             }
           },
           {
@@ -162,13 +162,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Red_Lab/Fit_Blaze/Coude.md",
+                "file": "Red_Lab/Fit_Blaze/Endpoint.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di Coude"
+              "title": "Struttura di Endpoint"
             }
           },
           {
@@ -267,9 +267,10 @@
   },
   "active": "1a182ef7e9b7d1aa",
   "lastOpenFiles": [
-    "Red_Lab/Fit_Blaze/Progetto.md",
     "Red_Lab/Fit_Blaze/Coude.md",
+    "Red_Lab/Fit_Blaze/Progetto.md",
     "Red_Lab/Fit_Blaze/Endpoint.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Data.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Data.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Class.md",
@@ -295,7 +296,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLAN.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
     "README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/Computability_Theory/README.md",
     "Senza nome",
     "Red_Lab/Fit_Blaze",
     "Setup_Archive/Plugin/Pearls/Weekly",
