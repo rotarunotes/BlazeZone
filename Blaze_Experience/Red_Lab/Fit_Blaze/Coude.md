@@ -1,3 +1,6 @@
+
+[[#Secondo promt]]
+
 Ottimo, ho letto il modello dell'articolo. Ecco la struttura completa del tuo progetto REST API adattata alle tue 5 entità.
 
 ---
@@ -435,3 +438,418 @@ $controller->{$methodName}();
 | `GET /index.php/set/listByDay?day_id=5`            | `day_id`  | Tutti i set di un giorno (con dati esercizio) |
 
 Il pattern è sempre lo stesso: **module → controller → action**, rendendo facile aggiungere nuovi endpoint in futuro semplicemente creando nuovi model e controller.
+
+
+
+# Secondo promt
+Perfetto, ho letto entrambi gli articoli. Ora ti mostro come estendere il progetto con tutti i metodi HTTP. Ti mostro il pattern completo su **WorkoutPlan** come esempio, poi lo stesso schema si replica identico per gli altri.
+
+---
+
+## Cosa cambia e dove
+
+Bisogna modificare/estendere **3 livelli** per ogni entità: `Database.php`, il `Model`, e il `Controller`.
+
+---
+
+## `Model/Database.php` — aggiungere insert, update, delete
+
+Oltre al `select()` già esistente, aggiungiamo i metodi generici per le altre operazioni. Questo è l'**unico file** che gestisce il database, tutti i Model lo ereditano.
+
+```php
+<?php
+class Database
+{
+    protected $connection = null;
+
+    public function __construct()
+    {
+        try {
+            $this->connection = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_DATABASE_NAME);
+            if (mysqli_connect_errno()) {
+                throw new Exception("Impossibile connettersi al database.");
+            }
+        } catch (Exception $e) {
+            throw new Exception($e->getMessage());
+        }
+    }
+
+    // SELECT → ritorna array di righe
+    public function select($query = "", $params = [])
+    {
+        try {
+            $stmt = $this->executeStatement($query, $params);
+            $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+            $stmt->close();
+            return $result;
+        } catch (Exception $e) {
+            throw new Exception($e->getMessage());
+        }
+    }
+
+    // INSERT → ritorna l'id dell'elemento appena creato
+    public function insert($query = "", $params = [])
+    {
+        try {
+            $stmt = $this->executeStatement($query, $params);
+            $insertId = $this->connection->insert_id;
+            $stmt->close();
+            return $insertId;
+        } catch (Exception $e) {
+            throw new Exception($e->getMessage());
+        }
+    }
+
+    // UPDATE e DELETE → ritorna il numero di righe modificate/cancellate
+    public function execute($query = "", $params = [])
+    {
+        try {
+            $stmt = $this->executeStatement($query, $params);
+            $affectedRows = $stmt->affected_rows;
+            $stmt->close();
+            return $affectedRows;
+        } catch (Exception $e) {
+            throw new Exception($e->getMessage());
+        }
+    }
+
+    private function executeStatement($query = "", $params = [])
+    {
+        try {
+            $stmt = $this->connection->prepare($query);
+            if ($stmt === false) {
+                throw new Exception("Prepared statement fallito: " . $query);
+            }
+            if ($params) {
+                $stmt->bind_param($params[0], ...$params[1]);
+            }
+            $stmt->execute();
+            return $stmt;
+        } catch (Exception $e) {
+            throw new Exception($e->getMessage());
+        }
+    }
+}
+```
+
+> **Nota:** `bind_param` ora usa `...$params[1]` (spread operator) perché con più parametri passeremo un array di valori, ad esempio `["si", [$nome, $id]]`.
+
+---
+
+## `Model/WorkoutPlanModel.php` — tutti i metodi CRUD
+
+```php
+<?php
+require_once PROJECT_ROOT_PATH . "/Model/Database.php";
+
+class WorkoutPlanModel extends Database
+{
+    // GET — tutti i piani di un utente
+    public function getPlansByUser(int $userId): array
+    {
+        return $this->select(
+            "SELECT * FROM Workout_Plan WHERE user_id = ? ORDER BY creation_date DESC",
+            ["i", [$userId]]
+        );
+    }
+
+    // GET — singolo piano per id
+    public function getPlanById(int $id): array
+    {
+        return $this->select(
+            "SELECT * FROM Workout_Plan WHERE id = ?",
+            ["i", [$id]]
+        );
+    } 
+
+    // POST — crea un nuovo piano
+    public function createPlan(int $userId, string $planName, string $creationDate, int $isActive): int S
+    {
+        return $this->insert(
+            "INSERT INTO Workout_Plan (user_id, plan_name, creation_date, is_active) VALUES (?, ?, ?, ?)",
+            ["isis", [$userId, $planName, $creationDate, $isActive]]
+        );
+    }
+
+    // PUT — aggiorna tutti i campi di un piano
+    public function updatePlan(int $id, string $planName, string $creationDate, int $isActive): int
+    {
+        return $this->execute(
+            "UPDATE Workout_Plan SET plan_name = ?, creation_date = ?, is_active = ? WHERE id = ?",
+            ["ssii", [$planName, $creationDate, $isActive, $id]]
+        );
+    }
+
+    // PATCH — aggiorna solo i campi forniti
+    public function patchPlan(int $id, array $fields): int
+    {
+        $allowed = ['plan_name', 'creation_date', 'is_active'];
+        $setClauses = [];
+        $types = "";
+        $values = [];
+
+        foreach ($fields as $key => $value) {
+            if (in_array($key, $allowed)) {
+                $setClauses[] = "$key = ?";
+                $types .= is_int($value) ? "i" : "s";
+                $values[] = $value;
+            }
+        }
+
+        if (empty($setClauses)) {
+            throw new Exception("Nessun campo valido da aggiornare.");
+        }
+
+        $types .= "i"; // per il WHERE id = ?
+        $values[] = $id;
+
+        $query = "UPDATE Workout_Plan SET " . implode(", ", $setClauses) . " WHERE id = ?";
+        return $this->execute($query, [$types, $values]);
+    }
+
+    // DELETE — elimina un piano
+    public function deletePlan(int $id): int
+    {
+        return $this->execute(
+            "DELETE FROM Workout_Plan WHERE id = ?",
+            ["i", [$id]]
+        );
+    }
+}
+```
+
+---
+
+## `Controller/Api/WorkoutPlanController.php` — tutti i metodi HTTP
+
+```php
+<?php
+class WorkoutPlanController extends BaseController
+{
+    /**
+     * GET /index.php/workoutplan/listByUser?user_id=1
+     */
+    public function listByUserAction(): void
+    {
+        $this->handleRequest('GET', function () {
+            $params = $this->getQueryStringParams();
+            if (empty($params['user_id'])) throw new Exception("Parametro user_id mancante.");
+
+            $model = new WorkoutPlanModel();
+            return $model->getPlansByUser((int)$params['user_id']);
+        });
+    }
+
+    /**
+     * GET /index.php/workoutplan/get?id=1
+     */
+    public function getAction(): void
+    {
+        $this->handleRequest('GET', function () {
+            $params = $this->getQueryStringParams();
+            if (empty($params['id'])) throw new Exception("Parametro id mancante.");
+
+            $model = new WorkoutPlanModel();
+            $data = $model->getPlanById((int)$params['id']);
+            if (empty($data)) throw new Exception("Piano non trovato.");
+            return $data[0];
+        });
+    }
+
+    /**
+     * POST /index.php/workoutplan/create
+     * Body JSON: { "user_id": 1, "plan_name": "Massa", "creation_date": "2024-01-01", "is_active": 1 }
+     */
+    public function createAction(): void
+    {
+        $this->handleRequest('POST', function () {
+            $data = json_decode(file_get_contents("php://input"), true);
+
+            if (empty($data['user_id']) || empty($data['plan_name']) || empty($data['creation_date'])) {
+                throw new Exception("Campi obbligatori mancanti: user_id, plan_name, creation_date.");
+            }
+
+            $model = new WorkoutPlanModel();
+            $newId = $model->createPlan(
+                (int)$data['user_id'],
+                $data['plan_name'],
+                $data['creation_date'],
+                isset($data['is_active']) ? (int)$data['is_active'] : 1
+            );
+
+            return ["id" => $newId, "message" => "Piano creato con successo."];
+        }, 201);
+    }
+
+    /**
+     * PUT /index.php/workoutplan/update
+     * Body JSON: { "id": 1, "plan_name": "Forza", "creation_date": "2024-01-01", "is_active": 0 }
+     */
+    public function updateAction(): void
+    {
+        $this->handleRequest('PUT', function () {
+            $data = json_decode(file_get_contents("php://input"), true);
+
+            if (empty($data['id']) || empty($data['plan_name']) || empty($data['creation_date'])) {
+                throw new Exception("Campi obbligatori mancanti: id, plan_name, creation_date.");
+            }
+
+            $model = new WorkoutPlanModel();
+            $rows = $model->updatePlan(
+                (int)$data['id'],
+                $data['plan_name'],
+                $data['creation_date'],
+                isset($data['is_active']) ? (int)$data['is_active'] : 1
+            );
+
+            if ($rows === 0) throw new Exception("Piano non trovato.");
+            return ["message" => "Piano aggiornato con successo."];
+        });
+    }
+
+    /**
+     * PATCH /index.php/workoutplan/patch
+     * Body JSON: { "id": 1, "is_active": 0 }   ← solo i campi da modificare
+     */
+    public function patchAction(): void
+    {
+        $this->handleRequest('PATCH', function () {
+            $data = json_decode(file_get_contents("php://input"), true);
+
+            if (empty($data['id'])) throw new Exception("Parametro id mancante.");
+            $id = (int)$data['id'];
+            unset($data['id']);
+
+            $model = new WorkoutPlanModel();
+            $rows = $model->patchPlan($id, $data);
+
+            if ($rows === 0) throw new Exception("Piano non trovato o nessuna modifica.");
+            return ["message" => "Piano aggiornato parzialmente con successo."];
+        });
+    }
+
+    /**
+     * DELETE /index.php/workoutplan/delete
+     * Body JSON: { "id": 1 }
+     */
+    public function deleteAction(): void
+    {
+        $this->handleRequest('DELETE', function () {
+            $data = json_decode(file_get_contents("php://input"), true);
+            if (empty($data['id'])) throw new Exception("Parametro id mancante.");
+
+            $model = new WorkoutPlanModel();
+            $rows = $model->deletePlan((int)$data['id']);
+
+            if ($rows === 0) throw new Exception("Piano non trovato.");
+            return ["message" => "Piano eliminato con successo."];
+        });
+    }
+}
+```
+
+---
+
+## `Controller/Api/BaseController.php` — aggiungere `handleRequest()`
+
+Per evitare di ripetere la gestione degli errori in ogni action, aggiungiamo un metodo `handleRequest()` nel BaseController che tutti i controller ereditano.
+
+```php
+<?php
+class BaseController
+{
+    public function __call($name, $arguments)
+    {
+        $this->sendOutput('', ['HTTP/1.1 404 Not Found']);
+    }
+
+    protected function getUriSegments(): array
+    {
+        $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        return explode('/', $uri);
+    }
+
+    protected function getQueryStringParams(): array
+    {
+        parse_str($_SERVER['QUERY_STRING'] ?? '', $query);
+        return $query;
+    }
+
+    protected function sendOutput($data, array $httpHeaders = []): void
+    {
+        header_remove('Set-Cookie');
+        foreach ($httpHeaders as $header) {
+            header($header);
+        }
+        echo $data;
+        exit;
+    }
+
+    /**
+     * Metodo helper: gestisce il metodo HTTP atteso, esegue la logica
+     * e si occupa di tutta la gestione degli errori in modo centralizzato.
+     *
+     * @param string   $expectedMethod  Il metodo HTTP atteso (GET, POST, PUT, PATCH, DELETE)
+     * @param callable $logic           La funzione con la logica dell'endpoint, deve ritornare i dati
+     * @param int      $successCode     Il codice HTTP di successo (default 200, usa 201 per creazione)
+     */
+    protected function handleRequest(string $expectedMethod, callable $logic, int $successCode = 200): void
+    {
+        $requestMethod = strtoupper($_SERVER["REQUEST_METHOD"]);
+
+        if ($requestMethod !== $expectedMethod) {
+            $this->sendOutput(
+                json_encode(['error' => 'Metodo non supportato']),
+                ['Content-Type: application/json', 'HTTP/1.1 422 Unprocessable Entity']
+            );
+        }
+
+        try {
+            $result = $logic();
+            $this->sendOutput(
+                json_encode($result),
+                ['Content-Type: application/json', "HTTP/1.1 $successCode OK"]
+            );
+        } catch (Exception $e) {
+            $this->sendOutput(
+                json_encode(['error' => $e->getMessage()]),
+                ['Content-Type: application/json', 'HTTP/1.1 400 Bad Request']
+            );
+        }
+    }
+}
+```
+
+---
+
+## Riepilogo completo degli endpoint di WorkoutPlan
+
+| Metodo   | Endpoint                                      | Body JSON                                        | Descrizione                |
+| -------- | --------------------------------------------- | ------------------------------------------------ | -------------------------- |
+| `GET`    | `/index.php/workoutplan/listByUser?user_id=1` | —                                                | Tutti i piani di un utente |
+| `GET`    | `/index.php/workoutplan/get?id=1`             | —                                                | Singolo piano              |
+| `POST`   | `/index.php/workoutplan/create`               | `{user_id, plan_name, creation_date, is_active}` | Crea piano                 |
+| `PUT`    | `/index.php/workoutplan/update`               | `{id, plan_name, creation_date, is_active}`      | Aggiorna tutto             |
+| `PATCH`  | `/index.php/workoutplan/patch`                | `{id, ...campi}`                                 | Aggiorna solo alcuni campi |
+| `DELETE` | `/index.php/workoutplan/delete`               | `{id}`                                           | Elimina piano              |
+
+---
+
+## Differenza PUT vs PATCH
+
+Questa è la distinzione fondamentale:
+
+- **PUT** → mandi **tutti** i campi, sostituisce l'intera risorsa. Se dimentichi un campo, viene sovrascritto.
+- **PATCH** → mandi **solo i campi che vuoi modificare**. Gli altri restano invariati.
+
+```json
+// PUT — devi mandare tutto
+{ "id": 1, "plan_name": "Nuovo nome", "creation_date": "2024-01-01", "is_active": 1 }
+
+// PATCH — mandi solo ciò che cambia
+{ "id": 1, "is_active": 0 }
+```
+
+---
+
+Lo stesso schema (Model + Controller) si replica identico per `DailyWorkout` e `Set`, cambiando solo i campi delle tabelle e le query SQL.

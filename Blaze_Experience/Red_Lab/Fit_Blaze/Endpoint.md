@@ -40,35 +40,39 @@ ___
 | DELETE    | /user/{id}     |                     | Elimina specifico utente |
 | DELETE    | /user          |                     | Elimina tutti gli utenti |
 
-**Workout_Plan**
+## Workout_Plan
 
-| Richiesta | EndPoint                                  | Parametri                                                                    | Spiegazione                                       |
-| --------- | ----------------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------- |
-| GET       | /index.php/workoutplan/listByUser?user_id | `user_id`                                                                    | Schede dato l'utente                              |
-| POST      |                                           | `user_id` (FK)<br>`plan_name`<br>`creation_date`<br>`is_active`              | Crea una singola scheda                           |
-| PUT       |                                           | `id` (PK)<br>`user_id` (FK)<br>`plan_name`<br>`creation_date`<br>`is_active` | Aggiorna la specifica scheda                      |
-| PATCH     |                                           | -`user_id` (FK)<br>-`plan_name`<br>-`creation_date`<br>-`is_active`          | Aggiorno solo i parametri che sono dentro al body |
-| DELETE    | /workout_plan/{id}                        |                                                                              | Elimina una specifica scheda                      |
+| **Metodo** | **Endpoint**                  | **Body JSON**                                    | **Descrizione**            |
+| ---------- | ----------------------------- | ------------------------------------------------ | -------------------------- |
+| `GET`      | /workoutplan/listByUser       | `?user_id={id}`                                  | Tutti i piani di un utente |
+| `GET`      | /workoutplan/get              | `?id={id}`                                       | Singolo piano              |
+| `POST`     | /index.php/workoutplan/create | `{user_id, plan_name, creation_date, is_active}` | Crea piano                 |
+| `PUT`      | /workoutplan/update           | `{id, plan_name, creation_date, is_active}`      | Aggiorna tutto             |
+| `PATCH`    | /workoutplan/patch            | `{id, ...campi}`                                 | Aggiorna solo alcuni campi |
+| `DELETE`   | /workoutplan/delete           | `{id}`                                           | Elimina piano              |
 
-**Daily_Workout**
+## DaylyWorkout
 
-| Richiesta | EndPoint                                    | Parametri                                    | Spiegazione                                       |
-| --------- | ------------------------------------------- | -------------------------------------------- | ------------------------------------------------- |
-| GET       | /index.php/dailyworkout/listByPlan?plan_id= | `plan_id`                                    | Giorni di allenamento data la scheda              |
-| POST      |                                             | `plan_id`  (FK)<br>`day_name`                | Crea un singolo giorno di allenamento             |
-| PUT       |                                             | `id` (PK)<br>`plan_id` (FK) `day_name`       | Aggiorna il giorno di allenamento                 |
-| PATCH     |                                             | -`id` (PK)<br>-`plan_id` (FK)<br>-`day_name` | Aggiorno solo i parametri che sono dentro al body |
-| DELETE    | /workout_plan/{id}                          |                                              | Elimina un specifico giorno di allenamento        |
+| **Metodo** | **Endpoint**             | **Parametri / Body JSON**       | **Descrizione**                     |
+| ---------- | ------------------------ | ------------------------------- | ----------------------------------- |
+| `GET`      | /dailyworkout/listByPlan | `?plan_id={id}`                 | Lista di tutti i giorni di un piano |
+| `GET`      | /dailyworkout/get        | `?id={id}`                      | Dettagli di un singolo giorno       |
+| `POST`     | /dailyworkout/create     | `{"plan_id", "day_name"}`       | Crea un nuovo giorno di allenamento |
+| `PUT`      | /dailyworkout/update     | `{"id", "plan_id", "day_name"}` | Aggiorna tutti i campi di un giorno |
+| `PATCH`    | /dailyworkout/patch      | `{"id", ...campi}`              | Aggiorna solo il nome o il piano    |
+| `DELETE`   | /dailyworkout/delete     | `{"id"}`                        | Elimina un giorno                   |
 
-**Sets**
+## Sets
 
-| Richiesta | EndPoint                         | Parametri                                                                                                                   | Spiegazione                                                       |
-| --------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| GET       | /index.php/set/listByDay?day_id= | `day_id`                                                                                                                    | Sets più i parametri di `esercizio` dato il giorno di allenamento |
-| POST      |                                  | `day_id` (FK)<br>`exercise_id` (FK) <br>`set_number` <br>`reps_count` <br>`rest_time` <br>`weight` <br>`notes`              | Crea una singola serie                                            |
-| PUT       |                                  | `id` (PK)<br>`day_id` (FK)<br>`exercise_id` (FK) <br>`set_number` <br>`reps_count` <br>`rest_time` <br>`weight` <br>`notes` | Aggiorna la singola serie                                         |
-| PATCH     |                                  | `id` (PK)<br>`day_id` (FK)<br>`exercise_id` (FK) <br>`set_number` <br>`reps_count` <br>`rest_time` <br>`weight` <br>`notes` | Aggiorno solo i parametri che sono dentro al body                 |
-| DELETE    | /workout_plan/{id}               |                                                                                                                             | Elimina una singola serie                                         |
+| **Metodo** | **Endpoint**   | **Parametri / Body JSON**                                                                     | **Descrizione**                                 |
+| ---------- | -------------- | --------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| `GET`      | /set/listByDay | `?day_id={id}`                                                                                | Tutti i set di un giorno (+ dettagli esercizio) |
+| `GET`      | /set/get       | `?id={id}`                                                                                    | Dettagli di un singolo set specifico            |
+| `POST`     | /set/create    | `{"day_id", "exercise_id", "set_number", "reps_count", "rest_time", "weight", "notes"}`       | Aggiunge una serie a un esercizio               |
+| `PUT`      | /set/update    | `{"id", "day_id", "exercise_id", "set_number", "reps_count", "rest_time", "weight", "notes"}` | Sostituisce integralmente i dati di un set      |
+| `PATCH`    | /set/patch     | `{"id", ...campi}`                                                                            | Modifica solo peso, ripetizioni o note          |
+| `DELETE`   | /set/delete    | `{"id"}`                                                                                      | Rimuove una serie specifica                     |
+
 
 ```
 

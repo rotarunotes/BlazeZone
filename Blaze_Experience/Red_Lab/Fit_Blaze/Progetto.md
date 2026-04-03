@@ -37,6 +37,9 @@ Ma in questo modo prendo tutti i dati di tutto, invece che prendere i dati dell'
 
 #### 02/04
 1) ho fatto il server rest parte get, e sono riuscito a testare tutto come si deve con flutter
+
+####
+1) ho fatto tutti gli altri verbi, post put patch delete
 ___
 # README
 1) `PRAGMA` usato quando istanziamo il databese
