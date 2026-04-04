@@ -6,11 +6,11 @@ Inizio lavoro: 20/03/2026
 
 # Progettazione concettuale:
 ```
-User: (`id` (PK), `username`, `first_name`, `last_name`, `password_hash`)
-Workout_Plan: (`id` (PK), `user_id` (FK), `plan_name`, `creation_date`, `is_active`)
-Daily_Workout: (`id` (PK), `plan_id` (FK), `day_name`)
-Exercise: (`id` (PK), `exercise_name` (FK), `muscle_group`, `video_url`, `type`)
-Set: (`id` (PK), `day_id` (FK), `exercise_id` (FK), `set_number`, `reps_count`, `rest_time`, `weight`, `notes`)
+User: (`id` (PK), `username`, `first_name`, `last_name`, `password_hash`, 'created_at')
+Workout_Plan: (`id` (PK), `user_id` (FK), `plan_name`, `is_active`, 'created_at')
+Daily_Workout: (`id` (PK), `plan_id` (FK), `day_name`, 'day_order', 'created_at')
+Exercise: (`id` (PK), `exercise_name` (FK), `muscle_group`, `video_url`, `type`, 'created_at')
+Set: (`id` (PK), `day_id` (FK), `exercise_id` (FK), `set_number`, `reps_count`, `rest_time`, `weight`, `notes`, 'created_at')
 ```
 
 Sito modelli dart: https://javiercbk.github.io/json_to_dart/
@@ -38,8 +38,10 @@ Ma in questo modo prendo tutti i dati di tutto, invece che prendere i dati dell'
 #### 02/04
 1) ho fatto il server rest parte get, e sono riuscito a testare tutto come si deve con flutter
 
-####
+#### 03/04
 1) ho fatto tutti gli altri verbi, post put patch delete
+#### 04/04
+1) ho finito parte api server e client, manca user
 ___
 # README
 1) `PRAGMA` usato quando istanziamo il databese

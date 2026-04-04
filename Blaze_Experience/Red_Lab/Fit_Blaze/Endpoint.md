@@ -3,30 +3,6 @@ Data: 2026-03-30
 [](./README.md)
 #Red_Lab/Fit_Blaze
 ___
-```
-Utente:(id (PK), nome_utente, nome, cognome, password_hash)
-
-Scheda: (id (PK), utente_id (FK), nome_scheda, data_creazione, is_active)
-
-Allenamento_quotidiano: (id (PK), scheda_id (FK), nome_giorno)
-
-Esercizio: (id (PK), nome_esercizio (FK), fascio_muscolare, video_url, tipologia)
-
-Serie: (id (PK), giorno_id, esercizio_id, numero_serie, numero_ripetizioni, tempo_recupero, peso, note)
-```
-
-```
-User: (`id` (PK), `username`, `first_name`, `last_name`, `password_hash`)
-
-Workout_Plan: (`id` (PK), `user_id` (FK), `plan_name`, `creation_date`, `is_active`)
-
-Daily_Workout: (`id` (PK), `plan_id` (FK), `day_name`)
- 
-Exercise: (`id` (PK), `exercise_name` (FK), `muscle_group`, `video_url`, `type`)
-
-Set: (`id` (PK), `day_id` (FK), `exercise_id` (FK), `set_number`, `reps_count`, `rest_time`, `weight`, `notes`)
-```
-___
 # EndPoint Server
 
 **User**
