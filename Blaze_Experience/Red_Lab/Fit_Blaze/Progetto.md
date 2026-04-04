@@ -56,4 +56,3 @@ Batch batch = db.batch();
 ```
 1) nella funzione di insert, ritorna l'id dell'utente appena creato
 ___
- 
