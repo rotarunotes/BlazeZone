@@ -50,13 +50,13 @@ Colori Personalizzati Obsidian
 }
 
 /* ======= Colori Link ======= */
-
+/*
 body {
-  /* --- LINK INTERNI --- */
+  /* --- LINK INTERNI ---  
   --link-color: #94f1e7;
-  --link-color-hover: #00f5ff; /* Effetto neon al passaggio */
+  --link-color-hover: #00f5ff; /* Effetto neon al passaggio 
   
-  /* --- LINK ESTERNI --- */
+  /* --- LINK ESTERNI --- 
   --link-external-color: #ec82ec;
-  --link-external-color-hover: #ff7eb6; /* Effetto neon al passaggio */
-}
+  --link-external-color-hover: #ff7eb6; /* Effetto neon al passaggio 
+}*/

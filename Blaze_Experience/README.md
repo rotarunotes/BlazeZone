@@ -1,12 +1,11 @@
-
- Data: 2025-10-17
+Data: 2025-10-17
 [Blaze_Experience](../README.md)
 #ParteTuttoDaQua
 ___
 # Blaze_Experience
 
 ___
-# Start_Index
+# Start_Index 
 - [Puzzle_Of_Knowledge](Puzzle_Of_Knowledge/README.md)
 	- [Computer_Science](Puzzle_Of_Knowledge/Computer_Science/README.md)
 		- [Theory](Puzzle_Of_Knowledge/Computer_Science/Theory/README.md)
