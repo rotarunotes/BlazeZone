@@ -22,17 +22,15 @@
             }
           },
           {
-            "id": "547c6de6c722f1d2",
+            "id": "0927038f3409aef2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Gay.md",
-                "mode": "source",
-                "source": false
+                "file": "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_3casi.md"
               },
-              "icon": "lucide-file",
-              "title": "Gay"
+              "icon": "excalidraw-icon",
+              "title": "Integrale_definito_3casi"
             }
           }
         ],
@@ -236,12 +234,23 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "547c6de6c722f1d2",
+  "active": "0927038f3409aef2",
   "lastOpenFiles": [
-    "Inglese2.md",
-    "conflict-files-obsidian-git.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Bella.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_3casi.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Carattere.md",
+    "README.md",
     "Red_Lab/Fit_Blaze/Endpoint.md",
+    "Corso ingenieria.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DNS.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DHCP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/README.md",
+    "GitPerSega.md",
+    "Inglese2.md",
+    "COSE DA FARE.md",
+    "Senza nome.md",
     "Gay.md",
+    "conflict-files-obsidian-git.md",
     "Red_Lab/Fit_Blaze/Progetto.md",
     "Red_Lab/Fit_Blaze/Coude.md",
     "Red_Lab/Ex_School/SQL/Consegna 6.md",
@@ -254,19 +263,8 @@
     "Setup_Archive/Obsidian_Base/Formatting.md",
     "Red_Lab/Fit_Blaze/Senza nome",
     "Setup_Archive/Obsidian_Base/README.md",
-    "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
-    "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
-    "Corso ingenieria.md",
-    "Setup_Archive/Templates/Note_Template.md",
-    "GitPerSega.md",
     "Setup_Archive/Images/Pasted image 20260331220606.png",
     "Setup_Archive/Images/Pasted image 20260331220152.png",
-    "nuova nota.md",
-    "Setup_Archive/Templates/README_Template.md",
-    "Setup_Archive/Templates/Daily_Template.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WPA3.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/VLAN.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLAN.md",
     "Senza nome",
     "Red_Lab/Fit_Blaze",
     "Setup_Archive/Plugin/Pearls/Weekly",
