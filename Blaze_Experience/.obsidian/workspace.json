@@ -22,19 +22,30 @@
             }
           },
           {
-            "id": "0927038f3409aef2",
+            "id": "902a42aea71805fe",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_3casi.md"
+                "file": "cosa da vedere.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Integrale_definito_3casi"
+              "icon": "lucide-file",
+              "title": "cosa da vedere"
+            }
+          },
+          {
+            "id": "18be2a1e69dc6410",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -234,13 +245,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "0927038f3409aef2",
+  "active": "bd9187211e07b84e",
   "lastOpenFiles": [
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Bella.md",
+    "cosa da vedere.md",
+    "Red_Lab/Fit_Blaze/Endpoint.md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_3casi.md",
+    "Setup_Archive/Plugin/Excalidraw/D_Math/Bella.md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Carattere.md",
     "README.md",
-    "Red_Lab/Fit_Blaze/Endpoint.md",
     "Corso ingenieria.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DNS.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DHCP.md",
@@ -248,7 +260,6 @@
     "GitPerSega.md",
     "Inglese2.md",
     "COSE DA FARE.md",
-    "Senza nome.md",
     "Gay.md",
     "conflict-files-obsidian-git.md",
     "Red_Lab/Fit_Blaze/Progetto.md",

@@ -49,86 +49,75 @@ ___
 | `PATCH`    | /set/patch     | `{"id", ...campi}`                                                                            | Modifica solo peso, ripetizioni o note          |
 | `DELETE`   | /set/delete    | `{"id"}`                                                                                      | Rimuove una serie specifica                     |
 
+Per rendere i tuoi endpoint coerenti con il codice PHP che hai scritto (che usa il sistema JWT per la sicurezza) e seguire le migliori pratiche delle API REST, dobbiamo apportare alcune correzioni fondamentali.
 
-```
+Il cambiamento principale riguarda la **rimozione di `user_id` dagli URL**: dato che usi i JWT, il server sa già chi sei. Passare l'ID nell'URL è ridondante e pericoloso per la sicurezza.
 
--- ============================================
--- QUERY DI VERIFICA
--- ============================================
+Ecco la tabella degli endpoint corretta e ottimizzata:
 
--- Verifica numero record inseriti
-SELECT 'Users' AS tabella, COUNT(*) AS totale FROM User
-UNION ALL
-SELECT 'Exercises', COUNT(*) FROM Exercise
-UNION ALL
-SELECT 'Workout Plans', COUNT(*) FROM Workout_Plan
-UNION ALL
-SELECT 'Daily Workouts', COUNT(*) FROM Daily_Workout
-UNION ALL
-SELECT 'Sets', COUNT(*) FROM `Set`;
+---
 
--- Mostra tutte le schede attive con i loro utenti
-SELECT 
-    u.username,
-    u.first_name,
-    u.last_name,
-    wp.plan_name,
-    wp.creation_date,
-    wp.is_active
-FROM Workout_Plan wp
-JOIN User u ON wp.user_id = u.id
-WHERE wp.is_active = TRUE
-ORDER BY u.username, wp.creation_date DESC;
+### 🔐 Modulo: Auth (Pubblico)
 
--- Mostra un allenamento completo (esempio: Lunedì di Mario)
-SELECT 
-    dw.day_name,
-    e.exercise_name,
-    e.muscle_group,
-    s.set_number,
-    s.reps_count,
-    s.weight,
-    s.rest_time,
-    s.notes
-FROM `Set` s
-JOIN Daily_Workout dw ON s.day_id = dw.id
-JOIN Exercise e ON s.exercise_id = e.id
-WHERE dw.id = 501
-ORDER BY s.id;
+Questi endpoint non richiedono il token e servono per entrare nel sistema.
 
--- ============================================
--- QUERY UTILI PER L'APPLICAZIONE
--- ============================================
+|**Metodo**|**URL**|**Body JSON**|**Descrizione**|
+|---|---|---|---|
+|**POST**|`/auth/register`|`{username, password, first_name, last_name}`|Registra un nuovo account.|
+|**POST**|`/auth/login`|`{username, password}`|Effettua il login e restituisce il **Token JWT**.|
 
--- Query 1: Ottieni tutte le schede attive di un utente
--- SELECT * FROM Workout_Plan WHERE user_id = 1 AND is_active = TRUE;
+---
 
--- Query 2: Ottieni tutti i giorni di una scheda
--- SELECT * FROM Daily_Workout WHERE plan_id = 101 ORDER BY day_order;
+### 📋 Modulo: Workout Plan (Protetto)
 
--- Query 3: Ottieni tutti gli esercizi di un giorno con dettagli
--- SELECT s.*, e.exercise_name, e.muscle_group, e.video_url, e.type
--- FROM `Set` s
--- JOIN Exercise e ON s.exercise_id = e.id
--- WHERE s.day_id = 501
--- ORDER BY s.id;
+_Nota: Il server filtrerà automaticamente i piani in base all'utente loggato tramite il token._
 
--- Query 4: Cerca esercizi per gruppo muscolare
--- SELECT * FROM Exercise WHERE muscle_group LIKE '%Pettorali%';
+|**Metodo**|**URL**|**Body JSON**|**Descrizione**|
+|---|---|---|---|
+|**GET**|`/workoutplan/list`|-|Lista di tutti i piani dell'utente loggato.|
+|**GET**|`/workoutplan/get/{id}`|-|Dettagli di un singolo piano (solo se tuo).|
+|**POST**|`/workoutplan/create`|`{"plan_name", "is_active"}`|Crea un nuovo piano per l'utente loggato.|
+|**PUT**|`/workoutplan/update/{id}`|`{"plan_name", "is_active"}`|Sovrascrive i dati del piano.|
+|**PATCH**|`/workoutplan/patch/{id}`|`{"plan_name"}` o `{"is_active"}`|Modifica solo i campi inviati.|
+|**DELETE**|`/workoutplan/delete/{id}`|-|Elimina il piano specificato.|
 
--- Query 5: Statistiche utente (totale schede, schede attive)
--- SELECT 
---     u.username,
---     COUNT(wp.id) AS total_plans,
---     SUM(CASE WHEN wp.is_active = TRUE THEN 1 ELSE 0 END) AS active_plans
--- FROM User u
--- LEFT JOIN Workout_Plan wp ON u.id = wp.user_id
--- GROUP BY u.id, u.username;
+---
 
--- ============================================
--- FINE SETUP
--- ============================================
+### 📅 Modulo: Daily Workout (Protetto)
 
-SELECT '✅ Database FitBlaze setup completato con successo!' AS status;
-```
+|**Metodo**|**URL**|**Body JSON**|**Descrizione**|
+|---|---|---|---|
+|**GET**|`/dailyworkout/listByPlan/{plan_id}`|-|Tutti i giorni di un determinato piano.|
+|**GET**|`/dailyworkout/get/{id}`|-|Dettagli di un singolo giorno.|
+|**POST**|`/dailyworkout/create`|`{"plan_id", "day_name", "day_order"}`|Crea un giorno all'interno di un piano.|
+|**PUT**|`/dailyworkout/update/{id}`|`{"plan_id", "day_name", "day_order"}`|Aggiorna completamente il giorno.|
+|**PATCH**|`/dailyworkout/patch/{id}`|`{...campi da cambiare...}`|Aggiorna parzialmente il giorno.|
+|**DELETE**|`/dailyworkout/delete/{id}`|-|Elimina il giorno di allenamento.|
 
+---
+
+### 🏋️ Modulo: Sets (Protetto)
+
+|**Metodo**|**URL**|**Body JSON**|**Descrizione**|
+|---|---|---|---|
+|**GET**|`/set/listByDay/{day_id}`|-|Tutti i set e gli esercizi di un giorno.|
+|**GET**|`/set/get/{id}`|-|Dettagli di un singolo set.|
+|**POST**|`/set/create`|`{"day_id", "exercise_id", "reps_count", ...}`|Aggiunge un set a un esercizio.|
+|**PUT**|`/set/update/{id}`|`{"day_id", "exercise_id", "reps_count", ...}`|Sostituisce i dati del set.|
+|**PATCH**|`/set/patch/{id}`|`{"weight"}` o `{"reps_count"}` ecc.|Modifica solo i valori specificati.|
+|**DELETE**|`/set/delete/{id}`|-|Rimuove il set.|
+
+---
+
+### 🛠 Cosa è cambiato rispetto alla tua versione?
+
+1. **Restful URL Style:** Ho rimosso i parametri query string (es. `?id=1`) a favore dei parametri nel percorso (es. `/get/1`). È lo standard moderno per le API.
+    
+2. **Rimozione di `user_id` dal Body:** Nelle richieste `POST /workoutplan/create`, il `user_id` non deve essere inviato dal client. Il tuo controller lo prenderà dal token JWT con `JWT_PAYLOAD['user_id']`. Questo impedisce a un utente di creare piani per conto di qualcun altro.
+    
+3. **Consistenza dei nomi:** Ho uniformato i nomi (es. `listByPlan` invece di nomi misti) per rendere l'integrazione con il frontend più semplice.
+    
+4. **Sicurezza Utenti:** Ho rimosso l'endpoint `DELETE /user` (elimina tutti gli utenti). È un'operazione troppo pericolosa da lasciare esposta in un'API, anche se protetta.
+    
+
+Con questi endpoint, la tua API FitBlaze è coerente con la logica dei controller che hai sviluppato e segue gli standard di sicurezza.
