@@ -46,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -246,11 +246,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "902a42aea71805fe",
+  "active": "18be2a1e69dc6410",
   "lastOpenFiles": [
+    "cosa da vedere.md",
     "conflict-files-obsidian-git.md",
     "Red_Lab/Fit_Blaze/Endpoint.md",
-    "cosa da vedere.md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_3casi.md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Bella.md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Carattere.md",
