@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "c9c61fe2c6975bec",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -221,8 +232,9 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "89d2977f5c3b4be3",
+  "active": "c9c61fe2c6975bec",
   "lastOpenFiles": [
+    "README.md",
     "Puzzle_Of_Knowledge/Math/Probability.md",
     "Puzzle_Of_Knowledge/Math/Circumference.md",
     "Setup_Archive/Obsidian_Base/Formatting.md",
@@ -232,7 +244,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Class.md",
-    "README.md",
     "COSE DA FARE.md",
     "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
     "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
