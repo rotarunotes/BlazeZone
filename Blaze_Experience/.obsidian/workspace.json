@@ -8,33 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "499e7e9dc1fc3448",
+            "id": "f95116dfe2d141c2",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Setup_Archive/Plugin/Excalidraw/Drawing.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing"
-            }
-          },
-          {
-            "id": "c419d99ca9267981",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Progetto finale.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Progetto finale"
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -234,11 +217,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "c419d99ca9267981",
+  "active": "f95116dfe2d141c2",
   "lastOpenFiles": [
-    "Setup_Archive/Images/Pasted image 20260408102447.png",
-    "Setup_Archive/Plugin/Excalidraw/Drawing.md",
     "Progetto finale.md",
+    "Setup_Archive/Plugin/Excalidraw/Drawing.md",
+    "Setup_Archive/Images/Pasted image 20260408102447.png",
     "conflict-files-obsidian-git.md",
     "README.md",
     "cosa da vedere.md",
@@ -274,7 +257,6 @@
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309220259_406.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309212815_598.png",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309212633_897.png",
-    "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309212437_841.png",
     "Senza nome.base",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/DOM",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Function",
