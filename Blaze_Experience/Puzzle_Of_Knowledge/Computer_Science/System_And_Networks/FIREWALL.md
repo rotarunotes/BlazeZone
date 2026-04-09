@@ -80,3 +80,14 @@ R(config)# interface fastEthernet 0/0
 R(config-if# ip access-group [N_ACL] [out/in]
 
 ```
+
+# Ex passaggio vex
+
+1) Configurare le Interfaccia del router
+2) Consiglio: Creare le ACL
+```
+R(config)# ip access-list standard 1
+R(config)# ip access-list standard 2
+R(config)# ip access-list standard 3
+```
+3) Per ogni Interfaccia del router assegnare le ACL, è una convenzione assegnare le ACL in outbound dalla interfaccia più vicina alla destinazione
