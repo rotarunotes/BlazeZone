@@ -79,6 +79,10 @@ R(config)# access-list [N_ACL] [Policy] [Indirizzo di rete] [Wildcard musk]
 R(config)# interface fastEthernet 0/0
 R(config-if# ip access-group [N_ACL] [out/in]
 
+//Entrare nell'ACL
+R(config)# ip access-list standard 3
+R(config-std-nacl)# [N_regola] [Policy] [non so come continuare]
+
 ```
 
 # Ex passaggio vex
@@ -90,4 +94,24 @@ R(config)# ip access-list standard 1
 R(config)# ip access-list standard 2
 R(config)# ip access-list standard 3
 ```
-3) Per ogni Interfaccia del router assegnare le ACL, è una convenzione assegnare le ACL in outbound dalla interfaccia più vicina alla destinazione
+3) Per ogni Interfaccia del router assegnare le ACL, è una convenzione assegnare le ACL in Outbound dalla interfaccia più vicina alla destinazione
+4) si fanno el deny
+5) **Occhio che bisogna impostare anche la regola per le risposte**
+
+# ACL esteso
+1) ACL esteso da 100 a 199
+2) Permette di lavorare fino a livello 4, fino a una porta tcp e udp
+
+```
+R(config)# ip access-list extended 100
+```
+
+![[Pasted image 20260409124016.png]]
+
+![[Pasted image 20260409124143.png]]
+
+
+```
+R(config)# ip access-list extended 100
+R(config-ext-nacl)# deny ip 192.168.1.0 0.0.0.255 192.168.2.0 0.0.0.255
+```
