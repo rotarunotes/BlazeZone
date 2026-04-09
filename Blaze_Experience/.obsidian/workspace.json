@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Relazione esame.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Relazione esame"
+              "title": "README"
             }
           },
           {
@@ -260,8 +260,15 @@
   },
   "active": "4b8b19b96dca6ec8",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Subnetting_Practice/Subnetting_IPv4.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Relazione esame.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Subnetting_Practice/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Subnetting_Practice/Subnetting_IPv4.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/SNMP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/ARP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/VLAN.md",
     "README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/VLAN.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/WLAN.md",
@@ -270,8 +277,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Router.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Relazione esame.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
     "Setup_Archive/Images/Pasted image 20260408102447.png",
     "Setup_Archive/Images/Pasted image 20260331220152.png",
@@ -287,11 +292,6 @@
     "conflict-files-obsidian-git.md",
     "Setup_Archive/Plugin/Excalidraw/ACL_Spiegazione.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Libraries.md",
-    "Red_Lab/Fit_Blaze/Progetto.md",
-    "Setup_Archive/Rules/Short_Cut.md",
-    "Red_Lab/Fit_Blaze/Endpoint.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_3casi.md",
-    "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
     "Senza nome",
     "Red_Lab/Fit_Blaze",
     "Setup_Archive/Plugin/Pearls/Weekly",
