@@ -3,7 +3,6 @@
   "templater-obsidian",
   "tag-wrangler",
   "obsidian-style-settings",
-  "rainbow-colored-sidebar",
   "omnisearch",
   "home-tab",
   "obsidian-git",
@@ -13,5 +12,6 @@
   "execute-code",
   "chronology",
   "settings-search",
-  "periodic-notes"
+  "periodic-notes",
+  "rainbow-colored-sidebar"
 ]

@@ -3,30 +3,6 @@ Data: 2026-03-30
 [](./README.md)
 #Red_Lab/Fit_Blaze
 ___
-```
-Utente:(id (PK), nome_utente, nome, cognome, password_hash)
-
-Scheda: (id (PK), utente_id (FK), nome_scheda, data_creazione, is_active)
-
-Allenamento_quotidiano: (id (PK), scheda_id (FK), nome_giorno)
-
-Esercizio: (id (PK), nome_esercizio (FK), fascio_muscolare, video_url, tipologia)
-
-Serie: (id (PK), giorno_id, esercizio_id, numero_serie, numero_ripetizioni, tempo_recupero, peso, note)
-```
-
-```
-User: (`id` (PK), `username`, `first_name`, `last_name`, `password_hash`)
-
-Workout_Plan: (`id` (PK), `user_id` (FK), `plan_name`, `creation_date`, `is_active`)
-
-Daily_Workout: (`id` (PK), `plan_id` (FK), `day_name`)
- 
-Exercise: (`id` (PK), `exercise_name` (FK), `muscle_group`, `video_url`, `type`)
-
-Set: (`id` (PK), `day_id` (FK), `exercise_id` (FK), `set_number`, `reps_count`, `rest_time`, `weight`, `notes`)
-```
-___
 # EndPoint Server
 
 **User**
@@ -40,126 +16,108 @@ ___
 | DELETE    | /user/{id}     |                     | Elimina specifico utente |
 | DELETE    | /user          |                     | Elimina tutti gli utenti |
 
-**Workout_Plan**
+## Workout_Plan
 
-| Richiesta | URL                | Parametri                                                                    | Spiegazione                                       |
-| --------- | ------------------ | ---------------------------------------------------------------------------- | ------------------------------------------------- |
-| GET       | /workout_plan/{id} |                                                                              | Specifica scheda                                  |
-| GET       | /workout_plan/my   |                                                                              | Tutte le schede di quel utente loggato            |
-| POST      |                    | `user_id` (FK)<br>`plan_name`<br>`creation_date`<br>`is_active`              | Crea una singola scheda                           |
-| PUT       |                    | `id` (PK)<br>`user_id` (FK)<br>`plan_name`<br>`creation_date`<br>`is_active` | Aggiorna la specifica scheda                      |
-| PATCH     |                    | -`user_id` (FK)<br>-`plan_name`<br>-`creation_date`<br>-`is_active`          | Aggiorno solo i parametri che sono dentro al body |
-| DELETE    | /workout_plan/{id} |                                                                              | Elimina una specifica scheda                      |
+| **Metodo** | **Endpoint**                  | **Body JSON**                                    | **Descrizione**            |
+| ---------- | ----------------------------- | ------------------------------------------------ | -------------------------- |
+| `GET`      | /workoutplan/listByUser       | `?user_id={id}`                                  | Tutti i piani di un utente |
+| `GET`      | /workoutplan/get              | `?id={id}`                                       | Singolo piano              |
+| `POST`     | /index.php/workoutplan/create | `{user_id, plan_name, creation_date, is_active}` | Crea piano                 |
+| `PUT`      | /workoutplan/update           | `{id, plan_name, creation_date, is_active}`      | Aggiorna tutto             |
+| `PATCH`    | /workoutplan/patch            | `{id, ...campi}`                                 | Aggiorna solo alcuni campi |
+| `DELETE`   | /workoutplan/delete           | `{id}`                                           | Elimina piano              |
 
-**Daily_Workout**
+## DaylyWorkout
 
-| Richiesta | URL                        | Parametri                                    | Spiegazione                                        |
-| --------- | -------------------------- | -------------------------------------------- | -------------------------------------------------- |
-| GET       | /daily_workout/{id}        |                                              | Specifico giorno di allenamento                    |
-| GET       | /workout_plan/workout_plan |                                              | Tutti giorni di allenamento di quel utente loggato |
-| POST      |                            | `plan_id`  (FK)<br>`day_name`                | Crea un singolo giorno di allenamento              |
-| PUT       |                            | `id` (PK)<br>`plan_id` (FK) `day_name`       | Aggiorna il giorno di allenamento                  |
-| PATCH     |                            | -`id` (PK)<br>-`plan_id` (FK)<br>-`day_name` | Aggiorno solo i parametri che sono dentro al body  |
-| DELETE    | /workout_plan/{id}         |                                              | Elimina un specifico giorno di allenamento         |
+| **Metodo** | **Endpoint**             | **Parametri / Body JSON**       | **Descrizione**                     |
+| ---------- | ------------------------ | ------------------------------- | ----------------------------------- |
+| `GET`      | /dailyworkout/listByPlan | `?plan_id={id}`                 | Lista di tutti i giorni di un piano |
+| `GET`      | /dailyworkout/get        | `?id={id}`                      | Dettagli di un singolo giorno       |
+| `POST`     | /dailyworkout/create     | `{"plan_id", "day_name"}`       | Crea un nuovo giorno di allenamento |
+| `PUT`      | /dailyworkout/update     | `{"id", "plan_id", "day_name"}` | Aggiorna tutti i campi di un giorno |
+| `PATCH`    | /dailyworkout/patch      | `{"id", ...campi}`              | Aggiorna solo il nome o il piano    |
+| `DELETE`   | /dailyworkout/delete     | `{"id"}`                        | Elimina un giorno                   |
 
-**Esercizio**
+## Sets
 
-| Richiesta | URL                | Parametri                                                                    | Spiegazione                                       |
-| --------- | ------------------ | ---------------------------------------------------------------------------- | ------------------------------------------------- |
-| GET       | /exercise/{id}     |                                                                              | esercizio specifico                               |
-| POST      |                    | `exercise_name`(FK)<br>`muscle_group` <br>`video_url`<br>`type`              | Crea un singolo esercizio                         |
-| PUT       |                    | `id` (PK)<br>`exercise_name`(FK)<br>`muscle_group` <br>`video_url`<br>`type` | Aggiorna l'esercizio                              |
-| PATCH     |                    | `id` (PK)<br>`exercise_name`(FK)<br>`muscle_group` <br>`video_url`<br>`type` | Aggiorno solo i parametri che sono dentro al body |
-| DELETE    | /workout_plan/{id} |                                                                              | Elimina un singolo esercizio                      |
+| **Metodo** | **Endpoint**   | **Parametri / Body JSON**                                                                     | **Descrizione**                                 |
+| ---------- | -------------- | --------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| `GET`      | /set/listByDay | `?day_id={id}`                                                                                | Tutti i set di un giorno (+ dettagli esercizio) |
+| `GET`      | /set/get       | `?id={id}`                                                                                    | Dettagli di un singolo set specifico            |
+| `POST`     | /set/create    | `{"day_id", "exercise_id", "set_number", "reps_count", "rest_time", "weight", "notes"}`       | Aggiunge una serie a un esercizio               |
+| `PUT`      | /set/update    | `{"id", "day_id", "exercise_id", "set_number", "reps_count", "rest_time", "weight", "notes"}` | Sostituisce integralmente i dati di un set      |
+| `PATCH`    | /set/patch     | `{"id", ...campi}`                                                                            | Modifica solo peso, ripetizioni o note          |
+| `DELETE`   | /set/delete    | `{"id"}`                                                                                      | Rimuove una serie specifica                     |
 
-**Sets**
+Per rendere i tuoi endpoint coerenti con il codice PHP che hai scritto (che usa il sistema JWT per la sicurezza) e seguire le migliori pratiche delle API REST, dobbiamo apportare alcune correzioni fondamentali.
 
-| Richiesta | URL                     | Parametri                                                                                                                   | Spiegazione                                       |
-| --------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| GET       | /set/daily_workout/{id} |                                                                                                                             | esercizio specifico                               |
-| POST      |                         | `day_id` (FK)<br>`exercise_id` (FK) <br>`set_number` <br>`reps_count` <br>`rest_time` <br>`weight` <br>`notes`              | Crea una singola serie                            |
-| PUT       |                         | `id` (PK)<br>`day_id` (FK)<br>`exercise_id` (FK) <br>`set_number` <br>`reps_count` <br>`rest_time` <br>`weight` <br>`notes` | Aggiorna la singola serie                         |
-| PATCH     |                         | `id` (PK)<br>`day_id` (FK)<br>`exercise_id` (FK) <br>`set_number` <br>`reps_count` <br>`rest_time` <br>`weight` <br>`notes` | Aggiorno solo i parametri che sono dentro al body |
-| DELETE    | /workout_plan/{id}      |                                                                                                                             | Elimina una singola serie                         |
+Il cambiamento principale riguarda la **rimozione di `user_id` dagli URL**: dato che usi i JWT, il server sa già chi sei. Passare l'ID nell'URL è ridondante e pericoloso per la sicurezza.
 
-```
+Ecco la tabella degli endpoint corretta e ottimizzata:
 
--- ============================================
--- QUERY DI VERIFICA
--- ============================================
+---
 
--- Verifica numero record inseriti
-SELECT 'Users' AS tabella, COUNT(*) AS totale FROM User
-UNION ALL
-SELECT 'Exercises', COUNT(*) FROM Exercise
-UNION ALL
-SELECT 'Workout Plans', COUNT(*) FROM Workout_Plan
-UNION ALL
-SELECT 'Daily Workouts', COUNT(*) FROM Daily_Workout
-UNION ALL
-SELECT 'Sets', COUNT(*) FROM `Set`;
+### 🔐 Modulo: Auth (Pubblico)
 
--- Mostra tutte le schede attive con i loro utenti
-SELECT 
-    u.username,
-    u.first_name,
-    u.last_name,
-    wp.plan_name,
-    wp.creation_date,
-    wp.is_active
-FROM Workout_Plan wp
-JOIN User u ON wp.user_id = u.id
-WHERE wp.is_active = TRUE
-ORDER BY u.username, wp.creation_date DESC;
+Questi endpoint non richiedono il token e servono per entrare nel sistema.
 
--- Mostra un allenamento completo (esempio: Lunedì di Mario)
-SELECT 
-    dw.day_name,
-    e.exercise_name,
-    e.muscle_group,
-    s.set_number,
-    s.reps_count,
-    s.weight,
-    s.rest_time,
-    s.notes
-FROM `Set` s
-JOIN Daily_Workout dw ON s.day_id = dw.id
-JOIN Exercise e ON s.exercise_id = e.id
-WHERE dw.id = 501
-ORDER BY s.id;
+|**Metodo**|**URL**|**Body JSON**|**Descrizione**|
+|---|---|---|---|
+|**POST**|`/auth/register`|`{username, password, first_name, last_name}`|Registra un nuovo account.|
+|**POST**|`/auth/login`|`{username, password}`|Effettua il login e restituisce il **Token JWT**.|
 
--- ============================================
--- QUERY UTILI PER L'APPLICAZIONE
--- ============================================
+---
 
--- Query 1: Ottieni tutte le schede attive di un utente
--- SELECT * FROM Workout_Plan WHERE user_id = 1 AND is_active = TRUE;
+### 📋 Modulo: Workout Plan (Protetto)
 
--- Query 2: Ottieni tutti i giorni di una scheda
--- SELECT * FROM Daily_Workout WHERE plan_id = 101 ORDER BY day_order;
+_Nota: Il server filtrerà automaticamente i piani in base all'utente loggato tramite il token._
 
--- Query 3: Ottieni tutti gli esercizi di un giorno con dettagli
--- SELECT s.*, e.exercise_name, e.muscle_group, e.video_url, e.type
--- FROM `Set` s
--- JOIN Exercise e ON s.exercise_id = e.id
--- WHERE s.day_id = 501
--- ORDER BY s.id;
+|**Metodo**|**URL**|**Body JSON**|**Descrizione**|
+|---|---|---|---|
+|**GET**|`/workoutplan/list`|-|Lista di tutti i piani dell'utente loggato.|
+|**GET**|`/workoutplan/get/{id}`|-|Dettagli di un singolo piano (solo se tuo).|
+|**POST**|`/workoutplan/create`|`{"plan_name", "is_active"}`|Crea un nuovo piano per l'utente loggato.|
+|**PUT**|`/workoutplan/update/{id}`|`{"plan_name", "is_active"}`|Sovrascrive i dati del piano.|
+|**PATCH**|`/workoutplan/patch/{id}`|`{"plan_name"}` o `{"is_active"}`|Modifica solo i campi inviati.|
+|**DELETE**|`/workoutplan/delete/{id}`|-|Elimina il piano specificato.|
 
--- Query 4: Cerca esercizi per gruppo muscolare
--- SELECT * FROM Exercise WHERE muscle_group LIKE '%Pettorali%';
+---
 
--- Query 5: Statistiche utente (totale schede, schede attive)
--- SELECT 
---     u.username,
---     COUNT(wp.id) AS total_plans,
---     SUM(CASE WHEN wp.is_active = TRUE THEN 1 ELSE 0 END) AS active_plans
--- FROM User u
--- LEFT JOIN Workout_Plan wp ON u.id = wp.user_id
--- GROUP BY u.id, u.username;
+### 📅 Modulo: Daily Workout (Protetto)
 
--- ============================================
--- FINE SETUP
--- ============================================
+|**Metodo**|**URL**|**Body JSON**|**Descrizione**|
+|---|---|---|---|
+|**GET**|`/dailyworkout/listByPlan/{plan_id}`|-|Tutti i giorni di un determinato piano.|
+|**GET**|`/dailyworkout/get/{id}`|-|Dettagli di un singolo giorno.|
+|**POST**|`/dailyworkout/create`|`{"plan_id", "day_name", "day_order"}`|Crea un giorno all'interno di un piano.|
+|**PUT**|`/dailyworkout/update/{id}`|`{"plan_id", "day_name", "day_order"}`|Aggiorna completamente il giorno.|
+|**PATCH**|`/dailyworkout/patch/{id}`|`{...campi da cambiare...}`|Aggiorna parzialmente il giorno.|
+|**DELETE**|`/dailyworkout/delete/{id}`|-|Elimina il giorno di allenamento.|
 
-SELECT '✅ Database FitBlaze setup completato con successo!' AS status;
-```
+---
+
+### 🏋️ Modulo: Sets (Protetto)
+
+|**Metodo**|**URL**|**Body JSON**|**Descrizione**|
+|---|---|---|---|
+|**GET**|`/set/listByDay/{day_id}`|-|Tutti i set e gli esercizi di un giorno.|
+|**GET**|`/set/get/{id}`|-|Dettagli di un singolo set.|
+|**POST**|`/set/create`|`{"day_id", "exercise_id", "reps_count", ...}`|Aggiunge un set a un esercizio.|
+|**PUT**|`/set/update/{id}`|`{"day_id", "exercise_id", "reps_count", ...}`|Sostituisce i dati del set.|
+|**PATCH**|`/set/patch/{id}`|`{"weight"}` o `{"reps_count"}` ecc.|Modifica solo i valori specificati.|
+|**DELETE**|`/set/delete/{id}`|-|Rimuove il set.|
+
+---
+
+### 🛠 Cosa è cambiato rispetto alla tua versione?
+
+1. **Restful URL Style:** Ho rimosso i parametri query string (es. `?id=1`) a favore dei parametri nel percorso (es. `/get/1`). È lo standard moderno per le API.
+    
+2. **Rimozione di `user_id` dal Body:** Nelle richieste `POST /workoutplan/create`, il `user_id` non deve essere inviato dal client. Il tuo controller lo prenderà dal token JWT con `JWT_PAYLOAD['user_id']`. Questo impedisce a un utente di creare piani per conto di qualcun altro.
+    
+3. **Consistenza dei nomi:** Ho uniformato i nomi (es. `listByPlan` invece di nomi misti) per rendere l'integrazione con il frontend più semplice.
+    
+4. **Sicurezza Utenti:** Ho rimosso l'endpoint `DELETE /user` (elimina tutti gli utenti). È un'operazione troppo pericolosa da lasciare esposta in un'API, anche se protetta.
+    
+
+Con questi endpoint, la tua API FitBlaze è coerente con la logica dei controller che hai sviluppato e segue gli standard di sicurezza.
