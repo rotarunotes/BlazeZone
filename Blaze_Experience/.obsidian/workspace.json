@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c76dfb2ae689b9c2",
+        "id": "b87b87183da08a22",
         "type": "tabs",
         "children": [
           {
-            "id": "f95116dfe2d141c2",
+            "id": "4d7436ec882fe64d",
             "type": "leaf",
             "state": {
               "type": "home-tab-view",
@@ -190,9 +190,19 @@
               "icon": "clock",
               "title": "Chronology"
             }
+          },
+          {
+            "id": "282dbe4fb0e243f6",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -217,8 +227,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "f95116dfe2d141c2",
+  "active": "4d7436ec882fe64d",
   "lastOpenFiles": [
+    "Setup_Archive/README.md",
+    "GitPerSega.md",
+    "Inglese.md",
     "Progetto finale.md",
     "Setup_Archive/Plugin/Excalidraw/Drawing.md",
     "Setup_Archive/Images/Pasted image 20260408102447.png",
@@ -231,7 +244,6 @@
     "Setup_Archive/Obsidian_Base/Formatting.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Data.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
-    "GitPerSega.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Class.md",
@@ -244,7 +256,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/README.md",
     "Puzzle_Of_Knowledge/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Statements.md",
     "Setup_Archive/Images/Pasted Image 20260401104003_442.png",
     "Setup_Archive/Images/Pasted image 20260331220152.png",
     "Setup_Archive/Images/Pasted image 20260331220606.png",
