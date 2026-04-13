@@ -32,8 +32,19 @@
               "icon": "excalidraw-icon",
               "title": "Drawing"
             }
+          },
+          {
+            "id": "d5a5422c7b5ba100",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -233,13 +244,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4bb15d8344e948b6",
+  "active": "53b6930886c051de",
   "lastOpenFiles": [
-    "Setup_Archive/Images/Pasted image 20260412201448.png",
     "Setup_Archive/Plugin/Excalidraw/Drawing .md",
+    "READMEPROGETTO.md",
+    "Setup_Archive/Images/Pasted image 20260412201448.png",
     "Setup_Archive/Images/Pasted image 20260412201448 1.png",
     "Setup_Archive/Images/Pasted image 20260331220152.png",
-    "READMEPROGETTO.md",
     "Setup_Archive/Images/Pasted image 20260412201243.png",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL.md",
     "Senza nome.md",
