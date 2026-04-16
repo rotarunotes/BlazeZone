@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0cddd54df260bd19",
+        "id": "48f11be0cb4a80b1",
         "type": "tabs",
         "children": [
           {
-            "id": "e48f705971265f9d",
+            "id": "0ab9fd322a1d40c3",
             "type": "leaf",
             "state": {
               "type": "home-tab-view",
@@ -213,12 +213,12 @@
       "obsidian-excalidraw-plugin:New drawing": false,
       "omnisearch:Omnisearch": true,
       "chronology:Open Chronology": true,
-      "obsidian-trash-explorer:Open trash explorer": false,
-      "periodic-notes:Open today": false
+      "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "e48f705971265f9d",
+  "active": "0ab9fd322a1d40c3",
   "lastOpenFiles": [
+    "Setup_Archive/Plugin/Pearls/Daily/16-04-2026.md",
     "Setup_Archive/Plugin/Excalidraw/Drawing .md",
     "READMEPROGETTO.md",
     "Setup_Archive/Images/Pasted image 20260412201448.png",
