@@ -23,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL.md",
+                "file": "Setup_Archive/Plugin/Excalidraw/Senza nome.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FIREWALL"
+              "title": "Senza nome"
             }
           },
           {
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
@@ -246,19 +246,24 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3f7eb6d39b67a444",
+  "active": "3533cfe376ae7aa4",
   "lastOpenFiles": [
-    "Sistemi.md",
+    "Setup_Archive/Plugin/Excalidraw/Drawing1.md",
+    "Setup_Archive/Plugin/Excalidraw/Senza nome.md",
+    "README.md",
+    "COSE DA FARE.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
+    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
+    "Corso ingenieria.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL.md",
+    "Sistemi.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Cryptography.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
     "Progetto finale.md",
     "Setup_Archive/Plugin/Pearls/Daily/16-04-2026.md",
-    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
     "READMEPROGETTO.md",
     "Setup_Archive/Images/Pasted image 20260412201448.png",
     "Setup_Archive/Images/Pasted image 20260412201448 1.png",
@@ -268,7 +273,6 @@
     "Red_Lab/Fit_Blaze/Endpoint.md",
     "cosa da vedere.md",
     "conflict-files-obsidian-git.md",
-    "Setup_Archive/Plugin/Excalidraw/Drawing.md",
     "Setup_Archive/Images/Pasted image 20260409124156.png",
     "Setup_Archive/Images/Pasted image 20260409124143.png",
     "Setup_Archive/Images/Pasted image 20260409124016.png",
@@ -276,12 +280,8 @@
     "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_3casi.md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Bella.md",
     "Setup_Archive/Plugin/Excalidraw/D_Math/Carattere.md",
-    "README.md",
-    "Corso ingenieria.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DNS.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DHCP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/README.md",
-    "GitPerSega.md",
     "Red_Lab/Fit_Blaze/Senza nome",
     "Setup_Archive/Images/Pasted image 20260331220606.png",
     "Senza nome",
