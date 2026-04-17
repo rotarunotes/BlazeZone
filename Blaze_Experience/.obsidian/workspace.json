@@ -213,7 +213,8 @@
       "obsidian-excalidraw-plugin:New drawing": false,
       "omnisearch:Omnisearch": true,
       "chronology:Open Chronology": true,
-      "obsidian-trash-explorer:Open trash explorer": false
+      "obsidian-trash-explorer:Open trash explorer": false,
+      "periodic-notes:Open today": false
     }
   },
   "active": "0ab9fd322a1d40c3",
