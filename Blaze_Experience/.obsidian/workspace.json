@@ -45,7 +45,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -242,10 +242,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "fc7a58488efe2436",
+  "active": "dba5186aaf012bea",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Math/Integral/README.md",
     "Setup_Archive/01_Viewable/Image/I_Other/Puzzle.png",
+    "Puzzle_Of_Knowledge/Math/Integral/README.md",
     "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
     "Puzzle_Of_Knowledge/Math/README.md",
     "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-03 Integrali Definiti.md",
