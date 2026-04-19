@@ -54,7 +54,7 @@ n ^Tu4SGfQT
 1 ^6C02I4bt
 
 ## Element Links
-2sT6FQVB: [[Setup_Archive/Plugin/Excalidraw/Drawing .md#Code Block]]
+2sT6FQVB: [[Drawing #Code Block]]
 
 %%
 ## Drawing

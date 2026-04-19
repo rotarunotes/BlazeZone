@@ -8,7 +8,34 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0ab9fd322a1d40c3",
+            "id": "d8b04c62c7135bd8",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Setup_Archive/01_Viewable/Image/I_Other/Puzzle.png"
+              },
+              "icon": "lucide-image",
+              "title": "Puzzle"
+            }
+          },
+          {
+            "id": "dba5186aaf012bea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Math/Integral/README.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          },
+          {
+            "id": "fc7a58488efe2436",
             "type": "leaf",
             "state": {
               "type": "home-tab-view",
@@ -16,37 +43,9 @@
               "icon": "search",
               "title": "Home tab"
             }
-          },
-          {
-            "id": "3533cfe376ae7aa4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setup_Archive/Plugin/Excalidraw/Senza nome.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Senza nome"
-            }
-          },
-          {
-            "id": "0467afe9a024495f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -78,7 +77,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML",
+                "query": "[\"excalidraw-plugin\"]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -144,13 +143,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Red_Lab/Fit_Blaze/Endpoint.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di Endpoint"
+              "title": "Struttura"
             }
           },
           {
@@ -169,7 +167,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +176,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a Database Design"
+              "title": "Riferimenti"
             }
           },
           {
@@ -188,12 +185,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Stream"
+              "title": "Collegamenti in uscita"
             }
           },
           {
@@ -225,7 +221,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5
+    "width": 312.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -246,54 +242,53 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3533cfe376ae7aa4",
+  "active": "fc7a58488efe2436",
   "lastOpenFiles": [
-    "Setup_Archive/Plugin/Excalidraw/Drawing1.md",
-    "Setup_Archive/Plugin/Excalidraw/Senza nome.md",
-    "README.md",
+    "Puzzle_Of_Knowledge/Math/Integral/README.md",
+    "Setup_Archive/01_Viewable/Image/I_Other/Puzzle.png",
+    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
+    "Puzzle_Of_Knowledge/Math/README.md",
+    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-03 Integrali Definiti.md",
+    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-02 Integrali stream.md",
+    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-26 Leopardi.md",
+    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-01 Stream.md",
+    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-25 mate.md",
+    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-24 Finire future.md",
+    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-31 Stream.md",
     "COSE DA FARE.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
-    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
+    "README.md",
     "Corso ingenieria.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL.md",
-    "Sistemi.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Physics_Part.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Cryptography.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
-    "Progetto finale.md",
-    "Setup_Archive/Plugin/Pearls/Daily/16-04-2026.md",
-    "READMEPROGETTO.md",
-    "Setup_Archive/Images/Pasted image 20260412201448.png",
-    "Setup_Archive/Images/Pasted image 20260412201448 1.png",
-    "Setup_Archive/Images/Pasted image 20260331220152.png",
-    "Setup_Archive/Images/Pasted image 20260412201243.png",
-    "Red_Lab/Fit_Blaze/Progetto.md",
+    "Inglese.md",
+    "Setup_Archive/01_Viewable/Image/I_Other/Puzzle.jpg",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+    "Puzzle_Of_Knowledge/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Data.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260412201448.png",
+    "Red_Lab/Ex_School/SQL/Consegna 6.md",
+    "Red_Lab/Ex_School/SQL/Progettazione Concettuale.md",
+    "Red_Lab/Ex_School/SQL/Consegna N.5- tipologie di JOIN.md",
     "Red_Lab/Fit_Blaze/Endpoint.md",
-    "cosa da vedere.md",
-    "conflict-files-obsidian-git.md",
-    "Setup_Archive/Images/Pasted image 20260409124156.png",
-    "Setup_Archive/Images/Pasted image 20260409124143.png",
-    "Setup_Archive/Images/Pasted image 20260409124016.png",
-    "Setup_Archive/Images/Pasted image 20260408102447.png",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Integrale_definito_3casi.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Bella.md",
-    "Setup_Archive/Plugin/Excalidraw/D_Math/Carattere.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DNS.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/DHCP.md",
+    "Red_Lab/Fit_Blaze/Progetto.md",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260331220606.png",
+    "entita sportapp.pdf",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260417235758.png",
+    "Setup_Archive/1) Viewable/Image/Pasted image 20260417235742.png",
+    "Setup_Archive/1) Viewable/Image",
+    "Setup_Archive/1) Viewable",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260409124143.png",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260408102447.png",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260331220152.png",
+    "Setup_Archive/01_Viewable/Image/I_Other/Pasted image 20251222213944.png",
+    "Setup_Archive/Images",
+    "Setup_Archive/01_Viewable/Video",
+    "Setup_Archive/01_Viewable/PDF",
+    "Setup_Archive/01_Viewable",
     "Red_Lab/Fit_Blaze/Senza nome",
-    "Setup_Archive/Images/Pasted image 20260331220606.png",
     "Senza nome",
     "Red_Lab/Fit_Blaze",
-    "Setup_Archive/Plugin/Pearls/Weekly",
-    "Setup_Archive/Plugin/Pearls/Daily",
-    "Setup_Archive/Plugin/Pearls",
-    "Setup_Archive/Senza nome",
-    "Name_Folder",
-    "Setup_Archive/Images/Pasted Image 20260313212041_408.png",
-    "Senza nome.base",
-    "Setup_Archive/Plugin/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WC",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]
 }

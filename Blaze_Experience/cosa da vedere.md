@@ -1,1 +1,0 @@
-Paprika - Sognando un sogno

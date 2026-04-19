@@ -2,13 +2,13 @@
   "logoType": "imagePath",
   "logo": {
     "lucideIcon": "",
-    "imagePath": "Setup_Archive/Images/I_Other/Puzzle.jpg",
+    "imagePath": "Setup_Archive/01_Viewable/Image/I_Other/Puzzle.png",
     "imageLink": ""
   },
   "logoScale": 1.3,
   "iconColorType": "default",
   "wordmark": "Puzzle Della Conoscenza",
-  "customFont": "textFont",
+  "customFont": "custom",
   "fontSize": "4em",
   "fontColorType": "accentColor",
   "fontWeight": 600,
@@ -24,24 +24,8 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Setup_Archive/Plugin/Excalidraw/Senza nome.md",
-      "timestamp": 1776462441385
-    },
-    {
-      "filepath": "Setup_Archive/Plugin/Excalidraw/Drawing1.md",
-      "timestamp": 1776462439848
-    },
-    {
-      "filepath": "README.md",
-      "timestamp": 1776462384266
-    },
-    {
-      "filepath": "COSE DA FARE.md",
-      "timestamp": 1776462383054
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/README.md",
-      "timestamp": 1776462381678
+      "filepath": "Puzzle_Of_Knowledge/Math/Integral/README.md",
+      "timestamp": 1776607193062
     }
   ],
   "bookmarkedFileStore": [],
@@ -51,5 +35,5 @@
   "closePreviousSessionTabs": false,
   "omnisearch": true,
   "showOmnisearchExcerpt": true,
-  "font": "S"
+  "font": "\"Segoe Script\""
 }
