@@ -58,9 +58,19 @@
               "icon": "search",
               "title": "Home tab"
             }
+          },
+          {
+            "id": "f9baba3ee97cff3f",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -257,7 +267,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "953ef46397abacff",
+  "active": "f9baba3ee97cff3f",
   "lastOpenFiles": [
     "Sistemi.md",
     "Puzzle_Of_Knowledge/Math/Probability.md",
