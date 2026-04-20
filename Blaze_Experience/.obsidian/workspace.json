@@ -30,6 +30,20 @@
               "icon": "lucide-file",
               "title": "Data"
             }
+          },
+          {
+            "id": "f74a3dcfc35ea7a5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Senza nome 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Senza nome 1"
+            }
           }
         ],
         "currentTab": 1
@@ -239,14 +253,14 @@
       "obsidian-git:Open Git source control": false,
       "obsidian-full-calendar:Open Full Calendar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "chronology:Open Chronology": false,
-      "periodic-notes:Open today": false
+      "chronology:Open Chronology": false
     }
   },
   "active": "402b6a8c8399cdc0",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "Senza nome 1.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Data.md",
+    "conflict-files-obsidian-git.md",
     "Setup_Archive/Plugin/Pearls/Daily/23-03-2026.md",
     "Setup_Archive/Plugin/Pearls/Daily/22-03-2026.md",
     "Setup_Archive/Plugin/Pearls/Daily/20-03-2026.md",
@@ -273,7 +287,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
     "Setup_Archive/Plugin/Pearls/Daily/19-03-2026.md",
     "COSE DA FARE.md",
-    "Puzzle_Of_Knowledge/Math/Probability.md",
     "Setup_Archive/Plugin/Pearls/Daily",
     "Setup_Archive/Plugin/Pearls",
     "Setup_Archive/Images/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309221314_585.png",
