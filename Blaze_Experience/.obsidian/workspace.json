@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Senza nome 1.md",
+                "file": "Sistemi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Senza nome 1"
+              "title": "Sistemi"
             }
           }
         ],
@@ -113,8 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338,
-    "collapsed": true
+    "width": 338
   },
   "right": {
     "id": "dd71b14831b0ad51",
@@ -259,6 +258,7 @@
   },
   "active": "f74a3dcfc35ea7a5",
   "lastOpenFiles": [
+    "Senza nome 1.md",
     "conflict-files-obsidian-git.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Data.md",
     "Sistemi.md",
@@ -294,7 +294,6 @@
     "Setup_Archive/01_Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Advanced.md",
     "Setup_Archive/01_Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Admin_Advanced_Setting.md",
     "Setup_Archive/01_Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Admin_Set_Up_Your_Controller.md",
-    "Setup_Archive/01_Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Admin_Create_Your_Wireless_Networks.md",
     "Setup_Archive/01_Viewable/Image/I_Compiuter_Science/I_Systems_And_Network",
     "Setup_Archive/01_Viewable/Image/I_Compiuter_Science/I_Programming",
     "Setup_Archive/01_Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks",
