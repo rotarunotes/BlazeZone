@@ -21,8 +21,39 @@
               "icon": "lucide-file",
               "title": "Sistemi"
             }
+          },
+          {
+            "id": "256e57819031bd60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL23.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "FIREWALL23"
+            }
+          },
+          {
+            "id": "83f4fb54826d3719",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "FIREWALL"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -89,7 +120,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 249.5,
+    "collapsed": true
   },
   "right": {
     "id": "dd71b14831b0ad51",
@@ -198,7 +230,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 312.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,13 +252,33 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "99ef42747414a2b0",
+  "active": "83f4fb54826d3719",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Statements.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL23.md",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260421134235.png",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260421134002.png",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260421133524.png",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260421133227.png",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260421133026.png",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260421132953.png",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260421132644.png",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260421132619.png",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260421132459.png",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260421132439.png",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Network_Protocols/SNMP.md",
+    "Setup_Archive/Plugin/Excalidraw",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/README.md",
+    "README.md",
+    "COSE DA FARE.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
     "Sistemi.md",
+    "conflict-files-obsidian-git.md",
     "Senza nome 1.md",
     "Inglese.md",
-    "Setup_Archive/01_Viewable/Image/I_Other/Puzzle.png",
     "Puzzle_Of_Knowledge/Math/Integral/README.md",
     "Puzzle_Of_Knowledge/Math/Probability.md",
     "Senza nome.base",
@@ -235,38 +288,18 @@
     "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/README.md",
     "Corso ingenieria.md",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260408102447.png",
     "Puzzle_Of_Knowledge/Math/Circumference.md",
     "Puzzle_Of_Knowledge/Math/Statistica.md",
     "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
     "Puzzle_Of_Knowledge/Math/README.md",
     "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-03 Integrali Definiti.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-02 Integrali stream.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-26 Leopardi.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-01 Stream.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-25 mate.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-24 Finire future.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-31 Stream.md",
-    "COSE DA FARE.md",
-    "README.md",
-    "Setup_Archive/01_Viewable/Image/I_Other/Puzzle.jpg",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260412201448.png",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260331220606.png",
     "entita sportapp.pdf",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260417235758.png",
-    "Setup_Archive/1) Viewable/Image/Pasted image 20260417235742.png",
     "Setup_Archive/1) Viewable/Image",
     "Setup_Archive/1) Viewable",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260409124143.png",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260331220152.png",
-    "Setup_Archive/01_Viewable/Image/I_Other/Pasted image 20251222213944.png",
     "Setup_Archive/Images",
     "Setup_Archive/01_Viewable/Video",
     "Setup_Archive/01_Viewable/PDF",
     "Setup_Archive/01_Viewable",
-    "Red_Lab/Fit_Blaze/Senza nome",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]
 }

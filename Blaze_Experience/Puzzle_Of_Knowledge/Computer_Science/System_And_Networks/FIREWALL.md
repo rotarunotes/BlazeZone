@@ -1,117 +1,105 @@
-firewall
-controlla verifica e monitorare i pacchetti fino a livello 4
+Data: 2026-04-21
+[](./README.md)
+#Puzzle_Of_Knowledge/Computer_Science/System_And_Networks
+__
+# Architettura e Logica delle ACL
 
-se vorrei arrivare a un livello più altro devo utilizzare un proxy
+Regole delle ACL:
+1. **Top-Down Processing:** Il router scorre le regole dall'alto verso il basso. Appena trova un "match", si ferma ed esegue la policy:
+	1. Permit
+	2. Deny
+2. **Implicit Deny:** Alla fine di ogni ACL c'è sempre una regola di defualo: `deny ip any any`. Se un pacchetto non soddisfa nessuna regola, viene scartato.
+3. **Una ACL per Interfaccia/Direzione/Protocollo:** Su una singola interfaccia (es. FastEthernet 0/0) puoi avere solo una ACL in entrata (**IN**) e una in uscita (**OUT**) per l'IPv4.
+    
 
-Configurazione: regole
+---
 
-**ACL** (Access Control List), è una tabella con i record le singole regole
-- Standard: Possono filtrare fino al layer 3, filtrano i pacchetti sulla base della sorgente
-	- Range: 1-99, lunghezza del nome identificativo della tabella
-	- Devono applicare l'ACL sull'interfaccia OUTBOUND più vicina alla destinazione
-- Estese: Filtra fino al layer 3/4, controlla la sorgente e la destinazione
-	- Range: 100-199, lunghezza del nome identificativo della tabella
+## 2) Tabella Comparativa: Standard vs Estese
 
-| Numero della regola | Policy   |               |
-| ------------------- | -------- | ------------- |
-| 10                  | PERMIT   | 192.168.1.130 |
-| 20                  | DENY     | 192.168.1.0   |
-|                     |          |               |
-| Default             | DENY ANY |               |
-Il pacchetto inviato, scorre tutte le varie ACL, e ogni singola regola (record)
-**Policy**:
-- PERMIT: Lascia passare
-- DENY: Scarta
-- REJECT: Segnala all'utente che c'è stato un blocco del suo pacchetto
+Ecco lo schema definitivo per non confonderle:
 
-**Wildcard musk**
-- il firewall ragiona così:
-	- 0 = match
-	- 1 = ingnore
-Voglio fare match con la rete 192.168.1.0
-devo guardare i primi 3 otteti per verificare la rete quindi la wildcard musk sarà:
+|**Caratteristica**|**ACL Standard**|**ACL Estese**|
+|---|---|---|
+|**Range Numerico**|1-99 e 1300-1999|100-199 e 2000-2699|
+|**Criterio di Filtro**|Solo IP Sorgente|IP Sorg., IP Dest., Protocollo (TCP/UDP/ICMP), Porte|
+|**Posizionamento**|**Vicino alla Destinazione**|**Vicino alla Sorgente**|
+|**Livello ISO/OSI**|Layer 3|Layer 3 e Layer 4|
 
-| indirizzo ip  | 192.168.1.132 |
-| ------------- | ------------- |
-| Wildcard musk | 0.0.0.255     |
-tecnicamente è il contrario della subnet
+---
 
+## 3) La Sintassi "Named" (Più moderna)
 
-# Esempio
-Bloccare rete A con rete B
+Oltre alle ACL numeriche, oggi si usano le **Named ACL**, che permettono di modificare le regole senza cancellare l'intera lista.
 
-![[ACL_Spiegazione|10000]]
+**Esempio di continuazione del tuo comando:**
 
-
-**ACL 1**
-Scarta tutti gli ip della rete 192.168.1.0, tranne 192.168.1.130
-- Applico l'ACL nell'interfaccia 2 in OUTBOUND
-
-| Numero della regola | Policy   |               |
-| ------------------- | -------- | ------------- |
-| 10                  | PERMIT   | 192.168.1.130 |
-| 20                  | DENY     | 192.168.1.0   |
-|                     |          |               |
-| Default             | DENY ANY |               |
-Creare la policy:
-
-Ruoter
-```
-
-R(config)# interface [porta a cui vogliamo assegnare indirizzo ip]
-R#(config-if)# ip address [indirizzo del router] [mask]
-R#(config-if)# no shutdown
-
-//ESEMPIO 
-R(config)# interface fastEthernet 0/0
-R(config-if)# ip address 192.168.1.254 255.255.255.0
-R#(config-if)# no shutdown
-```
+Bash
 
 ```
-// Mostra la lista degli acl
-show ip access-lists
-
-// Creo l'ACL
-R(config)# access-list [N_ACL] [Policy] [Indirizzo di rete] [Wildcard musk]
-
-//SI entra nella singola interfaccia
-R(config)# interface fastEthernet 0/0
-R(config-if# ip access-group [N_ACL] [out/in]
-
-//Entrare nell'ACL
-R(config)# ip access-list standard 3
-R(config-std-nacl)# [N_regola] [Policy] [non so come continuare]
-
+R(config)# ip access-list extended MIA_RECOLA
+R(config-ext-nacl)# 10 permit tcp 192.168.1.0 0.0.0.255 any eq 80
+R(config-ext-nacl)# 20 deny ip any any
 ```
 
-# Ex passaggio vex
+> **Nota:** Usando i numeri di sequenza (10, 20), puoi inserire una regola nel mezzo (es. la 15) in un secondo momento.
 
-1) Configurare le Interfaccia del router
-2) Consiglio: Creare le ACL
+---
+
+## 4) Argomenti Mancanti (Da approfondire)
+
+### A. Established & Reflexive ACL (Stateful-ish)
+
+Hai accennato al firewall **Stateful**. Nelle ACL estese Cisco, il comando chiave è `established`.
+
+- **A cosa serve:** Permette il passaggio del traffico TCP solo se la connessione è stata iniziata dall'interno (controlla i flag ACK o RST del segmento TCP).
+    
+- **Comando:** `access-list 100 permit tcp any 192.168.1.0 0.0.0.255 established`
+    
+
+### B. Le Wildcard Mask Complesse
+
+Non serve solo a "invertire la subnet". Serve a fare "matching" selettivo.
+
+- `0.0.0.0` = Corrisponde a un **singolo host** (equivalente alla parola chiave `host`).
+    
+- `255.255.255.255` = Corrisponde a **chiunque** (equivalente alla parola chiave `any`).
+    
+- **Esercizio utile:** Come bloccheresti solo gli IP pari? (Si fa con la wildcard `0.0.0.254`).
+    
+
+### C. Operatori di Porta
+
+Oltre a `eq` (equal), nelle estese puoi usare:
+
+- `neq` (not equal)
+    
+- `gt` (greater than)
+    
+- `lt` (less than)
+    
+- `range` (es. `range 1024 5000`)
+    
+
+### D. ACL e VTY (Sicurezza del Router)
+
+Le ACL non servono solo a filtrare il traffico degli utenti, ma anche a proteggere l'accesso al router stesso (Telnet/SSH).
+
+Bash
+
 ```
-R(config)# ip access-list standard 1
-R(config)# ip access-list standard 2
-R(config)# ip access-list standard 3
-```
-3) Per ogni Interfaccia del router assegnare le ACL, è una convenzione assegnare le ACL in Outbound dalla interfaccia più vicina alla destinazione
-4) si fanno el deny
-5) **Occhio che bisogna impostare anche la regola per le risposte**
-
-# ACL esteso
-1) ACL esteso da 100 a 199
-2) Permette di lavorare fino a livello 4, fino a una porta tcp e udp
-
-```
-R(config)# ip access-list extended 100
+R(config)# line vty 0 4
+R(config-line)# access-class 10 in  # Applica l'ACL 10 alle connessioni remote
 ```
 
-![[Pasted image 20260409124016.png]]
+---
 
-![[Pasted image 20260409124143.png]]
+## 5) Errori comuni da evitare
 
+1. **Dimenticare l'Implicit Deny:** Se scrivi solo `deny 192.168.1.1`, bloccherai anche tutto il resto del mondo! Aggiungi sempre un `permit ip any any` se vuoi bloccare solo una cosa specifica.
+    
+2. **Direzione In/Out:** * **IN:** Il pacchetto viene filtrato _prima_ che il router prenda la decisione di routing (risparmia CPU).
+    
+    - **OUT:** Il pacchetto viene filtrato _dopo_ che il router ha deciso su quale interfaccia mandarlo.
+        
 
-```
-R(config)# ip access-list extended 100
-R(config-ext-nacl)# deny ip 192.168.1.0 0.0.0.255 192.168.2.0 0.0.0.255
-```
+Hai bisogno di un esempio pratico su come configurare una regola per bloccare il DNS o il traffico web specifico?
