@@ -103,3 +103,13 @@ R(config-line)# access-class 10 in  # Applica l'ACL 10 alle connessioni remote
         
 
 Hai bisogno di un esempio pratico su come configurare una regola per bloccare il DNS o il traffico web specifico?
+
+
+
+
+
+
+ZANARDELLI:
+servizi cloude
+cablaggio strutturato
+ridondanza
