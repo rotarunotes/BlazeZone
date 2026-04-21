@@ -4,26 +4,56 @@
     "type": "split",
     "children": [
       {
-        "id": "ba7d19bd6bae7eb3",
+        "id": "a000e2ec2bbc1ede",
         "type": "tabs",
         "children": [
           {
-            "id": "99ef42747414a2b0",
+            "id": "5cb2caa22069febe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sistemi.md",
+                "file": "Setup_Archive/Templates/Note_Template.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Sistemi"
+              "title": "Note_Template"
             }
           },
           {
-            "id": "c5ad0bab16e6d7d0",
+            "id": "af38e5819c4faac3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setup_Archive/Templates/README_Template.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "README_Template"
+            }
+          },
+          {
+            "id": "c2250555e633469d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          },
+          {
+            "id": "828599334a79c83a",
             "type": "leaf",
             "state": {
               "type": "home-tab-view",
@@ -33,7 +63,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -52,8 +82,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTimeReverse",
-                "autoReveal": true
+                "sortOrder": "byCreatedTimeReverse",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Esplora risorse"
@@ -100,7 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 403.5
   },
   "right": {
     "id": "dd71b14831b0ad51",
@@ -227,14 +257,49 @@
       "omnisearch:Omnisearch": true,
       "chronology:Open Chronology": true,
       "obsidian-trash-explorer:Open trash explorer": false,
+      "custom-sort:Toggle custom sorting": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "c5ad0bab16e6d7d0",
+  "active": "c2250555e633469d",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
-    "Setup_Archive/Plugin/Excalidraw",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
+    "sortspec.md",
+    "Setup_Archive/Templates/Note_Template.md",
+    "Setup_Archive/Templates/README_Template.md",
+    "adfa.md",
+    "bo.md",
+    "abao.md",
+    "Puzzle_Of_Knowledge/Computer_Science/README.md",
+    "README.md",
+    "Setup_Archive/README.md",
+    "Inglese.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/rela.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/Relation.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/RERE.md",
+    "Corso ingenieria.md",
+    "COSE DA FARE.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/REARE.md",
+    "Setup_Archive/Templates/Daily_Template.md",
+    "Sistemi.md",
+    "Setup_Archive/Templates/Weekly_Template.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Protocols/README.md",
+    "segaSistemai/FIREWALL23.md",
+    "Puzzle_Of_Knowledge/README.md",
+    "Senza nome 1",
+    "Setup_Archive/01_Viewable/Image/Pasted image 20260421222524.png",
+    "Setup_Archive/Plugin/File_Sorting",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Troubleshooting",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Automation_And_Programmability",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Wireless/WLAN_Security_And_Config",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Wireless/Cisco_Architectures",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Wireless/Wireless_Fundamentals",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Wireless",
     "Setup_Archive/01_Viewable/Image/Pasted image 20260421134235.png",
     "Setup_Archive/01_Viewable/Image/Pasted image 20260421134002.png",
     "Setup_Archive/01_Viewable/Image/Pasted image 20260421133524.png",
@@ -244,40 +309,6 @@
     "Setup_Archive/01_Viewable/Image/Pasted image 20260421132644.png",
     "Setup_Archive/01_Viewable/Image/Pasted image 20260421132619.png",
     "Setup_Archive/01_Viewable/Image/Pasted image 20260421132459.png",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260421132439.png",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/FIREWALL23.md",
-    "Sistemi.md",
-    "Senza nome 1.md",
-    "Inglese.md",
-    "Puzzle_Of_Knowledge/Math/Integral/README.md",
-    "Puzzle_Of_Knowledge/Math/Probability.md",
-    "Senza nome.base",
-    "Senza nome 1.base",
-    "Setup_Archive/Plugin/Pearls/Daily/16-04-2026.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/README.md",
-    "Corso ingenieria.md",
-    "Puzzle_Of_Knowledge/Math/Circumference.md",
-    "Puzzle_Of_Knowledge/Math/Statistica.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
-    "Puzzle_Of_Knowledge/Math/README.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-03 Integrali Definiti.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-02 Integrali stream.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-26 Leopardi.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-01 Stream.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-25 mate.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-24 Finire future.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-31 Stream.md",
-    "COSE DA FARE.md",
-    "entita sportapp.pdf",
-    "Setup_Archive/1) Viewable/Image",
-    "Setup_Archive/1) Viewable",
-    "Setup_Archive/Images",
-    "Setup_Archive/01_Viewable/Video",
-    "Setup_Archive/01_Viewable/PDF",
-    "Setup_Archive/01_Viewable",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]
 }

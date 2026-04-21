@@ -24,8 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Sistemi.md",
-      "timestamp": 1776784848235
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
+      "timestamp": 1776808111568
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
+      "timestamp": 1776807836183
+    },
+    {
+      "filepath": "sortspec.md",
+      "timestamp": 1776807831618
+    },
+    {
+      "filepath": "Setup_Archive/Templates/Note_Template.md",
+      "timestamp": 1776807831036
+    },
+    {
+      "filepath": "Setup_Archive/Templates/README_Template.md",
+      "timestamp": 1776807787539
     }
   ],
   "bookmarkedFileStore": [],
