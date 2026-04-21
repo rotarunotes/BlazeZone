@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Setup_Archive/Templates/README_Template.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "README_Template"
+              "title": "Cables_And_Interfaces"
             }
           },
           {
@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
+                "file": "Sistemi.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Sistemi"
             }
           },
           {
@@ -63,7 +63,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +83,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byCreatedTimeReverse",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Esplora risorse"
@@ -261,12 +261,15 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "c2250555e633469d",
+  "active": "3f7eb6d39b67a444",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
-    "sortspec.md",
-    "Setup_Archive/Templates/Note_Template.md",
     "Setup_Archive/Templates/README_Template.md",
+    "Sistemi.md",
+    "sortspec.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
+    "Setup_Archive/Templates/Note_Template.md",
     "adfa.md",
     "bo.md",
     "abao.md",
@@ -284,11 +287,8 @@
     "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/REARE.md",
     "Setup_Archive/Templates/Daily_Template.md",
-    "Sistemi.md",
     "Setup_Archive/Templates/Weekly_Template.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Protocols/README.md",
-    "segaSistemai/FIREWALL23.md",
-    "Puzzle_Of_Knowledge/README.md",
     "Senza nome 1",
     "Setup_Archive/01_Viewable/Image/Pasted image 20260421222524.png",
     "Setup_Archive/Plugin/File_Sorting",
