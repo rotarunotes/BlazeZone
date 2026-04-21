@@ -21,8 +21,19 @@
               "icon": "lucide-file",
               "title": "Sistemi"
             }
+          },
+          {
+            "id": "c5ad0bab16e6d7d0",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -215,14 +226,13 @@
       "obsidian-excalidraw-plugin:New drawing": false,
       "omnisearch:Omnisearch": true,
       "chronology:Open Chronology": true,
-      "obsidian-trash-explorer:Open trash explorer": false,
-      "periodic-notes:Open today": false
+      "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "99ef42747414a2b0",
+  "active": "c5ad0bab16e6d7d0",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "Sistemi.md",
+    "conflict-files-obsidian-git.md",
     "Senza nome 1.md",
     "Inglese.md",
     "Setup_Archive/01_Viewable/Image/I_Other/Puzzle.png",
