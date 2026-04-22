@@ -25,7 +25,8 @@
               "state": {
                 "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Data.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
               "title": "Data"
@@ -39,14 +40,15 @@
               "state": {
                 "file": "Sistemi.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
               "title": "Sistemi"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -256,12 +258,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "f74a3dcfc35ea7a5",
+  "active": "402b6a8c8399cdc0",
   "lastOpenFiles": [
+    "Sistemi.md",
     "Senza nome 1.md",
     "conflict-files-obsidian-git.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Data.md",
-    "Sistemi.md",
     "Setup_Archive/Plugin/Pearls/Daily/18-04-2026.md",
     "Setup_Archive/Plugin/Pearls/Daily/16-04-2026.md",
     "Setup_Archive/01_Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309221314_585.png",
