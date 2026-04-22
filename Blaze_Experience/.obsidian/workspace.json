@@ -36,24 +36,9 @@
               "icon": "lucide-file",
               "title": "README"
             }
-          },
-          {
-            "id": "5ac22dadac8ca6be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -251,10 +236,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "5ac22dadac8ca6be",
+  "active": "8bed22f295c1ff87",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Network_Topologies/README.md",
     "conflict-files-obsidian-git.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Network_Topologies/README.md",
     "sorting-spec.md",
     "gg.md",
     "Senza nome.md",
