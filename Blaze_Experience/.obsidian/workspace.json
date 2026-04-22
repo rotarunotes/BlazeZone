@@ -4,101 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "a000e2ec2bbc1ede",
+        "id": "9c84303b89eb260c",
         "type": "tabs",
         "children": [
           {
-            "id": "5a29c023651e7138",
+            "id": "ffb4fc0a3e5193bc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/README.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "285a9848cab0c43e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "5f426a2e8bc4bda0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "TCP_IP"
-            }
-          },
-          {
-            "id": "ff65bfb443dbffb7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setup_Archive/Templates/Note_Template.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Note_Template"
-            }
-          },
-          {
-            "id": "427fab9d13570bb9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Cables_And_Interfaces"
-            }
-          },
-          {
-            "id": "9dfa8f9b04f6385f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Cables_And_Interfaces"
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -296,16 +215,17 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "427fab9d13570bb9",
+  "active": "ffb4fc0a3e5193bc",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
+    "Setup_Archive/Templates/Note_Template.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
     "sorting-spec.md",
     "Setup_Archive/Rules/Rules.md",
-    "Setup_Archive/Templates/Note_Template.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Network_Topologies/README.md",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Cavo_Coassiale.png",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Gemini_Generated_Image_ldfg66ldfg66ldfg.png",
@@ -319,7 +239,6 @@
     "Setup_Archive/01_Viewable/Image",
     "Setup_Archive/01_Viewable",
     "Sistemi.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Modello_ISO_OSI.png",
     "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
