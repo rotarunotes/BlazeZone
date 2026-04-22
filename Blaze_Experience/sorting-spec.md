@@ -51,7 +51,6 @@ sorting-spec: |-
     Models
     Physical_Layer
     Transport_Layer
-    Network_Topologies
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models
@@ -65,6 +64,7 @@ sorting-spec: |-
     README
     /folders
     Cables_And_Interfaces
+    Topology_Types
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer
@@ -72,12 +72,6 @@ sorting-spec: |-
     /folders
     TCP
     UDP
-    ...
-
-  target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Network_Topologies
-    README
-    /folders
-    Topology_Types
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing

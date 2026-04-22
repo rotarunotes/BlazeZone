@@ -24,20 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
-      "timestamp": 1776887884122
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
+      "timestamp": 1776893600209
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
+      "timestamp": 1776893599608
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/README.md",
+      "timestamp": 1776893050926
     },
     {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
-      "timestamp": 1776887870371
+      "timestamp": 1776893036554
     },
     {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
-      "timestamp": 1776887868538
-    },
-    {
-      "filepath": "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Modello_ISO_OSI.png",
-      "timestamp": 1776887859170
+      "timestamp": 1776893035927
     }
   ],
   "bookmarkedFileStore": [],

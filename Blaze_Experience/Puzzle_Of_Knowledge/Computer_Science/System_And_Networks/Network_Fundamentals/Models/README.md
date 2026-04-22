@@ -5,12 +5,10 @@ ___
 
 # Models
 
-
 > [!abstract] PDU
 > 
    **Protocol Data Unit**. Rappresenta l'unità logica di dati che viene scambiata tra due dispositivi che comunicano utilizzando un determinato protocollo. 
 > Ogni livello "incapsula" il pacchetto PDU, e invia i dati al livello superiore aggiungendo un proprio header.
-
 
 ___
 # Indice
