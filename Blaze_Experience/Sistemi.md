@@ -339,3 +339,7 @@ ___
 	- **CDP/LLDP** [NUOVO]: Verifica della topologia con show cdp/lldp neighbors
 	- **QoS** [NUOVO]: Configurazione base di marcatura e accodamento
 	- **Passaggi**: Sequenze operative per l'implementazione delle tecnologie sopra citate
+	  
+
+
+
