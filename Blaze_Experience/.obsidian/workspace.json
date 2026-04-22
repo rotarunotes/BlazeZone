@@ -8,37 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5cb2caa22069febe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setup_Archive/Templates/README_Template.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "README_Template"
-            }
-          },
-          {
             "id": "335d952e72d5b424",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setup_Archive/Rules/Rules.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Rules"
-            }
-          },
-          {
-            "id": "a01e2584dbba4d44",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -51,9 +21,24 @@
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "182f682f56c13e22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "13-03-2026"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -251,63 +236,23 @@
       "periodic-notes:Open today": false
     }
   },
-  "floating": {
-    "id": "5ff19470d7ff2ce5",
-    "type": "floating",
-    "children": [
-      {
-        "id": "e2d9fb761dd51f36",
-        "type": "window",
-        "children": [
-          {
-            "id": "d69a64fda0ec2f83",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "2f59561fad7b680b",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Sistemi.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Sistemi"
-                }
-              },
-              {
-                "id": "2b3191a51694b529",
-                "type": "leaf",
-                "state": {
-                  "type": "home-tab-view",
-                  "state": {},
-                  "icon": "search",
-                  "title": "Home tab"
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "vertical",
-        "x": -2023,
-        "y": 234,
-        "width": 1144,
-        "height": 992,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "a01e2584dbba4d44",
+  "active": "182f682f56c13e22",
   "lastOpenFiles": [
-    "Setup_Archive/Rules/Rules.md",
+    "Setup_Archive/Plugin/Pearls/Daily/15-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/16-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/16-04-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/18-04-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/19-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/20-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/21-04-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/22-03-2026.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
+    "Setup_Archive/Obsidian_Base/README.md",
     "Setup_Archive/Templates/README_Template.md",
+    "sorting-spec.md",
+    "Setup_Archive/Rules/Rules.md",
+    "Sistemi.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
     "Setup_Archive/Rules/README.md",
     "Setup_Archive/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
@@ -318,18 +263,7 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/README.md",
     "Setup_Archive/Rules/Short_Cut.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
-    "sorting-spec.md",
-    "Sistemi.md",
     "Senza nome.md",
-    "dfaf.md",
-    "Setup_Archive/Templates/Note_Template.md",
-    "Cisco_Packet_Tracer.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Wireless/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Troubleshooting/Troubleshooting_Methodology.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Automation_And_Programmability/API_And_Automation.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Automation_And_Programmability/SDN_And_Controller.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/README.md",
     "Senza nome 1",
     "Setup_Archive/01_Viewable/Image/Pasted image 20260421222524.png",
     "Setup_Archive/Plugin/File_Sorting",
