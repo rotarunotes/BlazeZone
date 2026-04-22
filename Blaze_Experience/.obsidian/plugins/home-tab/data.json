@@ -24,20 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "Sistemi.md",
+      "timestamp": 1776868683334
+    },
+    {
       "filepath": "sorting-spec.md",
-      "timestamp": 1776867359866
+      "timestamp": 1776868682975
     },
     {
-      "filepath": "Corso ingenieria.md",
-      "timestamp": 1776867054969
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
+      "timestamp": 1776868666491
     },
     {
-      "filepath": "README.md",
-      "timestamp": 1776867052253
+      "filepath": "Setup_Archive/Templates/README_Template.md",
+      "timestamp": 1776868662604
     },
     {
       "filepath": "Setup_Archive/Templates/Note_Template.md",
-      "timestamp": 1776867048142
+      "timestamp": 1776868660965
     }
   ],
   "bookmarkedFileStore": [],

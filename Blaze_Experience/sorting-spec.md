@@ -1,8 +1,13 @@
 ---
-sorting-spec: |
+sorting-spec: |-
+  target-folder: /*
+    README
+    /folders
+    %
+
   target-folder: /
-    README.md
-    < folders
+    README
+    /folders
     Puzzle_Of_Knowledge
     Red_Lab
     School
@@ -10,23 +15,23 @@ sorting-spec: |
     ...
 
   target-folder: *
-    README.md
-    < folders
+    README
+    /folders
     ...
 
   target-folder: Puzzle_Of_Knowledge
-    README.md
-    < folders
+    README
+    /folders
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science
-    README.md
-    < folders
+    README
+    /folders
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks
-    README.md
-    < folders
+    README
+    /folders
     Network_Fundamentals
     Planning_Addressing
     Switching_And_Network_Access
@@ -41,8 +46,8 @@ sorting-spec: |
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals
-    README.md
-    < folders
+    README
+    /folders
     Models
     Physical_Layer
     Transport_Layer
@@ -50,34 +55,34 @@ sorting-spec: |
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models
-    README.md
-    < folders
-    ISO_OSI.md
-    TCP_IP.md
+    README
+    /folders
+    ISO_OSI
+    TCP_IP
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer
-    README.md
-    < folders
-    Cables_And_Interfaces.md
+    README
+    /folders
+    Cables_And_Interfaces
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer
-    README.md
-    < folders
-    TCP.md
-    UDP.md
+    README
+    /folders
+    TCP
+    UDP
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Network_Topologies
-    README.md
-    < folders
-    Topology_Types.md
+    README
+    /folders
+    Topology_Types
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing
-    README.md
-    < folders
+    README
+    /folders
     IP_Addressing
     Core_Protocols
     Routing_Logic
@@ -85,129 +90,129 @@ sorting-spec: |
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing
-    README.md
-    < folders
-    IPv4.md
-    Subnetting_VLSM_CIDR.md
-    IPv6.md
+    README
+    /folders
+    IPv4
+    Subnetting_VLSM_CIDR
+    IPv6
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols
-    README.md
-    < folders
-    ARP.md
-    ICMP.md
-    CDP.md
-    LLDP.md
+    README
+    /folders
+    ARP
+    ICMP
+    CDP
+    LLDP
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic
-    README.md
-    < folders
-    Forwarding_Decisions.md
-    Static_Routing.md
-    Dynamic_Routing.md
-    First_Hop_Redundancy.md
+    README
+    /folders
+    Forwarding_Decisions
+    Static_Routing
+    Dynamic_Routing
+    First_Hop_Redundancy
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/WAN_Technologies
-    README.md
-    < folders
-    WAN_Concepts.md
+    README
+    /folders
+    WAN_Concepts
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access
-    README.md
-    < folders
+    README
+    /folders
     VLAN
     Inter-VLAN_Routing
     Redundancy_and_Aggregation
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN
-    README.md
-    < folders
-    VLAN_Segmentation.md
-    802.1Q_Tagging.md
-    Access_Vs_Trunk.md
-    DTP.md
-    VTP_VLAN_Trunking_Protocol.md
+    README
+    /folders
+    VLAN_Segmentation
+    802.1Q_Tagging
+    Access_Vs_Trunk
+    DTP
+    VTP_VLAN_Trunking_Protocol
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Inter-VLAN_Routing
-    README.md
-    < folders
-    Router-On-A-stick.md
-    Layer_3_Switch_SVI.md
+    README
+    /folders
+    Router-On-A-stick
+    Layer_3_Switch_SVI
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Redundancy_and_Aggregation
-    README.md
-    < folders
-    STP.md
-    EtherChannel_LACP.md
+    README
+    /folders
+    STP
+    EtherChannel_LACP
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services
-    README.md
-    < folders
+    README
+    /folders
     Infrastructure_Services
     Traffic_Management
     Network_Address_Translation
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services
-    README.md
-    < folders
-    DNS.md
-    DHCP.md
-    NTP.md
-    SNMP.md
+    README
+    /folders
+    DNS
+    DHCP
+    NTP
+    SNMP
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Traffic_Management
-    README.md
-    < folders
-    QoS.md
+    README
+    /folders
+    QoS
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Network_Address_Translation
-    README.md
-    < folders
-    NAT.md
-    PAT.md
+    README
+    /folders
+    NAT
+    PAT
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Protocols
-    README.md
-    < folders
+    README
+    /folders
     Web_And_Communication
     Management_And_Remote_Access
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Protocols/Web_And_Communication
-    README.md
-    < folders
-    HTTP.md
-    HTTPS.md
-    Email.md
-    SMTP.md
-    POP.md
-    IMAP.md
+    README
+    /folders
+    HTTP
+    HTTPS
+    Email
+    SMTP
+    POP
+    IMAP
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Protocols/Management_And_Remote_Access
-    README.md
-    < folders
-    SSH.md
-    TELNET.md
-    FTP.md
-    TFTP.md
+    README
+    /folders
+    SSH
+    TELNET
+    FTP
+    TFTP
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography
-    README.md
-    < folders
+    README
+    /folders
     Security
     Cryptography
     Network_Defense
@@ -215,102 +220,102 @@ sorting-spec: |
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Security
-    README.md
-    < folders
-    Security_Concepts.md
-    Device_Hardening.md
+    README
+    /folders
+    Security_Concepts
+    Device_Hardening
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Cryptography
-    README.md
-    < folders
-    Symmetric_Cryptography.md
-    Asymmetric_Cryptography.md
-    Hashing_And_Integrity.md
-    PKI_Certificates_X509.md
+    README
+    /folders
+    Symmetric_Cryptography
+    Asymmetric_Cryptography
+    Hashing_And_Integrity
+    PKI_Certificates_X509
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense
-    README.md
-    < folders
-    Layer_2_Security.md
-    Firewall_Types.md
-    Cisco_ACLs.md
-    DMZ.md
-    AAA_Framework.md
+    README
+    /folders
+    Layer_2_Security
+    Firewall_Types
+    Cisco_ACLs
+    DMZ
+    AAA_Framework
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity_VPN
-    README.md
-    < folders
-    IPsec_Protocol.md
-    SSL.md
-    TLS.md
-    VPN.md
+    README
+    /folders
+    IPsec_Protocol
+    SSL
+    TLS
+    VPN
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Wireless
-    README.md
-    < folders
+    README
+    /folders
     Wireless_Fundamentals
     Cisco_Architectures
     WLAN_Security_And_Config
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Wireless/Wireless_Fundamentals
-    README.md
-    < folders
-    802_11_Standards_And_RF.md
-    Wireless_Media_Access.md
+    README
+    /folders
+    802_11_Standards_And_RF
+    Wireless_Media_Access
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Wireless/Cisco_Architectures
-    README.md
-    < folders
-    WLC_And_AP_Deployment_Models.md
-    CAPWAP_And_AP_Join_Process.md
-    Deployment_Models.md
+    README
+    /folders
+    WLC_And_AP_Deployment_Models
+    CAPWAP_And_AP_Join_Process
+    Deployment_Models
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Wireless/WLAN_Security_And_Config
-    README.md
-    < folders
-    Encryption_Standards.md
-    Wireless_Security_Protocols.md
-    WLC_Management_Interfaces.md
+    README
+    /folders
+    Encryption_Standards
+    Wireless_Security_Protocols
+    WLC_Management_Interfaces
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Automation_And_Programmability
-    README.md
-    < folders
-    SDN_And_Controller.md
-    API_And_Automation.md
-    Data_Formats.md
-    Cloud_Network_Management.md
-    AI_ML_In_Networking.md
+    README
+    /folders
+    SDN_And_Controller
+    API_And_Automation
+    Data_Formats
+    Cloud_Network_Management
+    AI_ML_In_Networking
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design
-    README.md
-    < folders
-    Requirements_Analysis.md
-    Analysis_And_Sizing.md
-    Structured_Cabling.md
-    Device_Selection_And_Sizing.md
-    Services_And_Placement.md
-    Technical_Report_Outline.md
+    README
+    /folders
+    Requirements_Analysis
+    Analysis_And_Sizing
+    Structured_Cabling
+    Device_Selection_And_Sizing
+    Services_And_Placement
+    Technical_Report_Outline
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Troubleshooting
-    README.md
-    < folders
-    Troubleshooting_Methodology.md
-    Common_Issues_And_Commands.md
+    README
+    /folders
+    Troubleshooting_Methodology
+    Common_Issues_And_Commands
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer
-    README.md
-    < folders
+    README
+    /folders
     Fondamentali_e_Gestione
     Connettività_e_Servizi_IP
     Switching_e_Sicurezza_Layer2
@@ -318,13 +323,13 @@ sorting-spec: |
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/Fondamentali_e_Gestione
-    README.md
-    < folders
-    Accesso_al_Dispositivo.md
-    Modalità_Operative.md
-    Password.md
-    File_di_Configurazione.md
-    Comandi_Show.md
-    Indirizzi_IP.md
+    README
+    /folders
+    Accesso_al_Dispositivo
+    Modalità_Operative
+    Password
+    File_di_Configurazione
+    Comandi_Show
+    Indirizzi_IP
     ...
 ---
