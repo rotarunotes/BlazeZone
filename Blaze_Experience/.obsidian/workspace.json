@@ -8,47 +8,67 @@
         "type": "tabs",
         "children": [
           {
-            "id": "20103ec863c1bb57",
-            "type": "leaf",
-            "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
-            }
-          },
-          {
-            "id": "402b6a8c8399cdc0",
+            "id": "fabd3a4d621629d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Data.md",
+                "file": "School/README.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Data"
+              "title": "README"
             }
           },
           {
-            "id": "f74a3dcfc35ea7a5",
+            "id": "8bcb1fd1d1b28afb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sistemi.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Sistemi"
+              "title": "ISO_OSI"
+            }
+          },
+          {
+            "id": "eb77f28f85ea7eb2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "ISO_OSI"
+            }
+          },
+          {
+            "id": "0cd1e05204978354",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "TCP_IP"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -80,7 +100,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML",
+                "query": "tag:#Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -241,6 +261,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "custom-sort:Toggle custom sorting": false,
       "bases:Crea nuova Base": false,
       "switcher:Apri selezione rapida": true,
       "graph:Apri vista grafo": true,
@@ -258,10 +279,23 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "f74a3dcfc35ea7a5",
+  "active": "8bcb1fd1d1b28afb",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
+    "School/README.md",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_OSI_TCP.png",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Gemini_Generated_Image_9o1tqs9o1tqs9o1t.png",
+    "Sistemi.md",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Modello_ISO_OSI.png",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Modello_ISO_OSI.png.~tmp",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks",
+    "Setup_Archive/Viewable/Image/Computer_Science",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Data.md",
+    "conflict-files-obsidian-git.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/Technical_Report_Outline.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/Structured_Cabling.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/README.md",
@@ -281,31 +315,17 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Automation_And_Programmability",
     "sorting-spec.md",
     "segaSistemai/Systems_Theory/Netting/VLAN.md",
-    "segaSistemai/Systems_Theory/Netting/WLAN.md",
-    "segaSistemai/Systems_Theory/Netting/README.md",
-    "segaSistemai/Networking/Subnetting_Practice/Subnetting_IPv4.md",
-    "segaSistemai/Networking/Subnetting_Practice/README.md",
-    "segaSistemai/Networking/Network_Protocols/SNMP.md",
-    "segaSistemai/Networking/Network_Protocols/README.md",
-    "segaSistemai/Networking/Network_Protocols/NTP.md",
-    "segaSistemai/Networking/Network_Protocols/HTTP.md",
     "segaSistemai/Systems_Theory/Netting",
     "segaSistemai/Networking/Subnetting_Practice",
     "segaSistemai/Networking/Network_Protocols",
     "segaSistemai/Networking/Configuration",
-    "segaSistemai/Systems_Theory",
-    "segaSistemai/Networking",
-    "segaSistemai",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260421222524.png",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260421134235.png",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260421134002.png",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260421133524.png",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260421133227.png",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260421133026.png",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260421132953.png",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260421132644.png",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260421132619.png",
-    "Setup_Archive/01_Viewable/Image/Pasted image 20260421132459.png",
+    "Setup_Archive/Viewable/Image/Pasted image 20260421222524.png",
+    "Setup_Archive/Viewable/Image/Pasted image 20260421134235.png",
+    "Setup_Archive/Viewable/Image/Pasted image 20260421134002.png",
+    "Setup_Archive/Viewable/Image/Pasted image 20260421133524.png",
+    "Setup_Archive/Viewable/Image/Pasted image 20260421133227.png",
+    "Setup_Archive/Viewable/Image/Pasted image 20260421133026.png",
+    "Setup_Archive/Viewable/Image/Pasted image 20260421132953.png",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]
 }
