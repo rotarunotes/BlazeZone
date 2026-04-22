@@ -2,13 +2,13 @@
   "logoType": "imagePath",
   "logo": {
     "lucideIcon": "",
-    "imagePath": "Setup_Archive/Images/I_Other/Puzzle.jpg",
+    "imagePath": "Setup_Archive/Viewable/Image/I_Other/Puzzle.png",
     "imageLink": ""
   },
   "logoScale": 1.3,
   "iconColorType": "default",
   "wordmark": "Puzzle Della Conoscenza",
-  "customFont": "textFont",
+  "customFont": "custom",
   "fontSize": "4em",
   "fontColorType": "accentColor",
   "fontWeight": 600,
@@ -24,24 +24,20 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
-      "timestamp": 1776887052219
-    },
-    {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
-      "timestamp": 1776886966377
+      "timestamp": 1776887884122
     },
     {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
-      "timestamp": 1776886922204
+      "timestamp": 1776887870371
     },
     {
-      "filepath": "School/README.md",
-      "timestamp": 1776886910872
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
+      "timestamp": 1776887868538
     },
     {
-      "filepath": "Sistemi.md",
-      "timestamp": 1776885894265
+      "filepath": "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Modello_ISO_OSI.png",
+      "timestamp": 1776887859170
     }
   ],
   "bookmarkedFileStore": [],
@@ -51,5 +47,5 @@
   "closePreviousSessionTabs": false,
   "omnisearch": true,
   "showOmnisearchExcerpt": true,
-  "font": "S"
+  "font": "\"Segoe Script\""
 }

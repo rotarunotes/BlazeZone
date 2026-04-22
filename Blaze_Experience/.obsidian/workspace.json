@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "52a7338ac04c02a9",
+        "id": "a000e2ec2bbc1ede",
         "type": "tabs",
         "children": [
           {
-            "id": "fabd3a4d621629d6",
+            "id": "335d952e72d5b424",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "School/README.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
@@ -23,13 +23,13 @@
             }
           },
           {
-            "id": "8bcb1fd1d1b28afb",
+            "id": "5a29c023651e7138",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
@@ -38,37 +38,22 @@
             }
           },
           {
-            "id": "eb77f28f85ea7eb2",
+            "id": "285a9848cab0c43e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
-                "mode": "source",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "ISO_OSI"
-            }
-          },
-          {
-            "id": "0cd1e05204978354",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "TCP_IP"
+              "title": "README"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -87,8 +72,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTimeReverse",
-                "autoReveal": false
+                "sortOrder": "byCreatedTimeReverse",
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Esplora risorse"
@@ -100,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models",
+                "query": "tag:#Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,20 +107,20 @@
             }
           },
           {
-            "id": "a80c0479e1c65dbc",
+            "id": "17e9d3bdb8fd981f",
             "type": "leaf",
             "state": {
               "type": "trash-explorer",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "trash-explorer"
+              "icon": "trash",
+              "title": "Trash explorer"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 338
+    "width": 403.5
   },
   "right": {
     "id": "dd71b14831b0ad51",
@@ -166,13 +151,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di Stream"
+              "title": "Struttura"
             }
           },
           {
@@ -181,8 +165,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -191,7 +175,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -201,7 +184,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a Database Design"
+              "title": "Riferimenti"
             }
           },
           {
@@ -210,12 +193,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart/Stream.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Stream"
+              "title": "Collegamenti in uscita"
             }
           },
           {
@@ -241,91 +223,81 @@
               "icon": "clock",
               "title": "Chronology"
             }
-          },
-          {
-            "id": "2a3e5f7fccda1cd4",
-            "type": "leaf",
-            "state": {
-              "type": "chronology-calendar-view",
-              "state": {},
-              "icon": "clock",
-              "title": "Chronology"
-            }
           }
         ],
         "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 202.5
+    "width": 328.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "custom-sort:Toggle custom sorting": false,
       "bases:Crea nuova Base": false,
       "switcher:Apri selezione rapida": true,
       "graph:Apri vista grafo": true,
       "canvas:Crea nuova lavagna": true,
       "daily-notes:Apri nota del giorno": true,
       "templates:Inserisci modello": true,
+      "obsidian-git:Open Git source control": true,
       "command-palette:Apri riquadro comandi": true,
-      "obsidian-trash-explorer:Open trash explorer": false,
-      "templater-obsidian:Templater": false,
-      "omnisearch:Omnisearch": false,
-      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": true,
       "obsidian-full-calendar:Open Full Calendar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "chronology:Open Chronology": false,
+      "omnisearch:Omnisearch": true,
+      "chronology:Open Chronology": true,
+      "obsidian-trash-explorer:Open trash explorer": false,
+      "custom-sort:Toggle custom sorting": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "8bcb1fd1d1b28afb",
+  "active": "285a9848cab0c43e",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
-    "School/README.md",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Modello_ISO_OSI.png",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_OSI_TCP.png",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Gemini_Generated_Image_9o1tqs9o1tqs9o1t.png",
-    "Sistemi.md",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Modello_ISO_OSI.png",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Modello_ISO_OSI.png.~tmp",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
+    "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309221314_585.png",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309220904_377.png",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309220539_298.png",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309220259_406.png",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309204207_403.png",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309212815_598.png",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309212633_897.png",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Programming/Tipi_Di_Input.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Programming/Tabella_HTML.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Programming/Selettore_css.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Programming/Schema_E-R_Esempio.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Programming/form_html.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Programming/Progettazione_Dati_Logica_Esempio.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Programming/Formattazione_HTML.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Programming/LIste_HTML.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Programming/Grid_css.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_VLAN_Creazione.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Verifica_AP.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Salva.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Radius_New.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Security_Layer2.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Security_AAA_Servers.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Radius.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Interfaccia_Impostazioni.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Create_Admin_User.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Interfacce_Apply.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Guppi_WLANs.md",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Interfacce.md",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Programming",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Programming",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science",
+    "Setup_Archive/Viewable/Image/I_Other",
+    "Setup_Archive/Viewable/Image/I_Math",
     "Setup_Archive/Viewable/Image/Computer_Science",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Data.md",
-    "conflict-files-obsidian-git.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/Technical_Report_Outline.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/Structured_Cabling.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/Requirements_Analysis.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/Services_And_Placement.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/Device_Selection_And_Sizing.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/Analysis_And_Sizing.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Automation_And_Programmability/SDN_And_Controller.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Automation_And_Programmability/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Automation_And_Programmability/Cloud_Network_Management.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Automation_And_Programmability/Data_Formats.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Automation_And_Programmability/API_And_Automation.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Automation_And_Programmability/AI_ML_In_Networking.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Automation_And_Programmability",
-    "sorting-spec.md",
-    "segaSistemai/Systems_Theory/Netting/VLAN.md",
-    "segaSistemai/Systems_Theory/Netting",
-    "segaSistemai/Networking/Subnetting_Practice",
-    "segaSistemai/Networking/Network_Protocols",
-    "segaSistemai/Networking/Configuration",
-    "Setup_Archive/Viewable/Image/Pasted image 20260421222524.png",
-    "Setup_Archive/Viewable/Image/Pasted image 20260421134235.png",
-    "Setup_Archive/Viewable/Image/Pasted image 20260421134002.png",
-    "Setup_Archive/Viewable/Image/Pasted image 20260421133524.png",
-    "Setup_Archive/Viewable/Image/Pasted image 20260421133227.png",
-    "Setup_Archive/Viewable/Image/Pasted image 20260421133026.png",
-    "Setup_Archive/Viewable/Image/Pasted image 20260421132953.png",
+    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]
 }
