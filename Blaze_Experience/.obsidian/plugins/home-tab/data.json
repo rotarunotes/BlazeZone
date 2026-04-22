@@ -24,8 +24,20 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Network_Topologies/README.md",
-      "timestamp": 1776866920339
+      "filepath": "sorting-spec.md",
+      "timestamp": 1776867359866
+    },
+    {
+      "filepath": "Corso ingenieria.md",
+      "timestamp": 1776867054969
+    },
+    {
+      "filepath": "README.md",
+      "timestamp": 1776867052253
+    },
+    {
+      "filepath": "Setup_Archive/Templates/Note_Template.md",
+      "timestamp": 1776867048142
     }
   ],
   "bookmarkedFileStore": [],

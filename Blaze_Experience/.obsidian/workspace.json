@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Network_Topologies/README.md",
+                "file": "sorting-spec.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "sorting-spec"
             }
           }
         ],
@@ -238,18 +238,20 @@
   },
   "active": "8bed22f295c1ff87",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "sortspec.md",
+    "Corso ingenieria.md",
+    "README.md",
+    "Setup_Archive/Templates/Note_Template.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Network_Topologies/README.md",
+    "conflict-files-obsidian-git.md",
     "sorting-spec.md",
     "gg.md",
     "Senza nome.md",
     "Senza nome 1.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
     "Sistemi.md",
-    "Setup_Archive/Templates/Note_Template.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
     "Setup_Archive/Templates/README_Template.md",
-    "sortspec.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
@@ -257,13 +259,11 @@
     "bo.md",
     "abao.md",
     "Puzzle_Of_Knowledge/Computer_Science/README.md",
-    "README.md",
     "Setup_Archive/README.md",
     "Inglese.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/rela.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/Relation.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
     "Senza nome 1",
     "Setup_Archive/01_Viewable/Image/Pasted image 20260421222524.png",
     "Setup_Archive/Plugin/File_Sorting",
