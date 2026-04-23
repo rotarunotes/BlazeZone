@@ -36,9 +36,19 @@
               "icon": "lucide-file",
               "title": "sorting-spec"
             }
+          },
+          {
+            "id": "d72124e25e0e3f8c",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -214,8 +224,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.5,
-    "collapsed": true
+    "width": 258.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,14 +242,13 @@
       "omnisearch:Omnisearch": true,
       "chronology:Open Chronology": true,
       "obsidian-trash-explorer:Open trash explorer": false,
-      "custom-sort:Toggle custom sorting": false,
-      "periodic-notes:Open today": false
+      "custom-sort:Toggle custom sorting": false
     }
   },
-  "active": "3f7eb6d39b67a444",
+  "active": "d72124e25e0e3f8c",
   "lastOpenFiles": [
-    "sortspec.md",
     "sorting-spec.md",
+    "sortspec.md",
     "Senza nome.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
