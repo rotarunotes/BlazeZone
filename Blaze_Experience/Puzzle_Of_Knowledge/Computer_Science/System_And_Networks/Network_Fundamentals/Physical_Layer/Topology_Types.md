@@ -31,13 +31,13 @@ ___
 | **Diagramma Fisico** | Cavi, stanze, rack fisici                                         |
 | **Diagramma Logico** | Indirizzi IP, porte, dispositivi intermedi (router, switch, ecc.) |
 
----
+![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Diagrammi_Di_Rete.png)
+___
 
 
 ## 📡 Domini di Rete
 
   
-
 ### Dominio di Collisione
 
 Insieme dei nodi che **competono per l'accesso allo stesso mezzo trasmissivo**.  
