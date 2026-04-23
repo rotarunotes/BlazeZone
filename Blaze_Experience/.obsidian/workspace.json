@@ -88,13 +88,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inglese.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Inglese"
+              "title": "TCP"
             }
           }
         ],
@@ -299,6 +299,10 @@
   },
   "active": "2635ee54248b16dc",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
+    "Inglese.md",
     "Setup_Archive/Templates/README_Template.md",
     "Modelli/Sistemi.md",
     "sorting-spec.md",
@@ -311,14 +315,11 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
     "Modelli/UDP CLOUDE.md",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_OSI_TCP_AI.png",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Diagrammi_Di_Rete_AI.png",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
     "Setup_Archive/Obsidian_Base/Links_Obsidian.md",
     "Modelli/segaSistemai/Networking/Network_Protocols/DNS.md",
     "Modelli/segaSistemai/Networking/Network_Protocols/DHCP.md",
@@ -326,7 +327,6 @@
     "Modelli/segaSistemai/Networking/Network_Protocols/NTP.md",
     "Modelli/segaSistemai/Networking/Network_Protocols/SNMP.md",
     "Modelli/TCP CLOUDE.md",
-    "Modelli/segaSistemai/Networking/Network_Protocols/README.md",
     "Modelli",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Topologie_Reti.png",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Gemini_Generated_Image_exj8a2exj8a2exj8.png",
