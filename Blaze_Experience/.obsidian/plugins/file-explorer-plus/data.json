@@ -1,11 +1,11 @@
 {
   "hideStrictPathFilters": true,
   "pinFilters": {
-    "active": false,
+    "active": true,
     "tags": [
       {
         "name": "",
-        "active": false,
+        "active": true,
         "pattern": "",
         "patternType": "STRICT"
       }
@@ -22,42 +22,7 @@
         "name": "",
         "active": true,
         "type": "FILES",
-        "pattern": "COSE DA FARE.md",
-        "patternType": "STRICT"
-      },
-      {
-        "name": "",
-        "active": true,
-        "type": "FILES",
-        "pattern": "Inglese.md",
-        "patternType": "STRICT"
-      },
-      {
-        "name": "",
-        "active": true,
-        "type": "FILES",
-        "pattern": "Corso ingenieria.md",
-        "patternType": "STRICT"
-      },
-      {
-        "name": "",
-        "active": true,
-        "type": "FILES",
-        "pattern": "Sistemi.md",
-        "patternType": "STRICT"
-      },
-      {
-        "name": "",
-        "active": true,
-        "type": "FILES",
         "pattern": "README.md",
-        "patternType": "STRICT"
-      },
-      {
-        "name": "",
-        "active": true,
-        "type": "FILES",
-        "pattern": "sortspec.md",
         "patternType": "STRICT"
       }
     ],
@@ -72,7 +37,7 @@
     ]
   },
   "hideFilters": {
-    "active": false,
+    "active": true,
     "tags": [
       {
         "name": "",
@@ -85,9 +50,9 @@
       {
         "name": "",
         "active": true,
-        "type": "DIRECTORIES",
-        "pattern": "/",
-        "patternType": "STRICT"
+        "type": "FILES_AND_DIRECTORIES",
+        "pattern": "",
+        "patternType": "WILDCARD"
       }
     ],
     "frontMatter": [

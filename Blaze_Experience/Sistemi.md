@@ -5,7 +5,7 @@
 	- `ISO_OSI.md`
 	    - I 7 livelli: Fisico, Datalink, Rete, Trasporto, Sessione, Presentazione, Applicazione
 	    - PDU per livello: bit → frame → pacchetto → segmento → dati
-	    - Encapsulation/decapsulation e apparati (Hub L1, Switch L2, Router L3, Firewall L4-L7)
+	    - Encapsulation/decapsulation e apparati
 
 	- `TCP_IP.md`
 	    - Mapping: Applicazione TCP/IP = Sessione+Presentazione+Applicazione OSI
