@@ -19,16 +19,15 @@ ___
 La differenza principale risiede nel modo in cui i livelli superiori e inferiori vengono **raggruppati**. 
 La suite TCP/IP semplifica la struttura per renderla più efficiente nelle implementazioni software.
 
-![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_OSI_TCP.png)
+![Struttura Modello ISO/OSI](Schema_OSI_TCP_AI.png)
 ## I 4 Livelli Pratici
 
-| Livello | PDU OSI | Nome                  | Funzione principale                                                               |     PDU     |
-| :-----: | :-----: | --------------------- | --------------------------------------------------------------------------------- | :---------: |
-|    4    | 5, 6, 7 | **Applicazione**      | Gestisce i protocolli per le app e include i servizi di sessione e presentazione. |    Dati     |
-|    3    |    4    | **Trasporto**         | Gestisce la comunicazione host-to-host (affidabile o veloce).                     |  Segmenti   |
-|    2    |    3    | **Internet**          | Si occupa dell'instradamento (routing) e dell'indirizzamento logico.              |  Pacchetti  |
-|    1    |  1, 2   | **Accesso alla Rete** | Definisce la trasmissione fisica sul mezzo e l'interfaccia hardware.              | Frame / Bit |
-
+| Livello | livello  OSI | Nome                  | Funzione principale                                                               |     PDU     |
+| :-----: | :----------: | --------------------- | --------------------------------------------------------------------------------- | :---------: |
+|    4    |   5, 6, 7    | **Applicazione**      | Gestisce i protocolli per le app e include i servizi di sessione e presentazione. |    Dati     |
+|    3    |      4       | **Trasporto**         | Gestisce la comunicazione host-to-host (affidabile o veloce).                     |  Segmenti   |
+|    2    |      3       | **Internet**          | Si occupa dell'instradamento (routing) e dell'indirizzamento logico.              |  Pacchetti  |
+|    1    |     1, 2     | **Accesso alla Rete** | Definisce la trasmissione fisica sul mezzo e l'interfaccia hardware.              | Frame / Bit |
 ___
 # Perchè TCP/IP
 

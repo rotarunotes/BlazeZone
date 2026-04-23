@@ -82,7 +82,6 @@ ___
 
 il **duplex** definisce la capacità di un sistema di trasmettere e ricevere dati contemporaneamente attraverso un canale di comunicazione.
 ## Modalità Duplex
-
 | Modalità        | Descrizione                              |
 | --------------- | ---------------------------------------- |
 | **Half-duplex** | Trasmissione in un solo senso alla volta |
@@ -97,7 +96,6 @@ Si verifica quando i due estremi della connessione usano impostazioni diverse (e
 
 > [!danger] Best Practice
 > Configurare sempre speed e duplex in modo esplicito su porte critiche (uplink, server) anziché affidarsi all'auto-negotiation.
-
 ___
 ## Metriche di Rete
 
@@ -115,5 +113,4 @@ ___
 | **NIC** (Network Interface Card) | Scheda di rete fisica installata nel dispositivo |
 | **Porta fisica**                 | Connettore hardware sulla scheda o dispositivo   |
 | **Interfaccia**                  | Lato software associato alla porta fisica        |
-
 ___

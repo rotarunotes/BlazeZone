@@ -1,29 +1,29 @@
-Data: 2026-04-23
-[Transport_Layer](./README.md)
-#Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer
+Data: <% tp.date.now() %>
+[<% tp.file.folder() %>](./README.md)
+#<% tp.file.folder(true) %>
 ___
 # Index
-- [[# NOME_PROTOCOLLO]]
-	- [[# Panoramica]]
-- [[# Versioni & Evoluzione]]
-- [[# Come Funziona]]
-- [[# Flusso Operativo]]
-- [[# Casi d'Uso Reali]]
-- [[# Limitazioni Tecniche]]
-- [[# PDU & Incapsulamento]]
+- [[#NOME_PROTOCOLLO]]
+	- [[#Panoramica]]
+- [[#Versioni & Evoluzione]]
+- [[#Come Funziona]]
+- [[#Flusso Operativo]]
+- [[#Casi d'Uso Reali]]
+- [[#Limitazioni Tecniche]]
+- [[#PDU & Incapsulamento]]
 - [[#Struttura Del Pacchetto]]
 	- [[#Header]]
 	- [[#Body]]
 	- [[#Flags]]
-- [[# Porte e Protocolli Correlati]]
-- [[# Confronto]]
-- [[# Aspetti di Sicurezza]]
-	- [[# Vulnerabilità Note]]
-	- [[# Attacchi Comuni]]
-	- [[# Contromisure]]
-- [[# Comandi Cisco IOS]]
-- [[# Troubleshooting]]
-- [[# Note Esame]]
+- [[#Porte e Protocolli Correlati]]
+- [[#Confronto]]
+- [[#Aspetti di Sicurezza]]
+	- [[#Vulnerabilità Note]]
+	- [[#Attacchi Comuni]]
+	- [[#Contromisure]]
+- [[#Comandi Cisco IOS]]
+- [[#Troubleshooting]]
+- [[#Note Esame]]
 	- [[#Da sapere a memoria]]
 	- [[#Trabocchetti frequenti]]
 ___
@@ -116,7 +116,9 @@ ___
 |       |            |             |
 |       |            |             |
 |       |            |             |
+``` schema 
 
+```
 ## Body
 
 ## Flags

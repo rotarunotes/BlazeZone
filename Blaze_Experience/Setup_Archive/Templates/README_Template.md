@@ -14,7 +14,7 @@ const files = currentFolderObj.children.filter(f => f.children === undefined && 
 
 let output = "";
 
-if (subfolders.length > 0) { output += subfolders.map(f => `* [${f.name}](${f.name}/README.md)`).join("\n"); output += "\n"; }
+if (subfolders.length > 0) { output += subfolders.map(f => `- [${f.name}](${f.name}/README.md)`).join("\n"); output += "\n"; }
 
 if (files.length > 0) {
     output += files.map(f => `- [${f.basename}](./${f.name})`).join("\n");

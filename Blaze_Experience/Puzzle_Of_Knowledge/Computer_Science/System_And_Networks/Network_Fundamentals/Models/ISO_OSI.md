@@ -30,7 +30,6 @@ Si divide in sette livelli, ognuno con un compito specifico.
 |  3   | **Rete**              | Determina il percorso migliore per i dati (routing) e utilizza l'indirizzamento logico (IP).                                                        | Pacchetti |
 |  2   | **Collegamento dati** | Gestisce l'accesso fisico dei bit al mezzo di trasmissione e <br>l'errore di trasmissione. Utilizza l'indirizzo fisico MAC.                         |   Frame   |
 |  1   | **Fisico**            | Si occupa della trasmissione dei segnali grezzi attraverso  cavi, fibra ottica, o aria. Tra dispositivi                                             |    Bit    |
-
 ___
 # Meccanismi di Funzionamento
 
@@ -65,5 +64,5 @@ Protocolli come il TCP utilizzano questa numerazione per garantire che il destin
 > [!example] Analogia
 >  Un postino che consegna contemporaneamente cartoline di mittenti diversi, alternandole, invece di aspettare che uno finisca tutte le sue.
 
-- Tecnica che permette di **interlacciare più comunicazioni** sullo stesso canale di rete. Grazie alla segmentazione, pacchetti di conversazioni diverse possono alternarsi senza che una singola trasmissione monopolizzi il collegamento.
+Tecnica che permette di **interlacciare più comunicazioni** sullo stesso canale di rete. Grazie alla segmentazione, pacchetti di conversazioni diverse possono alternarsi senza che una singola trasmissione monopolizzi il collegamento.
 ___

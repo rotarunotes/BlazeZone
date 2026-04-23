@@ -1,3 +1,3 @@
 # D
-[DNS](segaSistemai/Networking/Network_Protocols/DNS.md)
+[DNS](Modelli/segaSistemai/Networking/Network_Protocols/DNS.md)
 

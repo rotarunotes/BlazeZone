@@ -9,7 +9,7 @@ ___
 * [Planning_Addressing](Planning_Addressing/README.md)
 * [Switching_And_Network_Access](Switching_And_Network_Access/README.md)
 * [IP_Services](IP_Services/README.md)
-* [Protocols](Protocols/README.md)
+* [Protocols](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Protocols/README.md)
 * [Security_Cryptography](Security_Cryptography/README.md)
 * [Wireless](Wireless/README.md)
 * [Automation_And_Programmability](Automation_And_Programmability/README.md)

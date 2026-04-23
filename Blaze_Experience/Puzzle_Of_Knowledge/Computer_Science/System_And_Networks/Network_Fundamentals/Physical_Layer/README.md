@@ -7,7 +7,7 @@ Il **Livello Fisico** rappresenta le fondamenta dell'intero modello ISO/OSI. Il 
 3 aspetti:
 - **Codifica dei segnali**: Trasforma i bit in segnali fisici compatibili con il mezzo utilizzato. Ad esempio, impulsi elettrici per il rame, impulsi luminosi per la fibra ottica o onde radio per il wireless.
 - **Gestione dell'Hardware**: Definisce le specifiche meccaniche ed elettriche, come la forma dei connettori (es. RJ-45), il numero di pin nei cavi e i voltaggi necessari.
-- **Topologia Fisica**:Determina come i dispositivi sono fisicamente connessi tra loro (a stella, a bus, ecc.) e come l'energia viene distribuita (come nel caso del **PoE**).
+- **Topologia Fisica**: Determina come i dispositivi sono fisicamente connessi tra loro (a stella, a bus, ecc.) e come le tipologie di rete esistenti (PAN, LAN, MAN, WAN, GAN).
 ___
 # Indice
 - [Cables_And_Interfaces](./Cables_And_Interfaces.md)
