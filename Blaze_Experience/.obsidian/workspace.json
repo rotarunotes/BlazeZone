@@ -28,42 +28,59 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sorting-spec.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "sorting-spec"
+              "title": "README"
+            }
+          },
+          {
+            "id": "04627a7c6fc50d5e",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Setup_Archive/Plugin/Excalidraw/Tipologie_Di_Rete.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Tipologie_Di_Rete"
             }
           },
           {
             "id": "d72124e25e0e3f8c",
             "type": "leaf",
             "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
-            }
-          },
-          {
-            "id": "be2865c400715b9b",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "title": "Cables_And_Interfaces"
+            }
+          },
+          {
+            "id": "cf34b5a40d4d0588",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Topology_Types"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -261,8 +278,29 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "be2865c400715b9b",
+  "active": "cf34b5a40d4d0588",
   "lastOpenFiles": [
+    "Setup_Archive/Plugin/Excalidraw/Drawing .md",
+    "Setup_Archive/Plugin/Excalidraw/Tipologie_Di_Rete.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
+    "Senza nome.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/README.md",
+    "Puzzle_Of_Knowledge/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems/README.md",
+    "sorting-spec.md",
+    "Sistemi.md",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Tipologie_Di_Rete.png",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-04-23 092254.png",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
     "conflict-files-obsidian-git.md",
     "Setup_Archive/Viewable/Image/Pasted image 20260421222524.png",
     "Setup_Archive/Viewable/Image/Pasted image 20260421134235.png",
@@ -272,8 +310,6 @@
     "Setup_Archive/Viewable/Image/Pasted image 20260421133026.png",
     "Setup_Archive/Viewable/Image/Pasted image 20260421132953.png",
     "Setup_Archive/Viewable/Image/Pasted image 20260421132644.png",
-    "Setup_Archive/Viewable/Image/Pasted image 20260421132619.png",
-    "Setup_Archive/Viewable/Image/Pasted image 20260421132459.png",
     "Setup_Archive/Viewable/Image/I_Other",
     "Setup_Archive/Viewable/Image/I_Math",
     "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network",
@@ -285,25 +321,6 @@
     "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Security_AAA_Servers.md",
     "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Salva.md",
     "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Radius_New.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Radius.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Interfaccia_Impostazioni.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Interfacce_Apply.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Interfacce.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Guppi_WLANs.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Grupp_APs.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_General.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Create_Admin_User.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Configurazione_WLAN.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_AP_Nome.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_AP_Groups.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Advanced.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Admin_Set_Up_Your_Controller.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Admin_Create_Your_Wireless_Networks.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLC_Admin_Advanced_Setting.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/WLAN_Controller_Esempio.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/VLAN_Untagged.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/VLAN_Tagged.md",
-    "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks/Tabella_Del_Segnale.md",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks",
     "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Sysetm_And_Networks",
     "Setup_Archive/Viewable/Excalidraw/D_Compiuter_Science/D_Programming",

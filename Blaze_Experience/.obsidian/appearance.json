@@ -1,8 +1,9 @@
 {
   "cssTheme": "GitHub Theme",
   "enabledCssSnippets": [
+    "Formattazione_Testo",
     "Center_Image",
-    "Formattazione_Testo"
+    "Centra_Tabella"
   ],
   "baseFontSize": 16,
   "textFontFamily": "Gadugi",

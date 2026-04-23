@@ -1,0 +1,10 @@
+/* Center tables in Obsidian */
+.markdown-preview-view table,
+.markdown-rendered table,
+.cm-preview-code-block table,
+.block-language-dataview table {
+  display: table !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: fit-content !important;
+}

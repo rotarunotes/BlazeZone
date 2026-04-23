@@ -18,6 +18,12 @@
 	    - Connettori: RJ-45, LC, SC; distanze massime per tipo di cavo
 	    - PoE (Power over Ethernet): standard 802.3af/at, use cases (AP, IP Phone)
 	    - Speed/Duplex: auto-negotiation, mismatch e impatto sulle performance
+	-  `Topology_Types.md`
+	    - Two-tier (Core-Access) vs Three-tier (Core-Distribution-Access)
+	    - Spine-Leaf architecture (Data Center)
+	    - WAN topologies: Point-to-Point, Hub-and-Spoke, Full Mesh
+	    - On-premise vs Cloud vs Hybrid: impatto sul design
+
 
 - **Transport_Layer**
 	- `TCP.md`
@@ -30,12 +36,7 @@
 		- Header UDP: solo 8 byte vs header TCP 20+ byte
 
 - **Network_Topologies**
-	- `Topology_Types.md`
-	    - Two-tier (Core-Access) vs Three-tier (Core-Distribution-Access)
-	    - Spine-Leaf architecture (Data Center)
-	    - WAN topologies: Point-to-Point, Hub-and-Spoke, Full Mesh
-	    - On-premise vs Cloud vs Hybrid: impatto sul design
-
+	
 ___
 ### Planning_Addressing
 

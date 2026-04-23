@@ -2,7 +2,6 @@ Data: 2026-04-21
 [Network_Fundamentals](../README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models
 ___
-
 # Models
 
 > [!abstract] PDU

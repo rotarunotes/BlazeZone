@@ -2,7 +2,7 @@
   "logoType": "imagePath",
   "logo": {
     "lucideIcon": "",
-    "imagePath": "Setup_Archive/01_Viewable/Image/I_Other/Puzzle.png",
+    "imagePath": "Setup_Archive/Viewable/Image/I_Other/Puzzle.png",
     "imageLink": ""
   },
   "logoScale": 1.3,
@@ -22,7 +22,28 @@
   "showShortcuts": true,
   "markdownOnly": false,
   "unresolvedLinks": false,
-  "recentFilesStore": [],
+  "recentFilesStore": [
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
+      "timestamp": 1776929871528
+    },
+    {
+      "filepath": "Setup_Archive/Plugin/Excalidraw/Drawing .md",
+      "timestamp": 1776929868231
+    },
+    {
+      "filepath": "Setup_Archive/Plugin/Excalidraw/Tipologie_Di_Rete.md",
+      "timestamp": 1776929867818
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
+      "timestamp": 1776929293459
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
+      "timestamp": 1776929270167
+    }
+  ],
   "bookmarkedFileStore": [],
   "searchDelay": 0,
   "replaceNewTabs": true,
