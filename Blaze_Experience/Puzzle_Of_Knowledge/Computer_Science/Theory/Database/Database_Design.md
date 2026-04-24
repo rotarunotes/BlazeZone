@@ -3,12 +3,12 @@ Data: 2026-02-11
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database
 ___
 # Index
-
 - [[#Introduzione]]
     - [[#Progettazione Basi Di Dati MVC]]
 - [[#Progettazione Concettuale]]
-    - [[#Obiettivi della progettazione concettuale]]
+    - [[#Obiettivi]]
     - [[#Schema E-R (Entità-Relazione)]]
+	    - [[#Generalizzazioni (IS A)]]
     - [[#Cardinalità]]
 - [[#Progettazione Logica]]
     - [[#Obiettivi]]
@@ -35,36 +35,40 @@ Un database ben progettato **garantisce**:
 2) Integrità dei dati.
 3) Facilità di manutenzione.
 4) Scalabilità del sistema.
-
 ## Progettazione Basi Di Dati MVC
 
-![[Progettazione_Dati_Logica_Esempio|300]]
+![Progettazione_Dati_Logica_Esempio.png](../../../../Setup_Archive/Viewable/Image/Computer_Science/Theory/Progettazione_Dati_Logica_Esempio.png)
 
 ---
 # Progettazione Concettuale
 
 La **progettazione concettuale** è la prima fase della progettazione di database. 
 L'obiettivo è comprendere **cosa** deve essere rappresentato nel database, senza preoccuparsi di **come** verrà implementato. 
-In questa fase si identificano le **entità** principali, i loro **attributi** e le **relazioni** che intercorrono tra di esse.
 
-## Obiettivi della progettazione concettuale
-- **Identificare le entità**: Oggetti o concetti rilevanti per il sistema (es. Cliente, Prodotto, Ordine)-
-- **Definire gli attributi**: Caratteristiche che descrivono ogni entità (es. nome, cognome, email).
-- **Stabilire le relazioni**: Come le entità sono collegate tra loro (es. Cliente effettua Ordini)-
-- **Rappresentare i vincoli**: Le cardinalità, definire quante istanze sono coinvolte nelle relazioni (es. un ordine deve avere almeno un prodotto).
-  
+In questa fase si identificano:
+## Obiettivi
+- **Entità**, oggetti o concetti rilevanti per il sistema (es. Cliente, Prodotto, Ordine);
+- **Attributi**, caratteristiche che descrivono ogni entità (es. nome, cognome, email);
+- **Relazioni**, come le entità sono collegate tra loro (es. Cliente effettua Ordini);
 ## Schema E-R (Entità-Relazione)
 Lo **Schema E-R (Entity-Relationship)** è un modello grafico utilizzato nella progettazione concettuale per rappresentare visivamente entità, attributi e relazioni.
 
-![[Schema_E-R_Esempio|1000]]
+### Generalizzazioni (IS A):
+- **totale**: per ogni A esiste almeno un B o un C (una persona è per forza o maggiorenne o minorenne);
+- **parziale**: esiste almeno un A che non ha la controparte (non tutti i film sono drama, non tutte le persone sono maggiorenni);
+- **esclusive**: (è solo B o C);
+- **sovrapposte**: (può essere sia B che C);
+
+![Schema_E-R_Esempio.png](../../../../Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_E-R_Esempio.png)
 
 ## Cardinalità
 La **cardinalità** definisce quante volte un'entità può essere collegata a un'altra entità in una relazione
 
-Tipi di cardinalità:
-- $1:1$
-- $1:N$
-- $N:M$ 
+| Tipo | Esempio reale                            |
+| ---- | ---------------------------------------- |
+| 1:1  | Persona — Passaporto (uno ha uno)        |
+| 1:N  | Dipartimento — Dipendenti (uno ha molti) |
+| N:N  | Studente — Corso (molti seguono molti)   |
 
 Là cardinalità può anche specificare:
 - **Numero minimo** di occorrenze (cardinalità minima): 0 o 1
@@ -80,7 +84,7 @@ Si esprime con la notazione **(min, max)** su entrambi i lati della relazione.
 ---
 # Progettazione Logica
 
-In questa fase si decide come rappresentare entità, attributi e relazioni attraverso **tabelle**, mantenendo le proprietà e i vincoli definiti nella fase concettuale.
+Nella progettazione logica lo **schema E-R** viene trasformato in uno **schema logico**, mantenendo le proprietà e i vincoli definiti nella fase concettuale.
 ## Obiettivi
 - **Tradurre** lo schema E-R in tabelle relazionali
 - Eliminare **anomalie** (una relazione con molti attributi)
@@ -124,18 +128,24 @@ Tabella CORSO (id_corso, titolo, crediti)
 Tabella ISCRIZIONE (id_studente(chiave esterna), id_corso(chiave esterna), data_iscrizione)
 ```
 
-
 ## Dipendenza funzionale
 
 Si ha dipendenza **funzionale** tra attributi quando il valore di un insieme di attributi $A$ determina un singolo valore dell'**attributo** $B$, e si indica con $A \rightarrow B$. Si dice anche che $B$ dipende da $A$, o che $A$ è un determinante per $B$.
-## Definizioni di Chiave
-1. **Chiave Primaria:** Insieme di uno o più attributi che identificano in modo univoco una tupla.
-2. **Chiave Candidata:** Insieme minimale di uno o più attributi che possono essere potenzialmente una chiave primaria.
-3. **Chiave Non Primaria:** Attributi che non fanno parte della chiave primaria.
 
 **Esempi pratici:**
 - Se vivi a Vicenza $\rightarrow$ Vivi in Veneto $\rightarrow$ Italia $\rightarrow$ Europa.
 - Nome scuola $\rightarrow$ Indirizzo fisico.
+## Definizioni di Chiave
+1. **Chiave Primaria**: Insieme di uno o più attributi che identificano in modo univoco una tupla.
+2. **Chiave Candidata**: Insieme minimale di uno o più attributi che possono essere potenzialmente una chiave primaria.
+3. **Chiave Non Primaria**: Attributi che non fanno parte della chiave primaria.
+   
+Altre considerazioni:
+- **primary key (PK):** sottolineato nello schema E-R (es. `id_cliente`);
+- **foreign key (FK):** indicata con un asterisco (es. `*id_fornitore`);
+- **chiave semplice:** tupla contenente un'unica chiave primaria;
+- **chiave composta:** tupla contenente più chiavi primarie;
+- **attributo multivalore:** attributo rappresentato come una lista (es. `colori_preferiti`,  si può avere più colori preferiti).
 ## Normalizzazione
 La **normalizzazione** è il processo di organizzazione delle tabelle per:
 - Eliminare ridondanze

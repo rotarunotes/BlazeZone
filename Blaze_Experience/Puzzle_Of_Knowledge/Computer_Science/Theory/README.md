@@ -3,13 +3,13 @@ Data: 2025-10-17
 #Puzzle_Of_Knowledge/Computer_Science/Theory
 ___
 # Theory
-Di cosa parla questa MOC.
 ___
 # Indice
-- Inserisci
-- qua
-- i
-- contenuti
+- [Computation_Theory](Computation_Theory/README.md)
+- [Data_Structures](Data_Structures/README.md)
+- [Database](Database/README.md)
+
 ___
+
 
  

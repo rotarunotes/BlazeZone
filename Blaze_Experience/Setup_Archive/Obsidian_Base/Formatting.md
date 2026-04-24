@@ -65,12 +65,50 @@ ___
 > questa è una citazione 
 # Citazione |  \[!NOTE]
 
-> [!NOTE] bella
-> Contents
-> ok 
-> basi
+> [!note] Note
+> Informazioni generali.
 
+> [!info] Info
+> Informazioni aggiuntive.
 
+> [!todo] Todo
+> Cose da fare.
+
+> [!tip] Tip
+> Suggerimenti o idee utili.
+
+> [!abstract] Abstract
+> Riassunti o sommari (anche `summary` o `tldr`).
+
+> [!warning] Warning
+> Avvertimenti importanti (anche `caution` o `attention`).
+
+> [!failure] Failure
+> Operazioni fallite o errori (anche `fail` o `missing`).
+
+> [!danger] Danger
+> Pericolo o errori critici (anche `error`).
+
+> [!bug] Bug
+> Segnalazione di bug o problemi tecnici.
+
+> [!example] Example
+> Esempi pratici.
+
+> [!quote] Quote
+> Citazioni (anche `cite`).
+
+> [!question] Question
+> Domande o dubbi (anche `help`).
+
+> [!success] Success
+> Successo o soluzioni trovate (anche `check` o `done`).
+
+> [!note]+ Aperto di default
+> Questo callout è espanso all'apertura.
+
+> [!note]- Chiuso di default
+> Questo callout è collassato all'apertura.
 
 # Codice |  \`\`\`
 ```python

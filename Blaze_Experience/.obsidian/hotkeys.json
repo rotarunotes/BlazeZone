@@ -133,5 +133,14 @@
       ],
       "key": "ArrowDown"
     }
+  ],
+  "obsidian-shellcommands:shell-command-z38ps7owmu": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "U"
+    }
   ]
 }

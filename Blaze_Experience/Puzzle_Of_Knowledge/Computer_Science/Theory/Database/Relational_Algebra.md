@@ -1,8 +1,7 @@
-wData: 2025-10-27
+Data: 2025-10-27
 [Database](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database
 ___
-
 # Indice
 ##### Operatori Relazionali
 - [[#Selezione]]
@@ -15,8 +14,9 @@ ___
 - [[#Theta Junction]]
 - [[#Ridenominazione]]
 ##### Grado e Cardinalità
--[[#Grado e Cardinalita]]
-
+- [[#Grado e Cardinalita]]
+##### Esercizio
+- [[#Cinema (Ex Verifica)]]
 ___
 # **Relazione $R_1$**
 
@@ -33,13 +33,13 @@ ___
 
 # Operatori
 ## Selezione
-- **Filtro orizzontale:** seleziona le tuple (righe) che soddisfano una condizione booleana.
+- **Filtro orizzontale**: seleziona le tuple (righe) che soddisfano una condizione booleana.
 - Non modifica le colonne.
 $$
 \sigma_{\text{<espressione booleana>}}(Relazione)
 $$
 
-**Esempio:** 
+**Esempio**: 
 $$
 \sigma_{\text{<Cognome = Barina>}}(R_1)
 $$
@@ -48,13 +48,13 @@ $$
 | :----- | :------ | :-- | :---- |
 | Mattia | Barina  | 23  | Mira  |
 ## Proiezione
-- **Filtro verticale:** seleziona solo alcune colonne (attributi).
+- **Filtro orizzontale**: seleziona solo alcune colonne (attributi).
 - Rimuove i duplicati (nel modello teorico).
 $$
 \pi_{\text{<espressione booleana>}}(Relazione)
 $$
 
-**Esempio:**
+**Esempio**: 
 $$
 \pi_{\text{<Nome>}}(R_1)
 $$
@@ -71,7 +71,7 @@ $$
 Reralazione1 \cup Reralazione2
 $$
 
-**Esempio:**
+**Esempio**: 
 $$
 R_1 \cup R_2
 $$
@@ -88,7 +88,7 @@ $$
 Relazioen1 \cap Relazione2
 $$
 
-**Esempio:**
+**Esempio**: 
 $$
 R_1 \cap R_2
 $$
@@ -104,7 +104,7 @@ $$
 Relazione1 \backslash Relazione2
 $$
 
-**Esempio:**
+**Esempio**: 
 $$
 R_1 \backslash R_2
 $$
@@ -118,19 +118,19 @@ $$
 Relazione1 \times Relazione2
 $$
 
-**Esempio:**
+**Esempio**: 
 $$
 R_1 \times R_2
 $$
 
-| Nome_R1 | Cognome_R1 | Età_R1 | Città_R1 | Nome_R2 | Cognome_R2 | Età_R2 | Città_R2 |
-| :------ | :--------- | :----- | :------- | :------ | :--------- | :----- | :------- |
-| Mattia  | Barina     | 23     | Mira     | Giacomo | Sacco      | 21     | Mestre   |
-| Mattia  | Barina     | 23     | Mira     | Mattia  | Scatto     | 42     | Mestre   |
-| Mattia  | Barina     | 23     | Mira     | Mattia  | Barina     | 23     | Mira     |
-| Giuseppe| Maugeri    | 12     | Dolo     | Giacomo | Sacco      | 21     | Mestre   |
-| Giuseppe| Maugeri    | 12     | Dolo     | Mattia  | Scatto     | 42     | Mestre   |
-| Giuseppe| Maugeri    | 12     | Dolo     | Mattia  | Barina     | 23     | Mira     |
+| Nome_R1  | Cognome_R1 | Età_R1 | Città_R1 | Nome_R2 | Cognome_R2 | Età_R2 | Città_R2 |
+| :------- | :--------- | :----- | :------- | :------ | :--------- | :----- | :------- |
+| Mattia   | Barina     | 23     | Mira     | Giacomo | Sacco      | 21     | Mestre   |
+| Mattia   | Barina     | 23     | Mira     | Mattia  | Scatto     | 42     | Mestre   |
+| Mattia   | Barina     | 23     | Mira     | Mattia  | Barina     | 23     | Mira     |
+| Giuseppe | Maugeri    | 12     | Dolo     | Giacomo | Sacco      | 21     | Mestre   |
+| Giuseppe | Maugeri    | 12     | Dolo     | Mattia  | Scatto     | 42     | Mestre   |
+| Giuseppe | Maugeri    | 12     | Dolo     | Mattia  | Barina     | 23     | Mira     |
 
 ## Giunzione Naturale
 - Combina due relazioni **sulla base degli attributi comuni**.
@@ -138,7 +138,7 @@ $$
 Relazione1 \bowtie Relazione2
 $$
 
-**Esempio:**
+**Esempio**: 
 $$
 R \bowtie R_2
 $$
@@ -152,7 +152,7 @@ $$
 R_1 \bowtie_{\text{<condizione>}} R_2
 $$
 
-**Esempio:**
+**Esempio**: 
 $$
 R_1 \bowtie_{Eta_1 > Eta_2} R_2
 $$
@@ -174,7 +174,7 @@ $$
 $$
 \rho_{\ <NuovoNome \leftarrow VecchioNome>}(Relazione)
 $$
-**Esempio:**
+**Esempio**: 
 $$
 \rho_{\ <Nome1 \leftarrow Nome>}(R_1)
 $$
@@ -200,4 +200,93 @@ $$
 | Rinomina            | $\rho$           | Stesso grado della relazione                           | Stessa cardinalità della relazione                          |
 
 ---
- 
+# Cinema (Ex Verifica)
+
+| Entità         | Attributi                                       | Note Chiavi Esterne (FK)                                                                                     |
+| -------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| PERSONA        | (**id**, nome, cognome)                         |                                                                                                              |
+| FILM           | (**id_film**, id_regista, titolo, genere, anno) | $\text{id\_regista} \to \text{PERSONA}(\text{id})$                                                           |
+| PARTECIPAZIONE | (**id_persona**, **id_film**, **ruolo**)        | $\text{id\_persona} \to \text{PERSONA}(\text{id})$, $\text{id\_film} \to \text{FILM}(\text{id\_film})$       |
+| PROIEZIONE     | (**id_film**, **id_cinema**, giorno)            | $\text{id\_film} \to \text{FILM}(\text{id\_film})$, $\text{id\_cinema} \to \text{CINEMA}(\text{id\_cinema})$ |
+| CINEMA         | (**id_cinema**, nome, indirizzo)                |                                                                                                              |
+**Consegna**:
+1. Elencare nome e cognome di ogni regista presente nella base di dati.
+2. Quali sono i nominativi (nome e cognome) degli artisti che sono tanto attori quanto registi.
+3. Quali film sono stati proiettati prima del 2002?
+4. Elencare gli attori presenti nei film diretti da Lars von Trier.
+5. Definire la lista dei registi che hanno diretto sia film drammatici che commedie.
+6. Elencare i film interpretati da Nicole Kidman e proiettati al cinema Zenith.
+7. Elencare gli attori che non hanno mai interpretato ruoli in film drammatici.
+8. Elencare gli attori che hanno interpretato qualche film proiettato al cinema Zenith dopo l'anno 2002.
+9. Individuare i film che sono stati proiettati per ultimi (giorno).
+
+**Svolgimento**:
+###### EX 1
+$$\pi_{Nome, Cognome} (Film \bowtie_{ID\_Regista = ID\_Persona} Persona)$$
+###### EX 2
+
+$$R_{Registi} = \rho_{ID\_Persona \leftarrow ID\_Regista} (\pi_{ID\_Regista}(Film))$$
+$$R_{Attori} = \rho_{ID\_Persona \leftarrow ID\_Attore} (\pi_{ID\_Attore}(Partecipazione))$$
+$$R_{Entrambi} = R_{Registi} \cap R_{Attori}$$
+$$\text{Output: } \pi_{Nome, Cognome} (R_{Entrambi} \bowtie Persona)$$
+
+###### EX 3
+$$\sigma_{Anno < 2002} (Film)$$
+
+###### EX 4
+
+$$R_{LarsID} = \pi_{ID\_Persona} (\sigma_{Nome='Lars' \land Cognome='Von Trier'} (Persona))$$
+$$R_{LarsFilms} = \pi_{ID\_Film} (R_{LarsID} \bowtie_{ID\_Persona = ID\_Regista} Film)$$
+$$R_{AttoriID} = \pi_{ID\_Attore} (R_{LarsFilms} \bowtie Partecipazione)$$
+$$\text{Output: } \pi_{Nome, Cognome} (R_{AttoriID} \bowtie_{ID\_Attore = ID\_Persona} Persona)$$
+
+###### EX 5
+
+$$R_{Drama} = \pi_{ID\_Regista} (\sigma_{Genere='Drammatico'} (Film))$$
+$$R_{Commedia} = \pi_{ID\_Regista} (\sigma_{Genere='Commedia'} (Film))$$
+$$R_{EntrambiID} = R_{Drama} \cap R_{Commedia}$$
+$$\text{Output: } \pi_{Nome, Cognome} (R_{EntrambiID} \bowtie_{ID\_Regista = ID\_Persona} Persona)$$
+
+###### EX 6
+
+$$R_{NicoleID} = \pi_{ID\_Persona} (\sigma_{Nome='Nicole' \land Cognome='Kidman'} (Persona))$$
+$$R_{NicoleFilms} = \pi_{ID\_Film} (R_{NicoleID} \bowtie_{ID\_Persona = ID\_Attore} Partecipazione)$$
+$$R_{ZenithID} = \pi_{ID\_Cinema} (\sigma_{Nome='Zenith'} (Cinema))$$
+$$R_{ZenithFilms} = \pi_{ID\_Film} (R_{ZenithID} \bowtie Proiezione)$$
+$$R_{FinalID} = R_{NicoleFilms} \cap R_{ZenithFilms}$$
+$$\text{Output: } \pi_{Titolo} (R_{FinalID} \bowtie Film)$$
+
+###### EX 7
+
+$$R_{AttoriID} = \pi_{ID\_Attore} (Partecipazione)$$
+$$R_{FilmDrammatici} = \pi_{ID\_Film} (\sigma_{Genere='Drammatico'} (Film))$$
+$$R_{AttoriDrammatici} = \pi_{ID\_Attore} (R_{FilmDrammatici} \bowtie Partecipazione)$$
+$$R_{NoDrama} = R_{AttoriID} \setminus R_{AttoriDrammatici}$$
+$$\text{Output: } \pi_{Nome, Cognome} (R_{NoDrama} \bowtie_{ID\_Attore = ID\_Persona} Persona)$$
+
+###### EX 8
+
+$$R_{ZenithID} = \pi_{ID\_Cinema} (\sigma_{Nome='Zenith'} (Cinema))$$
+$$R_{Proiezioni} = \sigma_{Giorno > '2002-12-31'} (Proiezione \bowtie R_{ZenithID})$$
+$$R_{FilmsID} = \pi_{ID\_Film} (R_{Proiezioni})$$
+$$R_{AttoriID} = \pi_{ID\_Attore} (R_{FilmsID} \bowtie Partecipazione)$$
+$$\text{Output: } \pi_{Nome, Cognome} (R_{AttoriID} \bowtie_{ID\_Attore = ID\_Persona} Persona)$$
+
+###### EX 9
+
+$$R_{TuttiCinema} = \pi_{ID\_Cinema} (Cinema)$$
+$$R_{TuttiAttori} = \pi_{ID\_Attore} (Partecipazione)$$
+$$R_{TutteCoppie} = R_{TuttiCinema} \times R_{TuttiAttori}$$
+$$R_{CoppieEsistenti} = \pi_{ID\_Cinema, ID\_Attore} (Proiezione \bowtie Partecipazione)$$
+$$R_{CoppieMancanti} = R_{TutteCoppie} \setminus R_{CoppieEsistenti}$$
+$$R_{AttoriNonInComune} = \pi_{ID\_Attore} (R_{CoppieMancanti})$$
+$$R_{Finale} = R_{TuttiAttori} \setminus R_{AttoriNonInComune}$$
+$$\text{Output: } \pi_{Nome, Cognome} (R_{Finale} \bowtie_{ID\_Attore = ID\_Persona} Persona)$$
+
+###### EX 10
+$$R_{Giorni1} = \pi_{Giorno} (Proiezione)$$
+$$R_{Giorni2} = \rho_{Giorno\_2 \leftarrow Giorno} (R_{Giorni1})$$
+$$R_{NonUltimoGiorno} = R_{Giorni1} \bowtie_{Giorno < Giorno\_2} R_{Giorni2}$$
+$$R_{UltimoGiorno} = R_{Giorni1} \setminus R_{NonUltimoGiorno}$$
+$$R_{FilmID} = \pi_{ID\_Film} (R_{UltimoGiorno} \bowtie Proiezione)$$
+$$\text{Output: } \pi_{Titolo} (R_{FilmID} \bowtie Film)$$___

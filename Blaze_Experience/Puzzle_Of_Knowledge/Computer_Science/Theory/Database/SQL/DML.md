@@ -3,51 +3,22 @@ Data: 2025-10-29
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL
 ___
 # Data Manipulation Language
-Il DML  è la parte del linguaggio SQL utilizzata per **gestire e manipolare i dati** memorizzati all'interno delle tabelle di un database.
 
-| **Tipo**    | **Esempio**                                                                        |
+Il **DML** è la parte del linguaggio SQL utilizzata per **gestire e manipolare i dati** memorizzati all'interno delle tabelle di un database.
+
+| Tipo        | Esempio                                                                            |
 | ----------- | ---------------------------------------------------------------------------------- |
-| [[#Select]] | `SELECT Nome, Corso FROM Studenti WHERE Età < 23;`                                 |
 | [[#Insert]] | `INSERT INTO Studenti (ID, Nome, Età, Corso) VALUES (4, 'Giulia', 21, 'Chimica');` |
 | [[#Update]] | `UPDATE Studenti SET Corso = 'Informatica' WHERE ID = 1;`<br>                      |
 | [[#Delete]] | `DELETE FROM Studenti WHERE ID = 3;`                                               |
 
 ___
-
-# Select
-
-**Descrizione:**  
-Filtra le righe in base a una condizione.
-
-**Studenti**
-
-| id  | nome  | età | corso       |
-| --- | ----- | --- | ----------- |
-| 1   | Luca  | 22  | Matematica  |
-| 2   | Anna  | 19  | Informatica |
-| 3   | Marco | 24  | Fisica      |
-
-**Query:**
-
-``` SQL
-SELECT nome, corso FROM Studenti WHERE età < 23;
-```
-
-**Risultato:**
-
-| nome  | corso       |
-| ----- | ----------- |
-| Luca  | Matematica  |
-| Anna  | Informatica |
-| Marco | Fisica      |
-
-___
 # Insert
-**Descrizione:**
+
+**Descrizione**:
 Si usa per **aggiungere** una nuova riga alla tabella
 
-
-**Studenti**
+**Esempio**: Tabella Studenti
 
 | id  | nome  | età | corso       |
 | --- | ----- | --- | ----------- |
@@ -55,12 +26,13 @@ Si usa per **aggiungere** una nuova riga alla tabella
 | 2   | Anna  | 19  | Informatica |
 | 3   | Marco | 24  | Fisica      |
 
-**Query:**
+**Query**:
+
 ``` SQL
 INSERT INTO Studenti (id, nome, età, corso) VALUES (4, 'Giulia', 21, 'Chimica');
 ```
 
-**Risultato:**
+**Risultato**:
 
 | id  | nome   | età | corso       |
 | --- | ------ | --- | ----------- |
@@ -69,12 +41,16 @@ INSERT INTO Studenti (id, nome, età, corso) VALUES (4, 'Giulia', 21, 'Chimica')
 | 3   | Marco  | 24  | Fisica      |
 | 4   | Giulia | 21  | Chimica     |
 
+**Spiegazione**:
+- `INTO`: Specifica la tabella, e tra parentesi gli attributi che deve passare
+- `VALUES`: Specifica i valori degli attributi
 ___
 # Update
-**Descrizione:**
+
+**Descrizione**:
 Si usa per **modificare** i dati in una riga che esiste già.
 
-**Studenti**
+**Esempio**: Tabella Studenti
 
 | id  | nome  | età | corso       |
 | --- | ----- | --- | ----------- |
@@ -82,27 +58,31 @@ Si usa per **modificare** i dati in una riga che esiste già.
 | 2   | Anna  | 19  | Informatica |
 | 3   | Marco | 24  | Fisica      |
 
-**Query:**
+**Query**:
+
 ``` SQL
 UPDATE Studenti 
-SET corso = 'Informatica' 
+SET corso = 'Informatica', età = 10
 WHERE ID = 1;
 ```
 
-**Risultato:**
+**Risultato**:
 
 | id  | nome  | età | corso       |
 | --- | ----- | --- | ----------- |
-| 1   | Luca  | 22  | Informatica |
+| 1   | Luca  | 10  | Informatica |
 | 2   | Anna  | 19  | Informatica |
 | 3   | Marco | 24  | Fisica      |
 
+**Spiegazione**:
+- `Set`: Specifica il parametro a cui ci va ad apportare la modifica
 ___
 # Delete
-**Descrizione:**
-Si usa per **rimuovere** una o più righe dalla tabella
 
-**Studenti**
+**Descrizione**:
+Si usa per **rimuovere** una o più righe dalla tabella, Se non si specifica quale riga eliminare, si cancella tutta la tabella (senza il where).
+
+**Esempio**: Tabella Studenti
 
 | id  | nome  | età | corso       |
 | --- | ----- | --- | ----------- |
@@ -110,12 +90,13 @@ Si usa per **rimuovere** una o più righe dalla tabella
 | 2   | Anna  | 19  | Informatica |
 | 3   | Marco | 24  | Fisica      |
 
-**Query:**
+**Query**:
+
 ``` SQL
 DELETE FROM Studenti WHERE ID = 3;
 ```
 
-**Risultato:**
+**Risultato**:
 
 | id  | nome | età | corso       |
 | --- | ---- | --- | ----------- |

@@ -4,454 +4,492 @@ Data: 2025-10-29
 ___
 # Data Definition Language
 
-Il **DDL** (**Data Definition Language**) è la parte del linguaggio SQL utilizzata per **definire e gestire la struttura** degli oggetti del database (come tabelle, schemi, ecc.). 
+Il **DDL** è la parte del linguaggio SQL utilizzata per **definire e gestire la struttura** degli oggetti del database (come tabelle, schemi, ecc.). 
+# Indice
+- [[#Data Definition Language]]
+- [[#Gestione del Database]]
+	- [[#CREATE DATABASE]]
+	- [[#DROP DATABASE]]
+	- [[#Gestione delle Tabelle]]
+	- [[#CREATE TABLE]]
+	- [[#DROP TABLE]]
+- [[#Modifica delle Tabelle (ALTER TABLE)]]
+	- [[#ADD COLUMN]]
+	- [[#DROP COLUMN]]
+	- [[#RENAME COLUMN]]
+	- [[#MODIFY COLUMN]]
+- [[#Constraints (Vincoli)]]
+	- [[#NOT NULL]]
+	- [[#UNIQUE]]
+	- [[#PRIMARY KEY (PK)]]
+	- [[#FOREIGN KEY (FK)]]
+		- [[#Azioni Referenziali (ON DELETE / ON UPDATE)]]
+			- [[#CASCADE]]
+			- [[#SET NULL]]
+			- [[#RESTRICT / NO ACTION]]
+			- [[#SET DEFAULT]]
+				- [[#Riepilogo Azioni Referenziali]]
+	- [[#CHECK]]
+	- [[#DEFAULT]]
+		- [[#Riepilogo Constraints]]
+- [[#Indici (CREATE INDEX)]]
 
-| **Tipo**                       | **Esempio**                                              |
-| ------------------------------ | -------------------------------------------------------- |
-| [[#CREATE DATABASE]]           | `CREATE DATABASE ProgettoFinale;`                        |
-| [[#DROP DATABASE]]             | `DROP DATABASE ProgettoFinale;`                          |
-| [[#CREATE TABLE]]              | `CREATE TABLE Esami (ID INT, Voto INT, StudenteID INT);` |
-| [[#DROP TABLE]]                | `DROP TABLE Esami;`                                      |
-| [[#ALTER TABLE ADD COLUMN]]    | `ALTER TABLE Studenti ADD COLUMN Email VARCHAR(100);`    |
-| [[#ALTER TABLE DROP COLUMN]]   | `ALTER TABLE Studenti DROP COLUMN Email;`                |
-| [[#ALTER TABLE RENAME COLUMN]] | `ALTER TABLE Studenti RENAME COLUMN Età TO Anni;`        |
-| [[#ALTER TABLE MODIFY COLUMN]] | `ALTER TABLE Studenti MODIFY COLUMN Nome VARCHAR(50);`   |
-
-**Constraints**
-
-| **Comando**           | **Descrizione**                                                                              |
-| :-------------------- | :------------------------------------------------------------------------------------------- |
-| [[#NOT NULL]]         | Assicura che una colonna non possa contenere valori `NULL`.                                  |
-| [[#UNIQUE]]           | Assicura che tutti i valori in una colonna (o insieme di colonne) siano diversi.             |
-| [[#PRIMARY KEY (PK)]] | Identifica in modo univoco ogni riga in una tabella (combinazione di `NOT NULL` e `UNIQUE`). |
-| [[#FOREIGN KEY (FK)]] | Collega due tabelle, garantendo l'integrità referenziale.                                    |
-| [[#CHECK]]            | Assicura che i valori in una colonna soddisfino una condizione specifica.                    |
-| [[#DEFAULT]]          | Fornisce un valore predefinito per una colonna quando non ne viene specificato uno.          |
-| [[#CREATE INDEX]]     | Crea un indice per ottimizzare la velocità di recupero dei dati.                             |
-
-# Auto Increment
-
-## Descrizione
-In SQL Server, la funzionalità di auto incremento, che di solito è la **chiave primaria (`PRIMARY KEY`)**.
-
-Questa proprietà ha due parametri fondamentali:
-1. **seed** (Seme): Il valore iniziale da cui iniziare a contare (es. 1).
-2. **increment** (Incremento): Il valore da aggiungere al valore precedente (es. 1, 2, 3...).
-La sintassi completa è: **IDENTITY(seed, increment)**
-## Esempio in SQL Server
-Creiamo una tabella chiamata `Dipendenti` dove la colonna `ID_Dipendente` sarà auto incrementante, partendo da 1 e incrementando di 1.
-
-**Query di Creazione Tabella:**
-``` SQL
-CREATE TABLE Dipendenti (
-    ID_Dipendente INT PRIMARY KEY IDENTITY(1, 1), -- Inizia da 1, incrementa di 1
-    Nome VARCHAR(100) NOT NULL,
-    Ruolo VARCHAR(50)
-);
-```
-
-Il vantaggio è che l'ID viene generato automaticamente, garantendo che ogni dipendente abbia un **identificatore univoco** senza il rischio di inserire accidentalmente ID duplicati o nulli.
+| Comando                     | Descrizione                                  |
+| :-------------------------- | :------------------------------------------- |
+| `CREATE DATABASE`           | Crea un nuovo database                       |
+| `DROP DATABASE`             | Elimina un database e tutto il suo contenuto |
+| `CREATE TABLE`              | Crea una nuova tabella                       |
+| `DROP TABLE`                | Elimina una tabella e tutti i suoi dati      |
+| `ALTER TABLE ADD COLUMN`    | Aggiunge una colonna a una tabella esistente |
+| `ALTER TABLE DROP COLUMN`   | Rimuove una colonna da una tabella esistente |
+| `ALTER TABLE RENAME COLUMN` | Rinomina una colonna                         |
+| `ALTER TABLE MODIFY COLUMN` | Modifica il tipo di dato di una colonna      |
+| `CREATE INDEX`              | Crea un indice per velocizzare le query      |
 ___
-# CREATE DATABASE
+# Data Definition Language
 
-**Descrizione:** 
-Si usa per **creare** un nuovo database all'interno del sistema di gestione del database (DBMS).
+Il **DDL** è la parte del linguaggio SQL utilizzata per **definire e gestire la struttura** degli oggetti del database (come tabelle, schemi, indici, ecc.). 
+Non modifica i dati, ma definisce il **contenitore** in cui i dati vivranno.
+___
+# Gestione del Database
 
-**Query:**
+## CREATE DATABASE
+Crea un nuovo database nel DBMS.
 
-``` SQL
+```sql
 CREATE DATABASE ProgettoFinale;
 ```
 
-**Risultato:** Viene creato il database vuoto `ProgettoFinale`, pronto per contenere tabelle, viste e altri oggetti.
+**Risultato**: 
+Viene creato il database vuoto `ProgettoFinale`, pronto per contenere tabelle e altri oggetti.
+## DROP DATABASE
+Elimina completamente un database, inclusi tutti i suoi oggetti (tabelle, dati, indici, ecc.). 
+È un'operazione **definitiva e irreversibile**.
 
----
-
-# DROP DATABASE
-
-**Descrizione:** 
-Si usa per **eliminare completamente** un intero database dal sistema, inclusi tutti i suoi oggetti (tabelle, dati, indici, ecc.). È un comando **definitivo** e irreversibile.
-
-**Query:**
-
-``` SQL
+```sql
 DROP DATABASE ProgettoFinale;
 ```
 
-**Risultato:** Il database `ProgettoFinale` e tutti i suoi contenuti sono permanentemente rimossi.
+___
+# Gestione delle Tabelle
 
----
-# CREATE TABLE
+## CREATE TABLE
+Crea una nuova tabella nel database specificando colonne e tipi di dato.
 
-**Descrizione:**
-
-Si usa per creare una nuova tabella nel database, specificando i nomi delle colonne e i tipi di dato.
-
-**Query:**
-
-``` SQL
+```sql
 CREATE TABLE Esami (
-    ID INT PRIMARY KEY,
-    Voto INT,
+    ID         INT PRIMARY KEY,
+    Voto       INT,
     StudenteID INT
 );
 ```
 
-**Risultato:**
+**Struttura risultante**:
 
-| Nome Colonna   | Tipo di Dato | Note            |
-| -------------- | ------------ | --------------- |
-| **ID**         | `INT`        | Chiave Primaria |
-| **Voto**       | `INT`        |                 |
-| **StudenteID** | `INT`        |                 |
+|Nome Colonna|Tipo di Dato|Note|
+|:--|:--|:--|
+|ID|`INT`|Chiave Primaria|
+|Voto|`INT`||
+|StudenteID|`INT`||
+## DROP TABLE
+Elimina completamente una tabella esistente, inclusi tutti i dati, gli indici e i privilegi associati.
 
----
-
-# DROP TABLE
-
-**Descrizione:**
-
-Si usa per eliminare completamente una tabella esistente dal database, inclusi tutti i dati, gli indici e i privilegi associati.
-
-**Query:**
-
-``` SQL
+```sql
 DROP TABLE Esami;
 ```
 
-Risultato:
+___
 
-La tabella Esami non esiste più nel database.
+# Modifica delle Tabelle (ALTER TABLE)
+Il comando `ALTER TABLE` permette di modificare la struttura di una tabella già esistente senza doverla ricreare da zero.
+## ADD COLUMN
+Aggiunge una nuova colonna alla tabella. I valori nelle righe esistenti saranno `NULL`.
 
----
+**Tabella `Studenti` prima:**
 
-# ALTER TABLE ADD COLUMN
+|id|nome|età|corso|
+|:--|:--|:--|:--|
+|1|Luca|22|Matematica|
 
-**Descrizione:**
-
-Si usa per aggiungere una nuova colonna a una tabella esistente.
-
-**Tabella Studenti**
-
-| id  | nome | età | corso      |
-| --- | ---- | --- | ---------- |
-| 1   | Luca | 22  | Matematica |
-
-**Query:**
-
-``` SQL
-ALTER TABLE Studenti 
+```sql
+ALTER TABLE Studenti
 ADD COLUMN Email VARCHAR(100);
 ```
 
-**Risultato:**
+**Tabella `Studenti` dopo**:
 
-Viene aggiunta la colonna Email alla tabella Studenti. I valori esistenti saranno NULL.
+|id|nome|età|corso|Email|
+|:--|:--|:--|:--|:--|
+|1|Luca|22|Matematica|**NULL**|
+## DROP COLUMN
+Rimuove una colonna da una tabella esistente. Tutti i dati contenuti in quella colonna vengono eliminati.
 
-| id  | nome | età | corso      | Email    |
-| --- | ---- | --- | ---------- | -------- |
-| 1   | Luca | 22  | Matematica | **NULL** |
-
----
-
-# ALTER TABLE DROP COLUMN
-
-**Descrizione:**
-
-Si usa per rimuovere una colonna da una tabella esistente.
-
-**Tabella Studenti** 
+**Tabella `Studenti` prima**:
 
 | id  | nome | età | corso      | Email          |
-| --- | ---- | --- | ---------- | -------------- |
+| :-- | :--- | :-- | :--------- | :------------- |
 | 1   | Luca | 22  | Matematica | luca\@email.it |
 
-**Query:**
-
-``` SQL
-ALTER TABLE Studenti 
+```sql
+ALTER TABLE Studenti
 DROP COLUMN Email;
 ```
 
-**Risultato:**
+**Tabella `Studenti` dopo**:
 
-La colonna Email e tutti i dati in essa contenuti vengono rimossi dalla tabella Studenti.
+|id|nome|età|corso|
+|:--|:--|:--|:--|
+|1|Luca|22|Matematica|
+## RENAME COLUMN
+Rinomina una colonna esistente senza alterarne il contenuto.
 
-| id  | nome | età | corso      |
-| --- | ---- | --- | ---------- |
-| 1   | Luca | 22  | Matematica |
+**Tabella `Studenti` prima**:
 
----
+|id|nome|età|corso|
+|:--|:--|:--|:--|
+|1|Luca|22|Matematica|
 
-# ALTER TABLE RENAME COLUMN
-
-**Descrizione:**
-
-Si usa per rinominare una colonna esistente in una tabella.
-
-**Tabella Studenti** 
-
-| id  | nome | età | corso      |
-| --- | ---- | --- | ---------- |
-| 1   | Luca | 22  | Matematica |
-
-**Query:**
-
-``` SQL
-ALTER TABLE Studenti 
-RENAME COLUMN Età TO anni;
+```sql
+ALTER TABLE Studenti
+RENAME COLUMN Età TO Anni;
 ```
 
-**Risultato:**
+**Tabella `Studenti` dopo**:
 
-Il nome della colonna viene cambiato da Età a Anni.
+|id|nome|anni|corso|
+|:--|:--|:--|:--|
+|1|Luca|22|Matematica|
+## MODIFY COLUMN
+Modifica il tipo di dato e/o la dimensione di una colonna esistente.
 
-| id  | nome | anni | corso      |
-| --- | ---- | ---- | ---------- |
-| 1   | Luca | 22   | Matematica |
+**Struttura `Studenti` prima**:
 
----
+|Colonna|Tipo|
+|:--|:--|
+|Nome|`VARCHAR(50)`|
 
-# ALTER TABLE MODIFY COLUMN
-
-**Descrizione:**
-
-Si usa per modificare il tipo di dato e/o la dimensione di una colonna esistente.
-
-**Tabella Studenti** 
-
-|**id**|**nome (VARCHAR(50))**|
-|---|---|
-|1|Luca|
-
-**Query:**
-
-``` SQL
-ALTER TABLE Studenti MODIFY COLUMN Nome VARCHAR(100);
+```sql
+ALTER TABLE Studenti
+MODIFY COLUMN Nome VARCHAR(100);
 ```
 
-**Risultato:**
+**Tabella `Studenti` dopo**:
 
-Il tipo di dato della colonna Nome viene modificato da VARCHAR(50) a VARCHAR(100), aumentando la dimensione massima.
+|Colonna|Tipo|
+|:--|:--|
+|Nome|`VARCHAR(100)`|
 
----
+___
+# Constraints (Vincoli)
 
-# Constraints
-
-Sono regole utilizzate per limitare il tipo di dati che può essere inserito in una tabella, assicurando così l'**accuratezza** e l'**affidabilità** (integrità) dei dati.
-
------
-
+I **constraints** sono regole applicate alle colonne per garantire l'**accuratezza** e l'**integrità** dei dati. Vengono definiti al momento della creazione della tabella o aggiunti in seguito tramite `ALTER TABLE`.
 ## NOT NULL
-
-**Descrizione:**
-Impedisce che i valori in una colonna siano `NULL` (vuoti). Questo assicura che un dato essenziale sia sempre presente.
-
-**Tabella Studenti**
-
-| id  | nome | corso (NOT NULL) |
-| :-- | :--- | :--------------- |
-| 1   | Luca | Matematica       |
-
-**Esempio di Creazione:**
+Impedisce che una colonna contenga valori `NULL`. Usato per dati essenziali che devono essere sempre presenti.
 
 ```sql
 CREATE TABLE Studenti (
-    ID INT,
-    Nome VARCHAR(100),
+    ID    INT,
+    Nome  VARCHAR(100),
     Corso VARCHAR(50) NOT NULL
 );
 ```
 
-**Esempio di Violazione (tentativo di inserimento):**
+**Esempio di violazione**:
 
-``` SQL
-INSERT INTO Studenti (ID, Nome, Corso) 
+```sql
+INSERT INTO Studenti (ID, Nome, Corso)
 VALUES (4, 'Giulia', NULL);
-
--- Risultato: ERRORE. La colonna 'Corso' non può essere NULL.
+-- ❌ ERRORE: la colonna 'Corso' non può essere NULL.
 ```
-
------
-
 ## UNIQUE
-
-**Descrizione:**
-Assicura che tutti i valori in una colonna (o insieme di colonne) siano **univoci** (non duplicati). A differenza della chiave primaria, una colonna `UNIQUE` può contenere un singolo valore `NULL` (tranne che in SQL Server).
-
-**Tabella Docenti**
-
-| id  | nome        | CodiceFiscale (UNIQUE) |
-| :-- | :---------- | :--------------------- |
-| 1   | Prof. Rossi | RSSGNN80A01H501K       |
-
-**Esempio di Creazione:**
+Garantisce che tutti i valori in una colonna siano distinti. A differenza della chiave primaria, una colonna `UNIQUE` può contenere un valore `NULL` (eccetto in SQL Server).
 
 ```sql
 CREATE TABLE Docenti (
-    ID INT,
-    Nome VARCHAR(100),
-    CodiceFiscale CHAR(16) UNIQUE
+    ID             INT,
+    Nome           VARCHAR(100),
+    CodiceFiscale  CHAR(16) UNIQUE
 );
 ```
 
-**Esempio di Violazione (tentativo di inserimento):**
+**Tabella `Docenti` di esempio**:
+
+|id|nome|CodiceFiscale|
+|:--|:--|:--|
+|1|Prof. Rossi|RSSGNN80A01H501K|
+
+**Esempio di violazione**:
 
 ```sql
-INSERT INTO Docenti (ID, Nome, CodiceFiscale) 
+INSERT INTO Docenti (ID, Nome, CodiceFiscale)
 VALUES (2, 'Prof. Verdi', 'RSSGNN80A01H501K');
--- Risultato: ERRORE. Il CodiceFiscale è già presente.
+-- ❌ ERRORE: il CodiceFiscale è già presente.
 ```
-
------
-
 ## PRIMARY KEY (PK)
-
-**Descrizione:**
-Identifica in modo univoco una singola riga (tuple) in una tabella. Una Chiave Primaria non può contenere valori `NULL` (è implicitamente `NOT NULL`) e deve essere **unica**. Ogni tabella può avere **una e una sola** PK.
-
-**Tabella Studenti**
-
-| id (PK) | nome | età |
-| :------ | :--- | :-- |
-| 1       | Luca | 22  |
-| 2       | Anna | 19  |
-
-**Esempio di Creazione:**
+Identifica in modo univoco ogni riga della tabella. Combina implicitamente `NOT NULL` e `UNIQUE`. Ogni tabella può avere **una sola** chiave primaria.
 
 ```sql
 CREATE TABLE Studenti (
-    ID INT PRIMARY KEY,
+    ID   INT NOT NULL AUTO_INCREMENT,
     Nome VARCHAR(100),
-    Età INT
+    Età  INT
 );
 ```
 
-**Esempio di Violazione (tentativo di inserimento):**
+**Tabella `Studenti` di esempio**:
+
+|id (PK)|nome|età|
+|:--|:--|:--|
+|1|Luca|22|
+|2|Anna|19|
+
+**Esempio di violazione**:
 
 ```sql
-INSERT INTO Studenti (ID, Nome) 
+INSERT INTO Studenti (ID, Nome)
 VALUES (1, 'Marco');
--- Risultato: ERRORE. L'ID 1 è già utilizzato (violazione di UNIQUE).
+-- ❌ ERRORE: l'ID 1 è già presente (violazione di UNIQUE).
 ```
-
------
-
 ## FOREIGN KEY (FK)
-
-**Descrizione:**
-Stabilisce un collegamento tra due tabelle, referenziando la chiave primaria (`PK`) di un'altra tabella. Assicura l'**integrità referenziale**: non si può inserire un record figlio se non esiste un record padre corrispondente.
-
-**Tabella Esami** (Figlia) **riferisce Studenti** (Padre)
-
-| ID\_Esame | Voto | StudenteID (FK) |
-| :-------- | :--- | :-------------- |
-| 101       | 30   | 1               |
-| 102       | 28   | 2               |
-
-**Esempio di Creazione:**
+Collega due tabelle referenziando la `PRIMARY KEY` di un'altra tabella, garantendo l'**integrità referenziale**: non è possibile inserire un record figlio se non esiste il record padre corrispondente.
 
 ```sql
 CREATE TABLE Esami (
-    ID_Esame INT PRIMARY KEY,
-    Voto INT,
+    ID_Esame   INT PRIMARY KEY,
+    Voto       INT,
     StudenteID INT,
     FOREIGN KEY (StudenteID) REFERENCES Studenti(ID)
 );
 ```
 
-**Esempio di Violazione (tentativo di inserimento):**
+***Relazione padre → figlio***:
+
+**Tabella `Studenti` (padre)**:
+
+| id (PK) | nome |
+| :------ | :--- |
+| 1       | Luca |
+| 2       | Anna |
+
+**Tabella `Esami` (figlia)**:
+
+|ID_Esame|Voto|StudenteID (FK)|
+|:--|:--|:--|
+|101|30|1|
+|102|28|2|
+
+**Esempio di violazione**:
 
 ```sql
-INSERT INTO Esami (ID_Esame, Voto, StudenteID) 
+INSERT INTO Esami (ID_Esame, Voto, StudenteID)
 VALUES (103, 25, 99);
--- Risultato: ERRORE. Lo StudenteID 99 non esiste nella tabella Studenti.
+-- ❌ ERRORE: lo StudenteID 99 non esiste nella tabella Studenti.
+```
+### Azioni Referenziali (ON DELETE / ON UPDATE)
+Quando si definisce una `FOREIGN KEY`, è possibile specificare cosa deve succedere ai record figli quando il record padre viene **eliminato** (`ON DELETE`) o **modificato** (`ON UPDATE`).
+
+```sql
+CREATE TABLE Esami (
+    ID_Esame   INT PRIMARY KEY,
+    Voto       INT,
+    StudenteID INT,
+    FOREIGN KEY (StudenteID) REFERENCES Studenti(ID)
+	    ON DELETE <azione>
+	    ON UPDATE <azione>
+);
 ```
 
------
+***Tabelle di esempio***
 
+**Tabella `Studenti` (padre):**
+
+| id (PK) | nome |
+| :------ | :--- |
+| 1       | Luca |
+| 2       | Anna |
+
+**Tabella `Esami` (figlia):**
+
+| ID_Esame | Voto | StudenteID (FK) |
+| :------- | :--- | :-------------- |
+| 101      | 30   | 1               |
+| 102      | 28   | 1               |
+#### CASCADE
+Il cambiamento si **propaga automaticamente** ai record figli.
+Se il padre viene eliminato, i figli vengono eliminati. Se l'ID del padre cambia, cambia anche nella tabella figlia.
+
+```sql
+CREATE TABLE Esami (
+    ID_Esame   INT PRIMARY KEY,
+    Voto       INT,
+    StudenteID INT,
+    FOREIGN KEY (StudenteID) REFERENCES Studenti(ID)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
+```
+
+```sql
+DELETE FROM Studenti WHERE ID = 1;
+-- ✅ Luca viene eliminato da Studenti
+-- ✅ Gli esami 101 e 102 vengono eliminati automaticamente da Esami
+```
+#### SET NULL
+Quando il padre viene eliminato o modificato, il valore della FK nei record figli viene impostato a `NULL`. 
+La colonna figlia **non deve** avere il vincolo `NOT NULL`.
+
+```sql
+CREATE TABLE Esami (
+    ID_Esame   INT PRIMARY KEY,
+    Voto       INT,
+    StudenteID INT,
+    FOREIGN KEY (StudenteID) REFERENCES Studenti(ID)
+        ON DELETE SET NULL
+);
+```
+
+```sql
+DELETE FROM Studenti WHERE ID = 1;
+-- ✅ Luca viene eliminato da Studenti
+-- ✅ Gli esami 101 e 102 rimangono, ma StudenteID diventa NULL
+```
+
+**Tabella `Esami` dopo:**
+
+| ID_Esame | Voto | StudenteID |
+| :------- | :--- | :--------- |
+| 101      | 30   | **NULL**   |
+| 102      | 28   | **NULL**   |
+#### RESTRICT / NO ACTION
+Impedisce l'eliminazione o la modifica del padre **se esistono record figli collegati**. È il comportamento predefinito in molti DBMS se non si specifica nulla.
+**Differenza** tra `RESTRICT` e `NO ACTION`:
+- `RESTRICT` controlla il vincolo immediatamente
+- `NO ACTION` lo controlla alla fine della transazione
+In pratica si comportano spesso allo stesso modo.
+
+```sql
+CREATE TABLE Esami (
+    ID_Esame   INT PRIMARY KEY,
+    Voto       INT,
+    StudenteID INT,
+    FOREIGN KEY (StudenteID) REFERENCES Studenti(ID)
+        ON DELETE RESTRICT
+);
+```
+
+```sql
+DELETE FROM Studenti WHERE ID = 1;
+-- ❌ ERRORE: esistono record in Esami che riferiscono StudenteID = 1.
+-- Non è possibile eliminare Luca finché i suoi esami esistono.
+```
+#### SET DEFAULT
+Quando il padre viene eliminato o modificato, la FK nei figli viene impostata al valore di `DEFAULT` definito sulla colonna.
+
+```sql
+CREATE TABLE Esami (
+    ID_Esame   INT PRIMARY KEY,
+    Voto       INT,
+    StudenteID INT DEFAULT 0,
+    FOREIGN KEY (StudenteID) REFERENCES Studenti(ID)
+        ON DELETE SET DEFAULT
+);
+```
+
+```sql
+DELETE FROM Studenti WHERE ID = 1;
+-- ✅ Luca viene eliminato da Studenti
+-- ✅ Gli esami 101 e 102 rimangono, StudenteID diventa 0 (il DEFAULT)
+```
+##### Riepilogo Azioni Referenziali
+
+| Azione        | ON DELETE                              | ON UPDATE                              |
+| :------------ | :------------------------------------- | :------------------------------------- |
+| `CASCADE`     | Elimina i figli automaticamente        | Aggiorna i figli automaticamente       |
+| `SET NULL`    | Imposta FK a `NULL` nei figli          | Imposta FK a `NULL` nei figli          |
+| `RESTRICT`    | Blocca l'operazione se esistono figli  | Blocca l'operazione se esistono figli  |
+| `NO ACTION`   | Come RESTRICT (controllo a fine tx)    | Come RESTRICT (controllo a fine tx)    |
+| `SET DEFAULT` | Imposta FK al valore DEFAULT nei figli | Imposta FK al valore DEFAULT nei figli |
 ## CHECK
-
-**Descrizione:**
-Consente di definire una condizione che tutti i valori in una colonna devono soddisfare.
-
-**Tabella Ordini**
-
-| ID\_Ordine | Prodotto | Quantità |
-| :--- | :--- | :--- |
-| 500 | Libro | **\> 0** |
-
-**Esempio di Creazione:**
+Definisce una condizione booleana che ogni valore inserito in una colonna deve soddisfare.
 
 ```sql
 CREATE TABLE Ordini (
     ID_Ordine INT PRIMARY KEY,
-    Prodotto VARCHAR(100),
-    Quantità INT CHECK (Quantità > 0)
+    Prodotto  VARCHAR(100),
+    Quantità  INT CHECK (Quantità > 0)
 );
 ```
 
-**Esempio di Violazione (tentativo di inserimento):**
+**Esempio di violazione**:
 
 ```sql
-INSERT INTO Ordini (ID_Ordine, Prodotto, Quantità) 
+INSERT INTO Ordini (ID_Ordine, Prodotto, Quantità)
 VALUES (501, 'Penna', 0);
--- Risultato: ERRORE. La Quantità deve essere maggiore di 0.
+-- ❌ ERRORE: la Quantità deve essere maggiore di 0.
 ```
-
------
-
 ## DEFAULT
-
-**Descrizione:**
-Fornisce un valore che viene assegnato automaticamente a una colonna quando non viene specificato un valore esplicito durante l'inserimento (`INSERT`).
-
-**Tabella Utenti**
-
-| ID | Nome | **Stato (DEFAULT 'Attivo')** |
-| :- | :--- | :--- |
-| 1 | Luca | Attivo |
-| 2 | Anna | (NULL, viene assegnato 'Attivo') |
-
-**Esempio di Creazione:**
+Assegna automaticamente un valore predefinito a una colonna quando non viene specificato un valore durante l'inserimento.
 
 ```sql
 CREATE TABLE Utenti (
-    ID INT PRIMARY KEY,
-    Nome VARCHAR(100),
+    ID    INT PRIMARY KEY,
+    Nome  VARCHAR(100),
     Stato VARCHAR(50) DEFAULT 'Attivo'
 );
 ```
 
-**Esempio di Utilizzo (inserimento senza specificare Stato):**
+**Inserimento senza specificare `Stato`**:
 
 ```sql
-INSERT INTO Utenti (ID, Nome) 
+INSERT INTO Utenti (ID, Nome)
 VALUES (2, 'Anna');
--- Risultato: Viene inserita una riga e la colonna 'Stato' prende il valore 'Attivo'.
 ```
 
------
+**Tabella `Utenti` risultante**:
 
-## CREATE INDEX
+|ID|Nome|Stato|
+|:--|:--|:--|
+|1|Luca|Attivo|
+|2|Anna|**Attivo**|
 
-**Descrizione:**
-Crea un **indice** su una o più colonne di una tabella, proprio come l'indice di un libro. Serve a velocizzare le operazioni di ricerca (`SELECT`), filtro (`WHERE`) e unione (`JOIN`), in quanto il DBMS non deve scansionare l'intera tabella. Gli indici sono creati automaticamente per `PRIMARY KEY` e `UNIQUE`.
+Il valore `'Attivo'` viene assegnato automaticamente.
+### Riepilogo Constraints
 
-**Tabella Studenti**
+| Constraint    | Scopo                                                     | NULL consentito? |
+| :------------ | :-------------------------------------------------------- | :--------------- |
+| `NOT NULL`    | Obbliga la presenza di un valore                          | ❌                |
+| `UNIQUE`      | Impedisce valori duplicati                                | ✅ (uno solo)     |
+| `PRIMARY KEY` | Identifica univocamente ogni riga (`NOT NULL` + `UNIQUE`) | ❌                |
+| `FOREIGN KEY` | Garantisce l'integrità referenziale tra tabelle           | ✅                |
+| `CHECK`       | Valida i dati rispetto a una condizione logica            | ✅                |
+| `DEFAULT`     | Fornisce un valore automatico se non specificato          | ✅                |
 
-| id | nome | **età (Index per ricerche veloci)** |
-| :- | :--- | :- |
-| 1 | Luca | 22 |
+___
+# Indici (CREATE INDEX)
 
-**Esempio di Creazione:**
+Un **indice** funziona come l'indice di un libro: permette al DBMS di trovare le righe cercate senza dover scansionare l'intera tabella, velocizzando le operazioni di `SELECT`, `WHERE` e `JOIN`.
+
+Gli indici vengono creati automaticamente per `PRIMARY KEY` e `UNIQUE`. 
+Per altre colonne frequentemente usate nelle ricerche, è possibile crearli manualmente.
 
 ```sql
-CREATE INDEX idx_età_studenti
+CREATE INDEX idx_eta_studenti
 ON Studenti (Età);
 ```
 
-**Risultato:**
-Viene creato un indice sulla colonna `Età` della tabella `Studenti`. Le query che filtrano o ordinano per `Età` saranno più veloci.
+**Effetto**: le query che filtrano o ordinano per `Età` saranno sensibilmente più veloci su tabelle con molte righe.
 
------
+**Esempio di query che beneficia dell'indice**:
+
+```sql
+-- Senza indice: scansione completa della tabella
+-- Con indice: ricerca diretta tramite struttura B-Tree
+SELECT * FROM Studenti
+WHERE Età = 22;
+```
+
+
+> [!Danger] Occhio
+>  Gli indici migliorano la lettura (`SELECT`) ma rallentano leggermente la scrittura (`INSERT`, `UPDATE`, `DELETE`) perché l'indice deve essere aggiornato. Usarli con criterio sulle colonne realmente coinvolte nelle ricerche.
+
+___

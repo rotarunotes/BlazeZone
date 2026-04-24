@@ -7,6 +7,7 @@ sorting-spec: |-
 
   target-folder: /
     README
+    sorting-spec
     /folders
     Puzzle_Of_Knowledge
     Red_Lab
@@ -325,5 +326,23 @@ sorting-spec: |-
     File_di_Configurazione
     Comandi_Show
     Indirizzi_IP
+    ...
+    
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Theory/Database
+    README
+    /folders
+    Relational_Algebra
+    Database_Design
+    SQL
+    ...
+    
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL
+    README
+    /folders
+    DQL
+    DML
+    DDL
+    DCL
+    TCL
     ...
 ---

@@ -24,12 +24,20 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Modelli/UDP CLOUDE.md",
-      "timestamp": 1777040661329
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
+      "timestamp": 1777066285663
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
-      "timestamp": 1777040651822
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
+      "timestamp": 1777066279239
+    },
+    {
+      "filepath": "Setup_Archive/Templates/Linker_Image_Template.md",
+      "timestamp": 1777066223061
+    },
+    {
+      "filepath": "Setup_Archive/Templates/Note_Template.md",
+      "timestamp": 1777066216149
     }
   ],
   "bookmarkedFileStore": [],

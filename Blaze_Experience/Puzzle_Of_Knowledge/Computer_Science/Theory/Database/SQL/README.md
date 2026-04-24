@@ -1,26 +1,85 @@
- Data: 2025-10-29
+Data: 2025-10-29
 [Database](../README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL
 ___
-# Structured Query Language
-**SQL** è un linguaggio utilizzato per creare, gestire e interrogare i **Database** relazionali.  
-Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, aggiornamento, eliminazione).
-
-# Indice
-
-| **Categoria** | **Comandi Chiave**           | **Azione Principale**                                     |
-| ------------- | ---------------------------- | --------------------------------------------------------- |
-| [DCL](DCL.md) | `GRANT`, `REVOKE`            | **Controlla accessi** (Concede o revoca permessi)         |
-| [DML](DML.md) | `INSERT`, `UPDATE`, `DELETE` | **Manipola dati** (Aggiunge, modifica, elimina record)    |
-| [DDL](DDL.md) | `CREATE`, `ALTER`, `DROP`    | **Definisce struttura** (Crea, modifica, elimina tabelle) |
-| [TCL](TCL.md) | `COMMIT`, `ROLLBACK`         | **Gestisce transazioni** (Salva o annulla operazioni DML) |
-| [DQL](DQL.md) | `SELECT`                     | **Recupera dati** (Interrogazione)                        |
 # Index
+- [[#Database]]
+- [[#Structured Query Language]]
+- [[#DBMS]]
+	- [[#DBMS NoSQL]]
+- [[#Tipi Di Dati]]
 - [[#Funzioni di aggregazione]]
 - [[#Operator logici]]
 - [[#DISTINCT & ALL]]
+- [[#Alias]]
+- [[#LIMIT]]
 - [[#Query Annidate]]
-## Funzioni di aggregazione
+- [[#Indice]]
+![[#Indice]]
+___
+# Structured Query Language
+**SQL** è il linguaggio standard per interagire con i **database relazionali**.
+Serve per lavorare con **tabelle** di dati, e permette su di esse di eseguire il **CRUD**, ovvero le 4 operazioni fondamentali per la gestione dei dati in sistemi di archiviazione persistenti.
+- **Create**: Inserimento di dati.
+- **Read**: Recupero e visualizzazione dei dati esistenti.
+- **Update**: Modifica di dati già presenti nel database.
+- **Delete**: Rimozione di dati dal database.
+
+Viene definito linguaggio di **4^ generazione**, ovvero non si scrivono istruzioni da eseguire ma si fanno **richieste**.
+# DBMS
+**Database Management System** è il software che gestisce fisicamente il database: 
+- Si occupa di memorizzare i dati.
+- Eseguire le query.
+- Gestire gli accessi concorrenti. 
+- Garantire la durabilità.
+Tutti supportano SQL standard, ma ciascuno ha estensioni e comportamenti proprietari.
+
+> [!Abstract]
+> - **SQL**: È la lingua che parli (il linguaggio).
+> - **DBMS**: È l'interprete o il bibliotecario che riceve i tuoi ordini e organizza i libri.
+> - **Database**: È la biblioteca (insieme fisico dei dati).
+
+**DBMS Relazionali (SQL)**: 
+- MySQL
+- MariaDB
+- PostgreSQL
+- SQLite
+- SQL Server
+- Oracle
+## DBMS NoSQL
+Indica una famiglia di database che **non usano** il modello relazionale a tabelle, ma salvano dati in modo **differente** (Es: JSON).
+Nascono per rispondere a esigenze che i DBMS tradizionali gestiscono con **difficoltà**:
+- Enormi volumi di dati.
+- Alta scalabilità orizzontale.
+- Schemi flessibili.
+- Dati non strutturati.
+  
+**DBMS Non relazionali (No SQL):**
+- MongoDB
+- Redis
+  
+# Tipi Di Dati
+Prima di creare tabelle, è fondamentale conoscere i tipi di dato disponibili.
+
+| **Categoria**  | **Tipo**           | **Descrizione**                               | **Esempio**               |
+| -------------- | ------------------ | --------------------------------------------- | ------------------------- |
+| **Numerici**   | `INT`              | Intero standard                               | `42`                      |
+|                | `BIGINT`           | Intero molto grande                           | `9000000000`              |
+|                | `DECIMAL(p,s)`     | Decimale preciso (p cifre totali, s decimali) | `DECIMAL(10,2)` → `12.50` |
+|                | `FLOAT` / `DOUBLE` | Virgola mobile, meno preciso                  | `3.14159`                 |
+| **Testo**      | `VARCHAR(n)`       | Stringa variabile fino a n caratteri          | `VARCHAR(100)`            |
+|                | `CHAR(n)`          | Stringa a lunghezza fissa                     | `CHAR(2)` → `'IT'`        |
+|                | `TEXT`             | Testo lungo senza limite pratico              | descrizioni, articoli     |
+| **Date e ore** | `DATE`             | Solo data                                     | `2024-03-15`              |
+|                | `TIME`             | Solo ora                                      | `14:30:00`                |
+|                | `DATETIME`         | Data e ora, nessun fuso orario                | `2024-03-15 14:30:00`     |
+|                | `TIMESTAMP`        | Data e ora, tiene il fuso orario, si aggiorna | `2024-03-15 14:30:00`     |
+| **Altri**      | `BOOLEAN`          | Vero/falso (in MySQL è `TINYINT(1)`)          | `TRUE` / `FALSE`          |
+|                | `ENUM(...)`        | Solo valori da una lista predefinita          | `ENUM('S','M','L','XL')`  |
+|                | `JSON`             | Dati semi-strutturati                         | `{"nome": "Mario"}`       |
+
+___
+# Funzioni di aggregazione
 
 | Funzione  | Descrizione    | Esempio                             |
 | --------- | -------------- | ----------------------------------- |
@@ -29,8 +88,8 @@ Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, agg
 | `AVG()`   | Media          | `SELECT AVG(eta) FROM studenti;`    |
 | `MIN()`   | Valore minimo  | `SELECT MIN(prezzo) FROM prodotti;` |
 | `MAX()`   | Valore massimo | `SELECT MAX(prezzo) FROM prodotti;` |
-
-## Operator logici
+___
+# Operator logici
 
 | Operatore   | Descrizione                          | Esempio di utilizzo                   |
 | ----------- | ------------------------------------ | ------------------------------------- |
@@ -46,8 +105,8 @@ Serve per lavorare con **tabelle** di dati (creazione, inserimento, ricerca, agg
 | `>=`        | Maggiore o uguale a                  | `WHERE prezzo >= 100`                 |
 | `=`         | Uguale a                             | `WHERE nome = 'Mario'`                |
 | `<>` o `!=` | Diverso da                           | `WHERE nome <> 'Mario'`               |
-
-## DISTINCT & ALL
+___
+# DISTINCT & ALL
 **DISTINCT**  si usa per eliminare le righe duplicate dato che  di default esistono duplicati nel database.
 ``` SQL
 SELECT DISTINCT residenza
@@ -62,7 +121,8 @@ FROM impiegati
 WHERE residenza='Torino';
 ```
 
-## Alias
+___
+# Alias
 Quando voglio assegnare Assegno un nuovo nome ad un attributo tramite un ALIAS:
 - Indico  il nome vecchio AS il nome nuovo da assegnare 
 
@@ -88,7 +148,8 @@ FROM impiegati AS I, dipartimenti AS D
 WHERE (I.dipartimento=D.codice) AND (D.sede='Roma');
 ```
 
-## LIMIT
+___
+# LIMIT
 Questa funzione di permette di limitare il numero di righe in output della tua query
 
 ``` SQL
@@ -105,7 +166,8 @@ LIMIT 3;
 | aaa         | 10     |
 | bbb         | 20     |
 | ccc         | 30     |
-## Query Annidate
+___
+# Query Annidate
 
 **Studenti:**
 
@@ -179,3 +241,14 @@ WHERE Population < ALL (
 	FROM country
 )
 ```
+___
+# Indice
+
+| Categoria     | Acronimo                     | Comandi Chiave               | Azione Principale                                         |
+| ------------- | ---------------------------- | ---------------------------- | --------------------------------------------------------- |
+| [DQL](DQL.md) | Data Query Language          | `SELECT`                     | **Recupera dati** (Interrogazione)                        |
+| [DML](DML.md) | Data Manipulation Language   | `INSERT`, `UPDATE`, `DELETE` | **Manipola dati** (Aggiunge, modifica, elimina record)    |
+| [DDL](DDL.md) | Data Definition Language     | `CREATE`, `ALTER`, `DROP`    | **Definisce struttura** (Crea, modifica, elimina tabelle) |
+| [DCL](DCL.md) | Data Control Language        | `GRANT`, `REVOKE`            | **Controlla accessi** (Concede o revoca permessi)         |
+| [TCL](TCL.md) | Transaction Control Language | `COMMIT`, `ROLLBACK`         | **Gestisce transazioni** (Salva o annulla operazioni DML) |
+___
