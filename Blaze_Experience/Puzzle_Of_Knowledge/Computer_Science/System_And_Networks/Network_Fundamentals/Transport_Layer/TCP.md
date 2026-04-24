@@ -35,10 +35,10 @@ ___
 | --------------------------- | :---------------------------------------------------------------------------------------------------: |
 | **Livello OSI**             |                                            4 — Transporto                                             |
 | **Scopo**                   | Fornire una comunicazione **affidabile**, **ordinata** e con **controllo** degli errori tra due host. |
-| **RFC / Standard**          |                              RFC 9293 (che aggiorna lo storico RFC 793)                               |
+| **RFC / Standard**          |                                               RFC 9293                                                |
 | **Tipo Connessione**        |                    **Connection-oriented** (richiede instaurazione della sessione)                    |
 | **Affidabilità**            |                            **Affidabile** (conferma ricezione tramite ACK)                            |
-| **PDU (Unità Dati)**        |                                               Segmento                                                |
+| **PDU (Unità Dati)**        |                                             **Segmento**                                              |
 | **Meccanismo di Controllo** |                             Flow Control (Windowing) e Congestion Control                             |
 ___
 # Versioni & Evoluzione
@@ -118,9 +118,9 @@ Client                                           Server
 ___
 # Casi d'Uso Reali
 
-- **Esempio 1: Navigazione web (HTTP/HTTPS)**: Quando apri un sito, il browser stabilisce una connessione TCP con il server web (porta 443 per HTTPS). TCP garantisce che ogni byte della pagina HTML, CSS e JavaScript arrivi integro e nell'ordine corretto. Senza TCP, una pagina potrebbe caricarsi corrotta o incompleta.
-- **Esempio 2: Email (SMTP/IMAP)**: Quando invii un'email, il client apre una sessione TCP verso il server SMTP (porta 587). L'affidabilità di TCP assicura che il messaggio venga consegnato per intero al server, che poi lo instrada verso il destinatario.
-- **Esempio 3: Trasferimento file (FTP/SFTP)**: Durante il download di un file ISO da un server FTP, TCP si occupa di ritrasmettere automaticamente ogni pacchetto perso, garantendo che il file ricevuto sia bit-per-bit identico all'originale, senza necessità di checksum applicativi aggiuntivi.
+- **Navigazione web (HTTP/HTTPS)**: Quando apri un sito, il browser stabilisce una connessione TCP con il server web (porta 443 per HTTPS). TCP garantisce che ogni byte della pagina HTML, CSS e JavaScript arrivi integro e nell'ordine corretto. Senza TCP, una pagina potrebbe caricarsi corrotta o incompleta.
+- **Email (SMTP/IMAP)**: Quando invii un'email, il client apre una sessione TCP verso il server SMTP (porta 587). L'affidabilità di TCP assicura che il messaggio venga consegnato per intero al server, che poi lo instrada verso il destinatario.
+- **Trasferimento file (FTP/SFTP)**: Durante il download di un file ISO da un server FTP, TCP si occupa di ritrasmettere automaticamente ogni pacchetto perso, garantendo che il file ricevuto sia bit-per-bit identico all'originale, senza necessità di checksum applicativi aggiuntivi.
 ___
 # Limitazioni Tecniche
 
@@ -213,17 +213,17 @@ ___
 
 | Porta | Protocollo | Uso                                  |
 | ----- | ---------- | ------------------------------------ |
-| 20    | FTP-DATA   | Trasferimento dati FTP               |
-| 21    | FTP        | Controllo FTP                        |
-| 22    | SSH        | Shell sicura, tunneling              |
-| 23    | Telnet     | Accesso remoto non cifrato           |
-| 25    | SMTP       | Invio email                          |
-| 53    | DNS (TCP)  | Query DNS > 512 byte / zone transfer |
-| 80    | HTTP       | Web non cifrato                      |
-| 110   | POP3       | Ricezione email                      |
-| 143   | IMAP       | Gestione email remota                |
-| 443   | HTTPS      | Web cifrato (TLS su TCP)             |
-| 3389  | RDP        | Desktop remoto Windows               |
+| **20**    | FTP-DATA   | Trasferimento dati FTP               |
+| **21**    | FTP        | Controllo FTP                        |
+| **22**    | SSH        | Shell sicura, tunneling              |
+| **23**    | Telnet     | Accesso remoto non cifrato           |
+| **25**    | SMTP       | Invio email                          |
+| **53**    | DNS (TCP)  | Query DNS > 512 byte / zone transfer |
+| **80**    | HTTP       | Web non cifrato                      |
+| **110**   | POP3       | Ricezione email                      |
+| **143**   | IMAP       | Gestione email remota                |
+| **443**   | HTTPS      | Web cifrato (TLS su TCP)             |
+| **3389**  | RDP        | Desktop remoto Windows               |
 ___
 # Confronto
 
@@ -237,7 +237,7 @@ ___
 | Controllo del flusso        | Sì (Window Size)           | No                                 |
 | Controllo della congestione | Sì (cwnd)                  | No                                 |
 | Overhead header             | 20–60 byte                 | 8 byte                             |
-| Latenza                     | Maggiore (handshake + ACK) | Minore                             |
+| Latenza                     | Maggiore (handshake + ACK) | Minore  (nessun handshake)         |
 | Casi d'uso                  | HTTP, FTP, SSH, SMTP       | DNS, DHCP, VoIP, streaming, gaming |
 | Multicast / Broadcast       | No                         | Sì                                 |
 ___
@@ -357,6 +357,7 @@ ___
 | **Incapsulamento**     | TCP viaggia su IP. PDU TCP = **Segmento**; PDU IP = **Pacchetto**.        |
 
 ## Trabocchetti frequenti
+
 | Concetto Errato                  | Realtà Tecnica                                                                                   |
 | -------------------------------- | ------------------------------------------------------------------------------------------------ |
 | **ACK = Sequence ricevuto**      | **FALSO**. L'ACK indica il **prossimo byte atteso** (seq ricevuto + lunghezza payload).          |
