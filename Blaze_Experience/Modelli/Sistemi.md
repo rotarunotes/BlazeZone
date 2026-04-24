@@ -33,10 +33,7 @@
 	- `UDP.md`
 		- Senza connessione, non affidabile, bassa latenza
 		- Quando scegliere UDP: DNS, DHCP, streaming, VoIP, gaming
-		- Header UDP: solo 8 byte vs header TCP 20+ byte
-
-- **Network_Topologies**
-	
+		- Header UDP: solo 8 byte vs header TCP 20+ byte	
 ___
 ### Planning_Addressing
 
