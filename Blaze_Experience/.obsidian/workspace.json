@@ -96,9 +96,19 @@
               "icon": "lucide-file",
               "title": "TCP"
             }
+          },
+          {
+            "id": "acb01753599cc93f",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -274,8 +284,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 328.5,
-    "collapsed": true
+    "width": 328.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -293,12 +302,12 @@
       "omnisearch:Omnisearch": true,
       "chronology:Open Chronology": true,
       "obsidian-trash-explorer:Open trash explorer": false,
-      "custom-sort:Toggle custom sorting": false,
-      "periodic-notes:Open today": false
+      "custom-sort:Toggle custom sorting": false
     }
   },
-  "active": "2635ee54248b16dc",
+  "active": "acb01753599cc93f",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
@@ -312,7 +321,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
     "Modelli/UDP CLOUDE.md",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_OSI_TCP_AI.png",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/README.md",
