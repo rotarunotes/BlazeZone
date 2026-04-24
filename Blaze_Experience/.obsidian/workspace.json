@@ -101,10 +101,15 @@
             "id": "acb01753599cc93f",
             "type": "leaf",
             "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
+              "type": "markdown",
+              "state": {
+                "file": "Modelli/UDP CLOUDE.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "UDP CLOUDE"
             }
           }
         ],
