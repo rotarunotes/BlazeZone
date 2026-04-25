@@ -24,24 +24,12 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "README.md",
+      "timestamp": 1777140674079
+    },
+    {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
-      "timestamp": 1777124214390
-    },
-    {
-      "filepath": "Setup_Archive/Templates/Protocols_Templete.md",
-      "timestamp": 1777124107047
-    },
-    {
-      "filepath": "Setup_Archive/Templates/Note_Template.md",
-      "timestamp": 1777124106221
-    },
-    {
-      "filepath": "Setup_Archive/Templates/Linker_Image_Template.md",
-      "timestamp": 1777124105103
-    },
-    {
-      "filepath": "Setup_Archive/Templates/README_Template.md",
-      "timestamp": 1777124103847
+      "timestamp": 1777140663814
     }
   ],
   "bookmarkedFileStore": [],
