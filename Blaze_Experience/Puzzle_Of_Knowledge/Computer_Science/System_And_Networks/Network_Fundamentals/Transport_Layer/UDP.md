@@ -56,14 +56,14 @@ ___
 UDP non stabilisce nessuna connessione preliminare. 
 Il mittente costruisce un datagramma con header minimale e lo invia direttamente al destinatario, senza aspettare conferme.
 Il meccanismo core si basa su tre fasi principal:
-1. **_Fire and Forget_** 
+1. **Fire and Forget** 
    Il mittente spedisce il datagramma e **non sa se è arrivato**. 
    Non ci sono ACK, nessun timeout, nessuna ritrasmissione. Se il pacchetto si perde, è responsabilità dell'applicazione gestirlo se necessario.
-2. **_Nessun ordinamento_**
+2. **Nessun ordinamento**
     I datagrammi possono arrivare in **ordine diverso** rispetto a quello di invio, oppure non arrivare affatto.
     UDP non numera i pacchetti e non li riordina. 
     L'applicazione deve gestire il riordino se ne ha bisogno.
-3. **_Checksum (opzionale su IPv4, obbligatorio su IPv6)_**
+3. **Checksum (opzionale su IPv4, obbligatorio su IPv6)**
     L'unica forma di verifica è un checksum a 16 bit sull'header e il payload (include uno pseudo-header IP). 
     Se il checksum è errato, il datagramma viene **silenziosamente scartato**:nessuna notifica al mittente.
 

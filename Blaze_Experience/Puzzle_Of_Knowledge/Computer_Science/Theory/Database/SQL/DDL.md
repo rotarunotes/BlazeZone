@@ -2,10 +2,7 @@ Data: 2025-10-29
 [SQL](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL
 ___
-# Data Definition Language
-
-Il **DDL** è la parte del linguaggio SQL utilizzata per **definire e gestire la struttura** degli oggetti del database (come tabelle, schemi, ecc.). 
-# Indice
+# Index
 - [[#Data Definition Language]]
 - [[#Gestione del Database]]
 	- [[#CREATE DATABASE]]

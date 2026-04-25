@@ -2,16 +2,21 @@ Data: 2025-10-29
 [SQL](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL
 ___
+# Index 
+- [[#Data Manipulation Language]]
+- [[#Insert]]
+- [[#Update]]
+- [[#Delete]]
+
+| Tipo       | Esempio                                                                            |
+| ---------- | ---------------------------------------------------------------------------------- |
+| **Insert** | `INSERT INTO Studenti (ID, Nome, Età, Corso) VALUES (4, 'Giulia', 21, 'Chimica');` |
+| **Update** | `UPDATE Studenti SET Corso = 'Informatica' WHERE ID = 1;`<br>                      |
+| **Delete** | `DELETE FROM Studenti WHERE ID = 3;`                                               |
+___
 # Data Manipulation Language
 
 Il **DML** è la parte del linguaggio SQL utilizzata per **gestire e manipolare i dati** memorizzati all'interno delle tabelle di un database.
-
-| Tipo        | Esempio                                                                            |
-| ----------- | ---------------------------------------------------------------------------------- |
-| [[#Insert]] | `INSERT INTO Studenti (ID, Nome, Età, Corso) VALUES (4, 'Giulia', 21, 'Chimica');` |
-| [[#Update]] | `UPDATE Studenti SET Corso = 'Informatica' WHERE ID = 1;`<br>                      |
-| [[#Delete]] | `DELETE FROM Studenti WHERE ID = 3;`                                               |
-
 ___
 # Insert
 

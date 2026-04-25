@@ -2,7 +2,6 @@ Data: 2026-04-22
 [Models](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models
 ___
-
 # Index
 - [[#Il Modello ISO/OSI]]
 	- [[#I 7 Livelli del Modello]]
@@ -15,7 +14,7 @@ ___
 ___
 # Il Modello ISO/OSI
 
-Il modello **Open Systems Interconnection** è lo standard di riferimento per capire come i dati viaggiano attraverso una rete informatica. 
+Il modello *Open Systems Interconnection* è lo standard di riferimento per capire come i dati viaggiano attraverso una rete informatica. 
 Si divide in sette livelli, ognuno con un compito specifico.
 
 ![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Modello_ISO_OSI.png)

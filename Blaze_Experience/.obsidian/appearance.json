@@ -2,12 +2,13 @@
   "cssTheme": "GitHub Theme",
   "enabledCssSnippets": [
     "Center_Image",
-    "Formattazione_Testo",
     "Centra_Tabella",
-    "Tabella_Grandezza100%"
+    "Tabella_Grandezza100%",
+    "force-dark-pdf",
+    "Formattazione_Testo"
   ],
   "baseFontSize": 16,
   "textFontFamily": "Gadugi",
-  "theme": "obsidian",
+  "theme": "system",
   "accentColor": "#2493f8"
 }

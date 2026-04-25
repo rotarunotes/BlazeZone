@@ -46,7 +46,7 @@ ___
 - lista 1
 	- lista 2
 ##  Check Box  | -\[  ] CTRL + L
-- [ ]      
+- [x]      
 	- [ ] 
 ## Numerate | 1.
 1. bella li

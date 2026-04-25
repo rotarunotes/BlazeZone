@@ -3,13 +3,13 @@ Data: 2026-04-22
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models
 ___
 # Index
-- [[#Lo Stack TCP/IP (Internet Protocol Suite)]]
+- [[#Internet Protocol Suite]]
 - [[#Corrispondenza con il Modello OSI]]
 	- [[#I 4 Livelli Pratici]]
 - [[#Perchè TCP/IP]]
 - [[#Implementazione Reale]]
 
-# Lo Stack TCP/IP (Internet Protocol Suite)
+# Internet Protocol Suite
 
 Il modello **TCP/IP** è l'architettura di rete reale su cui si basa Internet. Mentre il modello OSI è uno standard teorico e didattico.
 Il TCP/IP è nato da esigenze pratiche di interconnessione (progetto ARPANET).

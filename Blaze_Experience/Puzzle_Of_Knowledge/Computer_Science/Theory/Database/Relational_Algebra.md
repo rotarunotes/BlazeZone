@@ -2,7 +2,12 @@ Data: 2025-10-27
 [Database](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database
 ___
-# Indice
+# Index
+
+##### Teoria
+- [[#Definizione Di Relazione]]
+	- [[#Caratteristiche]]
+	- [[#Chiavi]]
 ##### Operatori Relazionali
 - [[#Selezione]]
 - [[#Proiezione]]
@@ -18,21 +23,73 @@ ___
 ##### Esercizio
 - [[#Cinema (Ex Verifica)]]
 ___
-# **Relazione $R_1$**
+# Definizione Di Relazione
+In informatica e nei database, una **relazione** è il termine tecnico e formale per definire una **tabella**.
+È composta da due parti principali:
+- **Intestazione (Schema):** insieme degli **attributi** (nomi delle colonne).  
+- **Corpo (Istanza):** insieme delle **tuple** (righe).
+
+Ogni **tupla** rappresenta un record e contiene un valore specifico per ogni attributo.
+
+**Struttura:**
+- Composta da valori **atomici** (non divisibili)
+- **Non** hanno **ordine** tra le righe e colonne
+- È per definizione un **insieme**, quindi ogni tupla deve essere **unica** all'interno della relazione 
+
+| Attributo | Attributo | Attributo | Attributo |
+| --------- | --------- | --------- | --------- |
+| Tupla     |           |           |           |
+| Tupla     |           |           |           |
+
+**Esempio**:
+
+| Nome     | Cognome | Età | Città |
+| -------- | ------- | --- | ----- |
+| Mattia   | Barina  | 23  | Mira  |
+| Giuseppe | Maugeri | 12  | Dolo  |
+## Caratteristiche
+- **Grado**: Numero di attributi (colonne).
+- **Cardinalità**: Numero di tuple (righe).
+## Chiavi
+**Chiave primaria**: è una chiave che identifica univocamente una tupla dento a una relazione
+
+| ID  | Nome     | Cognome |
+| --- | -------- | ------- |
+| 1   | Mattia   | Barina  |
+| 2   | Giuseppe | Maugeri |
+| 3   | Daniele  | Dentico |
+La colonna **ID** è la chiave primaria perchè identifica con:
+- 1 -> La riga di Mattia Barina
+- 2 -> La riga di Giuseppe Maugeri
+- 3 -> La riga di Daniele Dentico
+
+**Chiave esterna**: è una chiave che punta a una chiave primaria di un'altra relazione
+
+| ID  | ID_Persona | Età | Città  |
+| --- | ---------- | --- | ------ |
+| 100 | 1          | 23  | Mira   |
+| 200 | 2          | 12  | Dolo   |
+| 300 | 3          | 90  | Torino |
+La colonna ID_Persona è la chiave esterna, ogni cella punta alla chiave primaria della tabella precedente.
+___
+
+# **Relazioni Usate Nelle Spiegazioni**:
+
+$R_1$
 
 | Nome     | Cognome | Età | Città |
 | :------- | :------ | :-- | :---- |
 | Mattia   | Barina  | 23  | Mira  |
 | Giuseppe | Maugeri | 12  | Dolo  |
-# **Relazione $R_2$**
+$R_2$
+
 | Nome    | Cognome | Età | Città  |
 | :------ | :------ | :-- | :----- |
 | Giacomo | Sacco   | 21  | Mestre |
 | Mattia  | Scatto  | 42  | Mestre |
 | Mattia  | Barina  | 23  | Mira   |
-
-# Operatori
-## Selezione
+___
+# Selezione
 - **Filtro orizzontale**: seleziona le tuple (righe) che soddisfano una condizione booleana.
 - Non modifica le colonne.
 $$
@@ -47,7 +104,8 @@ $$
 | Nome   | Cognome | Età | Città |
 | :----- | :------ | :-- | :---- |
 | Mattia | Barina  | 23  | Mira  |
-## Proiezione
+___
+# Proiezione
 - **Filtro orizzontale**: seleziona solo alcune colonne (attributi).
 - Rimuove i duplicati (nel modello teorico).
 $$
@@ -63,7 +121,8 @@ $$
 | :------- |
 | Mattia   |
 | Giuseppe |
-## Unione
+___
+# Unione
 - Combina le tuple di due relazioni **compatibili** (stesso grado e attributi).
 - Elimina i duplicati.
 - Le relazioni devono essere compatibili.
@@ -82,7 +141,8 @@ $$
 | Giuseppe | Maugeri | 12  | Dolo   |
 | Giacomo  | Sacco   | 21  | Mestre |
 | Mattia   | Scatto  | 42  | Mestre |
-## Intersezione
+___
+# Intersezione
 - Elementi in comune
 $$
 Relazioen1 \cap Relazione2
@@ -96,8 +156,8 @@ $$
 | Nome   | Cognome | Età | Città |
 | :----- | :------ | :-- | :---- |
 | Mattia | Barina  | 23  | Mira  |
-
-## Sottrazione
+___
+# Sottrazione
 - Restituisce le tuple presenti in \( R_1 \) ma **non** in \( R_2 \).
 - Le relazioni devono essere compatibili.
 $$
@@ -112,7 +172,8 @@ $$
 | Nome     | Cognome | Età | Città |
 | :------- | :------ | :-- | :---- |
 | Giuseppe | Maugeri | 12  | Dolo  |
-## Piano Cartesiano
+___
+# Piano Cartesiano
 -  Combina **ogni** tupla di  $R_1$  **con ogni** tupla di $R_2$**.
 $$
 Relazione1 \times Relazione2
@@ -131,8 +192,8 @@ $$
 | Giuseppe | Maugeri    | 12     | Dolo     | Giacomo | Sacco      | 21     | Mestre   |
 | Giuseppe | Maugeri    | 12     | Dolo     | Mattia  | Scatto     | 42     | Mestre   |
 | Giuseppe | Maugeri    | 12     | Dolo     | Mattia  | Barina     | 23     | Mira     |
-
-## Giunzione Naturale
+___
+# Giunzione Naturale
 - Combina due relazioni **sulla base degli attributi comuni**.
 $$
 Relazione1 \bowtie Relazione2
@@ -146,7 +207,8 @@ $$
 | Nome   | Cognome | Età | Città |
 | :----- | :------ | :-- | :---- |
 | Mattia | Barina  | 23  | Mira  |
-## Theta Junction
+___
+# Theta Junction
 - Permette confronti diversi da “uguaglianza” degli attributi di 2 relazioni.
 $$
 R_1 \bowtie_{\text{<condizione>}} R_2
@@ -168,8 +230,8 @@ $$
 | Nome_R1 | Cognome_R1 | Età_R1 | Città_R1 | Nome_R2 | Cognome_R2 | Età_R2 | Città_R2 |
 | :------ | :--------- | :----- | :------- | :------ | :--------- | :----- | :------- |
 | Mattia  | Barina     | 23     | Mira     | Giacomo | Sacco      | 21     | Mestre   |
-
-## Ridenominazione
+___
+# Ridenominazione
 - Cambia gli attributi della relazione.
 $$
 \rho_{\ <NuovoNome \leftarrow VecchioNome>}(Relazione)
@@ -184,7 +246,7 @@ $$
 | Mattia | Barina  | 23  | Mira  |
 | Giuseppe | Maugeri | 12  | Dolo  
 
----
+___
 # Grado e Cardinalita
 
 | Operatore           | Simbolo          | Grado (n° attributi)                                   | Cardinalità (n° tuple)                                      |
@@ -199,7 +261,7 @@ $$
 | Theta Join          | $\bowtie_\theta$ | Somma dei gradi delle due relazioni                    | ≤ prodotto delle cardinalità delle due relazioni            |
 | Rinomina            | $\rho$           | Stesso grado della relazione                           | Stessa cardinalità della relazione                          |
 
----
+___
 # Cinema (Ex Verifica)
 
 | Entità         | Attributi                                       | Note Chiavi Esterne (FK)                                                                                     |
@@ -289,4 +351,6 @@ $$R_{Giorni2} = \rho_{Giorno\_2 \leftarrow Giorno} (R_{Giorni1})$$
 $$R_{NonUltimoGiorno} = R_{Giorni1} \bowtie_{Giorno < Giorno\_2} R_{Giorni2}$$
 $$R_{UltimoGiorno} = R_{Giorni1} \setminus R_{NonUltimoGiorno}$$
 $$R_{FilmID} = \pi_{ID\_Film} (R_{UltimoGiorno} \bowtie Proiezione)$$
-$$\text{Output: } \pi_{Titolo} (R_{FilmID} \bowtie Film)$$___
+$$\text{Output: } \pi_{Titolo} (R_{FilmID} \bowtie Film)$$
+
+___
