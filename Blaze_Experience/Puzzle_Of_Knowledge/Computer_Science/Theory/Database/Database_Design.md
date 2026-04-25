@@ -24,6 +24,7 @@ ___
 	    - [[#Seconda Forma Normale]]
 	    - [[#Terza Forma Normale]]
     - [[#Esempio Completo di Progettazione Logica]]
+- [[#Progettazione Fisica (SAPERE FINO A OBIETTIVI)]]
 
 ___
 # Introduzione
@@ -80,8 +81,7 @@ Si esprime con la notazione **(min, max)** su entrambi i lati della relazione.
 - (1,1): obbligatorio, esattamente uno
 - (0,N): opzionale, può essere molti
 - (1,N): almeno uno
-
----
+___
 # Progettazione Logica
 
 Nella progettazione logica lo **schema E-R** viene trasformato in uno **schema logico**, mantenendo le proprietà e i vincoli definiti nella fase concettuale.
@@ -136,12 +136,10 @@ Si ha dipendenza **funzionale** tra attributi quando il valore di un insieme di 
 - Se vivi a Vicenza $\rightarrow$ Vivi in Veneto $\rightarrow$ Italia $\rightarrow$ Europa.
 - Nome scuola $\rightarrow$ Indirizzo fisico.
 ## Definizioni di Chiave
-1. **Chiave Primaria**: Insieme di uno o più attributi che identificano in modo univoco una tupla.
-2. **Chiave Candidata**: Insieme minimale di uno o più attributi che possono essere potenzialmente una chiave primaria.
-3. **Chiave Non Primaria**: Attributi che non fanno parte della chiave primaria.
-   
-Altre considerazioni:
 - **primary key (PK):** sottolineato nello schema E-R (es. `id_cliente`);
+	- **Chiave Primaria**: Insieme di uno o più attributi che identificano in modo univoco una tupla.
+	- **Chiave Candidata**: Insieme minimale di uno o più attributi che possono essere potenzialmente una chiave primaria.
+	- **Chiave Non Primaria**: Attributi che non fanno parte della chiave primaria.
 - **foreign key (FK):** indicata con un asterisco (es. `*id_fornitore`);
 - **chiave semplice:** tupla contenente un'unica chiave primaria;
 - **chiave composta:** tupla contenente più chiavi primarie;
@@ -239,10 +237,8 @@ Dipendenze parziali
 **GENERE_ARTISTA** (**ARTISTA**, **GENERE**)
 **ALBUM** (**ALBUM**, ANNO_ALBUM, ETICHETTA, ARTISTA)
 
-
----
-
-# Progettazione Fisica
+___
+# Progettazione Fisica (SAPERE FINO A OBIETTIVI)
 
 ## Introduzione
 

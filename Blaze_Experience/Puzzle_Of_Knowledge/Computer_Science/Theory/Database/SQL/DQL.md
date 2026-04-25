@@ -2,26 +2,45 @@ Data: 2025-10-29
 [SQL](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL
 ___
+# Index
+- [[#Data Control Language]]
+- [[#Selezione]]
+- [[#Distinct]]
+- [[#Proiezione]]
+- [[#Unione]]
+- [[#Sottrazione]]
+- [[#Intersezione]]
+- [[#Prodotto cartesiano]]
+- [[#Natural Join]]
+- [[#Theta Join]]
+- [[#Equi Join]]
+- [[#ORDER BY]]
+	- [[#Ordine Crescente]]
+	- [[#Ordine Decrescente]]
+	- [[#Ordine Multiplo]]
+- [[#Like]]
+- [[#GROUP BY]]
+____
 # Data Control Language
 
 Il **DQL** è la parte di SQL che si occupa del recupero e della visualizzazione dei dati.  
 Le principali operazioni derivate dall’**algebra relazionale** sono:
 
-| Tipo                     | Esempio                                                                                                                                                                                                                               |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[#Selezione]]           | SELECT * FROM Studenti WHERE età > 20;                                                                                                                                                                                                |
-| [[#Distinct]]            | SELECT DISTINCT citta FROM Sede;                                                                                                                                                                                                      |
-| [[#Proiezione]]          | SELECT nome, corso FROM Studenti;                                                                                                                                                                                                     |
-| [[#Unione]]              | SELECT  FROM Studenti1 UNION SELECT  FROM Studenti2;<br>                                                                                                                                                                              |
-| [[#Sottrazione]]         | SELECT  FROM Studenti1 EXCEPT SELECT  FROM Studenti2;                                                                                                                                                                                 |
-| [[#Intersezione]]        | SELECT  FROM Studenti1 INTERSECT SELECT  FROM Studenti2;                                                                                                                                                                              |
-| [[#Prodotto cartesiano]] | SELECT * FROM Studenti, Corsi;                                                                                                                                                                                                        |
-| [[#Natural Join]]        | SELECT impiegati2.`*`,dipartimenti.`*`<br>FROM impiegati2, dipartimenti<br>WHERE impiegati2.codice=dipartimenti.codice;                                                                                                               |
-| [[#Theta Join]]          | SELECT impiegati.`*`,dipartimenti.`*`<br>FROM impiegati, dipartimenti<br>WHERE impiegati.dipartimento<>dipartimenti.codice;                                                                                                           |
-| [[#Equi Join]]           | SELECT impiegati.`*`,dipartimenti.`*`<br>FROM impiegati,dipartimenti<br>WHERE impiegati.dipartimento=dipartimenti.codice;                                                                                                             |
-| [[#ORDER BY]]            | SELECT Titolo, Pagine <br>FROM Libri<br>ORDER BY Titolo ASC;                                                                                                                                                                          |
-| [[#Like]]                | SELECT nome, cognome<br>FROM Docenti<br>WHERE nome LIKE 'L%';                                                                                                                                                                         |
-| [[#GROUP BY]]            | SELECT -- Attributi che vuoi visualizzare<br>FROM -- Tabella<br>WHERE -- Pre Filtro<br>GROUP BY -- Attributo per cui vuole fare un gruppo<br>HAVING --Opertato di aggregazione, filtro sul gruppo<br>ORDER BY -- Ordina poi il gruppo |
+| Tipo                    | Esempio                                                                                                                                                                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Selezione**           | SELECT * FROM Studenti WHERE età > 20;                                                                                                                                                                                                |
+| **Distinct**            | SELECT DISTINCT citta FROM Sede;                                                                                                                                                                                                      |
+| **Proiezione**          | SELECT nome, corso FROM Studenti;                                                                                                                                                                                                     |
+| **Unione**              | SELECT  FROM Studenti1 UNION SELECT  FROM Studenti2;<br>                                                                                                                                                                              |
+| **Sottrazione**         | SELECT  FROM Studenti1 EXCEPT SELECT  FROM Studenti2;                                                                                                                                                                                 |
+| **Intersezione**        | SELECT  FROM Studenti1 INTERSECT SELECT  FROM Studenti2;                                                                                                                                                                              |
+| **Prodotto cartesiano** | SELECT * FROM Studenti, Corsi;                                                                                                                                                                                                        |
+| **Natural Join**        | SELECT impiegati2.`*`,dipartimenti.`*`<br>FROM impiegati2, dipartimenti<br>WHERE impiegati2.codice=dipartimenti.codice;                                                                                                               |
+| **Theta Join**          | SELECT impiegati.`*`,dipartimenti.`*`<br>FROM impiegati, dipartimenti<br>WHERE impiegati.dipartimento<>dipartimenti.codice;                                                                                                           |
+| **Equi Join**           | SELECT impiegati.`*`,dipartimenti.`*`<br>FROM impiegati,dipartimenti<br>WHERE impiegati.dipartimento=dipartimenti.codice;                                                                                                             |
+| **ORDER BY**            | SELECT Titolo, Pagine <br>FROM Libri<br>ORDER BY Titolo ASC;                                                                                                                                                                          |
+| **Like**                | SELECT nome, cognome<br>FROM Docenti<br>WHERE nome LIKE 'L%';                                                                                                                                                                         |
+| **GROUP BY**            | SELECT -- Attributi che vuoi visualizzare<br>FROM -- Tabella<br>WHERE -- Pre Filtro<br>GROUP BY -- Attributo per cui vuole fare un gruppo<br>HAVING --Opertato di aggregazione, filtro sul gruppo<br>ORDER BY -- Ordina poi il gruppo |
 
 ___
 # Selezione

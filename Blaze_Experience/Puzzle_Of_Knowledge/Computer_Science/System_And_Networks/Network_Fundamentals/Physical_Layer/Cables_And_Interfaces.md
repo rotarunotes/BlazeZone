@@ -26,7 +26,7 @@ Il Livello Fisico si occupa di **attivare**, **mantenere** e **disattivare** le 
 
 ### Rame
 #### UTP
-**Unshielded Twisted Pair**: Il cavo più diffuso nelle reti LAN. 
+*Unshielded Twisted Pair*: Il cavo più diffuso nelle reti LAN. 
 I 8 fili intrecciati in 4 doppini intrecciati a loro volta, tutto perchè riducono le interferenze elettromagnetiche.
 - **Distanza massima:** 100 m (segmento)
 - **Standard di cablaggio:** T568A / T568B
@@ -35,7 +35,7 @@ I 8 fili intrecciati in 4 doppini intrecciati a loro volta, tutto perchè riduco
 Esistono varie **categorie** di cavi UTP (ad esempio adesso siamo arrivati alla 8). Solitamente si sceglie la categoria in base alla larghezza di banda richiesta.
 ![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Tipologie_Cavo_UTP.png)
 #### STP
-**Shielded Twisted Pair**: Versione schermata dell'UTP, più resistente alle interferenze in ambienti industriali o ad alta densità elettromagnetica.
+*Shielded Twisted Pair*: Versione schermata dell'UTP, più resistente alle interferenze in ambienti industriali o ad alta densità elettromagnetica.
 ![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Cavi_STP.png)
 
 #### Cavo Coassiale
@@ -70,7 +70,7 @@ Esistono varie **categorie** di cavi UTP (ad esempio adesso siamo arrivati alla 
 ___
 # PoE
 
-Il **Power over Ethernet** consente di alimentare dispositivi di rete direttamente tramite il cavo Ethernet, eliminando la necessità di un alimentatore separato.
+Il *Power over Ethernet* consente di alimentare dispositivi di rete direttamente tramite il cavo Ethernet, eliminando la necessità di un alimentatore separato.
 
 | Standard                 | Potenza max erogata | Uso casi tipici                          |
 | ------------------------ | ------------------- | ---------------------------------------- |

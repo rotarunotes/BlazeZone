@@ -4,9 +4,9 @@ Data: 2026-02-14
 ___
 # PHP
 
-PHP è una parte di Apache. Si tratta di un linguaggio **interpretato** ad **oggetti** e **non tipizzato**
+PHP *Hypertext Preprocessor*.è una parte di Apache. Si tratta di un linguaggio **interpretato** ad **oggetti** e **non tipizzato**
 ___
-# Rapporto con html
+# Rapporto con HTML
 
 PHP è un linguaggio **embedded**, il che significa che puoi alternare blocchi di logica a blocchi di presentazione.
 

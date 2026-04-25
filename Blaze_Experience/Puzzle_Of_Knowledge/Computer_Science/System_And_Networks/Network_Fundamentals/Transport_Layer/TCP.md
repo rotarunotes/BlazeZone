@@ -56,18 +56,18 @@ ___
 
 TCP stabilisce una connessione logica tra mittente e destinatario prima di trasferire dati. 
 Il meccanismo core si basa su tre fasi principali:
-1. ***Three-Way Handshake (apertura connessione)***
-	Il client invia un segmento **SYN** (Synchronize) con un **ISN** (Initial Sequence Number) randomico.
+1. **Three-Way Handshake (apertura connessione)**
+	Il client invia un segmento **SYN** (*Synchronize*) con un **ISN** (*Initial Sequence Number*) randomico.
 	
 	![[ISO_OSi#Sequenziamento]]
-	Il server risponde con **SYN-ACK** (Synchronize-Acknowledgment), confermando il **SYN** del client e annunciando il proprio **ISN**.
+	Il server risponde con **SYN-ACK** (*Synchronize-Acknowledgment*), confermando il **SYN** del client e annunciando il proprio **ISN**.
 	Il client chiude l'handshake con un **ACK**. Da questo momento la connessione è stabilita e bidirezionale.
-2. ***Trasferimento dati affidabile***
+1. **Trasferimento dati affidabile**
 	Ogni byte trasmesso ha un numero di sequenza. Il ricevitore invia ACK **cumulativi** (il destinatario aspetta un attimo e dice: "Ho ricevuto tutto correttamente fino al byte 3. Il prossimo che mi aspetto è il 4").
-	Se un segmento non viene confermato entro il timeout **RTO** (Retransmission Timeout), viene ritrasmesso.
+	Se un segmento non viene confermato entro il timeout **RTO** (*Retransmission Timeout*), viene ritrasmesso.
 	Il meccanismo di finestra scorrevole (sliding window) permette di inviare più segmenti senza aspettare un ACK per ciascuno, aumentando il throughput.
-3. ***Four-Way Handshake (chiusura connessione)***
-	La chiusura è half-duplex: ciascun lato chiude indipendentemente la propria direzione con **FIN** (Finish) + **ACK**. 
+2. **Four-Way Handshake (chiusura connessione)**
+	La chiusura è half-duplex: ciascun lato chiude indipendentemente la propria direzione con **FIN** (*Finish*) + **ACK**. 
 	Lo stato **TIME_WAIT** sul lato che chiude per primo garantisce che eventuali segmenti ritardati in rete vengano scartati prima di riutilizzare la stessa porta.
 ___
 # Flusso Operativo
@@ -196,17 +196,17 @@ ___
 I dati effettivi dell'applicazione (es. HTTP, FTP, TLS).
 ## Flags
 
-| Bit    | Flag    | Nome Esteso               | Descrizione e Utilizzo                                                                              |
-| ------ | ------- | ------------------------- | --------------------------------------------------------------------------------------------------- |
-| 8      | **NS**  | Nonce Sum                 | Protezione contro la cancellazione accidentale dei segnali di congestione.                          |
-| 9  | **CWR** | Congestion Window Reduced | Il mittente conferma di aver ridotto la finestra di invio dopo una congestione.                     |
-| 10 | **ECE** | ECN Echo                  | Notifica che è stata rilevata congestione nella rete (livello IP).                                  |
-| 11 | **URG** | **Urgent**                | **Dati urgenti:** segnala al ricevitore di leggere i dati puntati dall'Urgent Pointer con priorità. |
-| 12 | **ACK** | **Acknowledgment**        | **Conferma:** abilita il campo ACK Number. Fondamentale per la ricezione affidabile.                |
-| 13 | **PSH** | **Push**                  | **Invia subito:** bypassa il buffer e consegna i dati immediatamente all'applicazione.              |
-| 14 | **RST** | **Reset**                 | **Chiusura forzata:** interrompe il collegamento per errori gravi o porta chiusa.                   |
-| 15 | **SYN** | **Synchronize**           | **Avvio:** sincronizza gli ISN durante il Three-Way Handshake.                                      |
-| 16 | **FIN** | **Finish**                | **Chiusura:** indica che il mittente ha terminato l'invio dei dati (chiusura formale).              |
+| Bit | Flag    | Nome Esteso               | Descrizione e Utilizzo                                                                              |
+| --- | ------- | ------------------------- | --------------------------------------------------------------------------------------------------- |
+| 8   | **NS**  | *Nonce Sum*                 | Protezione contro la cancellazione accidentale dei segnali di congestione.                          |
+| 9   | **CWR** | *Congestion Window Reduced* | Il mittente conferma di aver ridotto la finestra di invio dopo una congestione.                     |
+| 10  | **ECE** | *ECN Echo*                  | Notifica che è stata rilevata congestione nella rete (livello IP).                                  |
+| 11  | **URG** | *Urgent*                    | **Dati urgenti:** segnala al ricevitore di leggere i dati puntati dall'Urgent Pointer con priorità. |
+| 12  | **ACK** | *Acknowledgment*            | **Conferma:** abilita il campo ACK Number. Fondamentale per la ricezione affidabile.                |
+| 13  | **PSH** | *Push*                      | **Invia subito:** bypassa il buffer e consegna i dati immediatamente all'applicazione.              |
+| 14  | **RST** | *Reset*                     | **Chiusura forzata:** interrompe il collegamento per errori gravi o porta chiusa.                   |
+| 15  | **SYN** | *Synchronize*               | **Avvio:** sincronizza gli ISN durante il Three-Way Handshake.                                      |
+| 16  | **FIN** | *Finish*                    | **Chiusura:** indica che il mittente ha terminato l'invio dei dati (chiusura formale).              |
 
 ___
 # Porte e Protocolli Correlati
@@ -244,7 +244,7 @@ ___
 # Aspetti di Sicurezza
 
 ## Vulnerabilità Note
-- **Prevedibilità dell'ISN (Initial Sequence Number)**: Nelle implementazioni storiche, l'ISN era prevedibile. Un attaccante poteva forgiare segmenti validi senza sniffare il traffico.
+- **Prevedibilità dell'ISN (*Initial Sequence Number*)**: Nelle implementazioni storiche, l'ISN era prevedibile. Un attaccante poteva forgiare segmenti validi senza sniffare il traffico.
 - **Half-open connections**: Lo stato SYN_RECEIVED consuma risorse sul server senza che la connessione sia completata alla base del SYN Flood.
 - **TIME_WAIT assassination**: Un segmento RST con numero di sequenza nell'intervallo accettabile può abbattere connessioni in TIME_WAIT.
 - **Session Hijacking**: Se un attaccante riesce a predire o osservare i numeri di sequenza, può iniettare dati in una sessione TCP stabilita.
@@ -350,7 +350,7 @@ ___
 | **Handshake Apertura** | Three-way: **SYN** → **SYN-ACK** → **ACK**.                               |
 | **Handshake Chiusura** | Four-way: **FIN** → **ACK** → **FIN** → **ACK**.                          |
 | **Sequence Number**    | **32 bit**: conta i singoli byte inviati, non i segmenti.                 |
-| **Window Size**        | **16 bit** (max 64KB); estendibile fino a ~1GB con _Window Scale_.        |
+| **Window Size**        | **16 bit** (max 64KB); estendibile fino a ~1GB con Window Scale.          |
 | **Flag Principali**    | SYN, ACK, FIN, RST, PSH, URG.                                             |
 | **Stato TIME_WAIT**    | Dura **2 × MSL** (tipicamente 60–120 secondi).                            |
 | **Sicurezza (Flood)**  | **SYN Cookies**: evitano l'allocazione di risorse per attacchi SYN Flood. |

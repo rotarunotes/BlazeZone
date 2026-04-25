@@ -3,6 +3,9 @@ Data: 2026-04-23
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer
 ___
 # Transport_Layer
+Il **Transport Layer** (Livello di Trasporto) è il cuore della comunicazione end-to-end. 
+Il suo compito principale è gestire il trasferimento dei dati tra applicazioni residenti su host diversi, garantendo che i flussi informativi siano segmentati, indirizzati correttamente tramite le **porte** e, dove richiesto, consegnati in modo affidabile.
+
 ## Porta
 Le porte sono l'elemento che permette il **Multiplexing**.
 

@@ -49,11 +49,11 @@ Le reti si classificano in base alla loro estensione geografica:
 
 |  Sigla  | Nome                      | Copertura                             | Esempio              |
 | :-----: | ------------------------- | ------------------------------------- | -------------------- |
-| **GAN** | Global Area Network       | Mondiale                              | Internet - Satellite |
-| **WAN** | Wide Area Network         | Regione / Nazione — più ISP coinvolti | Fibra lunga          |
-| **MAN** | Metropolitan Area Network | Città                                 | WiMAX                |
-| **LAN** | Local Area Network        | Edificio o Campus — alta velocità     | Ethernet - Wi-Fi     |
-| **PAN** | Personal Area Network     | Stanza / dispositivi personali        | Bluetooth - NFC      |
+| **GAN** | *Global Area Network*       | Mondiale                              | Internet - Satellite |
+| **WAN** | *Wide Area Network*         | Regione / Nazione — più ISP coinvolti | Fibra lunga          |
+| **MAN** | *Metropolitan Area Network* | Città                                 | WiMAX                |
+| **LAN** | *Local Area Network*        | Edificio o Campus — alta velocità     | Ethernet - Wi-Fi     |
+| **PAN** | *Personal Area Network*     | Stanza / dispositivi personali        | Bluetooth - NFC      |
 
 ![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/TIpologie_Di_Rete.png)
 ## Reti Aziendali
