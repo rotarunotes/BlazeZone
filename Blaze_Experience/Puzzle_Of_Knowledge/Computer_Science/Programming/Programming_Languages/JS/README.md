@@ -29,7 +29,7 @@ Come per il CSS, esistono diversi modi per integrare il codice:
 # Indice
 
 - [Data](Data.md)
-- [Statements](Statements.md)
+- [Statements](Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS/Statements.md)
 - [Function](Function.md)
 - [DOM](DOM.md)
 - [AJAX](AJAX.md)

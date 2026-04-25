@@ -58,13 +58,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Statements.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "TCL"
+              "title": "Statements"
             }
           }
         ],
@@ -279,35 +279,36 @@
   },
   "active": "6a012b9f6f493d11",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Functions.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Language.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Statements.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Cookie_Session.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Senza nome",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
+    "conflict-files-obsidian-git.md",
     "Setup_Archive/Viewable/Image/Computer_Science/Theory/Schmea_Transazione.png",
     "Senza nome.md",
     "Relational_Algebra.pdf",
     "MYSQLI.pdf",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
     "Setup_Archive/Templates/Linker_Image_Template.md",
     "Setup_Archive/Templates/Explorer_Image_Template.md",
     "Setup_Archive/Templates/Note_Template.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database_Design.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/Relation.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
-    "Senza nome 1.md",
-    "Setup_Archive/Viewable/Excalidraw/Computer_Science/System_And_Networks/Tipologie_Di_Rete.md",
-    "Setup_Archive/Viewable/Excalidraw/Computer_Science/Theory/Schema_E-R_Esempio.md",
-    "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Programming/Grid_css.md",
     "Setup_Archive/Viewable/Image/Computer_Science/Theory/Progettazione_Dati_Logica_Esempio.png",
     "Setup_Archive/Viewable/Image/Computer_Science/Theory/Screenshot 2026-04-24 215559.png",
     "Setup_Archive/Viewable/Image/Screenshot 2026-04-24 215559.png",
@@ -325,7 +326,6 @@
     "Setup_Archive/Viewable/Image/I_Other/Pasted image 20260408102447.png",
     "Setup_Archive/Viewable/Image/Vecchio.canvas",
     "Modelli",
-    "Setup_Archive/01_Viewable/Image",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]
 }
