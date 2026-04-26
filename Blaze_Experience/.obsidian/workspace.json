@@ -6,69 +6,103 @@
       {
         "id": "9c84303b89eb260c",
         "type": "tabs",
+        "dimension": 49.84008528784648,
         "children": [
           {
-            "id": "f49a2610eb3b443d",
+            "id": "006f7295e5f47277",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database_Design.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Database_Design"
+              "title": "IPv4"
             }
           },
           {
-            "id": "99046c5844800971",
+            "id": "48e939348d615e1e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Setup_Archive/Templates/Linker_Image_Template.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Linker_Image_Template"
+              "title": "IPv4"
             }
           },
           {
-            "id": "b8fd651758e4b684",
+            "id": "83b72c0a9bbc6523",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
+                "file": "Red_Lab/BLANZ.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "TCL"
+              "title": "BLANZ"
             }
           },
           {
-            "id": "6a012b9f6f493d11",
+            "id": "5a4c9a5841d98397",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "7bf62e814b347fe9",
+        "type": "tabs",
+        "dimension": 50.15991471215352,
+        "children": [
+          {
+            "id": "8e82aeb4741c91c4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Statements.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Statements"
+              "title": "TCP"
             }
           },
           {
-            "id": "e998d88027cd121a",
+            "id": "fb2cf50d7324ae2d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "UDP"
+            }
+          },
+          {
+            "id": "2deb7e0a8227a377",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -83,64 +117,16 @@
             }
           },
           {
-            "id": "be38f4f8a6aa84c7",
+            "id": "d132de0e2196314a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "TCL"
-            }
-          },
-          {
-            "id": "a92af263b3bc8c5c",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "MYSQLI.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "MYSQLI"
-            }
-          },
-          {
-            "id": "0cdd3a8de917ca75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Red_Lab/GitPerSega.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "GitPerSega"
-            }
-          },
-          {
-            "id": "dead5e07e8b7b3d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "vertical"
@@ -349,38 +335,38 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "dead5e07e8b7b3d5",
+  "active": "48e939348d615e1e",
   "lastOpenFiles": [
-    "Red_Lab/GitPerSega.md",
-    "conflict-files-obsidian-git.md",
-    "MYSQLI.pdf",
-    "Relational_Algebra.pdf",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Functions.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Cookie_Session.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Language.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Statements.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Forwarding_Decisions.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Static_Routing.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Dynamic_Routing.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/First_Hop_Redundancy.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
+    "Red_Lab/BLANZ.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/Subnetting_VLSM_CIDR.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/CDP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/ICMP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/ARP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Troubleshooting/Troubleshooting_Methodology.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Troubleshooting/Common_Issues_And_Commands.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
     "Setup_Archive/Templates/Protocols_Templete.md",
-    "Setup_Archive/Templates/Note_Template.md",
-    "Setup_Archive/Templates/Linker_Image_Template.md",
-    "Setup_Archive/Templates/README_Template.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4d.md",
+    "Modelli/Sistemi.md",
+    "MYSQLI.pdf",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
+    "Relational_Algebra.pdf",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Senza nome",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DCL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DML.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DQL.md",
     "Setup_Archive/Viewable/Image/Computer_Science/Theory/Schmea_Transazione.png",
-    "Senza nome.md",
-    "Setup_Archive/Templates/Explorer_Image_Template.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/DDL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Database_Design.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/Relational_Algebra.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/Relation.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/README.md",
     "Setup_Archive/Viewable/Image/Computer_Science/Theory/Progettazione_Dati_Logica_Esempio.png",
     "Setup_Archive/Viewable/Image/Computer_Science/Theory/Screenshot 2026-04-24 215559.png",
     "Setup_Archive/Viewable/Image/Screenshot 2026-04-24 215559.png",

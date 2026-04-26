@@ -133,16 +133,18 @@ ___
 ___
 # PDU & Incapsulamento
 
-- **Nome PDU:** Segmento (Segment)
-- **Incapsulato in:** Pacchetto IP (Header IPv4 o IPv6)
-- **Incapsula:** Dati applicativi (HTTP, FTP, SMTP, ecc.)
+- **Nome PDU**: Segmento (Segment)
+- **Incapsulato in**: Pacchetto IP (Header IPv4 o IPv6)
+- **Incapsula**: Dati applicativi (HTTP, FTP, SMTP, ecc.)
 
 ```
-[ Header Ethernet / Frame L2 ]
-    [ Header IP (L3) ]
-        [ Header TCP (L4) — min 20 byte ]
-            [ Payload: Dati Applicativi (L5-L7) ]
+L1 [ Header Cavo/Wi-Fi ] PDU: Bit
+	L2 [ Header Ethernet ] PDU: Frame
+	    L3 [ Header IP ] PDU: Pacchetto
+	        L4 [ Header UDP ] PDU: Segmento
+	             L5-7 [ Payload ]
 ```
+
 ___
 # Struttura Del Pacchetto
 ## Header

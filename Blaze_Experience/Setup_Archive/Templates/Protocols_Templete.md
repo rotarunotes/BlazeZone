@@ -94,9 +94,11 @@ ___
 - **Incapsula**: (quale PDU contiene al suo interno)
 
 ```
-[ Header PROTOCOLLO_SUPERIORE ]
-    [ Header NOME_PROTOCOLLO ]
-        [ Payload / Dati ]
+L1 [ Header Cavo/Wi-Fi ] PDU: Bit
+	L2 [ Header Ethernet ] PDU: Frame
+	    L3 [ Header IP ] PDU: Pacchetto
+	        L4 [ Header ] PDU: Segmento
+	             L5-7 [ Payload ]
 ```
 ___
 # Struttura Del Pacchetto

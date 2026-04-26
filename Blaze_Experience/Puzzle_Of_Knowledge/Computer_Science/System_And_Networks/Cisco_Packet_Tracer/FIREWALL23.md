@@ -168,3 +168,57 @@ VEDO TUTTE LE ACL
 > Quando navighi su internet, la comunicazione è come un tunnel con due estremità:
 > 1. **Destinazione (Server):** Ha una porta **fissa** (es. 80 o 443). È come il numero dell'ufficio che stai chiamando.
 > 2. **Sorgente (Tu):** Il tuo PC apre una porta **casuale ed effimera** (es. 51234). È come l'interno del tuo telefono da cui parte la chiamata.
+
+
+
+
+# ACCESS GROUP
+```cisco
+Router(config)# interface gigabitEthernet 0/1
+Router(config-if)# ip address 192.168.1.254 255.255.255.0
+Router(config-if)# ip access-group 1 ?
+	out       Outbound
+	in        Inbound
+```
+
+# ACL STANDARD
+Le ACL standard vanno applicate sempre ***outbound*** sull'interfaccia più vicina alla destinazione.
+
+```cisco
+Router(config)# ip access-list standard [1-99]
+Router(config)# access-list 1 ?
+	deny      Specify packets to reject
+	permit    Specify packets to forward
+	remark    Access list entry comment
+Router(config)# access-list 1 deny ?
+	A.B.C.D   Address to match
+	any       Any source host
+	host      A single host address
+Router(config)# access-list 1 deny 192.168.1.0 ?
+	A.B.C.D   Wildcard mask bits
+Router(config)# access-list 1 deny 192.168.1.0 0.0.0.255
+```
+
+# ACL ESTESE
+Le ACL estese vanno applicate sempre ***inbound*** sull'interfaccia più vicina alla sorgente.
+
+```cisco
+Router(config)# ip access-list extended [100-199]
+Router(config)# access-list 100 ?
+	deny      Specify packets to reject
+	permit    Specify packets to forward
+	remark    Access list entry comment
+Router(config)# access-list 100 deny ?
+	ahp Authentication Header Protocol
+	eigrp Cisco's EIGRP routing protocol
+	esp Encapsulation Security Payload
+	gre Cisco's GRE tunneling
+	icmp Internet Control Message Protocol
+	ip Any Internet Protocol
+	ospf OSPF routing protocol
+	tcp Transmission Control Protocol
+	udp User Datagram Protocol
+Router(config)# access-list 100 deny 192.168.1.0 ?
+	A.B.C.D   Wildcard mask bits
+Router(config)# access-list 100 deny 192.168.1.0 0.0.0.255
+```
