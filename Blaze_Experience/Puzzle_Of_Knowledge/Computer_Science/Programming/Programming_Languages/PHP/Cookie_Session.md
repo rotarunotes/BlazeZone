@@ -68,12 +68,12 @@ session_destroy(); // Distrugge la sessione sul server
 ---
 # Confronto Rapido
 
-|**Caratteristica**|**Cookie**|**Sessione**|
-|---|---|---|
-|**Posizione**|Browser (Client)|Server|
-|**Sicurezza**|Bassa (modificabili dall'utente)|Alta (gestite dal server)|
-|**Capacità**|Limitata (circa 4KB)|Molto elevata|
-|**Durata**|Decidibile (anche mesi/anni)|Tipicamente scade alla chiusura del browser|
-|**Variabile PHP**|`$_COOKIE`|`$_SESSION`|
+| Caratteristica    | Cookie                           | Sessione                                    |
+| ----------------- | -------------------------------- | ------------------------------------------- |
+| **Posizione**     | Browser (Client)                 | Server                                      |
+| **Sicurezza**     | Bassa (modificabili dall'utente) | Alta (gestite dal server)                   |
+| **Capacità**      | Limitata (circa 4KB)             | Molto elevata                               |
+| **Durata**        | Decidibile (anche mesi/anni)     | Tipicamente scade alla chiusura del browser |
+| **Variabile PHP** | `$_COOKIE`                       | `$_SESSION`                                 |
 
 ---

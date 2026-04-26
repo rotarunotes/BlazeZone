@@ -157,12 +157,21 @@ unset($persona["cf"]);           // Rimuove un elemento
 ## Superglobali e Stato
 PHP utilizza array associativi speciali chiamati **Superglobali** per gestire le comunicazioni HTTP:
 
-|**Variabile**|**Descrizione**|
-|---|---|
-|`$_GET`|Dati passati nell'URL (`?chiave=valore`). Visibili all'utente.|
-|`$_POST`|Dati passati nel body della richiesta. Nascosti e più sicuri.|
-|`$_REQUEST`|Contiene sia i dati di GET che di POST.|
-|`$_SESSION`|Memorizza dati lato server per mantenere lo stato tra più pagine.|
+| **Variabile** | **Descrizione**                                                   |
+| ------------- | ----------------------------------------------------------------- |
+| `$_GET`       | Dati passati nell'URL (`?chiave=valore`). Visibili all'utente.    |
+| `$_POST`      | Dati passati nel body della richiesta. Nascosti e più sicuri.     |
+| `$_REQUEST`   | Contiene sia i dati di GET che di POST.                           |
+| `$_SERVER`    | Combinazione di GET, POST, COOKIE                                 |
+| `$_SESSION`   | Memorizza dati lato server per mantenere lo stato tra più pagine. |
+| `$_COOKIE`    | Cookie HTTP                                                       |
+| `$_FILESE`    | File caricati                                                     |
+| `$_ENV`       | Variabili d'ambiente                                              |
+``` PHP
+echo $_SERVER['HTTP_HOST'];        // Nome host
+echo $_SERVER['REQUEST_URI'];      // URI richiesta
+echo $_GET['id'];                  // Parametro GET
+```
 ___
 # JSON e Integrazione
 
