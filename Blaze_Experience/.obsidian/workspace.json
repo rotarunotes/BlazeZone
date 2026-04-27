@@ -6,29 +6,29 @@
       {
         "id": "9c84303b89eb260c",
         "type": "tabs",
-        "dimension": 49.84008528784648,
+        "dimension": 42.48400852878465,
         "children": [
-          {
-            "id": "006f7295e5f47277",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "IPv4"
-            }
-          },
           {
             "id": "48e939348d615e1e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Forwarding_Decisions.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Forwarding_Decisions"
+            }
+          },
+          {
+            "id": "0d7a17d4fb5ca5b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
                 "mode": "source",
                 "source": false,
@@ -36,31 +36,6 @@
               },
               "icon": "lucide-file",
               "title": "IPv4"
-            }
-          },
-          {
-            "id": "83b72c0a9bbc6523",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Red_Lab/BLANZ.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "BLANZ"
-            }
-          },
-          {
-            "id": "5a4c9a5841d98397",
-            "type": "leaf",
-            "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
             }
           }
         ],
@@ -69,7 +44,7 @@
       {
         "id": "7bf62e814b347fe9",
         "type": "tabs",
-        "dimension": 50.15991471215352,
+        "dimension": 57.51599147121536,
         "children": [
           {
             "id": "8e82aeb4741c91c4",
@@ -102,7 +77,7 @@
             }
           },
           {
-            "id": "2deb7e0a8227a377",
+            "id": "f90449aa3e94bd91",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -117,13 +92,48 @@
             }
           },
           {
-            "id": "d132de0e2196314a",
+            "id": "8360aef774f5c3cc",
             "type": "leaf",
             "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
+              "type": "markdown",
+              "state": {
+                "file": "Setup_Archive/Rules/Short_Cut.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Short_Cut"
+            }
+          },
+          {
+            "id": "cfced1811831da62",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setup_Archive/Templates/Linker_Files.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Linker_Files"
+            }
+          },
+          {
+            "id": "3bfb691feab3f43a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Senza nome.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Senza nome"
             }
           }
         ]
@@ -146,7 +156,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byCreatedTimeReverse",
-                "autoReveal": true
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Esplora risorse"
@@ -193,7 +203,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 403.5
+    "width": 403.5,
+    "collapsed": true
   },
   "right": {
     "id": "dd71b14831b0ad51",
@@ -238,8 +249,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -303,12 +314,22 @@
             "state": {
               "type": "chronology-calendar-view",
               "state": {},
+              "icon": "lucide-ghost",
+              "title": "chronology-calendar-view"
+            }
+          },
+          {
+            "id": "d0840d3f8e01762b",
+            "type": "leaf",
+            "state": {
+              "type": "chronology-calendar-view",
+              "state": {},
               "icon": "clock",
               "title": "Chronology"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -335,35 +356,36 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "48e939348d615e1e",
+  "active": "8e82aeb4741c91c4",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4d.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Forwarding_Decisions.md",
+    "Setup_Archive/Templates/Linker_Files.md",
+    "README.md",
+    "Senza nome.md",
+    "Setup_Archive/Templates/Linker_Image_Template.md",
+    "Setup_Archive/Templates/Protocols_Templete.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
+    "Setup_Archive/Rules/Short_Cut.md",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Modello_ISO_OSI.png",
+    "Red_Lab/BLANZ.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv6.md",
+    "Modelli/segaSistemai/Networking/Network_Protocols/HTTP.md",
+    "Modelli/segaSistemai/Networking/Network_Protocols/DNS.md",
+    "Modelli/segaSistemai/Networking/Network_Protocols/ARP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Static_Routing.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Dynamic_Routing.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/First_Hop_Redundancy.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
-    "Red_Lab/BLANZ.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/Subnetting_VLSM_CIDR.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/CDP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/ICMP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/ARP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Troubleshooting/Troubleshooting_Methodology.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Troubleshooting/Common_Issues_And_Commands.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
-    "Setup_Archive/Templates/Protocols_Templete.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4d.md",
-    "Modelli/Sistemi.md",
     "MYSQLI.pdf",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL/TCL.md",
     "Relational_Algebra.pdf",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Senza nome",
     "Setup_Archive/Viewable/Image/Computer_Science/Theory/Schmea_Transazione.png",
@@ -381,7 +403,6 @@
     "Setup_Archive/Viewable/Excalidraw/old",
     "Setup_Archive/Viewable/Image/I_Other/Schema ER.png",
     "Setup_Archive/Viewable/Image/I_Other/Pasted image 20260331220152.png",
-    "Setup_Archive/Viewable/Image/I_Other/Pasted image 20260408102447.png",
     "Setup_Archive/Viewable/Image/Vecchio.canvas",
     "Modelli",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"

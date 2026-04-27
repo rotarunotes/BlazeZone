@@ -33,6 +33,7 @@ ___
 | Caratteristica              | Dettaglio |
 | --------------------------- | :-------: |
 | **Livello OSI**             |           |
+| **Porta**                   |           |
 | **Scopo**                   |           |
 | **RFC / Standard**          |           |
 | **Tipo Connessione**        |           |
@@ -136,9 +137,9 @@ ___
 ___
 # Porte e Protocolli Correlati
 
-| Porta | Protocollo | Uso |
-| ----- | ---------- | --- |
-|       |            |     |
+| Porta | Livello OSI | Protocollo | Uso |
+| ----- | ----------- | ---------- | --- |
+|       |             |            |     |
 ___
 # Confronto
 
@@ -192,3 +193,8 @@ ___
 | --------------- | -------------- |
 |                 |                |
 ___
+# Quick Reference Card
+
+```
+
+```

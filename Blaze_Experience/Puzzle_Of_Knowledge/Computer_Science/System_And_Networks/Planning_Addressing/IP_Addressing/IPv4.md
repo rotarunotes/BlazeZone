@@ -38,6 +38,7 @@ ___
 | Caratteristica              |                                               Dettaglio                                               |
 | --------------------------- | :---------------------------------------------------------------------------------------------------: |
 | **Livello OSI**             |                                               3 — Rete                                                |
+| **Porta**                   |                                       Identificato dal servizio                                       |
 | **Scopo**                   | Identificare e instradare pacchetti tra dispositivi su reti diverse tramite indirizzi logici a 32 bit |
 | **RFC / Standard**          |                                                RFC 791                                                |
 | **Tipo Connessione**        |                    **Connectionless** (senza stato, ogni pacchetto è indipendente)                    |
@@ -233,8 +234,8 @@ ___
 # Limitazioni Tecniche
 
 - **Esaurimento degli indirizzi**: Lo spazio di 32 bit consente ~4,3 miliardi di indirizzi unici. A causa della crescita di Internet e dell'allocazione inefficiente per classi, il pool di indirizzi pubblici IPv4 è esaurito dal 2011 (IANA). Il NAT è la soluzione tampone; IPv6 è la soluzione definitiva.
-- **Frammentazione inefficiente**: I router intermedi possono frammentare i pacchetti se la MTU del link è inferiore alla dimensione del pacchetto. La riassemblatura avviene solo alla destinazione finale, aumentando latenza e consumo di risorse. Il flag DF (Don't Fragment) con Path MTU Discovery è preferibile.
-- **Nessuna qualità del servizio nativa**: IPv4 dispone del campo ToS (Type of Service) per la priorità del traffico, ma l'implementazione è inconsistente tra vendor. La QoS richiede configurazioni aggiuntive (DSCP, policy di accodamento).
+- **Frammentazione inefficiente**: I router intermedi possono frammentare i pacchetti se la MTU del link è inferiore alla dimensione del pacchetto. La riassemblatura avviene solo alla destinazione finale, aumentando latenza e consumo di risorse. Il flag DF (*Don't Fragment*) con Path MTU Discovery è preferibile.
+- **Nessuna qualità del servizio nativa**: IPv4 dispone del campo ToS (*Type of Service*) per la priorità del traffico, ma l'implementazione è inconsistente tra vendor. La QoS richiede configurazioni aggiuntive (DSCP, policy di accodamento).
 - **Sicurezza assente a livello protocollo**: IPv4 non prevede autenticazione né cifratura. L'IP spoofing (falsificazione dell'indirizzo sorgente) è tecnicamente banale. IPsec è un'estensione opzionale, non integrata nativamente.
 - **Header di lunghezza variabile**: Il campo Options rende l'header di lunghezza variabile (20–60 byte), complicando il processing hardware ad alta velocità. IPv6 ha risolto questo con un header fisso.
 - **Broadcast come meccanismo di scoperta**: Protocolli come ARP e DHCP usano il broadcast, che scala male in reti molto grandi (aumenta il traffico non utile su tutti i dispositivi del segmento).
@@ -281,8 +282,8 @@ ___
 |Version|  IHL  |    DSCP/ToS   |          Total Length         |
 | 4 bit | 4 bit |    8 bit      |           16 bit              |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-|         Identification        |Flags|    Fragment Offset       |
-|           16 bit              |3bit |        13 bit            |
+|         Identification        |Flags|    Fragment Offset      |
+|           16 bit              |3bit |        13 bit           |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |  Time to Live |    Protocol   |       Header Checksum         |
 |    8 bit      |    8 bit      |           16 bit              |
@@ -303,77 +304,68 @@ ___
 |                                                               |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 ```
-
+## Body
+- Dati dei Protocolli di Trasporto: TCP, UDP
+- Messaggi di Controllo e Diagnostica: ICMP
 ## Flags
 
-| Bit | Flag | Nome Esteso | Descrizione e Utilizzo |
-| --- | ---- | ----------- | ---------------------- |
-| 0 | **Riservato** | — | Deve essere 0 |
-| 1 | **DF** | *Don't Fragment* | Se impostato, il router **non deve frammentare** il pacchetto. Se la dimensione supera la MTU, il router scarta il pacchetto e invia un ICMP "Fragmentation Needed". Usato nella **Path MTU Discovery**. |
-| 2 | **MF** | *More Fragments* | Indica che **seguono altri frammenti**. È 0 sull'ultimo frammento (o su un pacchetto non frammentato). |
-
-### Valori comuni del campo Protocol
-
-| Valore | Protocollo | Descrizione |
-| ------ | ---------- | ----------- |
-| 1 | ICMP | Internet Control Message Protocol |
-| 6 | TCP | Transmission Control Protocol |
-| 17 | UDP | User Datagram Protocol |
-| 47 | GRE | Generic Routing Encapsulation (tunneling) |
-| 89 | OSPF | Open Shortest Path First |
+| Bit | Flag          | Nome Esteso      | Descrizione e Utilizzo                                                                                                                                                                                   |
+| --- | ------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0   | **Riservato** | —                | Deve essere 0                                                                                                                                                                                            |
+| 1   | **DF**        | *Don't Fragment* | Se impostato, il router **non deve frammentare** il pacchetto. Se la dimensione supera la MTU, il router scarta il pacchetto e invia un ICMP "Fragmentation Needed". Usato nella **Path MTU Discovery**. |
+| 2   | **MF**        | *More Fragments* | Indica che **seguono altri frammenti**. È 0 sull'ultimo frammento (o su un pacchetto non frammentato).                                                                                                   |
 
 ___
-# Protocolli Correlati
+#  Porte e Protocolli Correlati
 
-| Protocollo | Livello OSI | Relazione con IPv4 |
-| ---------- | ----------- | ------------------ |
-| **ARP** | 2/3 | Risolve IP → MAC address per la consegna locale (RFC 826) |
-| **ICMP** | 3 (sopra IP) | Messaggi di controllo e diagnostica (ping, traceroute, TTL exceeded) |
-| **DHCP** | 7 (app) | Assegnazione automatica di IP, mask, gateway, DNS ai dispositivi |
-| **NAT** | 3/4 | Traduzione IP privato ↔ pubblico al bordo della rete |
-| **DNS** | 7 (app) | Risoluzione nomi di dominio → indirizzi IP |
-| **OSPF** | 3 (routing) | Protocollo di routing dinamico che usa direttamente IPv4 (proto 89) |
-| **BGP** | 4/7 | Routing inter-dominio su Internet (usa TCP porta 179) |
-| **IPsec** | 3 | Estensione per autenticazione e cifratura a livello IP |
+| Porta    | Livello OSI          | Protocollo    | Uso                                                |
+| -------- | -------------------- | ------------- | -------------------------------------------------- |
+| **53**   | **7** (Applicazione) | DNS           | Query standard (risoluzione nomi)                  |
+| **67**   | **7** (Applicazione) | DHCP (Server) | Ascolto richieste client per assegnazione IP       |
+| **68**   | **7** (Applicazione) | DHCP (Client) | Ricezione configurazione dal server DHCP           |
+| **69**   | **7** (Applicazione) | TFTP          | Trasferimento file semplice (senza autenticazione) |
+| **123**  | **7** (Applicazione) | NTP           | Sincronizzazione dell'orario di sistema            |
+| **161**  | **7** (Applicazione) | SNMP          | Gestione e monitoraggio apparati di rete           |
+| **162**  | **7** (Applicazione) | SNMP-Trap     | Notifiche asincrone da agenti a manager            |
+| **500**  | **7** (Applicazione) | ISAKMP/IKE    | Negoziazione chiavi per tunnel VPN IPsec           |
+| **514**  | **7** (Applicazione) | Syslog        | Invio log di sistema al server centrale            |
+| **1812** | **7** (Applicazione) | RADIUS        | Autenticazione e autorizzazione utenti             |
 
 ___
 # Confronto
 
 **IPv4 vs IPv6**
 
-| Caratteristica | IPv4 | IPv6 |
-| -------------- | ---- | ---- |
-| Lunghezza indirizzo | 32 bit | 128 bit |
-| Notazione | Decimale puntata (`192.168.1.1`) | Esadecimale con colons (`2001:db8::1`) |
-| Spazio indirizzi | ~4,3 miliardi | ~340 undecilioni |
-| Header | Variabile (20–60 byte), checksum incluso | Fisso (40 byte), senza checksum |
-| Frammentazione | Router e host | Solo host sorgente |
-| Broadcast | Sì | No (sostituito da multicast) |
-| ARP | Sì (broadcast L2) | No (sostituito da NDP/ICMPv6) |
-| IPsec | Opzionale | Nativo (obbligatorio nel design) |
-| QoS | ToS/DSCP (8 bit) | Traffic Class + Flow Label (28 bit) |
-| Configurazione | Manuale o DHCP | Manuale, DHCPv6, o SLAAC (autoconfig) |
-| Adozione | ~96% del traffico Internet | ~40% e in crescita |
+| Caratteristica          | IPv4                                     | IPv6                                   |
+| ----------------------- | ---------------------------------------- | -------------------------------------- |
+| **Lunghezza indirizzo** | 32 bit                                   | 128 bit                                |
+| **Notazione**           | Decimale puntata (`192.168.1.1`)         | Esadecimale con colons (`2001:db8::1`) |
+| **Spazio indirizzi**    | ~4,3 miliardi                            | ~340 undecilioni                       |
+| **Header**              | Variabile (20–60 byte), checksum incluso | Fisso (40 byte), senza checksum        |
+| **Frammentazione**      | Router e host                            | Solo host sorgente                     |
+| **Broadcast**           | Sì                                       | No (sostituito da multicast)           |
+| **ARP**                 | Sì (broadcast L2)                        | No (sostituito da NDP/ICMPv6)          |
+| **IPsec**               | Opzionale                                | Nativo (obbligatorio nel design)       |
+| **QoS**                 | ToS/DSCP (8 bit)                         | Traffic Class + Flow Label (28 bit)    |
+| **Configurazione**      | Manuale o DHCP                           | Manuale, DHCPv6, o SLAAC (autoconfig)  |
+| **Adozione**            | ~96% del traffico Internet               | ~40% e in crescita                     |
 
 ___
 # Aspetti di Sicurezza
 
 ## Vulnerabilità Note
-
 - **IP Spoofing**: Un attaccante può forgiare il campo Source IP di un pacchetto IPv4 — non c'è autenticazione dell'indirizzo sorgente nel protocollo. Questo permette attacchi DDoS per amplificazione (DNS, NTP) dove le risposte vengono redirette alla vittima.
 - **Frammentazione malevola**: Pacchetti frammentati appositamente sovrapposti (Teardrop attack) possono causare crash o comportamenti anomali nei sistemi di riassemblaggio. Filtri moderni e OS aggiornati mitigano questo.
 - **ICMP come canale di ricognizione o tunneling**: `ping` e `traceroute` rivelano topologia di rete. Il tunnel ICMP permette di esfiltrare dati incapsulati in pacchetti ICMP, aggirando firewall che bloccano solo TCP/UDP.
 - **Broadcast amplification (Smurf attack)**: Un attaccante invia un ping broadcast con IP sorgente falsificato (della vittima). Tutti i dispositivi della rete rispondono alla vittima, amplificando il traffico.
 
 ## Attacchi Comuni
-
 - **IP Spoofing + DDoS per riflessione**: Il traffico di risposta viene diretto verso la vittima usando il suo IP come sorgente falsificato nelle richieste broadcast o verso servizi amplificatori (DNS, NTP, SSDP).
 - **Teardrop / Fragmentation Overlap**: Invio di frammenti con offset sovrapposti che corrompono il buffer di riassemblaggio del sistema target.
 - **Man-in-the-Middle (ARP Poisoning)**: Falsificando le tabelle ARP sulla rete locale, un attaccante può intercettare il traffico tra due host che usano IPv4 sullo stesso segmento.
 - **Route Injection (BGP Hijacking)**: Un attore malevolo annuncia prefissi IP altrui tramite BGP, reindirizzando il traffico Internet verso sistemi controllati dall'attaccante.
 
 ## Contromisure
-
 - **BCP38 / uRPF (Unicast Reverse Path Forwarding)**: I router verificano che il pacchetto in ingresso provenga dall'interfaccia corretta per quell'IP sorgente. Scarta i pacchetti con IP sorgente spoofato incompatibile col percorso di routing.
 - **Ingress/Egress Filtering**: I provider di rete filtrano il traffico in uscita con IP sorgente non appartenente ai loro range — riduce l'efficacia dello spoofing.
 - **Firewall stateful + ACL**: Filtrano il traffico in base a stato della connessione, IP, protocollo e porta — bloccano pacchetti inattesi o fuori contesto.
@@ -443,14 +435,14 @@ ___
 
 **Sintomi comuni:**
 
-| Sintomo / Errore | Possibili Cause Tecniche | Descrizione del Fenomeno |
-| ---------------- | ------------------------ | ------------------------ |
-| **"Destination host unreachable"** | Route mancante, ARP fallito, interfaccia down | Il router locale non sa come raggiungere la destinazione, o il next-hop non risponde ad ARP |
-| **"Request timed out"** | Firewall blocca ICMP, TTL = 0, host down | I pacchetti ICMP Echo Request non ricevono risposta — il problema può essere nel percorso di andata o di ritorno |
-| **Ping locale OK, Internet KO** | Default gateway errato o assente, NAT mal configurato | La rete locale funziona, ma il traffico verso Internet non trova il percorso corretto |
-| **IP duplicato sulla rete** | Assegnazione manuale conflittuale, DHCP mal configurato | Due host con lo stesso IP causano comportamenti erratici — ARP genera conflitti, le connessioni si interrompono |
-| **Connessione intermittente** | MTU mismatch, frammentazione bloccata dal firewall | I pacchetti grandi (es. HTTPS) vengono scartati perché il DF bit è impostato e il firewall blocca i messaggi ICMP "Fragmentation Needed" — fenomeno noto come **Black Hole routing** |
-| **DHCP non assegna IP (169.254.x.x)** | Server DHCP irraggiungibile, relay agent assente | Il client riceve un indirizzo APIPA — non c'è comunicazione con il server DHCP |
+| Sintomo / Errore                      | Possibili Cause Tecniche                                | Descrizione del Fenomeno                                                                                                                                                             |
+| ------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **"Destination host unreachable"**    | Route mancante, ARP fallito, interfaccia down           | Il router locale non sa come raggiungere la destinazione, o il next-hop non risponde ad ARP                                                                                          |
+| **"Request timed out"**               | Firewall blocca ICMP, TTL = 0, host down                | I pacchetti ICMP Echo Request non ricevono risposta — il problema può essere nel percorso di andata o di ritorno                                                                     |
+| **Ping locale OK, Internet KO**       | Default gateway errato o assente, NAT mal configurato   | La rete locale funziona, ma il traffico verso Internet non trova il percorso corretto                                                                                                |
+| **IP duplicato sulla rete**           | Assegnazione manuale conflittuale, DHCP mal configurato | Due host con lo stesso IP causano comportamenti erratici — ARP genera conflitti, le connessioni si interrompono                                                                      |
+| **Connessione intermittente**         | MTU mismatch, frammentazione bloccata dal firewall      | I pacchetti grandi (es. HTTPS) vengono scartati perché il DF bit è impostato e il firewall blocca i messaggi ICMP "Fragmentation Needed" — fenomeno noto come **Black Hole routing** |
+| **DHCP non assegna IP (169.254.x.x)** | Server DHCP irraggiungibile, relay agent assente        | Il client riceve un indirizzo APIPA — non c'è comunicazione con il server DHCP                                                                                                       |
 
 **Comandi di verifica:**
 
@@ -529,8 +521,7 @@ ___
 | **L'IP sorgente è sempre autentico** | **FALSO**. IPv4 non autentica l'IP sorgente — l'IP spoofing è trivialmente possibile. Serve BCP38/uRPF o IPsec per mitigarlo. |
 
 ___
-
-## 📝 Quick Reference Card
+# Quick Reference Card
 
 ```
 CLASSI:
@@ -568,13 +559,10 @@ PROTOCOLLI (campo Protocol):
   1=ICMP  6=TCP  17=UDP  47=GRE  89=OSPF
 ```
 
-## 🔗 Concetti Collegati
+___
 
-- [[Subnetting]] — Divisione di una rete in sottoreti con VLSM
-- [[ARP]] — Risoluzione IP → MAC address a livello L2
-- [[ICMP]] — Messaggi di controllo e diagnostica per IPv4
-- [[NAT]] — Traduzione indirizzi privati ↔ pubblici
-- [[DHCP]] — Assegnazione automatica degli indirizzi IP
-- [[IPv6]] — Il successore con spazio a 128 bit
-- [[Routing]] — Come i router instradano i pacchetti tra reti
-- [[Transport_Layer]] — TCP e UDP che viaggiano dentro IPv4
+
+
+
+
+
