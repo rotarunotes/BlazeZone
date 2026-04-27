@@ -4,32 +4,44 @@ Data: 2026-04-26
 ___
 # Index
 - [[#Internet Protocol version 4]]
-	- [[#Panoramica]]
+    - [[#Panoramica]]
 - [[#Versioni & Evoluzione]]
 - [[#Come Funziona]]
-- [[#Struttura di un Indirizzo IPv4]]
-- [[#Classi di Indirizzi]]
-- [[#Notazione CIDR]]
-- [[#Subnetting]]
-- [[#Indirizzi Speciali]]
-- [[#Flusso Operativo — Instradamento di un Pacchetto]]
+	- [[#Struttura di un Indirizzo IPv4]]
+	    - [[#Operazioni fondamentali]]
+	        - [[#Network address]]
+	        - [[#Broadcast]]
+	        - [[#Numero di host]]
+	        - [[#Primo host]]
+	        - [[#Ultimo host]]
+	- [[#Classi di Indirizzi]]
+	    - [[#Classful]]
+	        - [[#Indirizzi Privati (RFC 1918)]]
+	    - [[#Notazione CIDR]]
+	        - [[#Tabella CIDR di riferimento]]
+	            - [[#Numero di host CIDR]]
+	- [[#Subnetting]]
+	- [[#Indirizzi Speciali]]
+- [[#Flusso Operativo]]
 - [[#Casi d'Uso Reali]]
 - [[#Limitazioni Tecniche]]
 - [[#PDU & Incapsulamento]]
 - [[#Struttura Del Pacchetto]]
-	- [[#Header]]
-	- [[#Flags]]
-- [[#Protocolli Correlati]]
+    - [[#Header]]
+    - [[#Body]]
+    - [[#Flags]]
+- [[#Porte e Protocolli Correlati]]
 - [[#Confronto]]
 - [[#Aspetti di Sicurezza]]
-	- [[#Vulnerabilità Note]]
-	- [[#Attacchi Comuni]]
-	- [[#Contromisure]]
+    - [[#Vulnerabilità Note]]
+    - [[#Attacchi Comuni]]
+    - [[#Contromisure]]
 - [[#Comandi Cisco IOS]]
 - [[#Troubleshooting]]
 - [[#Note Esame]]
-	- [[#Da sapere a memoria]]
-	- [[#Trabocchetti frequenti]]
+    - [[#Da sapere a memoria]]
+    - [[#Trabocchetti frequenti]]
+- [[#Quick Reference Card]]
 ___
 # Internet Protocol version 4
 
@@ -170,7 +182,7 @@ Il **CIDR** (*Classless Inter-Domain Routing*) sostituisce il sistema a classi c
 | /29  | 255.255.255.248 | 3        | 6                |
 | /30  | 255.255.255.252 | 2        | 2                |
 | /32  | 255.255.255.255 | 0        | 1 (host singolo) |
-##### Numero di host
+##### Numero di host CIDR
 -  Si sottraggono 2 perché **network** e **broadcast** non sono assegnabili.
 $$2^{(32 − prefisso)} − 2$$
 ## Subnetting

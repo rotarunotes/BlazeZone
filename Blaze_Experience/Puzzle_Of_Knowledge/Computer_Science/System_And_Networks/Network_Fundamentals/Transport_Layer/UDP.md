@@ -25,8 +25,8 @@ ___
 - [[#Note Esame]]
     - [[#Da sapere a memoria]]
     - [[#Trabocchetti frequenti]]
+- [[#Quick Reference Card]]
 ___
-
 # User Datagram Protocol
 
 ## Panoramica
@@ -319,3 +319,5 @@ ___
 - Supporta multicast e broadcast (TCP no)
 - Affidabilità reimplementabile a livello app (QUIC, TFTP)
 ```
+
+___

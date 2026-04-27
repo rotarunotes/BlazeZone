@@ -9,33 +9,18 @@
         "dimension": 49.84008528784648,
         "children": [
           {
-            "id": "006f7295e5f47277",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "IPv4"
-            }
-          },
-          {
             "id": "48e939348d615e1e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
+                "file": "Puzzle_Of_Knowledge/Math/Probability.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "IPv4"
+              "title": "Probability"
             }
           },
           {
@@ -63,8 +48,7 @@
               "title": "Home tab"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "7bf62e814b347fe9",
@@ -72,14 +56,14 @@
         "dimension": 50.15991471215352,
         "children": [
           {
-            "id": "8e82aeb4741c91c4",
+            "id": "ae08472a04dd9a66",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
@@ -87,29 +71,14 @@
             }
           },
           {
-            "id": "dfab8a0ae5f294ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
-            }
-          },
-          {
-            "id": "fb2cf50d7324ae2d",
+            "id": "1ea86204949dc1f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
@@ -117,7 +86,22 @@
             }
           },
           {
-            "id": "2deb7e0a8227a377",
+            "id": "e84ec6631eb3e1d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setup_Archive/Templates/README_Template.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "README_Template"
+            }
+          },
+          {
+            "id": "59a4d78f6e1c31e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -130,9 +114,24 @@
               "icon": "lucide-file",
               "title": "Protocols_Templete"
             }
+          },
+          {
+            "id": "7eaa192f4bf61897",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "IPv4"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -199,7 +198,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 403.5
+    "width": 403.5,
+    "collapsed": true
   },
   "right": {
     "id": "dd71b14831b0ad51",
@@ -314,7 +314,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -340,19 +340,24 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "dfab8a0ae5f294ae",
+  "active": "48e939348d615e1e",
   "lastOpenFiles": [
+    "Modelli/segaSistemai/Networking/Network_Protocols/ARP.md",
+    "Red_Lab/BLANZ.md",
+    "Puzzle_Of_Knowledge/Math/Probability.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
+    "Setup_Archive/Templates/Protocols_Templete.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
+    "Setup_Archive/Templates/README_Template.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
     "conflict-files-obsidian-git.md",
     "Setup_Archive/Templates/Linker_Files.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Forwarding_Decisions.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Static_Routing.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Dynamic_Routing.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/First_Hop_Redundancy.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
-    "Red_Lab/BLANZ.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/Subnetting_VLSM_CIDR.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
@@ -360,14 +365,9 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/CDP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/ICMP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/ARP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Troubleshooting/Troubleshooting_Methodology.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Troubleshooting/Common_Issues_And_Commands.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
-    "Setup_Archive/Templates/Protocols_Templete.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4d.md",
     "MYSQLI.pdf",
     "Relational_Algebra.pdf",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Senza nome",

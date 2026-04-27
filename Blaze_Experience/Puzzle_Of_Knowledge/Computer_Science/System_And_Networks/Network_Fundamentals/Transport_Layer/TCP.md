@@ -3,29 +3,30 @@ Data: 2026-04-23
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer
 ___
 # Index
-- [[# Transmission Control Protocol]]
-	- [[# Panoramica]]
-- [[# Versioni & Evoluzione]]
-- [[# Come Funziona]]
-- [[# Flusso Operativo]]
-- [[# Casi d'Uso Reali]]
-- [[# Limitazioni Tecniche]]
-- [[# PDU & Incapsulamento]]
+- [[#Transmission Control Protocol]]
+	- [[#Panoramica]]
+- [[#Versioni & Evoluzione]]
+- [[#Come Funziona]]
+- [[#Flusso Operativo]]
+- [[#Casi d'Uso Reali]]
+- [[#Limitazioni Tecniche]]
+- [[#PDU & Incapsulamento]]
 - [[#Struttura Del Pacchetto]]
 	- [[#Header]]
 	- [[#Body]]
 	- [[#Flags]]
-- [[# Porte e Protocolli Correlati]]
-- [[# Confronto]]
-- [[# Aspetti di Sicurezza]]
-	- [[# Vulnerabilità Note]]
-	- [[# Attacchi Comuni]]
-	- [[# Contromisure]]
-- [[# Comandi Cisco IOS]]
-- [[# Troubleshooting]]
-- [[# Note Esame]]
+- [[#Porte e Protocolli Correlati]]
+- [[#Confronto]]
+- [[#Aspetti di Sicurezza]]
+	- [[#Vulnerabilità Note]]
+	- [[#Attacchi Comuni]]
+	- [[#Contromisure]]
+- [[#Comandi Cisco IOS]]
+- [[#Troubleshooting]]
+- [[#Note Esame]]
 	- [[#Da sapere a memoria]]
 	- [[#Trabocchetti frequenti]]
+- [[#Quick Reference Card]]
 ___
 # Transmission Control Protocol
 
@@ -380,3 +381,4 @@ ___
 - TIME_WAIT dura 2 × MSL (~60–120 s) 
 - No multicast, no broadcast
 ```
+___

@@ -88,7 +88,6 @@ $$
 Per quanto abbiamo detto, la **somma** delle probabilità di un evento e di quella del suo evento contrario è 1.
 
 $$p(E) + p(\overline{E}) = 1$$
-
 ___
 # Definizione Assiomatica Di Probabilità
 
@@ -336,3 +335,4 @@ ___
 
 
 
+[ARP](Modelli/segaSistemai/Networking/Network_Protocols/ARP.md)
