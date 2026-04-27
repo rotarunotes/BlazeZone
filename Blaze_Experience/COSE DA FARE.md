@@ -6,11 +6,10 @@
 - [ ] Sistemi switch va bene 
 
 
-- [ ] informatica teoria
-- [ ] tema
-- [ ] inglese
-- [ ] tpsit
-- [ ] ripasso cerchio fare elisse
+
+- SIstemare PDF con indici e tutto automatico
+- Aprire bene le schede
+- 
 
 
 

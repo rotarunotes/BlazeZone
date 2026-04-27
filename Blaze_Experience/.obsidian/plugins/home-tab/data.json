@@ -24,24 +24,20 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "Senza nome.md",
+      "timestamp": 1777319693781
+    },
+    {
       "filepath": "Puzzle_Of_Knowledge/Math/Probability.md",
-      "timestamp": 1777303247924
+      "timestamp": 1777319546188
     },
     {
-      "filepath": "Modelli/segaSistemai/Networking/Network_Protocols/ARP.md",
-      "timestamp": 1777303246366
+      "filepath": "Puzzle_Of_Knowledge/Math/README.md",
+      "timestamp": 1777319541164
     },
     {
-      "filepath": "Red_Lab/BLANZ.md",
-      "timestamp": 1777303245946
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
-      "timestamp": 1777302301747
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
-      "timestamp": 1777302294728
+      "filepath": "Puzzle_Of_Knowledge/Math/Statistica.md",
+      "timestamp": 1777319162267
     }
   ],
   "bookmarkedFileStore": [],

@@ -7,7 +7,6 @@ p1400 probabilità e calcolo combinatorio
 p1401-1404 tutto
 p1415 in poi
 ___
-
 # Index
 - [[#Eventi]]
 - [[#Definizione Di Probabilità]]
@@ -333,6 +332,3 @@ ___
 | **Prove Ripetute (Bernoulli)**   | $p_{(k,n)} = \binom{n}{k} p^k \cdot q^{n-k}$          | $p$: successo; $q = 1-p$: insuccesso.                                                                    |
 
 
-
-
-[ARP](Modelli/segaSistemai/Networking/Network_Protocols/ARP.md)

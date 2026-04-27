@@ -1,33 +1,60 @@
 <%*
-// Configurazione: specifica eventuali percorsi da escludere (opzionale)
-const excludePath = "Setup_Archive/"; 
+/**
+ * OBSIDIAN MASTERMIND - UNIVERSAL GITHUB-FRIENDLY RELATIVE LINKER
+ * Plugin richiesti: Templater
+ */
 
-// Recupera tutti i file Markdown (.md) del vault
-const allFiles = app.vault.getMarkdownFiles();
+// 1. Recupero di tutti i file del vault
+const allFiles = app.vault.getFiles();
 
-// Filtra i file (esclude quelli nel percorso specificato e ordina alfabeticamente)
-const files = allFiles
-    .filter(f => !f.path.startsWith(excludePath))
-    .sort((a, b) => a.basename.localeCompare(b.basename));
-
-if (files.length === 0) {
-    new Notice("Nessun file trovato nel vault.");
-    return;
-}
-
-// Mostra il suggeritore con il path completo per chiarezza
-const chosenFile = await tp.system.suggester(
-    files.map(f => f.path), 
-    files
+// 2. Interfaccia Utente: Suggester per la selezione del file
+const selectedFile = await tp.system.suggester(
+    (file) => `${file.basename}${file.extension !== 'md' ? '.' + file.extension : ''} (${file.path})`,
+    allFiles
 );
 
-if (!chosenFile) return;
+if (selectedFile) {
+    const currentNotePath = tp.file.path(true);
+    const targetFilePath = selectedFile.path;
 
-// Codifica gli spazi per garantire la validità del link Markdown standard
-// Sostituisce gli spazi con %20
-const webSafePath = chosenFile.path.replace(/ /g, "%20");
+    /**
+     * 3. Logica di calcolo del percorso relativo
+     */
+    const getRelativePath = (from, to) => {
+        const fromParts = from.split("/");
+        const toParts = to.split("/");
+        
+        // Rimuoviamo il nome del file dal percorso di origine
+        fromParts.pop();
 
-// Output del link in formato Markdown []() partendo dalla radice
-// Aggiungendo "/" all'inizio forzi la partenza dalla root in molti parser
-tR += `[${chosenFile.basename}](${webSafePath})`;
+        let i = 0;
+        // Troviamo il punto di divergenza tra i due percorsi
+        while (i < fromParts.length && i < toParts.length && fromParts[i] === toParts[i]) {
+            i++;
+        }
+
+        // Calcoliamo quanti passi indietro (../) sono necessari
+        const backsteps = fromParts.slice(i).map(() => "..").join("/");
+        // Uniamo i passi indietro con la parte restante del percorso di destinazione
+        const forwardSteps = toParts.slice(i).join("/");
+        
+        const finalPath = backsteps ? `${backsteps}/${forwardSteps}` : forwardSteps;
+        // GitHub e i sistemi POSIX richiedono lo spazio codificato come %20
+        return finalPath.replace(/ /g, "%20");
+    };
+
+    const relativePath = getRelativePath(currentNotePath, targetFilePath);
+
+    /**
+     * 4. Logica del Prefisso (Embed vs Link)
+     */
+    const embedExtensions = ["png", "jpg", "jpeg", "gif", "svg", "webp", "pdf"];
+    const prefix = embedExtensions.includes(selectedFile.extension.toLowerCase()) ? "!" : "";
+
+    // 5. Output finale in formato Markdown standard
+    const fileName = selectedFile.basename + (selectedFile.extension !== 'md' ? '.' + selectedFile.extension : '');
+    const markdownLink = `${prefix}[${fileName}](${relativePath})`;
+
+    tR += markdownLink;
+}
 %>
