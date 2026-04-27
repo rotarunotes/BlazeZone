@@ -34,6 +34,7 @@ ___
 | Caratteristica              |                                                       Dettaglio                                                        |
 | --------------------------- | :--------------------------------------------------------------------------------------------------------------------: |
 | **Livello OSI**             |                                                     4 — Trasporto                                                      |
+| **Porta**                   |                                               Identificato dal servizio                                                |
 | **Scopo**                   | Fornire una trasmissione **veloce** e **a bassa latenza** senza garanzie di consegna, ordine o controllo degli errori. |
 | **RFC / Standard**          |                                                        RFC 768                                                         |
 | **Tipo Connessione**        |                                 **Connectionless** (nessuna instaurazione di sessione)                                 |
@@ -158,36 +159,35 @@ UDP non ha un campo Flags come TCP. Le uniche informazioni nell'header sono le 4
 ___
 # Porte e Protocolli Correlati
 
-| Porta | Protocollo  | Uso**                                       |
-| ----- | ----------- | ------------------------------------------- |
-| **53**    | DNS         | Query DNS standard (< 512 byte)             |
-| **67**    | DHCP Server | Assegnazione indirizzi IP (server → client) |
-| **68**    | DHCP Client | Richiesta indirizzo IP (client → server)    |
-| **69**    | TFTP        | Trasferimento file semplificato             |
-| **123**   | NTP         | Sincronizzazione orario di rete             |
-| **161**   | SNMP        | Monitoraggio dispositivi di rete            |
-| **162**   | SNMP Trap   | Notifiche asincrone SNMP                    |
-| **514**   | Syslog      | Logging remoto                              |
-| **1194**  | OpenVPN     | VPN (modalità UDP)                          |
-| **5004**  | RTP         | Trasporto flussi multimediali in real-time  |
+| Porta    | Livello OSI       | Protocollo  | Uso**                                       |
+| -------- | ----------------- | ----------- | ------------------------------------------- |
+| **53**   | **7** (App)       | DNS         | Query DNS standard (< 512 byte)             |
+| **67**   | **7** (App)       | DHCP Server | Assegnazione indirizzi IP (server → client) |
+| **68**   | **7** (App)       | DHCP Client | Richiesta indirizzo IP (client → server)    |
+| **69**   | **7** (App)       | TFTP        | Trasferimento file semplificato             |
+| **123**  | **7** (App)       | NTP         | Sincronizzazione orario di rete             |
+| **161**  | **7** (App)       | SNMP        | Monitoraggio dispositivi di rete            |
+| **162**  | **7** (App)       | SNMP Trap   | Notifiche asincrone SNMP                    |
+| **514**  | **7** (App)       | Syslog      | Logging remoto                              |
+| **1194** | **7/4** (App/Vpn) | OpenVPN     | VPN (modalità UDP)                          |
+| **5004** | **7** (App)       | RTP         | Trasporto flussi multimediali in real-time  |
 
 ___
-
 # Confronto
 
 **UDP vs TCP**
 
 | Caratteristica              | TCP                        | UDP                                |
 | --------------------------- | -------------------------- | ---------------------------------- |
-| Connection-oriented         | Sì (3-way handshake)       | No                                 |
-| Affidabilità                | Sì (ACK + ritrasmissione)  | No                                 |
-| Ordinamento datagrammi      | Sì                         | No                                 |
-| Controllo del flusso        | Sì (Window Size)           | No                                 |
-| Controllo della congestione | Sì (cwnd)                  | No                                 |
-| Overhead header             | 20–60 byte                 | 8 byte                             |
-| Latenza                     | Maggiore (handshake + ACK) | Minore  (nessun handshake)         |
-| Multicast / Broadcast       | HTTP, FTP, SSH, SMTP       | DNS, DHCP, VoIP, streaming, gaming |
-| Casi d'uso tipici           | No                         | Sì                                 |
+| **Connection-oriented**         | Sì (3-way handshake)       | No                                 |
+| **Affidabilità**                | Sì (ACK + ritrasmissione)  | No                                 |
+| **Ordinamento datagrammi**      | Sì                         | No                                 |
+| **Controllo del flusso**        | Sì (Window Size)           | No                                 |
+| **Controllo della congestione** | Sì (cwnd)                  | No                                 |
+| **Overhead header**             | 20–60 byte                 | 8 byte                             |
+| **Latenza**                     | Maggiore (handshake + ACK) | Minore  (nessun handshake)         |
+| **Multicast / Broadcast**       | HTTP, FTP, SSH, SMTP       | DNS, DHCP, VoIP, streaming, gaming |
+| **Casi d'uso tipici**           | No                         | Sì                                 |
 
 ___
 # Aspetti di Sicurezza
@@ -310,3 +310,12 @@ ___
 | **"Connection refused" non esiste in UDP**    | **PARZIALMENTE FALSO**. Se la porta è chiusa, il destinatario risponde con **ICMP Port Unreachable** (Type 3 Code 3).       |
 
 ___
+# Quick Reference Card
+
+```
+- Porta sorgente può essere 0 (se non serve risposta)
+- Porta chiusa → ICMP Type 3 Code 3 (Port Unreachable)
+- Checksum esiste: non è assente, è opzionale (IPv4)
+- Supporta multicast e broadcast (TCP no)
+- Affidabilità reimplementabile a livello app (QUIC, TFTP)
+```

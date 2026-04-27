@@ -34,6 +34,7 @@ ___
 | Caratteristica              |                                               Dettaglio                                               |
 | --------------------------- | :---------------------------------------------------------------------------------------------------: |
 | **Livello OSI**             |                                            4 — Transporto                                             |
+| **Porta**                   |                                       Identificato dal servizio                                       |
 | **Scopo**                   | Fornire una comunicazione **affidabile**, **ordinata** e con **controllo** degli errori tra due host. |
 | **RFC / Standard**          |                                               RFC 9293                                                |
 | **Tipo Connessione**        |                    **Connection-oriented** (richiede instaurazione della sessione)                    |
@@ -209,23 +210,23 @@ I dati effettivi dell'applicazione (es. HTTP, FTP, TLS).
 | 14  | **RST** | *Reset*                     | **Chiusura forzata:** interrompe il collegamento per errori gravi o porta chiusa.                   |
 | 15  | **SYN** | *Synchronize*               | **Avvio:** sincronizza gli ISN durante il Three-Way Handshake.                                      |
 | 16  | **FIN** | *Finish*                    | **Chiusura:** indica che il mittente ha terminato l'invio dei dati (chiusura formale).              |
-
 ___
 # Porte e Protocolli Correlati
 
-| Porta | Protocollo | Uso                                  |
-| ----- | ---------- | ------------------------------------ |
-| **20**    | FTP-DATA   | Trasferimento dati FTP               |
-| **21**    | FTP        | Controllo FTP                        |
-| **22**    | SSH        | Shell sicura, tunneling              |
-| **23**    | Telnet     | Accesso remoto non cifrato           |
-| **25**    | SMTP       | Invio email                          |
-| **53**    | DNS (TCP)  | Query DNS > 512 byte / zone transfer |
-| **80**    | HTTP       | Web non cifrato                      |
-| **110**   | POP3       | Ricezione email                      |
-| **143**   | IMAP       | Gestione email remota                |
-| **443**   | HTTPS      | Web cifrato (TLS su TCP)             |
-| **3389**  | RDP        | Desktop remoto Windows               |
+| Porta    | Livello OSI          | Protocollo | Uso                                  |
+| -------- | -------------------- | ---------- | ------------------------------------ |
+| **20**   | **7** (Applicazione) | FTP-DATA   | Trasferimento dati FTP               |
+| **21**   | **7** (Applicazione) | FTP        | Controllo FTP                        |
+| **22**   | **7** (Applicazione) | SSH        | Shell sicura, tunneling              |
+| **23**   | **7** (Applicazione) | Telnet     | Accesso remoto non cifrato           |
+| **25**   | **7** (Applicazione) | SMTP       | Invio email                          |
+| **53**   | **7** (Applicazione) | DNS (TCP)  | Query DNS > 512 byte / zone transfer |
+| **80**   | **7** (Applicazione) | HTTP       | Web non cifrato                      |
+| **110**  | **7** (Applicazione) | POP3       | Ricezione email                      |
+| **143**  | **7** (Applicazione) | IMAP       | Gestione email remota                |
+| **443**  | **7** (Applicazione) | HTTPS      | Web cifrato (TLS su TCP)             |
+| **3389** | **7** (Applicazione) | RDP        | Desktop remoto Windows               |
+****
 ___
 # Confronto
 
@@ -233,15 +234,15 @@ ___
 
 | Caratteristica              | TCP                        | UDP                                |
 | --------------------------- | -------------------------- | ---------------------------------- |
-| Connection-oriented         | Sì (3-way handshake)       | No                                 |
-| Affidabilità                | Sì (ACK + ritrasmissione)  | No                                 |
-| Ordinamento segmenti        | Sì                         | No                                 |
-| Controllo del flusso        | Sì (Window Size)           | No                                 |
-| Controllo della congestione | Sì (cwnd)                  | No                                 |
-| Overhead header             | 20–60 byte                 | 8 byte                             |
-| Latenza                     | Maggiore (handshake + ACK) | Minore  (nessun handshake)         |
-| Casi d'uso                  | HTTP, FTP, SSH, SMTP       | DNS, DHCP, VoIP, streaming, gaming |
-| Multicast / Broadcast       | No                         | Sì                                 |
+| **Connection-oriented**         | Sì (3-way handshake)       | No                                 |
+| **Affidabilità**                | Sì (ACK + ritrasmissione)  | No                                 |
+| **Ordinamento segmenti**        | Sì                         | No                                 |
+| **Controllo del flusso**        | Sì (Window Size)           | No                                 |
+| **Controllo della congestione** | Sì (cwnd)                  | No                                 |
+| **Overhead header**             | 20–60 byte                 | 8 byte                             |
+| **Latenza**                     | Maggiore (handshake + ACK) | Minore  (nessun handshake)         |
+| **Casi d'uso**                  | HTTP, FTP, SSH, SMTP       | DNS, DHCP, VoIP, streaming, gaming |
+| **Multicast / Broadcast**       | No                         | Sì                                 |
 ___
 # Aspetti di Sicurezza
 
@@ -370,3 +371,12 @@ ___
 | **Window Size = Dim. pacchetto** | **FALSO**. È lo spazio libero nel **buffer del ricevitore** per dati non ancora confermati.      |
 | **Porte TCP/UDP sono uguali**    | **VERO/FALSO**. Entrambi usano porte, ma sono **spazi indipendenti** (es. TCP 53 $\neq$ UDP 53). |
 ___
+# Quick Reference Card
+
+```
+- ACK = prossimo byte atteso (non l'ultimo ricevuto)
+- FIN chiude solo una direzione (half-close)
+- RST = abort forzato, FIN = chiusura normale
+- TIME_WAIT dura 2 × MSL (~60–120 s) 
+- No multicast, no broadcast
+```

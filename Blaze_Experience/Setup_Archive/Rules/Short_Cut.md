@@ -20,8 +20,6 @@ ___
 | ctrl + freccia   | Su o Giu nella lista                          |
 | ctrl + alt + u   | Apre le cartelle: Image, Screenshot, Download |
 
-
-___
 # Titolo 2
 ___
  
