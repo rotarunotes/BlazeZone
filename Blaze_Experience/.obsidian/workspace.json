@@ -38,6 +38,21 @@
             }
           },
           {
+            "id": "42fb178f2a399928",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "FIREWALL_IN_LAS"
+            }
+          },
+          {
             "id": "ae4378da167b8a7c",
             "type": "leaf",
             "state": {
@@ -50,7 +65,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -259,11 +274,11 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "92621553eaaa30fb",
+  "active": "42fb178f2a399928",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_LAS.md",
     "Modelli/segaSistemai/Networking/Configuration/VLAN.md",
     "Setup_Archive/Viewable/Excalidraw/Schema_NAT.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_LAS.md",
     "Setup_Archive/Viewable/Image/Pasted image 20260428141636.png",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
