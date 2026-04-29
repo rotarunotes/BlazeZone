@@ -1,5 +1,5 @@
 Data: 2026-04-22
-[Network_Fundamentals](../README.md)
+[Network_Fundamentals](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer
 ___
 # Physical_Layer
@@ -10,6 +10,6 @@ Il **Livello Fisico** rappresenta le fondamenta dell'intero modello ISO/OSI. Il 
 - **Topologia Fisica**: Determina come i dispositivi sono fisicamente connessi tra loro (a stella, a bus, ecc.) e come le tipologie di rete esistenti (PAN, LAN, MAN, WAN, GAN).
 ___
 # Indice
-- [Cables_And_Interfaces](./Cables_And_Interfaces.md)
-- [Topology_Types](./Topology_Types.md)
+- [Cables_And_Interfaces](Cables_And_Interfaces.md)
+- [Topology_Types](Topology_Types.md)
 ___

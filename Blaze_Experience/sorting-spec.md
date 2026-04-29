@@ -88,7 +88,8 @@ sorting-spec: |-
     README
     /folders
     IPv4
-    Subnetting_VLSM_CIDR
+    CIDR
+    Subnetting_IPv4
     IPv6
     ...
 

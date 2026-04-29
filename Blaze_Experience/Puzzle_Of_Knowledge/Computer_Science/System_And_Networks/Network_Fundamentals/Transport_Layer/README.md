@@ -1,5 +1,5 @@
 Data: 2026-04-23
-[Network_Fundamentals](../README.md)
+[Network_Fundamentals](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer
 ___
 # Transport_Layer
@@ -22,6 +22,6 @@ Mentre i **server** utilizzano porte fisse e ben note per "ascoltare" le richies
 Se aprissi due schede del browser per visitare lo stesso sito, il tuo computer non saprebbe a quale scheda destinare i dati in arrivo se non avesse due "porte di ritorno" differenti.
 ___
 # Indice
-- [TCP](./TCP.md)
-- [UDP](./UDP.md)
+- [TCP](TCP.md)
+- [UDP](UDP.md)
 ___

@@ -6,7 +6,7 @@ ___
 Di cosa parla questa MOC.
 ___
 # Indice
-- [Subnetting_IPv4](Subnetting_IPv4.md)
+- [Subnetting_IPv4](Modelli/segaSistemai/Networking/Subnetting_Practice/Subnetting_IPv4.md)
 
 ___
 

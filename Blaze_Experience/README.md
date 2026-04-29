@@ -45,7 +45,7 @@ ___
 					- [DNS](Modelli/segaSistemai/Networking/Network_Protocols/DNS.md)
 				- [Configuration](Modelli/segaSistemai/Networking/Configuration/README.md)
 				- [Subnetting_Practice](Modelli/segaSistemai/Networking/README.md)
-					- [Subnetting_IPv4](Subnetting_IPv4.md)
+					- [Subnetting_IPv4](Modelli/segaSistemai/Networking/Subnetting_Practice/Subnetting_IPv4.md)
 			- [Systems_Theory](Modelli/segaSistemai/Systems_Theory/README.md)
 	- [Math](Puzzle_Of_Knowledge/Math/README.md)
 - [Red_Lab](Red_Lab/README.md)

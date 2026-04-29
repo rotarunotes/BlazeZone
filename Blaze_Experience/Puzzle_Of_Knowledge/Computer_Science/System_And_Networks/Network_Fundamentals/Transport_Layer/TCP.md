@@ -1,5 +1,5 @@
 Data: 2026-04-23
-[Transport_Layer](./README.md)
+[Transport_Layer](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer
 ___
 # Index
@@ -61,7 +61,7 @@ Il meccanismo core si basa su tre fasi principali:
 1. **Three-Way Handshake (apertura connessione)**
 	Il client invia un segmento **SYN** (*Synchronize*) con un **ISN** (*Initial Sequence Number*) randomico.
 	
-	![[ISO_OSi#Sequenziamento]]
+	![[ISO_OSI#Sequenziamento]]
 	Il server risponde con **SYN-ACK** (*Synchronize-Acknowledgment*), confermando il **SYN** del client e annunciando il proprio **ISN**.
 	Il client chiude l'handshake con un **ACK**. Da questo momento la connessione è stabilita e bidirezionale.
 1. **Trasferimento dati affidabile**

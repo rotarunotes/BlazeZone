@@ -8,64 +8,62 @@
         "type": "tabs",
         "children": [
           {
-            "id": "87df8c369cbcf784",
+            "id": "70ce842cc75fd91d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Modelli/segaSistemai/Networking/Configuration/VLAN.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration_Block.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Declaration_Block"
+            }
+          },
+          {
+            "id": "6e161a49d9790e40",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/README.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "VLAN"
+              "title": "README"
             }
           },
           {
-            "id": "92621553eaaa30fb",
+            "id": "b44a5279b46231c0",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
+          },
+          {
+            "id": "e435ddee9732cafb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_LAS.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "NAT_LAS"
-            }
-          },
-          {
-            "id": "42fb178f2a399928",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "FIREWALL_IN_LAS"
-            }
-          },
-          {
-            "id": "ae4378da167b8a7c",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Setup_Archive/Viewable/Excalidraw/Schema_NAT.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Schema_NAT"
+              "title": "UDP"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -251,8 +249,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.5,
-    "collapsed": true
+    "width": 343.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -274,38 +271,39 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "42fb178f2a399928",
+  "active": "e435ddee9732cafb",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/Subnetting_IPv4.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/CIDR.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/README.md",
+    "Modelli/segaSistemai/Networking/README.md",
+    "Senza nome.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration_Block.md",
+    "Setup_Archive/Templates/Protocols_Templete.md",
+    "Setup_Archive/Templates/Note_Template.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
+    "Modelli/segaSistemai/Networking/Subnetting_Practice/README.md",
+    "sorting-spec.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/VLSM.md",
+    "Modelli/segaSistemai/Networking/Subnetting_Practice/Subnetting_IPv4.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_LAS.md",
     "Modelli/segaSistemai/Networking/Configuration/VLAN.md",
     "Setup_Archive/Viewable/Excalidraw/Schema_NAT.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv6.md",
     "Setup_Archive/Viewable/Image/Pasted image 20260428141636.png",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
     "Setup_Archive/Viewable/Image/Pasted image 20260428141147.png",
-    "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/ACL_Spiegazione.md",
-    "Setup_Archive/Viewable/Excalidraw/Computer_Science/System_And_Networks/Tipologie_Di_Rete.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
-    "Modelli/segaSistemai/Networking/Configuration/WLAN.md",
-    "Modelli/segaSistemai/Networking/Configuration/Router.md",
-    "Modelli/segaSistemai/README.md",
-    "Puzzle_Of_Knowledge/Math/Statistica.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
-    "Puzzle_Of_Knowledge/Math/Probability.md",
-    "Senza nome.md",
-    "Puzzle_Of_Knowledge/Computer_Science/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
-    "Modelli/segaSistemai/Networking/Network_Protocols/DHCP.md",
     "Setup_Archive/Viewable/Image/Pasted image 20260428131634.png",
     "Setup_Archive/Viewable/Image/Pasted image 20260428131449.png",
     "Setup_Archive/Viewable/Image/Pasted image 20260428131019.png",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL.md",
-    "Probabilità.md",
-    "Puzzle_Of_Knowledge/Math/README.md",
-    "Puzzle_Of_Knowledge/Math/Circumference.md",
-    "sorting-spec.md",
     "MYSQLI.pdf",
     "Relational_Algebra.pdf",
     "Setup_Archive/Viewable/PDF/Presentazione_distribuzioni_di_probabilità.pdf",

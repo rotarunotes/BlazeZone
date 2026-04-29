@@ -1,5 +1,5 @@
 Data: 2026-04-26
-[IP_Addressing](./README.md)
+[IP_Addressing](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/IPv4
 ___
 # Index
@@ -8,8 +8,10 @@ ___
 - [[#Versioni & Evoluzione]]
 - [[#Come Funziona]]
 	- [[#Struttura di un Indirizzo IPv4]]
+	- [[#Subnet mask]]
 	    - [[#Operazioni fondamentali]]
 	        - [[#Network address]]
+	        - [[#Wildcard mask]]
 	        - [[#Broadcast]]
 	        - [[#Numero di host]]
 	        - [[#Primo host]]
@@ -98,7 +100,8 @@ Decimale:        192.       168.         1.        1
 Binario:   11000000 . 10101000 . 00000001 . 00000001
 ```
 
-La **subnet mask** determina il confine tra la parte di rete e la parte di host:
+## Subnet mask
+**Determina** il confine tra la parte di rete e la parte di host:
 
 ```
 IP:   192.168.10.45   →  11000000.10101000.00001010.00101101
@@ -114,10 +117,14 @@ Per ricavare le informazioni di una rete dato un **indirizzo IP** e una **subnet
 - Si ottiene con un AND bit a bit tra **IP** e **subnet mask**.
 $$\text{Network} = \text{IP} \land \text{Mask}$$
 $$192.168.10.0 = 192.168.10.45 \land 255.255.255.0$$
+#### Wildcard mask
+Serve principalmente a dire ai dispositivi di rete (come router e firewall) **quali parti di un indirizzo IP devono essere osservate e quali possono essere ignorate** durante un confronto.
+$$Wildcard \space mask = 255.255.255.255 - Subnet$$
+$$0.0.0.255 = 255.255.255.255 - 255.255.255.0$$
 #### Broadcast
 È l'ultimo indirizzo della rete, un pacchetto inviato a questo indirizzo raggiunge tutti gli host della rete.
-- Si ottiene con un OR bit a bit tra l'**indirizzo di rete** e la subnet mask **inversa**.
-$$\text{Broadcast} = \text{Network} \lor \lnot\text{Mask}$$
+- Si ottiene con un OR bit a bit tra l'**indirizzo di rete** e la subnet mask **inversa**, che sarebbe la wildcard mask.
+$$\text{Broadcast} = \text{Network} \lor Wildcar$$
 $$192.168.10.255 = 192.168.10.0 \lor 0.0.0.255$$
 
 | Tipo                   | Indirizzo esempio | Scope               | Instradabile?    |

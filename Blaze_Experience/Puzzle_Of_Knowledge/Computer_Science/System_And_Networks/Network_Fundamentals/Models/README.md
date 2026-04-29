@@ -1,5 +1,5 @@
 Data: 2026-04-21
-[Network_Fundamentals](../README.md)
+[Network_Fundamentals](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models
 ___
 # Models
@@ -12,6 +12,6 @@ Essi scompongono il complesso processo di trasmissione in **livelli gerarchici**
 
 ___
 # Indice
-* [ISO_OSI](./ISO_OSI.md)
-* [TCP_IP](./TCP_IP.md)
+* [ISO_OSI](ISO_OSI.md)
+* [TCP_IP](TCP_IP.md)
 ___
