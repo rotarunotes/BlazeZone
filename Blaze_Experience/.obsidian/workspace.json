@@ -249,7 +249,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.5
+    "width": 343.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -273,18 +274,19 @@
   },
   "active": "e435ddee9732cafb",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv6.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/CIDR.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/Subnetting_IPv4.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/README.md",
     "Modelli/segaSistemai/Networking/README.md",
     "Senza nome.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
     "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration_Block.md",
     "Setup_Archive/Templates/Protocols_Templete.md",
@@ -298,7 +300,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_LAS.md",
-    "Modelli/segaSistemai/Networking/Configuration/VLAN.md",
     "Setup_Archive/Viewable/Image/Pasted image 20260428141636.png",
     "Setup_Archive/Viewable/Image/Pasted image 20260428141147.png",
     "Setup_Archive/Viewable/Image/Pasted image 20260428131634.png",
