@@ -1,5 +1,5 @@
 Data: 2026-04-26
-[IP_Addressing](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/README.md)
+[IP_Addressing](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/IPv4
 ___
 # Index

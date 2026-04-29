@@ -1,5 +1,5 @@
 Data: 2026-04-22
-[Network_Fundamentals](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md)
+[Network_Fundamentals](../README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer
 ___
 # Physical_Layer

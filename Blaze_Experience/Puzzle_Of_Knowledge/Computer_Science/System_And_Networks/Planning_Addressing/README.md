@@ -1,5 +1,5 @@
 Data: 2026-04-24
-[System_And_Networks](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md)
+[System_And_Networks](../README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing
 ___
 # Planning_Addressing

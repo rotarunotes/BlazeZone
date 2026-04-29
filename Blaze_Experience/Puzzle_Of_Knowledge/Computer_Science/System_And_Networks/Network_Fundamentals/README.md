@@ -1,5 +1,5 @@
 Data: 2026-04-21
-[System_And_Networks](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md)
+[System_And_Networks](../README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals
 ___
 # Network_Fundamentals

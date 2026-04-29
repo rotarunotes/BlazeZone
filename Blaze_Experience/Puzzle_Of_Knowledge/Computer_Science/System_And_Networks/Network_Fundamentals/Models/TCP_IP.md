@@ -1,5 +1,5 @@
 Data: 2026-04-22
-[Models](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md)
+[Models](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models
 ___
 # Index
