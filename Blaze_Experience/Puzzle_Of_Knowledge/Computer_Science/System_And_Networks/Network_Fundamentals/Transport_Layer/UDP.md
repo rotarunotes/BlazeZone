@@ -237,7 +237,7 @@ show monitor capture CAP buffer brief
 ___
 # Troubleshooting
 
-**Sintomi comuni:**
+**Sintomi comuni**:
 
 | Sintomo / Errore                            | Possibili Cause Tecniche                            | Descrizione del Fenomeno                                                                                        |
 | ------------------------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -248,7 +248,7 @@ ___
 | **Latenza audio/video irregolare (jitter)** | Variazione nei tempi di consegna dei datagrammi     | Il ricevitore implementa un jitter buffer per riassorbire le variazioni; se troppo elevate, l'audio si degrada. |
 | **Query DNS timeout**                       | Firewall blocca UDP 53, server non raggiungibile    | Il resolver non riceve risposta entro il timeout e riprova (di solito 2–3 volte) prima di fallire.              |
 
-**Comandi di verifica:**
+**Comandi di verifica**:
 
 ``` Bash
 # Linux — socket UDP attivi
@@ -271,9 +271,9 @@ nstat -az        # Linux, più dettagliato
 iperf3 -u -c <host> -b 10M    # Test banda UDP con statistiche jitter/loss
 ```
 
-**Cause frequenti:**
+**Cause frequenti**:
 
-| Problema                    | Causa Tecnica                                                                   | Sintomo e Comportamento                                                                               |
+| Problema                        | Causa Tecnica                                                                       | Sintomo e Comportamento                                                                                   |
 | ------------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | **MTU Mismatch**                | Il datagramma supera la MTU del percorso.                                           | IP frammenta il datagramma; se un frammento si perde, l'intero datagramma viene scartato dal ricevitore.  |
 | **Firewall che blocca UDP**     | Il firewall è configurato per bloccare UDP o specifiche porte.                      | Nessuna risposta e nessun ICMP Port Unreachable (il firewall fa "drop silenzioso").                       |

@@ -452,7 +452,7 @@ debug ip routing
 ___
 # Troubleshooting
 
-**Sintomi comuni:**
+**Sintomi comuni**:
 
 | Sintomo / Errore                      | Possibili Cause Tecniche                                | Descrizione del Fenomeno                                                                                                                                                             |
 | ------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -463,7 +463,7 @@ ___
 | **Connessione intermittente**         | MTU mismatch, frammentazione bloccata dal firewall      | I pacchetti grandi (es. HTTPS) vengono scartati perché il DF bit è impostato e il firewall blocca i messaggi ICMP "Fragmentation Needed" — fenomeno noto come **Black Hole routing** |
 | **DHCP non assegna IP (169.254.x.x)** | Server DHCP irraggiungibile, relay agent assente        | Il client riceve un indirizzo APIPA — non c'è comunicazione con il server DHCP                                                                                                       |
 
-**Comandi di verifica:**
+**Comandi di verifica**:
 
 ```bash
 # Linux/Mac — configurazione IP locale
@@ -495,7 +495,7 @@ tcpdump -i eth0 icmp
 ping -M do -s 1472 192.168.1.1  # Linux: pacchetto 1472 byte + 28 header = 1500 MTU
 ```
 
-**Cause frequenti:**
+**Cause frequenti**:
 
 | Problema | Causa Tecnica | Sintomo e Comportamento |
 | -------- | ------------- | ----------------------- |

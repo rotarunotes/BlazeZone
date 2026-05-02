@@ -300,7 +300,7 @@ ip tcp intercept mode intercept
 ___
 # Troubleshooting
 
-**Sintomi comuni:**
+**Sintomi comuni**:
 
 | Sintomo / Errore                | Possibili Cause Tecniche                              | Descrizione del Fenomeno                                                                                                  |
 | ------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
@@ -311,7 +311,7 @@ ___
 | **"Connection refused"**        | Porta chiusa, Servizio non attivo                     | Il server è raggiungibile ma invia un **RST** perché nessun processo è in ascolto su quella specifica porta.              |
 | **"Connection timed out"**      | Routing errato, Firewall "Drop", Host down            | Il pacchetto **SYN** viene inviato ma cade nel vuoto (nessuna risposta); il client smette di provare dopo un certo tempo. |
 
-**Comandi di verifica:**
+**Comandi di verifica**:
 
 ```bash
 # Linux/Mac — stato connessioni TCP
@@ -334,7 +334,7 @@ ss -s
 cat /proc/net/tcp
 ```
 
-**Cause frequenti:**
+**Cause frequenti**:
 
 | Problema                   | Causa Tecnica                                                                       | Sintomo e Comportamento                                                                                                                          |
 | -------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
