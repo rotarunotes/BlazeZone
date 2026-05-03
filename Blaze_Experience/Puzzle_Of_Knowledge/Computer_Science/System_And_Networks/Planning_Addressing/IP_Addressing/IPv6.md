@@ -2,35 +2,42 @@ Data: 2026-05-01
 [IP_Addressing](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing
 ___
-
 # Index
 - [[#Internet Protocol version 6]]
-    - [[#Panoramica]]
+    - [[#Panoramica]]
 - [[#Versioni & Evoluzione]]
 - [[#Come Funziona]]
-  - [[#Struttura di un Indirizzo IPv6]]
-  - [[#Abbreviazione degli Indirizzi]]
-  - [[#Prefisso e Lunghezza del Prefisso]]
-  - [[#Tipi di Indirizzi]]
+    - [[#Struttura di un Indirizzo IPv6]]
+    - [[#Abbreviazione degli Indirizzi]]
+    - [[#Prefisso e Lunghezza del Prefisso]]
+    - [[#Tipi di Indirizzi]]
+    - [[#SLAAC]]
+    - [[#NDP]]
 - [[#Flusso Operativo]]
 - [[#Casi d'Uso Reali]]
 - [[#Limitazioni Tecniche]]
 - [[#PDU & Incapsulamento]]
 - [[#Struttura Del Pacchetto]]
-  - [[#Header]]
-  - [[#Body]]
-  - [[#Flags]]
+    - [[#Header]]
+    - [[#Body]]
+    - [[#Flags]]
+        - [[#Header base IPv6]]
+        - [[#Extension Header: Hop-by-Hop Options (Next Header 0x00)]]
+        - [[#Extension Header: Fragment Header (Next Header 0x2B)]]
+        - [[#Extension Header: Routing Header (Next Header 0x2B)]]
+        - [[#ICMPv6: Neighbor Discovery]]
+        - [[#SLAAC: Prefix Information Option]]
 - [[#Porte e Protocolli Correlati]]
 - [[#Confronto]]
 - [[#Aspetti di Sicurezza]]
-  - [[#Vulnerabilità Note]]
-  - [[#Attacchi Comuni]]
-  - [[#Contromisure]]
+    - [[#Vulnerabilità Note]]
+    - [[#Attacchi Comuni]]
+    - [[#Contromisure]]
 - [[#Comandi Cisco IOS]]
 - [[#Troubleshooting]]
 - [[#Note Esame]]
-  - [[#Da sapere a memoria]]
-  - [[#Trabocchetti frequenti]]
+    - [[#Da sapere a memoria]]
+    - [[#Trabocchetti frequenti]]
 - [[#Quick Reference Card]]
 
 ___
@@ -38,16 +45,16 @@ ___
 
 ## Panoramica
 
-| Caratteristica              | Dettaglio                                                                                                  |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| **Livello OSI**             | 3 — Rete                                                                                                   |
-| **Porta**                   | Identificato dal servizio                                                                                  |
-| **Scopo**                   | Identificare e instradare pacchetti su reti diverse tramite indirizzi logici a 128 bit, successore di IPv4 |
-| **RFC / Standard**          | RFC 8200                                                                                                   |
-| **Tipo Connessione**        | **Connectionless** (senza stato, ogni pacchetto è indipendente)                                            |
-| **Affidabilità**            | **Non affidabile** (best-effort delivery, nessun ACK a livello IP)                                         |
-| **PDU (Unità Dati)**        | **Pacchetto** (Packet)                                                                                     |
-| **Meccanismo di Controllo** | Hop Limit (sostituisce TTL), Extension Headers, Flow Label per QoS                                         |
+| Caratteristica              |                                                         Dettaglio                                                          |
+| --------------------------- | :------------------------------------------------------------------------------------------------------------------------: |
+| **Livello OSI**             |                                                          3 — Rete                                                          |
+| **Porta**                   |                                                 Identificato dal servizio                                                  |
+| **Scopo**                   | Identificare e instradare pacchetti tra dispositivi su reti diverse tramite indirizzi logici a 128 bit, successore di IPv4 |
+| **RFC / Standard**          |                                                          RFC 8200                                                          |
+| **Tipo Connessione**        |                              **Connectionless** (senza stato, ogni pacchetto è indipendente)                               |
+| **Affidabilità**            |                             **Non affidabile** (best-effort delivery, nessun ACK a livello IP)                             |
+| **PDU (Unità Dati)**        |                                                   **Pacchetto** (Packet)                                                   |
+| **Meccanismo di Controllo** |                             Hop Limit (sostituisce TTL), Extension Headers, Flow Label per QoS                             |
 ___
 # Versioni & Evoluzione
 
@@ -62,38 +69,38 @@ ___
 ___
 # Come Funziona
 
-IPv6 opera a livello 3 del modello OSI con gli stessi compiti fondamentali di IPv4 — **indirizzamento** e **instradamento** — ma con un design profondamente rivisto per eliminare i limiti strutturali del predecessore.
+IPv6 opera a livello 3 del modello OSI con gli stessi compiti fondamentali di IPv4:
+- **Indirizzamento**
+- **Instradamento**
+A con un design profondamente rivisto per eliminare i limiti strutturali del predecessore.
 ## Struttura di un Indirizzo IPv6
 Un indirizzo IPv6 è composto da **128 bit**, scritti in **notazione esadecimale** divisa in 8 gruppi da 16 bit (hextets), separati da due punti (`:`).
-
 ```
-
-Completo:   2001:0db8:0000:0000:0000:ff00:0042:8329
-
+Es: 2001:0db8:0000:0000:0000:ff00:0042:8329
 ```
 ## Abbreviazione degli Indirizzi
 Due regole permettono di abbreviare gli indirizzi:
-1. **Omissione degli zeri iniziali** in ogni gruppo:
+- **Omissione degli zeri iniziali** in ogni gruppo.
+- **Sostituzione di una sequenza consecutiva +di gruppi tutti zero** con `::` (solo una volta per indirizzo).
 ```
-
 2001:0db8:0000:0000:0000:ff00:0042:8329
-
 → 2001:db8:0:0:0:ff00:42:8329
 
-```
-2. **Sostituzione di una sequenza consecutiva +di gruppi tutti zero** con `::` (solo una volta per indirizzo):
-```
 2001:db8:0:0:0:ff00:42:8329
 → 2001:db8::ff00:42:8329
 ```
 ## Prefisso e Lunghezza del Prefisso
-IPv6 usa la notazione **CIDR** come IPv4: il numero dopo `/` indica i bit riservati alla rete.
-Non esiste una subnet mask separata.
+Un indirizzo IPv6 è sempre **128 bit totali**. Il `/numero` come la notazione CIDR dice semplicemente dove finisce la rete e dove inizia il dispositivo.
 ```
-2001:db8::/32   →  primi 32 bit = rete, restanti 96 bit = host/interfaccia
-```
-Il suffisso a 64 bit (Interface ID) identifica il dispositivo nella rete ed è spesso derivato dall'indirizzo MAC tramite il processo **EUI-64**.
+2001:db8:0:1:aabb:ccff:fedd:eeff/64
+|<------------ 128 bit totali ------------->|
 
+ 2001:0db8:0000:0001 : aabb:ccff:fedd:eeff
+|<--- parte RETE ---->|<-- Interface ID --->|
+        64 bit                64 bit
+```
+La parte di interfaccia (Interface ID) semplicemente **il nome univoco del dispositivo all'interno della rete**.
+- Identifica **una specifica scheda di rete**, non un dispositivo in generale. Se il tuo PC ha WiFi + Ethernet, ha **due Interface ID diversi**: due indirizzi IPv6 diversi.
 ## Tipi di Indirizzi
 IPv6 elimina il broadcast e introduce tre categorie:
 
@@ -112,14 +119,92 @@ IPv6 elimina il broadcast e introduce tre categorie:
 | **Unique Local (ULA)** | `fc00::/7`       | `10.x.x.x` / `192.168.x.x` | Rete privata, non instradabile su Internet |
 | **Loopback**           | `::1`            | `127.0.0.1`                | Test stack locale                          |
 | **Unspecified**        | `::`             | `0.0.0.0`                  | Sorgente DHCP iniziale / default route     |
-**Autoconfigurazione (SLAAC)**: Un host IPv6 può configurarsi autonomamente senza DHCP:
-1. Genera un indirizzo link-local (`fe80::` + Interface ID da MAC via EUI-64).
-2. Invia un **Router Solicitation** (RS) al multicast `ff02::2` (tutti i router).
-3. Il router risponde con un **Router Advertisement** (RA) contenente il prefisso di rete.
-4. L'host combina prefisso (64 bit) + Interface ID (64 bit) → indirizzo Global Unicast definitivo.
-**NDP (Neighbor Discovery Protocol)**: Sostituisce ARP usando messaggi ICMPv6:
-- **Neighbor Solicitation (NS)** → equivalente ARP Request (trova il MAC di un IP).
-- **Neighbor Advertisement (NA)** → equivalente ARP Reply (risponde con il proprio MAC).
+## SLAAC
+*Stateless Address Autoconfiguration* è il meccanismo con cui un host si **autoconfigura** un indirizzo IPv6 globale senza alcun server DHCP:
+- Genera da solo il suo Interface ID e lo combina col prefisso annunciato dal router.
+```
+  HOST                                    ROUTER
+   │                                        │
+1) │   Genera indirizzo link-local          │
+   │     MAC: AA:BB:CC:DD:EE:FF             │
+   │     EUI-64: AABB:CCFF:FEDD:EEFF        │
+   │     → fe80::aabb:ccff:fedd:eeff        │
+   │                                        │
+2) │   DAD (Duplicate Address Detection)    │
+   │     NS → ff02::1 "qualcuno ha questo?" │
+   │     (attende 1s, nessuna risposta)     │
+   │     → indirizzo link-local confermato  │
+   │                                        │
+3) │---- Router Solicitation -------------->│
+   │     src: fe80::aabb:ccff:fedd:eeff     │
+   │     dst: ff02::2 (tutti i router)      │
+   │     "dammi le info di rete"            │
+   │                                        │
+4) │<--- Router Advertisement --------------│
+   │      src: fe80::router                 │
+   │      dst: ff02::1 (tutti gli host)     │
+   │      prefisso: 2001:db8:1::/64         │
+   │      flag M=0, A=1 → usa SLAAC         │
+   │                                        │
+5) │     Costruisce indirizzo globale       │
+   │      prefisso (64 bit):                │
+   │       2001:0db8:0001:0000              │
+   │     Interface ID (64 bit, EUI-64):     │
+   │       aabb:ccff:fedd:eeff              │
+   │     → 2001:db8:1::aabb:ccff:fedd:eeff  │
+   │                                        │
+6) │    DAD sull'indirizzo globale          │
+   │     NS → ff02::1 "qualcuno ha questo?" │
+   │     (nessuna risposta → indirizzo OK)  │
+   │                                        │
+   │  ✓ Host configurato e pronto           │
+```
+1. **Genera link-local**: Crea `fe80::` + Interface ID derivato dal MAC tramite EUI-64, senza parlare con nessuno
+2. **DAD** *Duplicate Address Detection* **link-local**: Chiede alla rete "qualcuno usa già questo indirizzo?" aspetta 1s, se nessuno risponde lo conferma
+3. **Router Solicitation**: Chiede al router "dammi le info di rete", mandato in multicast a tutti i router (`ff02::2`)
+4. **Router Advertisement**: Il router risponde con il prefisso di rete (`2001:db8:1::/64`) e il flag `A=1` che significa "configurati da solo con SLAAC"
+5. **Costruisce indirizzo globale**: Combina il prefisso del router (64 bit) con il suo Interface ID (64 bit) → indirizzo globale completo
+6. **DAD globale**: Ripete il controllo duplicati sul nuovo indirizzo globale, se nessuno risponde è pronto per comunicare
+
+## NDP
+_Neighbor Discovery Protocol_ è il protocollo che sostituisce **ARP**: 
+- Invece di broadcast, usa messaggi **ICMPv6** mirati a indirizzi multicast specifici per risolvere IP → MAC.
+```
+  HOST A                                  HOST B
+(vuole il MAC di 2001:db8::2)           (ha IP 2001:db8::2)
+   │                                        │
+1) │  Calcola Solicited-Node Multicast      │
+   │  ff02::1:ff00:0002                     │
+   │  (ultimi 24 bit dell'IP target)        │
+   │                                        │
+2) │---- Neighbor Solicitation (NS) ------->│
+   │     src: 2001:db8::1                   │
+   │     dst: ff02::1:ff00:0002             │
+   │     ICMPv6 type 135                    │
+   │     "chi ha 2001:db8::2?               │
+   │      ti chiede 2001:db8::1"            │
+   │                                        │
+   │              (solo Host B ascolta      │
+   │               su quel multicast)       │
+   │                                        │
+3) │<--- Neighbor Advertisement (NA) -------│
+   │     src: 2001:db8::2                   │
+   │     dst: 2001:db8::1 (unicast)         │
+   │     ICMPv6 type 136                    │
+   │     "sono io, il mio MAC è             │
+   │      CC:DD:EE:FF:00:11"                │
+   │                                        │
+4) │  Aggiorna Neighbor Cache:              │
+   │  2001:db8::2 → CC:DD:EE:FF:00:11       │
+   │                                        │
+5) │---- pacchetto dati ------------------->│
+   │     (comunicazione diretta L2)         │
+```
+1. **Calcola il multicast**: Ricava l'indirizzo multicast dagli ultimi 24 bit dell'IP target, per non fare broadcast a tutta la rete
+2. **Manda NS** *Neighbor Solicitation*: Chiede "chi ha questo IP?" solo al gruppo multicast, quasi nessuno lo riceve tranne Host B
+3. **Riceve NA** *Neighbor Advertisement*: Host B risponde in unicast direttamente ad Host A con il suo MAC
+4. **Salva in cache**: Memorizza `IP → MAC` nella Neighbor Cache per non ripetere la procedura
+5. **Trasmette**: Ora ha il MAC, spedisce i dati direttamente a livello fisico
 
 ___
 # Flusso Operativo
@@ -158,7 +243,8 @@ ___
 
 - **Navigazione web nativa IPv6**: Molti grandi siti (Google, Facebook, Cloudflare) sono già raggiungibili via IPv6. Il browser risolve il nome via DNS (record AAAA invece di A), poi IPv6 instrada il traffico direttamente senza NAT, semplificando il percorso end-to-end.
 - **Reti IoT e dispositivi mobili**: Con miliardi di dispositivi connessi, IPv6 elimina la necessità di NAT assegnando a ogni dispositivo un indirizzo pubblico univoco. I sensori industriali e i dispositivi smart home comunicano direttamente senza middlebox.
-- **Transizione IPv4/IPv6 con dual stack**: La maggior parte delle reti aziendali usa oggi il **dual stack**: ogni dispositivo ha sia un indirizzo IPv4 che IPv6. Il traffico usa IPv6 quando disponibile e cade su IPv4 come fallback, garantendo compatibilità durante la migrazione.
+- **Transizione IPv4/IPv6 con dual stack**: La maggior parte delle reti aziendali usa oggi il **dual stack**: 
+	- Ogni dispositivo ha sia un indirizzo IPv4 che IPv6. Il traffico usa IPv6 quando disponibile e cade su IPv4 come fallback, garantendo compatibilità durante la migrazione.
 - **Reti mobili (4G/5G)**: Gli operatori mobili assegnano indirizzi IPv6 agli smartphone tramite SLAAC o DHCPv6. Il prefisso `/64` permette ai dispositivi di auto-configurarsi appena si collegano a una nuova cella.
 - **Data center e cloud**: Provider come AWS, Azure e GCP assegnano indirizzi IPv6 alle istanze, permettendo comunicazione diretta tra server senza traduzione NAT e semplificando le politiche di sicurezza.
 
@@ -168,7 +254,7 @@ ___
  - **Transizione lenta e costosa**: Nonostante la disponibilità da decenni, l'adozione di IPv6 su Internet è intorno al 40-45%. Moltissimi apparati legacy, firewall e applicazioni supportano solo IPv4, rendendo la migrazione complessa e graduale.
 - **Nessuna backward compatibility nativa con IPv4**: IPv6 e IPv4 sono protocolli separati. I meccanismi di transizione (dual stack, tunneling, NAT64) aggiungono complessità operativa e possono introdurre problemi di performance e sicurezza.
 - **Complessità degli indirizzi**: Gli indirizzi a 128 bit in esadecimale sono più difficili da memorizzare, digitare e fare troubleshooting rispetto a IPv4. L'errore umano nella configurazione manuale è più probabile.
-- **NDP vulnerabile a spoofing**: Il Neighbor Discovery Protocol non include autenticazione nativa. Un attaccante sulla stessa rete può inviare falsi Router Advertisement o Neighbor Advertisement (SEcure Neighbor Discovery — SEND — è raramente implementato).
+- **NDP vulnerabile a spoofing**: Il Neighbor Discovery Protocol non include autenticazione nativa. Un attaccante sulla stessa rete può inviare falsi Router Advertisement o Neighbor Advertisement (*SEcure Neighbor Discovery* — SEND — è raramente implementato).
 - **Frammentazione solo all'origine**: In IPv6 i router intermedi non frammentano i pacchetti. Se il mittente non usa Path MTU Discovery e invia pacchetti troppo grandi, vengono scartati con ICMPv6 "Packet Too Big". La MTU minima garantita è 1280 byte.
 - **Gestione degli indirizzi più complessa**: La notazione esadecimale, le regole di abbreviazione e la distinzione tra link-local/ULA/global unicast richiedono una comprensione più approfondita rispetto al classful IPv4.
 
@@ -180,33 +266,28 @@ ___
 - **Incapsula**: Segmento TCP, Datagramma UDP, o altri protocolli L4 (ICMPv6, OSPFv3…)
 
 ```
-
 L1 [ Header Cavo/Wi-Fi ] PDU: Bit
-
   L2 [ Header Ethernet ] PDU: Frame
-
       L3 [ Header IPv6 ] PDU: Pacchetto
-
           L4-7 [ Payload ]
-
 ```
 
 ___
 # Struttura Del Pacchetto
 
 ## Header
-L'header IPv6 è **fisso a 40 byte** (a differenza dei 20–60 byte variabili di IPv4). Le funzioni opzionali sono delegate agli **Extension Headers**, inseriti tra l'header principale e il payload.
+È **fisso** a 40 byte (a differenza dei 20–60 byte variabili di IPv4).
 
-| Campo | Dimensione | Descrizione |
-| --- | --- | --- |
-| **Version** | 4 bit | Versione IP (valore = 6 per IPv6) |
-| **Traffic Class** | 8 bit | Priorità e QoS (equivalente DSCP/ToS di IPv4) |
-| **Flow Label** | 20 bit | Identifica un flusso di pacchetti per trattamento QoS consistente |
-| **Payload Length** | 16 bit | Dimensione del payload in byte (extension headers inclusi, header principale escluso) |
-| **Next Header** | 8 bit | Identifica il protocollo successivo (TCP=6, UDP=17, ICMPv6=58, Extension Header…) |
-| **Hop Limit** | 8 bit | Equivalente del TTL di IPv4 — decrementato di 1 ad ogni router |
-| **Source Address** | 128 bit | Indirizzo IPv6 del mittente |
-| **Destination Address** | 128 bit | Indirizzo IPv6 del destinatario |
+| Campo                   | Dimensione | Descrizione                                                                           |
+| ----------------------- | ---------- | ------------------------------------------------------------------------------------- |
+| **Version**             | 4 bit      | Versione IP (valore = 6 per IPv6)                                                     |
+| **Traffic Class**       | 8 bit      | Priorità e QoS (equivalente DSCP/ToS di IPv4)                                         |
+| **Flow Label**          | 20 bit     | Identifica un flusso di pacchetti per trattamento QoS consistente                     |
+| **Payload Length**      | 16 bit     | Dimensione del payload in byte (extension headers inclusi, header principale escluso) |
+| **Next Header**         | 8 bit      | Identifica il protocollo successivo (TCP=6, UDP=17, ICMPv6=58, Extension Header…)     |
+| **Hop Limit**           | 8 bit      | Equivalente del TTL di IPv4 — decrementato di 1 ad ogni router                        |
+| **Source Address**      | 128 bit    | Indirizzo IPv6 del mittente                                                           |
+| **Destination Address** | 128 bit    | Indirizzo IPv6 del destinatario                                                       |
 
 ```
 
@@ -236,20 +317,58 @@ L'header IPv6 è **fisso a 40 byte** (a differenza dei 20–60 byte variabili di
 
 ```
 ## Body
-- Dati dei Protocolli di Trasporto: TCP, UDP
-- Messaggi di Controllo e Diagnostica: ICMPv6 (include le funzioni di ARP e IGMP di IPv4)
-- Extension Headers (se presenti): Hop-by-Hop Options, Routing, Fragment, Destination Options, Authentication (AH), ESP
+- **Dati dei Protocolli di Trasporto**: TCP, UDP
+- **Messaggi di Controllo e Diagnostica**: ICMPv6 (include le funzioni di ARP e IGMP di IPv4)
+- **Extension Headers** (se presenti): Hop-by-Hop Options, Routing, Fragment, Destination Options, Authentication (AH), ESP
 ## Flags
 IPv6 non ha un campo Flags separato come IPv4. Le funzioni equivalenti sono gestite tramite **Extension Headers** e il campo **Next Header**:
+### Header base IPv6
 
-| Extension Header                         | Next Header ID | Equivalente IPv4     | Scopo                                                     |
-| ---------------------------------------- | -------------- | -------------------- | --------------------------------------------------------- |
-| **Hop-by-Hop Options**                   | 0              | Options field        | Opzioni esaminate da ogni router lungo il percorso        |
-| **Routing**                              | 43             | Loose Source Routing | Specifica un percorso parziale verso la destinazione      |
-| **Fragment**                             | 44             | Flags DF/MF + Offset | Frammentazione — solo il mittente può frammentare in IPv6 |
-| **Destination Opions**                   | 60             | Options field        | Opzioni esaminate solo dal destinatario finale            |
-| **Authentication (AH)**                  | 51             | IPsec AH             | Autenticazione e integrità del pacchetto                  |
-| **Encapsulating Security Payload (ESP)** | 50             | IPsec ESP            | Cifratura e autenticazione del payload                    |
+| Bit   | Flag       | Nome Esteso                        | Descrizione e Utilizzo                                                                                                                        |
+| ----- | ---------- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0–3   | **Version**    | Versione IP                        | Sempre `0110` (6). Identifica il pacchetto come IPv6.                                                                                         |
+| 4–11  | **DSCP**       | Differentiated Services Code Point | Primi 6 bit del campo Traffic Class (8 bit). Indica la classe di servizio QoS (es. EF, AF, BE) per prioritizzare il traffico.                 |
+| 12–13 | **ECN**        | Explicit Congestion Notification   | Ultimi 2 bit del Traffic Class. Segnala la congestione senza scartare pacchetti. `00`=non-ECT, `01`/`10`=ECT, `11`=CE (congestione rilevata). |
+| 14–33 | **Flow Label** | Etichetta di flusso                | 20 bit. Identifica un flusso tra sorgente e destinazione per QoS o MPLS. Valore `0` = nessun flusso specificato.                              |
+### Extension Header: Hop-by-Hop Options (Next Header `0x00`)
+
+| Bit | Flag | Nome Esteso | Descrizione e Utilizzo                                                                                                                  |
+| --- | ---- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| 0–1 | **act**  | Action bits | Azione se l'opzione non è riconosciuta: `00`=ignora, `01`=scarta, `10`=scarta + ICMPv6 (se non multicast), `11`=scarta + ICMPv6 sempre. |
+| 2   | **chg**  | Change bit  | `0` = il dato dell'opzione non cambia in transito. `1` = può essere modificato dai router intermedi (es. Jumbogram).                    |
+### Extension Header: Fragment Header (Next Header `0x2B`)
+
+| Bit   | Flag              | Nome Esteso                      | Descrizione e Utilizzo                                                                       |
+| ----- | ----------------- | -------------------------------- | -------------------------------------------------------------------------------------------- |
+| 3–15  | **Fragment Offset** | Offset del frammento             | 13 bit. Indica la posizione del frammento rispetto al payload originale, in unità di 8 byte. |
+| 16–18 | **Res**             | Reserved                         | 2 bit riservati, devono essere `0`.                                                          |
+| 19    | **M**               | More Fragments                   | `1` = seguono altri frammenti. `0` = ultimo frammento (o unico). Analogo al flag MF di IPv4. |
+| 20–51 | **Identification**  | Identificatore di frammentazione | 32 bit. Valore univoco che accomuna tutti i frammenti dello stesso datagramma originale.     |
+### Extension Header: Routing Header (Next Header `0x2B`)
+
+| Bit  | Flag              | Nome Esteso        | Descrizione e Utilizzo                                                                                                                     |
+| ---- | ----------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| 0–7  | **Routing Type**  | Tipo di routing    | Indica il tipo di instradamento sorgente. Tipo `0` (deprecato, RFC 5095), Tipo `2` (Mobile IPv6), Tipo `3` (RPL Source Routing, RFC 6554). |
+| 8–15 | **Segments Left** | Segmenti rimanenti | Numero di nodi intermedi ancora da visitare prima della destinazione finale. Decrementato ad ogni hop.                                     |
+### ICMPv6: Neighbor Discovery
+
+| Bit | Flag  | Nome Esteso                   | Descrizione e Utilizzo                                                                                       |
+| --- | ----- | ----------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| 0   | **M**   | Managed Address Configuration | Nel Router Advertisement: `1` = i client devono usare DHCPv6 per ottenere indirizzi.                         |
+| 1   | **O**   | Other Configuration           | Nel Router Advertisement: `1` = usare DHCPv6 per configurazioni aggiuntive (DNS, ecc.) ma non per indirizzi. |
+| 2   | **H**   | Home Agent                    | Nel Router Advertisement (Mobile IPv6): `1` = il router è un Home Agent.                                     |
+| 3   | **Prf** | Default Router Preference     | 2 bit. Preferenza del router di default: `01`=High, `00`=Medium, `11`=Low.                                   |
+| 5   | **P**   | Proxy                         | Nel Neighbor Advertisement: indica funzione di proxy NDP.                                                    |
+| 6   | **R**   | Router flag                   | Nel Neighbor Advertisement: `1` = il mittente è un router.                                                   |
+| 7   | **S**   | Solicited flag                | Nel Neighbor Advertisement: `1` = risposta a una Neighbor Solicitation.                                      |
+| 8   | **O**   | Override flag                 | Nel Neighbor Advertisement: `1` = sovrascrive la cache NDP esistente con il nuovo indirizzo MAC.             |
+### SLAAC: Prefix Information Option
+
+| Bit | Flag | Nome Esteso         | Descrizione e Utilizzo                                                                      |
+| --- | ---- | ------------------- | ------------------------------------------------------------------------------------------- |
+| 0   | **L**  | On-Link flag        | `1` = il prefisso è on-link (raggiungibile direttamente senza router).                      |
+| 1   | **A**  | Autonomous flag     | `1` = il prefisso può essere usato per la configurazione automatica dell'indirizzo (SLAAC). |
+| 2   | **R**  | Router Address flag | Usato in Mobile IPv6: `1` = il prefisso contiene l'indirizzo completo del router.           |
 ___
 # Porte e Protocolli Correlati
 
@@ -274,12 +393,12 @@ ___
 | **Header**              | Fisso (40 byte), senza checksum        | Variabile (20–60 byte), checksum incluso |
 | **Frammentazione**      | Solo host sorgente                     | Router e host                            |
 | **Broadcast**           | No (sostituito da multicast)           | Sì                                       |
-| **Risoluzione MAC**     | NDP / ICMPv6 (multicast)               | ARP (broadcast L2)                       |
-| **IPsec**               | Nativo nel design                      | Opzionale                                |
-| **Autoconfigurazione**  | SLAAC nativa (senza server)            | Solo DHCP o manuale                      |
-| **NAT**                 | Non necessario (indirizzi sufficienti) | Quasi obbligatorio (indirizzi esauriti)  |
-| **Checksum header**     | Assente (delegato a L4)                | Presente (16 bit)                        |
+| **ARP**                 | No (sostituito da NDP/ICMPv6)          | Sì (broadcast L2)                        |
+| **IPsec**               | Nativo (obbligatorio nel design)       | Opzionale                                |
 | **QoS**                 | Traffic Class + Flow Label (28 bit)    | ToS/DSCP (8 bit)                         |
+| **Configurazione**      | Manuale, DHCPv6, o SLAAC (autoconfig)  | Manuale o DHCP                           |
+| **Adozione**            | ~40% e in crescita                     | ~96% del traffico Internet               |
+| **QoS**                 | ToS/DSCP (8 bit)                       | Traffic Class + Flow Label (28 bit)      |
 ___
 # Aspetti di Sicurezza
 

@@ -150,6 +150,7 @@ L1 [ Header Cavo/Wi-Fi ] PDU: Bit
 ___
 # Struttura Del Pacchetto
 ## Header
+È **variabili** dai 20–60 byte.
 
 | Campo                     | Dimensione | Descrizione                                                    |
 | ------------------------- | ---------- | -------------------------------------------------------------- |
@@ -200,8 +201,8 @@ ___
 I dati effettivi dell'applicazione (es. HTTP, FTP, TLS).
 ## Flags
 
-| Bit | Flag    | Nome Esteso               | Descrizione e Utilizzo                                                                              |
-| --- | ------- | ------------------------- | --------------------------------------------------------------------------------------------------- |
+| Bit | Flag    | Nome Esteso                 | Descrizione e Utilizzo                                                                              |
+| --- | ------- | --------------------------- | --------------------------------------------------------------------------------------------------- |
 | 8   | **NS**  | *Nonce Sum*                 | Protezione contro la cancellazione accidentale dei segnali di congestione.                          |
 | 9   | **CWR** | *Congestion Window Reduced* | Il mittente conferma di aver ridotto la finestra di invio dopo una congestione.                     |
 | 10  | **ECE** | *ECN Echo*                  | Notifica che è stata rilevata congestione nella rete (livello IP).                                  |
@@ -227,7 +228,6 @@ ___
 | **143**  | **7** (Applicazione) | IMAP       | Gestione email remota                |
 | **443**  | **7** (Applicazione) | HTTPS      | Web cifrato (TLS su TCP)             |
 | **3389** | **7** (Applicazione) | RDP        | Desktop remoto Windows               |
-****
 ___
 # Confronto
 

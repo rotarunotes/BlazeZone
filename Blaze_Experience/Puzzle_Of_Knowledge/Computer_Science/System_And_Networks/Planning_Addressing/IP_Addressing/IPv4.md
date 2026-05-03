@@ -215,7 +215,7 @@ ___
        Host A                            Router                   Host B
    192.168.1.10/24                   gateway locale             10.0.0.5/8
          |                                |                         |
-1)       |dest: 10.0.0.5≠ rete locale     |                         |
+1)       |  dest: 10.0.0.5≠ rete locale   |                         |
          |                                |                         |
          |                                |                         |
          |------ Pacchetto IP ----------->|                         |
@@ -276,6 +276,7 @@ ___
 # Struttura Del Pacchetto
 
 ## Header
+È **variabile** dai 20–60 byte.
 
 | Campo | Dimensione | Descrizione |
 | ----- | ---------- | ----------- |
@@ -339,7 +340,7 @@ ___
 
 | Porta    | Livello OSI          | Protocollo    | Uso                                                |
 | -------- | -------------------- | ------------- | -------------------------------------------------- |
-| **53**   | **7** (Applicazione) | DNS           | Query standard (risoluzione nomi)                  |
+| **53**   | **7**(Applicazione)  | DNS           | Query standard (risoluzione nomi)                  |
 | **67**   | **7** (Applicazione) | DHCP (Server) | Ascolto richieste client per assegnazione IP       |
 | **68**   | **7** (Applicazione) | DHCP (Client) | Ricezione configurazione dal server DHCP           |
 | **69**   | **7** (Applicazione) | TFTP          | Trasferimento file semplice (senza autenticazione) |
