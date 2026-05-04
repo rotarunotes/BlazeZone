@@ -580,9 +580,3 @@ PROTOCOLLI (campo Protocol):
 ```
 
 ___
-
-
-
-
-
-

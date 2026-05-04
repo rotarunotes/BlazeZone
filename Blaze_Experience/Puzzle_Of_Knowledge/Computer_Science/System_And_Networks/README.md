@@ -1,4 +1,4 @@
-Data: 2026-04-22
+wData: 2026-04-22
 [Computer_Science](../README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks
 ___

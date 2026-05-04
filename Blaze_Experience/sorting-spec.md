@@ -79,8 +79,8 @@ sorting-spec: |-
     README
     /folders
     IP_Addressing
-    Core_Protocols
     Routing_Logic
+    Core_Protocols
     WAN_Technologies
     ...
 

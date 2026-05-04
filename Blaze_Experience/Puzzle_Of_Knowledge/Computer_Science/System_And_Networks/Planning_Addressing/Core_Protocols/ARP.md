@@ -57,6 +57,10 @@ ___
 ___
 # Come Funziona
 
+Per comunicare direttamente all’interno di una LAN, due dispositivi (host) devono conoscere:
+- **Indirizzo IP (logico)**: per l’instradamento a livello di rete (es. `192.168.1.10`)
+- **Indirizzo MAC (fisico)**: per la consegna dei frame a livello di collegamento (es. `AA:BB:CC:11:22:33`)
+  
 ARP risolve il problema fondamentale del livello di rete: per inviare un frame Ethernet a destinazione, lo switch ha bisogno del **MAC address** (_Media Access Control_), ma il mittente conosce solo l'**IP address** del destinatario. Il meccanismo core si basa su due messaggi:
 1. **ARP Request (Broadcast)**
    Il mittente non conosce il MAC dell'host di destinazione. Invia un frame Ethernet in **broadcast** (`FF:FF:FF:FF:FF:FF`) su tutta la LAN. Il messaggio contiene:
@@ -67,7 +71,11 @@ ARP risolve il problema fondamentale del livello di rete: per inviare un frame E
 2. **ARP Reply (Unicast)**
    L'host che riconosce il proprio IP risponde con un messaggio **unicast** direttamente al mittente, comunicando il proprio MAC address.
 3. **ARP Cache**
-   Dopo la risoluzione, il mittente salva la coppia IP → MAC nella propria **ARP cache** con un TTL (tipicamente 60–300 secondi su sistemi moderni). Le richieste successive per lo stesso IP vengono soddisfatte dalla cache, senza inviare broadcast.
+   Ogni host mantiene una **ARP Cache**, con le associazioni IP-MAC conosciute.
+	- **ARP Cache Statiche**: configurate manualmente da un amministratore di rete e restano permanentemente
+	- **ARP Cache Dinamiche**: Rimangono nella cache solo per un certo periodo di tempo, detto TTL (*Time To Live*), tipicamente 60–300 secondi su sistemi moderni. Se non vengono più usate, **scadono** e vengono eliminate dalla cache.
+   Le richieste successive per lo stesso IP vengono soddisfatte dalla cache, senza inviare broadcast.	
+
 ___
 # Flusso Operativo
 
@@ -107,16 +115,16 @@ Host A (192.168.1.10)              Host B (192.168.1.20)         Altr
 ___
 # Casi d'Uso Reali
 
-- **Navigazione web in LAN**: Quando il PC vuole raggiungere il gateway (es. `192.168.1.1`), controlla prima la ARP cache. Se non trova il MAC del router, invia un ARP Request in broadcast. Solo dopo aver ricevuto il MAC del gateway può costruire il frame Ethernet e inviare il pacchetto IP verso Internet.
+- **Navigazione web in LAN**: Quando il PC vuole raggiungere il gateway (es. `192.168.1.254`), controlla prima la ARP cache. Se non trova il MAC del router, invia un ARP Request in broadcast. Solo dopo aver ricevuto il MAC del gateway può costruire il frame Ethernet e inviare il pacchetto IP verso Internet.
 - **Boot di una macchina (ARP Probe/Announce)**: Al boot, un host moderno invia un **ARP Probe** (ARP Request con IP sorgente `0.0.0.0`) per verificare che il proprio IP non sia già in uso. Se nessuno risponde, invia un **Gratuitous ARP** per aggiornare la cache di tutti gli host vicini con il proprio IP/MAC.
 - **Failover/clustering (VRRP, HSRP)**: Quando un router backup subentra al primario, invia un **Gratuitous ARP** per aggiornare le ARP cache di tutti gli host LAN, redirigendo il traffico verso il proprio MAC senza aspettare la scadenza del TTL delle cache.
 ___
 # Limitazioni Tecniche
 
-- **Limitato alla stessa subnet (LAN)**: ARP opera esclusivamente sulla rete locale. Per comunicare con host su subnet diverse, il mittente invia i frame al **default gateway**, di cui deve risolvere il MAC via ARP — non all'host remoto direttamente.
+- **Limitato alla stessa subnet (LAN)**: ARP opera esclusivamente sulla rete locale. Per comunicare con host su subnet diverse, il mittente invia i frame al **default gateway**, di cui deve risolvere il MAC via ARP, non all'host remoto direttamente.
 - **Non scala in reti grandi**: Il meccanismo broadcast genera traffico su ogni host della LAN ad ogni risoluzione. In reti con migliaia di host, il volume di ARP Request può diventare significativo (ARP storm).
-- **Cache con TTL fisso — nessuna notifica di cambio**: Se un host cambia IP o MAC (es. sostituzione NIC, VM live migration), le cache ARP degli altri host rimangono errate fino alla scadenza del TTL, causando interruzioni temporanee.
-- **Assenza di autenticazione**: ARP non prevede nessun meccanismo di verifica dell'identità del rispondente. Qualsiasi host può rispondere a un ARP Request con informazioni false — alla base dell'ARP Spoofing.
+- **Cache con TTL fisso, nessuna notifica di cambio**: Se un host cambia IP o MAC, le cache ARP degli altri host rimangono errate fino alla scadenza del TTL, causando interruzioni temporanee.
+- **Assenza di autenticazione**: ARP non prevede nessun meccanismo di verifica dell'identità del rispondente. Qualsiasi host può rispondere a un ARP Request con informazioni false, alla base dell'ARP Spoofing.
 - **Non supporta IPv6**: ARP è specifico per IPv4 su reti Ethernet/IEEE 802. IPv6 utilizza **NDP** (Neighbor Discovery Protocol) basato su ICMPv6, che supera molte limitazioni di ARP.
 - **Dipendenza dalla dimensione del broadcast domain**: Un broadcast domain molto ampio (es. VLAN non segmentata con centinaia di host) amplifica il traffico ARP non necessario.
 ___
@@ -133,23 +141,26 @@ L1 [ Segnale Elettrico/Ottico/RF ] PDU: Bit
               (nessun payload applicativo — ARP non trasporta dati utente)
 ```
 
-> **Nota:** ARP è classificato a **livello 2** (Data Link), ma opera al confine tra L2 e L3, poiché gestisce la mappatura tra indirizzi L3 (IP) e L2 (MAC). Alcune fonti lo definiscono protocollo "Layer 2.5".
+
+> [!Note] Nota
+> ARP è classificato a **livello 2** (Data Link), ma opera al confine tra L2 e L3, poiché gestisce la mappatura tra indirizzi L3 (IP) e L2 (MAC). Alcune fonti lo definiscono protocollo "Layer 2.5".
 
 ___
 # Struttura Del Pacchetto
 ## Header
-ARP non ha una separazione netta tra header e body: il pacchetto è composto da **8 campi fissi** (28 byte totali per IPv4 su Ethernet).
+È **Fisso** 28 byte.
 
-| Campo                          | Dimensione  | Descrizione                                                                         |             |                                                 |
-| ------------------------------ | ----------- | ----------------------------------------------------------------------------------- | ----------- | ----------------------------------------------- |
-| **HTYPE** (Hardware Type)      | 16 bit      | Tipo di rete fisica. `1` = Ethernet                                                 |             |                                                 |
-| **PTYPE** (Protocol Type)      | 16 bit      | Protocollo L3 usato. `0x0800` = IPv4            **HLEN** (Hardware Addr Len)   n)   | 8 bit       | Lunghezza MAC address in byte. `6` per Ethernet |
-| **PLEN** (Protocol Addr Len)   | 8 bit       | Lunghezza indirizzo IP in byte. `4` per IPv4                                        |             |                                                 |
-| **OPER** (Operation)           | 16 bit      | `1` = ARP Request; `2` = ARP Reply; `3` = RARP Request; `4` = RARP Reply            |             |                                                 |
-| **SHA** (Sender HW Address)    | 48 bit      | MAC del mittente                                                                    |             |                                                 |
-| **SPA** (Sender Proto Addr)    | 32 bit      | IP del mittente                                                                     |             |                                                 |
-| **THA** (Target HW Address)    | 48 bit      | MAC del destinatario. `00:00:00:00:00:00` nella Request (sconosciuto)               |             |                                                 |
-| **TPA** (Target Proto Addr)    | 32 bit      | IP del destinatario cercato                                                         |             |                                                 |
+| Campo     | Dimensione (Byte) | Descrizione                                            |
+| --------- | ----------------- | ------------------------------------------------------ |
+| **HTYPE** | 2 byte            | *Hardware Type* Tipo di rete (es. Ethernet = 1)        |
+| **PTYPE** | 2 byte            | *Protocol Type* Tipo di protocollo (es. IPv4 = 0x0800) |
+| **HLEN**  | 1 byte            | *Hardware Size* Lunghezza indirizzo MAC (6 byte)       |
+| **PLEN**  | 1 byte            | *Protocol Size* Lunghezza indirizzo IPv4 (4 byte)      |
+| **OPER**  | 2 byte            | *Opcode* Operazione (1 = Request, 2 = Reply)           |
+| **SHA**   | 6 byte            | *Sender MAC* Indirizzo MAC del mittente                |
+| **SPA**   | 4 byte            | *Sender IP* Indirizzo IP del mittente                  |
+| **THA**   | 6 byte            | *Target MAC* Indirizzo MAC del destinatario            |
+| **TPA**   | 4 byte            | *Target IP* Indirizzo IP del destinatario              |
 
 ```
  0                   1                   2                   3
@@ -178,37 +189,30 @@ ARP non ha una separazione netta tra header e body: il pacchetto è composto da 
 ```
 
 ## Body
-ARP non ha un body separato: tutti i dati significativi sono contenuti nei campi fissi. Non trasporta payload applicativo.
+ARP non ha una separazione netta tra header e body. Non trasporta payload applicativo.
 ## Flags
 ARP non usa flag nel senso tradizionale. Il campo equivalente è **OPER**:
-
-| OPER | Tipo Messaggio    | Direzione | Descrizione |
-| ---- | ----------------- | --------- | ----------- |
-| `1`  | **ARP Request**   | Broadcast | "Chi ha l'IP X? Rispondimi con il tuo MAC" |
-| `2`  | **ARP Reply**     | Unicast   | "Sono io! Il mio MAC è Y" |
-| `3`  | **RARP Request**  | Broadcast | Obsoleto — chiedeva IP a partire da MAC (rimpiazzato da DHCP) |
-| `4`  | **RARP Reply**    | Unicast   | Obsoleto — risposta del RARP server |
 ___
 # Porte e Protocolli Correlati
 
-| EtherType / Porta     | Livello OSI           | Protocollo          | Uso                                               |
-| --------------------- | --------------------- | ------------------- | ------------------------------------------------- |
-| `0x0806`              | **2** (Data Link)     | ARP                 | Risoluzione IP → MAC su IPv4                      |
-| `0x0800`              | **3** (Rete)          | IPv4                | Protocollo di rete trasportato dal frame Ethernet |
-| `0x86DD`              | **3** (Rete)          | IPv6                | Usa NDP al posto di ARP                           |
-| `67/68` UDP           | **7** (Applicazione)  | DHCP                | Assegnazione IP dinamica (sostituisce RARP)       |
-| ICMPv6 tipo 135/136   | **3** (Rete)          | NDP (IPv6)          | Equivalente di ARP per IPv6                       |
+| Porta       | Livello OSI          | Protocollo          | Uso                                               |
+| ----------- | -------------------- | ------------------- | ------------------------------------------------- |
+|             | **2** (Data Link)    | ARP                 | Risoluzione IP → MAC su IPv4                      |
+|             | **3** (Rete)         | IPv4                | Protocollo di rete trasportato dal frame Ethernet |
+| **67 / 68** | **7** (Applicazione) | DHCP                | Assegnazione IP dinamica (sostituisce RARP)       |
+|             | **3** (Rete)         | IPv6                | Usa NDP al posto di ARP                           |
+|             | **3** (Rete)         | NDP (IPv6)          | Equivalente di ARP per IPv6                       |
 ___
 # Confronto
 
-  **ARP vs NDP (IPv6)**
+  **ARP  (IPv4) vs NDP (IPv6)**
 
-| Caratteristica               | ARP (IPv4)                                     | NDP — Neighbor Discovery (IPv6)                         |
+| Caratteristica               | ARP (IPv4)                                     | NDP                                                     |
 | ---------------------------- | ---------------------------------------------- | ------------------------------------------------------- |
-| **Protocollo base**          | Protocollo indipendente (EtherType `0x0806`)   | Basato su ICMPv6 (tipi 135/136)                         |
+| **Protocollo base**          | Protocollo indipendente (EtherType `0x0806`)   | Basato su ICMPv6 (tipi 135/136)                         |
 | **Meccanismo discovery**     | Broadcast L2                                   | Multicast Solicited-Node (più efficiente)               |
-| **Autenticazione**           | Nessuna                                        | Supporta **SeND** (Secure Neighbor Discovery)           |
-| **Rilevamento duplicati**    | ARP Probe (RFC 5227)                           | DAD — Duplicate Address Detection integrata             |
+| **Autenticazione**           | Nessuna                                        | Supporta **SeND** *(Secure Neighbor Discove*ry)         |
+| **Rilevamento duplicati**    | ARP Probe (RFC 5227)                           | DAD — *Duplicate Address Detection* integrata           |
 | **Scalabilità**              | Bassa (broadcast su tutta LAN)                 | Alta (multicast limita i destinatari)                   |
 | **Configurazione router**    | Non gestita                                    | Router Advertisement/Solicitation integrati             |
 | **Stateless Autoconf**       | Non supportata                                 | Supportata (SLAAC)                                      |
@@ -219,18 +223,17 @@ ___
 
 ## Vulnerabilità Note
 - **Assenza di autenticazione**: ARP non verifica l'identità di chi risponde. Qualsiasi host può inviare un ARP Reply con informazioni false senza che il ricevente possa accorgersene.
-- **Cache update non verificato**: I sistemi operativi aggiornano la ARP cache anche in risposta a Reply **non richiesti** (Gratuitous ARP). Questo è intenzionale per supportare failover, ma apre la porta al poisoning.
+- **Cache update non verificato**: I sistemi operativi aggiornano la ARP cache anche in risposta a Reply **non richiesti** (Gratuitous ARP). Questo è intenzionale per supportare failover (meccanismo di ridondanza che garantisce la continuità del servizio), ma apre la porta al poisoning (è un attacco in cui un hacker introduce dati falsi o corrotti in una "tabella di memoria" detta anche cache, di un protocollo).
 - **Broadcast domain exposure**: Tutti gli host sulla stessa VLAN ricevono ogni ARP Request, aumentando la superficie di attacco.
 ## Attacchi Comuni
 - **ARP Spoofing / ARP Poisoning**: L'attaccante invia ARP Reply fasulle per associare il proprio MAC all'IP di un host legittimo (es. il gateway). Le vittime aggiornano la cache con il MAC dell'attaccante, che intercetta tutto il traffico destinato a quell'IP.
-- **Man-in-the-Middle (MitM)**: Conseguenza diretta dell'ARP Spoofing. L'attaccante si posiziona tra due host e può leggere, modificare o bloccare il traffico in transito.
-- **Denial of Service (ARP DoS)**: Invio massiccio di ARP Reply fasulle per corrompere le cache di tutti gli host, causando interruzioni di connettività.
+- **MitM (*Man-in-the-Middle*)**: Conseguenza diretta dell'ARP Spoofing. L'attaccante si posiziona tra due host e può leggere, modificare o bloccare il traffico in transito.
+- **ARP DoS (*Denial of Service*)**: Invio massiccio di ARP Reply fasulle per corrompere le cache di tutti gli host, causando interruzioni di connettività.
 - **ARP Storm**: Numero elevato di ARP Request simultanee (es. da broadcast storm o misconfiguration) che satura la banda della LAN e la CPU degli host.
 - **MAC Flooding (correlato)**: Riempimento della CAM table dello switch con MAC fittizi, forzandolo in modalità hub e facilitando lo sniffing del traffico.
-
 ## Contromisure
 - **Dynamic ARP Inspection (DAI)**: Funzionalità degli switch managed (es. Cisco). Lo switch valida ogni messaggio ARP confrontandolo con la tabella **DHCP Snooping Binding** (IP ↔ MAC ↔ porta). I messaggi non corrispondenti vengono scartati. Configurazione: `ip arp inspection vlan <id>`.
-- **DHCP Snooping**: Prerequisito per DAI. Lo switch registra le assegnazioni DHCP (IP, MAC, porta, VLAN) creando una binding table trusted.
+- **DHCP Snooping**: Prerequisito per DAI *Dynamic ARP Inspection*. Lo switch registra le assegnazioni DHCP (IP, MAC, porta, VLAN) creando una binding table trusted.
 - **Static ARP Entries**: Configurare manualmente le entry ARP critiche (es. gateway) impedisce la sovrascrittura tramite Reply fasulli. Poco scalabile, adatto solo per host fissi.
 - **Port Security**: Limita il numero di MAC per porta switch, riducendo attacchi di MAC flooding.
 - **VLAN Segmentation**: Limitare la dimensione dei broadcast domain riduce il raggio d'azione di un attacco ARP Spoofing.
@@ -260,7 +263,7 @@ arp 192.168.1.50 aabb.ccdd.ee01 arpa
 
 # Impostare il timeout ARP su un'interfaccia (default: 4 ore = 14400 sec)
 interface GigabitEthernet0/0
- arp timeout 300
+arp timeout 300
 
 # Abilitare DHCP Snooping (prerequisito per DAI)
 ip dhcp snooping
@@ -268,14 +271,14 @@ ip dhcp snooping vlan 10
 
 # Definire porte trusted per DHCP Snooping (es. uplink verso server DHCP)
 interface GigabitEthernet0/1
- ip dhcp snooping trust
+ip dhcp snooping trust
 
 # Abilitare Dynamic ARP Inspection (DAI)
 ip arp inspection vlan 10
 
 # Definire porte trusted per DAI (es. uplink verso router)
 interface GigabitEthernet0/1
- ip arp inspection trust
+ip arp inspection trust
 
 # Verificare DAI e statistiche
 show ip arp inspection
@@ -330,12 +333,12 @@ arping -D -I eth0 192.168.1.10
 
 **Cause frequenti**:
 
-| Problema                    | Causa Tecnica                                                               | Sintomo e Comportamento                                                                                                |
-| --------------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **MTU Mismatch**            | Differenza nella dimensione massima dei pacchetti tra due nodi.             | I pacchetti piccoli (ACK) passano, quelli grandi vengono scartati (**Drop**) se hanno il flag **DF** (Don't Fragment). |
-| **IP Duplicato**            | Due host configurati con lo stesso indirizzo IP nella stessa subnet.        | Connettività instabile per entrambi gli host; il sistema rileva ARP Reply con MAC diverso per il proprio IP.           |
-| **ARP Cache Stale**         | Entry in cache con MAC non più valido (host migrato, NIC sostituita).       | Ping fallisce nonostante l'host sia attivo; basta cancellare la cache per ripristinare la connettività.                |
-| **DAI misconfiguration**    | Porta uplink non marcata come trusted; DHCP Snooping non attivo.            | Lo switch scarta ARP legittimi; gli host non riescono a risolvere i MAC anche se fisicamente connessi.                 |
+| Problema                    | Causa Tecnica                                                               | Sintomo e Comportamento                                                                                                  |
+| --------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **MTU Mismatch**            | Differenza nella dimensione massima dei pacchetti tra due nodi.             | I pacchetti piccoli (ACK) passano, quelli grandi vengono scartati (**Drop**) se hanno il flag **DF** (*Don't Fragment*). |
+| **IP Duplicato**            | Due host configurati con lo stesso indirizzo IP nella stessa subnet.        | Connettività instabile per entrambi gli host; il sistema rileva ARP Reply con MAC diverso per il proprio IP.             |
+| **ARP Cache Stale**         | Entry in cache con MAC non più valido (host migrato, NIC sostituita).       | Ping fallisce nonostante l'host sia attivo; basta cancellare la cache per ripristinare la connettività.                  |
+| **DAI misconfiguration**    | Porta uplink non marcata come trusted; DHCP Snooping non attivo.            | Lo switch scarta ARP legittimi; gli host non riescono a risolvere i MAC anche se fisicamente connessi.                   |
 ___
 # Note Esame
 

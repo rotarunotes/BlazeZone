@@ -143,7 +143,7 @@ ___
 L1 [ Header Cavo/Wi-Fi ] PDU: Bit
 	L2 [ Header Ethernet ] PDU: Frame
 	    L3 [ Header IP ] PDU: Pacchetto
-	        L4 [ Header UDP ] PDU: Segmento
+	        L4 [ Header TCP ] PDU: Segmento
 	             L5-7 [ Payload ]
 ```
 
@@ -206,12 +206,12 @@ I dati effettivi dell'applicazione (es. HTTP, FTP, TLS).
 | 8   | **NS**  | *Nonce Sum*                 | Protezione contro la cancellazione accidentale dei segnali di congestione.                          |
 | 9   | **CWR** | *Congestion Window Reduced* | Il mittente conferma di aver ridotto la finestra di invio dopo una congestione.                     |
 | 10  | **ECE** | *ECN Echo*                  | Notifica che è stata rilevata congestione nella rete (livello IP).                                  |
-| 11  | **URG** | *Urgent*                    | **Dati urgenti:** segnala al ricevitore di leggere i dati puntati dall'Urgent Pointer con priorità. |
-| 12  | **ACK** | *Acknowledgment*            | **Conferma:** abilita il campo ACK Number. Fondamentale per la ricezione affidabile.                |
-| 13  | **PSH** | *Push*                      | **Invia subito:** bypassa il buffer e consegna i dati immediatamente all'applicazione.              |
-| 14  | **RST** | *Reset*                     | **Chiusura forzata:** interrompe il collegamento per errori gravi o porta chiusa.                   |
-| 15  | **SYN** | *Synchronize*               | **Avvio:** sincronizza gli ISN durante il Three-Way Handshake.                                      |
-| 16  | **FIN** | *Finish*                    | **Chiusura:** indica che il mittente ha terminato l'invio dei dati (chiusura formale).              |
+| 11  | **URG** | *Urgent*                    | **Dati urgenti**: segnala al ricevitore di leggere i dati puntati dall'Urgent Pointer con priorità. |
+| 12  | **ACK** | *Acknowledgment*            | **Conferma**: abilita il campo ACK Number. Fondamentale per la ricezione affidabile.                |
+| 13  | **PSH** | *Push*                      | **Invia subito**: bypassa il buffer e consegna i dati immediatamente all'applicazione.              |
+| 14  | **RST** | *Reset*                     | **Chiusura forzata**: interrompe il collegamento per errori gravi o porta chiusa.                   |
+| 15  | **SYN** | *Synchronize*               | **Avvio**: sincronizza gli ISN durante il Three-Way Handshake.                                      |
+| 16  | **FIN** | *Finish*                    | **Chiusura**: indica che il mittente ha terminato l'invio dei dati (chiusura formale).              |
 ___
 # Porte e Protocolli Correlati
 
@@ -338,7 +338,7 @@ cat /proc/net/tcp
 
 | Problema                   | Causa Tecnica                                                                       | Sintomo e Comportamento                                                                                                                          |
 | -------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **MTU Mismatch**           | Differenza nella dimensione massima dei pacchetti tra due nodi.                     | I pacchetti piccoli (ACK) passano, quelli grandi vengono scartati (**Drop**) se hanno il flag **DF** (Don't Fragment).                           |
+| **MTU Mismatch**           | Differenza nella dimensione massima dei pacchetti tra due nodi.                     | I pacchetti piccoli (ACK) passano, quelli grandi vengono scartati (**Drop**) se hanno il flag **DF** (*Don't Fragment*).                         |
 | **Firewall Asimmetrico**   | Il traffico di andata e ritorno segue percorsi diversi attraverso firewall diversi. | Il firewall scarta i pacchetti di risposta (**SYN-ACK**) perché non ha registrato il pacchetto di apertura (**SYN**) nella sua tabella di stato. |
 | **NAT Timeout Aggressivo** | Il router NAT elimina la riga di traduzione IP/Porta troppo velocemente.            | Le connessioni lunghe (es. SSH) si "congelano" senza messaggi d'errore; il NAT non sa più a chi inoltrare i pacchetti in arrivo.                 |
 | **Buffer Overflow (App)**  | L'applicazione ricevente non svuota il buffer TCP abbastanza velocemente.           | Il ricevitore invia un pacchetto con **Window=0** (Zero Window). Il mittente interrompe l'invio e attende un **Window Update**.                  |

@@ -29,7 +29,7 @@ Questa operazione è detta **risoluzione dell’indirizzo IP**.
 Per comunicare direttamente all’interno di una LAN, due dispositivi (host) devono conoscere:
 
 - **Indirizzo IP (logico):** per l’instradamento a livello di rete (es. `192.168.1.10`)
-- **Indirizzo MAC (fisico):** per la consegna dei frame a livello di collegamento (es. `AA:BB:CC:11:22:33`)
+- **Indirizzo MAC (fisico):** per la consegna dei frame a livello di collegamento (es. )
 
 **ARP fa da ponte tra questi due livelli.**  
 Permette a un host che conosce solo l’IP di un altro di scoprirne il MAC address.

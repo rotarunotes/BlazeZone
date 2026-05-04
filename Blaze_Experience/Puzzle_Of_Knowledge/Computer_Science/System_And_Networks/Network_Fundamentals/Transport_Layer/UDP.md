@@ -14,6 +14,7 @@ ___
 - [[#Struttura Del Pacchetto]]
     - [[#Header]]
     - [[#Body]]
+    - [[#Flags]]
 - [[#Porte e Protocolli Correlati]]
 - [[#Confronto]]
 - [[#Aspetti di Sicurezza]]
@@ -160,18 +161,18 @@ UDP non ha un campo Flags come TCP. Le uniche informazioni nell'header sono le 4
 ___
 # Porte e Protocolli Correlati
 
-| Porta    | Livello OSI       | Protocollo  | Uso**                                       |
-| -------- | ----------------- | ----------- | ------------------------------------------- |
-| **53**   | **7** (App)       | DNS         | Query DNS standard (< 512 byte)             |
-| **67**   | **7** (App)       | DHCP Server | Assegnazione indirizzi IP (server → client) |
-| **68**   | **7** (App)       | DHCP Client | Richiesta indirizzo IP (client → server)    |
-| **69**   | **7** (App)       | TFTP        | Trasferimento file semplificato             |
-| **123**  | **7** (App)       | NTP         | Sincronizzazione orario di rete             |
-| **161**  | **7** (App)       | SNMP        | Monitoraggio dispositivi di rete            |
-| **162**  | **7** (App)       | SNMP Trap   | Notifiche asincrone SNMP                    |
-| **514**  | **7** (App)       | Syslog      | Logging remoto                              |
-| **1194** | **7/4** (App/Vpn) | OpenVPN     | VPN (modalità UDP)                          |
-| **5004** | **7** (App)       | RTP         | Trasporto flussi multimediali in real-time  |
+| Porta    | Livello OSI                | Protocollo  | Uso**                                       |
+| -------- | -------------------------- | ----------- | ------------------------------------------- |
+| **53**   | **7** (Applicazione)       | DNS         | Query DNS standard (< 512 byte)             |
+| **67**   | **7** (Applicazione)       | DHCP Server | Assegnazione indirizzi IP (server → client) |
+| **68**   | **7** (Applicazione)       | DHCP Client | Richiesta indirizzo IP (client → server)    |
+| **69**   | **7** (Applicazione)       | TFTP        | Trasferimento file semplificato             |
+| **123**  | **7** (Applicazione)       | NTP         | Sincronizzazione orario di rete             |
+| **161**  | **7** (Applicazione)       | SNMP        | Monitoraggio dispositivi di rete            |
+| **162**  | **7** (Applicazione)       | SNMP Trap   | Notifiche asincrone SNMP                    |
+| **514**  | **7** (Applicazione)       | Syslog      | Logging remoto                              |
+| **1194** | **7/4** (Applicazione/Vpn) | OpenVPN     | VPN (modalità UDP)                          |
+| **5004** | **7** (Applicazione)       | RTP         | Trasporto flussi multimediali in real-time  |
 
 ___
 # Confronto
