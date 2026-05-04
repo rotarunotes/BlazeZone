@@ -54,7 +54,7 @@ ___
 | **Livello OSI**             |                                               3 — Rete                                                |
 | **Porta**                   |                                       Identificato dal servizio                                       |
 | **Scopo**                   | Identificare e instradare pacchetti tra dispositivi su reti diverse tramite indirizzi logici a 32 bit |
-| **RFC / Standard**          |                                                RFC 791                                                |
+| **RFC / Standard**          |                                            RFC 791 (1981)                                             |
 | **Tipo Connessione**        |                    **Connectionless** (senza stato, ogni pacchetto è indipendente)                    |
 | **Affidabilità**            |                  **Non affidabile** (best-effort delivery, nessun ACK a livello IP)                   |
 | **PDU (Unità Dati)**        |                                        **Pacchetto** (Packet)                                         |

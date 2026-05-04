@@ -50,7 +50,7 @@ ___
 | **Livello OSI**             |                                                          3 — Rete                                                          |
 | **Porta**                   |                                                 Identificato dal servizio                                                  |
 | **Scopo**                   | Identificare e instradare pacchetti tra dispositivi su reti diverse tramite indirizzi logici a 128 bit, successore di IPv4 |
-| **RFC / Standard**          |                                                          RFC 8200                                                          |
+| **RFC / Standard**          |                                                      RFC 8200 (2017)                                                       |
 | **Tipo Connessione**        |                              **Connectionless** (senza stato, ogni pacchetto è indipendente)                               |
 | **Affidabilità**            |                             **Non affidabile** (best-effort delivery, nessun ACK a livello IP)                             |
 | **PDU (Unità Dati)**        |                                                   **Pacchetto** (Packet)                                                   |

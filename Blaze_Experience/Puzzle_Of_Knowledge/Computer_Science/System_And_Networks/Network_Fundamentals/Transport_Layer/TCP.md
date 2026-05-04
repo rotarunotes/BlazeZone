@@ -37,7 +37,7 @@ ___
 | **Livello OSI**             |                                            4 — Transporto                                             |
 | **Porta**                   |                                       Identificato dal servizio                                       |
 | **Scopo**                   | Fornire una comunicazione **affidabile**, **ordinata** e con **controllo** degli errori tra due host. |
-| **RFC / Standard**          |                                               RFC 9293                                                |
+| **RFC / Standard**          |                                            RFC 9293 (2022)                                            |
 | **Tipo Connessione**        |                    **Connection-oriented** (richiede instaurazione della sessione)                    |
 | **Affidabilità**            |                            **Affidabile** (conferma ricezione tramite ACK)                            |
 | **PDU (Unità Dati)**        |                                             **Segmento**                                              |

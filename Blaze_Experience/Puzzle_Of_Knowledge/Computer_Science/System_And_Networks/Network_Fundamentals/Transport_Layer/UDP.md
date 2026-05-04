@@ -36,7 +36,7 @@ ___
 | **Livello OSI**             |                                                     4 — Trasporto                                                      |
 | **Porta**                   |                                               Identificato dal servizio                                                |
 | **Scopo**                   | Fornire una trasmissione **veloce** e **a bassa latenza** senza garanzie di consegna, ordine o controllo degli errori. |
-| **RFC / Standard**          |                                                        RFC 768                                                         |
+| **RFC / Standard**          |                                                     RFC 768 (1980)                                                     |
 | **Tipo Connessione**        |                                 **Connectionless** (nessuna instaurazione di sessione)                                 |
 | **Affidabilità**            |                                **Non affidabile** (nessun ACK, nessuna ritrasmissione)                                 |
 | **PDU (Unità Dati)**        |      **Datagramma** <br>(Solo in UDP Viene chiamato così perché è un'unità di dati indipendente e "senza stato")       |
