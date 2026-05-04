@@ -5,7 +5,7 @@ ___
 # System_And_Networks
 ___
 # Indice
-* [Network_Fundamentals](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md)
+* [Network_Fundamentals](Network_Fundamentals/README.md)
 * [Planning_Addressing](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/README.md)
 * [Switching_And_Network_Access](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/README.md)
 * [IP_Services](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/README.md)

@@ -7,6 +7,6 @@ ___
 # Indice
 * [Operating_Systems](Operating_Systems/README.md)
 * [Programming](Programming/README.md)
-* [System_And_Networks](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md)
-* [Theory](Puzzle_Of_Knowledge/Computer_Science/Theory/README.md)
+* [System_And_Networks](System_And_Networks/README.md)
+* [Theory](Theory/README.md)
 ___

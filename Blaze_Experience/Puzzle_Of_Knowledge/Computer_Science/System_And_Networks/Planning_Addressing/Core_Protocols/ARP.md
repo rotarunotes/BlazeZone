@@ -105,7 +105,6 @@ Host A (192.168.1.10)              Host B (192.168.1.20)         Altr
 | **Cache**     | 3   | A salva la coppia **IP → MAC** in ARP Cache   | Cache aggiornata             | —                        | TTL tipico: 60–300s (variabile per OS) **Dati** |
 | **Scadenza**  | 4   | Alla scadenza del TTL, la entry viene rimossa | Cache miss al prossimo invio | —                        | A dovrà inviare un nuovo ARP Request            |
 ___
-____
 # Casi d'Uso Reali
 
 - **Navigazione web in LAN**: Quando il PC vuole raggiungere il gateway (es. `192.168.1.1`), controlla prima la ARP cache. Se non trova il MAC del router, invia un ARP Request in broadcast. Solo dopo aver ricevuto il MAC del gateway può costruire il frame Ethernet e inviare il pacchetto IP verso Internet.
