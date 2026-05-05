@@ -22,8 +22,7 @@ Il **TCL** è la parte del linguaggio SQL utilizzata per **gestire le transazion
 
 ![Schema_Transazione.png](../../../../../../Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_Transazione.png)
 
-
----
+___
 # Transazione
 
 Una **transazione** è una sequenza di operazioni SQL (INSERT, UPDATE, DELETE) che vengono trattate come un **blocco unico**: 
@@ -51,22 +50,27 @@ Ogni transazione deve rispettare le quattro proprietà **ACID**, che garantiscon
 ### Atomicità *(Atomicity)*
 La transazione è **indivisibile**: o tutte le operazioni vengono eseguite, o nessuna viene applicata. Non esistono stati intermedi.
 
+
+> [!Example] Nota
 > Tornando al bonifico: se il sistema crasha dopo la prima UPDATE, il DBMS annulla automaticamente anche quella già eseguita.
 ### Consistenza *(Consistency)*
 
 La transazione porta il database da uno **stato valido** a un altro **stato valido**, rispettando tutti i vincoli definiti (constraints, regole di integrità, ecc.).
 
+> [!Example] Nota
 > Il saldo di un conto non può diventare negativo se esiste un CHECK che lo impedisce. La transazione viene annullata se violerebbe un vincolo.
 ### Isolamento *(Isolation)*
 
 Le transazioni eseguite **in parallelo** non si influenzano a vicenda. Ogni transazione vede il database come se fosse l'unica in esecuzione.
 
+> [!Example] Nota
 > Se Luca e Anna fanno un bonifico contemporaneamente, le loro transazioni non si interferiscono.
 
 ### Durabilità *(Durability)*
 
 Una volta che una transazione è stata confermata con `COMMIT`, le modifiche sono **permanenti**, anche in caso di crash o interruzione di corrente.
 
+> [!Example] Nota
 > Dopo il COMMIT del bonifico, i nuovi saldi sono salvati definitivamente.
 
 ___

@@ -1,6 +1,6 @@
 Data: 2026-05-05
-[Database](Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/README.md)
-#Puzzle_Of_Knowledge/Computer_Science/Theory/Database
+[Web_Architectures](./README.md)
+#Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures
 ___
 # Index
 - [[#Database]]
