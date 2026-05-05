@@ -1,9 +1,9 @@
 Data: 2025-10-29
-[SQL](./README.md)
+[SQL](Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL
 ___
 # Index
-- [[#Data Control Language (DCL)]]
+- [[#Data Control Language]]
 - [[#GRANT]]
 	- [[#WITH GRANT OPTION]]
 - [[#REVOKE]]
@@ -16,7 +16,7 @@ ___
 | `PUBLIC`            | Keyword per riferirsi a tutti gli utenti del database  |
 | `WITH GRANT OPTION` | Permette all'utente di delegare il privilegio ad altri |
 ___
-# Data Control Language (DCL)
+# Data Control Language
 
 Il **DCL** è la parte del linguaggio SQL utilizzata per **gestire i permessi e gli accessi** al database. Controlla chi **può** fare **cosa** sugli oggetti del database (tabelle, viste, ecc.).
 

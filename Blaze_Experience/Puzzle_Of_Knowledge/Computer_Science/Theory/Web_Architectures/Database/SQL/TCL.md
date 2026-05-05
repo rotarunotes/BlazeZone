@@ -1,5 +1,5 @@
 Data: 2025-10-29
-[SQL](./README.md)
+[SQL](Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL
 ___
 # Index
@@ -20,7 +20,8 @@ ___
 
 Il **TCL** è la parte del linguaggio SQL utilizzata per **gestire le transazioni**, ovvero gruppi di operazioni che devono essere eseguite come un'unica unità logica.
 
-![Schmea_Transazione.png](../../../../../Setup_Archive/Viewable/Image/Computer_Science/Theory/Schmea_Transazione.png)
+![Schema_Transazione.png](../../../../../../Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_Transazione.png)
+
 
 ---
 # Transazione

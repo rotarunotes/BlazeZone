@@ -328,8 +328,15 @@ sorting-spec: |-
     Comandi_Show
     Indirizzi_IP
     ...
-    
-  target-folder: Puzzle_Of_Knowledge/Computer_Science/Theory/Database
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures
+    README
+    /folders
+    Database
+    Architetture_N-Tier
+    API
+    ...
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database
     README
     /folders
     Relational_Algebra
@@ -337,7 +344,7 @@ sorting-spec: |-
     SQL
     ...
     
-  target-folder: Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/TheoryWeb_Architectures/Database/SQL
     README
     /folders
     DQL

@@ -1,5 +1,5 @@
 Data: 2025-10-27
-[Database](./README.md)
+[Database](Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database
 ___
 # Index

@@ -1,9 +1,8 @@
 Data: 2025-10-29
-[Database](../README.md)
+[Database](Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL
 ___
 # Index
-- [[#Database]]
 - [[#Structured Query Language]]
 - [[#DBMS]]
 	- [[#DBMS NoSQL]]

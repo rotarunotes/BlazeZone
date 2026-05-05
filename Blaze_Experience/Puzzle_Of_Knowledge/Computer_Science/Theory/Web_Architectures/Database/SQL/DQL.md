@@ -1,9 +1,9 @@
 Data: 2025-10-29
-[SQL](./README.md)
+[SQL](Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database/SQL
 ___
 # Index
-- [[#Data Control Language]]
+- [[#Data Query Language]]
 - [[#Selezione]]
 - [[#Distinct]]
 - [[#Proiezione]]
@@ -21,7 +21,7 @@ ___
 - [[#Like]]
 - [[#GROUP BY]]
 ____
-# Data Control Language
+# Data Query Language
 
 Il **DQL** è la parte di SQL che si occupa del recupero e della visualizzazione dei dati.  
 Le principali operazioni derivate dall’**algebra relazionale** sono:
