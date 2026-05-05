@@ -6,7 +6,6 @@
       {
         "id": "0217e8bb4b2ec459",
         "type": "tabs",
-        "dimension": 99.99999999999999,
         "children": [
           {
             "id": "a7d0bf83d3a036eb",
@@ -54,9 +53,19 @@
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "167e7806232aee3a",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -258,12 +267,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 343.5,
-    "collapsed": true
+    "width": 343.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -285,12 +293,12 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "d6e1b210e908f244",
+  "active": "167e7806232aee3a",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Forwarding_Decisions.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Static_Routing.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/README.md",
     "Setup_Archive/Templates/Protocols_Templete.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
