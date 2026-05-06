@@ -42,28 +42,73 @@
             }
           },
           {
-            "id": "4f4c50711779ba7e",
+            "id": "ee38d52e20dd7cb4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/API.md",
-                "mode": "preview",
-                "source": true,
+                "file": "Modelli/Sicurezza 42.md",
+                "mode": "source",
+                "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "API"
+              "title": "Sicurezza 42"
             }
           },
           {
-            "id": "d6e1b210e908f244",
+            "id": "e211f258b8d2ae5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/README.md",
-                "mode": "preview",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Topology_Types"
+            }
+          },
+          {
+            "id": "7183a2f5b179a3cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "TCP_IP"
+            }
+          },
+          {
+            "id": "1a867670b9747a10",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setup_Archive/Templates/Protocols_Templete.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Protocols_Templete"
+            }
+          },
+          {
+            "id": "fb8e44cb9b8ea6ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
@@ -72,78 +117,33 @@
             }
           },
           {
-            "id": "167e7806232aee3a",
+            "id": "8e571b47c0d64f4f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/API.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "API"
+              "title": "TCP"
             }
           },
           {
-            "id": "3daedd6ef099cd34",
+            "id": "8ba8aa10b3d2edc9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/TCL.md",
+                "file": "Setup_Archive/Templates/Protocols_Templete.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "TCL"
-            }
-          },
-          {
-            "id": "8d9f4f04a74a4652",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/API.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "API"
-            }
-          },
-          {
-            "id": "ee38d52e20dd7cb4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Architetture_N-Tier.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Architetture_N-Tier"
-            }
-          },
-          {
-            "id": "23184ed84e8f1810",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/Services_And_Placement.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Services_And_Placement"
+              "title": "Protocols_Templete"
             }
           }
         ],
@@ -359,7 +359,7 @@
     "hiddenItems": {
       "bases:Crea nuova Base": false,
       "switcher:Apri selezione rapida": true,
-      "graph:Apri vista grafo": true,
+      "graph:Apri vista grafo": false,
       "canvas:Crea nuova lavagna": true,
       "daily-notes:Apri nota del giorno": true,
       "templates:Inserisci modello": true,
@@ -375,36 +375,43 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "23184ed84e8f1810",
+  "active": "8ba8aa10b3d2edc9",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/Technical_Report_Outline.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/Analysis_And_Sizing.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/Requirements_Analysis.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/Services_And_Placement.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Architetture_N-Tier.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/Device_Selection_And_Sizing.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Design/Structured_Cabling.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/First_Hop_Redundancy.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Dynamic_Routing.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Static_Routing.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Forwarding_Decisions.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
+    "Setup_Archive/Templates/Protocols_Templete.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Cookie_Session.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/ARP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Dynamic_Routing.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Forwarding_Decisions.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/Subnetting_IPv4.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Topology_Types.md",
+    "Setup_Archive/Viewable/PDF/Presentazione_distribuzioni_di_probabilità.pdf",
+    "Modelli/Sistemi 42.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Wireless/Cisco_Architectures/CAPWAP_And_AP_Join_Process.md",
+    "README.md",
+    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-26 Leopardi.md",
+    "Senza nome.base",
+    "Senza nome 1.base",
+    "Modelli/Sicurezza 42.md",
+    "Sicurezza 42.pdf",
+    "Modelli/SERVER 42.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv6.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/CIDR.md",
+    "Sicurezza.pdf",
+    "SERVER.pdf",
+    "Modelli/VPN.md",
+    "VPN.pdf",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Architetture_N-Tier.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/API.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DDL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DML.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DQL.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/TCL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/Relational_Algebra.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/Database_Design.md",
     "Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_3-Tier.png",
     "Setup_Archive/Viewable/Image/Computer_Science/Theory/Screenshot 2026-05-05 171821.png",
-    "Setup_Archive/Rules/Short_Cut.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/README.md",
-    "Modelli/Sistemi.md",
     "MYSQLI.pdf",
     "Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_API.png",
     "Setup_Archive/Viewable/Image/Computer_Science/Theory/Gemini_Generated_Image_s8wt51s8wt51s8wt.png",
@@ -416,13 +423,6 @@
     "Setup_Archive/Viewable/Image/Pasted image 20260428141147.png",
     "Setup_Archive/Viewable/Image/Pasted image 20260428131634.png",
     "Setup_Archive/Viewable/Image/Pasted image 20260428131449.png",
-    "Relational_Algebra.pdf",
-    "Setup_Archive/Viewable/PDF/Presentazione_distribuzioni_di_probabilità.pdf",
-    "Setup_Archive/Viewable/PDF",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP/Senza nome",
-    "Setup_Archive/Viewable/Excalidraw/Computer_Science/Theory",
-    "Setup_Archive/Viewable/Image/Computer_Science/Theory",
-    "Setup_Archive/Viewable/Image/Computer_Science/Nuova cartella",
     "Setup_Archive/Viewable/Image/Vecchio.canvas",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]

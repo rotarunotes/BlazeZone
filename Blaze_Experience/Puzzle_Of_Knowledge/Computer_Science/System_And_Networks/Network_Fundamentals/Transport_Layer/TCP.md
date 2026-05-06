@@ -359,7 +359,6 @@ ___
 | **Stato TIME_WAIT**    | Dura **2 × MSL** (tipicamente 60–120 secondi).                            |
 | **Sicurezza (Flood)**  | **SYN Cookies**: evitano l'allocazione di risorse per attacchi SYN Flood. |
 | **Incapsulamento**     | TCP viaggia su IP. PDU TCP = **Segmento**; PDU IP = **Pacchetto**.        |
-
 ## Trabocchetti frequenti
 
 | Concetto Errato                  | Realtà Tecnica                                                                                   |

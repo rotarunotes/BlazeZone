@@ -22,6 +22,7 @@ La notazione **CIDR** è un metodo per scrivere le reti IP in modo molto più fl
 | **Route aggregation (supernetting)**: più reti contigue vengono annunciate come un singolo prefisso, comprimendo le tabelle di routing.   | **Route aggregation (supernetting)**: più reti contigue vengono annunciate come un singolo prefisso, comprimendo le tabelle di routing. |
 ___
 # Notazione
+
 Il numero dopo `/` si chiama **prefisso**  e indica quanti dei 32 bit dell'indirizzo IP appartengono alla parte di **rete**, i bit che rimangono appartengono alla parte di **host**. 
 ```
 Es:
@@ -33,6 +34,7 @@ PARTE: |          RETE            |  HOST  |
 ```
 ___
 # Subnet Mask
+
 Il prefisso CIDR corrisponde esattamente al numero di bit della **subnet mask**: 
 - Bit che corrispondono alla **rete** sono indicati con **1**
 - Bit che corrispondono all' **host** sono indicati con **0**
