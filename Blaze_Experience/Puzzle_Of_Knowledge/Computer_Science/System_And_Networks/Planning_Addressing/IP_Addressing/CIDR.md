@@ -12,7 +12,7 @@ ___
 - [[#Tabella CIDR completa]]
 - [[#leggere un indirizzo CIDR]]
 ___
-# Classless Inter-Domain Routing
+# *Classless Inter-Domain Routing*
 
 La notazione **CIDR** è un metodo per scrivere le reti IP in modo molto più flessibile e compatto rispetto al vecchio sistema basato sulle classi).
 

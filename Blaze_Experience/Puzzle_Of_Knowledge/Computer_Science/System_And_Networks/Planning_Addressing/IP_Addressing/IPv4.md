@@ -45,7 +45,7 @@ ___
     - [[#Trabocchetti frequenti]]
 - [[#Quick Reference Card]]
 ___
-# Internet Protocol version 4
+# *Internet Protocol version 4*
 
 ## Panoramica
 

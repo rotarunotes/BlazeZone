@@ -81,7 +81,6 @@ sorting-spec: |-
     IP_Addressing
     Routing_Logic
     Core_Protocols
-    WAN_Technologies
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing
@@ -105,16 +104,10 @@ sorting-spec: |-
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic
     README
     /folders
-    Forwarding_Decisions
     Static_Routing
     Dynamic_Routing
+    Forwarding_Decisions
     First_Hop_Redundancy
-    ...
-
-  target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/WAN_Technologies
-    README
-    /folders
-    WAN_Concepts
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access

@@ -28,7 +28,7 @@ ___
 	- [[#Trabocchetti frequenti]]
 - [[#Quick Reference Card]]
 ___
-# Address Resolution Protocol
+# *Address Resolution Protocol*
 
 ## Panoramica
 

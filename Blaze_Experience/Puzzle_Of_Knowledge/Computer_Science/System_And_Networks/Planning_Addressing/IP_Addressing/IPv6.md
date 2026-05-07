@@ -41,7 +41,7 @@ ___
 - [[#Quick Reference Card]]
 
 ___
-# Internet Protocol version 6
+# *Internet Protocol version 6*
 
 ## Panoramica
 
