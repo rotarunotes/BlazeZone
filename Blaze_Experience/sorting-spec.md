@@ -124,7 +124,6 @@ sorting-spec: |-
     VLAN_Segmentation
     802.1Q_Tagging
     Access_Vs_Trunk
-    DTP
     VTP_VLAN_Trunking_Protocol
     ...
 

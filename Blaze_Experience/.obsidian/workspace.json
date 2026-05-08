@@ -6,7 +6,6 @@
       {
         "id": "0217e8bb4b2ec459",
         "type": "tabs",
-        "dimension": 70.92288242730721,
         "children": [
           {
             "id": "099c3f3460b5067c",
@@ -43,58 +42,35 @@
             }
           },
           {
-            "id": "0ae3ba7e8872e83a",
+            "id": "f5009759da4d4cc7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Static_Routing.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN/VTP.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Static_Routing"
+              "title": "VTP"
             }
           },
           {
-            "id": "20d9500bfccf5cca",
+            "id": "b7c72c1ebb4a3ea6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN/VLAN_Segmentation.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Redundancy_And_Aggregation/EtherChannel_LACP.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "VLAN_Segmentation"
+              "title": "EtherChannel_LACP"
             }
           },
-          {
-            "id": "45e198c1d0bd5fd0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setup_Archive/Obsidian_Base/Formatting.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Formatting"
-            }
-          }
-        ],
-        "currentTab": 3
-      },
-      {
-        "id": "c42c3de4c0193b9a",
-        "type": "tabs",
-        "dimension": 29.077117572692796,
-        "children": [
           {
             "id": "e9a449eebdfc80da",
             "type": "leaf",
@@ -113,6 +89,21 @@
             }
           },
           {
+            "id": "10c05de78d4eee11",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Inter-VLAN_Routing/Router-On-A-stick.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Router-On-A-stick"
+            }
+          },
+          {
             "id": "59fdb30eee132ce9",
             "type": "leaf",
             "pinned": true,
@@ -128,8 +119,24 @@
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "dc41ade805cc17bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/DMZ.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "DMZ"
+            }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -161,7 +168,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Puzzle_Of_Knowledge/Computer_Science/Theory/Database",
+                "query": "tag:#Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -188,15 +195,15 @@
             "state": {
               "type": "trash-explorer",
               "state": {},
-              "icon": "trash",
-              "title": "Trash explorer"
+              "icon": "lucide-ghost",
+              "title": "trash-explorer"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 471.5
+    "width": 246.5
   },
   "right": {
     "id": "dd71b14831b0ad51",
@@ -227,12 +234,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Inter-VLAN_Routing/Router-On-A-stick.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura"
+              "title": "Struttura di Router-On-A-stick"
             }
           },
           {
@@ -316,6 +324,16 @@
             "state": {
               "type": "chronology-calendar-view",
               "state": {},
+              "icon": "lucide-ghost",
+              "title": "chronology-calendar-view"
+            }
+          },
+          {
+            "id": "1bf6c2d5ca74e6fb",
+            "type": "leaf",
+            "state": {
+              "type": "chronology-calendar-view",
+              "state": {},
               "icon": "clock",
               "title": "Chronology"
             }
@@ -325,11 +343,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.5,
-    "collapsed": true
+    "width": 343.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "custom-sort:Toggle custom sorting": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false,
       "bases:Crea nuova Base": false,
       "switcher:Apri selezione rapida": true,
       "graph:Apri vista grafo": false,
@@ -340,44 +359,41 @@
       "obsidian-trash-explorer:Open trash explorer": false,
       "templater-obsidian:Templater": false,
       "omnisearch:Omnisearch": false,
-      "obsidian-git:Open Git source control": false,
       "obsidian-full-calendar:Open Full Calendar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "chronology:Open Chronology": false,
-      "custom-sort:Toggle custom sorting": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false
+      "chronology:Open Chronology": false
     }
   },
-  "active": "20d9500bfccf5cca",
+  "active": "dc41ade805cc17bf",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/Subnetting_IPv4.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/CIDR.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/First_Hop_Redundancy.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Forwarding_Decisions.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Dynamic_Routing.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Static_Routing.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Redundancy_And_Aggregation/EtherChannel_LACP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Redundancy_And_Aggregation/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Inter-VLAN_Routing/Router-On-A-stick.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Inter-VLAN_Routing/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Inter-VLAN_Routing/Layer_3_Switch_SVI.md",
+    "Sistemi.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN/Access_Vs_Trunk.md",
+    "Modelli/segaSistemai/Networking/Configuration/VLAN.md",
+    "Modelli/segaSistemai/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN/VTP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN/VLAN_Segmentation.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN/802.1Q_Tagging.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN/README.md",
+    "sorting-spec.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN/DTP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Forwarding_Decisions.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/First_Hop_Redundancy.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Static_Routing.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Dynamic_Routing.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/ARP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/ICMP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv6.md",
+    "README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/README.md",
     "Setup_Archive/Obsidian_Base/Formatting.md",
-    "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/VLAN_Tagged.md",
-    "Modelli/segaSistemai/Systems_Theory/Netting/VLAN.md",
-    "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/VLAN_Untagged.md",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_VLAN.png",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-05-07 194347.png",
-    "Sistemi.md",
-    "Modelli/segaSistemai/Systems_Theory/Netting/WLAN.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN/VTP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN/802.1Q_Tagging.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Inter-VLAN_Routing/Layer_3_Switch_SVI.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Inter-VLAN_Routing/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Inter-VLAN_Routing/Router-On-A-stick.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN/DTP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN/Access_Vs_Trunk.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Redundancy_And_Aggregation/STP.md",
     "MYSQLI.pdf",
     "Sicurezza.pdf",
     "Sicurezza 42.pdf",

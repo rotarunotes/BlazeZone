@@ -61,12 +61,12 @@ ___
 	    - Ping (Echo Request/Reply), Traceroute (TTL decrement)
 	    - Messaggi ICMP: Destination Unreachable, Time Exceeded, Redirect
 	    - ICMP non trasporta dati utente, solo controllo e diagnostica
-    - `CDP.md` 
+    - `CDP.md`  [NON FATTO]
         - CDP (Cisco Discovery Protocol): proprietario Cisco, Layer 2
         - Comandi: show cdp neighbors detail, show lldp neighbors
         - Use case: scoperta topologia, troubleshooting, inventario dispositivi
         - Sicurezza: disabilitare CDP/LLDP su porte verso utenti non fidati
-	- `LLDP.md` 
+	- `LLDP.md`  [NON FATTO]
 		- LLDP (Link Layer Discovery Protocol): standard IEEE 802.1AB, vendor-neutral
 
 - **Routing_Logic**
@@ -80,11 +80,11 @@ ___
 		- Distance Vector (RIP): invia tabella completa ai vicini, max 15 hop
 		- Link State (OSPF e OSPFv2): mappa completa della rete, algoritmo Dijkstra SPF
 		- Convergenza: tempo per cui tutti i router concordano sulla topologia
-		- [ESPANDI] OSPFv3 per IPv6, OSPF multi-area, DR/BDR election
+		-  OSPFv3 per IPv6, OSPF multi-area, DR/BDR election
     - `First_Hop_Redundancy.md` 
         - Concetti di ridondanza del Gateway (HSRP, VRRP)
 
-- **WAN_Technologies** [NUOVO]
+- **WAN_Technologies** [NON FATTO]
 	- `WAN_Concepts.md`
 	    - MPLS: label switching, traffic engineering, VPN su MPLS
 	    - Connessioni WAN: Leased Line, Metro Ethernet, Broadband (DSL, Cable)
@@ -104,10 +104,10 @@ ___
 	- `Access_Vs_Trunk.md`
 	    - Access Port: Appartiene a una sola VLAN. Usata per PC, Stampanti, Server
 	    - Trunk Port: Trasporta il traffico di più VLAN contemporaneamente. Usata tra Switch o tra Switch e Router
-	- `DTP.md`
+	- `DTP.md` [NON FATTO]
 	    - Negozia automaticamente se una porta deve diventare Access o Trunk
 	    - switchport mode dynamic desirable (tenta attivamente) vs dynamic auto (aspetta che l'altro inizi)
-	- `VTP_VLAN_Trunking_Protocol.md`
+	- `VTP.md`
 	    - Un protocollo proprietario Cisco che permette di creare/eliminare VLAN su un unico switch "Server" e propagare le modifiche automaticamente a tutti gli altri switch "Client"
 	    - Server / Client / Transparent
 	    - Il numero di Revision è critico. Se colleghi uno switch con un numero di revisione più alto, rischi di cancellare l'intero database VLAN della tua rete

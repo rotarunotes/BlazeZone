@@ -5,8 +5,8 @@ ___
 # Switching_And_Network_Access
 ___
 # Indice
+- [VLAN](VLAN/README.md)
 - [Inter-VLAN_Routing](Inter-VLAN_Routing/README.md)
 - [Redundancy_And_Aggregation](Redundancy_And_Aggregation/README.md)
-- [VLAN](VLAN/README.md)
 
 ___
