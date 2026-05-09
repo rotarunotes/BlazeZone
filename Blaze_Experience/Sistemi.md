@@ -123,7 +123,7 @@ ___
 		- Impedisce i "Broadcast Storm" bloccando logicamente i percorsi ridondanti (Loop prevention)
 	    - Root Bridge Selection (basato sul Bridge ID più basso) → Root Ports → Designated Ports → Blocking Ports
 	    - RSTP (802.1w): Versione rapida (Rapid STP), riduce i tempi di convergenza da 50 secondi a pochi millisecondi
-	    - [ESPANDI] PortFast, BPDU Guard, BPDU Filter — porte verso end-device
+	    - PortFast, BPDU Guard, BPDU Filter — porte verso end-device
 	- `EtherChannel_LACP.md`
 	    - Raggruppa fino a 8 link fisici in un unico link logico
 	    - LACP (Standard 802.3ad) vs PAgP (Cisco)

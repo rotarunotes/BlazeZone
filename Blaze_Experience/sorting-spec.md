@@ -115,7 +115,7 @@ sorting-spec: |-
     /folders
     VLAN
     Inter-VLAN_Routing
-    Redundancy_and_Aggregation
+    Redundancy_Aggregation
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN
@@ -134,11 +134,11 @@ sorting-spec: |-
     Layer_3_Switch_SVI
     ...
 
-  target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Redundancy_and_Aggregation
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Redundancy_Aggregation
     README
     /folders
     STP
-    EtherChannel_LACP
+    EtherChannel
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services
