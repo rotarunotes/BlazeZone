@@ -8,7 +8,7 @@ ___
 	- [[#I 4 Livelli Pratici]]
 - [[#Perchè TCP/IP]]
 - [[#Implementazione Reale]]
-
+___
 # Internet Protocol Suite
 
 Il modello **TCP/IP** è l'architettura di rete reale su cui si basa Internet. Mentre il modello OSI è uno standard teorico e didattico.

@@ -51,16 +51,15 @@ ___
 ___
 # Versioni & Evoluzione
 
-|Versione / RFC|Anno|Novità principali|
-|---|---|---|
-|RFC 792|1981|Specifica originale ICMPv4 — messaggi di errore e diagnostica per IPv4|
-|RFC 1122|1989|Chiarimenti sui requisiti obbligatori vs opzionali dei messaggi ICMP|
-|RFC 1256|1991|ICMP Router Discovery — annuncio dinamico dei router (IRDP)|
-|RFC 1393|1993|Traceroute con opzione ICMP (alternativa al metodo TTL scaduto)|
-|RFC 4443|2006|ICMPv6 — riscrittura completa per IPv6; integra funzioni ARP (NDP) e IGMP|
-|RFC 4884|2007|Estensioni ICMP per messaggi multi-parte (es. MPLS traceroute)|
-
----
+| Versione / RFC | Anno | Novità principali                                                         |
+| -------------- | ---- | ------------------------------------------------------------------------- |
+| RFC 792        | 1981 | Specifica originale ICMPv4 — messaggi di errore e diagnostica per IPv4    |
+| RFC 1122       | 1989 | Chiarimenti sui requisiti obbligatori vs opzionali dei messaggi ICMP      |
+| RFC 1256       | 1991 | ICMP Router Discovery — annuncio dinamico dei router (IRDP)               |
+| RFC 1393       | 1993 | Traceroute con opzione ICMP (alternativa al metodo TTL scaduto)           |
+| RFC 4443       | 2006 | ICMPv6 — riscrittura completa per IPv6; integra funzioni ARP (NDP) e IGMP |
+| RFC 4884       | 2007 | Estensioni ICMP per messaggi multi-parte (es. MPLS traceroute)            |
+___
 # Come Funziona
 
 ICMP è un protocollo **ausiliario di IP**: non trasporta dati applicativi, ma genera messaggi di controllo e di errore relativi al comportamento della rete IP. Tecnicamente è incapsulato dentro un pacchetto IP, ma opera concettualmente allo stesso livello di IP (L3).
@@ -120,13 +119,13 @@ Host A (TTL=1)            Router R1                    Host B
       |<---------------------------------------- ICMP Echo Reply (Type=0)
 ```
 
-| Fase              | #   | Azione                                               | Generato da | Ricevuto da | Note                                                |
-| ----------------- | --- | ---------------------------------------------------- | ----------- | ----------- | --------------------------------------------------- |
-| **Invio**         | 1   | Host A invia pacchetto con TTL=1                     | Host A      | Router R1   | TTL intenzionalmente basso (traceroute)             |
-| **TTL Scaduto**   | 2   | R1 decrementa TTL a 0, scarta il pacchetto           | —           | —           | Il pacchetto non viene inoltrato                    |
-| **Errore ICMP**   | 3   | R1 genera ICMP TTL Exceeded verso Host A             | Router R1   | Host A      | Contiene header IP + 8 byte del pacchetto originale |
-| **TTL aumentato** | 4   | Host A riprova con TTL=2, raggiunge Host B           | Host A      | Host B      | Il pacchetto supera R1 (TTL=1 dopo R1) e arriva a B |
-| **Risposta**      | 5   | Host B risponde con Echo Reply (se era Echo Request) | Host B      | Host A      | Fine del traceroute per questo hop                  |
+| Fase              | #   | Azione                                               | Generato  | Ricevuto  | Note                                                |
+| ----------------- | --- | ---------------------------------------------------- | --------- | --------- | --------------------------------------------------- |
+| **Invio**         | 1   | Host A invia pacchetto con TTL=1                     | Host A    | Router R1 | TTL intenzionalmente basso (traceroute)             |
+| **TTL Scaduto**   | 2   | R1 decrementa TTL a 0, scarta il pacchetto           | —         | —         | Il pacchetto non viene inoltrato                    |
+| **Errore ICMP**   | 3   | R1 genera ICMP TTL Exceeded verso Host A             | Router R1 | Host A    | Contiene header IP + 8 byte del pacchetto originale |
+| **TTL aumentato** | 4   | Host A riprova con TTL=2, raggiunge Host B           | Host A    | Host B    | Il pacchetto supera R1 (TTL=1 dopo R1) e arriva a B |
+| **Risposta**      | 5   | Host B risponde con Echo Reply (se era Echo Request) | Host B    | Host A    | Fine del traceroute per questo hop                  |
 
 ___
 # Casi d'Uso Reali

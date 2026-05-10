@@ -7,7 +7,7 @@ ___
 - [[#Modi operativi]]
 - [[#Revision Number]]
 ___
-# VLAN Trunking Protocol
+# *VLAN Trunking Protocol*
 
 Protocollo **Cisco proprietario** che sincronizza il database VLAN tra gli switch senza dover configurare ogni VLAN su ogni switch. 
 Si configura un solo switch "Server" e le modifiche si propagano automaticamente a tutta la rete.

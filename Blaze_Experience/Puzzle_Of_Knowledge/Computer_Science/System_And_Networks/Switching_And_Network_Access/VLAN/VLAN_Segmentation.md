@@ -11,7 +11,7 @@ ___
 - [[#Native VLAN]]
 - [[#Management VLAN]]
 ___
-# Virtual Local Area Network
+# *Virtual Local Area Network*
 
 Una **VLAN** è una partizione logica di una rete locale (LAN) a livello 2 (Data Link Layer) del modello OSI. 
 Consente di suddividere un singolo **switch fisico** in più switch virtuali e isolati.
