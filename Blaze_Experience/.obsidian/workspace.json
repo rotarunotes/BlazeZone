@@ -6,7 +6,7 @@
       {
         "id": "0217e8bb4b2ec459",
         "type": "tabs",
-        "dimension": 55.11727078891258,
+        "dimension": 52.57664709719504,
         "children": [
           {
             "id": "a7d0bf83d3a036eb",
@@ -80,7 +80,7 @@
       {
         "id": "ff48a193997e7518",
         "type": "tabs",
-        "dimension": 44.882729211087415,
+        "dimension": 47.42335290280496,
         "children": [
           {
             "id": "efa48f5fc6a6bc37",
@@ -126,9 +126,24 @@
               "icon": "lucide-file",
               "title": "ICMP"
             }
+          },
+          {
+            "id": "04d401994cf14c91",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "TCP"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -327,6 +342,16 @@
             "state": {
               "type": "chronology-calendar-view",
               "state": {},
+              "icon": "lucide-ghost",
+              "title": "chronology-calendar-view"
+            }
+          },
+          {
+            "id": "6c9950f422764af6",
+            "type": "leaf",
+            "state": {
+              "type": "chronology-calendar-view",
+              "state": {},
               "icon": "clock",
               "title": "Chronology"
             }
@@ -336,13 +361,10 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.5,
-    "collapsed": true
+    "width": 343.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "custom-sort:Toggle custom sorting": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false,
       "bases:Crea nuova Base": false,
       "switcher:Apri selezione rapida": true,
       "graph:Apri vista grafo": false,
@@ -355,19 +377,22 @@
       "omnisearch:Omnisearch": false,
       "obsidian-full-calendar:Open Full Calendar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "chronology:Open Chronology": false
+      "chronology:Open Chronology": false,
+      "custom-sort:Toggle custom sorting": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
   "active": "249f193ddd29104d",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DNS.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/ICMP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/ARP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv6.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/IPv4.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/UDP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
     "Puzzle_Of_Knowledge/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DNS.md",
     "Modelli/segaSistemai/Networking/Network_Protocols/DNS.md",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Hostname.png",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_DNS.png",
@@ -384,7 +409,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN/VTP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN/VLAN_Segmentation.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/IP_Addressing/CIDR.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Routing_Logic/Static_Routing.md",

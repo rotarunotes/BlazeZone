@@ -3,6 +3,49 @@ Data: 2026-05-10
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services
 ___
 # Index
+- [[#Index]]
+- [[#Domain Name System]]
+	- [[#Panoramica]]
+- [[#Versioni & Evoluzione]]
+- [[#Come Funziona]]
+	- [[#Le 3 Macro Componenti del DNS]]
+		- [[#Domain Name Space]]
+			- [[#FQDN - Fully Qualified Domain Name]]
+			- [[#Gerarchia dei Domini]]
+			- [[#Regole di Naming]]
+		- [[#Name Server (NS)]]
+			- [[#Resource Record (RR)]]
+			- [[#Zone & Deleghe Dei Server]]
+			- [[#Tipi di Server]]
+				- [[#Root Name Server]]
+				- [[#Name Server TLD]]
+				- [[#Name Server Autoritativo]]
+					- [[#Primario & Secondario]]
+		- [[#Resolver (Client DNS)]]
+	- [[#Caching DNS]]
+	- [[#DNS Inverso (Reverse DNS)]]
+- [[#Flusso Operativo]]
+	- [[#Risoluzione Ricorsiva Con Cache Vuota]]
+	- [[#Risoluzione Iterativa Con Cache Vuota]]
+- [[#Casi d'Uso Reali]]
+- [[#Limitazioni Tecniche]]
+- [[#PDU & Incapsulamento]]
+- [[#Struttura Del Pacchetto]]
+	- [[#Header]]
+	- [[#Body]]
+	- [[#Flags]]
+- [[#Porte e Protocolli Correlati]]
+- [[#Confronto]]
+- [[#Aspetti di Sicurezza]]
+	- [[#Vulnerabilità Note]]
+	- [[#Attacchi Comuni]]
+	- [[#Contromisure]]
+- [[#Comandi Cisco IOS]]
+- [[#Troubleshooting]]
+- [[#Note Esame]]
+	- [[#Da sapere a memoria]]
+	- [[#Trabocchetti frequenti]]
+- [[#Quick Reference Card]]
 ___
 # _Domain Name System_
 
@@ -196,12 +239,10 @@ In questo scenario, il **client** (il tuo computer o smartphone) richiede a un s
 ![Schema_DNS.png](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_DNS.png)
 
 ## Risoluzione Iterativa Con Cache Vuota
-____
-___
 ___
 # Casi d'Uso Reali
 
-- **Navigazione Web**: Quando un utente digita `www.example.com` nel browser, lo Stub Resolver interroga il Recursive Resolver che risolve il nome in un indirizzo IP. Il browser si connette all'IP ottenuto — senza DNS, ogni sito richiederebbe la memorizzazione dell'IP numerico.
+- **Navigazione Web**: Quando un utente digita `www.example.com` nel browser, lo Stub Resolver interroga il Recursive Resolver che risolve il nome in un indirizzo IP. Il browser si connette all'IP ottenuto. Senza DNS, ogni sito richiederebbe la memorizzazione dell'IP numerico.
 - **Mail Server Routing (record MX)**: Quando un mail server deve consegnare un'email a `user@example.com`, esegue una query DNS per i record **MX** di `example.com`. I record MX includono una priorità numerica: il server prova prima quello con valore più basso (alta priorità), poi i successivi come fallback.
 - **Load Balancing DNS (Round Robin)**: Un servizio con alta disponibilità può avere più record A per lo stesso nome (es. `www.example.com → 1.1.1.1` e `www.example.com → 2.2.2.2`). Il Recursive Resolver restituisce gli IP in ordine variabile, distribuendo il traffico tra i server.
 - **CDN e Geo-DNS**: I Content Delivery Network usano DNS per restituire indirizzi IP diversi a seconda della posizione geografica del Recursive Resolver, indirizzando l'utente al nodo CDN più vicino (es. Cloudflare, Akamai).
@@ -221,15 +262,17 @@ ___
 # PDU & Incapsulamento
 
 - **Nome PDU**: Messaggio DNS (DNS Message)
-- **Incapsulato in**: Datagramma UDP (porta 53) per query standard; Segmento TCP (porta 53) per trasferimenti di zona e risposte > 512 byte
-- **Incapsula**: Nessun payload sottostante — il messaggio DNS è il payload applicativo
+- **Incapsulato in**:
+	- Datagramma UDP (porta 53) per query standard;
+	- Segmento TCP (porta 53) per trasferimenti di zona e risposte > 512 byte
+- **Incapsula**: Il messaggio DNS è il payload applicativo
 
 ```
 L1 [ Header Cavo/Wi-Fi ] PDU: Bit
 	L2 [ Header Ethernet ] PDU: Frame
 	    L3 [ Header IP ] PDU: Pacchetto
 	        L4 [ Header UDP/TCP ] PDU: Datagramma/Segmento
-	             L7 [ Header DNS + Question + Answer + Authority + Additional ] PDU: Messaggio DNS
+	             L7 [ Header DNS ] PDU: Messaggio DNS
 ```
 
 > [!Note] Nota 
@@ -239,8 +282,7 @@ ___
 # Struttura Del Pacchetto
 
 ## Header
-
-L'header DNS è **fisso a 12 byte**, presente sia nelle query che nelle risposte.
+È **fisso** a 12 byte, presente sia nelle richieste sia nelle risposte
 
 |Campo|Dimensione|Descrizione|
 |---|---|---|
@@ -255,10 +297,10 @@ L'header DNS è **fisso a 12 byte**, presente sia nelle query che nelle risposte
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-|                    ID (Identifier)          16 bit             |
+|                    ID (Identifier)          16 bit            |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-|QR| Opcode  |AA|TC|RD|RA|  Z  |           RCODE               |
-|1b|  4 bit  |1b|1b|1b|1b| 3bit|           4 bit               |
+|QR| Opcode  |AA|TC|RD|RA|  Z  |           RCODE                |
+|1b|  4 bit  |1b|1b|1b|1b| 3bit|           4 bit                |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |           QDCOUNT             |  n° entry in Question         |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -271,15 +313,13 @@ L'header DNS è **fisso a 12 byte**, presente sia nelle query che nelle risposte
 ```
 
 ## Body
-
 Il corpo del messaggio DNS è diviso in **quattro sezioni** variabili:
-
 - **Question**: presente sia nella query che nella risposta. Contiene il nome richiesto (**QNAME**), il tipo di record (**QTYPE**, es. A=1, MX=15, AAAA=28) e la classe (**QCLASS**, quasi sempre IN=1 per Internet).
 - **Answer**: presente solo nelle risposte. Contiene i Resource Record che rispondono direttamente alla query (es. il record A con l'IP).
 - **Authority**: contiene i record NS dei server autoritativi per la zona, usati nelle risposte iterative per indicare dove continuare la ricerca.
 - **Additional**: contiene record supplementari utili (es. i record A degli NS listati in Authority — "glue records" — per evitare query aggiuntive).
 
-**Formato di un Resource Record nel Body:**
+**Formato di un Resource Record nel Body**:
 
 |Campo|Dimensione|Descrizione|
 |---|---|---|
@@ -291,43 +331,41 @@ Il corpo del messaggio DNS è diviso in **quattro sezioni** variabili:
 |**RDATA**|Variabile|Dati del record (es. 4 byte per IPv4, 16 byte per IPv6, nome per CNAME)|
 
 ## Flags
-
 Il campo Flags è di **16 bit**, suddiviso nei seguenti sottocampi:
 
-|Flag|Bit|Significato|
-|---|---|---|
-|**QR**|1|`0` = Query (domanda); `1` = Response (risposta)|
-|**Opcode**|4|`0` = Query standard; `1` = Inverse Query (deprecata); `2` = Server Status Request|
-|**AA**|1|Authoritative Answer: `1` = la risposta proviene dal server autoritativo per la zona|
-|**TC**|1|TrunCated: `1` = il messaggio è stato troncato (> 512 byte su UDP → riprovare su TCP)|
-|**RD**|1|Recursion Desired: `1` = il client chiede risoluzione ricorsiva al server|
-|**RA**|1|Recursion Available: `1` = il server supporta la risoluzione ricorsiva|
-|**Z**|3|Riservato (deve essere 0; in DNSSEC usato per i bit AD e CD)|
-|**RCODE**|4|Response Code: `0`=No Error, `1`=Format Error, `2`=Server Failure, `3`=NXDOMAIN, `5`=Refused|
-
+| Bit | Flag       | Nome Esteso          | Descrizione e Utilizzo                                                                       |
+| --- | ---------- | -------------------- | -------------------------------------------------------------------------------------------- |
+| 1   | **QR**     | *Query/Response*       | `0` = Query (domanda); `1` = Response (risposta)                                             |
+| 4   | **Opcode** | *Operation Code*       | `0` = Query standard; `1` = Inverse Query (deprecata); `2` = Server Status Request           |
+| 1   | **AA**     | *Authoritative Answer* | Authoritative Answer: `1` = la risposta proviene dal server autoritativo per la zona         |
+| 1   | **TC**     | *TrunCation*           | TrunCated: `1` = il messaggio è stato troncato (> 512 byte su UDP → riprovare su TCP)        |
+| 1   | **RD**     | *Recursion Desired*    | Recursion Desired: `1` = il client chiede risoluzione ricorsiva al server                    |
+| 1   | **RA**     | *Recursion Available*  | Recursion Available: `1` = il server supporta la risoluzione ricorsiva                       |
+| 3   | **Z**      | *Zero (Reserved)*      | Riservato (deve essere 0; in DNSSEC usato per i bit AD e CD)                                 |
+| 4   | **RCODE**  | *Response Code*        | Response Code: `0`=No Error, `1`=Format Error, `2`=Server Failure, `3`=NXDOMAIN, `5`=Refused |
 ___
 # Porte e Protocolli Correlati
 
-|Porta|Livello OSI|Protocollo|Uso|
-|---|---|---|---|
-|**53/UDP**|7|DNS|Query e risposte standard (< 512 byte o con EDNS0)|
-|**53/TCP**|7|DNS|Risposte troncate, trasferimenti di zona (AXFR/IXFR), DNSSEC|
-|**853/TCP**|7|DNS over TLS|Query DNS cifrate con TLS (DoT) — RFC 7858|
-|**443/TCP**|7|DNS over HTTPS|Query DNS incapsulate in HTTPS (DoH) — RFC 8484|
-|**5353/UDP**|7|mDNS|Multicast DNS — risoluzione locale senza server (es. `.local`, Bonjour)|
+| Porta | Livello OSI          | Protocollo         | Uso                                                                     |
+| ----- | -------------------- | ------------------ | ----------------------------------------------------------------------- |
+| **53**    | **7** (Applicazione) | DNS - UDP          | Query e risposte standard (< 512 byte o con EDNS0)                      |
+| **53**    | **7** (Applicazione) | DNS - TCP          | Risposte troncate, trasferimenti di zona (AXFR/IXFR), DNSSEC            |
+| **853**   | **7** (Applicazione) | DNS over TLS, -TCP | Query DNS cifrate con TLS (DoT) — RFC 7858                              |
+| **443**   | **7** (Applicazione) | DNS over HTTPS     | Query DNS incapsulate in HTTPS (DoH) — RFC 8484                         |
+| **5353**  | **7** (Applicazione) | mDNS - UDP         | Multicast DNS — risoluzione locale senza server (es. `.local`, Bonjour) |
 
 ___
 # Confronto
 
 **DNS Ricorsivo vs DNS Iterativo**
 
-|Caratteristica|Query Ricorsiva|Query Iterativa|
-|---|---|---|
-|**Chi esegue il lavoro**|Il Recursive Resolver fa tutta la catena|Il richiedente interroga ogni server passo per passo|
-|**Risposta al richiedente**|Risposta finale (IP o errore NXDOMAIN)|Referral al prossimo server da interrogare|
-|**Carico server**|Alto per il Recursive Resolver|Distribuito su ogni server della gerarchia|
-|**Usato tra**|Stub Resolver ↔ Recursive Resolver|Recursive Resolver ↔ Root/TLD/Autoritativi|
-|**Flag RD**|Impostato a `1` dal client|Non richiesto|
+| Caratteristica              | Query Ricorsiva                              | Query Iterativa                                                |
+| --------------------------- | -------------------------------------------- | -------------------------------------------------------------- |
+| **Chi esegue il lavoro**    | Il Recursive Resolver fa tutta la catena     | Il richiedente (Browser) interroga ogni server passo per passo |
+| **Risposta al richiedente** | Risposta finale (IP o errore NXDOMAIN)       | Referral al prossimo server da interrogare                     |
+| **Carico server**           | Alto per il Recursive Resolver               | Distribuito su ogni server della gerarchia                     |
+| **Usato tra**               | Stub Resolver (Browser) ↔ Recursive Resolver | Recursive Resolver ↔ Root/TLD/Autoritativi                     |
+| **Flag RD**                 | Impostato a `1` dal client                   | Non richiesto                                                  |
 
 **DNS Classico vs DNSSEC**
 
@@ -340,11 +378,9 @@ ___
 |**Record extra**|A, AAAA, MX, NS, TXT…|+ DNSKEY, RRSIG, NSEC/NSEC3, DS|
 |**Cifratura**|No|No (firma ≠ cifratura — le risposte rimangono leggibili)|
 ___
-
 # Aspetti di Sicurezza
 
 ## Vulnerabilità Note
-
 - **Assenza di autenticazione**: Le risposte DNS classiche non sono firmate. Un resolver non può verificare che la risposta provenga dal server autoritativo legittimo — base degli attacchi di avvelenamento della cache.
 - **Traffico in chiaro**: Query e risposte viaggiano non cifrate su UDP/TCP porta 53. Qualsiasi osservatore (ISP, attaccante MITM) può rilevare quali domini vengono risolti, violando la privacy.
 - **Cache Poisoning vulnerability**: I Recursive Resolver accettano risposte anche non esplicitamente richieste. L'attacco Kaminsky (2008) ha dimostrato come sfruttare la prevedibilità dell'ID di transazione e della porta sorgente per avvelenare la cache.
@@ -352,7 +388,6 @@ ___
 - **Subdomain Takeover**: Se un record CNAME punta a un servizio cloud non più registrato, un attaccante può registrarlo e prendere il controllo del sottodominio.
 
 ## Attacchi Comuni
-
 - **DNS Cache Poisoning**: L'attaccante invia risposte false al Recursive Resolver prima della risposta legittima, inserendo record corrotti nella cache. Gli utenti vengono reindirizzati verso IP malevoli per l'intera durata del TTL. Mitigato da DNSSEC e randomizzazione della porta sorgente.
 - **DNS Spoofing / MITM**: Intercettazione e modifica di query/risposte DNS in transito (possibile in assenza di cifratura). Un attaccante sulla rete locale può rispondere con dati falsi prima del server legittimo.
 - **DNS Amplification (DDoS)**: L'attaccante invia query DNS con IP sorgente falsificato (IP della vittima) a Recursive Resolver aperti. I resolver rispondono con risposte amplificate (fattore 50–100x) all'IP della vittima, causando un attacco DDoS per amplificazione.
@@ -361,7 +396,6 @@ ___
 - **Fast Flux DNS**: I botnet cambiano continuamente i record A di un dominio (TTL molto bassi, centinaia di IP diversi) per nascondere l'infrastruttura C2 e rendere difficile il blocco per IP.
 
 ## Contromisure
-
 - **DNSSEC**: Firma crittografica dei record DNS. Il resolver verifica l'autenticità della risposta attraverso una catena di fiducia fino ai Root Server. Non cifra il traffico ma garantisce integrità e autenticità.
 - **DNS over TLS (DoT) / DNS over HTTPS (DoH)**: Cifratura del traffico DNS per proteggere la privacy. DoT usa la porta 853, DoH la porta 443 (più difficile da bloccare). Mitigano sniffing e MITM.
 - **Randomizzazione porta sorgente e Transaction ID**: Rendono molto più difficile il cache poisoning (Kaminsky patch) — il resolver usa porte sorgente UDP casuali per ogni query.
@@ -372,7 +406,6 @@ ___
 - **Monitoraggio query DNS anomale**: Rilevare pattern di DNS tunneling (query molto lunghe, alta entropia nei nomi, alto volume di query TXT verso lo stesso dominio).
 
 ___
-
 # Comandi Cisco IOS
 
 ``` Shell
