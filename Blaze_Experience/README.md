@@ -118,7 +118,7 @@ ___
                 - 📁 [Network_Defense](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/README)
                     - [Layer_2_Security](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/Layer_2_Security)
                     - [Firewall_Types](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/Firewall_Types)
-                    - [Cisco_ACLs](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/Cisco_ACLs)
+                    - [ACL](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/ACL.md)
                     - [DMZ](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/DMZ)
                     - [AAA_Framework](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/AAA_Framework)
                 - 📁 [Secure_Connectivity](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/README)
@@ -266,7 +266,7 @@ ___
         - 📁 **Excalidraw**
             - 📁 **Computer_Science**
                 - 📁 **System_And_Networks**
-                    - [Tipologie_Di_Rete](Setup_Archive/Viewable/Excalidraw/Computer_Science/System_And_Networks/Tipologie_Di_Rete)
+                    - [Disegno_Tipologie_Di_Rete](Disegno_Tipologie_Di_Rete.md)
                 - 📁 **Theory**
                     - [Progettazione_Dati_Logica_Esempio](Setup_Archive/Viewable/Excalidraw/Computer_Science/Theory/Progettazione_Dati_Logica_Esempio)
                     - [Schema_E-R_Esempio](Setup_Archive/Viewable/Excalidraw/Computer_Science/Theory/Schema_E-R_Esempio)

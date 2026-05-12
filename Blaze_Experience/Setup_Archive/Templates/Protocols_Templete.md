@@ -160,7 +160,7 @@ ___
 ___
 # Comandi Cisco IOS
 
-``` c
+``` cisco
 show ...
 debug ...
 ```

@@ -24,24 +24,20 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_LAS.md",
-      "timestamp": 1778589565379
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
+      "timestamp": 1778617011469
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/ACL.md",
+      "timestamp": 1778617007632
     },
     {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
-      "timestamp": 1778588807711
+      "timestamp": 1778617001390
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/ICMP.md",
-      "timestamp": 1778588804438
-    },
-    {
-      "filepath": "Setup_Archive/Viewable/Excalidraw/Disegno_LAN_WAN.md",
-      "timestamp": 1778588802580
-    },
-    {
-      "filepath": "Senza nome 1.md",
-      "timestamp": 1778588721868
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL.md",
+      "timestamp": 1778617000335
     }
   ],
   "bookmarkedFileStore": [],

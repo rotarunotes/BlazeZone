@@ -27,7 +27,7 @@ n : 1
 
 
 ## NAT DINAMICO
-![Disegno_LAN_WAN](../../../../Setup_Archive/Viewable/Excalidraw/Disegno_LAN_WAN.md)
+![Disegno_LAN_WAN](Disegno_LAN_WAN.md)
 
 ### Configurazione
 1) Configurazione interfacce del router

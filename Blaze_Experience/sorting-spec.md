@@ -228,7 +228,7 @@ sorting-spec: |-
     /folders
     Layer_2_Security
     Firewall_Types
-    Cisco_ACLs
+    ACL
     DMZ
     AAA_Framework
     ...
