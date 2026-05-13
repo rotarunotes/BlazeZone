@@ -22,7 +22,6 @@ _corsivo_
 ==testo da evidenziare==
 ## Testo Barrato tilde | alt + 1 2 6 
 ~~testo barrato~~ 
-
 ___
 # Link
 ## Link interno | \[\[]]

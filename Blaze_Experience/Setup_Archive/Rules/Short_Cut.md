@@ -19,6 +19,9 @@ ___
 | ctrl + numpad5   | Tabella                                       |
 | ctrl + freccia   | Su o Giu nella lista                          |
 | ctrl + alt + u   | Apre le cartelle: Image, Screenshot, Download |
+| ctrl + shif + +  | aumenta zoom                                  |
+| ctrl + shif + -  | diminuisisci zoom                             |
+|                  |                                               |
 
 # Titolo 2
 ___
