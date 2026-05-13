@@ -24,20 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "TEST ESECUZIONE.md",
+      "timestamp": 1778665725264
+    },
+    {
+      "filepath": "TEST CCNA.md",
+      "timestamp": 1778665715686
+    },
+    {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
-      "timestamp": 1778617011469
+      "timestamp": 1778665664414
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/ACL.md",
-      "timestamp": 1778617007632
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
-      "timestamp": 1778617001390
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
+      "timestamp": 1778664527804
     },
     {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL.md",
-      "timestamp": 1778617000335
+      "timestamp": 1778663326913
     }
   ],
   "bookmarkedFileStore": [],
