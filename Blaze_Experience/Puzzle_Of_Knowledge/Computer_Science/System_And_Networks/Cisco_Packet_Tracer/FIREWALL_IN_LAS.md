@@ -226,7 +226,7 @@ Router(config)# access-list 100 deny 192.168.1.0 0.0.0.255
 
 # Esercizio
 
-![[Pasted image 20260428131019.png]]
+
 
 ## Soluzione
 - ACL estese, applicato tutte in outbound
@@ -238,3 +238,4 @@ ___
 - il pacchetto in broadcast diventa nel dafault  gateway della rete della destinazione, che prima era in braodcast 255.255.255.255
 - bootps 67
 - bootpc 68 
+
