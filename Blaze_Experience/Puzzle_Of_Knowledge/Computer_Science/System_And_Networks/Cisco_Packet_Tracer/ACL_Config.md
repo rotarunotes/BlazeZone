@@ -1,5 +1,5 @@
 Data: 2026-05-12
-[Cisco_Packet_Tracer](./README.md)
+[Cisco_Packet_Tracer](README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer
 ___
 # Index
@@ -7,7 +7,8 @@ ___
 - [[#ACCESS GROUP]]
 - [[#ACL Standard]]
 - [[#ACL Estese]]
-- [[#Workflow Come Configurare le ACL]
+	- [[#Esercizio]]
+- [[#Workflow Come Configurare le ACL]]
 ___
 # SHOW
 ``` cisco
@@ -79,7 +80,31 @@ Router(config-ext-nacl)# deny ip 192.168.1.0 0.0.0.255 192.168.2.0 0.0.0.255
 Router(config-ext-nacl)# permit ip any any
 ```
 
+## Esercizio
 ![[Pasted image 20260428131019.png]]
+
+```c
+Extended IP access list 100
+    10 permit tcp 192.168.1.0 0.0.0.255 host 192.168.2.100 eq www
+    20 permit tcp 192.168.1.0 0.0.0.255 host 192.168.3.1 established
+    30 permit icmp 192.168.1.0 0.0.0.255 host 192.168.3.1 echo-reply
+    40 permit tcp host 192.168.1.2 host 192.168.3.100 eq ftp
+Extended IP access list 101
+    10 permit udp any range bootps bootpc any range bootps bootpc
+    20 permit tcp host 192.168.2.100 eq www 192.168.1.0 0.0.0.255 established
+    30 permit icmp host 192.168.2.100 any echo-reply
+    40 deny ip host 192.168.2.100 any
+    50 deny ip 192.168.2.0 0.0.0.255 192.168.1.0 0.0.0.255
+    60 permit ip 192.168.2.0 0.0.0.255 192.168.3.0 0.0.0.255
+Extended IP access list 102
+    10 permit tcp host 192.168.3.100 eq ftp host 192.168.1.2
+    20 deny tcp host 192.168.3.100 eq ftp any established
+    30 permit tcp 192.168.3.0 0.0.0.255 192.168.2.0 0.0.0.255 established
+    40 permit icmp 192.168.3.0 0.0.0.255 192.168.2.0 0.0.0.255 echo-reply
+    50 permit ip host 192.168.3.1 192.168.1.0 0.0.0.255
+    60 deny ip host 192.168.3.1 any
+    70 permit udp host 192.168.3.200 range bootps bootpc host 192.168.2.254 range bootps bootpc
+```
 ___
 # Workflow: Come Configurare le ACL
 

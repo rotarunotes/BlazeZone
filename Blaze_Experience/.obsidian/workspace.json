@@ -59,7 +59,22 @@
             }
           },
           {
-            "id": "249f193ddd29104d",
+            "id": "d1e5730a314946d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "FIREWALL_IN_LAS"
+            }
+          },
+          {
+            "id": "3636da1c8c162701",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -74,18 +89,18 @@
             }
           },
           {
-            "id": "5ea70dfb5d0fd204",
+            "id": "880e77885b003464",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
+                "file": "Red_Lab/BLANZ.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "FIREWALL_IN_LAS"
+              "title": "BLANZ"
             }
           }
         ],
@@ -148,8 +163,8 @@
             "state": {
               "type": "trash-explorer",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "trash-explorer"
+              "icon": "trash",
+              "title": "Trash explorer"
             }
           }
         ]
@@ -330,19 +345,31 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "5ea70dfb5d0fd204",
+  "active": "3636da1c8c162701",
   "lastOpenFiles": [
+    "Red_Lab/BLANZ.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
-    "Setup_Archive/Obsidian_Base/Formatting.md",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Soluzioone_Ex_ACL_Estese.png",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Pasted image 20260428131634.png",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL.md",
+    "Red_Lab/README.md",
+    "Red_Lab/GitPerSega.md",
+    "Sistemi.md",
     "TEST CCNA.md",
+    "Modelli/segaSistemai/Networking/Configuration/VLAN.md",
+    "Modelli/segaSistemai/Networking/Configuration/Router.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_LAS.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/README.md",
+    "Senza nome 1",
+    "Senza nome",
+    "Setup_Archive/Obsidian_Base/Formatting.md",
     "TEST ESECUZIONE.md",
     "Setup_Archive/Rules/Short_Cut.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
     "Setup_Archive/Viewable/Image/Pasted image 20260513113125.png",
     "Setup_Archive/Viewable/Image/Pasted image 20260513113110.png",
     "Setup_Archive/Viewable/Image/Pasted image 20260513112646.png",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL.md",
     "Setup_Archive/Templates/Protocols_Templete.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DNS.md",
     "Modelli/segaSistemai/Networking/Network_Protocols/DNS.md",
@@ -357,17 +384,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/Firewall_Types.md",
     "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/Access_Point.md",
     "Setup_Archive/Viewable/Excalidraw/Schema_NAT.md",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Bound.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-05-12 190802.png",
-    "Puzzle_Of_Knowledge/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols/ICMP.md",
-    "sorting-spec.md",
-    "Setup_Archive/Viewable/Excalidraw/Computer_Science/System_And_Networks/Disegno_Firewall.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
-    "Setup_Archive/Viewable/Excalidraw/Computer_Science/Theory/Progettazione_Dati_Logica_Esempio.md",
-    "Setup_Archive/Viewable/Excalidraw/Computer_Science/Theory/Schema_E-R_Esempio.md",
-    "Setup_Archive/Viewable/Excalidraw/Computer_Science/System_And_Networks/Disegno_LAN_WAN.md",
     "MYSQLI.pdf",
     "Sicurezza.pdf",
     "Sicurezza 42.pdf",
@@ -376,8 +392,6 @@
     "Senza nome 1.base",
     "SERVER.pdf",
     "VPN.pdf",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Senza nome",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures",
     "Setup_Archive/Viewable/Image/Vecchio.canvas",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]

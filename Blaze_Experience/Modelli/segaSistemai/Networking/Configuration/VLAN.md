@@ -204,3 +204,4 @@ router(config-telephony)# ephone 4
 router(config-ephone)# button 1:4  // Associa il bottone 1 alla Linea 4 (Numero 22)
 router(config-ephone)# exit
 ```
+
