@@ -24,20 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
-      "timestamp": 1778875329724
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Network_Address_Translation/NAT.md",
+      "timestamp": 1778968645456
     },
     {
-      "filepath": "Red_Lab/BLANZ.md",
-      "timestamp": 1778869224507
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_Config.md",
+      "timestamp": 1778967923807
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
-      "timestamp": 1778869218915
+      "filepath": "Setup_Archive/Templates/Note_Template.md",
+      "timestamp": 1778967922786
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL.md",
-      "timestamp": 1778868523991
+      "filepath": "Modelli/segaSistemai/Networking/Configuration/Router.md",
+      "timestamp": 1778967898548
+    },
+    {
+      "filepath": "Modelli/segaSistemai/Networking/Configuration/VLAN.md",
+      "timestamp": 1778967896793
     }
   ],
   "bookmarkedFileStore": [],
