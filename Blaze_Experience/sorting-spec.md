@@ -335,7 +335,7 @@ sorting-spec: |-
     SQL
     ...
     
-  target-folder: Puzzle_Of_Knowledge/Computer_Science/TheoryWeb_Architectures/Database/SQL
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL
     README
     /folders
     DQL

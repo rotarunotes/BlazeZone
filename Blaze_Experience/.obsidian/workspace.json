@@ -94,17 +94,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Network_Address_Translation/NAT.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DCL.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "NAT"
+              "title": "DCL"
             }
           },
           {
             "id": "73179e72c9dfab00",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TEST ESECUZIONE.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "TEST ESECUZIONE"
+            }
+          },
+          {
+            "id": "1d5ce084a7938cca",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -117,39 +132,9 @@
               "icon": "lucide-file",
               "title": "NAT_Config"
             }
-          },
-          {
-            "id": "479d88ae5159fb17",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setup_Archive/Templates/Note_Template.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Note_Template"
-            }
-          },
-          {
-            "id": "1c3805fce6ea2a5b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Modelli/segaSistemai/Networking/Configuration/Router.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Router"
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -389,46 +374,46 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "b0903c0562f7fd21",
+  "active": "1d5ce084a7938cca",
   "lastOpenFiles": [
+    "Senza nome.md",
+    "TEST ESECUZIONE.md",
+    "Sistemi.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_Config.md",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Esercizio_NAT_Dinamico.png",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Shema_Esercizio_NAT_Dinamico.png",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Network_Address_Translation/NAT.md",
     "Setup_Archive/Templates/Note_Template.md",
     "Modelli/segaSistemai/Networking/Configuration/Router.md",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Shema_Esercizio_NAR_Dinamico.png",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-05-17 191512.png",
+    "Senza nome 1.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/Database_Design.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/API.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Architetture_N-Tier.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/TCL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DCL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DDL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DML.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DQL.md",
+    "sorting-spec.md",
+    "Setup_Archive/Templates/Protocols_Templete.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/Relational_Algebra.md",
+    "Puzzle_Of_Knowledge/Computer_Science/README.md",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Esercizio_NAT_Statico.png",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-05-17 184825.png",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-05-17 184717.png",
+    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-05-17 183548.png",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_LAS.md",
     "Modelli/segaSistemai/Networking/Configuration/VLAN.md",
-    "Modelli/segaSistemai/Networking/Configuration/WLC EX.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Network_Address_Translation/NAT.md",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_PAT.png",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-05-16 231430.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_NAT_Dinamico.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-05-16 231148.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_NAT_Statico.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-05-16 230822.png",
-    "Senza nome 1.md",
-    "Senza nome.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_LAS.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Network_Address_Translation/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
-    "sorting-spec.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Traffic_Management/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Traffic_Management/QoS.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Network_Address_Translation/PAT.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DNS.md",
-    "Setup_Archive/Viewable/Excalidraw/Schema_NAT.md",
-    "Red_Lab/BLANZ.md",
-    "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/ACL_Spiegazione.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
-    "Setup_Archive/Viewable/Excalidraw/Computer_Science/Theory/Progettazione_Dati_Logica_Esempio.md",
-    "Setup_Archive/Viewable/Excalidraw/Computer_Science/Theory/Schema_E-R_Esempio.md",
-    "Setup_Archive/Viewable/Excalidraw/Computer_Science/System_And_Networks/Disegno_Firewall.md",
-    "Setup_Archive/Viewable/Excalidraw/Computer_Science/System_And_Networks/Disegno_LAN_WAN.md",
-    "Setup_Archive/Viewable/Excalidraw/Computer_Science/System_And_Networks/Disegno_Tipologie_Di_Rete.md",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Soluzioone_Ex_ACL_Estese.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Pasted image 20260428131634.png",
     "Senza nome 1",
     "Senza nome",
-    "Setup_Archive/Viewable/Image/Pasted image 20260513113125.png",
-    "Setup_Archive/Viewable/Image/Pasted image 20260513113110.png",
     "MYSQLI.pdf",
     "Sicurezza.pdf",
     "Sicurezza 42.pdf",

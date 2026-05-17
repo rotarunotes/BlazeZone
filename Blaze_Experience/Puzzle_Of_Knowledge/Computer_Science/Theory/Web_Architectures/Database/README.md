@@ -11,5 +11,3 @@ ___
 - [Database_Design](Database_Design.md)
 - [SQL](Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/README.md)
 ___
-
- 
