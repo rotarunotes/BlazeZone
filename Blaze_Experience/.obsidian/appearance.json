@@ -1,10 +1,11 @@
 {
-  "cssTheme": "Tokyo Night",
+  "cssTheme": "GitHub Theme",
   "enabledCssSnippets": [
     "Center_Image",
     "Centra_Tabella",
     "Tabella_Grandezza100%",
-    "force-dark-pdf"
+    "force-dark-pdf",
+    "Formattazione_Testo"
   ],
   "baseFontSize": 16,
   "textFontFamily": "Gadugi",

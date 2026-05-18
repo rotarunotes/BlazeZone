@@ -135,3 +135,4 @@ ___
 ___
 
 
+Rete A comunica solo HTTP server0 Rete B non comunica con rete A Rete B comunica con rete C Server HTTP non può generare richieste Server HTTP risponde al PING PC4 comunica solo con rete A Server FTP raggiungibile solo da PC0 Server DHCP --> assegna ip a rete C e rete B

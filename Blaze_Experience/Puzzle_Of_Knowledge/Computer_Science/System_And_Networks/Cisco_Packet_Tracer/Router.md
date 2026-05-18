@@ -49,10 +49,10 @@ R#(config-if)# no shutdown
 # Rotte 
 ## Rotte Statiche
 ``` CLI
-R(config)# [rete di destinazione] [maschera] [next hop] [Metrica]
+R(config)#ip route [rete di destinazione] [maschera] [next hop] [Metrica]
 
 //ESEMPIO
-R(config)# 192.168.2.0 255.255.255.0 40.0.0.1 1
+R(config)#ip route 192.168.2.0 255.255.255.0 40.0.0.1 1
 ```
 
 **next hop:** È l'indirizzo  della porta del router dove passa il pacchetto per arrivare a destinazione

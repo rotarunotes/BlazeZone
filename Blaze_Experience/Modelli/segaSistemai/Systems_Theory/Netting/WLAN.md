@@ -2,7 +2,7 @@ Data: 2026-01-13
 [Netting](Modelli/segaSistemai/Systems_Theory/Netting/README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Systems_Theory/Netting
 ___
-**Pratica**: [[Modelli/segaSistemai/Networking/Configuration/WLAN|WLAN Pratica]]
+**Pratica**: [[Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/WLAN|WLAN Pratica]]
 ___
 # Index
 
