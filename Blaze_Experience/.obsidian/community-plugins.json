@@ -3,7 +3,6 @@
   "templater-obsidian",
   "tag-wrangler",
   "obsidian-style-settings",
-  "omnisearch",
   "home-tab",
   "obsidian-full-calendar",
   "obsidian-excalidraw-plugin",
@@ -15,5 +14,6 @@
   "obsidian-outliner",
   "obsidian-shellcommands",
   "latex-autocomplete",
-  "rainbow-colored-sidebar"
+  "rainbow-colored-sidebar",
+  "omnisearch"
 ]

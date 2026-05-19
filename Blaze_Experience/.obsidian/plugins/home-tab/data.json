@@ -2,7 +2,7 @@
   "logoType": "imagePath",
   "logo": {
     "lucideIcon": "",
-    "imagePath": "Setup_Archive/Viewable/Image/I_Other/Puzzle.png",
+    "imagePath": "Setup_Archive/Viewable/Image/Other/Puzzle.png",
     "imageLink": ""
   },
   "logoScale": 1.3,
@@ -24,24 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_Config.md",
-      "timestamp": 1779135648800
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DNS.md",
+      "timestamp": 1779214745403
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
-      "timestamp": 1779134955858
+      "filepath": "Setup_Archive/Templates/Protocols_Templete.md",
+      "timestamp": 1779214740734
     },
     {
-      "filepath": "RIASSUNTO COMANDI X VEX.md",
-      "timestamp": 1779125430710
+      "filepath": "Modelli/segaSistemai/Networking/Network_Protocols/DHCP.md",
+      "timestamp": 1779214736607
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_LAS.md",
-      "timestamp": 1779125269356
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DHCP.md",
+      "timestamp": 1779214730078
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
-      "timestamp": 1779125267699
+      "filepath": "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/ACL_Spiegazione.md",
+      "timestamp": 1779214729489
     }
   ],
   "bookmarkedFileStore": [],

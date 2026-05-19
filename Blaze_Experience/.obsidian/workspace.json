@@ -59,82 +59,52 @@
             }
           },
           {
-            "id": "d1e5730a314946d6",
+            "id": "75aa59dcddb5206e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DHCP.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "FIREWALL_IN_LAS"
+              "title": "DHCP"
             }
           },
           {
-            "id": "3636da1c8c162701",
+            "id": "568d60c4c4f07816",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
+                "file": "Modelli/segaSistemai/Networking/Network_Protocols/DHCP.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "ACL_Config"
+              "title": "DHCP"
             }
           },
           {
-            "id": "b0903c0562f7fd21",
+            "id": "7a69ae584ea05612",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DCL.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DNS.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "DCL"
-            }
-          },
-          {
-            "id": "73179e72c9dfab00",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TEST ESECUZIONE.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "TEST ESECUZIONE"
-            }
-          },
-          {
-            "id": "1d5ce084a7938cca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_Config.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "NAT_Config"
+              "title": "DNS"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -154,7 +124,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byCreatedTimeReverse",
-                "autoReveal": true
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Esplora risorse"
@@ -166,7 +136,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN",
+                "query": "PAT",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -247,6 +217,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/ACL_Spiegazione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -256,7 +227,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti"
+              "title": "Riferimenti a ACL_Spiegazione"
             }
           },
           {
@@ -265,12 +236,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
+                "file": "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/ACL_Spiegazione.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da ACL_Config"
+              "title": "Collegamenti in uscita da ACL_Spiegazione"
             }
           },
           {
@@ -352,7 +323,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.5
+    "width": 434.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -365,92 +336,53 @@
       "command-palette:Apri riquadro comandi": true,
       "obsidian-trash-explorer:Open trash explorer": false,
       "templater-obsidian:Templater": false,
-      "omnisearch:Omnisearch": false,
       "obsidian-full-calendar:Open Full Calendar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "chronology:Open Chronology": false,
       "custom-sort:Toggle custom sorting": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false
+      "obsidian-shellcommands:Shell commands: Custom variables": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "floating": {
-    "id": "3c77191a72447388",
-    "type": "floating",
-    "children": [
-      {
-        "id": "a51abcd81f760df4",
-        "type": "window",
-        "children": [
-          {
-            "id": "c4cc4f98575be310",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "3785279df03cebf4",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "RIASSUNTO COMANDI X VEX.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "RIASSUNTO COMANDI X VEX"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 345,
-        "y": 228,
-        "width": 1016,
-        "height": 902,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "1d5ce084a7938cca",
+  "active": "7a69ae584ea05612",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
+    "Setup_Archive/Templates/Protocols_Templete.md",
+    "Modelli/segaSistemai/Networking/Network_Protocols/DHCP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DHCP.md",
+    "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/ACL_Spiegazione.md",
+    "Setup_Archive/Viewable/Image/Other/Preparazione TOLC.png",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_Config.md",
-    "RIASSUNTO COMANDI X VEX.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_LAS.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/Router.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/VLAN.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/WLAN.md",
-    "Modelli/segaSistemai/Networking/Configuration/README.md",
-    "Modelli/segaSistemai/Networking/Configuration/WPA3.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/WLC EX.md",
-    "Modelli/segaSistemai/Networking/Configuration/Physics_Part.md",
     "TEST ESECUZIONE.md",
-    "Sistemi.md",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Esercizio_NAT_Dinamico.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Shema_Esercizio_NAT_Dinamico.png",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Network_Address_Translation/NAT.md",
-    "Setup_Archive/Templates/Note_Template.md",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Shema_Esercizio_NAR_Dinamico.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-05-17 191512.png",
-    "Senza nome 1.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/Database_Design.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/API.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Architetture_N-Tier.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/TCL.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DCL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
+    "Setup_Archive/Viewable/Excalidraw/old/D_Math/Eventi_Compatibili_Incompatibili.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DNS.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/README.md",
+    "README.md",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210191733_647.png",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210192257_356.png",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309192814_847.png",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309193318_861.png",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309193600_148.png",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309193106_724.png",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210191039_023.png",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210190754_392.png",
+    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260115165930_853.png",
+    "Setup_Archive/Viewable/Image/Other",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/NTP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/SNMP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/API.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DDL.md",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Esercizio_NAT_Statico.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-05-17 184825.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-05-17 184717.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-05-17 183548.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_PAT.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-05-16 231430.png",
+    "RIASSUNTO COMANDI X VEX.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DQL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/TCL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Redundancy_Aggregation/STP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Redundancy_Aggregation/EtherChannel.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Inter-VLAN_Routing/Layer_3_Switch_SVI.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Inter-VLAN_Routing/Router-On-A-stick.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Inter-VLAN_Routing/README.md",
     "Senza nome 1",
     "Senza nome",
     "MYSQLI.pdf",
@@ -460,7 +392,6 @@
     "Senza nome.base",
     "Senza nome 1.base",
     "SERVER.pdf",
-    "VPN.pdf",
     "Setup_Archive/Viewable/Image/Vecchio.canvas",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]

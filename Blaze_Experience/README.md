@@ -422,7 +422,7 @@ ___
                 - ![Pasted Image 20251215184541_478.png](Setup_Archive/Viewable/Image/I_Math/Pasted%20Image%2020251215184541_478.png)
                 - ![Pasted Image 20260204162356_255.png](Setup_Archive/Viewable/Image/I_Math/Pasted%20Image%2020260204162356_255.png)
             - 📁 **I_Other**
-                - ![Pasted image 20251109224335.png](Setup_Archive/Viewable/Image/I_Other/Pasted%20image%2020251109224335.png)
+                - ![Preparazione TOLC.png](Preparazione%20TOLC.png)
                 - ![Pasted image 20251222213944.png](Setup_Archive/Viewable/Image/I_Other/Pasted%20image%2020251222213944.png)
                 - ![Pasted image 20260331220152.png](Setup_Archive/Viewable/Image/I_Other/Pasted%20image%2020260331220152.png)
                 - ![Pasted image 20260331220606.png](Setup_Archive/Viewable/Image/I_Other/Pasted%20image%2020260331220606.png)
@@ -442,7 +442,7 @@ ___
                 - ![Pasted image 20260421134002.png](Setup_Archive/Viewable/Image/I_Other/Pasted%20image%2020260421134002.png)
                 - ![Pasted image 20260421134235.png](Setup_Archive/Viewable/Image/I_Other/Pasted%20image%2020260421134235.png)
                 - ![Pasted image 20260421222524.png](Setup_Archive/Viewable/Image/I_Other/Pasted%20image%2020260421222524.png)
-                - ![Puzzle.png](Setup_Archive/Viewable/Image/I_Other/Puzzle.png)
+                - ![Puzzle.png](Puzzle.png)
                 - ![Schema ER.png](Setup_Archive/Viewable/Image/I_Other/Schema%20ER.png)
             - ![Pasted image 20260428131019.png](Setup_Archive/Viewable/Image/Pasted%20image%2020260428131019.png)
             - ![Pasted image 20260428131449.png](Setup_Archive/Viewable/Image/Pasted%20image%2020260428131449.png)

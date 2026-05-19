@@ -49,6 +49,7 @@ ___
 Ogni transazione deve rispettare le quattro proprietà **ACID**, che garantiscono l'affidabilità del database.
 ### Atomicità *(Atomicity)*
 La transazione è **indivisibile**: o tutte le operazioni vengono eseguite, o nessuna viene applicata. Non esistono stati intermedi.
+Se avvengono transazioni concorrenti vengono eseguite serialmente
 
 
 > [!Example] Nota
