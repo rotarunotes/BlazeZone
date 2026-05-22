@@ -59,7 +59,7 @@
             }
           },
           {
-            "id": "75aa59dcddb5206e",
+            "id": "7a69ae584ea05612",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -71,6 +71,28 @@
               },
               "icon": "lucide-file",
               "title": "DHCP"
+            }
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "acfff2e06a4f235d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "edc3e316a0e4cf4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DNS.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "DNS"
             }
           },
           {
@@ -87,24 +109,8 @@
               "icon": "lucide-file",
               "title": "DHCP"
             }
-          },
-          {
-            "id": "7a69ae584ea05612",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DNS.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "DNS"
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -323,7 +329,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5
+    "width": 434.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -346,9 +353,10 @@
   },
   "active": "7a69ae584ea05612",
   "lastOpenFiles": [
-    "Setup_Archive/Templates/Protocols_Templete.md",
-    "Modelli/segaSistemai/Networking/Network_Protocols/DHCP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DNS.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DHCP.md",
+    "Modelli/segaSistemai/Networking/Network_Protocols/DHCP.md",
+    "Setup_Archive/Templates/Protocols_Templete.md",
     "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/ACL_Spiegazione.md",
     "Setup_Archive/Viewable/Image/Other/Preparazione TOLC.png",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_Config.md",
@@ -356,7 +364,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DCL.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/FIREWALL_IN_LAS.md",
     "Setup_Archive/Viewable/Excalidraw/old/D_Math/Eventi_Compatibili_Incompatibili.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DNS.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/README.md",
     "README.md",
     "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210191733_647.png",
