@@ -24,16 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "Setup_Archive/Viewable/Excalidraw/Drawing .md",
+      "timestamp": 1779797547269
+    },
+    {
+      "filepath": "Setup_Archive/Templates/Protocols_Templete.md",
+      "timestamp": 1779797545323
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/SIMULAZIONE VEX.md",
+      "timestamp": 1779794387785
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
+      "timestamp": 1779793835885
+    },
+    {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DHCP.md",
-      "timestamp": 1779460941795
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DNS.md",
-      "timestamp": 1779460939238
-    },
-    {
-      "filepath": "Modelli/segaSistemai/Networking/Network_Protocols/DHCP.md",
-      "timestamp": 1779460828040
+      "timestamp": 1779793807484
     }
   ],
   "bookmarkedFileStore": [],
