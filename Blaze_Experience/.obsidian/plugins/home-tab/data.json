@@ -24,24 +24,16 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/SNMP.md",
+      "timestamp": 1779820742108
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/NTP.md",
+      "timestamp": 1779820738545
+    },
+    {
       "filepath": "Setup_Archive/Viewable/Excalidraw/Drawing .md",
-      "timestamp": 1779797547269
-    },
-    {
-      "filepath": "Setup_Archive/Templates/Protocols_Templete.md",
-      "timestamp": 1779797545323
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/SIMULAZIONE VEX.md",
-      "timestamp": 1779794387785
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
-      "timestamp": 1779793835885
-    },
-    {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DHCP.md",
-      "timestamp": 1779793807484
+      "timestamp": 1779820736589
     }
   ],
   "bookmarkedFileStore": [],

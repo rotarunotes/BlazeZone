@@ -77,12 +77,15 @@
             "id": "b3803e24b61e4713",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Setup_Archive/Viewable/Excalidraw/Drawing .md"
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/SNMP.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing"
+              "icon": "lucide-file",
+              "title": "SNMP"
             }
           }
         ],
@@ -305,8 +308,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5,
-    "collapsed": true
+    "width": 434.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -329,9 +331,10 @@
   },
   "active": "b3803e24b61e4713",
   "lastOpenFiles": [
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/NTP.md",
+    "Setup_Archive/Viewable/Excalidraw/Drawing .md",
     "Setup_Archive/Templates/Protocols_Templete.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/SIMULAZIONE VEX.md",
-    "Setup_Archive/Viewable/Excalidraw/Drawing .md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DHCP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DNS.md",
@@ -356,7 +359,6 @@
     "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260115165930_853.png",
     "Setup_Archive/Viewable/Image/Other",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/NTP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/SNMP.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/API.md",
