@@ -24,16 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/README.md",
+      "timestamp": 1779871433343
+    },
+    {
       "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/SNMP.md",
-      "timestamp": 1779820742108
+      "timestamp": 1779871177423
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/NTP.md",
-      "timestamp": 1779820738545
+      "filepath": "Modelli/segaSistemai/Networking/Network_Protocols/SNMP.md",
+      "timestamp": 1779871172457
     },
     {
-      "filepath": "Setup_Archive/Viewable/Excalidraw/Drawing .md",
-      "timestamp": 1779820736589
+      "filepath": "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/Funzionamento_Generale_SNMP.md",
+      "timestamp": 1779871090673
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/DNS.md",
+      "timestamp": 1779870597168
     }
   ],
   "bookmarkedFileStore": [],
