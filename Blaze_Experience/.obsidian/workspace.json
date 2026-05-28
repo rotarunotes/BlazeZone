@@ -104,19 +104,22 @@
             }
           },
           {
-            "id": "7cfe5eb614d3672f",
+            "id": "71c1aa70074832d3",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/Funzionamento_Generale_SNMP.md"
+                "file": "EDUCAZIONE CIVICA.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Funzionamento_Generale_SNMP"
+              "icon": "lucide-file",
+              "title": "EDUCAZIONE CIVICA"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -341,7 +344,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -366,10 +369,12 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "b3803e24b61e4713",
+  "active": "71c1aa70074832d3",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/SNMP.md",
     "Modelli/segaSistemai/Networking/Network_Protocols/SNMP.md",
+    "EDUCAZIONE CIVICA.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/SNMP.md",
     "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/Funzionamento_Generale_SNMP.md",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_SNMP.png",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-05-27 103824.png",
@@ -400,11 +405,9 @@
     "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210191039_023.png",
     "Setup_Archive/Viewable/Image/Other",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/API.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DDL.md",
     "RIASSUNTO COMANDI X VEX.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DQL.md",
     "Senza nome 1",
     "Senza nome",
     "MYSQLI.pdf",
