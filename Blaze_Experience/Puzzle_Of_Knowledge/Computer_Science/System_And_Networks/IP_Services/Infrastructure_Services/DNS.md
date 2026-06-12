@@ -346,13 +346,13 @@ Il campo Flags è di **16 bit**, suddiviso nei seguenti sottocampi:
 ___
 # Porte e Protocolli Correlati
 
-| Porta | Livello OSI          | Protocollo         | Uso                                                                     |
-| ----- | -------------------- | ------------------ | ----------------------------------------------------------------------- |
-| **53**    | **7** (Applicazione) | DNS - UDP          | Query e risposte standard (< 512 byte o con EDNS0)                      |
-| **53**    | **7** (Applicazione) | DNS - TCP          | Risposte troncate, trasferimenti di zona (AXFR/IXFR), DNSSEC            |
-| **853**   | **7** (Applicazione) | DNS over TLS, -TCP | Query DNS cifrate con TLS (DoT) — RFC 7858                              |
-| **443**   | **7** (Applicazione) | DNS over HTTPS     | Query DNS incapsulate in HTTPS (DoH) — RFC 8484                         |
-| **5353**  | **7** (Applicazione) | mDNS - UDP         | Multicast DNS — risoluzione locale senza server (es. `.local`, Bonjour) |
+| Porta    | Livello OSI          | Protocollo         | Uso                                                                     |
+| -------- | -------------------- | ------------------ | ----------------------------------------------------------------------- |
+| **53**   | **7** (Applicazione) | DNS - UDP          | Query e risposte standard (< 512 byte o con EDNS0)                      |
+| **53**   | **7** (Applicazione) | DNS - TCP          | Risposte troncate, trasferimenti di zona (AXFR/IXFR), DNSSEC            |
+| **853**  | **7** (Applicazione) | DNS over TLS, -TCP | Query DNS cifrate con TLS (DoT) — RFC 7858                              |
+| **443**  | **7** (Applicazione) | DNS over HTTPS     | Query DNS incapsulate in HTTPS (DoH) — RFC 8484                         |
+| **5353** | **7** (Applicazione) | mDNS - UDP         | Multicast DNS — risoluzione locale senza server (es. `.local`, Bonjour) |
 
 ___
 # Confronto

@@ -24,16 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "EDUCAZIONE CIVICA.md",
-      "timestamp": 1779979631427
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/VPN.md",
+      "timestamp": 1781193353111
     },
     {
-      "filepath": "Modelli/segaSistemai/Networking/Network_Protocols/SNMP.md",
-      "timestamp": 1779979630162
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/TLS.md",
+      "timestamp": 1781193351276
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/README.md",
-      "timestamp": 1779979569492
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/IPsec_Protocol.md",
+      "timestamp": 1781193341383
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/README.md",
+      "timestamp": 1781193341068
+    },
+    {
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/AAA_Framework.md",
+      "timestamp": 1781193338262
     }
   ],
   "bookmarkedFileStore": [],
