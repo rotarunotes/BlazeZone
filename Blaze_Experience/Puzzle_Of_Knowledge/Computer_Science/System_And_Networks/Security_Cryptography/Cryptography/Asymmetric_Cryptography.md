@@ -1,18 +1,28 @@
-Data: 2026-06-11
+Data: 2026-06-12
 [Cryptography](./README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Cryptography
 ___
 # Index
 - [[#Asymmetric Cryptography]]
 	- [[#Panoramica]]
-- [[#Crittografia Asimmetrica]]
-	- [[#Funzionamento Della Coppia Di Chiavi]]
-	- [[#Scambio Delle Chiavi]]
-- [[#Algoritmi Comuni]]
-	- [[#Rivest-Shamir-Adleman]]
+- [[#Storia Dell'Algoritmo RSA]]
+- [[#Fondamenti Matematici Ed Informatici]]
+	- [[#Divisibilità]]
+	- [[#Strutture Congruenti]]
+	- [[#Numeri Primi]]
+	- [[#Complessità Computazionale]]
+- [[#Funzionamento Di RSA]]
+	- [[#Definizioni E Proprietà]]
+	- [[#Generazione Delle Chiavi]]
+	- [[#Cifratura E Decifratura]]
+- [[#Esempio Numerico Con Messaggio Zuccante]]
+- [[#Protocolli Di Comunicazione Bob E Alice]]
+	- [[#1. Passaggio Di Un Messaggio Segreto]]
+	- [[#2. Autenticazione (Firma Digitale)]]
+	- [[#3. Messaggio Segreto Autenticato]]
+- [[#Altri Algoritmi Asimmetrici Semplificati]]
 	- [[#Diffie-Hellman]]
 	- [[#Elliptic Curve Cryptography]]
-- [[#Vantaggi E Svantaggi]]
 - [[#Note Esame]]
 	- [[#Da Sapere A Memoria]]
 	- [[#Trabocchetti Frequenti]]
@@ -23,66 +33,127 @@ ___
 
 | Caratteristica | Dettaglio |
 | :--- | :---: |
-| **Definizione** | Crittografia a chiave pubblica che utilizza coppie di chiavi matematicamente correlate |
-| **Scopo** | Scambio sicuro delle chiavi e firma digitale (non-ripudio) |
-| **Dimensione Chiave** | Da 256 bit (ECC) a oltre 2048 bit (RSA) |
-| **Algoritmi Chiave** | RSA, DH, ECC |
+| **Definizione** | Crittografia che utilizza due chiavi matematicamente correlate: pubblica e privata |
+| **Scopo principale** | Scambio sicuro delle chiavi simmetriche e autenticazione/firma |
+| **Algoritmo Cardine** | RSA, *Rivest-Shamir-Adleman* (MIT, 1978) |
+| **Basi Matematiche** | Differenza di complessità tra primalità e fattorizzazione |
 
 ___
-# Crittografia Asimmetrica
+# Storia Dell'Algoritmo RSA
 
-La **crittografia asimmetrica** (o a chiave pubblica) risolve il principale limite della crittografia simmetrica (ovvero lo scambio sicuro della chiave) utilizzando due chiavi matematicamente correlate ma distinte:
-- **Chiave Pubblica**: Distribuitale liberamente a chiunque desideri comunicare con il proprietario. Viene utilizzata per cifrare i dati o per verificare le firme digitali.
-- **Chiave Privata**: Custoditale gelosamente dal proprietario. Viene utilizzata per decifrare i dati cifrati con la corrispondente chiave pubblica o per generare firme digitali.
-
-## Funzionamento Della Coppia Di Chiavi
-La logica matematica garantisce che:
-- Ciò che è cifrato con la **chiave pubblica** può essere decifrato solo con la corrispondente **chiave privata**.
-- Ciò che è cifrato con la **chiave privata** (firma) può essere decifrato con la corrispondente **chiave pubblica** (verifica della provenienza).
-
-```
-                      Chiave Pubblica del Destinatario
-                                     │
-                                     ▼
-Testo in Chiaro ───────────────► Cifratura ──► Testo Cifrato
-                                                     │
-                                                     ▼
-Testo in Chiaro ◄──────────────► Decifratura ◄───────┘
-                                     ▲
-                                     │
-                      Chiave Privata del Destinatario
-```
-
-## Scambio Delle Chiavi
-Nelle comunicazioni di rete (es. SSL/TLS, IPsec), la crittografia asimmetrica viene usata all'avvio della connessione per concordare in modo sicuro la chiave simmetrica temporanea (chiave di sessione) che cifrerà l'effettivo traffico dati successivo.
+L'algoritmo RSA prende il nome dai suoi inventori: **Ronald Rivest**, **Adi Shamir** e **Leonard Adleman**.
+- **Origine**: Sviluppato nel **1978** presso il MIT (*Massachusetts Institute of Technology*), rappresentando la prima implementazione pratica della crittografia a chiave asimmetrica.
+- **Evoluzione Commerciale**: Nel 1986 gli inventori fondarono la società *RSA Data Security*, divenuta poi semplicemente *RSA Security* nel 1996.
 
 ___
-# Algoritmi Comuni
+# Fondamenti Matematici Ed Informatici
 
-## Rivest-Shamir-Adleman
-L'RSA, *Rivest-Shamir-Adleman*, si basa sulla difficoltà matematica di fattorizzare numeri primi di grandi dimensioni.
-- **Utilizzo**: Cifratura di piccoli blocchi di dati (es. scambio di chiavi simmetriche) e firme digitali.
-- **Dimensione della chiave**: Richiede almeno 2048 o 4096 bit per essere considerato sicuro oggi.
+La sicurezza e l'architettura di RSA poggiano su solide basi teoriche derivanti dall'algebra e dalla teoria dei numeri.
+
+## Divisibilità
+- **Teorema della Divisione**: Dati due interi, esistono unici quoziente e resto.
+- **Identità di Bezout**: Il massimo comun divisore $\text{mcd}(a, b)$ può essere espresso come combinazione lineare minima di $a$ e $b$.
+- **Algoritmo di Euclide Esteso**: Utilizzato per calcolare in modo efficiente il massimo comun divisore e gli inversi moltiplicativi modulari.
+
+## Strutture Congruenti
+- **Aritmetica Modulare**: Calcoli basati sul resto della divisione intera (modulo).
+- **Teorema di Eulero**: Fondamentale per dimostrare la reversibilità delle funzioni di cifratura/decifratura e per ricavare la chiave privata.
+- **Teorema Cinese del Resto**: Utilizzato per ottimizzare la velocità di calcolo dell'esponenziale modulare.
+
+## Numeri Primi
+- **Generazione e Ricerca**: Per implementare RSA è necessario generare numeri primi molto grandi. Si utilizzano generatori di input casuali combinati con test di primalità probabilistici per verificare se un numero è composto o pseudoprimo (es. **Miller-Rabin's Primality Test**).
+
+## Complessità Computazionale
+L'asimmetria di RSA si basa sulla discrepanza di tempo di calcolo tra due problemi:
+1. **Primalità** (Primality): Verificare se un numero $n$ è primo è computazionalmente **semplice** (eseguibile in tempi polinomiali).
+2. **Fattorizzazione** (Factoring): Dati due numeri primi grandi $p$ e $q$, calcolare il loro prodotto $n = p \cdot q$ è immediato. Al contrario, dato il prodotto $n$, ricavare i fattori primi originali $p$ e $q$ è un problema estremamente **difficile** che richiede tempi astronomici con i computer attuali.
+
+___
+# Funzionamento Di RSA
+
+## Definizioni E Proprietà
+- **M**: Rappresenta il messaggio, costituito da stringhe binarie a lunghezza fissa (es. codice ASCII dei caratteri). Per messaggi lunghi si ripete il processo di encoding a blocchi.
+- **PX**: Chiave pubblica dell'utente X (distribuita a tutti).
+- **SX**: Chiave segreta/privata dell'utente X (conosciuta solo da X).
+- **Proprietà delle chiavi**:
+  - $PX(M)$ e $SX(M)$ sono calcolabili in modo efficiente.
+  - Le funzioni sono una l'inversa dell'altra: $SX(PX(M)) = PX(SX(M)) = M$.
+  - Conoscendo $PX(M)$ e $PX$, è matematicamente impossibile risalire a $M$ senza possedere la chiave privata $SX$.
+
+## Generazione Delle Chiavi
+Per generare le chiavi, ciascun utente esegue questi passaggi:
+1. Sceglie due numeri primi grandi distinti $p$ e $q$ (di almeno 1024 o 2048 bit).
+2. Calcola il modulo $n = p \cdot q$. Il valore di $n$ definisce il dominio dei messaggi.
+3. Calcola la funzione di Eulero: $\phi(n) = (p - 1)(q - 1)$.
+4. Seleziona un esponente pubblico $K_p$ (piccolo) tale che sia coprimo con $\phi(n)$, ovvero: $\text{mcd}(K_p, \phi(n)) = 1$.
+5. Calcola l'esponente privato $K_s$ come inverso modulare di $K_p$ rispetto a $\phi(n)$ tramite l'algoritmo di Euclide esteso:
+   $$(K_s \cdot K_p) \pmod{\phi(n)} = 1$$
+6. Definisce la **Chiave Pubblica**: $PX = (K_p, n)$.
+7. Definisce la **Chiave Privata**: $SX = (K_s, n)$.
+
+## Cifratura E Decifratura
+- **Cifratura**: Il testo in chiaro $M$ viene cifrato calcolando la potenza modulare:
+  $$C = M^{K_p} \pmod n$$
+- **Decifratura**: Il testo cifrato $C$ viene decifrato calcolando:
+  $$M = C^{K_s} \pmod n$$
+
+___
+# Esempio Numerico Con Messaggio Zuccante
+
+- **Messaggio**: `Zuccante`
+- **Rappresentazione binaria (MBIN)**: `0101101001110101...`
+- **Fase 1**: Scegliamo due numeri primi semplici (solo a scopo didattico): $p = 17$, $q = 5$.
+- **Fase 2**: Calcoliamo $n = p \cdot q = 17 \cdot 5 = 85$. Il dominio dei messaggi decimali non deve superare 85 (raggruppiamo i caratteri in blocchi da 6 bit).
+- **Fase 3**: Calcoliamo $\phi(n) = (17 - 1) \cdot (5 - 1) = 16 \cdot 4 = 64$.
+- **Fase 4**: Scegliamo $K_p$ tale che sia coprimo con 64. Scegliamo $K_p = 3$ (infatti $\text{mcd}(3, 64) = 1$).
+- **Fase 5**: Calcoliamo l'inverso $K_s$ tale che: $(K_s \cdot 3) \pmod{64} = 1 \implies K_s = 43$.
+- **Fase 6**: 
+  - **Chiave Pubblica**: $PX = (3, 85)$
+  - **Chiave Privata**: $SX = (43, 85)$
+- **Cifratura**: Per un blocco di messaggio con valore decimale $M = 5$:
+  $$C = 5^3 \pmod{85} = 125 \pmod{85} = 40$$
+- **Decifratura**:
+  $$M = 40^{43} \pmod{85} = 5$$
+
+___
+# Protocolli Di Comunicazione Bob E Alice
+
+Sfruttando le proprietà delle chiavi asimmetriche, Bob e Alice possono comunicare su un canale non sicuro realizzando diversi obiettivi di sicurezza.
+
+## 1. Passaggio Di Un Messaggio Segreto
+Garantisce la **riservatezza** (confidenzialità) del messaggio.
+1. Alice invia la sua chiave pubblica $P_A$ a Bob.
+2. Bob cifra il messaggio $M$ con la chiave pubblica di Alice: $C = P_A(M)$.
+3. Bob invia $C$ ad Alice.
+4. Alice decifra $C$ con la sua chiave privata: $M = S_A(C)$.
+- *Sicurezza*: Un intercettatore (Charlie) non può decifrare il messaggio poiché non possiede la chiave privata di Alice $S_A$.
+
+## 2. Autenticazione (Firma Digitale)
+Garantisce l'**autenticità** della sorgente e l'**integrità** del messaggio.
+1. Bob vuole inviare un messaggio $M$ ad Alice provando la propria identità.
+2. Bob cifra il messaggio con la propria chiave privata: $S_B(M)$.
+3. Bob invia ad Alice il pacchetto contenente il messaggio in chiaro ed il messaggio cifrato: $\{M\ ;\ S_B(M)\}$.
+4. Alice decifra $S_B(M)$ usando la chiave pubblica di Bob $P_B$ e verifica che coincida con $M$:
+   $$M = P_B(S_B(M))$$
+- *Sicurezza*: Charlie non può spacciarsi per Bob poiché non possiede la chiave privata $S_B$ per generare la firma corretta.
+
+## 3. Messaggio Segreto Autenticato
+Unisce **riservatezza**, **autenticità** e **integrità**.
+1. Bob cifra prima il messaggio con la propria chiave privata (firma): $S_B(M)$.
+2. Bob cifra l'intero pacchetto risultante con la chiave pubblica di Alice: $P_A(\{M\ ;\ S_B(M)\})$.
+3. Bob invia il blocco cifrato ad Alice.
+4. Alice usa la propria chiave privata $S_A$ per decifrare l'involucro esterno.
+5. Alice usa la chiave pubblica di Bob $P_B$ per verificare la firma interna.
+- *Sicurezza*: Solo Alice può leggere il messaggio (grazie a $S_A$) ed Alice ha la certezza matematica che provenga da Bob (grazie a $P_B$).
+
+___
+# Altri Algoritmi Asimmetrici Semplificati
 
 ## Diffie-Hellman
-Il DH, *Diffie-Hellman*, è un protocollo di accordo sulle chiavi matematico.
-- **Funzionamento**: Consente a due parti che non si conoscono di generare una chiave simmetrica segreta condivisa attraverso un canale non sicuro, senza trasmettere la chiave stessa sulla rete.
-- **Utilizzo**: Fondamentale nella fase di negoziazione IKE, *Internet Key Exchange*, per IPsec e nel protocollo SSL/TLS.
+- **Scopo**: Protocollo matematico per concordare e scambiare in modo sicuro una chiave simmetrica (chiave di sessione) su un canale pubblico non protetto, senza trasmettere la chiave stessa.
 
 ## Elliptic Curve Cryptography
-L'ECC, *Elliptic Curve Cryptography*, si basa sulle proprietà matematiche delle curve ellittiche.
-- **Vantaggi**: Offre lo stesso livello di sicurezza di RSA utilizzando chiavi di dimensioni molto ridotte.
-- **Esempio**: Una chiave ECC a 256 bit offre una sicurezza equivalente a una chiave RSA a 3072 bit. Questo si traduce in minore overhead di rete, calcoli più rapidi e minore utilizzo di batteria e memoria.
-
-___
-# Vantaggi E Svantaggi
-
-| Caratteristica | Vantaggi | Svantaggi |
-| :--- | :--- | :--- |
-| **Scambio delle chiavi** | Risolve il problema dello scambio della chiave simmetrica senza canali fisici protetti. | - |
-| **Non-ripudio** | Garantisce l'autenticità del mittente tramite la firma digitale. | - |
-| **Prestazioni** | - | **Estremamente lento**: Richiede un elevato carico computazionale sulla CPU. Non è adatto per cifrare flussi massivi di dati. |
-| **Dimensione Chiavi** | - | Chiavi molto lunghe (es. 2048+ bit per RSA) con conseguente aumento del payload. |
+- **Scopo**: Crittografia asimmetrica basata sulle curve ellittiche. Offre livelli di sicurezza molto elevati con chiavi notevolmente più corte rispetto a RSA (es. 256 bit ECC equivalgono a 3072 bit RSA), riducendo l'overhead di calcolo.
 
 ___
 # Note Esame
@@ -91,36 +162,42 @@ ___
 
 | Argomento | Dettagli Tecnici |
 | :--- | :--- |
-| **Funzione Chiavi** | La chiave pubblica cifra; la chiave privata decifra. La chiave privata firma; la chiave pubblica verifica. |
-| **Diffie-Hellman** | Non è un algoritmo di cifratura dati, ma un protocollo di **scambio/accordo sulle chiavi**. |
-| **ECC** | Garantisce alta sicurezza con chiavi corte (ideale per dispositivi mobili ed IoT). |
-| **Utilizzo Ibrido** | Asimmetrico all'inizio per lo scambio della chiave di sessione; simmetrico per il traffico dati reale. |
+| **Basi RSA** | Modulo $n = p \cdot q$; funzione $\phi(n) = (p-1)(q-1)$. |
+| **Cifratura RSA** | $C = M^{Kp} \pmod n$ (con chiave pubblica). |
+| **Decifratura RSA** | $M = C^{Ks} \pmod n$ (con chiave privata). |
+| **Fattorizzazione** | La sicurezza si basa sulla difficoltà di trovare $p$ e $q$ a partire da $n$. |
 
 ## Trabocchetti Frequenti
 
 | Concetto Errato | Realtà Tecnica |
 | :--- | :--- |
-| **Tutto il traffico VPN è cifrato usando RSA** | **FALSO**. RSA è troppo lento. Il traffico VPN è cifrato usando la crittografia simmetrica (es. AES). RSA o DH sono usati solo per negoziare la chiave simmetrica. |
-| **Un host può decifrare i dati cifrati con la propria chiave pubblica** | **FALSO**. La chiave pubblica serve solo a cifrare; una volta cifrato, il dato può essere recuperato esclusivamente tramite la chiave privata associata. |
-| **La chiave privata può essere ricavata facilmente conoscendo la chiave pubblica** | **FALSO**. La relazione matematica è a senso unico (one-way function con trapdoor); calcolare la chiave privata dalla pubblica richiederebbe migliaia di anni con supercomputer. |
+| **La firma digitale si calcola cifrando con la chiave pubblica del destinatario** | **FALSO**. La firma digitale viene generata cifrando (o calcolando l'hash) con la **chiave privata del mittente**. Il destinatario userà la chiave pubblica del mittente per verificarla. |
+| **Trovare numeri primi per RSA è un problema difficile (Factoring)** | **FALSO**. Trovare ed identificare numeri primi grandi (Primalità) è computazionalmente semplice tramite test come Miller-Rabin. Il problema difficile è la **fattorizzazione** (scomporre il prodotto di due primi). |
+| **RSA può essere usato comodamente per cifrare file di diversi gigabyte** | **FALSO**. A causa della lentezza dell'esponenziale modulare, RSA viene usato solo per cifrare piccole stringhe (chiavi simmetriche o hash). I file grandi vengono cifrati con algoritmi simmetrici (AES). |
 
 ___
 # Quick Reference Card
 
 ```
-CRITTOGRAFIA ASIMMETRICA:
-  - Coppia di chiavi: Pubblica (nota a tutti) e Privata (segreta)
-  - Lenta, pesante sulla CPU
-  - Risolve lo scambio chiavi e abilita la firma digitale (non-ripudio)
+RSA (RIVEST-SHAMIR-ADLEMAN):
+  - Algoritmo asimmetrico basato su chiave pubblica PX e privata SX
+  - Sicurezza: Factoring (difficile) vs Primality (semplice)
 
-FUNZIONAMENTO:
-  - Riservatezza: Cifra con Pubblica Destinatario -> Decifra con Privata Destinatario
-  - Firma:        Cifra con Privata Mittente     -> Decifra con Pubblica Mittente
+GENEAZIONE CHIAVI:
+  1. p, q (Numeri Primi grandi) -> n = p * q
+  2. phi(n) = (p - 1) * (q - 1)
+  3. Scegli Kp coprimo con phi(n) -> mcd(Kp, phi(n)) = 1
+  4. Calcola Ks (inverso modulare) -> (Ks * Kp) mod [phi(n)] = 1
+  5. PX = (Kp, n) ; SX = (Ks, n)
 
-ALGORITMI ASIMMETRICI:
-  - RSA -> Standard storico (richiede chiavi 2048+ bit)
-  - DH  -> Protocollo di accordo chiave (Diffie-Hellman)
-  - ECC -> Crittografia basata su curve ellittiche (chiavi corte, es. 256 bit)
+FORMULE CHIAVE:
+  - Cifratura: C = M^Kp mod n
+  - Decifratura: M = C^Ks mod n
+
+PROTOCOLLI BOB & ALICE:
+  - Segretezza:  Invia PA(M)           -> Decifra con SA
+  - Firma:       Invia {M ; SB(M)}     -> Verifica con PB: M = PB(SB(M))
+  - Combinato:   Invia PA({M ; SB(M)}) -> Decifra con SA, verifica con PB
 ```
 ___
 --Gemini

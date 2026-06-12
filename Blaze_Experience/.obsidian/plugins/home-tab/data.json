@@ -24,24 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/VPN.md",
-      "timestamp": 1781193353111
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Cryptography/Asymmetric_Cryptography.md",
+      "timestamp": 1781272004608
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/TLS.md",
-      "timestamp": 1781193351276
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Cryptography/Symmetric_Cryptography.md",
+      "timestamp": 1781272004244
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/IPsec_Protocol.md",
-      "timestamp": 1781193341383
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Cryptography/Hashing_And_Integrity.md",
+      "timestamp": 1781272003809
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/README.md",
-      "timestamp": 1781193341068
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/Layer_2_Security.md",
+      "timestamp": 1781271999553
     },
     {
-      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/AAA_Framework.md",
-      "timestamp": 1781193338262
+      "filepath": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/ACL.md",
+      "timestamp": 1781271975774
     }
   ],
   "bookmarkedFileStore": [],
