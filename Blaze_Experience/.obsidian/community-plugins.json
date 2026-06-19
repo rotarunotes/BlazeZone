@@ -7,7 +7,6 @@
   "obsidian-full-calendar",
   "obsidian-excalidraw-plugin",
   "execute-code",
-  "chronology",
   "settings-search",
   "obsidian-icon-folder",
   "custom-sort",
@@ -15,5 +14,6 @@
   "obsidian-shellcommands",
   "latex-autocomplete",
   "rainbow-colored-sidebar",
-  "omnisearch"
+  "omnisearch",
+  "obsidian-git"
 ]

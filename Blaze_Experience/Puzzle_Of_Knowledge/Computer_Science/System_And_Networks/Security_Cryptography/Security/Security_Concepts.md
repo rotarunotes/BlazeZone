@@ -52,7 +52,8 @@ Si dividono principalmente in:
 La **steganografia** rappresenta l'insieme delle tecniche che permettono di nascondere l'esistenza stessa di un messaggio senza che questo venga modificato o cifrato (es. nascondere un testo all'interno di un'immagine o di un file audio).
 
 ## Crittoanalisi
-La **crittoanalisi** rappresenta l'approccio inverso rispetto alla crittografia, volto a violare, analizzare o rompere un meccanismo crittografico per recuperare il messaggio in chiaro senza conoscere la chiave. Un sistema si considera computazionalmente sicuro se la sua violazione richiede tempi e risorse tali da rendere vani i successivi tentativi di attacco.
+La **crittoanalisi** rappresenta l'approccio inverso rispetto alla crittografia, volto a violare, analizzare o rompere un meccanismo crittografico per recuperare il messaggio in chiaro senza conoscere la chiave.
+Un sistema si considera computazionalmente sicuro se la sua violazione richiede tempi e risorse tali da rendere vani i successivi tentativi di attacco.
 
 ___
 # Internet Security E Architettura X800
@@ -69,27 +70,27 @@ Il documento standard internazionale **Recommendation X.800 Security Architectur
 
 ___
 # Esempi Di Violazione E Attacchi
-
-Le violazioni della sicurezza di rete si dividono in due grandi categorie:
-
 ## Sniffing
 Lo **sniffing** consiste nell'intercettazione passiva del traffico dati in transito sulla rete.
 - **Tipo di attacco**: **Attacco passivo** (non modifica i dati, compromette solo la confidenzialità).
 
 ## Spoofing
 Lo **spoofing** consiste nella falsificazione dell'identità di un host o utente per indurre un dispositivo a fidarsi di una sorgente malevola.
+- **Tipo di attacco**: **Attacco passivo** (non modifica i dati, compromette solo la confidenzialità).
 
 ## Intercettazione Attiva
 L'**intercettazione attiva** avviene quando un terzo non autorizzato si inserisce nella comunicazione per catturare, alterare, inserire o eliminare i messaggi (es. attacchi Man-in-the-Middle).
 - **Tipo di attacco**: **Attacco attivo** (compromette l'integrità e l'autenticità).
-
 ## Denial Of Service
 Il DoS, *Denial of Service*, consiste nella compromissione dei servizi di rete per renderli inutilizzabili agli utenti legittimi (sovraccaricando le risorse o i canali di comunicazione).
+- **Tipo di attacco**: **Attacco attivo** (compromette l'integrità e l'autenticità).
+
 
 ___
 # Sistemi Di Crittografia
 
-Un sistema di crittografia fornisce una famiglia di algoritmi che permettono al mittente di trasmettere un messaggio cifrato in modo sicuro. La decifratura efficiente del messaggio è possibile solo possedendo un'informazione extra: la **chiave**.
+Un sistema di crittografia fornisce una famiglia di algoritmi che permettono al mittente di trasmettere un messaggio cifrato in modo sicuro. 
+La decifratura efficiente del messaggio è possibile solo possedendo un'informazione extra: la **chiave**.
 
 ## Il Principio Di Kerckhoffs
 Il **Principio di Kerckhoffs** stabilisce che la sicurezza di un sistema crittografico deve basarsi esclusivamente sulla conoscenza e segretezza della **chiave**, mentre l'algoritmo di cifratura può essere di pubblico dominio senza compromettere la sicurezza del sistema.
@@ -129,10 +130,10 @@ ___
 
 ## Trabocchetti Frequenti
 
-| Concetto Errato | Realtà Tecnica |
-| :--- | :--- |
-| **La steganografia cifra il testo** | **FALSO**. La steganografia nasconde il testo alla vista (lo rende invisibile); non applica formule matematiche di cifratura sul testo stesso. |
-| **Lo sniffing è un attacco attivo** | **FALSO**. Lo sniffing è un attacco **passivo** poiché si limita ad ascoltare e registrare il traffico senza modificarlo. |
+| Concetto Errato                                       | Realtà Tecnica                                                                                                                                                                              |
+| :---------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **La steganografia cifra il testo**                   | **FALSO**. La steganografia nasconde il testo alla vista (lo rende invisibile); non applica formule matematiche di cifratura sul testo stesso.                                              |
+| **Lo sniffing è un attacco attivo**                   | **FALSO**. Lo sniffing è un attacco **passivo** poiché si limita ad ascoltare e registrare il traffico senza modificarlo.                                                                   |
 | **Un sistema è sicuro solo se l'algoritmo è segreto** | **FALSO**. Secondo il principio di Kerckhoffs, la sicurezza dipende unicamente dalla segretezza della chiave. Gli algoritmi pubblici sono più sicuri perché analizzati da esperti mondiali. |
 
 ___

@@ -235,6 +235,7 @@ sorting-spec: |-
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity_VPN
     README
     /folders
+    GDPR
     IPsec_Protocol
     SSL
     TLS

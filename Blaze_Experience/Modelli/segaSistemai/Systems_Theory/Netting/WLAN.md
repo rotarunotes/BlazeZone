@@ -36,8 +36,6 @@ ___
     - [[#Sicurezza Enterprise (IEEE 802.1X / RADIUS)]]
 
 ---
-
-Ti serve che io trasformi anche i titoli nel corpo del testo in intestazioni cliccabili per questi link?
 # Wireless Local Area Network (WLAN)
 
 Una **WLAN** è una tecnologia che permette l'accesso e connessione di host rete tramite **onde radio**, eliminando la necessità di collegamenti fisici **cablati**. 
@@ -58,14 +56,14 @@ Le WLAN sono regolate dallo standard **IEEE 802.11**, che definisce il funzionam
 - **Topologia Infrastructure:** Prevede un'infrastruttura di rete cablata e l'uso di AP.
 - **Topologia Ad Hoc:** Comunicazione diretta tra dispositivi senza infrastruttura centrale (Peer-to-Peer).
 
-|**Generazione/Standard IEEE**|**Velocità min/max**|**Frequenze**|**Anno**|
-|---|---|---|---|
-|**Wi-Fi 6 (IEEE 802.11ax)**|600–9608 Mbit/s|2,4/5 GHz (1–6 GHz ISM)|2019|
-|**Wi-Fi 5 (IEEE 802.11ac)**|433–6933 Mbit/s|5 GHz|2014|
-|**Wi-Fi 4 (IEEE 802.11n)**|72–600 Mbit/s|2,4/5 GHz|2009|
-|**Wi-Fi 3 (IEEE 802.11g)**|3–54 Mbit/s|2,4 GHz|2003|
-|**Wi-Fi 2 (IEEE 802.11a)**|1,5–54 Mbit/s|5 GHz|1999|
-|**Wi-Fi 1 (IEEE 802.11b)**|1–11 Mbit/s|2,4 GHz|1999|
+| **Generazione/Standard IEEE** | **Velocità min/max** | **Frequenze**           | **Anno** |
+| ----------------------------- | -------------------- | ----------------------- | -------- |
+| **Wi-Fi 6 (IEEE 802.11ax)**   | 600–9608 Mbit/s      | 2,4/5 GHz (1–6 GHz ISM) | 2019     |
+| **Wi-Fi 5 (IEEE 802.11ac)**   | 433–6933 Mbit/s      | 5 GHz                   | 2014     |
+| **Wi-Fi 4 (IEEE 802.11n)**    | 72–600 Mbit/s        | 2,4/5 GHz               | 2009     |
+| **Wi-Fi 3 (IEEE 802.11g)**    | 3–54 Mbit/s          | 2,4 GHz                 | 2003     |
+| **Wi-Fi 2 (IEEE 802.11a)**    | 1,5–54 Mbit/s        | 5 GHz                   | 1999     |
+| **Wi-Fi 1 (IEEE 802.11b)**    | 1–11 Mbit/s          | 2,4 GHz                 | 1999     |
 
 ---
 # Modulazione e Frequenze

@@ -5,6 +5,7 @@ ___
 # Secure_Connectivity
 ___
 # Indice
+- [GDPR](./GDPR.md)
 - [IPsec_Protocol](./IPsec_Protocol.md)
 - [TLS](./TLS.md)
 - [SSL](./SSL.md)

@@ -1,5 +1,5 @@
 {
-  "cssTheme": "GitHub Theme",
+  "cssTheme": "Blue Topaz",
   "enabledCssSnippets": [
     "Center_Image",
     "Centra_Tabella",
@@ -10,5 +10,5 @@
   "baseFontSize": 16,
   "textFontFamily": "Gadugi",
   "theme": "obsidian",
-  "accentColor": "#2493f8"
+  "accentColor": "#96bbdf"
 }

@@ -83,13 +83,13 @@ Il TACACS+, *Terminal Access Controller Access-Control System Plus*, è un proto
 
 ## Confronto RADIUS Vs TACACS+
 
-| Caratteristica | RADIUS | TACACS+ |
-| :--- | :--- | :--- |
-| **Standard** | Aperto (IETF) | Sviluppato da Cisco |
-| **Protocollo di Trasporto** | **UDP** (Porte 1812/1813) | **TCP** (Porta 49) |
-| **Cifratura** | Solo la password | **Tutto il corpo** del pacchetto |
-| **Separazione AAA** | No (Autenticazione/Autorizzazione unite) | **Sì** (Autenticazione, Autorizzazione, Accounting distinte) |
-| **Uso Tipico** | Accesso alla rete (VPN, 802.1X) | Amministrazione dei dispositivi (Device Administration) |
+| Caratteristica              | RADIUS                                   | TACACS+                                                      |
+| :-------------------------- | :--------------------------------------- | :----------------------------------------------------------- |
+| **Standard**                | Aperto (IETF)                            | Sviluppato da Cisco                                          |
+| **Protocollo di Trasporto** | **UDP** (Porte 1812/1813)                | **TCP** (Porta 49)                                           |
+| **Cifratura**               | Solo la password                         | **Tutto il corpo** del pacchetto                             |
+| **Separazione AAA**         | No (Autenticazione/Autorizzazione unite) | **Sì** (Autenticazione, Autorizzazione, Accounting distinte) |
+| **Uso Tipico**              | Accesso alla rete (VPN, 802.1X)          | Amministrazione dei dispositivi (Device Administration)      |
 
 ___
 # Note Esame

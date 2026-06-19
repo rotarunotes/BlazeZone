@@ -8,26 +8,48 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a7d0bf83d3a036eb",
+            "id": "a825e7adc96306fe",
             "type": "leaf",
-            "pinned": true,
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
+          },
+          {
+            "id": "3346eb4c8208434d",
+            "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Setup_Archive/Templates/Protocols_Templete.md",
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/ACL.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
-              "pinned": true,
               "icon": "lucide-file",
-              "title": "Protocols_Templete"
+              "title": "ACL"
             }
           },
           {
-            "id": "e9a449eebdfc80da",
+            "id": "7460b2558b464054",
             "type": "leaf",
-            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "ACL_Config"
+            }
+          },
+          {
+            "id": "5dff2ead98b6bd09",
+            "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
@@ -36,150 +58,12 @@
                 "source": false,
                 "backlinks": false
               },
-              "pinned": true,
               "icon": "lucide-file",
               "title": "Sistemi"
             }
-          },
-          {
-            "id": "099c3f3460b5067c",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sorting-spec.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "sorting-spec"
-            }
-          },
-          {
-            "id": "71c1aa70074832d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "EDUCAZIONE CIVICA.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "EDUCAZIONE CIVICA"
-            }
-          },
-          {
-            "id": "b936a55108259859",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "2c2a40b5ba3f2614",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Protocols/Web_And_Communication/README.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "f77bb9145f145752",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Transport_Layer/TCP.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "TCP"
-            }
-          },
-          {
-            "id": "e373618ce197355d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Protocols/Management_And_Remote_Access/TFTP.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "TFTP"
-            }
-          },
-          {
-            "id": "6c1798d35cb2e4ff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/README.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "1ca1092a64c92d0a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/README.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "357e27bd7acc094e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Cryptography/Asymmetric_Cryptography.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Asymmetric_Cryptography"
-            }
           }
         ],
-        "currentTab": 10
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -211,7 +95,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "PAT",
+                "query": "[\"title\"]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -238,15 +122,15 @@
             "state": {
               "type": "trash-explorer",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "trash-explorer"
+              "icon": "trash",
+              "title": "Trash explorer"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 239.5
+    "width": 286.50154745578766
   },
   "right": {
     "id": "dd71b14831b0ad51",
@@ -255,6 +139,7 @@
       {
         "id": "6355eb65486ff43a",
         "type": "tabs",
+        "dimension": 75.87336244541486,
         "children": [
           {
             "id": "134bca9451b1ac29",
@@ -277,13 +162,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Inter-VLAN_Routing/Router-On-A-stick.md",
+                "file": "Sistemi.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di Router-On-A-stick"
+              "title": "Struttura di Sistemi"
             }
           },
           {
@@ -292,7 +177,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/ACL_Spiegazione.md",
+                "file": "Sistemi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -302,7 +187,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a ACL_Spiegazione"
+              "title": "Riferimenti a Sistemi"
             }
           },
           {
@@ -311,12 +196,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/ACL_Spiegazione.md",
+                "file": "Sistemi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da ACL_Spiegazione"
+              "title": "Collegamenti in uscita da Sistemi"
             }
           },
           {
@@ -334,87 +219,44 @@
             }
           },
           {
-            "id": "06e3fe9f1cb1135d",
+            "id": "0dcede9bdb500cc0",
             "type": "leaf",
             "state": {
-              "type": "chronology-calendar-view",
+              "type": "git-view",
               "state": {},
-              "icon": "clock",
-              "title": "Chronology"
-            }
-          },
-          {
-            "id": "bcbffae4180fe404",
-            "type": "leaf",
-            "state": {
-              "type": "chronology-calendar-view",
-              "state": {},
-              "icon": "clock",
-              "title": "Chronology"
-            }
-          },
-          {
-            "id": "915e0320f22766ea",
-            "type": "leaf",
-            "state": {
-              "type": "chronology-calendar-view",
-              "state": {},
-              "icon": "clock",
-              "title": "Chronology"
-            }
-          },
-          {
-            "id": "2b74b96ebfd71ea7",
-            "type": "leaf",
-            "state": {
-              "type": "chronology-calendar-view",
-              "state": {},
-              "icon": "clock",
-              "title": "Chronology"
-            }
-          },
-          {
-            "id": "1bf6c2d5ca74e6fb",
-            "type": "leaf",
-            "state": {
-              "type": "chronology-calendar-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "chronology-calendar-view"
-            }
-          },
-          {
-            "id": "6c9950f422764af6",
-            "type": "leaf",
-            "state": {
-              "type": "chronology-calendar-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "chronology-calendar-view"
-            }
-          },
-          {
-            "id": "a303a879c6305305",
-            "type": "leaf",
-            "state": {
-              "type": "chronology-calendar-view",
-              "state": {},
-              "icon": "clock",
-              "title": "Chronology"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
         "currentTab": 5
+      },
+      {
+        "id": "3e471ff56d47574c",
+        "type": "tabs",
+        "dimension": 24.126637554585155,
+        "children": [
+          {
+            "id": "4f41864c00a2c69f",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vista grafo"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 440.5
+    "width": 395.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "graph:Apri vista grafo": false,
       "bases:Crea nuova Base": false,
       "switcher:Apri selezione rapida": true,
-      "graph:Apri vista grafo": false,
       "canvas:Crea nuova lavagna": true,
       "daily-notes:Apri nota del giorno": true,
       "templates:Inserisci modello": true,
@@ -426,43 +268,48 @@
       "chronology:Open Chronology": false,
       "custom-sort:Toggle custom sorting": false,
       "obsidian-shellcommands:Shell commands: Custom variables": false,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "357e27bd7acc094e",
+  "active": "5dff2ead98b6bd09",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Cryptography/Symmetric_Cryptography.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Cryptography/Hashing_And_Integrity.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Cryptography/Asymmetric_Cryptography.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/Layer_2_Security.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/ACL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/IPsec_Protocol.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/VPN.md",
+    "GEMINI.md",
+    "Setup_Archive/Rules/Rules.md",
+    "README.md",
+    "Setup_Archive/Obsidian_Base/Formatting.md",
+    "Setup_Archive/Plugin/README.md",
+    "Setup_Archive/Plugin/Pearls/OBBIETTIVI ESTATE.md",
+    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-02 Integrali stream.md",
+    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-26 Leopardi.md",
+    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-23 ARP SubNetEx.md",
+    "Setup_Archive/Plugin/Calendar/Social_Event/2025-10-28 Cena Con Le Sisters.md",
+    "Setup_Archive/Plugin/Pearls/Daily/15-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/16-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/16-04-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/18-04-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/20-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/21-04-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/19-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/23-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/22-03-2026.md",
+    "Senza nome.md",
+    "Risoluzione sessione ordinaria 2024 di sistemi e reti.md",
+    "Setup_Archive/Rules/Short_Cut.md",
+    "Setup_Archive/Rules/README.md",
+    "Setup_Archive/Obsidian_Base/README.md",
+    "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
+    "School/5ID_2025-26",
+    "School/4ID_2024-25",
+    "School/3ID_2023-24",
+    "School",
+    "Senza nome 3",
+    "Senza nome 2",
+    "Senza nome 1",
+    "Senza nome",
     "crittografia_4_rsa.pptx",
     "crittografia_3_des.pptx",
-    "crittografia_2_storia.pptx",
-    "crittografia_1.pptx",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/TLS.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/AAA_Framework.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/DMZ.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/Firewall_Types.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Cryptography/PKI_Certificates_X509.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Cryptography/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Security/Device_Hardening.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Security/Security_Concepts.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Security/README.md",
-    "Sistemi.md",
-    "Setup_Archive/Templates/Protocols_Templete.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/README.md",
-    "Senza nome.md",
-    "vpn-1.pdf",
-    "sicurezza_di_rete-1.pdf",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Protocols/Management_And_Remote_Access/TFTP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Protocols/Management_And_Remote_Access/FTP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Protocols/Management_And_Remote_Access/TELNET.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Protocols/Management_And_Remote_Access/SSH.md",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Connessione_Persistente.png",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Pasted image 20260115181754.png",
     "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Connessione_Non_Persistente.png",
@@ -473,10 +320,6 @@
     "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210191733_647.png",
     "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210192257_356.png",
     "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309192814_847.png",
-    "Setup_Archive/Viewable/Image/Other",
-    "Senza nome 1",
-    "Senza nome",
-    "MYSQLI.pdf",
     "Setup_Archive/Viewable/Image/Vecchio.canvas",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]
