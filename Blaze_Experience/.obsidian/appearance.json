@@ -1,11 +1,11 @@
 {
   "cssTheme": "Blue Topaz",
   "enabledCssSnippets": [
-    "Center_Image",
     "Centra_Tabella",
-    "Tabella_Grandezza100%",
     "force-dark-pdf",
-    "Formattazione_Testo"
+    "Formattazione_Testo",
+    "Tabella_Grandezza100%",
+    "Center_Image"
   ],
   "baseFontSize": 16,
   "textFontFamily": "Gadugi",

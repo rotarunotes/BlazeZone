@@ -21,8 +21,3 @@ ___
 | ctrl + alt + u   | Apre le cartelle: Image, Screenshot, Download |
 | ctrl + shif + +  | aumenta zoom                                  |
 | ctrl + shif + -  | diminuisisci zoom                             |
-|                  |                                               |
-
-# Titolo 2
-___
- 

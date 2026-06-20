@@ -13,7 +13,8 @@
   "obsidian-outliner",
   "obsidian-shellcommands",
   "latex-autocomplete",
-  "rainbow-colored-sidebar",
   "omnisearch",
-  "obsidian-git"
+  "obsidian-git",
+  "dataview",
+  "excalidraw-extras"
 ]

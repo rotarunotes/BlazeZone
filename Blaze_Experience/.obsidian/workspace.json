@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0217e8bb4b2ec459",
+        "id": "f191ef8df2d47e63",
         "type": "tabs",
         "children": [
           {
-            "id": "a825e7adc96306fe",
+            "id": "e54d8a66ce939f5d",
             "type": "leaf",
             "state": {
               "type": "home-tab-view",
@@ -16,54 +16,8 @@
               "icon": "search",
               "title": "Home tab"
             }
-          },
-          {
-            "id": "3346eb4c8208434d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/ACL.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "ACL"
-            }
-          },
-          {
-            "id": "7460b2558b464054",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "ACL_Config"
-            }
-          },
-          {
-            "id": "5dff2ead98b6bd09",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sistemi.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Sistemi"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "[\"title\"]",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -127,10 +81,28 @@
             }
           }
         ]
+      },
+      {
+        "id": "ca64f8808be51ec0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "15c8f785f13b3d79",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "Vista grafo"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 286.50154745578766
+    "width": 296.50154745578766
   },
   "right": {
     "id": "dd71b14831b0ad51",
@@ -139,69 +111,20 @@
       {
         "id": "6355eb65486ff43a",
         "type": "tabs",
-        "dimension": 75.87336244541486,
+        "dimension": 61.20218579234973,
         "children": [
-          {
-            "id": "134bca9451b1ac29",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": false,
-                "showSearch": true,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Etichette"
-            }
-          },
           {
             "id": "67a153047c7c72ed",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemi.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di Sistemi"
-            }
-          },
-          {
-            "id": "6dc0ecf411e6a665",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Sistemi.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Riferimenti a Sistemi"
-            }
-          },
-          {
-            "id": "715cb04f903d2900",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Sistemi.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": false
-              },
-              "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Sistemi"
+              "title": "Struttura"
             }
           },
           {
@@ -219,6 +142,16 @@
             }
           },
           {
+            "id": "4725e6d0d7947a13",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {},
+              "icon": "history",
+              "title": "History"
+            }
+          },
+          {
             "id": "0dcede9bdb500cc0",
             "type": "leaf",
             "state": {
@@ -229,21 +162,42 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       },
       {
         "id": "3e471ff56d47574c",
         "type": "tabs",
-        "dimension": 24.126637554585155,
+        "dimension": 38.79781420765027,
         "children": [
           {
-            "id": "4f41864c00a2c69f",
+            "id": "6dc0ecf411e6a665",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista grafo"
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Riferimenti"
+            }
+          },
+          {
+            "id": "715cb04f903d2900",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "Collegamenti in uscita"
             }
           }
         ]
@@ -265,41 +219,40 @@
       "templater-obsidian:Templater": false,
       "obsidian-full-calendar:Open Full Calendar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "chronology:Open Chronology": false,
       "custom-sort:Toggle custom sorting": false,
       "obsidian-shellcommands:Shell commands: Custom variables": false,
       "omnisearch:Omnisearch": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5dff2ead98b6bd09",
+  "active": "15c8f785f13b3d79",
   "lastOpenFiles": [
-    "GEMINI.md",
-    "Setup_Archive/Rules/Rules.md",
-    "README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN/Access_Vs_Trunk.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
+    "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/Propagazione_Del_Segnale.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/Router.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/WLC EX.md",
+    "Puzzle_Of_Knowledge/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/Automata_Theory/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
     "Setup_Archive/Obsidian_Base/Formatting.md",
-    "Setup_Archive/Plugin/README.md",
-    "Setup_Archive/Plugin/Pearls/OBBIETTIVI ESTATE.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-11-02 Integrali stream.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-26 Leopardi.md",
-    "Setup_Archive/Plugin/Calendar/Daily_Quest/2025-10-23 ARP SubNetEx.md",
-    "Setup_Archive/Plugin/Calendar/Social_Event/2025-10-28 Cena Con Le Sisters.md",
-    "Setup_Archive/Plugin/Pearls/Daily/15-03-2026.md",
-    "Setup_Archive/Plugin/Pearls/Daily/16-03-2026.md",
-    "Setup_Archive/Plugin/Pearls/Daily/16-04-2026.md",
-    "Setup_Archive/Plugin/Pearls/Daily/18-04-2026.md",
-    "Setup_Archive/Plugin/Pearls/Daily/20-03-2026.md",
-    "Setup_Archive/Plugin/Pearls/Daily/21-04-2026.md",
-    "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
-    "Setup_Archive/Plugin/Pearls/Daily/19-03-2026.md",
-    "Setup_Archive/Plugin/Pearls/Daily/23-03-2026.md",
-    "Setup_Archive/Plugin/Pearls/Daily/22-03-2026.md",
-    "Senza nome.md",
-    "Risoluzione sessione ordinaria 2024 di sistemi e reti.md",
+    "Setup_Archive/Obsidian_Base/Stats.md",
     "Setup_Archive/Rules/Short_Cut.md",
-    "Setup_Archive/Rules/README.md",
-    "Setup_Archive/Obsidian_Base/README.md",
-    "Setup_Archive/Obsidian_Base/Example_Of_Text.md",
+    "GEMINI.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
+    "Setup_Archive/Viewable/Excalidraw/old/D_Math/Integrale_definito_Indica.md",
+    "Senza nome.md",
+    "README.md",
     "School/5ID_2025-26",
     "School/4ID_2024-25",
     "School/3ID_2023-24",
