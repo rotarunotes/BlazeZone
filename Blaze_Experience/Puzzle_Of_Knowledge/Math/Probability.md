@@ -31,12 +31,12 @@ ___
 
 - L'insieme $U$ di tutti i possibili risultati di un esperimento aleatorio si chiama **spazio campionario**.
 - Un **evento** è un qualunque sottoinsieme dello **spazio campionario**; un evento formato da un singolo risultato dell'esperimento è detto **evento elementare**.
-![[Eventi_Elementari|300]]
+![Eventi_Elementari.jpg](../../Setup_Archive/Viewable/Image/Math/Eventi_Elementari.jpg)
 
 
 Possiamo rappresentare esperimenti aleatori **complessi** (Il lancio di una moneta per più volte consecutive, attraverso), attraverso un diagramma ad albero.
 
-![[Albero_Di_Esempi]]
+![Albero_Di_Esempi.jpg](../../Setup_Archive/Viewable/Image/Math/Albero_Di_Esempi.jpg)
 
 ___
 # Definizione Di Probabilità
@@ -112,7 +112,7 @@ $$
 > $E_2 = \{1\}$
 > $p(E_1 \cup E_2) = \frac{2}{6} + \frac{1}{6} = \frac{1}{2}$
 
-![[Schema_Assioma_Probabilità]]
+![Schema_Assioma_Probabilità.jpg](../../Setup_Archive/Viewable/Image/Math/Schema_Assioma_Probabilità.jpg)
 
 ## Proprietà
 Dalla definizione assiomatica si **deducono** le seguenti proprietà.
@@ -183,7 +183,7 @@ ___
 		2) $E_2$: "Esce un numero maggiore di 3" $\rightarrow \{4, 5, 6\}$
 		   Se lanciamo un dado è possibile che avvenga sia $E_1$ e $E_2$ $\{4, 6\}$
 
-![[Eventi_Compatibili_Incompatibili]]
+![Eventi_Compatibili_Incompatibili.jpg](../../Setup_Archive/Viewable/Image/Math/Eventi_Compatibili_Incompatibili.jpg)
 
 ## Probabilità Della Somma Logica o Unione Di Due Eventi
 

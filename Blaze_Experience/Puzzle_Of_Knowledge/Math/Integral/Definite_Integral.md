@@ -3,7 +3,7 @@
 #Puzzle_Of_Knowledge/Math/Integral
 ___
 # Trapezoide
-![[Grafico_integrale]]
+!![Grafico_Integrale.jpg](../../../Setup_Archive/Viewable/Image/Math/Grafico_Integrale.jpg)
 $$
 \int_b^a f(x) \ dx = S = \lim_{x \to \ + \infty}s_n = \lim_{x \to \ + \infty}S_n
 $$
@@ -13,10 +13,10 @@ $$
 \int_a^b f(x) \ dx = \lim_{\Delta x_{\text(max)} \to \ 0}\overline{S}
 $$
 
-![[Integrale_definito_Indica]]
+![Integrale_definito_Indica.jpg](../../../Setup_Archive/Viewable/Image/Math/Integrale_definito_Indica.jpg)
 
 # Calcolo delle aree
-![[Integrale_definito_Aree|600]]
+![Integrale_definito_Aree.jpg](../../../Setup_Archive/Viewable/Image/Math/Integrale_definito_Aree.jpg)
 
 - Per convenzione di pone:
 $$
@@ -92,7 +92,7 @@ $$
 \int_a^b f(x) \ dx = f(z)\ \cdot \ (b-a)
 $$
 
-![[Integrale_definito_Media|200]]
+![Integrale_definito_Media.jpg](../../../Setup_Archive/Viewable/Image/Math/Integrale_definito_Media.jpg)
 
 # Derivata Della Primitiva
 Se:
@@ -178,7 +178,7 @@ ___
 $$
 S = \int_a^b \left[ f(x) - g(x) \right] \ dx
 $$
-![[Integrale_definito_aree_curve|200]]
+![Integrale_definito_aree_curve.jpg](../../../Setup_Archive/Viewable/Image/Math/Integrale_definito_aree_curve.jpg)
 
 ___ 
 # Calcolo Dei Volumi
@@ -226,7 +226,7 @@ $$
 \int_a^b f(x) dx = \lim_{t \to c^-} \int_a^t f(x) dx + \lim_{t \to c^+} \int_t^b f(x) dx.
 $$
 
-![[Integrale_definito_3casi|600]]
+![Integrale_definito_3casi.jpg](../../../Setup_Archive/Viewable/Image/Math/Integrale_definito_3casi.jpg)
 
 # Integrale Di Una Funzione In Un Intervallo Illimitato
 Consideriamo una funzione $f(x)$ continua in tutti i punti di $[a, +\infty[$. Comunque si scelga un punto $z$ interno all’intervallo $[a, +\infty[$, esiste l’integrale $\int_a^z f(x) dx$ il cui valore è un numero reale, quindi possiamo costruire anche in questo caso la funzione integrale:
@@ -250,6 +250,4 @@ Anche in questo caso si dice che l’integrale $\int_a^{+\infty} f(x)dx$ è **co
 In modo del tutto analogo, se una funzione è continua in $]-\infty, a]$ e se esiste finito il limite $\lim_{z \to -\infty} \int_z^a f(x) dx$, diciamo che la funzione $f(x)$ è integrabile in senso improprio in $]-\infty, a]$ e definiamo:
 
 $$\int_{-\infty}^a f(x) dx = \lim_{z \to -\infty} \int_z^a f(x) dx.$$
-
-
-
+___

@@ -81,7 +81,7 @@ ___
 Il DNS è un **sistema distribuito e gerarchico** che mappa i dominii leggibili (google.com) in indirizzi IP (e viceversa).
 Non esiste un unico database centrale: l'informazione è distribuita tra migliaia di server autoritativi nel mondo, coordinati da una gerarchia ad albero.
 
-![Schema_Hostname.png](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Hostname.png)
+![Schema_Hostname.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Hostname.jpg)
 
 Il principio fondamentale è la **delega**: ogni livello della gerarchia conosce solo i server del livello successivo, non l'intera struttura.
 Questo permette una scalabilità globale e una gestione decentralizzata.
@@ -236,7 +236,7 @@ In questo scenario, il **client** (il tuo computer o smartphone) richiede a un s
 | **Cache + Risposta**   | 7   | Il Recursive mette in cache e risponde allo Stub                | Recursive | Stub      | Cache valida per il valore TTL del record A    |
 | **Risposta Client**    | 8   | Lo Stub passa l'IP al browser                                   | Stub      | Browser   | Flag RA=1 nella risposta (Recursion Available) |
 
-![Schema_DNS.png](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_DNS.png)
+![Schema_DNS.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_DNS.jpg)
 
 ## Risoluzione Iterativa Con Cache Vuota
 ___

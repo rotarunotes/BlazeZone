@@ -16,11 +16,11 @@ $$\int f(x)\,dx$$
 -  Una funzione che ammette una primitiva (e quindi infinite primitive) si dice **integrabile**
 
 $$\mathrm{D} \left[ \int f(x) \,dx \right] = f(x)$$
- ![[Schema_Insieme_Primitive_Infinite]]
+![Schema_Insieme_Primitive_Infinite.jpg](../../../Setup_Archive/Viewable/Image/Math/Schema_Insieme_Primitive_Infinite.jpg)
 
 
 - Se una funzione è continua in un intervallo reale $I$, allora ammette primitive nello stesso intervallo.
- ![[Insieme_Derivate]]
+![Insieme_Derivate.jpg](../../../Setup_Archive/Viewable/Image/Math/Insieme_Derivate.jpg)
 ___
 
 # Metodi Di Risoluzione:
@@ -129,7 +129,7 @@ $$
 \int \frac {x^3 + 2x^2 + x + 1} {x^2+1} dx
 $$
 
-![[Schema_Divisione_Polinomi|250]]
+![Schema_Divisione_Polinomi.jpg](../../../Setup_Archive/Viewable/Image/Math/Schema_Divisione_Polinomi.jpg)
 
 $$Q(x) = x + 2$$
 $$R(x) = -1$$
@@ -203,3 +203,4 @@ $$
 $$
 - Si calcola il secondo integrale con  il **metodo già visto** ($\Delta < 0$ , $N$ di grado $0$)
 - Si sommano i risultati ottenuti
+___

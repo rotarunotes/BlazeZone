@@ -17,7 +17,7 @@ ___
 
 **API** è un intermediario software che permette a più applicazioni di **parlarsi** tra loro.
 
-![Schema_API.png](../../../../Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_API.png)
+![Schema_API.jpg](../../../../Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_API.jpg)
 ___
 # REST
 

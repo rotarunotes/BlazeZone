@@ -1,8 +1,7 @@
 Data: 2025-11-14
-[](README.md)
+[](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Networking/Configuration/Switch
 ___
-**Teoria:** [[Modelli/segaSistemai/Systems_Theory/Netting/VLAN|VLAN_Teoria]]
 `SW# show vlan brief`: Mostra tutte le VLAN e porte assegnate
 # Creazione VLAN
 ``` CLI

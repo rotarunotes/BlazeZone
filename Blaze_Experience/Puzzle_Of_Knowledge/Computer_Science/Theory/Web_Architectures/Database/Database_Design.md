@@ -1,5 +1,5 @@
 Data: 2026-02-11
-[Database](README.md)
+[Database](Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Theory/Database
 ___
 # Index
@@ -38,7 +38,7 @@ Un database ben progettato **garantisce**:
 4) Scalabilità del sistema.
 ## Progettazione Basi Di Dati MVC
 
-![Progettazione_Dati_Logica_Esempio.png](Progettazione_Dati_Logica_Esempio.png)
+![Progettazione_Dati_Logica_Esempio.jpg](Progettazione_Dati_Logica_Esempio.jpg)
 
 ---
 # Progettazione Concettuale
@@ -60,7 +60,7 @@ Lo **Schema E-R (Entity-Relationship)** è un modello grafico utilizzato nella p
 - **esclusive**: (è solo B o C);
 - **sovrapposte**: (può essere sia B che C);
 
-![Schema_E-R_Esempio.png](Schema_E-R_Esempio.png)
+![Schema_E-R_Esempio.jpg](Schema_E-R_Esempio.jpg)
 
 ## Cardinalità
 La **cardinalità** definisce quante volte un'entità può essere collegata a un'altra entità in una relazione

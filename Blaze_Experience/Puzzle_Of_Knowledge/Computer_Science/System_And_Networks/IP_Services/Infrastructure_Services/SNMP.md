@@ -69,7 +69,7 @@ I dati scambiati sono strutturati in un database gerarchico chiamato **MIB (Mana
 
 ## Le 5 Componenti dell'Architettura SNMP
 
-![Schema_SNMP.png](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_SNMP.png)
+![Schema_SNMP.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_SNMP.jpg)
 1. **Managed Component**: il dispositivo fisico o virtuale da monitorare (router, switch, server, stampante…).
 2. **Subagent**: il software installato sul Managed Component che raccoglie i dati tecnici specifici del dispositivo.
 3. **Management Information Base (MIB)**: il database gerarchico che descrive lo stato e la configurazione del Managed Component tramite OID.

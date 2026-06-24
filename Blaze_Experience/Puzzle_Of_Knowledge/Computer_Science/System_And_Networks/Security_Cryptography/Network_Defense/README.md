@@ -3,6 +3,8 @@ Data: 2026-06-11
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense
 ___
 # Network_Defense
+
+La difesa di rete (**Network Defense**) è l'insieme di strategie e tecnologie progettate per proteggere l'integrità, la riservatezza e la disponibilità dei dati in transito e dei dispositivi connessi.
 ___
 # Indice
 - [AAA_Framework](./AAA_Framework.md)

@@ -19,7 +19,7 @@ ___
 La differenza principale risiede nel modo in cui i livelli superiori e inferiori vengono **raggruppati**. 
 La suite TCP/IP semplifica la struttura per renderla più efficiente nelle implementazioni software.
 
-![Schema_OSI_TCP_AI.png](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_OSI_TCP_AI.png)
+![Schema_OSI_TCP_AI.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_OSI_TCP_AI.jpg)
 ## I 4 Livelli Pratici
 
 | Livello | livello  OSI | Nome                  | Funzione principale                                                               |     PDU     |

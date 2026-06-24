@@ -30,13 +30,13 @@ Il Livello Fisico si occupa di **attivare**, **mantenere** e **disattivare** le 
 I 8 fili intrecciati in 4 doppini intrecciati a loro volta, tutto perchè riducono le interferenze elettromagnetiche.
 - **Distanza massima:** 100 m (segmento)
 - **Standard di cablaggio:** T568A / T568B
-![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Cavo_UTP.png)
+![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Cavo_UTP.jpg)
 - **Connettore:** RJ-45
 Esistono varie **categorie** di cavi UTP (ad esempio adesso siamo arrivati alla 8). Solitamente si sceglie la categoria in base alla larghezza di banda richiesta.
-![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Tipologie_Cavo_UTP.png)
+![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Tipologie_Cavo_UTP.jpg)
 #### STP
 *Shielded Twisted Pair*: Versione schermata dell'UTP, più resistente alle interferenze in ambienti industriali o ad alta densità elettromagnetica.
-![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Cavi_STP.png)
+![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Cavi_STP.jpg)
 
 #### Cavo Coassiale
 **Lento**, Usato storicamente per reti e ancora presente in impianti TV/CATV e alcuni contesti legacy.
@@ -44,7 +44,7 @@ Esistono varie **categorie** di cavi UTP (ad esempio adesso siamo arrivati alla 
 2. Schermatura intrecciata in rame
 3. Isolante in plastica
 4. Conduttore di rame
-![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Cavo_Coassiale.png)
+![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Cavo_Coassiale.jpg)
 
 ### Fibra Ottica
 - Trasmette dati tramite impulsi **luminosi**. 

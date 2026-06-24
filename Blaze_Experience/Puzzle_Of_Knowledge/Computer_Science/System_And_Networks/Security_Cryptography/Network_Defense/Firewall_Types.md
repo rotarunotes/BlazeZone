@@ -18,7 +18,7 @@ Un **firewall** è un sistema di sicurezza di rete che controlla il traffico di 
 
 L'obiettivo principale è quello di creare una **barriera** tra una rete interna fidata e reti esterne non fidate (es. Internet), permettendo solo il traffico **autorizzato**.
 
-![Schema_Firewall.png](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Firewall.png)
+![Schema_Firewall.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Firewall.jpg)
 
 ___
 # Firewall Stateless (ACL Standard)

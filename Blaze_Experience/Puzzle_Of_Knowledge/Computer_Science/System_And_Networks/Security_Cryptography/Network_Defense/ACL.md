@@ -115,7 +115,7 @@ Le ACL standard filtrano **solo in base all'IP sorgente** (Layer 3).
 - Filtrano solo sulla **sorgente**
 - Vanno applicate **OUTBOUND** sull'interfaccia **più vicina alla destinazione**
   
-![Schema_Bound.png](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_ACL_Standard.png)
+![Schema_Bound.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_ACL_Standard.jpg)
 
 > [!NOTE] Nota
 > Vengono applicate **vicino** alla destinazione perché filtrano solo la **sorgente**: 
@@ -143,7 +143,7 @@ Le ACL estese filtrano su (Layer 3 + Layer 4):
 - Filtrano per protocollo (TCP, UDP, ICMP, IP, …) e per porta
 - Vanno applicate **INBOUND** sull'interfaccia **più vicina alla sorgente**
 
-![Schema_ACL_Estesa.png](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_ACL_Estesa.png)
+![Schema_ACL_Estesa.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_ACL_Estesa.jpg)
 
 > [!NOTE] Nota
 > Vengono applicate **vicino** alla sorgente per bloccare il traffico il **prima possibile**, evitando di occupare la rete inutilmente.

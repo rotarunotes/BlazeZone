@@ -22,7 +22,7 @@ Queste definizioni sono cruciali per l'analisi dei dati:
 ## Classificazione del Carattere
 Il Carattere si distingue in due tipi principali in base alle sue modalità:
 
-![[Carattere]]
+![Carattere.jpg](../../Setup_Archive/Viewable/Image/Math/Carattere.jpg)
 
 | **Tipo di Carattere** | **Modalità**                                      | **Nome Associato**       | **Esempi**                                                  |
 | --------------------- | ------------------------------------------------- | ------------------------ | ----------------------------------------------------------- |
@@ -58,7 +58,7 @@ ___
 **Distribuzione di Frequenze:** È l'insieme delle coppie ordinate in cui il primo elemento è la **modalità** e il secondo è la **frequenza** corrispondente.
 - **Distribuzioni Semplici:** Interessano l'analisi di **un solo carattere**.
 
-![[Distribuzioni_Semplici]]
+![Distribuzioni_Semplici.jpg](../../Setup_Archive/Viewable/Image/Math/Distribuzioni_Semplici.jpg)
 
 Strumenti per riassumere i dati:
 1. **Tabelle:** Per organizzare i dati e le frequenze.

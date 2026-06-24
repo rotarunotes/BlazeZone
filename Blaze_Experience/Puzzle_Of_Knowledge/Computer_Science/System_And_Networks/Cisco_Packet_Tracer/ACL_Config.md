@@ -1,5 +1,5 @@
 Data: 2026-05-12
-[Cisco_Packet_Tracer](README.md)
+[Cisco_Packet_Tracer](Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/README.md)
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer
 ___
 # Index

@@ -80,7 +80,7 @@ Il protocollo definisce:
 ## Algoritmo di Sincronizzazione
 L'accuratezza massima si ottiene quando il ritardo dei pacchetti è **simmetrico**.
 ### Calcoli Principali
-![Schema_NTP.png](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_NTP.png)
+![Schema_NTP.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_NTP.jpg)
 **Round Trip Delay** ($\delta$): misura il tempo totale dello spazio percorso dal pacchetto, escludendo il tempo di elaborazione del server.
 $$\delta = (t_3 - t_0) - (t_2 - t_1)$$
 **Time Offset** ($\theta$): rappresenta il tempo di ritardo medio.

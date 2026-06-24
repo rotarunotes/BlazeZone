@@ -1,5 +1,5 @@
 Data: 2026-06-08
-[Blaze_Experience](./README.md)
+[Blaze_Experience](Red_Lab/README.md)
 #ParteTuttoDaQua
 ___
 # Index

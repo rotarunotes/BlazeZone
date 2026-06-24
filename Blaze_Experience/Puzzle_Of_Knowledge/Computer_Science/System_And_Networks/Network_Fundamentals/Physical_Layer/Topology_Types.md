@@ -33,7 +33,7 @@ Questo offre la **massima ridondanza**: se un cavo si rompe, ci sono sempre perc
 ## Topologia a Albero
 C'è un nodo **radice** in alto, che si collega a nodi di livello inferiore, i quali a loro volta si collegano ad altri dispositivi.
 
-![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Topologie_Reti.png)
+![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Topologie_Reti.jpg)
 
 | Topologia  | Costo      | Affidabilità             | Facilità Espansione         |
 | ---------- | ---------- | ------------------------ | --------------------------- |
@@ -55,7 +55,7 @@ Le reti si classificano in base alla loro estensione geografica:
 | **LAN** | *Local Area Network*        | Edificio o Campus — alta velocità     | Ethernet - Wi-Fi     |
 | **PAN** | *Personal Area Network*     | Stanza / dispositivi personali        | Bluetooth - NFC      |
 
-![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/TIpologie_Di_Rete.png)
+![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/TIpologie_Di_Rete.jpg)
 ## Reti Aziendali
 - **Intranet**: Rete privata interna all'azienda, accessibile solo ai dipendenti.
 - **Extranet**: Estensione controllata della rete aziendale che consente l'accesso a utenti esterni autorizzati (es. fornitori, partner).
@@ -70,7 +70,7 @@ ___
 | **Diagramma Fisico** | Cavi, stanze, rack fisici                                         |
 | **Diagramma Logico** | Indirizzi IP, porte, dispositivi intermedi (router, switch, ecc.) |
 
-![Struttura Modello ISO/OSI](Diagrammi_Di_Rete_AI.png)
+![Struttura Modello ISO/OSI](Diagrammi_Di_Rete_AI.jpg)
 ___
 # Domini di Rete
 Può avere più significati, ma in generale rappresenta un gruppo di host (computer e altri dispositivi) collegati tra loro che condividono un database centrale e regole di sicurezza comuni.

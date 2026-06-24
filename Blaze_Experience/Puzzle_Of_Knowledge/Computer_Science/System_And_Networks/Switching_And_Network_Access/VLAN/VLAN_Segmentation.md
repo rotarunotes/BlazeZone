@@ -16,7 +16,7 @@ ___
 Una **VLAN** è una partizione logica di una rete locale (LAN) a livello 2 (Data Link Layer) del modello OSI. 
 Consente di suddividere un singolo **switch fisico** in più switch virtuali e isolati.
 
-![Schema_VLAN.png](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_VLAN.png)
+![Schema_VLAN.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_VLAN.jpg)
 ___
 # Parametri VLAN
 1) **VID**: \[1-4094] Un numero intero unico che identifica in modo univoco una specifica VLAN.

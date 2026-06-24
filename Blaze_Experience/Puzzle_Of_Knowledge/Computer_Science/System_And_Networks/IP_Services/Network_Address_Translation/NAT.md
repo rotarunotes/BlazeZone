@@ -57,7 +57,7 @@ Il NAT statico associa in modo **fisso e permanente** un indirizzo IP locale (pr
 | **IP** | 10.0.0.3      | 192.168.1.3  |               |                |
 
 - I campi OUTSIDE sono vuoti perchè è legato a una specifica **sessione** di navigazione verso un server esterno
-![Schema_NAT_Statico.png](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_NAT_Statico.png)
+![Schema_NAT_Statico.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_NAT_Statico.jpg)
 ___
 # NAT Dinamico
 
@@ -76,7 +76,7 @@ L'assegnazione è univoca nel momento dell'utilizzo ma non è fissa: quando la s
 > [!NOTE] Ricorda Goldon
 >Se è NAT dinamico senza overload, le porte interne ed esterne **NON** vengono modificate dal router. 
 
-![Schema_NAT_Dinamico.png](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_NAT_Dinamico.png)
+![Schema_NAT_Dinamico.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_NAT_Dinamico.jpg)
 ___
 # PAT
 
@@ -94,5 +94,5 @@ Il PAT (*Port Address Translation*), detto anche **NAT con overload**, permette 
 > [!NOTE] Ricorda Goldon
 Nel PAT tutti gli host usano lo stesso IP pubblico, ma con porte diverse: il router tiene traccia di quale porta corrisponde a quale host interno.
 
-![Schema_PAT.png](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_PAT.png)
+![Schema_PAT.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_PAT.jpg)
 ___

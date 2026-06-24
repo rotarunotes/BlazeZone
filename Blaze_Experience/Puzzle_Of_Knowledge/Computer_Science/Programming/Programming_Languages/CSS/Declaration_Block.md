@@ -128,7 +128,7 @@ Comandi che decidono dove un elemento appare nella pagina.
   text-align: center;  
 }
 ```
-![[Grid_css|1000]]
+![Grid_CSS.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/Programming/Grid_CSS.jpg)
 
 - `justify-content`: Gestisce lo spazio tra e attorno gli elementi lungo l'asse x. (display: flex)
 	- **center**: Sposta tutti gli elementi al centro del contenitore. Lo spazio vuoto viene distribuito equamente a destra e a sinistra.

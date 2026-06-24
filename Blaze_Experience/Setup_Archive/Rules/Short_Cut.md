@@ -1,5 +1,5 @@
 Data: 2025-10-31
-[Rules](README.md)
+[Rules](Setup_Archive/Rules/README.md)
 #Setup_Archive/Rules
 ___
 

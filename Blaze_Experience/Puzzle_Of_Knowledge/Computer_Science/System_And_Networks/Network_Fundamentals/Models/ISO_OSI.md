@@ -17,7 +17,7 @@ ___
 Il modello *Open Systems Interconnection* è lo standard di riferimento per capire come i dati viaggiano attraverso una rete informatica. 
 Si divide in sette livelli, ognuno con un compito specifico.
 
-![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Modello_ISO_OSI.png)
+![Struttura Modello ISO/OSI](../../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Modello_ISO_OSI.jpg)
 ## I 7 Livelli del Modello
 
 | Liv. | Nome                  | Funzione principale                                                                                                                                 |    PDU    |

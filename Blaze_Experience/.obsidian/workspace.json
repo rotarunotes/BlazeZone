@@ -8,16 +8,67 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e54d8a66ce939f5d",
+            "id": "b939579ac4046892",
             "type": "leaf",
             "state": {
-              "type": "home-tab-view",
-              "state": {},
-              "icon": "search",
-              "title": "Home tab"
+              "type": "markdown",
+              "state": {
+                "file": "Corso ingenieria.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Corso ingenieria"
+            }
+          },
+          {
+            "id": "00b19bab1b37ad0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Math/Probability.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Probability"
+            }
+          },
+          {
+            "id": "1529b09bb5e0b15b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/WLC_Config.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "WLC_Config"
+            }
+          },
+          {
+            "id": "124b9be1a795fdd5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Math/Statistica.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Statistica"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -29,6 +80,7 @@
       {
         "id": "1f8181127b343eee",
         "type": "tabs",
+        "dimension": 67.16247139588101,
         "children": [
           {
             "id": "3f7eb6d39b67a444",
@@ -85,6 +137,7 @@
       {
         "id": "ca64f8808be51ec0",
         "type": "tabs",
+        "dimension": 32.837528604118994,
         "children": [
           {
             "id": "15c8f785f13b3d79",
@@ -102,7 +155,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.50154745578766
+    "width": 470.50154745578766
   },
   "right": {
     "id": "dd71b14831b0ad51",
@@ -160,6 +213,21 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "56a0eaa808e86f3b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etichette"
+            }
           }
         ],
         "currentTab": 3
@@ -175,6 +243,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/WLC_Config.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +253,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti"
+              "title": "Riferimenti a WLC_Config"
             }
           },
           {
@@ -193,14 +262,16 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Puzzle_Of_Knowledge/Math/Statistica.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita"
+              "title": "Collegamenti in uscita da Statistica"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -225,54 +296,54 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "15c8f785f13b3d79",
+  "active": "124b9be1a795fdd5",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/VLAN/Access_Vs_Trunk.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/README.md",
-    "Setup_Archive/Viewable/Excalidraw/old/D_Compiuter_Science/D_Sysetm_And_Networks/Propagazione_Del_Segnale.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/ISO_OSI.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/Router.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/WLC EX.md",
-    "Puzzle_Of_Knowledge/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/Automata_Theory/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/TCP_IP.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Physical_Layer/Cables_And_Interfaces.md",
-    "Setup_Archive/Obsidian_Base/Formatting.md",
-    "Setup_Archive/Obsidian_Base/Stats.md",
-    "Setup_Archive/Rules/Short_Cut.md",
-    "GEMINI.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+    "Puzzle_Of_Knowledge/Math/Probability.md",
+    "Puzzle_Of_Knowledge/Math/Circumference.md",
+    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
     "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
-    "Setup_Archive/Viewable/Excalidraw/old/D_Math/Integrale_definito_Indica.md",
-    "Senza nome.md",
-    "README.md",
+    "EDUCAZIONE CIVICA.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
+    "Sistemi.md",
+    "MATURITÀ.md",
+    "GEMINI.md",
+    "Corso ingenieria.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration_Block.md",
+    "Puzzle_Of_Knowledge/Math/Statistica.md",
+    "Setup_Archive/Plugin/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DCL.md",
+    "Puzzle_Of_Knowledge/Math/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Architetture_N-Tier.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/Database_Design.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DQL.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DML.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/Relational_Algebra.md",
+    "Setup_Archive/Viewable/Image/Computer_Science/Programming/Tabella_HTML.jpg",
+    "Setup_Archive/Viewable/Image/Computer_Science/Programming/Selettore_CSS.jpg",
+    "Setup_Archive/Viewable/Image/Computer_Science/Programming/LIste_HTML.jpg",
+    "Setup_Archive/Viewable/Image/Computer_Science/Programming/Input_HTML.jpg",
+    "Setup_Archive/Viewable/Image/Computer_Science/Programming/Grid_CSS.jpg",
+    "Setup_Archive/Viewable/Image/Computer_Science/Programming/Form_HTML.jpg",
+    "Setup_Archive/Viewable/Image/Computer_Science/Programming/Formattazione_HTML.jpg",
+    "Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_Transazione.jpg",
+    "Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_E-R_Esempio.jpg",
+    "Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_API.jpg",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/WLC_Config.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/IP_Services/Infrastructure_Services/NTP.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Network_Defense/Firewall_Types.md",
+    "Setup_Archive/Viewable/Image/Math",
+    "Setup_Archive/Viewable/Image/Nuova cartella",
+    "Setup_Archive/Viewable/Image/Computer_Science/Programming",
+    "Setup_Archive/Viewable/Image/Computer_Science/Nuova cartella",
+    "Setup_Archive/Viewable/PDF/Presentazione_distribuzioni_di_probabilità.pdf",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Wireless/Wireless_Fundamentals",
+    "Automation_And_Programmability",
     "School/5ID_2025-26",
     "School/4ID_2024-25",
     "School/3ID_2023-24",
-    "School",
-    "Senza nome 3",
-    "Senza nome 2",
-    "Senza nome 1",
-    "Senza nome",
-    "crittografia_4_rsa.pptx",
-    "crittografia_3_des.pptx",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Connessione_Persistente.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Pasted image 20260115181754.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Connessione_Non_Persistente.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Pasted Image 20260115181635_397.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_SNMP.png",
-    "Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Screenshot 2026-05-27 103824.png",
-    "Setup_Archive/Viewable/Image/Other/Preparazione TOLC.png",
-    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210191733_647.png",
-    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260210192257_356.png",
-    "Setup_Archive/Viewable/Image/I_Compiuter_Science/I_Systems_And_Network/Pasted Image 20260309192814_847.png",
     "Setup_Archive/Viewable/Image/Vecchio.canvas",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]

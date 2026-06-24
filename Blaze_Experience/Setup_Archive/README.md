@@ -1,5 +1,5 @@
 Data: 2025-10-16
-[Start_Index](../README.md)
+[Start_Index](Red_Lab/README.md)
 #Setup_Archive
 ___
 # Setup_Archive

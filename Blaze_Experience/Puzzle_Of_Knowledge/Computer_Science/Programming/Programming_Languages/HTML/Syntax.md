@@ -1,12 +1,7 @@
 Data: 2026-01-22
-[HTML](README.md)
+[HTML](Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md)
 #Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML
 ___
-
-
-da fare:
-tag:  button select(option)
-
 # Index
 - [[#Formattazione]]
 - [[#Contenitore]]
@@ -59,7 +54,7 @@ ___
 </html>
 ```
 
-![[Formattazione_HTML|200]]
+![Formattazione_HTML.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/Programming/Formattazione_HTML.jpg)
 
 ___
 # Contenitore 
@@ -128,7 +123,7 @@ ___
 </html>
 ```
 
-![[LIste_HTML]]
+![LIste_HTML.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/Programming/LIste_HTML.jpg)
 
 ___
 # Link
@@ -246,7 +241,7 @@ Le tabelle organizzano i dati in righe e colonne:
 </table>
 ```
 
-![[Tabella_HTML|1000]]
+![Tabella_HTML.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/Programming/Tabella_HTML.jpg)
 
 ___
 # Inputs
@@ -260,7 +255,7 @@ ___
 <input type="checkbox"> Accetto i termini
 ```
 [[#Attributi]]
-![[Tipi_Di_Input|300]]
+![Input_HTML.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/Programming/Input_HTML.jpg)
 
 ___
 # Form
@@ -323,7 +318,7 @@ I form permettono agli utenti di inviare dati a un server.
 </html>
 ```
 
-![[form_html|500]]
+![Form_HTML.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/Programming/Form_HTML.jpg)
 
 ___
 # Attributi

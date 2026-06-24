@@ -56,6 +56,6 @@ Si **divide** ogni entità e si sviluppa a parte
 - **Sicurezza**: Il Client (Presentation) non ha mai accesso diretto al Database (Data). Deve passare attraverso il livello Logico, che funge da firewall e controllore.
 - **Riuso**: Diversi tipi di interfacce (web, mobile, IoT) possono utilizzare la stessa logica di business centralizzata.
 
-![Schema_3-Tier.png](../../../../Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_3-Tier.png)
+![Schema_3-Tier.jpg](../../../../Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_3-Tier.jpg)
 
 ___

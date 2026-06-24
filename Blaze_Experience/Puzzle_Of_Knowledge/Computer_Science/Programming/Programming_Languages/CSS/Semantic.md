@@ -80,7 +80,7 @@ li:last-child {
 ```
 
 Esempio con **Pseudo-classi**`:`
-![[Selettore_css|200]]
+![Selettore_CSS.jpg](../../../../../Setup_Archive/Viewable/Image/Computer_Science/Programming/Selettore_CSS.jpg)
 
 ---
 # Il Box Model

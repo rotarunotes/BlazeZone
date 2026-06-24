@@ -3,7 +3,6 @@ Data: 2026-05-04
 #Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Planning_Addressing/Core_Protocols
 ___
 # Index
-
 - [[#Internet Control Message Protocol]]
     - [[#Panoramica]]
 - [[#Versioni & Evoluzione]]

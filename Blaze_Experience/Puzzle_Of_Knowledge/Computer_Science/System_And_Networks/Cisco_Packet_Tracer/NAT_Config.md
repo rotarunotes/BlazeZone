@@ -109,7 +109,7 @@ Router(config)# ip nat inside source static tcp 192.168.1.100 80 10.0.0.10 80
 Chi da internet contatta `10.0.0.10:80` viene instradato al server interno `192.168.1.100:80`.
 ## Esercizio Statico
 
-![Schema_Esercizio_NAT_Statico.png](../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Esercizio_NAT_Statico.Png)
+![Schema_Esercizio_NAT_Statico.jpg](../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Esercizio_NAT_Statico.jpg)
 
 ``` cisco
 # Interfaccia verso la WAN
@@ -193,7 +193,7 @@ Ogni host ha ricevuto un IP pubblico **diverso** dal pool (`10.0.0.10`, `.11`, `
 
 ## Esercizio Dinamico
 
-![Schema_Esercizio_NAT_Dinamico.png](../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Esercizio_NAT_Dinamico.png)
+![Schema_Esercizio_NAT_Dinamico.jpg](../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Esercizio_NAT_Dinamico.jpg)
 
 ``` cisco
 Router(config)#interface GigabitEthernet0/0
@@ -254,7 +254,7 @@ icmp 10.0.0.100:5         192.168.1.2:5    10.0.0.100:5     10.0.0.100:5
 Tutti gli host usano lo stesso IP pubblico `10.0.0.100`, ma con **porte diverse** (1024, 1025, 1026…). Il router sa a chi girare la risposta grazie alla porta.
 ## Esercizio PAT
 
-![Schema_Esercizio_NAT_Dinamico.png](../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Esercizio_NAT_Dinamico.png)
+![Schema_Esercizio_NAT_Dinamico.jpg](../../../../Setup_Archive/Viewable/Image/Computer_Science/System_And_Networks/Schema_Esercizio_NAT_Dinamico.jpg)
 
 ``` cisco
 Router(config)#interface GigabitEthernet0/0
