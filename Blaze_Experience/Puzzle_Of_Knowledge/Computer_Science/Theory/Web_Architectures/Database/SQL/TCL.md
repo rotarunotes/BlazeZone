@@ -20,7 +20,7 @@ ___
 
 Il **TCL** è la parte del linguaggio SQL utilizzata per **gestire le transazioni**, ovvero gruppi di operazioni che devono essere eseguite come un'unica unità logica.
 
-![Schema_Transazione.jpg](../../../../../../Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_Transazione.jpg)
+![Schema_Transazione.jpg|627](../../../../../../Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_Transazione.jpg)
 
 ___
 # Transazione

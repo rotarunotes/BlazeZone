@@ -7,13 +7,14 @@ sorting-spec: |-
 
   target-folder: /
     README
+    Corso ingenieria
     sorting-spec
+    ...
     /folders
     Puzzle_Of_Knowledge
     Red_Lab
-    School
     Setup_Archive
-    ...
+    Temp
 
   target-folder: *
     README
@@ -23,11 +24,17 @@ sorting-spec: |-
   target-folder: Puzzle_Of_Knowledge
     README
     /folders
+    Computer_Science
+    Math
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science
     README
     /folders
+    System_And_Networks
+    Programming
+    Theory
+    Operating_Systems
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks
@@ -40,10 +47,10 @@ sorting-spec: |-
     Protocols
     Security_Cryptography
     Wireless
+    Cisco_Packet_Tracer
     Automation_And_Programmability
     Network_Design
     Troubleshooting
-    Cisco_Packet_Tracer
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals
@@ -124,7 +131,7 @@ sorting-spec: |-
     VLAN_Segmentation
     802.1Q_Tagging
     Access_Vs_Trunk
-    VTP_VLAN_Trunking_Protocol
+    VTP
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Switching_And_Network_Access/Inter-VLAN_Routing
@@ -203,7 +210,7 @@ sorting-spec: |-
     Security
     Cryptography
     Network_Defense
-    Secure_Connectivity_VPN
+    Secure_Connectivity
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Security
@@ -232,18 +239,19 @@ sorting-spec: |-
     AAA_Framework
     ...
 
-  target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity_VPN
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity
     README
     /folders
-    GDPR
+    VPN
     IPsec_Protocol
     SSL
     TLS
-    VPN
+    GDPR
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Wireless
     README
+    WLAN
     /folders
     Wireless_Fundamentals
     Cisco_Architectures
@@ -271,6 +279,31 @@ sorting-spec: |-
     Encryption_Standards
     Wireless_Security_Protocols
     WLC_Management_Interfaces
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer
+    README
+    Router
+    VLAN
+    ACL_Config
+    NAT_Config
+    WLC_Config
+    /folders
+    Fondamentali_e_Gestione
+    Connettività_e_Servizi_IP
+    Switching_e_Sicurezza_Layer2
+    Tecnologie_Avanzate_e_Sicurezza
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/Fondamentali_e_Gestione
+    README
+    /folders
+    Accesso_al_Dispositivo
+    Modalità_Operative
+    Password
+    File_di_Configurazione
+    Comandi_Show
+    Indirizzi_IP
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Automation_And_Programmability
@@ -301,48 +334,253 @@ sorting-spec: |-
     Common_Issues_And_Commands
     ...
 
-  target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Programming
     README
     /folders
-    Fondamentali_e_Gestione
-    Connettività_e_Servizi_IP
-    Switching_e_Sicurezza_Layer2
-    Tecnologie_Avanzate_e_Sicurezza
+    Programming_Languages
+    Terminal_And_Shell
     ...
 
-  target-folder: Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/Fondamentali_e_Gestione
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages
     README
     /folders
-    Accesso_al_Dispositivo
-    Modalità_Operative
-    Password
-    File_di_Configurazione
-    Comandi_Show
-    Indirizzi_IP
+    HTML
+    CSS
+    JS
+    PHP
+    Dart
+    Flutter
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML
+    README
+    Syntax
+    /folders
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS
+    README
+    Semantic
+    Declaration_Block
+    /folders
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/JS
+    README
+    Data
+    Statements
+    Function
+    DOM
+    AJAX
+    /folders
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/PHP
+    README
+    Language
+    Statements
+    Functions
+    Cookie_Session
+    MYSQLI
+    /folders
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Dart
+    README
+    Data
+    Statements
+    Function
+    Class
+    Future
+    Stream
+    Libraries
+    Io
+    /folders
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/Flutter
+    README
+    Riassunto
+    /folders
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Programming/Terminal_And_Shell
+    README
+    /folders
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Theory
+    README
+    /folders
+    Web_Architectures
+    Computation_Theory
+    Data_Structures
     ...
 
   target-folder: Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures
     README
-    /folders
-    Database
     Architetture_N-Tier
     API
+    /folders
+    Database
     ...
+
   target-folder: Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database
     README
-    /folders
     Relational_Algebra
     Database_Design
+    /folders
     SQL
     ...
-    
+
   target-folder: Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL
     README
-    /folders
     DQL
     DML
     DDL
     DCL
     TCL
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory
+    README
+    /folders
+    Automata_Theory
+    Computability_Theory
+    Complexity_Theory
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/Automata_Theory
+    README
+    /folders
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/Computability_Theory
+    README
+    /folders
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Theory/Computation_Theory/Complexity_Theory
+    README
+    /folders
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures
+    README
+    /folders
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Computer_Science/Operating_Systems
+    README
+    /folders
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Math
+    README
+    Circumference
+    Probability
+    Statistica
+    /folders
+    Integral
+    ...
+
+  target-folder: Puzzle_Of_Knowledge/Math/Integral
+    README
+    Indefinite_Integral
+    Definite_Integral
+    ...
+
+  target-folder: Red_Lab
+    README
+    BlazeNet
+    BLANZ
+    GitPerSega
+    /folders
+    Fit_Blaze
+    Giochi
+    ...
+
+  target-folder: Red_Lab/Fit_Blaze
+    README
+    Progetto
+    Endpoint
+    Coude
+    ...
+
+  target-folder: Red_Lab/Giochi
+    README
+    /folders
+    Reverse
+    ...
+
+  target-folder: Red_Lab/Giochi/Reverse
+    README
+    Regole
+    ...
+
+  target-folder: Setup_Archive
+    README
+    /folders
+    Obsidian_Base
+    Templates
+    Rules
+    Plugin
+    Viewable
+    ...
+
+  target-folder: Setup_Archive/Obsidian_Base
+    README
+    Stats
+    Formatting
+    Example_Of_Text
+    Links_Obsidian
+    ...
+
+  target-folder: Setup_Archive/Rules
+    README
+    Rules
+    GEMINI
+    Short_Cut
+    ...
+
+  target-folder: Setup_Archive/Templates
+    README_Template
+    Index_Template
+    Note_Template
+    Protocols_Templete
+    Linker_Files
+    ...
+
+  target-folder: Setup_Archive/Plugin
+    README
+    /folders
+    Pearls
+    ...
+
+  target-folder: Setup_Archive/Plugin/Pearls
+    README
+    /folders
+    Daily
+    ...
+
+  target-folder: Setup_Archive/Plugin/Pearls/Daily
+    README
+    ...
+
+  target-folder: Setup_Archive/Viewable
+    README
+    /folders
+    Image
+    Excalidraw
+    PDF
+    ...
+
+  target-folder: Temp
+    README
+    TOLC-I
+    MATURITÀ
+    Sistemi
+    Storage
+    Fisioterapia
     ...
 ---

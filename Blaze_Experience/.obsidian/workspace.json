@@ -4,86 +4,46 @@
     "type": "split",
     "children": [
       {
-        "id": "f191ef8df2d47e63",
+        "id": "66441e40cdecff91",
         "type": "tabs",
         "children": [
           {
-            "id": "b939579ac4046892",
+            "id": "1c61bc6157cf0b90",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
+          },
+          {
+            "id": "1b2d2439e7ee37fd",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {},
+              "icon": "search",
+              "title": "Home tab"
+            }
+          },
+          {
+            "id": "20fb2589b103b97b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Corso ingenieria.md",
+                "file": "Setup_Archive/Plugin/Pearls/Daily/20-03-2026.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Corso ingenieria"
-            }
-          },
-          {
-            "id": "00b19bab1b37ad0f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Math/Probability.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Probability"
-            }
-          },
-          {
-            "id": "1529b09bb5e0b15b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/TCL.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "TCL"
-            }
-          },
-          {
-            "id": "43cc90ccf350b54e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MATURITÀ.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "MATURITÀ"
-            }
-          },
-          {
-            "id": "786575d38cd7df30",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/VPN.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "VPN"
+              "title": "20-03-2026"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -104,10 +64,12 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byCreatedTimeReverse",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Esplora risorse"
+              "title": "Esplora file"
             }
           },
           {
@@ -210,26 +172,6 @@
             }
           },
           {
-            "id": "4725e6d0d7947a13",
-            "type": "leaf",
-            "state": {
-              "type": "git-history-view",
-              "state": {},
-              "icon": "history",
-              "title": "History"
-            }
-          },
-          {
-            "id": "0dcede9bdb500cc0",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          },
-          {
             "id": "56a0eaa808e86f3b",
             "type": "leaf",
             "state": {
@@ -245,7 +187,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "3e471ff56d47574c",
@@ -277,12 +219,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MATURITÀ.md",
+                "file": "TOLC-I.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da MATURITÀ"
+              "title": "Collegamenti in uscita da TOLC-I"
             }
           }
         ],
@@ -290,15 +232,16 @@
       }
     ],
     "direction": "horizontal",
-    "width": 395.5
+    "width": 395.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "switcher:Apri selettore rapido": false,
+      "daily-notes:Apri nota giornaliera": false,
       "graph:Apri vista grafo": false,
       "bases:Crea nuova Base": false,
-      "switcher:Apri selezione rapida": true,
       "canvas:Crea nuova lavagna": true,
-      "daily-notes:Apri nota del giorno": true,
       "templates:Inserisci modello": true,
       "command-palette:Apri riquadro comandi": true,
       "obsidian-trash-explorer:Open trash explorer": false,
@@ -307,58 +250,57 @@
       "obsidian-excalidraw-plugin:New drawing": false,
       "custom-sort:Toggle custom sorting": false,
       "obsidian-shellcommands:Shell commands: Custom variables": false,
-      "omnisearch:Omnisearch": false,
-      "obsidian-git:Open Git source control": false
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "43cc90ccf350b54e",
+  "active": "15c8f785f13b3d79",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/TCL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DCL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Architetture_N-Tier.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/API.md",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/VPN.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DDL.md",
-    "MATURITÀ.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DML.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/DQL.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/SQL/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/Database_Design.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/Database/Relational_Algebra.md",
+    "Setup_Archive/Plugin/Pearls/Daily/20-03-2026.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Network_Fundamentals/Models/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_Config.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/WLC_Config.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Declaration_Block.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/CSS/Semantic.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/README.md",
-    "Puzzle_Of_Knowledge/Computer_Science/Programming/Programming_Languages/HTML/Syntax.md",
-    "Puzzle_Of_Knowledge/Math/Statistica.md",
-    "Puzzle_Of_Knowledge/Math/Probability.md",
-    "Puzzle_Of_Knowledge/Math/Circumference.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Indefinite_Integral.md",
-    "Puzzle_Of_Knowledge/Math/Integral/Definite_Integral.md",
-    "EDUCAZIONE CIVICA.md",
-    "Setup_Archive/Viewable/Image/Computer_Science/Programming/Tabella_HTML.jpg",
-    "Setup_Archive/Viewable/Image/Computer_Science/Programming/Selettore_CSS.jpg",
-    "Setup_Archive/Viewable/Image/Computer_Science/Programming/LIste_HTML.jpg",
-    "Setup_Archive/Viewable/Image/Computer_Science/Programming/Input_HTML.jpg",
-    "Setup_Archive/Viewable/Image/Computer_Science/Programming/Grid_CSS.jpg",
-    "Setup_Archive/Viewable/Image/Computer_Science/Programming/Form_HTML.jpg",
-    "Setup_Archive/Viewable/Image/Computer_Science/Programming/Formattazione_HTML.jpg",
-    "Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_Transazione.jpg",
-    "Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_E-R_Esempio.jpg",
-    "Setup_Archive/Viewable/Image/Computer_Science/Theory/Schema_API.jpg",
+    "sorting-spec.md",
+    "Corso ingenieria.md",
+    "Temp/TOLC-I.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems/README.md",
+    "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/README.md",
+    "Temp/Senza nome.md",
+    "Senza nome",
+    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/GDPR.md",
+    "Temp/Sistemi.md",
+    "Temp/Storage.md",
+    "Setup_Archive/Rules/GEMINI.md",
+    "Setup_Archive/Rules/Rules.md",
+    "Setup_Archive/Rules/README.md",
+    "Setup_Archive/Rules/Short_Cut.md",
+    "Setup_Archive/Plugin/Pearls/Daily/23-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/22-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/15-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/16-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/19-03-2026.md",
+    "Setup_Archive/Plugin/Pearls/Daily/16-04-2026.md",
+    "Temp",
+    "Setup_Archive/Viewable/Image/Pasted image 20260818174300.png",
+    "Setup_Archive/Viewable/Image/Pasted image 20260818174150.png",
+    "Setup_Archive/Viewable/Image/Pasted image 20260818174100.png",
+    "Setup_Archive/Viewable/Image/Pasted image 20260818173845.png",
+    "Setup_Archive/Viewable/Image/Pasted image 20260818173806.png",
+    "Setup_Archive/Viewable/Image/Pasted image 20260818173700.png",
+    "Setup_Archive/Viewable/Image/Pasted image 20260818173346.png",
+    "Setup_Archive/Viewable/Image/Pasted image 20260728211607.png",
+    "Setup_Archive/Viewable/Image/Pasted image 20260719204419.png",
+    "Setup_Archive/Viewable/Image/Pasted image 20260628214429.png",
+    "Senza nome 2",
+    "Senza nome 1",
     "Setup_Archive/Viewable/Image/Math",
     "Setup_Archive/Viewable/Image/Nuova cartella",
     "Setup_Archive/Viewable/Image/Computer_Science/Programming",
     "Setup_Archive/Viewable/Image/Computer_Science/Nuova cartella",
     "Setup_Archive/Viewable/PDF/Presentazione_distribuzioni_di_probabilità.pdf",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Wireless/Wireless_Fundamentals",
-    "Automation_And_Programmability",
-    "School/5ID_2025-26",
-    "School/4ID_2024-25",
-    "School/3ID_2023-24",
     "Setup_Archive/Viewable/Image/Vecchio.canvas",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]

@@ -10,5 +10,7 @@
   },
   "trashOption": "local",
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "Setup_Archive/Viewable/Image"
+  "attachmentFolderPath": "Setup_Archive/Viewable/Image",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Temp"
 }

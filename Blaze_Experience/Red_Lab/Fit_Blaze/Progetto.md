@@ -1,4 +1,4 @@
-8)Data: 2026-03-22
+Data: 2026-03-22
 [](./README.md)
 #Red_Lab/Fit_Blaze
 ___
