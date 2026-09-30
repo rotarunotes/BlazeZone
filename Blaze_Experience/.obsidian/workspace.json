@@ -6,9 +6,93 @@
       {
         "id": "d74b5d8fd8f47267",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
-            "id": "b52cfbbc80813c20",
+            "id": "683fc5f92624edf4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setup_Archive/Obsidian_Base/Formatting.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Formatting"
+            }
+          },
+          {
+            "id": "2c9fbdee84386d23",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Math/Analisi_1/Simboli.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Simboli"
+            }
+          },
+          {
+            "id": "b55397db3b4861a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Math/Analisi_1/Insiemi.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Insiemi"
+            }
+          },
+          {
+            "id": "2e4605f3a2eca00c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Math/Analisi_1/Dimostrazioni.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Dimostrazioni"
+            }
+          },
+          {
+            "id": "4c6b720bdb26adb9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Math/Analisi_1/Parole Chiave.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Parole Chiave"
+            }
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "08a2152fb1e5ba36",
+        "type": "tabs",
+        "dimension": 50,
+        "children": [
+          {
+            "id": "af6c34bbc24b9621",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -21,8 +105,24 @@
               "icon": "lucide-file",
               "title": "Lezione_1"
             }
+          },
+          {
+            "id": "5e483da827efccdd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Math/Analisi_1/Dimostrazioni.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Dimostrazioni"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -232,10 +332,21 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "b52cfbbc80813c20",
+  "active": "2e4605f3a2eca00c",
   "lastOpenFiles": [
-    "Puzzle_Of_Knowledge/Math/Integral/README.md",
+    "Puzzle_Of_Knowledge/Math/Analisi_1/Concetti_Dimostrativi.md",
+    "Puzzle_Of_Knowledge/Math/Analisi_1/Simboli.md",
+    "Puzzle_Of_Knowledge/Math/Analisi_1/Dimostrazioni.md",
+    "Puzzle_Of_Knowledge/Math/Analisi_1/Insiemi.md",
+    "Setup_Archive/Obsidian_Base/Formatting.md",
     "Puzzle_Of_Knowledge/Math/Analisi_1/Lezione_1.md",
+    "Puzzle_Of_Knowledge/Math/Analisi_1/Parole Chiave.md",
+    "Setup_Archive/Obsidian_Base/README.md",
+    "Puzzle_Of_Knowledge/Math/Analisi_1/Senza nome",
+    "Puzzle_Of_Knowledge/Math/Analisi_1/Insiemi",
+    "sorting-spec.md",
+    "Corso ingenieria.md",
+    "Puzzle_Of_Knowledge/Math/Integral/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Web_Architectures/API.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/README.md",
     "Puzzle_Of_Knowledge/Math/Analisi_1",
@@ -244,8 +355,6 @@
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/ACL_Config.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/NAT_Config.md",
     "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Cisco_Packet_Tracer/WLC_Config.md",
-    "sorting-spec.md",
-    "Corso ingenieria.md",
     "Temp/TOLC-I.md",
     "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/README.md",
@@ -255,13 +364,6 @@
     "Temp/Sistemi.md",
     "Temp/Storage.md",
     "Setup_Archive/Rules/GEMINI.md",
-    "Setup_Archive/Rules/Rules.md",
-    "Setup_Archive/Rules/README.md",
-    "Setup_Archive/Rules/Short_Cut.md",
-    "Setup_Archive/Plugin/Pearls/Daily/23-03-2026.md",
-    "Setup_Archive/Plugin/Pearls/Daily/22-03-2026.md",
-    "Setup_Archive/Plugin/Pearls/Daily/13-03-2026.md",
-    "Setup_Archive/Plugin/Pearls/Daily/15-03-2026.md",
     "Temp",
     "Setup_Archive/Viewable/Image/Pasted image 20260818174300.png",
     "Setup_Archive/Viewable/Image/Pasted image 20260818174150.png",
@@ -278,8 +380,6 @@
     "Setup_Archive/Viewable/Image/Math",
     "Setup_Archive/Viewable/Image/Nuova cartella",
     "Setup_Archive/Viewable/Image/Computer_Science/Programming",
-    "Setup_Archive/Viewable/Image/Computer_Science/Nuova cartella",
-    "Setup_Archive/Viewable/PDF/Presentazione_distribuzioni_di_probabilità.pdf",
     "Setup_Archive/Viewable/Image/Vecchio.canvas",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]

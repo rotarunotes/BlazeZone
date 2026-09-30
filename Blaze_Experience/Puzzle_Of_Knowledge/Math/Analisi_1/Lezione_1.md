@@ -20,8 +20,8 @@ ___
 		- [[#Proposizione]]
 		- [[#Impostazione]]
 		- [[#Passo base ($p=1$, cioè $1 in A$)]]
-		- [[#Passo induttivo ($n in A Rightarrow n+1 in A$)]]
-		- [[#Dimostrazione Del Passo Induttivo]]
+			- [[#Passo induttivo ($n in A Rightarrow n+1 in A$)]]
+			- [[#Dimostrazione Del Passo Induttivo]]
 		- [[#Conclusione]]
 ___
 # Tabella dei simboli
@@ -111,11 +111,11 @@ Il valore di $a$ non cambia grazie all'elemento neutro. Inoltre l'elemento neutr
 $$ \exists !, e_0 \in \mathbb{N} \quad\text{e}\quad e_0 = 0 $$
 ### Assiomi del prodotto
 
-|Proprietà|Formula|
-|---|---|
-|Commutativo|$a\cdot b=b\cdot a \quad \forall a,b\in\mathbb{N}$|
-|Associativo|$(a\cdot b)\cdot c=a\cdot(b\cdot c)$|
-|Elemento neutro|$\exists, e_1\in\mathbb{N}$ tale che $a\cdot e_1=a \quad \forall a\in\mathbb{N}$|
+| Proprietà       | Formula                                                                          |
+| --------------- | -------------------------------------------------------------------------------- |
+| Commutativo     | $a\cdot b=b\cdot a \quad \forall a,b\in\mathbb{N}$                               |
+| Associativo     | $(a\cdot b)\cdot c=a\cdot(b\cdot c)$                                             |
+| Elemento neutro | $\exists, e_1\in\mathbb{N}$ tale che $a\cdot e_1=a \quad \forall a\in\mathbb{N}$ |
 
 Anche qui l'elemento neutro è unico:
 
@@ -130,19 +130,19 @@ $$ a \le b \quad\Longleftrightarrow\quad \exists, c \in \mathbb{N} \ \mid\ a + c
 
 (cioè $a\le b$ se esiste un naturale $c$ che sommato ad $a$ dà $b$). Questa relazione ha quattro proprietà:
 
-|Proprietà|Enunciato|
-|---|---|---|
-|a)|**Riflessiva**|$a\le a \quad \forall a\in\mathbb{N}$|
-|b)|**Antisimmetrica**|$\forall a,b\in\mathbb{N}$: se $a\le b$ e $b\le a$ allora $a=b$|
-|c)|**Transitiva**|$\forall a,b,c\in\mathbb{N}$: se $a\le b$ e $b\le c$ allora $a\le c$|
-|d)|**Dicotomia**|$\forall a,b\in\mathbb{N}$: vale $a\le b$ oppure $b\le a$|
+| Proprietà | Enunciato          |                                                                      |
+| --------- | ------------------ | -------------------------------------------------------------------- |
+| a)        | **Riflessiva**     | $a\le a \quad \forall a\in\mathbb{N}$                                |
+| b)        | **Antisimmetrica** | $\forall a,b\in\mathbb{N}$: se $a\le b$ e $b\le a$ allora $a=b$      |
+| c)        | **Transitiva**     | $\forall a,b,c\in\mathbb{N}$: se $a\le b$ e $b\le c$ allora $a\le c$ |
+| d)        | **Dicotomia**      | $\forall a,b\in\mathbb{N}$: vale $a\le b$ oppure $b\le a$            |
 
 ### Compatibilità
 
-**Compatibilità $(\le,+)$:**
+**Compatibilità $(\le,+)$**:
 
 $$ \forall a,b,c\in\mathbb{N}: \quad a\le b \Longrightarrow a+c \le b+c $$
-**Compatibilità $(\le,\cdot)$:**
+**Compatibilità $(\le,\cdot)$**:
 
 $$ \forall a,b,c\in\mathbb{N}: \quad a\le b \ \text{ e } \ c>0 ;\Longrightarrow; a\cdot c \le b\cdot c $$
 
@@ -159,7 +159,7 @@ $$
 
 **Contesto**
  - Sia $A \subseteq \mathbb{N}$ (un sottoinsieme di $\mathbb{N}$) e sia $p\in\mathbb{N}$.
-**Ipotesi**
+**Ipotesi\**
 - Premessa 1 — **passo** **base**: $p \in A$
 - Premessa 2 — **passo** **induttivo**: $n \in A ;\Longrightarrow; n+1 \in A$ (è un'implicazione)
 **Tesi** $${ n\in\mathbb{N} \mid n \ge p ,} \subseteq A$$ **In parole**: se la proprietà vale per $p$ e, ogni volta che vale per $n$, vale anche per $n+1$, allora vale per tutti i naturali da $p$ in poi.
@@ -190,7 +190,7 @@ $$A=\{n\in\mathbb{N}\mid (*)\text{ è vera}\}\subseteq\mathbb{N}, \qquad p=1.$$
 2. Passo induttivo: $n\in A \Rightarrow n+1\in A$
 
 **Tesi che otterremo**: $\{n\in\mathbb{N}\mid n\ge 1\}\subseteq A$, cioè la formula vale per ogni $n\ge 1$.
-### Passo base ($p=1$, cioè $1\in A$)
+#### Passo base ($p=1$, cioè $1\in A$)
 Si controlla la formula per $n=1$.
 Primo membro:  
 $$\sum_{i=1}^{1} i = 1$$
@@ -200,7 +200,7 @@ Secondo membro:
 $$\frac{1\cdot(1+1)}{2} = \frac{2}{2} = 1$$
 
 I due membri coincidono, quindi $1\in A$: il passo base è verificato.
-### Passo induttivo ($n\in A \Rightarrow n+1\in A$)
+#### Passo induttivo ($n\in A \Rightarrow n+1\in A$)
 
 Si tratta di un'implicazione: si **assume** la premessa e si **deduce** la conseguenza.
 - **Ipotesi induttiva (IP)**: la formula vale per $n$, cioè  $$\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$$

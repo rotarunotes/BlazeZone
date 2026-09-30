@@ -64,11 +64,28 @@ ___
 > questa è una citazione 
 # Citazione |  \[!NOTE]
 
+
+
+> [!info] Info:
+> Informazioni aggiuntive.
+
+> [!example] Esempio:
+> Esempi
+> 
+
+> [!abstract] Definizione:
+> Definizioni
+
+> [!success] Dimostrazione:
+> Successo o soluzioni trovate (anche `check` o `done`).
+
+> [!danger] Attenzione!
+> Pericolo o errori critici (anche `error`).
+
+___
+
 > [!note] Note
 > Informazioni generali.
-
-> [!info] Info
-> Informazioni aggiuntive.
 
 > [!todo] Todo
 > Cose da fare.
@@ -76,8 +93,6 @@ ___
 > [!tip] Tip
 > Suggerimenti o idee utili.
 
-> [!abstract] Abstract
-> Riassunti o sommari (anche `summary` o `tldr`).
 
 > [!warning] Warning
 > Avvertimenti importanti (anche `caution` o `attention`).
@@ -85,14 +100,11 @@ ___
 > [!failure] Failure
 > Operazioni fallite o errori (anche `fail` o `missing`).
 
-> [!danger] Danger
-> Pericolo o errori critici (anche `error`).
+
 
 > [!bug] Bug
 > Segnalazione di bug o problemi tecnici.
 
-> [!example] Example
-> Esempi pratici.
 
 > [!quote] Quote
 > Citazioni (anche `cite`).
@@ -100,8 +112,7 @@ ___
 > [!question] Question
 > Domande o dubbi (anche `help`).
 
-> [!success] Success
-> Successo o soluzioni trovate (anche `check` o `done`).
+
 
 > [!note]+ Aperto di default
 > Questo callout è espanso all'apertura.
