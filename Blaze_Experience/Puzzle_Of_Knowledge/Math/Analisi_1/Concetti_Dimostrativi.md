@@ -45,3 +45,27 @@ Per dimostrare $A \Rightarrow B$:
 > L'implicazione $A \Rightarrow B$ è falsa solo se $A$ è vera e $B$ è falsa. Se supporre $A \land \neg B$ porta a un assurdo, quel caso non può verificarsi, quindi l'implicazione è vera.
 
 ___
+# Dimostrazione per Contrapposizione
+
+> [!abstract] Definizione:
+> La **dimostrazione per contrapposizione** dimostra $A \Rightarrow B$ dimostrando invece la sua **contronominale** $\neg B \Rightarrow \neg A$, che è logicamente equivalente.
+
+## Struttura
+
+Per dimostrare $A \Rightarrow B$:
+
+|     | Passo             | Cosa si fa                                                      |
+| --- | ----------------- | --------------------------------------------------------------- |
+| 1.  | **Riscrittura**   | Si scrive la contronominale $\neg B \Rightarrow \neg A$         |
+| 2.  | **Assunzione**    | Si assume $\neg B$ vera                                         |
+| 3.  | **Deduzione**     | Da $\neg B$ si ricavano passaggi logici                         |
+| 4.  | **Arrivo**        | Si arriva a $\neg A$                                            |
+| 5.  | **Conclusione**   | $\neg B \Rightarrow \neg A$ è vera, quindi anche $A \Rightarrow B$ |
+
+> [!info] Info: Perché funziona
+> $A \Rightarrow B$ e $\neg B \Rightarrow \neg A$ hanno sempre lo stesso valore di verità (sono equivalenti). Dimostrare una equivale a dimostrare l'altra.
+
+> [!danger] Attenzione!
+> Non confonderla con la **reciproca** ($B \Rightarrow A$), che **non** è equivalente all'originale.
+
+___
