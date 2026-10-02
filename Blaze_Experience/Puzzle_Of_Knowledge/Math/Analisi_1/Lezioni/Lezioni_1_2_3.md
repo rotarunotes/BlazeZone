@@ -8,18 +8,18 @@ $$(**)\quad \sum_{k=0}^{n} q^k = \frac{1 - q^{n+1}}{1 - q} \qquad \forall n \in 
 
 ### Dimostrazione per induzione
 
-**Passo base:** $p = 0$: $0$ verifica $(**)$? $\to p = n$
+**Passo base**: $p = 0$: $0$ verifica $(**)$? $\to p = n$
 
 $$\sum_{k=0}^{0} q^k = 1 ; ; \quad \frac{1 - q^{0+1}}{1 - q} = 1$$
 
 Passo base verificato per $p = 0$.
 
-**Passo induttivo**
+**Passo induttivo**:
 
 - Ipotesi induttiva $\to \displaystyle\sum_{k=0}^{n} q^k = \frac{1 - q^{n+1}}{1 - q}$
 - Tesi induttiva $\to \displaystyle\sum_{k=0}^{n+1} q^k = \frac{1 - q^{(n+1)+1}}{1 - q}$
 
-**Dimostrazione:**
+**Dimostrazione**:
 
 $$\sum_{k=0}^{n+1} q^k = \sum_{k=0}^{n} q^k + q^{n+1}$$
 
@@ -31,11 +31,12 @@ $$= \frac{1 - q^{n+1} + q^{n+1} - q^{n+2}}{1 - q}$$
 
 $$= \frac{1 - q^{n+2}}{1 - q}$$
 
-**N.B.** Per $q = 0$ si definisce $\displaystyle\sum_{k=0}^{n} q^k = 1$.
-
-Quindi la formula $\displaystyle\sum_{k=0}^{n} q^k = \frac{1 - q^{n+1}}{1 - q}$ vale:
-
-$$\frac{1 - 0^{n+1}}{1 - 0} = 1$$
+> [!Info] Info:
+> **N.B.**: Per $q = 0$ si definisce $\displaystyle\sum_{k=0}^{n} q^k = 1$.
+> 
+> Quindi la formula $\displaystyle\sum_{k=0}^{n} q^k = \frac{1 - q^{n+1}}{1 - q}$ vale:
+> 
+> $$\frac{1 - 0^{n+1}}{1 - 0} = 1$$
 
 ---
 

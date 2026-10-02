@@ -3,6 +3,16 @@ Data: 2026-09-30
 #Puzzle_Of_Knowledge/Math/Analisi_1
 ___
 # Index
+
+- [[#Per Principio di Induzione]]
+	- [[#1) somma dei primi $n$ naturali|1) somma dei primi n naturali]]
+	- [[#2) Somma Dei Primi Termini Di Una Progressione Geometrica (Finita)|2) Somma Dei Primi Termini Di Una Progressione Geometrica (Finita)]]
+	- [[#3) $n! \geq n$ per ogni $n \in \mathbb{N}$|3) n! ≥ n per ogni n ∈ ℕ]]
+- [[#Per Contraddizione]]
+	- [[#1) L' Equazione $x^2 - 2$ Non Ha Soluzioni Razionali|1) L' Equazione x² − 2 Non Ha Soluzioni Razionali]]
+	- [[#2) Proprietà Di Archimede]]
+- [[#Per Contrapposizione]]
+	- [[#1) $m^2$ pari $\Rightarrow$ $m$ pari|1) m² pari ⇒ m pari]]
 ___
 
 # Per Principio di Induzione
@@ -127,7 +137,7 @@ Si controlla la formula per $n=0$.
 > [!info] Info: Il caso $q=0$
 > Per $q=0$ si definisce $\sum_{k=0}^{n} q^k = 1$, e la formula vale comunque: $\frac{1-0^{n+1}}{1-0} = 1$.
 
-## 2) $n! \geq n$ per ogni $n\in\mathbb{N}$
+## 3) $n! \geq n$ per ogni $n \in \mathbb{N}$
 
 ### Enunciato
 
@@ -199,29 +209,17 @@ $$\forall n\in\mathbb{N}: \qquad n! \geq n \qquad (*)$$
 ___
 # Per Contraddizione
 
-> [!example] Esempio: $\sqrt{2}$ non è razionale
-> 
-> **Enunciato**: $\sqrt{2}\notin\mathbb{Q}$.
-> 
-> **Negazione**: per assurdo, $\sqrt{2}\in\mathbb{Q}$, cioè $\sqrt{2}=\frac{p}{q}$ con $p,q\in\mathbb{N}$ **senza fattori comuni**.
-> 
-> > [!success] Dimostrazione:
-> > 1. Elevando al quadrato: $2q^2=p^2$, quindi $p^2$ è pari, quindi $p$ è pari.
-> > 2. Allora $p=2k$ e $2q^2=4k^2$, cioè $q^2=2k^2$, quindi $q$ è pari.
-> > 3. Ma $p$ e $q$ sono entrambi pari, contro l'ipotesi che non abbiano fattori comuni. **Assurdo.**
-> > 
-> > Quindi $\sqrt{2}\notin\mathbb{Q}$. $\blacksquare$
-> > 
-
 ## 1) L' Equazione $x^2 - 2$ Non Ha Soluzioni Razionali
 
-### Enunciato
+### Assunzione
 
-| Parte         | Contenuto                                         |
-| ------------- | ------------------------------------------------- |
-| **Contesto**  | Sia $x\in\mathbb{Q}$                              |
-| **Ipotesi**   | $x^2-2=0$ è l'equazione considerata               |
-| **Tesi**      | Non esiste $x\in\mathbb{Q}$ tale che $x^2=2$, cioè $\sqrt{2}\notin\mathbb{Q}$ |
+> [!Abstract] Definizione: Enunciato
+>| Parte        | Contenuto                                                                     |
+| ------------ | ----------------------------------------------------------------------------- |
+| **Contesto** | Sia $x\in\mathbb{Q}$                                                          |
+| **Ipotesi**  | $x^2-2=0$ è l'equazione considerata                                           |
+| **Tesi**     | Non esiste $x\in\mathbb{Q}$ tale che $x^2=2$, cioè $\sqrt{2}\notin\mathbb{Q}$ |
+
 ### Negazione
 
 Si suppone per assurdo che la tesi sia falsa:
@@ -233,7 +231,7 @@ $$\exists\,\frac{m}{n}\in\mathbb{Q}\ \Big|\ \left(\frac{m}{n}\right)^2=2 \quad\t
 
 ### Deduzione
 
-**1. Da frazione a intero**
+**1. Da frazione a intero**:
 
 $$\left(\frac{m}{n}\right)^2=2 \;\Rightarrow\; m^2=2n^2$$
 
@@ -242,7 +240,7 @@ $$\left(\frac{m}{n}\right)^2=2 \;\Rightarrow\; m^2=2n^2$$
 > $$m^2(n^{-1})^2=2$$ 
 > Moltiplicando per $n^2$ (con $(n^{-1})^2 n^2=1$), si ottiene $$m^2=2n^2$$
 
-**2. $m$ è pari**
+**2. $m$ è pari**:
 $$m^2=2n^2$$ $2n^2$ è pari, quindi anche $m^2$ è pari, allora si dimostra:
 
 > [!success] Dimostrazione:  $m^2$ pari $\Rightarrow$ $m$ pari (per contrapposizione)
@@ -278,18 +276,105 @@ Quindi $n$ è pari, (Per la stessa dimostrazione di prima).
 > [!info] Info: Generalizzazione
 > Con lo stesso procedimento, se $p$ è un numero primo, l'equazione $x^2-p=0$ non ha soluzioni razionali, cioè $\sqrt{p}\notin\mathbb{Q}$.
 
+## 2) Proprietà Di Archimede
+
+> [!abstract] Definizione: Proprietà Di Archimede
+>  $$\forall, x\in\mathbb{R}\ \ \exists, n\in\mathbb{N}\ \Big|\ n>x$$
+> 
+> Per ogni numero reale $x$ esiste un numero naturale $n$ maggiore di $x$
+
+### Assunzione
+
+> [!Abstract] Definizione: Enunciato
+> 
+> |Parte|Contenuto|
+> |---|---|
+> |**Contesto**|Sia $x\in\mathbb{R}$|
+> |**Ipotesi**|$\mathbb{N}\subseteq\mathbb{R}$ e vale l'assioma di separazione|
+> |**Tesi**|Esiste $n\in\mathbb{N}$ tale che $n>x$|
+
+**Caso $x\le 0$**
+
+$n=1$ verifica la tesi: $1>0\ge x$.
+
+**Caso $x>0$**
+
+Si considera l'insieme dei naturali che non superano $x$, che Definiamo con $A$:
+
+$$A:=\left\{n\in\mathbb{N}\mid n\le x\right\}\subseteq\mathbb{N}$$
+
+> [!info] Info: Riformulazione della tesi 
+> La tesi è "esiste $n$ con $n>x$". Se $A\neq\mathbb{N}$, c'è un naturale fuori da $A$, cioè un naturale che non soddisfa $n\le x$, quindi é $n>x$. 
+> Dunque:  
+$$\text{tesi}\iff A\neq\mathbb{N}$$
+### Negazione
+
+Si suppone per assurdo che la tesi sia falsa:
+
+$$A=\mathbb{N}\ \ (\neq\emptyset)$$
+
+cioè $n\le x$ per ogni $n\in\mathbb{N}$: 
+- $x$ sarebbe un maggiorante di $\mathbb{N}$.
+### Deduzione
+
+**1. Si costruisce l'insieme dei maggioranti**:
+$$B:=\left\{y\in\mathbb{R}\mid y\ge n\ \ \forall n\in\mathbb{N}\right\}$$
+
+> [!Info] Info: A parole
+> Abbiamo l'insieme $B$ che comprende tutti i numeri reale maggiori dei numeri naturali
+
+Poiché $A=\mathbb{N}$, vale $x\ge n$ per ogni $n\in\mathbb{N}$, quindi $x\in B$ e $B\neq\emptyset$.
+
+**2. $A$ e $B$ sono separati**:
+
+Se $y\in B$, per definizione $y\ge n$ per ogni $n\in A$, $(A=\mathbb{N})$. 
+Quindi:  
+$$n\le y\quad\forall n\in A,\ \forall y\in B$$
+
+Ogni elemento di $A$ sta a sinistra di ogni elemento di $B$.
+
+**3. Esiste un elemento separatore**:
+
+Per l'assioma di separazione:
+
+$$\exists \lambda\in\mathbb{R}\ \Big|\ n\le\lambda\le y\quad \forall n\in A,\ \forall y\in B$$
+
+**4. $\lambda-1$ è un maggiorante di $\mathbb{N}$**:
+
+Se $n\in\mathbb{N}$ allora $n+1\in\mathbb{N}=A$, quindi, essendo $\lambda$ separatore:
+
+$$n+1\le\lambda\Rightarrow n\le\lambda-1\quad \forall n\in A\ (=\mathbb{N})$$
+
+Cioè $\lambda-1\in B$.
+
+> [!info] Info: 
+> Perché $n+1\in A$, $\mathbb{N}$ è chiuso rispetto alla somma di $1$.
+>>[!Info] : Dire che $\mathbb{N}$ è chiuso rispetto a $+1$ vuol dire che dopo ogni naturale ce n'è un altro.
+>
+> Poiché $A=\mathbb{N}$ per ipotesi assurda, anche $n+1$ appartiene ad $A$ e quindi vale $n+1\le\lambda$.
+
+### Assurdo
+
+> [!danger] Attenzione! 
+> $\lambda$ è separatore, quindi $\lambda\le y$ per ogni $y\in B$. In particolare, con $y=\lambda-1\in B$: $$\lambda\le\lambda-1\Rightarrow 1\le 0$$ Questo è falso. **Assurdo.**
+
+### Conclusione
+
+> [!success] Dimostrazione: 
+> Conclusione L'ipotesi $A=\mathbb{N}$ porta a un assurdo, quindi è falsa: $A\neq\mathbb{N}$. Dunque esiste $n\in\mathbb{N}$ con $n>x$. $\blacksquare$
+
 ___
 # Per Contrapposizione
 
-## m^2$ pari $\Rightarrow$ $m$ pari
+## 1) $m^2$ pari $\Rightarrow$ $m$ pari
 
-### Enunciato
 
-| Parte         | Contenuto                                          |
-| ------------- | -------------------------------------------------- |
-| **Contesto**  | Sia $m\in\mathbb{Z}$                               |
-| **Ipotesi**   | $A$: $m^2$ è pari                                  |
-| **Tesi**      | $B$: $m$ è pari                                    |
+> [!Abstract] Definizione: Enunciato
+>| Parte        | Contenuto            |
+| ------------ | -------------------- |
+| **Contesto** | Sia $m\in\mathbb{Z}$ |
+| **Ipotesi**  | $A$: $m^2$ è pari    |
+| **Tesi**     | $B$: $m$ è pari      |
 
 Da $m^2=2n^2$ sappiamo che $m^2$ è pari (è $2$ per un intero). Vogliamo concludere che anche $m$ è pari.
 ### Riscrittura

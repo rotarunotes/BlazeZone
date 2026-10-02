@@ -3,6 +3,11 @@ Data: 2026-09-30
 #Puzzle_Of_Knowledge/Math/Analisi_1
 ___
 # Index
+- [[#Assioma]]
+- [[#Preposizione Logica]]
+- [[#Enunciato]]
+	- [[#Implicazioni]]
+- [[#Teorema]]
 ___
 
 # Assioma

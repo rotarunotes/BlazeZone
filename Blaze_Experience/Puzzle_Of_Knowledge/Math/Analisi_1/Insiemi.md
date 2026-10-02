@@ -3,6 +3,33 @@ Data: 2026-09-30
 #Puzzle_Of_Knowledge/Math/Analisi_1
 ___
 # Index
+- [[#Operazioni Insiemistiche]]
+	- [[#Unione $\cup$|Unione ∪]]
+	- [[#Intersezione $\cap$|Intersezione ∩]]
+	- [[#Differenza $\setminus$|Differenza ∖]]
+	- [[#Prodotto Cartesiano $\times$|Prodotto Cartesiano ×]]
+- [[#Numeri Naturali $\mathbb{N}$|Numeri Naturali ℕ]]
+	- [[#Operazioni]]
+		- [[#Proprietà Delle Operazioni]]
+			- [[#Addizione]]
+			- [[#Prodotto]]
+	- [[#Proprietà Dei Numeri Naturali]]
+		- [[#Ordinamento Totale]]
+		- [[#Compatibilità]]
+- [[#Numeri Interi $\mathbb{Z}$|Numeri Interi ℤ]]
+	- [[#Assioma Di Esistenza Dell'Opposto]]
+- [[#Numeri Razionali $\mathbb{Q}$|Numeri Razionali ℚ]]
+	- [[#Inverso e Reciproco]]
+	- [[#Assioma Dell'Inverso Moltiplicativo]]
+- [[#Numeri Reali $\mathbb{R}$|Numeri Reali ℝ]]
+	- [[#Assioma Di Separazione]]
+	- [[#Proprietà Di Archimede]]
+	- [[#Parte Intera]]
+		- [[#Funzione floor $\lfloor x\rfloor$|Funzione floor ⌊x⌋]]
+		- [[#Funzione ceil $\lceil x\rceil$|Funzione ceil ⌈x⌉]]
+		- [[#Grafico a Gradini Funzione Floor e Funzione Ceil]]
+	- [[#Proposizione $\sqrt{2} \in \mathbb{R} \setminus \mathbb{Q}$|Proposizione √2 ∈ ℝ ∖ ℚ]]
+	- [[#Teorema densità di $\mathbb{Q}$ in $\mathbb{R}$|Teorema densità di ℚ in ℝ]]
 ___
 
 # Operazioni Insiemistiche
@@ -41,6 +68,23 @@ $$A \setminus B = \{x : x \in A \land x \notin B\}$$
 > [!danger] Attenzione!
 > $A \setminus B \neq B \setminus A$
 
+## Prodotto Cartesiano $\times$
+
+Insieme delle **coppie ordinate** $(a,b)$ con il primo elemento preso da $A$ e il secondo da $B$.
+
+$$A \times B = \{(a,b) : a \in A \land b \in B\}$$
+
+> [!example] Esempio:
+> $A = \{1, 2\}$, $B = \{a, b\}$
+> $$A \times B = \{(1,a),\ (1,b),\ (2,a),\ (2,b)\}$$
+
+
+> [!danger] Attenzione!
+> Il prodotto cartesiano **non è commutativo**:
+> $$A \times B \neq B \times A$$
+>
+> > [!example] Esempio:
+> > Con $A = \{1, 2\}$ e $B = \{a, b\}$ si ha $(1,a)\in A\times B$, ma $(1,a)\notin B\times A$, perché in $B\times A$ il primo elemento deve stare in $B$.
 
 ___
 # Numeri Naturali $\mathbb{N}$
@@ -169,94 +213,103 @@ ___
 
 $$\mathbb{N} \subseteq \mathbb{Z} \subseteq \mathbb{Q} \subseteq \mathbb{R}$$
 
-## Assioma Di Separazione 
+## Assioma Di Separazione
 
-> [!abstract] Definizione: Insiemi separati
-> Siano $A,B\subseteq\mathbb{R}$ con $A\neq\emptyset\neq B$. Si dicono **separati** se
+> [!abstract] Definizione: Enunciato
+> Siano $A,B\subseteq\mathbb{R}$ con $A\neq\emptyset\neq B$.
+> Si dicono **separati** se
 > $$a\le b \quad \forall a\in A,\ \forall b\in B$$
-
-> [!abstract] Definizione: Assioma di separazione
-> Se $A,B$ sono separati, allora
+> Se $A,B$ sono separati, allora:
 > $$\exists\,x\in\mathbb{R} \mid a\le x\le b \quad \forall a\in A,\ \forall b\in B$$
 > $x$ è detto **separatore** di $A$ e $B$.
-
-> [!info] Info:
-> - Si può dimostrare che esiste un insieme $\mathbb{R}$ che verifica tali assiomi.
-> - Altre costruzioni di $\mathbb{R}$ sono equivalenti a quella assiomatica che usiamo.
+>> [!info] Info:
+>> - Si può dimostrare che esiste un insieme $\mathbb{R}$ che verifica tali assiomi.
+>> - Altre costruzioni di $\mathbb{R}$ sono equivalenti a quella assiomatica che usiamo.
 
 ## Proprietà Di Archimede
 
 > [!abstract] Definizione: Enunciato
 > $$\forall x\in\mathbb{R}\ \ \exists\,n\in\mathbb{N} \mid n>x$$
 > > [!info] Info: In parole
-> Dato un qualunque reale $x$, c'è sempre un naturale più grande. Quindi $\mathbb{N}$ **non è limitato superiormente** in $\mathbb{R}$.
-
-
-> [!success] Dimostrazione:
-> **Caso $x\le 0$**
-> $n=1$ verifica la tesi: $1>0\ge x$.
->
-> **Caso $x>0$**
-> Sia
-> $$A:=\{n\in\mathbb{N}\mid n\le x\}\subseteq\mathbb{N}$$
-> Tesi $\iff A\neq\mathbb{N}$ (se $A\neq\mathbb{N}$ esiste un $n\notin A$, cioè $n>x$).
->
-> **Per contraddizione**: si suppone $A=\mathbb{N}\neq\emptyset$.
->
-> Sia
-> $$B:=\{y\in\mathbb{R}\mid y\ge n\ \ \forall n\in\mathbb{N}\}$$
-> Poiché $A=\mathbb{N}$, vale $x\ge n$ per ogni $n\in\mathbb{N}$, quindi $x\in B$ e $B\neq\emptyset$.
->
-> Per ogni $y\in B$ si ha $y\ge n$ per ogni $n\in A\ (=\mathbb{N})$. Quindi $A$ e $B$ sono **separati**.
->
-> Per l'assioma di separazione
-> $$\exists\,\lambda\in\mathbb{R}\mid n\le\lambda\le y \quad \forall n\in A,\ \forall y\in B$$
->
-> Se $n\in\mathbb{N}$ allora $n+1\in\mathbb{N}=A$, quindi
-> $$n+1\le\lambda \;\Rightarrow\; n\le\lambda-1 \quad \forall n\in A\ (=\mathbb{N})$$
-> Cioè $\lambda-1\in B$.
->
-> Ma $\lambda$ è separatore, quindi $\lambda\le y$ per ogni $y\in B$. In particolare, con $y=\lambda-1$:
-> $$\lambda\le\lambda-1 \;\Rightarrow\; 1\le 0$$
->
-> **Assurdo.** Quindi $A\neq\mathbb{N}$, cioè esiste $n\in\mathbb{N}$ con $n>x$. $\blacksquare$
-
-___
+>> Dato un qualunque reale $x$, c'è sempre un naturale più grande. 
+>>
+>> Quindi di dice che l'insieme $\mathbb{N}$ **non è limitato superiormente** in $\mathbb{R}$.
 ## Parte Intera
 
-> [!abstract] Proprietà della parte intera
+> [!abstract] Definizione: Proprietà della parte intera
 > $$\forall x\in\mathbb{R}\ \ \exists!\,n\in\mathbb{Z}\mid n\le x<n+1$$
 > $n$ è detto **parte intera** di $x$.
+>>[!Info] Info: 
+>>la **parte intera** di un numero con la virgola ($x$) è il numero intero più grande che non supera quel numero.
+>>>[!Example] Esempio:
+>>>**Se il numero è positivo ($x = 3.14$)**: Si trova tra $3$ e $4$ ($3 \le 3.14 < 4$). L'intero che ti sei lasciato alle spalle è **$3$**.
+> >>
 
 ### Funzione floor $\lfloor x\rfloor$
+$$n = \lfloor x \rfloor \iff n \le x < n+1$$
+> [!Info] Info:
+> arrotonda sempre e comunque per **difetto** al numero intero immediatamente inferiore o uguale.
+> > [!example] Esempio:
+>>- $\lfloor x\rfloor=0 \quad \forall x\mid 0\le x<1$
+>>- $\lfloor 0{,}5\rfloor=0 \qquad \lfloor 2{,}5\rfloor=2$
+>> - $-1\le -0{,}5<0 \Rightarrow \lfloor -0{,}5\rfloor=-1$
 
-$$n=\lfloor x\rfloor$$
-
-> [!example] Esempio:
-> - $\lfloor x\rfloor=0 \quad \forall x\mid 0\le x<1$
-> - $\lfloor 0{,}5\rfloor=0 \qquad \lfloor 2{,}5\rfloor=2$
-> - $-1\le -0{,}5<0 \Rightarrow \lfloor -0{,}5\rfloor=-1$
-
-> [!info] Info: Grafico
-> È una **funzione a gradini**. Nel grafico:
-> - punto pieno = estremo **compreso**
-> - parentesi (punto vuoto) = estremo **escluso**
 
 > [!danger] Attenzione!
 > Per i numeri negativi la parte intera **non** è "togliere la parte decimale": $\lfloor -0{,}5\rfloor=-1$, non $0$.
 
 ### Funzione ceil $\lceil x\rceil$
 
-È l'intero più piccolo che sia $\ge x$.
+$$n = \lceil x \rceil \iff n-1\le x<n$$
 
-> [!example] Esempio:
-> - $\lceil 0\rceil=0$
-> - $\lceil \tfrac{3}{2}\rceil=2$
+> [!Info] Info:
+> Arrotonda sempre e comunque per **eccesso** al numero intero immediatamente superiore o uguale
+> > [!example] Esempio:
+>>- $\lceil 0\rceil=0$
+>> - $\lceil \tfrac{3}{2}\rceil=2$
 
-> [!danger] Attenzione!
-> $$\lceil x\rceil=\lfloor x\rfloor+1$$
-> è **falsa** $\forall x\in\mathbb{Z}$ (per $x\in\mathbb{Z}$ vale $\lceil x\rceil=\lfloor x\rfloor=x$).
+> [!abstract] Definizione:
+> Per $x\in\mathbb{Z}$ vale $\lceil x\rceil=\lfloor x\rfloor=x$.
 >
-> È vera solo se $x\in\mathbb{R}\setminus\mathbb{Z}$.
+> > [!example] Esempio: $x=3$
+> > $$\lceil 3\rceil=\lfloor 3\rfloor=3$$
+>
+> > [!danger] Attenzione! $x\in\mathbb{Z}$
+> > L'uguaglianza
+> > $$\lceil x\rceil=\lfloor x\rfloor+1$$
+> > è **falsa** $\forall\, x\in\mathbb{Z}$.
+> >
+> > > [!example] Esempio: $x\in\mathbb{Z}$
+> > > Per $x\in\mathbb{Z}$ vale $\lceil x\rceil=\lfloor x\rfloor=x$.
+> > > Con $x=3$:
+> > > $$\lceil 3\rceil=3\qquad \lfloor 3\rfloor+1=3+1=4$$
+> > > Poiché $3\neq 4$, l'uguaglianza **non vale**.
+>
+> > [!info] Info: $x\in\mathbb{R}\setminus\mathbb{Z}$
+> > L'uguaglianza $\lceil x\rceil=\lfloor x\rfloor+1$ è vera solo se $x\in\mathbb{R}\setminus\mathbb{Z}$.
+> >
+> > > [!example] Esempio: $x\in\mathbb{R}\setminus\mathbb{Z}$
+> > > Con $x=2{,}5$:
+> > > $$\lceil 2{,}5\rceil=3\qquad \lfloor 2{,}5\rfloor+1=2+1=3$$
+> > > L'uguaglianza **vale**.
 
+
+### Grafico a Gradini Funzione Floor e Funzione Ceil
+
+![Funzione_Floor_Ceil.png](../../../Setup_Archive/Viewable/Image/Math/Analisi_1/Funzione_Floor_Ceil.png)
+
+## Proposizione $\sqrt{2} \in \mathbb{R} \setminus \mathbb{Q}$
+
+
+> [!Success] Dimostrazione: Idea
+> $$A = \left\{x \in \mathbb{R} \mid x^2 > 2\right\}$$
+$$B = \left\{x \in \mathbb{R} \mid x^2 < 2\right\}$$
+Si verifica che tra i 2 insiemi sono separati: $\exists \lambda \in \mathbb{R}$
+$$b \leq \lambda \leq a \quad \forall a \in A,\ \forall b \in B$$
+Perché fa vedere che $\lambda^2 = 2$.
+
+## Teorema densità di $\mathbb{Q}$ in $\mathbb{R}$
+
+$$\forall x \in \mathbb{R}\ \text{e}\ \forall \varepsilon > 0,\ \text{esiste } z \in \mathbb{Q} \mid z \leq x < z + \varepsilon$$
 ___
+
