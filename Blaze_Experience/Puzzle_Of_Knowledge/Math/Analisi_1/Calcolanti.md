@@ -8,7 +8,7 @@ ___
 # Fattoriale di $n \in \mathbb{N}$: $n!$
 
 
-> [!abstract] Definizione: Induttiva
+> [!abstract] Definizione: Induttiva Fattoriale
 > 1. $0! := 1$
 > 2. $(n+1)! := (n+1)\cdot n! \qquad \forall n\in\mathbb{N}$
 >
@@ -19,24 +19,18 @@ ___
 > $$n! = n\,(n-1)! \qquad \forall n\ge 1$$
 
 
-> [!Info] Info:
+> [!Info] Info: Produttoria
 > $$n! = \prod_{i=1}^{n} i = 1 \cdot 2 \cdot 3 \cdot 4 \cdot \ldots \cdot n \qquad \text{(produttoria)}$$
 
 ___
 # Coefficiente Binomiale
 
 
-> [!Abstract] Definizione:
+> [!Abstract] Definizione: Coefficiente Binomiale
 > $n, k \in \mathbb{N}$, $k \leq n$
 > $$\binom{n}{k} := \frac{n!}{k!,(n-k)!} \qquad$$ $\text{per } k > n:$ $$\ \binom{n}{k} := 0$$
-## Proprietà
-
-# Coefficiente Binomiale
-
-> [!abstract] Definizione:
-> Per $n,k\in\mathbb{N}$ con $k\le n$, il **coefficiente binomiale** è
-> $$\binom{n}{k}=\frac{n!}{k!\,(n-k)!}$$
 > con la convenzione $0!=1$.
+
 
 ___
 # Proprietà
@@ -45,7 +39,7 @@ ___
 
 $$\binom{n}{0}=1$$
 
-> [!success] Dimostrazione:
+> [!success] Dimostrazione: $\binom{n}{0}=1$
 > $$\binom{n}{0}=\frac{n!}{0!\,(n-0)!}=\frac{n!}{1\cdot n!}=1$$
 > $\blacksquare$
 
@@ -53,7 +47,7 @@ $$\binom{n}{0}=1$$
 
 $$\binom{n}{n}=1$$
 
-> [!success] Dimostrazione:
+> [!success] Dimostrazione: $\binom{n}{n}=1$
 > $$\binom{n}{n}=\frac{n!}{n!\,(n-n)!}=\frac{n!}{n!\cdot 0!}=1 \qquad (\text{con } 0!=1)$$
 > $\blacksquare$
 
@@ -61,7 +55,7 @@ $$\binom{n}{n}=1$$
 
 $$\binom{n}{n-1}=n \qquad (n\ge 1)$$
 
-> [!success] Dimostrazione:
+> [!success] Dimostrazione: $\binom{n}{n-1}=n \qquad (n\ge 1)$
 > $$\binom{n}{n-1}=\frac{n!}{(n-1)!\,\big(n-(n-1)\big)!}=\frac{n!}{(n-1)!\cdot 1!}=\frac{n\,(n-1)!}{(n-1)!}=n$$
 > $\blacksquare$
 
@@ -69,7 +63,7 @@ $$\binom{n}{n-1}=n \qquad (n\ge 1)$$
 
 $$\binom{n}{k}=\binom{n}{n-k} \qquad \forall k\le n$$
 
-> [!success] Dimostrazione:
+> [!success] Dimostrazione: $\binom{n}{k}=\binom{n}{n-k} \qquad \forall k\le n$
 > Si scrivono i due membri:
 > $$\binom{n}{k}=\frac{n!}{k!\,(n-k)!} \qquad\qquad \binom{n}{n-k}=\frac{n!}{(n-k)!\,\big(n-(n-k)\big)!}=\frac{n!}{(n-k)!\cdot k!}$$
 > Il denominatore è lo stesso (il prodotto è commutativo), quindi i due coefficienti coincidono. $\blacksquare$
@@ -77,7 +71,7 @@ $$\binom{n}{k}=\binom{n}{n-k} \qquad \forall k\le n$$
 ## 5) Formula di Stifel
 
 $$\binom{n}{k}=\binom{n-1}{k-1}+\binom{n-1}{k} \qquad \forall k,\ 1\le k\le n$$
-> [!success] Dimostrazione:
+> [!success] Dimostrazione: $\binom{n}{k}=\binom{n-1}{k-1}+\binom{n-1}{k} \qquad \forall k,\ 1\le k\le n$
 > Si parte dal **secondo membro** e si arriva al primo.
 > $$\binom{n-1}{k-1}+\binom{n-1}{k}=\frac{(n-1)!}{(k-1)!\,\big(n-1-(k-1)\big)!}+\frac{(n-1)!}{k!\,(n-1-k)!}$$
 > Poiché $n-1-(k-1)=n-k$, il primo denominatore contiene $(k-1)!(n-k)!$.
@@ -98,8 +92,7 @@ $$\binom{n}{k}=\binom{n-1}{k-1}+\binom{n-1}{k} \qquad \forall k,\ 1\le k\le n$$
 
 $$\binom{n}{k}\in\mathbb{N} \qquad \forall n,k\in\mathbb{N},\ k\le n$$
 
-> [!info] Info: Perché non è ovvio
+> [!info] Info: Perché non è ovvio Che Il coefficiente binomiale è un numero naturale
 > Dalla definizione $\binom{n}{k}$ è una **frazione**. Non è evidente che il risultato sia intero.
-
 
 ___

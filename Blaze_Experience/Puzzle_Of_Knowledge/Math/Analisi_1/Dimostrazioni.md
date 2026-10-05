@@ -8,14 +8,17 @@ ___
 	- [[#1) somma dei primi $n$ naturali|1) somma dei primi n naturali]]
 	- [[#2) Somma Dei Primi Termini Di Una Progressione Geometrica (Finita)|2) Somma Dei Primi Termini Di Una Progressione Geometrica (Finita)]]
 	- [[#3) $n! \geq n$ per ogni $n \in \mathbb{N}$|3) n! ≥ n per ogni n ∈ ℕ]]
+- [[#Per Diretta]]
+	- [[#1) Teorema di Densità di $ mathbb{Q}$ in $ mathbb{R}$ |1) Teorema di Densità di ℚ ∈ ℝ]]
 - [[#Per Contraddizione]]
 	- [[#1) L' Equazione $x^2 - 2$ Non Ha Soluzioni Razionali|1) L' Equazione x² − 2 Non Ha Soluzioni Razionali]]
 	- [[#2) Proprietà Di Archimede]]
+	- [[#3) $ mathbb{Z}$ Non È Inferiormente Limitato|3) ℕ Non È Inferiormente Limitato]]
 - [[#Per Contrapposizione]]
 	- [[#1) $m^2$ pari $\Rightarrow$ $m$ pari|1) m² pari ⇒ m pari]]
 ___
 
-# Per Principio di Induzione
+# Per Principio di Induzione 
 
 ## 1) somma dei primi $n$ naturali
 
@@ -207,6 +210,64 @@ $$\forall n\in\mathbb{N}: \qquad n! \geq n \qquad (*)$$
 > Quindi $(n+1)! \geq n+1$, cioè $n\in A \Rightarrow n+1\in A$: il passo induttivo è verificato.
 
 ___
+# Per Diretta
+## 1) Teorema di Densità di $\mathbb{Q}$ in $\mathbb{R}$
+
+### Enunciato
+
+| Parte       | Contenuto                                                 |
+| ----------- | --------------------------------------------------------- |
+| **Ipotesi** | $x \in \mathbb{R}$ e $\varepsilon > 0$                    |
+| **Tesi**    | $\exists z \in \mathbb{Q} \mid z \le x < z + \varepsilon$ |
+
+### Assunzione
+
+Sia $x \in \mathbb{R}$ e sia $\varepsilon > 0$.
+
+Allora: $$\frac{1}{\varepsilon} > 0$$
+___
+### Deduzione
+
+**1. Scelgo $q$ con Archimede**:
+
+$$\exists q \in \mathbb{N} \ \mid\ q > \frac{1}{\varepsilon} > 0$$
+**2. Considero $qx**:
+
+$$qx \in \mathbb{R}$$
+
+**3. Utilizzo la proprietà la parte intera**:
+
+$$\exists p \in \mathbb{Z} \ \mid\ p \le qx < p + 1$$
+
+**4. Divido per $q$**:
+
+$$\frac{p}{q} \le x < \frac{p+1}{q} $$
+$$\frac{p}{q} \le x < \frac{p}{q} + \frac{1}{q} $$
+
+
+**5. Confronto $\frac{1}{q}$ con $\varepsilon$**:
+
+$$q > \frac{1}{\varepsilon} \Longrightarrow \varepsilon q > 1 \Longrightarrow \boxed{\varepsilon > \frac{1}{q}}$$
+### Arrivo
+
+Dal passo 4 e dal passo 5: 
+$$\frac{p}{q} \le x < \frac{p}{q} + \varepsilon$$
+
+Pongo $z = \dfrac{p}{q}$
+
+> [!Info] Info:
+> Poiché $p \in \mathbb{Z}$ e $q \in \mathbb{N}$, $q > 0$, si ha $z \in \mathbb{Q}$.
+
+### Conclusione
+
+Abbiamo trovato $z \in \mathbb{Q}$ con $z \le x < z + \varepsilon$.
+
+Quindi, per ogni $x \in \mathbb{R}$ e $\varepsilon > 0$, vale la tesi. 
+
+> [!Success] Dimostrazione: 
+> Conseguenza Tra due reali $a < b$ esiste sempre sia un razionale sia un irrazionale.
+
+___
 # Per Contraddizione
 
 ## 1) L' Equazione $x^2 - 2$ Non Ha Soluzioni Razionali
@@ -244,11 +305,7 @@ $$\left(\frac{m}{n}\right)^2=2 \;\Rightarrow\; m^2=2n^2$$
 $$m^2=2n^2$$ $2n^2$ è pari, quindi anche $m^2$ è pari, allora si dimostra:
 
 > [!success] Dimostrazione:  $m^2$ pari $\Rightarrow$ $m$ pari (per contrapposizione)
-> Si dimostra la contronominale: se $m$ è dispari, allora $m^2$ è dispari.
-> Sia $m=2k+1$ con $k\in\mathbb{Z}$.
-> Allora:
-> $$m^2=(2k+1)^2=4k^2+4k+1=4k(k+1)+1$$
-> che è dispari. $\blacksquare$
+> [[#1) $m 2$ pari $ Rightarrow$ $m$ pari|Dimostrazione]]
 
 
 > [!Abstract] Definizione: Numero Pari
@@ -265,7 +322,7 @@ Quindi $n$ è pari, (Per la stessa dimostrazione di prima).
 ### Assurdo
 
 > [!danger] Attenzione!
-> $m$ e $n$ sono entrambi pari, quindi hanno il fattore comune $2$. Questo contraddice M.C.D.$(m,n)=1$. **Assurdo.**
+> $m$ e $n$ sono entrambi pari, quindi hanno il fattore comune $2$. Questo contraddice M.C.D.$(m,n)=1$. **Assurdo**.
 
 ### Conclusione
 
@@ -279,7 +336,7 @@ Quindi $n$ è pari, (Per la stessa dimostrazione di prima).
 ## 2) Proprietà Di Archimede
 
 > [!abstract] Definizione: Proprietà Di Archimede
->  $$\forall, x\in\mathbb{R}\ \ \exists, n\in\mathbb{N}\ \Big|\ n>x$$
+>  $$\forall x\in\mathbb{R}\ \ \exists n\in\mathbb{N}\ \Big|\ n>x$$
 > 
 > Per ogni numero reale $x$ esiste un numero naturale $n$ maggiore di $x$
 
@@ -356,12 +413,66 @@ Cioè $\lambda-1\in B$.
 ### Assurdo
 
 > [!danger] Attenzione! 
-> $\lambda$ è separatore, quindi $\lambda\le y$ per ogni $y\in B$. In particolare, con $y=\lambda-1\in B$: $$\lambda\le\lambda-1\Rightarrow 1\le 0$$ Questo è falso. **Assurdo.**
+> $\lambda$ è separatore, quindi $\lambda\le y$ per ogni $y\in B$. In particolare, con $y=\lambda-1\in B$: $$\lambda\le\lambda-1\Rightarrow 1\le 0$$ Questo è falso. **Assurdo**.
 
 ### Conclusione
 
 > [!success] Dimostrazione: 
 > Conclusione L'ipotesi $A=\mathbb{N}$ porta a un assurdo, quindi è falsa: $A\neq\mathbb{N}$. Dunque esiste $n\in\mathbb{N}$ con $n>x$. $\blacksquare$
+
+## 3) $\mathbb{Z}$ Non È Inferiormente Limitato
+
+### Assunzione
+
+> [!Abstract] Definizione: Enunciato
+> | Parte        | Contenuto                                                |
+> | ------------ | -------------------------------------------------------- |
+> | **Contesto** | Sia $\mathbb{Z}\subseteq\mathbb{R}$                      |
+> | **Ipotesi**  | $\mathbb{Z}=\{\dots,-2,-1,0,1,2,\dots\}$                 |
+> | **Tesi**     | $\mathbb{Z}$ non è inferiormente limitato                |
+
+### Negazione
+
+Si suppone per assurdo che la tesi sia falsa, cioè che $\mathbb{Z}$ sia inferiormente limitato:
+
+$$\exists\, b\in\mathbb{R}\ \Big|\ b\le z\quad\forall z\in\mathbb{Z}$$
+
+> [!info] Info: In parole
+> $b$ è un **minorante** di $\mathbb{Z}$: sta a sinistra (o coincide con) tutti gli interi.
+
+### Deduzione
+
+**1. $b$ è negativo**:
+
+Poiché $-1\in\mathbb{Z}$, b deve essere negativo, quindi:
+$$b<0$$
+
+**2. Moltiplico per $-1$**:
+
+$$b\le z\quad\forall z\in\mathbb{Z} $$ $$\Rightarrow\ -b\ge -z\quad\forall z\in\mathbb{Z}$$
+
+**3. Pongo $w=-z$**:
+
+$$-b\ge w\quad\forall w\in\mathbb{Z}$$
+
+> [!info] Info: Perché $w$ varia su tutto $\mathbb{Z}$
+> Al variare di $z$ in $\mathbb{Z}$, anche $w=-z$ percorre tutti gli interi (l'opposto di un intero è un intero, e ogni intero è l'opposto di un altro).
+
+**4. $\mathbb{Z}$ è superiormente limitato**:
+
+$-b$ è maggiore o uguale a ogni elemento di $\mathbb{Z}$, quindi $-b$ è un **maggiorante** di $\mathbb{Z}$:
+$$\mathbb{Z}\ \text{è superiormente limitato}$$
+
+### Assurdo
+
+> [!danger] Attenzione!
+> Ma $\mathbb{Z}$ **non** è superiormente limitato: se lo fosse, lo sarebbe anche $\mathbb{N}\subseteq\mathbb{Z}$, che invece non lo è (per Archimede). **Assurdo**.
+
+### Conclusione
+
+> [!success] Dimostrazione: Conclusione
+> L'ipotesi che $\mathbb{Z}$ sia inferiormente limitato porta a un assurdo, quindi è falsa.
+> Dunque $\mathbb{Z}$ non è inferiormente limitato. $\blacksquare$
 
 ___
 # Per Contrapposizione

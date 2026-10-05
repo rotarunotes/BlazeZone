@@ -6,6 +6,7 @@
       {
         "id": "d74b5d8fd8f47267",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "683fc5f92624edf4",
@@ -53,26 +54,27 @@
             }
           },
           {
-            "id": "32da8b8310b7d463",
+            "id": "9f8157a5c4210915",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Math/Analisi_1/Concetti_Dimostrativi.md",
-                "mode": "preview",
-                "source": true,
+                "file": "Puzzle_Of_Knowledge/Math/Analisi_1/Insiemi.md",
+                "mode": "source",
+                "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Concetti_Dimostrativi"
+              "title": "Insiemi"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "bbe19e086a23557d",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "3220c2d93a70bcdd",
@@ -120,6 +122,21 @@
             }
           },
           {
+            "id": "a8b61ae2ab6985f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle_Of_Knowledge/Math/Analisi_1/Dimostrazioni.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Dimostrazioni"
+            }
+          },
+          {
             "id": "91f1eb51d9250b00",
             "type": "leaf",
             "state": {
@@ -140,17 +157,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puzzle_Of_Knowledge/Math/Analisi_1/Dimostrazioni.md",
+                "file": "Puzzle_Of_Knowledge/Math/Analisi_1/Lezioni/Tabella_Di_Marcia.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Dimostrazioni"
+              "title": "Tabella_Di_Marcia"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -212,8 +228,8 @@
             "state": {
               "type": "trash-explorer",
               "state": {},
-              "icon": "trash",
-              "title": "Trash explorer"
+              "icon": "lucide-ghost",
+              "title": "trash-explorer"
             }
           }
         ]
@@ -239,7 +255,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 470.50154745578766
+    "width": 468
   },
   "right": {
     "id": "dd71b14831b0ad51",
@@ -360,21 +376,27 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "15706050ed63cd3c",
+  "active": "bf98a89357f94915",
   "lastOpenFiles": [
     "Puzzle_Of_Knowledge/Math/Analisi_1/Insiemi.md",
     "Puzzle_Of_Knowledge/Math/Analisi_1/Concetti_Dimostrativi.md",
-    "Puzzle_Of_Knowledge/Math/Analisi_1/Calcolanti.md",
-    "Puzzle_Of_Knowledge/Math/Analisi_1/Simboli.md",
-    "Puzzle_Of_Knowledge/Math/Analisi_1/Lezioni/Lezioni_1_2_3.md",
     "Puzzle_Of_Knowledge/Math/Analisi_1/Dimostrazioni.md",
     "Puzzle_Of_Knowledge/Math/Analisi_1/Parole_Chiave.md",
+    "Puzzle_Of_Knowledge/Math/Analisi_1/Simboli.md",
+    "Puzzle_Of_Knowledge/Math/Analisi_1/Calcolanti.md",
+    "Puzzle_Of_Knowledge/Math/Analisi_1/Lezioni/Tabella_Di_Marcia.md",
+    "Puzzle_Of_Knowledge/Math/Circumference.md",
+    "Insiemi.pdf",
+    "Puzzle_Of_Knowledge/Math/Analisi_1/Lezioni/Lezione_1.md",
+    "Puzzle_Of_Knowledge/Math/Analisi_1/Lezioni/Lezioni_1_2_3.md",
+    "Puzzle_Of_Knowledge/Math/Analisi_1/Lezioni/Lezione 4.md",
+    "Setup_Archive/Viewable/Image/Math/Analisi_1/Caratterizzazione_Inferiormente_Limitato.png",
+    "Setup_Archive/Viewable/Image/Math/Analisi_1/Caratterizzazione_Superiore_Limitato.png",
     "Setup_Archive/Obsidian_Base/Formatting.md",
     "Setup_Archive/Viewable/Image/Math/Analisi_1/Funzione_Floor_Ceil.png",
     "Setup_Archive/Viewable/Image/Math/Analisi_1/Screenshot 2026-10-02 052628.png",
     "Setup_Archive/Viewable/Image/Math/Analisi_1/Funione_Floor_Ceil.png",
     "Setup_Archive/Viewable/Image/Math/Analisi_1/Screenshot 2026-10-02 052319.png",
-    "Puzzle_Of_Knowledge/Math/Analisi_1/Lezioni/Lezione_1.md",
     "Puzzle_Of_Knowledge/Math/Analisi_1/Lezioni",
     "Setup_Archive/Viewable/Image/Math/Analisi_1",
     "Setup_Archive/Obsidian_Base/README.md",
@@ -394,19 +416,14 @@
     "Puzzle_Of_Knowledge/Computer_Science/Operating_Systems/README.md",
     "Puzzle_Of_Knowledge/Computer_Science/Theory/Data_Structures/README.md",
     "Senza nome",
-    "Puzzle_Of_Knowledge/Computer_Science/System_And_Networks/Security_Cryptography/Secure_Connectivity/GDPR.md",
-    "Temp/Sistemi.md",
     "Temp",
     "Setup_Archive/Viewable/Image/Pasted image 20260818174300.png",
     "Setup_Archive/Viewable/Image/Pasted image 20260818174150.png",
     "Setup_Archive/Viewable/Image/Pasted image 20260818174100.png",
     "Setup_Archive/Viewable/Image/Pasted image 20260818173845.png",
-    "Setup_Archive/Viewable/Image/Pasted image 20260818173806.png",
-    "Setup_Archive/Viewable/Image/Pasted image 20260818173700.png",
     "Senza nome 2",
     "Senza nome 1",
     "Setup_Archive/Viewable/Image/Math",
-    "Setup_Archive/Viewable/Image/Nuova cartella",
     "Setup_Archive/Viewable/Image/Vecchio.canvas",
     "Puzzle_Of_Knowledge/Computer_Science/Senza nome.canvas"
   ]

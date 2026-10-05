@@ -56,14 +56,14 @@ ___
 ___
 # Logica
 
-|Simbolo|Si legge|Significato|
-|---|---|---|
-|$\Rightarrow$|"implica"|Implicazione logica: $A \Rightarrow B$|
-|$\Leftarrow$|"è implicato da"|$A \Leftarrow B$ equivale a $B \Rightarrow A$|
-|$\Leftrightarrow$|"se e solo se"|Doppia implicazione (equivalenza), es. nella definizione di $\le$|
-|$\neg$|"non"|Negazione: $\neg B$ è vero quando $B$ è falso|
-|$\land$|"e"|Congiunzione: $A \land B$ è vero quando sono veri entrambi (corrisponde a "e" nei testi)|
-|$\lor$|"o"|Disgiunzione: $A \lor B$ è vero quando almeno uno dei due è vero (corrisponde a "o" nei testi; è un "o" non esclusivo)|
+| Simbolo           | Si legge         | Significato                                                                                                            |
+| ----------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| $\Rightarrow$     | "implica"        | Implicazione logica: $A \Rightarrow B$                                                                                 |
+| $\Leftarrow$      | "è implicato da" | $A \Leftarrow B$ equivale a $B \Rightarrow A$                                                                          |
+| $\Leftrightarrow$ | "se e solo se"   | Doppia implicazione (equivalenza), es. nella definizione di $\le$                                                      |
+| $\neg$            | "non"            | Negazione: $\neg B$ è vero quando $B$ è falso                                                                          |
+| $\land$           | "e"              | Congiunzione: $A \land B$ è vero quando sono veri entrambi (corrisponde a "e" nei testi)                               |
+| $\lor$            | "o"              | Disgiunzione: $A \lor B$ è vero quando almeno uno dei due è vero (corrisponde a "o" nei testi; è un "o" non esclusivo) |
 
 ___
 # Uguaglianza e ordine
