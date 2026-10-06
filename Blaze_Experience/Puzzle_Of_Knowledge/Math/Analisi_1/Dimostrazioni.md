@@ -8,6 +8,9 @@ ___
 	- [[#1) somma dei primi $n$ naturali|1) somma dei primi n naturali]]
 	- [[#2) Somma Dei Primi Termini Di Una Progressione Geometrica (Finita)|2) Somma Dei Primi Termini Di Una Progressione Geometrica (Finita)]]
 	- [[#3) $n! \geq n$ per ogni $n \in \mathbb{N}$|3) n! ≥ n per ogni n ∈ ℕ]]
+	- [[#4) Disuguaglianza di Bernoulli]]
+	- [[#5) $n! ge 2 n$ $ forall n ge 4$|5) n! ≥ 2ⁿ ∀ n ≥ 4]]
+	- [[#6) $n 2 ge n+1$ $ forall n ge 2$|6) n² ≥ n+1 ∀ n ≥ 2]]
 - [[#Per Diretta]]
 	- [[#1) Teorema di Densità di $ mathbb{Q}$ in $ mathbb{R}$ |1) Teorema di Densità di ℚ ∈ ℝ]]
 - [[#Per Contraddizione]]
@@ -16,6 +19,8 @@ ___
 	- [[#3) $ mathbb{Z}$ Non È Inferiormente Limitato|3) ℕ Non È Inferiormente Limitato]]
 - [[#Per Contrapposizione]]
 	- [[#1) $m^2$ pari $\Rightarrow$ $m$ pari|1) m² pari ⇒ m pari]]
+- [[#Per Doppia Implicazione]]
+	- [[#1) Caratterizzazione di $ sup()$ | 1) Caratterizzazione di sup()]]
 ___
 
 # Per Principio di Induzione 
@@ -23,8 +28,8 @@ ___
 ## 1) somma dei primi $n$ naturali
 
 ### Enunciato
-
-$$\forall n\in\mathbb{N},\ n\ge 1: \qquad \sum_{i=1}^{n} i = \frac{n(n+1)}{2} \qquad (*)$$
+$\forall n\in\mathbb{N},\ n\ge 1$
+$$\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$$
 
 Cioè $1+2+3+\dots+(n-1)+n=\dfrac{n(n+1)}{2}$.
 
@@ -32,16 +37,8 @@ Cioè $1+2+3+\dots+(n-1)+n=\dfrac{n(n+1)}{2}$.
 > Altre proposizioni dimostrabili per induzione, ad esempio la somma dei quadrati:
 > $$\sum_{i=1}^{n} i^2 = 1+2^2+3^2+\dots+(n-1)^2+n^2$$
 
-### Impostazione
-
-| Parte         | Contenuto                                                                     |
-| ------------- | ----------------------------------------------------------------------------- |
-| **Contesto**  | Sia $A=\{n\in\mathbb{N}\mid (*)\text{ è vera}\}\subseteq\mathbb{N}$ e $p=1$. |
-| **Ipotesi 1** | **Passo base**: $1\in A$                                                      |
-| **Ipotesi 2** | **Passo induttivo**: $n\in A \Rightarrow n+1\in A$                            |
-| **Tesi**      | $\{n\in\mathbb{N}\mid n\ge 1\}\subseteq A$, cioè la formula vale per ogni $n\ge 1$. |
-
-### Passo base ($p=1$, cioè $1\in A$)
+∑ᵢ₌₁ⁿ i = n(n+1)/2
+### Passo base ($p=1$)
 
 Si controlla la formula per $n=1$.
 
@@ -51,7 +48,7 @@ Si controlla la formula per $n=1$.
 > [!success] Dimostrazione: Passo base
 > I due membri coincidono, quindi $1\in A$: il passo base è verificato.
 
-### Passo induttivo ($n\in A \Rightarrow n+1\in A$)
+### Passo induttivo
 
 - **Ipotesi induttiva (IP)**: la formula vale per $n$
   $$\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$$
@@ -78,25 +75,16 @@ Si controlla la formula per $n=1$.
 ### Conclusione
 
 > [!success] Dimostrazione: Conclusione
-> Sono verificati sia il passo base ($1\in A$) sia il passo induttivo ($n\in A\Rightarrow n+1\in A$).
-> Per il principio di induzione
+> Sono verificati sia il passo base e sia il passo induttivo.
+> Per il principio di induzione:
 > $$\{n\in\mathbb{N}\mid n\ge 1\}\subseteq A$$
-> cioè la formula $(*)$ vale per ogni $n\ge 1$. $\blacksquare$
+> cioè la formula $\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$ vale per ogni $n\ge 1$. $\blacksquare$
 
 ## 2) Somma Dei Primi Termini Di Una Progressione Geometrica (Finita)
 ### Enunciato
-Sia $q \in \mathbb{R} \setminus \left\{0, 1\right\}$
-$$\quad \sum_{k=0}^{n} q^k = \frac{1 - q^{n+1}}{1 - q} \qquad \forall n \in \mathbb{N} \space \space \space(*)$$
-### Impostazione
-
-| Parte         | Contenuto                                                                     |
-| ------------- | ----------------------------------------------------------------------------- |
-| **Contesto**  | Sia $A=\{n\in\mathbb{N}\mid (*)\text{ è vera}\}\subseteq\mathbb{N}$ e $p=0$.  |
-| **Ipotesi 1** | **Passo base**: $0\in A$                                                      |
-| **Ipotesi 2** | **Passo induttivo**: $n\in A \Rightarrow n+1\in A$                            |
-| **Tesi**      | $\{n\in\mathbb{N}\mid n\ge 0\}\subseteq A$, cioè la formula vale per ogni $n\in\mathbb{N}$. |
-
-### Passo base ($p=0$, cioè $0\in A$)
+$q \in \mathbb{R} \setminus \left\{0, 1\right\}$
+$$\quad \sum_{k=0}^{n} q^k = \frac{1 - q^{n+1}}{1 - q} \qquad \forall n \in \mathbb{N} \space \space \space$$
+### Passo base ($p=0$)
 
 Si controlla la formula per $n=0$.
 
@@ -106,7 +94,7 @@ Si controlla la formula per $n=0$.
 > [!success] Dimostrazione: Passo base
 > I due membri coincidono, quindi $0\in A$: il passo base è verificato.
 
-### Passo induttivo ($n\in A \Rightarrow n+1\in A$)
+### Passo induttivo
 
 - **Ipotesi induttiva (IP)**: la formula vale per $n$$$\sum_{k=0}^{n} q^k = \frac{1-q^{n+1}}{1-q}$$
 - **Tesi induttiva**: la formula vale per $n+1$
@@ -132,10 +120,10 @@ Si controlla la formula per $n=0$.
 ### Conclusione
 
 > [!success] Dimostrazione: Conclusione
-> Sono verificati sia il passo base ($0\in A$) sia il passo induttivo ($n\in A\Rightarrow n+1\in A$).
-> Per il principio di induzione
+> Sono verificati sia il passo base sia il passo induttivo.
+> Per il principio di induzione:
 > $$\{n\in\mathbb{N}\mid n\ge 0\}\subseteq A$$
-> cioè la formula $(*)$ vale per ogni $n\in\mathbb{N}$. $\blacksquare$
+> cioè la formula $\quad \sum_{k=0}^{n} q^k = \frac{1 - q^{n+1}}{1 - q}$ vale per ogni $n\in\mathbb{N}$. $\blacksquare$
 
 > [!info] Info: Il caso $q=0$
 > Per $q=0$ si definisce $\sum_{k=0}^{n} q^k = 1$, e la formula vale comunque: $\frac{1-0^{n+1}}{1-0} = 1$.
@@ -143,17 +131,9 @@ Si controlla la formula per $n=0$.
 ## 3) $n! \geq n$ per ogni $n \in \mathbb{N}$
 
 ### Enunciato
+$\forall n\in\mathbb{N}$
 
-$$\forall n\in\mathbb{N}: \qquad n! \geq n \qquad (*)$$
-
-### Impostazione
-
-| Parte         | Contenuto                                                                   |
-| ------------- | --------------------------------------------------------------------------- |
-| **Contesto**  | Sia $A=\{n\in\mathbb{N}\mid (*)\text{ è vera}\}\subseteq\mathbb{N}$ e $p=1$ |
-| **Ipotesi 1** | **Passo base**: $1\in A$                                                    |
-| **Ipotesi 2** | **Passo induttivo**: $n\in A \Rightarrow n+1\in A$                          |
-| **Tesi**      | $\{n\in\mathbb{N}\mid n\ge 1\}\subseteq A$, cioè la formula vale per ogni $n\ge 1$ |
+$$n! \geq n \qquad (*)$$
 
 > [!danger] Attenzione!
 > Il passo induttivo usa $n\ge 1$, quindi la base è $p=1$. Il caso $n=0$ si verifica a parte: $0!=1\ge 0$. 
@@ -164,7 +144,7 @@ $$\forall n\in\mathbb{N}: \qquad n! \geq n \qquad (*)$$
 - Secondo membro: $0$
 
 > [!success] Dimostrazione: Passo base
-> $0!=1\ge 0$, quindi $1\in A$: il passo base è verificato.
+> $1\ge 0$, quindi $1\in A$: il passo base è verificato.
 
 ### Passo induttivo ($n\in A \Rightarrow n+1\in A$)
 
@@ -208,6 +188,184 @@ $$\forall n\in\mathbb{N}: \qquad n! \geq n \qquad (*)$$
 > $$(n+1)! = (n+1)\cdot n! \;\geq\; (n+1)\cdot n \;\geq\; n+1$$
 >
 > Quindi $(n+1)! \geq n+1$, cioè $n\in A \Rightarrow n+1\in A$: il passo induttivo è verificato.
+
+## 4) Disuguaglianza di Bernoulli
+### Enunciato
+Sia $x \in \mathbb{R}$ con $x > -1$ fissato.
+
+$$ \forall n\in\mathbb{N}: \qquad (1+x)^n \ge 1 + nx \qquad (\circledast) $$
+### Passo base ($p=0$, cioè $0\in A$)
+
+- Primo membro: $(1+x)^0 = 1$
+- Secondo membro: $1 + 0\cdot x = 1$
+
+> [!Success] Dimostrazione: Passo base
+> Passo base $(1+x)^0 = 1 \ge 1 + 0\cdot x = 1$, quindi $0\in A$: il passo base è verificato.
+
+### Passo induttivo ($n\in A \Rightarrow n+1\in A$)
+
+- **Ipotesi induttiva (IP)**: la formula vale per $n$ (con $n\ge 0$) $$(1+x)^n \ge 1 + nx$$
+- **Tesi induttiva**: la formula vale per $n+1$ $$(1+x)^{n+1} \ge 1 + (n+1)x$$
+
+> [!Success] Dimostrazione: Passo induttivo  
+> Si parte dal primo membro della tesi induttiva. Per la definizione di potenza:
+> 
+> $$(1+x)^{n+1} = (1+x)^n\cdot(1+x)$$
+> 
+> Allora, moltiplicando l'IP $$(1+x)^n \ge 1+nx$$ 
+> 
+> Per $1+x>0$ (il verso non cambia):
+> 
+> $$(1+x)^n\cdot(1+x) \ge (1+nx)(1+x)$$
+> 
+> Si deduce, sviluppando il prodotto:
+> 
+> $$(1+nx)(1+x) = 1 + x + nx + nx^2$$
+> 
+> Allora, poiché $nx^2 \ge 0$ (con $n\ge 0$ e $x^2\ge 0$), vale la disequazione:
+> 
+> $$1 + x + nx + nx^2 \ge 1 + x + nx + 0$$
+> 
+> E così, raccogliendo $x$:
+> 
+> $$1 + x + nx = 1 + (n+1)x$$
+> 
+>Ora si ritorna all'inizio della catena:
+> 
+> $$(1+x)^{n+1} \ge 1 + (n+1)x$$
+> 
+
+### Conclusione
+
+> [!Success] Dimostrazione: Conclusione
+> Il passo base e il passo induttivo sono verificati, quindi per il principio di induzione ${n\in\mathbb{N}\mid n\ge 0}\subseteq A$, cioè $$(1+x)^n \ge 1+nx \qquad \forall x>-1, \forall n\in\mathbb{N}. \qquad \blacksquare$$
+
+## 5) $n! \ge 2^n$   $\forall n \ge 4$
+
+### Enunciato
+$\forall n \ge 4$
+$$n! > 2^n$$
+### Passo base ($p=4$)
+
+- Primo membro: $4! = 4\cdot 3\cdot 2\cdot 1 = 24$
+- Secondo membro: $2^4 = 16$
+
+> [!Success] Dimostrazione:
+> 24 > 16, Passo base verificato
+
+### Passo induttivo
+
+- **Ipotesi induttiva (IP)**:
+$$n! > 2^n$$
+- **Tesi induttiva**:
+$$(n+1)! > 2^{n+1}$$
+
+> [!Success] Dimostrazione: Passo Induttivo
+> Ricordo: 
+> $$(n+1)! = (n+1)\cdot n!$$
+> 
+> Moltiplicando per $(n+1)$:
+> $$n! > 2^n$$
+> Otteniamo:
+> $$(n+1) \cdot n! > 2^n \cdot (n+1)$$
+> Se $n ≥ 4$, allora $n+1 ≥ 5$, e quindi in particolare $n+1 ≥ 2$
+> $$2^n \cdot (n+1) \ge 2 \cdot 2^n$$
+> Proprietà delle potenze:
+> $$2 \cdot 2^n = 2^{n+1}$$
+> 
+> 
+
+### Conclusione: 
+
+> [!Success] Dimostrazione: Conclusione
+> Il passo induttivo è verificato per il principio di induzione $n! > 2^n$   $\forall n \ge 4$. $\blacksquare$
+
+## 6) $n^2 \ge n+1$  $\forall n\ge 2$
+### Enunciato 
+$\forall n\ge 2$
+ $$n^2 \ge n+1$$
+### Passo base ($p = 2$)
+- $2^2 \ge 2+1$
+
+
+> [!Success] Dimostrazione:
+> $4 \ge 3$, Passo base verificato.
+
+### Passo Induttivo ($n\in A \Rightarrow n+1\in A$)
+
+- **Ipotesi induttiva (IP)**: 
+$$n^2 \ge n+1$$
+- **Tesi induttiva**:
+$$(n+1)^2 \ge n+2$$
+
+
+> [!Success] Dimostrazione: Passo induttivo
+> $$(n+1)^2 = n^2+2n+1$$ 
+> Ricordiamo:
+> $$n^2 \ge n+1$$
+> Ritroviamo che:
+> 
+> $$n^2+2n+1 \ge n+1 + 2n+1 $$
+> Sommando e riportando $n+2$ della tesi induttiva si ha che:
+> $$3n+2 \ge n +2$$
+> $$3n \ge n$$
+
+### Conclusione
+
+> [!Success] Dimostrazione: Conclusione
+> Entrambi i passi sono stati dimostrati
+
+## 7) $n! \ge n^2$ su  $\forall n \ge 4$
+
+### Enunciato
+$\forall n\in\mathbb{N}, n\ge 4$
+$$  
+n! \ge n^2 \qquad
+$$
+### Passo base ($p=4$, cioè $4\in A$)
+
+- Primo membro: $4! = 4\cdot3\cdot2\cdot1 = 24$
+- Secondo membro: $4^2 = 16$
+
+> [!Success] Dimostrazione: Passo base  
+> $4! = 24 \ge 4^2 = 16$, quindi $4\in A$: il passo base è verificato.
+
+## Passo induttivo ($n\in A \Rightarrow n+1\in A$)
+
+- **Ipotesi induttiva (IP)**: la formula vale per $n$ (con $n\ge 4$)  
+    $$n! \ge n^2$$
+- **Tesi induttiva**: la formula vale per $n+1$  
+    $$(n+1)! \ge (n+1)^2$$
+
+> [!Success] Dimostrazione: Passo induttivo  
+> Per la definizione di fattoriale:
+> 
+> $$(n+1)! = (n+1)\cdot n!$$
+> 
+> Allora, moltiplicando l'IP:
+> $$n! \ge n^2$$ 
+> 
+> Per $n+1>0$ (il verso non cambia):
+> 
+> $$(n+1)\cdot n! \ge (n+1)\cdot n^2$$
+> 
+> > [!Success] Dimostrazione: $n^2 \ge n+1$
+> > [[#5) $n 2 ge n+1$ $ forall n ge 2$|Dimostrazione]]
+> 
+> Per ciò si moltiplicando per $n+1>0$:
+> 
+> $$(n+1)\cdot n^2 \ge (n+1)(n+1) = (n+1)^2$$
+> 
+> Mettendo insieme i passaggi:
+> 
+> $$(n+1)! \ge (n+1)^2$$
+> 
+> cioè $n\in A \Rightarrow n+1\in A$: il passo induttivo è verificato.
+### Conclusione
+
+> [!Success] Dimostrazione: Conclusione
+> Il passo base e il passo induttivo sono verificati, quindi per il principio di induzione ${n\in\mathbb{N}\mid n\ge 4}\subseteq A$, cioè  
+> $$n! \ge n^2 \qquad \forall n\ge 4. \qquad \blacksquare$$
 
 ___
 # Per Diretta
@@ -515,4 +673,86 @@ $m^2=4k(k+1)+1$ è dispari, cioè vale $\neg A$.
 > Si è dimostrato $\neg B \Rightarrow \neg A$: se $m$ è dispari, allora $m^2$ è dispari.
 > Poiché è equivalente a $A \Rightarrow B$, vale anche: se $m^2$ è pari, allora $m$ è pari. $\blacksquare$
 
+___
+# Per Doppia Implicazione
+
+## 1) Caratterizzazione di $\sup()$
+
+### Enunciato
+
+$$
+ x = \sup(A)\Leftrightarrow
+\begin{cases}
+x \ge a \quad \forall a \in A \\
+\forall \varepsilon > 0\ \ \exists\, \bar a \in A \mid \bar a > x -\varepsilon
+\end{cases}
+$$
+### ($\Rightarrow$)
+
+**Ipotesi**: $A$ è superiormente limitato
+
+$$x = \sup(A) \space \space A\in \mathbb{R}$$
+**Tesi**:
+
+1. $x \ge a \quad \forall a \in A$
+2. $\forall \varepsilon > 0\ \ \exists\, \bar a \in A \mid \bar a > x -\varepsilon$
+
+**Dimostrazione**:
+
+> [!Success] Dimostrazione: Tesi 1
+> Poiché:
+> $$x = \min(M_A)$$
+> Si ha $x \in M_A$, quindi $x \ge a$ $\forall a \in A$.
+
+> [!Success] Dimostrazione: Tesi 2
+> Sia:
+> $$\varepsilon > 0$$
+> Dato che $x = \min(M_A)$ e $x - \varepsilon < x$
+> Si ha:
+> $$x - \varepsilon \notin M_A$$
+> Poniamo:
+> $$x - \varepsilon = \alpha$$
+> 
+> Per definizione quando $\alpha \notin M_A$ significa che la proposizione "$\alpha \ge a$  $\forall a \in A$" è **falsa**
+> cioè:
+> $$\exists \bar a \in A \mid \alpha < \bar a$$
+> Sostituendo:
+> $$\exists \bar a \in A \mid x - \varepsilon < \bar a \qquad$$
+
+### ($\Leftarrow$)
+
+**Ipotesi**:
+
+1. $A$ superiormente limitato
+2. $x \ge a$ $\forall a \in A$
+3. $\forall \varepsilon > 0$ $\exists \bar a \in A \mid \bar a > x - \varepsilon$
+
+**Tesi**:
+$$x = \sup(A)$$
+2. Significa che $x \in M_A$
+3. Significa che $x - \varepsilon \notin M_A$ $\forall \varepsilon > 0$
+
+Dal terzo punto segue che:
+$$ \min(M_A) > x - \varepsilon \qquad \forall \varepsilon > 0 \qquad$$
+**Dimostrazione**:
+
+> [!Success] Dimostrazione:
+> Sia:
+> $$y = \min(M_A)$$
+> Se potessi avere:
+> $$y < x$$
+> Allora esisterebbe:
+> $$\tilde\varepsilon > 0 \space | \space y \le x - \tilde\varepsilon$$Che Contraddice:
+>  $$\min(M_A) > x - \varepsilon \qquad \forall \varepsilon > 0 \qquad$$
+>  Pertanto:
+>  $$y = \min(M_A) \ge x$$
+>  Allora
+>  $$x = \min(M_A)$$
+>  $$x = \sup(A)$$
+
+### Conclusione
+
+Abbiamo verificato entrambe le implicazioni $A \Rightarrow B$ e $B \Rightarrow A$
+
+## 1) Caratterizzazione di $\inf()$: Da Fare
 ___

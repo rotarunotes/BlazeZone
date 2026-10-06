@@ -7,6 +7,7 @@ ___
 - [[#Dimostrazione Diretta]]
 - [[#Dimostrazione per Contraddizione]]
 - [[#Dimostrazione per Contrapposizione]]
+- [[#Dimostrazione Per Doppia Implicazione]]
 ___
 # Principio Di Induzione
 
@@ -97,4 +98,20 @@ Per dimostrare $A \Rightarrow B$:
 > [!danger] Attenzione! Confuzione Con Implicazione Contrapposizione e Reciproca
 > Non confonderla con la **reciproca** ($B \Rightarrow A$), che **non** è equivalente all'originale.
 
+___
+
+# Dimostrazione Per Doppia Implicazione
+
+> [!abstract] Definizione: Dimostrazione per Doppia Implicazione
+>  $A \iff B$ dimostrando **due implicazioni**: $A \Rightarrow B$ e $B \Rightarrow A$.
+
+## Struttura Doppia Implicazione
+
+Per dimostrare $A \iff B$:
+
+|Passo|Cosa si fa|
+|---|---|---|
+|1.|**Direzione $(\Rightarrow)$**|Si assume $A$ e si dimostra $B$|
+|2.|**Direzione $(\Leftarrow)$**|Si assume $B$ e si dimostra $A$|
+|3.|**Conclusione**|Valgono entrambe, quindi $A \iff B$ è vera|
 ___

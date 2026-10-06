@@ -458,7 +458,7 @@ $$(a,b) = {x \in \mathbb{R} \mid a < x < b}$$ $$[a,b) = {x \in \mathbb{R} \mid a
 > > 1. Insieme dei maggioranti:
 > >    $$M_A = \{x \in \mathbb{R} \mid x \text{ maggiorante di } A\} = \{x \in \mathbb{R} \mid x \ge 1\}$$
 > > 2. $1 \in M_A$ e $1 \in A$, quindi:
-> >    $$1 = \max A$$
+> >    $$1 = \max(A)$$
 > >
 > > **Minoranti e minimo**
 > > 1. Insieme dei minoranti:
@@ -502,7 +502,8 @@ $$(a,b) = {x \in \mathbb{R} \mid a < x < b}$$ $$[a,b) = {x \in \mathbb{R} \mid a
 ### Teorema Caratterizzazione Di $\sup()$ e $\inf()$
 
 > [!Abstract] Definizione: Enunciato, Caratterizzazione Di $\sup()$
-> 1. Se $A$ è superiormente limitato allora:
+> $A \subseteq \mathbb{R}$, $A \neq \emptyset$
+> Se $A$ è superiormente limitato allora:
 > $$
 > x = \sup(A)\Leftrightarrow
 > \begin{cases}
@@ -510,12 +511,16 @@ $$(a,b) = {x \in \mathbb{R} \mid a < x < b}$$ $$[a,b) = {x \in \mathbb{R} \mid a
 > \forall \varepsilon > 0\ \ \exists\, \bar a \in A \mid \bar a > x - \varepsilon
 > \end{cases}
 > $$
+> 
+>> [!Success] Dimostrazione:
+>> Contents
+
 
 ![Caratterizzazione_Superiore_Limitato.png](../../../Setup_Archive/Viewable/Image/Math/Analisi_1/Caratterizzazione_Superiore_Limitato.png)
 
-
 > [!Abstract] Definizione: Enunciato, Caratterizzazione Di $\inf()$
-> 1. Se $A$ è inferiormente limitato allora
+> $A \subseteq \mathbb{R}$, $A \neq \emptyset$
+> Se $A$ è inferiormente limitato allora
 > 
 > $$
 > x = \inf(A)\Leftrightarrow
@@ -524,6 +529,9 @@ $$(a,b) = {x \in \mathbb{R} \mid a < x < b}$$ $$[a,b) = {x \in \mathbb{R} \mid a
 > \forall \varepsilon > 0\ \ \exists\, \bar a \in A \mid \bar a < x +\varepsilon
 > \end{cases}
 > $$
+> 
+>> [!Success] Dimostrazione:
+>> Contents
 
 ![Caratterizzazione_Inferiormente_Limitato.png](../../../Setup_Archive/Viewable/Image/Math/Analisi_1/Caratterizzazione_Inferiormente_Limitato.png)
 

@@ -96,3 +96,9 @@ $$\binom{n}{k}\in\mathbb{N} \qquad \forall n,k\in\mathbb{N},\ k\le n$$
 > Dalla definizione $\binom{n}{k}$ è una **frazione**. Non è evidente che il risultato sia intero.
 
 ___
+
+# Binomio Di Newton
+
+> [!Abstract] Definizione:
+> $\forall n \in \mathbb{N}$, $n \ge 1$, $\forall a, b \in \mathbb{R}$ 
+> $$ (a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^k \cdot b^{n-k} $$
