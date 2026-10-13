@@ -3,6 +3,16 @@ Data: 2026-10-01
 #Puzzle_Of_Knowledge/Math/Analisi_1
 ___
 # Index
+- [[#Fattoriale di $n \in \mathbb{N}$: $n!$|Fattoriale di n ∈ ℕ: n!]]
+- [[#Coefficiente Binomiale]]
+- [[#Proprietà]]
+	- [[#1) $\dbinom{n}{0}=1$|1) C(n,0) = 1]]
+	- [[#2) $\dbinom{n}{n}=1$|2) C(n,n) = 1]]
+	- [[#3) $\dbinom{n}{n-1}=n$|3) C(n,n−1) = n]]
+	- [[#4) Simmetria]]
+	- [[#5) Formula di Stifel]]
+	- [[#6) Il coefficiente binomiale è un numero naturale]]
+- [[#Binomio Di Newton]]
 ___
 
 # Fattoriale di $n \in \mathbb{N}$: $n!$

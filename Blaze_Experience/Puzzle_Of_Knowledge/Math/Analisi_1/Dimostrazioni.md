@@ -11,16 +11,18 @@ ___
 	- [[#4) Disuguaglianza di Bernoulli]]
 	- [[#5) $n! ge 2 n$ $ forall n ge 4$|5) n! ≥ 2ⁿ ∀ n ≥ 4]]
 	- [[#6) $n 2 ge n+1$ $ forall n ge 2$|6) n² ≥ n+1 ∀ n ≥ 2]]
+	- [[#7) $n! \ge n^2$ su  $\forall n \ge 4$|7) n! ≥ n² ∀ n ≥ 4]]
 - [[#Per Diretta]]
 	- [[#1) Teorema di Densità di $ mathbb{Q}$ in $ mathbb{R}$ |1) Teorema di Densità di ℚ ∈ ℝ]]
 - [[#Per Contraddizione]]
 	- [[#1) L' Equazione $x^2 - 2$ Non Ha Soluzioni Razionali|1) L' Equazione x² − 2 Non Ha Soluzioni Razionali]]
 	- [[#2) Proprietà Di Archimede]]
-	- [[#3) $ mathbb{Z}$ Non È Inferiormente Limitato|3) ℕ Non È Inferiormente Limitato]]
+	- [[#3) $ mathbb{Z}$ Non È Inferiormente Limitato|3) ℤ Non È Inferiormente Limitato]]
 - [[#Per Contrapposizione]]
 	- [[#1) $m^2$ pari $\Rightarrow$ $m$ pari|1) m² pari ⇒ m pari]]
 - [[#Per Doppia Implicazione]]
-	- [[#1) Caratterizzazione di $ sup()$ | 1) Caratterizzazione di sup()]]
+	- [[#1) Caratterizzazione di $ sup()$ |1) Caratterizzazione di sup()]]
+	- [[#2) Caratterizzazione di $\inf()$: Da Fare|2) Caratterizzazione di inf(): Da Fare]]
 ___
 
 # Per Principio di Induzione 
@@ -754,5 +756,5 @@ $$ \min(M_A) > x - \varepsilon \qquad \forall \varepsilon > 0 \qquad$$
 
 Abbiamo verificato entrambe le implicazioni $A \Rightarrow B$ e $B \Rightarrow A$
 
-## 1) Caratterizzazione di $\inf()$: Da Fare
+## 2) Caratterizzazione di $\inf()$: Da Fare
 ___

@@ -8,6 +8,7 @@ ___
 	- [[#Intersezione $\cap$|Intersezione ∩]]
 	- [[#Differenza $\setminus$|Differenza ∖]]
 	- [[#Prodotto Cartesiano $\times$|Prodotto Cartesiano ×]]
+- [[# Insieme Delle Parti]]
 - [[#Numeri Naturali $\mathbb{N}$|Numeri Naturali ℕ]]
 	- [[#Operazioni]]
 		- [[#Proprietà Delle Operazioni]]
@@ -169,6 +170,25 @@ $$ \forall a,b,c\in\mathbb{N}: \quad a\le b \ \text{ e } \ c>0 ;\Longrightarrow;
 > La stessa proprietà vale anche con la disuguaglianza stretta ($a<b$, $c>0 \Rightarrow ac<bc$).
 
 ___
+# Insieme Delle Parti
+
+
+> [!Abstract] Definizione: Insieme Delle Parti
+> L’**insieme delle parti** di $A$, indicato con $\mathcal{P}(A)$, è l’insieme di **tutti i sottoinsiemi** di $A$. I suoi elementi sono a loro volta insiemi
+>> [!Example] Esempio
+> >  Sia $A = \{1, 2, 3\}$. I suoi sottoinsiemi sono:
+> > 
+> > $$\mathcal{P}(A) = \big\{\ \emptyset,\ \{1\},\ \{2\},\ \{3\},\ \{1,2\},\ \{1,3\},\ \{2,3\},\ \{1,2,3\}\ \big\}$$
+> > 
+> > Ci sono 8 elementi, cioè $2^3$
+> 
+> > [!Info] Info:
+> > In Generale $2^n$ se $A$ ha $n$ elementi. 
+> > Nota che $\emptyset$ e $A$ stesso ci sono sempre.
+
+
+___
+
 # Numeri Interi $\mathbb{Z}$
 
 > [!abstract] Definizione: Numeri Interi
