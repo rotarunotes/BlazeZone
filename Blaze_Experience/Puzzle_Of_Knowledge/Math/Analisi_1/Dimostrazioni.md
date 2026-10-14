@@ -18,6 +18,7 @@ ___
 	- [[#1) L' Equazione $x^2 - 2$ Non Ha Soluzioni Razionali|1) L' Equazione x² − 2 Non Ha Soluzioni Razionali]]
 	- [[#2) Proprietà Di Archimede]]
 	- [[#3) $ mathbb{Z}$ Non È Inferiormente Limitato|3) ℤ Non È Inferiormente Limitato]]
+	- [[#4) Biiettività di $ psi mathbb{N} to P$|4) Biettività di ψ : ℕ → P, m ↦ 2m]]
 - [[#Per Contrapposizione]]
 	- [[#1) $m^2$ pari $\Rightarrow$ $m$ pari|1) m² pari ⇒ m pari]]
 - [[#Per Doppia Implicazione]]
@@ -633,6 +634,93 @@ $$\mathbb{Z}\ \text{è superiormente limitato}$$
 > [!success] Dimostrazione: Conclusione
 > L'ipotesi che $\mathbb{Z}$ sia inferiormente limitato porta a un assurdo, quindi è falsa.
 > Dunque $\mathbb{Z}$ non è inferiormente limitato. $\blacksquare$
+
+___
+## 4) Biiettività di $\psi : \mathbb{N} \to P$
+
+> [!abstract] Definizione: Enunciato
+> $$\psi : \mathbb{N} \to P, \qquad m \mapsto 2m$$
+>
+> |Parte|Contenuto|
+> |---|---|
+> |**Contesto**|$P=\{\,2m : m\in\mathbb{N}\,\}\subseteq\mathbb{N}$ (numeri pari)|
+> |**Ipotesi**|$\psi(m)=2m$|
+> |**Tesi**|$\psi$ è biiettiva|
+
+> [!info] Info: Riformulazione della tesi
+> Una funzione è biiettiva se è sia suriettiva sia iniettiva.
+> $$\text{tesi}\iff \psi \text{ suriettiva} \ \land\ \psi \text{ iniettiva}$$
+> Si dimostrano le due proprietà separatamente.
+
+### Suriettività
+
+> [!abstract] Definizione: Suriettività
+> $$\forall\, 2m\in P\ \ \exists\, n\in\mathbb{N}\ \Big|\ \psi(n)=2m$$
+
+**Dimostrazione (diretta)**:
+
+Sia $2m\in P$. Si cerca $n\in\mathbb{N}$ tale che $\psi(n)=2m$.
+
+Basta prendere $n=m$:
+$$\psi(m)=2m$$
+
+> [!success] Dimostrazione:
+> Ogni elemento di $P$ è immagine di un naturale, quindi $\psi$ è **suriettiva**. $\blacksquare$
+
+### Iniettività
+
+> [!abstract] Definizione: Iniettività
+> $$\forall\, m_1,m_2\in\mathbb{N},\quad m_1\neq m_2\ \Rightarrow\ \psi(m_1)\neq\psi(m_2)$$
+> Elementi distinti hanno immagini distinte.
+
+#### Assunzione
+
+> [!Abstract] Definizione: Enunciato
+>
+> |Parte|Contenuto|
+> |---|---|
+> |**Contesto**|Siano $m_1,m_2\in\mathbb{N}$|
+> |**Ipotesi**|$m_1\neq m_2$|
+> |**Tesi**|$\psi(m_1)\neq\psi(m_2)$|
+
+#### Negazione
+
+Si suppone per assurdo che la tesi sia falsa:
+
+$$\psi(m_1)=\psi(m_2)$$
+
+#### Deduzione
+
+**1. Si applica la definizione di $\psi$**:
+$$\psi(m_1)=2m_1,\qquad \psi(m_2)=2m_2$$
+
+**2. Dall'ipotesi assurda**:
+$$2m_1=2m_2$$
+
+**3. Si porta tutto a sinistra**:
+$$2m_1-2m_2=0$$
+
+**4. Si raccoglie il fattore comune**:
+$$2(m_1-m_2)=0$$
+
+**5. Si divide per $2$**:
+$$m_1-m_2=0\ \Rightarrow\ m_1=m_2$$
+#### Assurdo
+
+> [!danger] Attenzione!
+> Si è ottenuto $m_1=m_2$, ma per ipotesi $m_1\neq m_2$. **Assurdo**.
+
+#### Conclusione
+
+> [!success] Dimostrazione: Conclusione
+> L'ipotesi $\psi(m_1)=\psi(m_2)$ porta a un assurdo, quindi è falsa: $\psi(m_1)\neq\psi(m_2)$. Dunque $\psi$ è **iniettiva**. $\blacksquare$
+
+### Conclusione finale
+
+> [!success] Dimostrazione: $\psi$ è biiettiva
+> $\psi$ è suriettiva e iniettiva, quindi è **biiettiva**. $\blacksquare$
+>
+> Di conseguenza $\mathbb{N}$ e $P$ sono in corrispondenza biunivoca: $P$ è **numerabile**.
 
 ___
 # Per Contrapposizione

@@ -336,7 +336,7 @@ $$n = \lceil x \rceil \iff n-1\le x<n$$
 
 ### Grafico a Gradini Funzione Floor e Funzione Ceil
 
-![Funzione_Floor_Ceil.png](../../../Setup_Archive/Viewable/Image/Math/Analisi_1/Funzione_Floor_Ceil.png)
+![Funzione_Floor_Ceil.png](Funzione_Floor_Ceil.png)
 
 ## Proposizione $\sqrt{2} \in \mathbb{R} \setminus \mathbb{Q}$
 
@@ -536,7 +536,7 @@ $$(a,b) = {x \in \mathbb{R} \mid a < x < b}$$ $$[a,b) = {x \in \mathbb{R} \mid a
 >> Contents
 
 
-![Caratterizzazione_Superiore_Limitato.png](../../../Setup_Archive/Viewable/Image/Math/Analisi_1/Caratterizzazione_Superiore_Limitato.png)
+![Caratterizzazione_Superiore_Limitato.png](Caratterizzazione_Superiore_Limitato.png)
 
 > [!Abstract] Definizione: Enunciato, Caratterizzazione Di $\inf()$
 > $A \subseteq \mathbb{R}$, $A \neq \emptyset$
@@ -553,7 +553,7 @@ $$(a,b) = {x \in \mathbb{R} \mid a < x < b}$$ $$[a,b) = {x \in \mathbb{R} \mid a
 >> [!Success] Dimostrazione:
 >> Contents
 
-![Caratterizzazione_Inferiormente_Limitato.png](../../../Setup_Archive/Viewable/Image/Math/Analisi_1/Caratterizzazione_Inferiormente_Limitato.png)
+![Caratterizzazione_Inferiormente_Limitato.png](Caratterizzazione_Inferiormente_Limitato.png)
 
 ___
 

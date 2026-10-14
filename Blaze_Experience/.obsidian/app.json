@@ -12,5 +12,12 @@
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "Setup_Archive/Viewable/Image",
   "newFileLocation": "folder",
-  "newFileFolderPath": "Temp"
+  "newFileFolderPath": "Temp",
+  "livePreview": true,
+  "readableLineLength": true,
+  "strictLineBreaks": false,
+  "showLineNumber": false,
+  "showIndentGuide": true,
+  "spellcheck": true,
+  "tabSize": 4
 }
