@@ -5,28 +5,28 @@ ___
 # Index
 
 - [[#Per Principio di Induzione]]
-	- [[#1) somma dei primi $n$ naturali|1) somma dei primi n naturali]]
+	- [[#1) somma dei primi $n$ naturali|1) Somma dei primi n naturali]]
 	- [[#2) Somma Dei Primi Termini Di Una Progressione Geometrica (Finita)|2) Somma Dei Primi Termini Di Una Progressione Geometrica (Finita)]]
 	- [[#3) $n! \geq n$ per ogni $n \in \mathbb{N}$|3) n! ≥ n per ogni n ∈ ℕ]]
 	- [[#4) Disuguaglianza di Bernoulli]]
-	- [[#5) $n! ge 2 n$ $ forall n ge 4$|5) n! ≥ 2ⁿ ∀ n ≥ 4]]
-	- [[#6) $n 2 ge n+1$ $ forall n ge 2$|6) n² ≥ n+1 ∀ n ≥ 2]]
-	- [[#7) $n! \ge n^2$ su  $\forall n \ge 4$|7) n! ≥ n² ∀ n ≥ 4]]
+	- [[#5) $n! \ge 2^n$ $\forall n \ge 4$|5) n! ≥ 2ⁿ ∀ n ≥ 4]]
+	- [[#6) $n^2 \ge n+1$ $\forall n\ge 2$|6) n² ≥ n+1 ∀ n ≥ 2]]
+	- [[#7) $n! \ge n^2$ $\forall n \ge 4$|7) n! ≥ n² ∀ n ≥ 4]]
 - [[#Per Diretta]]
-	- [[#1) Teorema di Densità di $ mathbb{Q}$ in $ mathbb{R}$ |1) Teorema di Densità di ℚ ∈ ℝ]]
+	- [[#1) Teorema di Densità di $\mathbb{Q}$ in $\mathbb{R}$|1) Teorema di Densità di ℚ in ℝ]]
 - [[#Per Contraddizione]]
 	- [[#1) L' Equazione $x^2 - 2$ Non Ha Soluzioni Razionali|1) L' Equazione x² − 2 Non Ha Soluzioni Razionali]]
 	- [[#2) Proprietà Di Archimede]]
-	- [[#3) $ mathbb{Z}$ Non È Inferiormente Limitato|3) ℤ Non È Inferiormente Limitato]]
-	- [[#4) Biiettività di $ psi mathbb{N} to P$|4) Biettività di ψ : ℕ → P, m ↦ 2m]]
+	- [[#3) $\mathbb{Z}$ Non È Inferiormente Limitato|3) ℤ Non È Inferiormente Limitato]]
+	- [[#4) Biiettività di $\psi : \mathbb{N} \to P$|4) Biiettività di ψ : ℕ → P]]
 - [[#Per Contrapposizione]]
 	- [[#1) $m^2$ pari $\Rightarrow$ $m$ pari|1) m² pari ⇒ m pari]]
 - [[#Per Doppia Implicazione]]
-	- [[#1) Caratterizzazione di $ sup()$ |1) Caratterizzazione di sup()]]
+	- [[#1) Caratterizzazione di $\sup()$|1) Caratterizzazione di sup()]]
 	- [[#2) Caratterizzazione di $\inf()$: Da Fare|2) Caratterizzazione di inf(): Da Fare]]
 ___
 
-# Per Principio di Induzione 
+# Per Principio di Induzione
 
 ## 1) somma dei primi $n$ naturali
 
@@ -243,7 +243,7 @@ $$ \forall n\in\mathbb{N}: \qquad (1+x)^n \ge 1 + nx \qquad (\circledast) $$
 > [!Success] Dimostrazione: Conclusione
 > Il passo base e il passo induttivo sono verificati, quindi per il principio di induzione ${n\in\mathbb{N}\mid n\ge 0}\subseteq A$, cioè $$(1+x)^n \ge 1+nx \qquad \forall x>-1, \forall n\in\mathbb{N}. \qquad \blacksquare$$
 
-## 5) $n! \ge 2^n$   $\forall n \ge 4$
+## 5) $n! \ge 2^n$ $\forall n \ge 4$
 
 ### Enunciato
 $\forall n \ge 4$
@@ -283,7 +283,7 @@ $$(n+1)! > 2^{n+1}$$
 > [!Success] Dimostrazione: Conclusione
 > Il passo induttivo è verificato per il principio di induzione $n! > 2^n$   $\forall n \ge 4$. $\blacksquare$
 
-## 6) $n^2 \ge n+1$  $\forall n\ge 2$
+## 6) $n^2 \ge n+1$ $\forall n\ge 2$
 ### Enunciato 
 $\forall n\ge 2$
  $$n^2 \ge n+1$$
@@ -318,7 +318,7 @@ $$(n+1)^2 \ge n+2$$
 > [!Success] Dimostrazione: Conclusione
 > Entrambi i passi sono stati dimostrati
 
-## 7) $n! \ge n^2$ su  $\forall n \ge 4$
+## 7) $n! \ge n^2$ $\forall n \ge 4$
 
 ### Enunciato
 $\forall n\in\mathbb{N}, n\ge 4$
@@ -353,7 +353,7 @@ $$
 > $$(n+1)\cdot n! \ge (n+1)\cdot n^2$$
 > 
 > > [!Success] Dimostrazione: $n^2 \ge n+1$
-> > [[#5) $n 2 ge n+1$ $ forall n ge 2$|Dimostrazione]]
+> > [[#6) $n^2 \ge n+1$ $\forall n\ge 2$|Dimostrazione]]
 > 
 > Per ciò si moltiplicando per $n+1>0$:
 > 
@@ -466,7 +466,7 @@ $$\left(\frac{m}{n}\right)^2=2 \;\Rightarrow\; m^2=2n^2$$
 $$m^2=2n^2$$ $2n^2$ è pari, quindi anche $m^2$ è pari, allora si dimostra:
 
 > [!success] Dimostrazione:  $m^2$ pari $\Rightarrow$ $m$ pari (per contrapposizione)
-> [[#1) $m 2$ pari $ Rightarrow$ $m$ pari|Dimostrazione]]
+> [[#1) $m^2$ pari $\Rightarrow$ $m$ pari|Dimostrazione]]
 
 
 > [!Abstract] Definizione: Numero Pari

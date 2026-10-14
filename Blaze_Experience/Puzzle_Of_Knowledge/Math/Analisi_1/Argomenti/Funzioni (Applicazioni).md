@@ -3,6 +3,27 @@ Data: 2026-10-13
 #Puzzle_Of_Knowledge/Math/Analisi_1
 ___
 # Index
+
+- [[#Definizione Insiemistica]]
+- [[#Definizione Operativa]]
+	- [[#Notazione]]
+	- [[#Insieme Immagine]]
+	- [[#Controimmagine]]
+- [[#Suriettività e Iniettività e Biettività]]
+	- [[#Suriettiva]]
+	- [[#Iniettiva]]
+	- [[#Biiettiva]]
+		- [[#Insiemi Numerabili]]
+			- [[#Albergo Di Hilbert]]
+- [[#Operazioni Tra Funzioni (Applicazioni)]]
+	- [[#Somma]]
+	- [[#Prodotto]]
+	- [[#Rapporto (Quoziente)]]
+- [[#Grafico Di Una Funzione e Traslazioni]]
+	- [[#Traslazione Verticale: $f + c$|Traslazione Verticale: f + c]]
+	- [[#Riflessione: $-f$|Riflessione: −f]]
+	- [[#Dilatazione Verticale: $b f$|Dilatazione Verticale: b f]]
+	- [[#Traslazione Orizzontale: $f(x + c)$|Traslazione Orizzontale: f(x + c)]]
 ___
 # Definizione Insiemistica
 
@@ -174,7 +195,7 @@ ___
 >> | Insieme | Biiettivo con $\mathbb{N}$? | Perché |
 >> |---|---|---|
 >> | $\mathbb{N}$ | Sì | La funzione identità $n \mapsto n$ è biiettiva |
->> | $P$ (numeri pari) | Sì |   [[Dimostrazioni#4) Biiettività di $ psi mathbb{N} to P$\|Dimostrazione]]|
+>> | $P$ (numeri pari) | Sì |   [[Dimostrazioni#4) Biiettività di $\psi : \mathbb{N} \to P$\|Dimostrazione]]|
 >> | $\mathbb{Z}$ | Sì | Si elencano alternando i segni: $0, -1, 1, -2, 2, \dots$ Ogni intero ha un posto nella lista |
 >> | $\mathbb{Q}$ | Sì | Le frazioni si dispongono in una tabella e si percorre in diagonale, saltando i duplicati ($\frac{1}{2} = \frac{2}{4}$) |
 >> | $\mathbb{R}$ | **No** | Argomento diagonale di Cantor: data una lista qualsiasi di reali, si costruisce un numero che non ne fa parte |
