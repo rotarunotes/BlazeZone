@@ -24,6 +24,11 @@ ___
 	- [[#Riflessione: $-f$|Riflessione: −f]]
 	- [[#Dilatazione Verticale: $b f$|Dilatazione Verticale: b f]]
 	- [[#Traslazione Orizzontale: $f(x + c)$|Traslazione Orizzontale: f(x + c)]]
+- [[#Composizione Di Applicazioni]]
+	- [[#Applicazione Identità]]
+		- [[#Composizione a Destra]]
+		- [[#Composizione a Sinistra]]
+	- [[#Applicazione Inversa]]
 ___
 # Definizione Insiemistica
 
@@ -483,3 +488,107 @@ ___
 > > > ![traslazione_orizzontale_cartesiano.png](../../../../Setup_Archive/Viewable/Image/Math/Analisi_1/traslazione_orizzontale_cartesiano.png)
 
 ___
+
+# Composizione Di Applicazioni
+
+
+> [!Abstract] Definizione: Applicazione Composta
+> $A, B, C, D \neq \emptyset$ 
+> $$\varphi : A \to B, \qquad \psi : C \to D$$
+> Tali che: 
+> $$\mathrm{Im}(\varphi) \subseteq  D(\psi) = C$$
+> > [!info] Info: In Parole 
+> > L'immagine interna ($\varphi$) deve essere contenuta nel dominio della funzione esterna ($\psi$). 
+>
+> Si definisce **applicazione composta**: 
+> $$\psi \circ \varphi$$ ("$\varphi$ composto $\psi$"): $$\psi \circ \varphi : A \to D$$ 
+> $$a \longmapsto \psi(\varphi(a))$$
+> 
+>> [!Info] Info:  
+> > $$A \xrightarrow{\ \varphi\ } \underbrace{\mathrm{Im}(\varphi)}_{\subseteq B} \subseteq \underbrace{\mathrm{Dom}(\psi)}_{\subseteq C} \xrightarrow{\ \psi\ } D$$ $$a \longmapsto \varphi(a) \longmapsto \psi(\varphi(a))$$
+>
+> > [!Example] Esempio: $f$ e $g$ su $\mathbb{R}$ 
+> >  $$f : \mathbb{R} \to \mathbb{R}, \ x \mapsto x^2 \qquad\qquad g : \mathbb{R} \to \mathbb{R}, \ x \mapsto x+1$$
+> > **$g \circ f$**: 
+> > $$(g \circ f)(x) = g(f(x)) : \mathbb{R} \to \mathbb{R}$$ 
+> > $$x \longmapsto (g \circ f)(x) = g(f(x)) = x^2 + 1$$ 
+> > $$x \overset{f}{\longmapsto} f(x) = x^2 \overset{g}{\longmapsto} g(x^2) = x^2 + 1$$
+> > 
+> > **$f \circ g$**: 
+> > $$(f \circ g)(x) = f(g(x)) : \mathbb{R} \to \mathbb{R}$$
+> > $$x \in D(g) = \mathbb{R} \longmapsto g(x) = x + 1 \longmapsto f(x+1) = (x+1)^2$$
+> > >[!Info] Info:
+> > > $$\exists x \in \mathbb{R} \mid x^2 + 1 \neq (x+1)^2$$
+> 
+> > [!danger] Attenzione! Commutatività
+> > Non È Valida La Proprietà **Commutativa** Sulla Composizione Posto che $f, g$ siano entrambe definibili, non è detto che: $$f \circ g = g \circ f$$
+> >> [!Success] Dimostrazione: $g \circ f$ Non esiste
+> > >$$f : \mathbb{N} \to \mathbb{Q}, \ n \mapsto \frac{n}{2} \qquad\qquad g : \mathbb{N} \to \mathbb{R}, \ n \mapsto n^2$$ 
+> >> **$f \circ g$** esiste: 
+> > >$$\mathrm{Im}(g) \subseteq \mathbb{N} = \mathrm{Dom}(f)$$
+> > >$$(f \circ g)(n) = f(g(n)) = f(n^2) = \frac{n^2}{2}$$
+> > >**$g \circ f$**: 
+> > >$$\mathrm{Im}(f) \subseteq \mathbb{N} = \mathrm{Dom}(g)?$$
+> > >$$n \longmapsto \frac{n}{2} \longmapsto \left(\frac{n}{2}\right)^2$$
+> > >
+> > > > [!danger] Attenzione! Falso
+> > > > Perché $\dfrac{n}{2} \in \mathbb{N} \iff n$ è pari.
+> > > > Quindi $g \circ f$ **non esiste**, perché non è vero che $\mathrm{Im}(f) \subseteq \mathrm{Dom}(g)$.
+
+## Applicazione Identità
+
+> [!abstract] Definizione: Applicazione Identità
+>$A$ insieme, $A \neq \emptyset$ $$\mathrm{id}_A : A \to A, \qquad a \mapsto a$$ 
+>$$\text{Per } A = \mathbb{R}: \quad G(\mathrm{id}_{\mathbb{R}}) = \{(a, a) \mid a \in \mathbb{R}\} \qquad f(x) = x$$
+
+Sia: 
+$$\varphi : A \to B$$
+e:
+$$\mathrm{id}_A : A \to A$$Con: 
+$$\mathrm{Im}(\mathrm{id}_A) = A = \mathrm{Dom}(\varphi)$$
+### Composizione a Destra
+$$(\varphi \circ \mathrm{id}_A) : A \longrightarrow B$$ $$a \longmapsto \varphi(\mathrm{id}_A(a)) = \varphi(a)$$ $$(\varphi \circ \mathrm{id}_A)= \varphi$$
+> [!info] Info: Elemento Neutro 
+> $id_A$ è **elemento neutro a destra** per la composizione:
+>  $$(\varphi \circ \mathrm{id}_A)) = \varphi$$
+
+### Composizione a Sinistra
+$$A \xrightarrow{\ \varphi\ } B, \qquad a \longmapsto \varphi(a) \in \mathrm{Im}(\varphi)$$ $$(\mathrm{id}_{\mathrm{Im}(\varphi)} \circ \varphi) = \varphi$$
+$$A \xrightarrow{\ \varphi\ } \varphi(A) \xrightarrow{\ \mathrm{id}_{\mathrm{Im}(\varphi)}\ } \varphi(A) \subseteq B$$ $$a \longmapsto \varphi(a) \longmapsto \varphi(a)$$
+
+> [!info] Info: Elemento Neutro
+> $\mathrm{id}_{\mathrm{Im}(\varphi)}$ è **elemento neutro a sinistra** per la composizione: 
+> $$(\mathrm{id}_{\mathrm{Im}(\varphi)} \circ \varphi) = \varphi$$
+
+## Applicazione Inversa
+
+> [!abstract] Definizione: Applicazione Inversa 
+> $A, B \neq \emptyset$
+> $\varphi : A \to B$ **iniettiva**
+>
+> > [!info] Info: Perché serve che la funzione sia iniettiva?
+> > Prendiamo $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x^2$.
+> > 
+> > - $f(1) = 1$
+> > - $f(-1) = 1$
+> > 
+> > Due input diversi danno lo stesso output.
+> > 
+> > Se provo a tornare indietro partendo da $1$, ho **due scelte** ($1$ oppure $-1$), ma una funzione deve dare **un solo risultato**. Quindi $f^{-1}$ **non esiste**.
+> > 
+> > Se invece $f$ è **iniettiva**, ogni output arriva da un solo input e $f^{-1}$ è ben definita.
+>
+> Si dice **applicazione inversa** di $\varphi$ (notazione $\varphi^{-1}$) l'applicazione: $$\psi : \mathrm{Im}(\varphi) \to A$$ 
+> $$b \longmapsto a =\psi(b) \ \text{ t.c. } \ a \text{ è l'unico elemento di } A \text{ per cui } \varphi(a) = b$$
+> > [!info] Info: Nota Su Dominio E Codominio 
+> > $$\mathrm{Cod}(\varphi^{-1}) = \mathrm{Dom}(\varphi)$$ $$B \to A \qquad\qquad A \to B$$
+> 
+> > [!Success] Dimostrazione: $(\varphi^{-1} \circ \varphi) = \mathrm{id}_A$
+> > $$A \xrightarrow{\ \varphi\ } \mathrm{Im}(\varphi) \xrightarrow{\ \psi = \varphi^{-1}\ } A$$
+> >  $$(\varphi^{-1} \circ \varphi) : \ a \longmapsto \varphi(a) = b \longmapsto \varphi^{-1}(\varphi(a)) = a$$ 
+> >  Dove $a$ è l'unico elemento di $A$ t.c. $\varphi(a) = b$.
+> > 
+> >  $$(\varphi^{-1} \circ \varphi) : A \to A, \ a \mapsto a \ \implies \ (\varphi^{-1} \circ \varphi) = \mathrm{id}_A \qquad$$
+> 
+> 
+> 

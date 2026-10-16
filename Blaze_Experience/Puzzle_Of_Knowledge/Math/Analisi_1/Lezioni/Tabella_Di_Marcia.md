@@ -1,4 +1,4 @@
-Data: 2026-10-14
+Data: 2026-10-16
 [Lezioni](./README.md)
 #Puzzle_Of_Knowledge/Math/Analisi_1/Lezioni
 ___
@@ -10,6 +10,8 @@ ___
 - [[#Lezione 5 06/10/2026]]
 - [[#Lezione 6 13/10/2026]]
 - [[#Lezione 7 14/10/2026]]
+- [[#Lezione 8 15/10/2026]]
+- [[#Lezione 9 16/10/2026]]
 - [[#Schede di supporto (trasversali)]]
 ___
 
@@ -57,7 +59,7 @@ Appunti lezione: [[Lezione 5]]
 - [[Dimostrazioni#1) Caratterizzazione di $\sup()$|Caratterizzazione di sup e inf (dimostrazione)]]
 - [[Dimostrazioni#4) Disuguaglianza di Bernoulli|Disuguaglianza di Bernoulli]]
 - [[Lezione 5#3. Binomio di Newton|Binomio di Newton]]
-- [[Dimostrazioni#5) $n! \ge 2^n$ $\forall n \ge 4$|Esercizio: n! > 2ⁿ per n ≥ 4]]
+- [[Dimostrazioni#5) $n! \ge 2^n$ $\forall n \ge 4$|Esercizio: n! ≥ 2ⁿ per n ≥ 4]]
 - [[Dimostrazioni#7) $n! \ge n^2$ $\forall n \ge 4$|Esercizio: n! ≥ n² per n ≥ 4]]
 - [[Lezione 5#4. Esercizi|Esercizio: inclusioni e estremi (A ⊆ B)]]
 - [[Lezione 5#5. Insieme opposto $-A$|Esercizio: insieme opposto −A]]
@@ -84,6 +86,29 @@ Appunti lezione: [[Lezione 7]]
 - [[Funzioni (Applicazioni)#Grafico Di Una Funzione e Traslazioni|Grafico di una Funzione e Trasformazioni (traslazioni, riflessione, dilatazione)]]
 - [[Limiti#Intorni|Topologia Euclidea della Retta Reale: Intorni e Retta Reale Estesa]]
 - [[Limiti#Punti Di Accumulazione|Punti di Accumulazione ed Esempi]]
+
+# Lezione 8 15/10/2026
+Appunti lezione: [[Lezione 8]]
+
+- [[Lezione 8#Esercizio: Punti Di Accumulazione Degli Intervalli|Esercizio: Punti di accumulazione degli intervalli]]
+- [[Limiti#Punti Isolati|Punti Isolati]]
+- [[Limiti#$+\infty$ Come Punto Di Accumulazione|±∞ come Punti di Accumulazione]]
+- [[Limiti#$+\infty$ Come Punto Di Accumulazione|Insiemi Limitati e Punti di Accumulazione all'Infinito]]
+- [[Limiti#Definizione di Limite|Definizione Generale di Limite]]
+- [[Limiti#Definizione di limite Caso: $l \in \mathbb{R}$, $x_0 \in \mathbb{R}$|Definizione di Limite: caso finito l ∈ ℝ, x₀ ∈ ℝ]]
+- [[Lezione 8#Esempio a)|Esercizio: Dominio e punti di accumulazione di (2x − 1)/√(x + 2)]]
+- [[Lezione 8#Esempio b)|Esercizio: Verifica con la definizione del limite lim(x→2) (2x−1)/(x+2) = 3/4]]
+- [[Lezione 8#Limite Con La Definizione: $\lim_{x\to -1} \frac{-2}{(x+1)^2}$|Esercizio: Verifica del limite lim(x→−1) −2/(x+1)² = −∞ (impostazione)]]
+
+# Lezione 9 16/10/2026
+Appunti lezione: [[Lezione 9]]
+
+- [[Lezione 9#Completamento Limite 1: $\lim_{x \to -1} \frac{-2}{(x+1)^2} = -\infty$|Esercizio: Verifica del limite lim(x→−1) −2/(x+1)² = −∞ (completamento con δₖ)]]
+- [[Lezione 9#Limite 2: $\lim_{x \to +\infty} \frac{3x-1}{x+2} = 3$|Esercizio: Verifica limite finito all'infinito lim(x→+∞) (3x−1)/(x+2) = 3]]
+- [[Lezione 9#Limite 3: $\lim_{x \to \infty} \frac{-1}{e^{\frac{2}{x}}} = 0$|Esempio: Limite lim(x→∞) −1/e^(2/x) = 0]]
+- [[Funzioni (Applicazioni)#Composizione Di Applicazioni|Composizione di Applicazioni (definizione e non commutatività)]]
+- [[Funzioni (Applicazioni)#Applicazione Identità|Applicazione Identità (elemento neutro a destra e a sinistra)]]
+- [[Funzioni (Applicazioni)#Applicazione Inversa|Applicazione Inversa e ruolo dell'Iniettività]]
 
 # Schede di supporto (trasversali)
 - [[Dimostrazioni|Dimostrazioni (Raccolta Completa)]]
