@@ -20,6 +20,19 @@ var __copyProps = (to, from, except, desc) => {
   return to;
 };
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+var __accessCheck = (obj, member, msg) => {
+  if (!member.has(obj))
+    throw TypeError("Cannot " + msg);
+};
+var __privateAdd = (obj, member, value) => {
+  if (member.has(obj))
+    throw TypeError("Cannot add the same private member more than once");
+  member instanceof WeakSet ? member.add(obj) : member.set(obj, value);
+};
+var __privateMethod = (obj, member, method) => {
+  __accessCheck(obj, member, "access private method");
+  return method;
+};
 
 // main.ts
 var main_exports = {};
@@ -1059,9 +1072,22 @@ var import_obsidian = require("obsidian");
 var LATEX_TRIGGER_PATTERN = /\\..*/;
 var WORD_DELIMITER = " ";
 var CSS_SUGGESTION_ITEM_CLASS = "latex-autocompletion-suggestion-item";
+var _getAutocompleteScore, getAutocompleteScore_fn, _getSliceScore, getSliceScore_fn;
 var LatexSuggestion = class extends import_obsidian.EditorSuggest {
   constructor(app) {
     super(app);
+    __privateAdd(this, _getAutocompleteScore);
+    __privateAdd(this, _getSliceScore);
+    this.currentSuggestions = [];
+    this.scope.register([], "Tab", (evt) => {
+      if (!this.context)
+        return true;
+      const bestSuggestion = this.currentSuggestions[0];
+      if (!bestSuggestion)
+        return true;
+      this.selectSuggestion(bestSuggestion, evt);
+      return false;
+    });
   }
   onTrigger(cursor, editor, file) {
     const cursorWordBeforePostion = getWordBeforePosition(cursor, editor);
@@ -1071,8 +1097,10 @@ var LatexSuggestion = class extends import_obsidian.EditorSuggest {
       cursor.ch
     );
     const wordMatch = wordBeforeCursor.match(LATEX_TRIGGER_PATTERN);
-    if (!wordMatch)
+    if (!wordMatch) {
+      this.currentSuggestions = [];
       return null;
+    }
     const query = wordMatch[0];
     return {
       start: {
@@ -1084,9 +1112,21 @@ var LatexSuggestion = class extends import_obsidian.EditorSuggest {
     };
   }
   getSuggestions(context) {
-    return mathLatexCommand_default.filter(
-      (latexCommand) => latexCommand.contains(context.query)
-    );
+    const normalizedQuery = context.query.replace(/^\\/, "").toLowerCase();
+    if (normalizedQuery.length < 1)
+      return [];
+    this.currentSuggestions = mathLatexCommand_default.map((cmd) => {
+      const normalizedCmd = cmd.toLowerCase().startsWith("\\") ? cmd.toLowerCase().slice(1) : cmd.toLowerCase();
+      return {
+        command: cmd,
+        score: __privateMethod(this, _getAutocompleteScore, getAutocompleteScore_fn).call(this, normalizedCmd, normalizedQuery)
+      };
+    }).filter((item) => item.score > 0).sort((a, b) => {
+      if (b.score !== a.score)
+        return b.score - a.score;
+      return a.command.length - b.command.length;
+    }).map((item) => item.command);
+    return this.currentSuggestions;
   }
   selectSuggestion(value, evt) {
     if (!this.context)
@@ -1102,6 +1142,50 @@ var LatexSuggestion = class extends import_obsidian.EditorSuggest {
     el.addClass(CSS_SUGGESTION_ITEM_CLASS);
     el.setText(value);
   }
+  close() {
+    this.currentSuggestions = [];
+    super.close();
+  }
+};
+_getAutocompleteScore = new WeakSet();
+getAutocompleteScore_fn = function(command, query) {
+  let maxScore = -1;
+  for (let i = 0; i < command.length; i++) {
+    if (command[i] === query[0]) {
+      const score = __privateMethod(this, _getSliceScore, getSliceScore_fn).call(this, command, query, i);
+      if (score > maxScore)
+        maxScore = score;
+    }
+  }
+  return maxScore;
+};
+_getSliceScore = new WeakSet();
+getSliceScore_fn = function(command, query, startMatchIndex) {
+  let score = startMatchIndex == 0 ? 20 : 10;
+  let queryIndex = 1;
+  let typoIndex = queryIndex;
+  let commandIndex = startMatchIndex + 1;
+  let prevMatch = true;
+  while (commandIndex < command.length && queryIndex < query.length) {
+    if (command[commandIndex] === query[queryIndex]) {
+      score += prevMatch ? 15 : 10;
+      prevMatch = true;
+      queryIndex++;
+    } else if (command[commandIndex] === query[queryIndex + 1]) {
+      queryIndex += 2;
+      score += 10;
+      prevMatch = true;
+    } else {
+      prevMatch = false;
+    }
+    commandIndex++;
+  }
+  const remaning = query.length - queryIndex;
+  if (remaning > 2) {
+    return -1;
+  }
+  score -= command.length - query.length;
+  return score;
 };
 var getWordBeforePosition = (cursor, editor) => {
   let char = "";

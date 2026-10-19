@@ -137,4 +137,3 @@ $$U_{x_0} = (x_0 - \delta, x_0 + \delta) \quad \forall \delta > 0 \quad \qquad [
 
 La definizione diventa: 
 $$\forall \varepsilon > 0 \quad \exists \delta_\varepsilon > 0 \ \Big| \ |f(x) - l| < \varepsilon \quad \forall x \in A \ \Big| \ 0 < |x - x_0| < \delta_\varepsilon$$
-

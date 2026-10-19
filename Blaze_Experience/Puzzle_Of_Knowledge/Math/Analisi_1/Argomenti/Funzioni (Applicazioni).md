@@ -544,18 +544,21 @@ ___
 Sia: 
 $$\varphi : A \to B$$
 e:
-$$\mathrm{id}_A : A \to A$$Con: 
+Con: 
 $$\mathrm{Im}(\mathrm{id}_A) = A = \mathrm{Dom}(\varphi)$$
 ### Composizione a Destra
-$$(\varphi \circ \mathrm{id}_A) : A \longrightarrow B$$ $$a \longmapsto \varphi(\mathrm{id}_A(a)) = \varphi(a)$$ $$(\varphi \circ \mathrm{id}_A)= \varphi$$
+$$(\varphi \circ \mathrm{id}_A) : A \longrightarrow B$$
+$$\mathrm{id}_A : A \to A$$$$a \longmapsto \varphi(\mathrm{id}_A(a)) = \varphi(a)$$ $$(\varphi \circ \mathrm{id}_A)= \varphi$$
 > [!info] Info: Elemento Neutro 
 > $id_A$ è **elemento neutro a destra** per la composizione:
 >  $$(\varphi \circ \mathrm{id}_A)) = \varphi$$
 
 ### Composizione a Sinistra
-$$A \xrightarrow{\ \varphi\ } B, \qquad a \longmapsto \varphi(a) \in \mathrm{Im}(\varphi)$$ $$(\mathrm{id}_{\mathrm{Im}(\varphi)} \circ \varphi) = \varphi$$
+$$A \xrightarrow{\ \varphi\ } B, \qquad a \longmapsto \varphi(a) \in \mathrm{Im}(\varphi)$$
+$$(\mathrm{id}_{\mathrm{Im}(\varphi)} \circ\varphi ) : A \longrightarrow B$$
+$$\mathrm{id}_{\mathrm{Im}(\varphi)} : B \to B$$
 $$A \xrightarrow{\ \varphi\ } \varphi(A) \xrightarrow{\ \mathrm{id}_{\mathrm{Im}(\varphi)}\ } \varphi(A) \subseteq B$$ $$a \longmapsto \varphi(a) \longmapsto \varphi(a)$$
-
+$$(\mathrm{id}_{\mathrm{Im}(\varphi)} \circ \varphi) = \varphi$$
 > [!info] Info: Elemento Neutro
 > $\mathrm{id}_{\mathrm{Im}(\varphi)}$ è **elemento neutro a sinistra** per la composizione: 
 > $$(\mathrm{id}_{\mathrm{Im}(\varphi)} \circ \varphi) = \varphi$$
@@ -578,7 +581,7 @@ $$A \xrightarrow{\ \varphi\ } \varphi(A) \xrightarrow{\ \mathrm{id}_{\mathrm{Im}
 > > 
 > > Se invece $f$ è **iniettiva**, ogni output arriva da un solo input e $f^{-1}$ è ben definita.
 >
-> Si dice **applicazione inversa** di $\varphi$ (notazione $\varphi^{-1}$) l'applicazione: $$\psi : \mathrm{Im}(\varphi) \to A$$ 
+> Si dice **applicazione inversa** di $\varphi$ (notazione $\varphi^{-1}$) l'applicazione: $$\varphi^{-1} := \psi : \mathrm{Im}(\varphi) \to A$$ 
 > $$b \longmapsto a =\psi(b) \ \text{ t.c. } \ a \text{ è l'unico elemento di } A \text{ per cui } \varphi(a) = b$$
 > > [!info] Info: Nota Su Dominio E Codominio 
 > > $$\mathrm{Cod}(\varphi^{-1}) = \mathrm{Dom}(\varphi)$$ $$B \to A \qquad\qquad A \to B$$
@@ -592,3 +595,4 @@ $$A \xrightarrow{\ \varphi\ } \varphi(A) \xrightarrow{\ \mathrm{id}_{\mathrm{Im}
 > 
 > 
 > 
+
